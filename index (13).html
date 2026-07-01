@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Maritime Survival Exam Prep</title>
+<style>
+  :root{--navy:#0f2742;--blue:#1f5f8b;--light:#f4f7fa;--card:#fff;--good:#177245;--warn:#b7791f;--bad:#b83232;--muted:#667085;}
+  *{box-sizing:border-box} body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--light);color:#172033} header{background:linear-gradient(135deg,var(--navy),var(--blue));color:white;padding:22px 28px} header h1{margin:0;font-size:28px} header p{margin:6px 0 0;color:#dcecff}.wrap{max-width:1200px;margin:0 auto;padding:20px}.grid{display:grid;grid-template-columns:280px 1fr;gap:18px}.card{background:var(--card);border:1px solid #d9e2ec;border-radius:14px;padding:16px;box-shadow:0 2px 8px rgba(15,39,66,.06)}.nav button{display:block;width:100%;margin:7px 0;padding:11px;border:1px solid #d7e0ea;border-radius:10px;background:white;text-align:left;cursor:pointer;font-weight:700}.nav button.active{background:#e9f3fb;border-color:#8ab6d6;color:#0f4f7a}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:18px}.stat strong{font-size:26px;display:block}.progress{height:10px;background:#e9eef5;border-radius:999px;overflow:hidden}.bar{height:100%;background:var(--blue);width:0%}.chapters{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px}.chapter h3{margin:0 0 8px}.tag{display:inline-block;padding:4px 8px;border-radius:999px;background:#edf4fb;color:#24506f;font-size:12px;margin:2px}.btn{border:0;border-radius:10px;padding:10px 14px;background:var(--blue);color:white;font-weight:700;cursor:pointer}.btn.secondary{background:#eef3f8;color:#1f3345}.btn.warn{background:var(--warn)}.question{font-size:20px;font-weight:700;margin-bottom:14px}.choice{display:block;width:100%;padding:12px;margin:8px 0;border-radius:10px;border:1px solid #d7e0ea;background:white;text-align:left;cursor:pointer}.choice.correct{border-color:var(--good);background:#eaf7ef}.choice.wrong{border-color:var(--bad);background:#fff0f0}.hint{border-left:4px solid var(--warn);background:#fff8ea;padding:10px;margin:12px 0;border-radius:8px}.muted{color:var(--muted)}textarea,input,select{width:100%;padding:10px;border:1px solid #cfd8e3;border-radius:10px;margin:5px 0 10px}.log-row{border-bottom:1px solid #edf1f5;padding:10px 0}.pill{font-size:12px;border-radius:999px;padding:3px 8px;background:#eef3f8;color:#425466}.hidden{display:none}.footer{font-size:12px;color:#667085;margin-top:18px}.alert{background:#fff7ed;border:1px solid #fed7aa;color:#7c2d12;border-radius:12px;padding:12px;margin-bottom:14px} @media(max-width:800px){.grid{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}}
+</style>
+</head>
+<body>
+<header><h1>Maritime Survival Exam Prep</h1><p>Lightweight tutoring dashboard for lifeboat / water-survival exam preparation</p></header>
+<div class="wrap">
+  <div class="alert"><strong>Session 1 use:</strong> Start with Intake, run the Baseline Check, then document time/topics in Session Log. Content is a starter bank and should be aligned with the student's actual manual and supervisor requirements.</div>
+  <div class="grid">
+    <aside class="card nav">
+      <button class="active" onclick="show('dashboard',this)">Dashboard</button>
+      <button onclick="show('intake',this)">Intake</button>
+      <button onclick="show('learn',this)">8-Chapter Plan</button>
+      <button onclick="show('practice',this)">Practice Engine</button>
+      <button onclick="show('review',this)">Weak Area Review</button>
+      <button onclick="show('log',this)">Session Log</button>
+      <button onclick="show('export',this)">Export Summary</button>
+      <hr><button class="secondary" onclick="resetData()">Reset Local Data</button>
+      <p class="footer">Powered by a ScholarForge-style learning engine: retrieval, hints, spaced review, mastery tracking, and session documentation.</p>
+    </aside>
+    <main>
+      <section id="dashboard" class="view">
+        <div class="stats">
+          <div class="card stat"><span class="muted">Readiness</span><strong id="readiness">0%</strong><div class="progress"><div class="bar" id="readyBar"></div></div></div>
+          <div class="card stat"><span class="muted">Questions Tried</span><strong id="tried">0</strong></div>
+          <div class="card stat"><span class="muted">Correct</span><strong id="correct">0</strong></div>
+          <div class="card stat"><span class="muted">Logged Hours</span><strong id="hours">0.0</strong></div>
+        </div>
+        <div class="card"><h2>Tonight's Fast Plan</h2><ol><li>Confirm the exact exam, passing score, retake rules, and documentation requirements.</li><li>Ask what the supervisor requires you to sign or submit.</li><li>Run the baseline check without over-teaching.</li><li>Review missed items using hints and explanations.</li><li>Log session time, topics, weak areas, and next assignment.</li></ol></div>
+      </section>
+
+      <section id="intake" class="view hidden card">
+        <h2>Student Intake</h2>
+        <label>Exam name / credential</label><input id="examName" placeholder="e.g., Lifeboatman / water survival retake">
+        <label>Known passing score / format</label><input id="examFormat" placeholder="Multiple choice? oral? practical? passing score?">
+        <label>Supervisor documentation requirements</label><textarea id="docReq" placeholder="What proof is required? Who signs? What must be included?"></textarea>
+        <label>Student's reported weak areas</label><textarea id="weakReported" placeholder="Chapters, terms, procedures, test anxiety, timing..."></textarea>
+        <button class="btn" onclick="saveIntake()">Save Intake</button>
+      </section>
+
+      <section id="learn" class="view hidden">
+        <div class="chapters" id="chapters"></div>
+      </section>
+
+      <section id="practice" class="view hidden card">
+        <h2>Practice Engine</h2>
+        <p class="muted">Starter questions for Session 1. Missed items automatically move into Weak Area Review.</p>
+        <select id="mode" onchange="newQuestion()"><option value="mixed">Mixed Baseline</option><option value="vocabulary">Vocabulary</option><option value="lifeboats">Lifeboats</option><option value="liferafts">Liferafts</option><option value="survival">Survival</option><option value="signals">Signals & Rescue</option></select>
+        <div id="qbox"></div>
+        <button class="btn secondary" onclick="showHint()">Layered Hint</button> <button class="btn" onclick="newQuestion()">Next Question</button>
+      </section>
+
+      <section id="review" class="view hidden card">
+        <h2>Weak Area Review</h2><p class="muted">Items missed or marked low-confidence appear here.</p><div id="weakList"></div>
+      </section>
+
+      <section id="log" class="view hidden card">
+        <h2>Session Log</h2>
+        <label>Date</label><input id="logDate" type="date">
+        <label>Minutes completed</label><input id="minutes" type="number" placeholder="60">
+        <label>Topics covered</label><textarea id="topics" placeholder="Intake, baseline diagnostic, lifeboat vocabulary..."></textarea>
+        <label>Progress / observations</label><textarea id="observations" placeholder="Strengths, weak areas, confidence, participation..."></textarea>
+        <label>Homework / next steps</label><textarea id="homework" placeholder="Review weak-area queue, Chapter 1 terms..."></textarea>
+        <button class="btn" onclick="addLog()">Add Session Entry</button>
+        <div id="logs"></div>
+      </section>
+
+      <section id="export" class="view hidden card">
+        <h2>Export Summary</h2><p class="muted">Copy/paste this into notes, email, or a formal completion document.</p><button class="btn" onclick="buildExport()">Generate Summary</button><textarea id="summary" style="min-height:360px"></textarea>
+      </section>
+    </main>
+  </div>
+</div>
+<script>
+const chapters=["Emergency Preparedness","Emergency Duties & Equipment","Lifeboat Construction & Equipment","Launching / Handling Lifeboats","Liferafts & Survival Craft","Cold Water Survival","Signaling & Communications","Rescue / Recovery Procedures"];
+const questions=[
+{t:'vocabulary',q:'What is the primary purpose of an EPIRB?',c:['To alert rescuers and transmit distress/location information','To steer a lifeboat','To pump water from a raft','To provide drinking water'],a:0,h:['Think distress beacon.','It helps rescuers know there is an emergency and where to search.']},
+{t:'vocabulary',q:'What is the primary purpose of a SART?',c:['To help rescuers locate survival craft by radar','To inflate an immersion suit','To purify seawater','To release lifeboat hooks'],a:0,h:['Think search and rescue radar.','SART helps nearby rescuers find the survival craft.']},
+{t:'lifeboats',q:'Before launching a lifeboat, what must be checked first?',c:['Area is clear and crew/passengers are prepared','Food has been rationed','The EPIRB battery is removed','All flares are fired'],a:0,h:['Think safety before movement.','Launching before the area is clear can injure people or damage equipment.']},
+{t:'lifeboats',q:'A davit is best described as:',c:['A structure used to lower or raise a lifeboat or survival craft','A radio distress frequency','A water ration container','A type of immersion suit'],a:0,h:['It is physical ship equipment.','It supports launching/recovery of boats or rafts.']},
+{t:'liferafts',q:'If a liferaft inflates upside down, the crew should:',c:['Use the righting strap/procedure to turn it over safely','Cut the raft loose and abandon it','Remove all inflation cylinders','Swim underneath and wait'],a:0,h:['The raft is still useful.','There is a standard righting procedure.']},
+{t:'survival',q:'In cold water survival, the first major threat is often:',c:['Hypothermia and loss of body heat','Sunburn','Overeating','Compass error'],a:0,h:['Think body temperature.','Cold water pulls heat from the body quickly.']},
+{t:'survival',q:'Why should survivors avoid unnecessary swimming in cold water?',c:['It increases heat loss and exhaustion','It improves rescue visibility','It makes water safer to drink','It activates the EPIRB'],a:0,h:['Movement burns energy.','Movement in cold water speeds heat loss.']},
+{t:'signals',q:'VHF radio is mainly used for:',c:['Voice communication and distress calls','Liferaft inflation','Sea anchor deployment','Measuring hypothermia'],a:0,h:['Think communication.','It allows voice contact with vessels/rescuers.']},
+{t:'signals',q:'Visual distress signals should generally be used:',c:['When they are likely to be seen by rescuers','Immediately all at once','Only underwater','Only before abandoning ship'],a:0,h:['Signals are limited resources.','Use them when they have a chance to work.']},
+{t:'survival',q:'After abandoning ship, a sea anchor can help a survival craft:',c:['Reduce drift and improve stability','Make drinking water','Start the engine','Transmit a distress signal'],a:0,h:['Think drifting and orientation.','It slows movement and can stabilize the craft.']}
+];
+let state=JSON.parse(localStorage.sfMaritime||'{}'); if(!state.stats)state={stats:{tried:0,correct:0},weak:[],logs:[],intake:{},chapters:{}}; let current=null,hintIndex=0;
+function save(){localStorage.sfMaritime=JSON.stringify(state);renderStats();renderWeak();renderLogs();}
+function show(id,btn){document.querySelectorAll('.view').forEach(v=>v.classList.add('hidden'));document.getElementById(id).classList.remove('hidden');document.querySelectorAll('.nav button').forEach(b=>b.classList.remove('active')); if(btn)btn.classList.add('active');}
+function renderStats(){let pct=state.stats.tried?Math.round(state.stats.correct/state.stats.tried*100):0;document.getElementById('readiness').textContent=pct+'%';document.getElementById('readyBar').style.width=pct+'%';document.getElementById('tried').textContent=state.stats.tried;document.getElementById('correct').textContent=state.stats.correct;let hrs=state.logs.reduce((s,l)=>s+(+l.minutes||0),0)/60;document.getElementById('hours').textContent=hrs.toFixed(1)}
+function renderChapters(){document.getElementById('chapters').innerHTML=chapters.map((c,i)=>`<div class="card chapter"><h3>Chapter ${i+1}</h3><p><strong>${c}</strong></p><span class="tag">Not mapped yet</span><span class="tag">Starter plan</span><p class="muted">Use after confirming the manual structure.</p></div>`).join('')}
+function pool(){let m=document.getElementById('mode')?.value||'mixed';return m==='mixed'?questions:questions.filter(x=>x.t===m)}
+function newQuestion(){let p=pool();current=p[Math.floor(Math.random()*p.length)];hintIndex=0;document.getElementById('qbox').innerHTML=`<div class="question">${current.q}</div>`+current.c.map((x,i)=>`<button class="choice" onclick="answer(${i},this)">${x}</button>`).join('')+`<div id="hint"></div>`}
+function answer(i,el){state.stats.tried++;let buttons=document.querySelectorAll('.choice');buttons.forEach((b,idx)=>{if(idx===current.a)b.classList.add('correct')});if(i===current.a){state.stats.correct++;}else{el.classList.add('wrong');state.weak.push({...current,missed:new Date().toLocaleString()});}save();}
+function showHint(){if(!current)return;let h=current.h[Math.min(hintIndex,current.h.length-1)];hintIndex++;document.getElementById('hint').innerHTML=`<div class="hint"><strong>Hint ${hintIndex}:</strong> ${h}</div>`}
+function renderWeak(){let el=document.getElementById('weakList');if(!el)return;el.innerHTML=state.weak.length?state.weak.slice(-20).reverse().map(w=>`<div class="log-row"><strong>${w.t}</strong>: ${w.q}<br><span class="muted">Missed: ${w.missed}</span></div>`).join(''):'<p>No weak areas logged yet.</p>'}
+function saveIntake(){state.intake={examName:examName.value,examFormat:examFormat.value,docReq:docReq.value,weakReported:weakReported.value};save();alert('Intake saved locally.');}
+function addLog(){state.logs.push({date:logDate.value||new Date().toISOString().slice(0,10),minutes:minutes.value,topics:topics.value,observations:observations.value,homework:homework.value});minutes.value=topics.value=observations.value=homework.value='';save();}
+function renderLogs(){let el=document.getElementById('logs');if(!el)return;el.innerHTML=state.logs.map(l=>`<div class="log-row"><strong>${l.date}</strong> <span class="pill">${l.minutes} minutes</span><br><b>Topics:</b> ${l.topics}<br><b>Observations:</b> ${l.observations}<br><b>Next:</b> ${l.homework}</div>`).join('')}
+function buildExport(){let i=state.intake||{};let hrs=state.logs.reduce((s,l)=>s+(+l.minutes||0),0)/60;summary.value=`MARITIME SURVIVAL EXAM PREP - PROGRESS SUMMARY\n\nExam/Credential: ${i.examName||'Not yet confirmed'}\nFormat/Passing Score: ${i.examFormat||'Not yet confirmed'}\nDocumentation Requirements: ${i.docReq||'Not yet confirmed'}\nReported Weak Areas: ${i.weakReported||'Not yet confirmed'}\n\nLogged Tutoring Hours: ${hrs.toFixed(2)}\nQuestions Tried: ${state.stats.tried}\nCorrect: ${state.stats.correct}\nReadiness Score: ${state.stats.tried?Math.round(state.stats.correct/state.stats.tried*100):0}%\n\nWEAK AREAS\n${state.weak.slice(-10).map(w=>'- '+w.t+': '+w.q).join('\n')||'None logged yet'}\n\nSESSION LOG\n${state.logs.map(l=>`- ${l.date} (${l.minutes} min): ${l.topics}\n  Observations: ${l.observations}\n  Next steps: ${l.homework}`).join('\n')||'No sessions logged yet'}\n\nTutor Signature: ______________________   Date: __________\nStudent Signature: ____________________   Date: __________`;}
+function resetData(){if(confirm('Clear all local progress for this browser?')){localStorage.removeItem('sfMaritime');location.reload();}}
+logDate.value=new Date().toISOString().slice(0,10); renderChapters(); renderStats(); renderWeak(); renderLogs(); newQuestion();
+</script>
+</body>
+</html>
