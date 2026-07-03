@@ -138,6 +138,10 @@ input, textarea, select {
 .pill { display: inline-block; font-size: 12px; border-radius: 999px; padding: 3px 10px; background: #eef3f8; color: #425466; margin: 2px 4px 2px 0; }
 .pill.due { background: var(--warn-bg); color: var(--warn); }
 .pill.flagged { background: var(--bad-bg); color: var(--bad); }
+.pill.difficulty-easy { background: var(--good-bg); color: var(--good); }
+.pill.difficulty-medium { background: #eef3f8; color: var(--blue); }
+.pill.difficulty-hard { background: var(--warn-bg); color: var(--warn); }
+.pill.difficulty-very-hard { background: var(--bad-bg); color: var(--bad); font-weight: 700; }
 
 .confidence-row { display: flex; gap: 8px; margin: 12px 0; }
 .confidence-row button { flex: 1; }
