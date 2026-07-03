@@ -2,96 +2,141 @@
   "courseId": "vt-maritime-water-survival",
   "courseName": "Maritime & Water Survival Exam Prep",
   "version": 1,
-  "contentNote": "PLACEHOLDER SEED CONTENT. Topics/questions carried over from the initial tutoring dashboard bank plus expansion for coverage. Vinci (instructor/SME) should review and replace with authoritative manual content before this is used for real exam prep.",
+  "contentNote": "PLACEHOLDER / DRAFT PRACTICE CONTENT. Topic structure now matches the table of contents of the actual Water Survival Student Manual (SHLSOS Course No. 549, revised June 2024) supplied by Vinci. We currently have only the manual's table of contents, not its full chapter text — the practice questions below were written before this alignment and have been remapped to the closest matching manual chapter, but they are NOT sourced from the manual itself and remain draft/unverified. Vinci (instructor/SME) should review and replace this bank with content verified against the actual manual chapters before it is used for real exam prep.",
   "topics": [
     {
-      "id": "emergency-preparedness",
-      "title": "Emergency Preparedness and Duties",
-      "summary": "Muster stations, emergency signals, and crew/passenger duties before an incident occurs.",
+      "id": "chapter-1-planning-ahead",
+      "title": "Chapter 1 — Planning Ahead",
+      "summary": "Manual Chapter 1: emergency readiness, equipment, and knowing your shipboard duties before an incident occurs.",
       "learn": {
-        "concept": "Emergency preparedness is about knowing your role before an emergency starts. Every person aboard has an assigned muster station and duty, and drills exist so those actions become automatic under stress.",
+        "concept": "This chapter corresponds to a chapter in the Water Survival Student Manual (SHLSOS Course No. 549, revised June 2024). We currently have only the manual's table of contents, not its full chapter text, so the list below reproduces the manual's own subtopic headings for this chapter rather than a verified content summary. Practice questions in this chapter are still draft/placeholder content pending verification against the actual chapter text.",
         "keyPoints": [
-          "The general emergency alarm is a signal to proceed immediately to your muster station.",
-          "Muster lists assign specific duties (e.g., lifeboat crew, passenger assistance) to each person aboard.",
-          "Drills are practiced regularly so real emergencies don't require relearning procedures under stress."
+          "Be Prepared for Emergencies",
+          "Have Proper Equipment Ready at All Times",
+          "Find Your Shipboard Emergency Duties"
         ]
       }
     },
     {
-      "id": "lifeboats",
-      "title": "Lifeboats: Construction and Equipment",
-      "summary": "What a lifeboat is built to do, and the equipment it must carry.",
+      "id": "chapter-2-using-lifeboats",
+      "title": "Chapter 2 — Using Lifeboats",
+      "summary": "Manual Chapter 2: lifeboat markings, construction, equipment, davits, launching, retrieval, and other uses.",
       "learn": {
-        "concept": "Lifeboats are self-contained survival craft designed to protect occupants from exposure and keep them alive until rescue. Their construction and required equipment both serve that single purpose.",
+        "concept": "This chapter corresponds to a chapter in the Water Survival Student Manual (SHLSOS Course No. 549, revised June 2024). We currently have only the manual's table of contents, not its full chapter text, so the list below reproduces the manual's own subtopic headings for this chapter rather than a verified content summary. Practice questions in this chapter are still draft/placeholder content pending verification against the actual chapter text.",
         "keyPoints": [
-          "Lifeboats are built for buoyancy and stability even when partially flooded.",
-          "Required equipment includes food, water, signaling devices, and first aid supplies.",
-          "Equipment lists exist because survival time, not just flotation, is the design goal."
+          "Markings",
+          "Coloring",
+          "Numbering",
+          "Design, Construction, and Performance of Modern Lifeboats",
+          "Construction",
+          "Lifeboat Shell",
+          "Interior Construction",
+          "Buoyancy and Stability Features",
+          "Automatic Lifeboat Drain",
+          "Exterior Rescue Features",
+          "Steering Equipment",
+          "Propulsion Systems",
+          "Survival Craft Equipment",
+          "Davits and Winches",
+          "Common Features of Davit Systems",
+          "Types of Davits",
+          "Launching a Lifeboat from a Gravity Davit",
+          "Retrieving the Lifeboat",
+          "Navigating by Compass",
+          "Other Uses of Lifeboats",
+          "Rescue Boats / Fast Rescue Boats"
         ]
       }
     },
     {
-      "id": "launching",
-      "title": "Launching Lifeboats and Davits",
-      "summary": "Safe procedures and hardware for getting a lifeboat from the ship into the water.",
+      "id": "chapter-3-using-liferafts",
+      "title": "Chapter 3 — Using Liferafts",
+      "summary": "Manual Chapter 3: liferaft design, stowage, launching methods, righting, boarding, and assisting injured survivors.",
       "learn": {
-        "concept": "Launching is the highest-risk moment in an abandon-ship sequence — more injuries happen during launch than in the water. Davits and painters exist to control that risk.",
+        "concept": "This chapter corresponds to a chapter in the Water Survival Student Manual (SHLSOS Course No. 549, revised June 2024). We currently have only the manual's table of contents, not its full chapter text, so the list below reproduces the manual's own subtopic headings for this chapter rather than a verified content summary. Practice questions in this chapter are still draft/placeholder content pending verification against the actual chapter text.",
         "keyPoints": [
-          "A davit is the mechanical arm/hardware that lowers or raises a lifeboat.",
-          "Personnel must be accounted for and the launch area confirmed clear before lowering.",
-          "The painter line keeps the craft controlled and connected during launch."
+          "Liferafts",
+          "Liferaft Size",
+          "Liferaft Stowage",
+          "Liferaft Design",
+          "Liferaft Markings",
+          "Liferaft Launching Procedures / Instructions",
+          "Davit Launching",
+          "Automatic Launching",
+          "Manual Launching",
+          "Righting the Capsized Raft",
+          "Boarding the Liferaft",
+          "Assisting Injured People"
         ]
       }
     },
     {
-      "id": "liferafts",
-      "title": "Liferafts: Launching, Boarding, Righting",
-      "summary": "Inflatable liferaft deployment, boarding technique, and recovering from a capsize.",
+      "id": "chapter-4-survival-methods",
+      "title": "Chapter 4 — Understanding Survival Methods",
+      "summary": "Manual Chapter 4: abandoning ship, immersion suits, cold water survival, rationing, and survival ashore.",
       "learn": {
-        "concept": "Liferafts are simpler and more compact than lifeboats but require more hands-on skill from survivors — including the possibility of righting a capsized raft before it can be boarded safely.",
+        "concept": "This chapter corresponds to a chapter in the Water Survival Student Manual (SHLSOS Course No. 549, revised June 2024). We currently have only the manual's table of contents, not its full chapter text, so the list below reproduces the manual's own subtopic headings for this chapter rather than a verified content summary. Practice questions in this chapter are still draft/placeholder content pending verification against the actual chapter text.",
         "keyPoints": [
-          "Liferafts inflate automatically or manually once released and the painter line is pulled.",
-          "A capsized raft usually has a righting strap; the survivor must climb underneath onto the CO2 bottle side and pull it upright.",
-          "Boarding from the water is easier once the raft is stable and right-side up."
+          "Understanding Coast Guard Searches",
+          "Abandoning Ship",
+          "Immersion Suits",
+          "Anti-Exposure Suit",
+          "Swimming for Survival",
+          "Man Overboard",
+          "Cold Water Survival",
+          "Organizing for Survival",
+          "Survival on the Sea",
+          "Preserve Body Fluids / Avoid Seasickness",
+          "Urinate Soon After Boarding",
+          "Dealing with Cold / Hot Environment",
+          "Drinking Water",
+          "Food",
+          "Looking for Land",
+          "Beaching Survival Craft",
+          "Survival Ashore"
         ]
       }
     },
     {
-      "id": "survival-at-sea",
-      "title": "Survival at Sea: Cold Water, Food, Water",
-      "summary": "Managing exposure, hypothermia risk, and resource rationing after abandoning ship.",
+      "id": "chapter-5-signaling",
+      "title": "Chapter 5 — Signaling to Attract Attention",
+      "summary": "Manual Chapter 5: distress beacons, radios, Morse code, and lifesaving signal tables used to alert and guide rescuers.",
       "learn": {
-        "concept": "After the immediate danger of abandoning ship, the biggest threat is usually cold water exposure, not hunger or thirst. Body heat is lost far faster in water than air, so protecting core temperature is the first survival priority.",
+        "concept": "This chapter corresponds to a chapter in the Water Survival Student Manual (SHLSOS Course No. 549, revised June 2024). We currently have only the manual's table of contents, not its full chapter text, so the list below reproduces the manual's own subtopic headings for this chapter rather than a verified content summary. Practice questions in this chapter are still draft/placeholder content pending verification against the actual chapter text.",
         "keyPoints": [
-          "Hypothermia from cold water is typically the most urgent survival threat.",
-          "Immersion suits reduce heat loss and add flotation.",
-          "Water and food should be rationed early — humans can survive far longer without food than without managing exposure and hydration properly."
+          "VHF Survival Craft Transceiver / SCT",
+          "Emergency Position Indicating Radio Beacon / EPIRB",
+          "Search and Rescue Radar Transponder / SART",
+          "International Morse Code",
+          "Signals to Communicate from Shore",
+          "Table of Lifesaving Signals",
+          "International Distress Signals",
+          "Signaling Devices"
         ]
       }
     },
     {
-      "id": "signaling",
-      "title": "Signaling and Communications",
-      "summary": "Distress beacons, radios, and visual signals used to alert and guide rescuers.",
+      "id": "chapter-6-being-rescued",
+      "title": "Chapter 6 — Being Rescued",
+      "summary": "Manual Chapter 6: vessel and helicopter rescue procedures, medical evacuation, and drill/maintenance safety.",
       "learn": {
-        "concept": "Signaling equipment serves two different jobs: alerting rescuers that an emergency exists (long range), and helping them close the final distance to survivors (short range). Confusing the two is a common exam trap.",
+        "concept": "This chapter corresponds to a chapter in the Water Survival Student Manual (SHLSOS Course No. 549, revised June 2024). We currently have only the manual's table of contents, not its full chapter text, so the list below reproduces the manual's own subtopic headings for this chapter rather than a verified content summary. Practice questions in this chapter are still draft/placeholder content pending verification against the actual chapter text.",
         "keyPoints": [
-          "An EPIRB alerts search and rescue authorities to a distress and its approximate location, often via satellite.",
-          "A SART is a radar transponder that helps a nearby rescue vessel pinpoint survivors once already in the search area.",
-          "VHF radio allows direct voice communication with rescue authorities and other vessels."
+          "Rescued at Last",
+          "Helicopter Hoist Procedures",
+          "Medical Evacuation",
+          "Dangers Involved with Training, Drills and Maintenance"
         ]
       }
     },
     {
-      "id": "rescue",
-      "title": "Rescue Procedures and Helicopter Hoist",
-      "summary": "What survivors should do during vessel and helicopter rescue operations.",
+      "id": "appendix-a-glossary",
+      "title": "Appendix A — Glossary / Vocabulary Review",
+      "summary": "Manual Appendix A: glossary and vocabulary review. No practice questions are mapped here yet — this is reference material, not procedural content, and we do not yet have the glossary text itself.",
       "learn": {
-        "concept": "During a rescue, survivors are not in charge — the rescue crew is. Most survivor mistakes during hoist or vessel recovery come from taking initiative instead of following instructions.",
+        "concept": "This chapter corresponds to a chapter in the Water Survival Student Manual (SHLSOS Course No. 549, revised June 2024). We currently have only the manual's table of contents, not its full chapter text, so the list below reproduces the manual's own subtopic headings for this chapter rather than a verified content summary. Practice questions in this chapter are still draft/placeholder content pending verification against the actual chapter text. No questions currently exist for this appendix since it is reference/vocabulary material rather than a procedural chapter; it is included here so the topic structure matches the manual, and vocabulary-style questions can be added once the glossary text is available.",
         "keyPoints": [
-          "Rescue crews control the pace and method of recovery; survivors should follow their instructions.",
-          "Static electricity can build up in a hoist cable/basket — let it touch the water or vessel to discharge before contact when instructed.",
-          "Do not attempt to secure a hoist cable to the craft unless explicitly told to by the rescue crew."
+          "Glossary / Vocabulary Review"
         ]
       }
     }
@@ -99,7 +144,7 @@
   "questions": [
     {
       "id": "q-ep-1",
-      "topicId": "emergency-preparedness",
+      "topicId": "chapter-1-planning-ahead",
       "prompt": "What should you do immediately upon hearing the general emergency alarm?",
       "choices": [
         {
@@ -132,7 +177,7 @@
     },
     {
       "id": "q-ep-2",
-      "topicId": "emergency-preparedness",
+      "topicId": "chapter-1-planning-ahead",
       "prompt": "What is a muster list used for?",
       "choices": [
         {
@@ -165,7 +210,7 @@
     },
     {
       "id": "q-ep-3",
-      "topicId": "emergency-preparedness",
+      "topicId": "chapter-1-planning-ahead",
       "prompt": "Why are emergency drills practiced regularly rather than just once?",
       "choices": [
         {
@@ -198,7 +243,7 @@
     },
     {
       "id": "q-ep-4",
-      "topicId": "emergency-preparedness",
+      "topicId": "chapter-1-planning-ahead",
       "prompt": "The standard general emergency alarm signal is made up of what pattern of blasts?",
       "choices": [
         {
@@ -231,7 +276,7 @@
     },
     {
       "id": "q-ep-5",
-      "topicId": "emergency-preparedness",
+      "topicId": "chapter-1-planning-ahead",
       "prompt": "A passenger complains that a fire drill is a waste of time because 'it's only a drill.' What is the best response?",
       "choices": [
         {
@@ -264,7 +309,7 @@
     },
     {
       "id": "q-ep-6",
-      "topicId": "emergency-preparedness",
+      "topicId": "chapter-1-planning-ahead",
       "prompt": "What best distinguishes emergency preparedness from emergency response?",
       "choices": [
         {
@@ -297,7 +342,7 @@
     },
     {
       "id": "q-ep-7",
-      "topicId": "emergency-preparedness",
+      "topicId": "chapter-1-planning-ahead",
       "prompt": "Which of these is an example of emergency PREPAREDNESS rather than emergency RESPONSE?",
       "choices": [
         {
@@ -330,7 +375,7 @@
     },
     {
       "id": "q-ep-8",
-      "topicId": "emergency-preparedness",
+      "topicId": "chapter-1-planning-ahead",
       "prompt": "You are new crew and have not yet located your printed muster list. The general emergency alarm sounds unexpectedly. What should you do first?",
       "choices": [
         {
@@ -363,7 +408,7 @@
     },
     {
       "id": "q-ep-9",
-      "topicId": "emergency-preparedness",
+      "topicId": "chapter-1-planning-ahead",
       "prompt": "A drill is announced overhead while you're in the middle of a task. What is the best action?",
       "choices": [
         {
@@ -396,7 +441,7 @@
     },
     {
       "id": "q-ep-10",
-      "topicId": "emergency-preparedness",
+      "topicId": "chapter-1-planning-ahead",
       "prompt": "Why does a muster list assign SPECIFIC individuals to specific duties, rather than letting any available person fill any role?",
       "choices": [
         {
@@ -429,7 +474,7 @@
     },
     {
       "id": "q-ep-11",
-      "topicId": "emergency-preparedness",
+      "topicId": "chapter-1-planning-ahead",
       "prompt": "SCENARIO: The general alarm sounds. You are assigned as lifeboat crew, but you are currently assisting an elderly passenger who is struggling to walk. What should you do?",
       "choices": [
         {
@@ -462,7 +507,7 @@
     },
     {
       "id": "q-ep-12",
-      "topicId": "emergency-preparedness",
+      "topicId": "chapter-1-planning-ahead",
       "prompt": "Emergency drills primarily reduce panic-driven errors during a real incident because they:",
       "choices": [
         {
@@ -495,7 +540,7 @@
     },
     {
       "id": "q-lb-1",
-      "topicId": "lifeboats",
+      "topicId": "chapter-2-using-lifeboats",
       "prompt": "What is a primary design requirement of a lifeboat?",
       "choices": [
         {
@@ -528,7 +573,7 @@
     },
     {
       "id": "q-lb-2",
-      "topicId": "lifeboats",
+      "topicId": "chapter-2-using-lifeboats",
       "prompt": "Which of the following is typically required lifeboat equipment?",
       "choices": [
         {
@@ -561,7 +606,7 @@
     },
     {
       "id": "q-lb-3",
-      "topicId": "lifeboats",
+      "topicId": "chapter-2-using-lifeboats",
       "prompt": "Why do lifeboat equipment lists exist at all?",
       "choices": [
         {
@@ -594,7 +639,7 @@
     },
     {
       "id": "q-lb-4",
-      "topicId": "lifeboats",
+      "topicId": "chapter-2-using-lifeboats",
       "prompt": "What does the term 'rated capacity' mean for a lifeboat?",
       "choices": [
         {
@@ -627,7 +672,7 @@
     },
     {
       "id": "q-lb-5",
-      "topicId": "lifeboats",
+      "topicId": "chapter-2-using-lifeboats",
       "prompt": "Why are lifeboats typically brightly colored (often orange)?",
       "choices": [
         {
@@ -660,7 +705,7 @@
     },
     {
       "id": "q-lb-6",
-      "topicId": "lifeboats",
+      "topicId": "chapter-2-using-lifeboats",
       "prompt": "A lifeboat has been inspected and its equipment checklist signed off as complete. Does this guarantee the crew can use that equipment effectively in a real emergency?",
       "choices": [
         {
@@ -693,7 +738,7 @@
     },
     {
       "id": "q-lb-7",
-      "topicId": "lifeboats",
+      "topicId": "chapter-2-using-lifeboats",
       "prompt": "Which best describes why lifeboats are enclosed or partially enclosed on many vessels, rather than open boats?",
       "choices": [
         {
@@ -726,7 +771,7 @@
     },
     {
       "id": "q-lb-8",
-      "topicId": "lifeboats",
+      "topicId": "chapter-2-using-lifeboats",
       "prompt": "SCENARIO: While inspecting a lifeboat's equipment locker before a voyage, you notice the drinking water containers are present but nearly a year past their marked replacement date. What is the correct action?",
       "choices": [
         {
@@ -759,7 +804,7 @@
     },
     {
       "id": "q-lb-9",
-      "topicId": "lifeboats",
+      "topicId": "chapter-2-using-lifeboats",
       "prompt": "Two lifeboats on the same vessel have identical equipment lists but different rated capacities. What does this most likely reflect?",
       "choices": [
         {
@@ -792,7 +837,7 @@
     },
     {
       "id": "q-lb-10",
-      "topicId": "lifeboats",
+      "topicId": "chapter-2-using-lifeboats",
       "prompt": "Which best captures the difference between EQUIPMENT KNOWLEDGE and CORRECT USE UNDER STRESS, using lifeboat gear as the example?",
       "choices": [
         {
@@ -825,7 +870,7 @@
     },
     {
       "id": "q-lb-11",
-      "topicId": "lifeboats",
+      "topicId": "chapter-2-using-lifeboats",
       "prompt": "SCENARIO: During a drill, a crew member correctly names every item in the lifeboat's equipment locker from memory but has never physically operated the hand-cranked bilge pump. Which is the BEST assessment of this crew member's readiness?",
       "choices": [
         {
@@ -858,7 +903,7 @@
     },
     {
       "id": "q-lb-12",
-      "topicId": "lifeboats",
+      "topicId": "chapter-2-using-lifeboats",
       "prompt": "A lifeboat's manufacturer increases the amount of food and water it requires to carry, without changing the boat's hull or rated capacity. What does this change most directly reflect?",
       "choices": [
         {
@@ -891,7 +936,7 @@
     },
     {
       "id": "q-launch-1",
-      "topicId": "launching",
+      "topicId": "chapter-2-using-lifeboats",
       "prompt": "Before launching survival craft, what should be confirmed first?",
       "choices": [
         {
@@ -924,7 +969,7 @@
     },
     {
       "id": "q-launch-2",
-      "topicId": "launching",
+      "topicId": "chapter-2-using-lifeboats",
       "prompt": "What is a davit most closely associated with?",
       "choices": [
         {
@@ -957,7 +1002,7 @@
     },
     {
       "id": "q-launch-3",
-      "topicId": "launching",
+      "topicId": "chapter-2-using-lifeboats",
       "prompt": "What is the purpose of the painter line during launch?",
       "choices": [
         {
@@ -990,7 +1035,7 @@
     },
     {
       "id": "q-launch-4",
-      "topicId": "launching",
+      "topicId": "chapter-2-using-lifeboats",
       "prompt": "What is the purpose of a lifeboat's release mechanism (hook/gripes system)?",
       "choices": [
         {
@@ -1023,7 +1068,7 @@
     },
     {
       "id": "q-launch-5",
-      "topicId": "launching",
+      "topicId": "chapter-2-using-lifeboats",
       "prompt": "Why is launching widely considered the highest-risk phase of an abandon-ship sequence?",
       "choices": [
         {
@@ -1056,7 +1101,7 @@
     },
     {
       "id": "q-launch-6",
-      "topicId": "launching",
+      "topicId": "chapter-2-using-lifeboats",
       "prompt": "SCENARIO: You are assigned to a lifeboat station and the order to abandon ship is given. The sea is choppy and the boat is swinging on its falls. What should you do?",
       "choices": [
         {
@@ -1089,7 +1134,7 @@
     },
     {
       "id": "q-launch-7",
-      "topicId": "launching",
+      "topicId": "chapter-2-using-lifeboats",
       "prompt": "What best distinguishes launching a LIFEBOAT from boarding a LIFERAFT?",
       "choices": [
         {
@@ -1122,7 +1167,7 @@
     },
     {
       "id": "q-launch-8",
-      "topicId": "launching",
+      "topicId": "chapter-2-using-lifeboats",
       "prompt": "During launch, a crew member notices the painter line is fouled (tangled) on a fitting as the boat nears the water. What should happen?",
       "choices": [
         {
@@ -1155,7 +1200,7 @@
     },
     {
       "id": "q-launch-9",
-      "topicId": "launching",
+      "topicId": "chapter-2-using-lifeboats",
       "prompt": "Why must personnel be accounted for BEFORE launch begins, rather than counted after the boat reaches the water?",
       "choices": [
         {
@@ -1188,7 +1233,7 @@
     },
     {
       "id": "q-launch-10",
-      "topicId": "launching",
+      "topicId": "chapter-2-using-lifeboats",
       "prompt": "SCENARIO: The order to abandon ship is given. You reach your lifeboat station and notice one assigned crew member for your boat is missing. The area below is confirmed clear and the boat is ready. What should you do FIRST?",
       "choices": [
         {
@@ -1221,7 +1266,7 @@
     },
     {
       "id": "q-launch-11",
-      "topicId": "launching",
+      "topicId": "chapter-2-using-lifeboats",
       "prompt": "Which best explains why launching procedures emphasize controlled, sequenced actions (confirm clear area → confirm personnel → release) rather than the fastest possible sequence?",
       "choices": [
         {
@@ -1254,7 +1299,7 @@
     },
     {
       "id": "q-launch-12",
-      "topicId": "launching",
+      "topicId": "chapter-2-using-lifeboats",
       "prompt": "A davit's mechanical release fails partway through lowering, leaving the lifeboat suspended a few feet above the water with occupants aboard. Which response best reflects correct priorities?",
       "choices": [
         {
@@ -1287,7 +1332,7 @@
     },
     {
       "id": "q-raft-1",
-      "topicId": "liferafts",
+      "topicId": "chapter-3-using-liferafts",
       "prompt": "If a liferaft capsizes, what skill may be required before boarding?",
       "choices": [
         {
@@ -1320,7 +1365,7 @@
     },
     {
       "id": "q-raft-2",
-      "topicId": "liferafts",
+      "topicId": "chapter-3-using-liferafts",
       "prompt": "How is a capsized liferaft typically righted?",
       "choices": [
         {
@@ -1353,7 +1398,7 @@
     },
     {
       "id": "q-raft-3",
-      "topicId": "liferafts",
+      "topicId": "chapter-3-using-liferafts",
       "prompt": "What generally triggers a liferaft to inflate?",
       "choices": [
         {
@@ -1386,7 +1431,7 @@
     },
     {
       "id": "q-raft-4",
-      "topicId": "liferafts",
+      "topicId": "chapter-3-using-liferafts",
       "prompt": "What is a hydrostatic release unit (HRU) used for on a liferaft?",
       "choices": [
         {
@@ -1419,7 +1464,7 @@
     },
     {
       "id": "q-raft-5",
-      "topicId": "liferafts",
+      "topicId": "chapter-3-using-liferafts",
       "prompt": "Once boarded, why do liferaft occupants typically want to stay close to the canopy/covered area rather than the open edges?",
       "choices": [
         {
@@ -1452,7 +1497,7 @@
     },
     {
       "id": "q-raft-6",
-      "topicId": "liferafts",
+      "topicId": "chapter-3-using-liferafts",
       "prompt": "What best distinguishes LAUNCHING a lifeboat from BOARDING a liferaft, in terms of the skills each requires from an average crew member or passenger?",
       "choices": [
         {
@@ -1485,7 +1530,7 @@
     },
     {
       "id": "q-raft-7",
-      "topicId": "liferafts",
+      "topicId": "chapter-3-using-liferafts",
       "prompt": "SCENARIO: You're in the water near an inflated but capsized liferaft. No one else is nearby yet. What should you do?",
       "choices": [
         {
@@ -1518,7 +1563,7 @@
     },
     {
       "id": "q-raft-8",
-      "topicId": "liferafts",
+      "topicId": "chapter-3-using-liferafts",
       "prompt": "Why is it generally recommended to board a liferaft directly from the vessel or a lifeboat, rather than by swimming to it, whenever that option exists?",
       "choices": [
         {
@@ -1551,7 +1596,7 @@
     },
     {
       "id": "q-raft-9",
-      "topicId": "liferafts",
+      "topicId": "chapter-3-using-liferafts",
       "prompt": "A liferaft has multiple ballast bags/water pockets hanging beneath it in the water. What is their purpose?",
       "choices": [
         {
@@ -1584,7 +1629,7 @@
     },
     {
       "id": "q-raft-10",
-      "topicId": "liferafts",
+      "topicId": "chapter-3-using-liferafts",
       "prompt": "SCENARIO: Several survivors are already aboard a liferaft when one more person is spotted swimming toward it, clearly exhausted. The raft is near its rated capacity. What is the best response?",
       "choices": [
         {
@@ -1617,7 +1662,7 @@
     },
     {
       "id": "q-raft-11",
-      "topicId": "liferafts",
+      "topicId": "chapter-3-using-liferafts",
       "prompt": "Which best explains why liferaft righting procedure specifically directs survivors to the CO2-bottle side, rather than any side of the capsized raft?",
       "choices": [
         {
@@ -1650,7 +1695,7 @@
     },
     {
       "id": "q-raft-12",
-      "topicId": "liferafts",
+      "topicId": "chapter-3-using-liferafts",
       "prompt": "SCENARIO: A liferaft has been successfully righted and boarded by several survivors, one of whom is conscious but shivering violently. Another survivor suggests removing the shivering person's wet clothing entirely and leaving them uncovered so they \"dry out faster.\" What is the BEST response?",
       "choices": [
         {
@@ -1683,7 +1728,7 @@
     },
     {
       "id": "q-surv-1",
-      "topicId": "survival-at-sea",
+      "topicId": "chapter-4-survival-methods",
       "prompt": "In cold water survival, what is the major immediate danger?",
       "choices": [
         {
@@ -1716,7 +1761,7 @@
     },
     {
       "id": "q-surv-2",
-      "topicId": "survival-at-sea",
+      "topicId": "chapter-4-survival-methods",
       "prompt": "Why is an immersion suit used?",
       "choices": [
         {
@@ -1749,7 +1794,7 @@
     },
     {
       "id": "q-surv-3",
-      "topicId": "survival-at-sea",
+      "topicId": "chapter-4-survival-methods",
       "prompt": "After abandoning ship, what is usually a top early priority?",
       "choices": [
         {
@@ -1782,7 +1827,7 @@
     },
     {
       "id": "q-surv-4",
-      "topicId": "survival-at-sea",
+      "topicId": "chapter-4-survival-methods",
       "prompt": "How should food and water generally be managed after abandoning ship?",
       "choices": [
         {
@@ -1815,7 +1860,7 @@
     },
     {
       "id": "q-surv-5",
-      "topicId": "survival-at-sea",
+      "topicId": "chapter-4-survival-methods",
       "prompt": "What is 'cold shock response' in cold-water immersion?",
       "choices": [
         {
@@ -1848,7 +1893,7 @@
     },
     {
       "id": "q-surv-6",
-      "topicId": "survival-at-sea",
+      "topicId": "chapter-4-survival-methods",
       "prompt": "Which best distinguishes HYPOTHERMIA from COLD SHOCK RESPONSE?",
       "choices": [
         {
@@ -1881,7 +1926,7 @@
     },
     {
       "id": "q-surv-7",
-      "topicId": "survival-at-sea",
+      "topicId": "chapter-4-survival-methods",
       "prompt": "SCENARIO: A crew member falls into cold water. In the FIRST minute, what is the most immediate danger to manage?",
       "choices": [
         {
@@ -1914,7 +1959,7 @@
     },
     {
       "id": "q-surv-8",
-      "topicId": "survival-at-sea",
+      "topicId": "chapter-4-survival-methods",
       "prompt": "Which best distinguishes IMMEDIATE survival priorities from LATER survival priorities after abandoning ship?",
       "choices": [
         {
@@ -1947,7 +1992,7 @@
     },
     {
       "id": "q-surv-9",
-      "topicId": "survival-at-sea",
+      "topicId": "chapter-4-survival-methods",
       "prompt": "SCENARIO: A person pulled from the water is conscious but shivering violently. What does this most likely indicate?",
       "choices": [
         {
@@ -1980,7 +2025,7 @@
     },
     {
       "id": "q-surv-10",
-      "topicId": "survival-at-sea",
+      "topicId": "chapter-4-survival-methods",
       "prompt": "Why do survival guidelines generally recommend minimizing movement/swimming in cold water when a flotation aid is available, rather than swimming toward a distant target?",
       "choices": [
         {
@@ -2013,7 +2058,7 @@
     },
     {
       "id": "q-surv-11",
-      "topicId": "survival-at-sea",
+      "topicId": "chapter-4-survival-methods",
       "prompt": "SCENARIO: Survivors have been in a liferaft for several hours. One insists that everyone should eat a full ration now \"in case we don't get another chance.\" What is the best response?",
       "choices": [
         {
@@ -2046,7 +2091,7 @@
     },
     {
       "id": "q-surv-12",
-      "topicId": "survival-at-sea",
+      "topicId": "chapter-4-survival-methods",
       "prompt": "Which best explains why survival guidance treats managing morale/group cohesion as a genuine survival priority, not just a 'nice to have'?",
       "choices": [
         {
@@ -2079,7 +2124,7 @@
     },
     {
       "id": "q-sig-1",
-      "topicId": "signaling",
+      "topicId": "chapter-5-signaling",
       "prompt": "What is the primary purpose of an EPIRB?",
       "choices": [
         {
@@ -2112,7 +2157,7 @@
     },
     {
       "id": "q-sig-2",
-      "topicId": "signaling",
+      "topicId": "chapter-5-signaling",
       "prompt": "What does a SART primarily help rescuers do?",
       "choices": [
         {
@@ -2145,7 +2190,7 @@
     },
     {
       "id": "q-sig-3",
-      "topicId": "signaling",
+      "topicId": "chapter-5-signaling",
       "prompt": "What is VHF radio used for in an emergency?",
       "choices": [
         {
@@ -2178,7 +2223,7 @@
     },
     {
       "id": "q-sig-4",
-      "topicId": "signaling",
+      "topicId": "chapter-5-signaling",
       "prompt": "What is the key difference between an EPIRB and a SART?",
       "choices": [
         {
@@ -2211,7 +2256,7 @@
     },
     {
       "id": "q-sig-5",
-      "topicId": "signaling",
+      "topicId": "chapter-5-signaling",
       "prompt": "What is a handheld flare primarily used for?",
       "choices": [
         {
@@ -2244,7 +2289,7 @@
     },
     {
       "id": "q-sig-6",
-      "topicId": "signaling",
+      "topicId": "chapter-5-signaling",
       "prompt": "Why is it generally recommended to use a signal mirror or flare only when a potential rescuer (vessel or aircraft) is actually visible or likely nearby, rather than continuously?",
       "choices": [
         {
@@ -2277,7 +2322,7 @@
     },
     {
       "id": "q-sig-7",
-      "topicId": "signaling",
+      "topicId": "chapter-5-signaling",
       "prompt": "What best distinguishes SIGNALING from CONSERVING ENERGY as competing survival priorities in a liferaft?",
       "choices": [
         {
@@ -2310,7 +2355,7 @@
     },
     {
       "id": "q-sig-8",
-      "topicId": "signaling",
+      "topicId": "chapter-5-signaling",
       "prompt": "SCENARIO: You are in a liferaft. A signaling device (handheld flare) is available, but visibility is poor due to fog, and no vessel or aircraft is currently visible or audible. What is the best action regarding the flare?",
       "choices": [
         {
@@ -2343,7 +2388,7 @@
     },
     {
       "id": "q-sig-9",
-      "topicId": "signaling",
+      "topicId": "chapter-5-signaling",
       "prompt": "Why might a survivor choose an audible signal (whistle, shouting) over a visual one (flare, mirror) in certain conditions?",
       "choices": [
         {
@@ -2376,7 +2421,7 @@
     },
     {
       "id": "q-sig-10",
-      "topicId": "signaling",
+      "topicId": "chapter-5-signaling",
       "prompt": "SCENARIO: Survivors hear what sounds like a distant aircraft engine but cannot see it through cloud cover. A handheld flare and a whistle are both available. What is the best combined approach?",
       "choices": [
         {
@@ -2409,7 +2454,7 @@
     },
     {
       "id": "q-sig-11",
-      "topicId": "signaling",
+      "topicId": "chapter-5-signaling",
       "prompt": "A rescue vessel is visible but appears to be moving away rather than toward the survivors. What is the best signaling response?",
       "choices": [
         {
@@ -2442,7 +2487,7 @@
     },
     {
       "id": "q-sig-12",
-      "topicId": "signaling",
+      "topicId": "chapter-5-signaling",
       "prompt": "Which best explains why signaling equipment knowledge (knowing what a flare or mirror does) is not the same as effective signaling UNDER STRESS?",
       "choices": [
         {
@@ -2475,7 +2520,7 @@
     },
     {
       "id": "q-rescue-1",
-      "topicId": "rescue",
+      "topicId": "chapter-6-being-rescued",
       "prompt": "During helicopter hoist rescue, what should survivors generally do?",
       "choices": [
         {
@@ -2508,7 +2553,7 @@
     },
     {
       "id": "q-rescue-2",
-      "topicId": "rescue",
+      "topicId": "chapter-6-being-rescued",
       "prompt": "Why should a survivor let a lowered hoist cable/basket touch the water or vessel before grabbing it?",
       "choices": [
         {
@@ -2541,7 +2586,7 @@
     },
     {
       "id": "q-rescue-3",
-      "topicId": "rescue",
+      "topicId": "chapter-6-being-rescued",
       "prompt": "Who should be considered in charge of the pace and method during a rescue operation?",
       "choices": [
         {
@@ -2574,7 +2619,7 @@
     },
     {
       "id": "q-rescue-4",
-      "topicId": "rescue",
+      "topicId": "chapter-6-being-rescued",
       "prompt": "What is a rescue basket/sling primarily used for during a vessel or helicopter rescue?",
       "choices": [
         {
@@ -2607,7 +2652,7 @@
     },
     {
       "id": "q-rescue-5",
-      "topicId": "rescue",
+      "topicId": "chapter-6-being-rescued",
       "prompt": "Why are survivors generally told not to try to help the rescue crew operate their equipment (e.g., trying to guide the hoist cable themselves)?",
       "choices": [
         {
@@ -2640,7 +2685,7 @@
     },
     {
       "id": "q-rescue-6",
-      "topicId": "rescue",
+      "topicId": "chapter-6-being-rescued",
       "prompt": "SCENARIO: A rescue swimmer enters the water and swims toward your liferaft. What should survivors do as they approach?",
       "choices": [
         {
@@ -2673,7 +2718,7 @@
     },
     {
       "id": "q-rescue-7",
-      "topicId": "rescue",
+      "topicId": "chapter-6-being-rescued",
       "prompt": "What best explains why rescue crews often ask survivors to board or be lifted one at a time, rather than all at once?",
       "choices": [
         {
@@ -2706,7 +2751,7 @@
     },
     {
       "id": "q-rescue-8",
-      "topicId": "rescue",
+      "topicId": "chapter-6-being-rescued",
       "prompt": "SCENARIO: During a helicopter hoist, the basket is lowered but begins spinning slowly due to rotor wash. What should a survivor do?",
       "choices": [
         {
@@ -2739,7 +2784,7 @@
     },
     {
       "id": "q-rescue-9",
-      "topicId": "rescue",
+      "topicId": "chapter-6-being-rescued",
       "prompt": "Why is it important for survivors to avoid touching a lowered hoist cable/basket to the raft or vessel themselves before it makes contact naturally, if instructed to let it discharge static first?",
       "choices": [
         {
@@ -2772,7 +2817,7 @@
     },
     {
       "id": "q-rescue-10",
-      "topicId": "rescue",
+      "topicId": "chapter-6-being-rescued",
       "prompt": "SCENARIO: You are being rescued by vessel (not helicopter). The rescue crew throws a heaving line that lands within reach but slightly off to your side. What should you do?",
       "choices": [
         {
@@ -2805,7 +2850,7 @@
     },
     {
       "id": "q-rescue-11",
-      "topicId": "rescue",
+      "topicId": "chapter-6-being-rescued",
       "prompt": "Which best explains why 'follow the rescue crew's instructions' remains the correct guidance even when a survivor has strong equipment knowledge (e.g., they know exactly how a hoist basket works)?",
       "choices": [
         {
@@ -2838,7 +2883,7 @@
     },
     {
       "id": "q-rescue-12",
-      "topicId": "rescue",
+      "topicId": "chapter-6-being-rescued",
       "prompt": "SCENARIO: A survivor has just been hoisted successfully into a helicopter, but a second survivor in the water starts shouting for the helicopter to also pick up a piece of floating personal luggage first. What should the rescue crew and remaining survivors prioritize?",
       "choices": [
         {

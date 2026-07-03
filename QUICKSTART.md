@@ -104,12 +104,25 @@ They were written to get a working tool in front of you quickly, but they
 have **not** been checked against your actual book, class notes, or
 instructor's slides.
 
+**Update:** the topic list (Chapter 1–6, plus Appendix A) is now aligned
+to the actual table of contents of your *Water Survival Student Manual*
+(SHLSOS Course No. 549, revised June 2024). So the topic names and
+structure you see in Topic Explorer and Learn Mode now match your real
+manual's chapters. That's as far as the alignment goes, though — we only
+have the table of contents, not the manual's full chapter text, so the
+practice **questions inside each chapter are still draft/unverified** and
+have not been checked against what each chapter actually says. Appendix A
+(Glossary/Vocabulary Review) has no practice questions yet at all, since
+we don't have the glossary text to build them from.
+
 This means:
 
 - Some questions may be too easy, too hard, or slightly off from how your
   instructor actually teaches it.
 - Some explanations may be incomplete or generic.
-- Topic coverage may not match your instructor's chapter breakdown exactly.
+- A question sitting under "Chapter 2 — Using Lifeboats" means it's about
+  lifeboats generally, not that it's been verified against that specific
+  chapter's actual text.
 
 **Please don't treat any specific question or answer as verified exam
 truth yet.** Flag anything that seems off — that's exactly how we'll fix
@@ -137,5 +150,13 @@ content is still being built out from your real material.
 - **Learning Journal is now built** (Learning Journal screen, CSV export).
   Log each tutoring session there going forward — it's seeded with a
   Session 1 entry already; add Session 2 onward as you go.
-- Next up: replace/expand placeholder content using Vinci's book, notes,
-  and instructor slides once he sends them back.
+- **Topic structure now matches the real manual's table of contents**
+  (*Water Survival Student Manual*, SHLSOS Course No. 549, revised June
+  2024): Chapter 1–6 plus Appendix A. The 84 existing draft questions
+  were remapped to the closest matching chapter — Chapter 2 ("Using
+  Lifeboats") ended up with 24 since it absorbed both the old lifeboat
+  and launching question sets, and Appendix A has zero since it's
+  glossary/reference material we don't have questions for yet.
+- Next up: replace/expand placeholder content using the manual's actual
+  chapter text, notes, and instructor slides once Vinci sends them back —
+  we still only have the table of contents, not the chapters themselves.
