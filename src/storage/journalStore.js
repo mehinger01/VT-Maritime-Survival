@@ -22,7 +22,7 @@ function seedEntries() {
         'Intake session: Vinci\'s situation, timeline, exam expectations, and goal. Built an initial topic list from the American maritime survival textbook he is working from.',
       resourcesUsed: "Vinci's course textbook (American edition)",
       notes:
-        'Focused on understanding the exam goal, timeline, and available materials before building anything. Plan going forward: build study tools targeting weak areas, deliver instruction through ScholarForge, and ask questions ranging from easy to very difficult. Goal is to get Vinci well above the 70% exam benchmark.',
+        'Focused on understanding the exam goal, timeline, and available materials before building anything. Plan going forward: build study tools targeting weak areas, deliver instruction through the Maritime Survival Study Tool, and ask questions ranging from easy to very difficult. Goal is to get Vinci well above the 70% exam benchmark.',
       studentActionItems: 'Send additional materials: class notes and instructor presentations/PowerPoints.',
       instructorQuestions: 'None yet — will surface as topic coverage expands and Vinci flags unclear content.',
       status: 'Completed',

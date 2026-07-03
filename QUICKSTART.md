@@ -1,11 +1,11 @@
-# QUICKSTART — ScholarForge Maritime Survival Study Companion
+# QUICKSTART — Maritime Survival Study Tool
 
 Hi Vinci — this is your study tool for the maritime/water survival exam.
 Here's what it is and how to use it tonight.
 
 ## 1. What this is
 
-**ScholarForge Maritime Survival** is a study companion built specifically
+**Maritime Survival Study Tool** is a study companion built specifically
 for your exam prep. It's designed to help you:
 
 - Learn from your actual course material, topic by topic
@@ -91,10 +91,11 @@ Each entry tracks:
 - Student action items and questions for the instructor
 - Status: Planned, Completed, or Needs Follow-Up
 
-Mike will keep this updated after each tutoring session. There's an
-**Export CSV** button on that screen any time you or Mike want the log
-open in Excel or Google Sheets — say, to share with an instructor or
-keep as a record of tutoring hours.
+This screen is **view-only for you** — Mike keeps it updated after each
+tutoring session, so you can always check it but won't accidentally
+change the record. There's an **Export CSV** button any time you or Mike
+want the log open in Excel or Google Sheets — say, to share with an
+instructor or keep as a record of tutoring hours.
 
 ## 7. What's placeholder content (read this before trusting any question)
 

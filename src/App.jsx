@@ -39,8 +39,8 @@ export default function App() {
   return (
     <>
       <header className="app-header">
-        <h1>{course.courseName}</h1>
-        <p>Study companion — retrieval practice, spaced review, and mastery tracking, all saved in this browser.</p>
+        <h1>Maritime Survival Study Tool</h1>
+        <p>{course.courseName} — retrieval practice, spaced review, and mastery tracking, all saved in this browser.</p>
       </header>
       <div className="app-shell">
         <nav className="app-nav">
