@@ -39,9 +39,17 @@ export function pickQuizQuestions(questions, { topicId, limit = 10 } = {}) {
   return interleaveByTopic(pool).slice(0, limit)
 }
 
+// Difficulty rank used to escalate Drill Mode toward harder questions once
+// a topic shows early success — course-agnostic, keyed by the generic
+// difficulty string content authors set per question.
+const DIFFICULTY_RANK = { easy: 1, medium: 2, hard: 3, 'very-hard': 4 }
+
 // Deep Drill: adaptive difficulty. Prioritize questions from the
 // lowest-mastery topics, biased toward ones the student has previously
 // missed, and skip hints entirely (enforced by the Drill screen, not here).
+// Within a topic, harder questions get weighted in progressively as that
+// topic's mastery climbs, so early success shifts drilling toward
+// medium/hard/very-hard rather than continuing to cycle easy recall.
 export function pickDrillQuestions(topics, questions, attempts, { limit = 10 } = {}) {
   const masteryByTopic = computeAllTopicMastery(topics, questions, attempts)
   const latest = latestAttemptPerQuestion(attempts)
@@ -51,9 +59,16 @@ export function pickDrillQuestions(topics, questions, attempts, { limit = 10 } =
     const attempt = latest.get(q.id)
     const missedBefore = attempt ? !attempt.correct : false
     const neverTried = !attempt
+    const difficultyRank = DIFFICULTY_RANK[q.difficulty] ?? 1
+
     let priority = 100 - topicMastery
     if (missedBefore) priority += 40
     if (neverTried) priority += 15
+    // Escalate toward harder tiers as mastery in this topic builds, so a
+    // topic the student has shown early success in serves progressively
+    // tougher questions instead of staying on easy recall indefinitely.
+    priority += difficultyRank * (topicMastery / 100) * 20
+
     return { q, priority }
   })
 

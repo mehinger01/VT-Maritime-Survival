@@ -102,10 +102,25 @@
       "topicId": "emergency-preparedness",
       "prompt": "What should you do immediately upon hearing the general emergency alarm?",
       "choices": [
-        { "id": "a", "text": "Proceed to your assigned muster station" },
-        { "id": "b", "text": "Wait in your cabin for further instructions", "misconception": "Confuses 'wait for instructions' with muster procedure; the alarm itself is the instruction to move." },
-        { "id": "c", "text": "Immediately jump overboard", "misconception": "Skips the entire assessment/muster phase that precedes abandoning ship." },
-        { "id": "d", "text": "Go retrieve personal belongings first", "misconception": "Prioritizes belongings over the safety procedure the alarm is signaling." }
+        {
+          "id": "a",
+          "text": "Proceed to your assigned muster station"
+        },
+        {
+          "id": "b",
+          "text": "Wait in your cabin for further instructions",
+          "misconception": "Confuses 'wait for instructions' with muster procedure; the alarm itself is the instruction to move."
+        },
+        {
+          "id": "c",
+          "text": "Immediately jump overboard",
+          "misconception": "Skips the entire assessment/muster phase that precedes abandoning ship."
+        },
+        {
+          "id": "d",
+          "text": "Go retrieve personal belongings first",
+          "misconception": "Prioritizes belongings over the safety procedure the alarm is signaling."
+        }
       ],
       "correctChoiceId": "a",
       "difficulty": "easy",
@@ -120,10 +135,25 @@
       "topicId": "emergency-preparedness",
       "prompt": "What is a muster list used for?",
       "choices": [
-        { "id": "a", "text": "Assigning specific emergency duties and stations to each person aboard" },
-        { "id": "b", "text": "Tracking meal schedules", "misconception": "Confuses muster list with an unrelated administrative list." },
-        { "id": "c", "text": "Recording cargo manifest details", "misconception": "Confuses muster list with cargo documentation." },
-        { "id": "d", "text": "Scheduling maintenance on lifeboats", "misconception": "Confuses muster list with an equipment maintenance log." }
+        {
+          "id": "a",
+          "text": "Assigning specific emergency duties and stations to each person aboard"
+        },
+        {
+          "id": "b",
+          "text": "Tracking meal schedules",
+          "misconception": "Confuses muster list with an unrelated administrative list."
+        },
+        {
+          "id": "c",
+          "text": "Recording cargo manifest details",
+          "misconception": "Confuses muster list with cargo documentation."
+        },
+        {
+          "id": "d",
+          "text": "Scheduling maintenance on lifeboats",
+          "misconception": "Confuses muster list with an equipment maintenance log."
+        }
       ],
       "correctChoiceId": "a",
       "difficulty": "easy",
@@ -138,10 +168,25 @@
       "topicId": "emergency-preparedness",
       "prompt": "Why are emergency drills practiced regularly rather than just once?",
       "choices": [
-        { "id": "a", "text": "So correct actions become automatic and reliable under real stress" },
-        { "id": "b", "text": "Because regulations require entertainment for passengers", "misconception": "Misunderstands the safety purpose of drills as entertainment." },
-        { "id": "c", "text": "To test the ship's engines", "misconception": "Confuses emergency drills with mechanical/engine testing." },
-        { "id": "d", "text": "Drills are only for new crew and never repeated", "misconception": "Incorrectly assumes drills are a one-time event." }
+        {
+          "id": "a",
+          "text": "So correct actions become automatic and reliable under real stress"
+        },
+        {
+          "id": "b",
+          "text": "Because regulations require entertainment for passengers",
+          "misconception": "Misunderstands the safety purpose of drills as entertainment."
+        },
+        {
+          "id": "c",
+          "text": "To test the ship's engines",
+          "misconception": "Confuses emergency drills with mechanical/engine testing."
+        },
+        {
+          "id": "d",
+          "text": "Drills are only for new crew and never repeated",
+          "misconception": "Incorrectly assumes drills are a one-time event."
+        }
       ],
       "correctChoiceId": "a",
       "difficulty": "medium",
@@ -152,14 +197,326 @@
       "explanation": "Repeated drills build muscle memory so that in a real emergency, people execute procedures correctly without needing to think them through from scratch under stress."
     },
     {
+      "id": "q-ep-4",
+      "topicId": "emergency-preparedness",
+      "prompt": "The standard general emergency alarm signal is made up of what pattern of blasts?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Seven or more short blasts followed by one long blast"
+        },
+        {
+          "id": "b",
+          "text": "One long continuous blast with no short blasts",
+          "misconception": "Confuses the general emergency signal with a single-tone alarm like a fire bell."
+        },
+        {
+          "id": "c",
+          "text": "Three short blasts only",
+          "misconception": "Confuses the general emergency alarm with a maneuvering/collision-avoidance whistle signal."
+        },
+        {
+          "id": "d",
+          "text": "Two long blasts spaced one minute apart",
+          "misconception": "Invents a pattern that doesn't match the standard signal and could cause it to be missed or misidentified."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "easy",
+      "hints": [
+        "It's designed to be unmistakable — short, sharp, and repeated, then one long tone.",
+        "Count: several short blasts, then a single long one."
+      ],
+      "explanation": "The general emergency alarm is seven (or more) short blasts followed by one long blast. The tempting wrong answer, a single long blast, is actually associated with other alarm types and would delay recognition that this specific signal means 'proceed to muster stations.' Misconception tested: treating all shipboard alarms as interchangeable instead of recognizing this signal's distinct pattern."
+    },
+    {
+      "id": "q-ep-5",
+      "topicId": "emergency-preparedness",
+      "prompt": "A passenger complains that a fire drill is a waste of time because 'it's only a drill.' What is the best response?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Explain that treating every drill as if it were real is exactly what makes the real response automatic and fast"
+        },
+        {
+          "id": "b",
+          "text": "Agree, and let them skip the drill since it isn't a real emergency",
+          "misconception": "Undermines the entire point of drilling and could leave that passenger unprepared and unaccounted for."
+        },
+        {
+          "id": "c",
+          "text": "Tell them drills are only for crew, not passengers",
+          "misconception": "Incorrect — passenger drills exist specifically because passengers need muster familiarity too."
+        },
+        {
+          "id": "d",
+          "text": "Tell them the drill is mandatory paperwork with no real safety purpose",
+          "misconception": "Frames a genuine safety practice as bureaucratic box-checking, which is both wrong and could reduce future compliance."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "medium",
+      "hints": [
+        "The value of a drill isn't the drill itself — it's what it trains for.",
+        "Half-hearted drills produce half-hearted real responses."
+      ],
+      "explanation": "Treating a drill exactly like the real event is what builds the automatic, low-panic response needed during an actual emergency. The tempting distractor — letting them skip it — is wrong because muster familiarity has to be built before an emergency, not looked up during one. Misconception tested: believing a drill's value lies in the drill itself rather than in the response habits it builds."
+    },
+    {
+      "id": "q-ep-6",
+      "topicId": "emergency-preparedness",
+      "prompt": "What best distinguishes emergency preparedness from emergency response?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Preparedness happens before an incident (drills, assignments, checks); response happens during and after one"
+        },
+        {
+          "id": "b",
+          "text": "They are two names for the same set of actions",
+          "misconception": "Collapses a meaningful distinction the exam and real procedures both rely on."
+        },
+        {
+          "id": "c",
+          "text": "Preparedness is the crew's job and response is the passengers' job",
+          "misconception": "Incorrectly splits the two concepts by role rather than by timing relative to the incident."
+        },
+        {
+          "id": "d",
+          "text": "Response only refers to actions taken after rescue, not during the emergency itself",
+          "misconception": "Too narrowly restricts 'response' to post-rescue actions, excluding the actual emergency handling."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "medium",
+      "hints": [
+        "Think about when each set of actions happens relative to the incident.",
+        "One is proactive and scheduled; the other is reactive and unfolding in real time."
+      ],
+      "explanation": "Preparedness (muster assignments, drills, equipment checks) happens before anything goes wrong; response (following the abandon-ship order, launching craft, administering first aid) happens during and after. The tempting wrong answer that splits duties by 'crew vs. passenger' misses that both groups have preparedness AND response roles. Misconception tested: conflating timing-based categories (before vs. during/after) with role-based categories (crew vs. passenger)."
+    },
+    {
+      "id": "q-ep-7",
+      "topicId": "emergency-preparedness",
+      "prompt": "Which of these is an example of emergency PREPAREDNESS rather than emergency RESPONSE?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Reviewing your muster station assignment during a scheduled drill"
+        },
+        {
+          "id": "b",
+          "text": "Following crew direction to your lifeboat station after an abandon-ship order",
+          "misconception": "This is a response action taken during a real unfolding incident, not preparation beforehand."
+        },
+        {
+          "id": "c",
+          "text": "Boarding a liferaft after the ship begins taking on water",
+          "misconception": "This happens during the incident itself, making it a response action, not preparedness."
+        },
+        {
+          "id": "d",
+          "text": "Treating a survivor for hypothermia after reaching the water",
+          "misconception": "This is an in-the-moment response to a developing medical emergency, not a preparedness activity."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "medium",
+      "hints": [
+        "Ask: has the incident actually started yet?",
+        "Only one of these four happens before anything has gone wrong."
+      ],
+      "explanation": "Reviewing a muster assignment during a scheduled drill happens before any real incident — that's preparedness. The other three all happen after an emergency has already started, making them response actions. Misconception tested: assuming any safety-related action counts as 'preparedness' regardless of whether an incident is already underway."
+    },
+    {
+      "id": "q-ep-8",
+      "topicId": "emergency-preparedness",
+      "prompt": "You are new crew and have not yet located your printed muster list. The general emergency alarm sounds unexpectedly. What should you do first?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Proceed immediately to the general muster area and identify yourself to crew there for direction"
+        },
+        {
+          "id": "b",
+          "text": "Search your cabin thoroughly for the printed muster list before moving",
+          "misconception": "Delays your response chasing paperwork instead of getting to a point where you can be accounted for and directed."
+        },
+        {
+          "id": "c",
+          "text": "Assume it's a false alarm since you don't have your assignment memorized yet",
+          "misconception": "Treats an unfamiliar situation as a reason to disregard a safety signal, which is backwards — unfamiliarity is a reason to move toward help, not away from it."
+        },
+        {
+          "id": "d",
+          "text": "Wait in your cabin until someone comes to find you",
+          "misconception": "Passive waiting delays being accounted for and contradicts the entire purpose of a muster response."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "hard",
+      "hints": [
+        "Not knowing your exact assignment yet doesn't mean you should stay put.",
+        "The general muster area is where you get accounted for and told what to do next."
+      ],
+      "explanation": "When you don't have your specific assignment memorized, the correct move is still to get to the general muster area quickly so you're accounted for and can be directed — not to delay looking for paperwork or wait passively. Misconception tested: believing you need complete information before you can safely act, when getting to a known assembly point is itself the correct first action."
+    },
+    {
+      "id": "q-ep-9",
+      "topicId": "emergency-preparedness",
+      "prompt": "A drill is announced overhead while you're in the middle of a task. What is the best action?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Safely secure the task so it's left in no danger, then proceed to the drill as if it were real"
+        },
+        {
+          "id": "b",
+          "text": "Finish the task completely first, since it seemed more urgent than a drill",
+          "misconception": "Substitutes personal judgment for drill protocol, exactly the habit drills are meant to train out of people."
+        },
+        {
+          "id": "c",
+          "text": "Abandon the task immediately in whatever state it's in, even if that leaves it unsafe",
+          "misconception": "Trades one safety risk for another — leaving a hazard behind is not actually faster or safer than a few seconds spent securing it."
+        },
+        {
+          "id": "d",
+          "text": "Ignore the drill since it doesn't count as a real emergency",
+          "misconception": "Defeats the purpose of drilling and could become a habit that carries over into a real emergency."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "hard",
+      "hints": [
+        "The best answer isn't 'drop everything' or 'finish everything' — it's neither extreme.",
+        "A task left in a dangerous state is its own hazard."
+      ],
+      "explanation": "The best answer threads the needle: secure the task so it isn't left as a hazard, then respond to the drill exactly as you would a real emergency. The tempting distractor — abandoning it in an unsafe state — sounds fast and compliant but actually just trades a drilled emergency for a real one. Misconception tested: assuming 'respond immediately' means 'skip every other consideration,' rather than 'don't create a new hazard on your way out.'"
+    },
+    {
+      "id": "q-ep-10",
+      "topicId": "emergency-preparedness",
+      "prompt": "Why does a muster list assign SPECIFIC individuals to specific duties, rather than letting any available person fill any role?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "So duties requiring particular training or equipment familiarity are handled by people already trained for them"
+        },
+        {
+          "id": "b",
+          "text": "So blame can be assigned to a specific person after an incident",
+          "misconception": "Reframes a safety-driven assignment system as a punitive/blame system, which is not its purpose."
+        },
+        {
+          "id": "c",
+          "text": "Because untrained people are legally forbidden from helping in any way",
+          "misconception": "Overstates the restriction — untrained people can still assist, just not perform specialized duties they haven't trained for."
+        },
+        {
+          "id": "d",
+          "text": "It doesn't matter who does what, as long as everyone moves quickly",
+          "misconception": "Ignores that speed without the right training for specialized tasks (like operating launch equipment) can itself create danger."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "hard",
+      "hints": [
+        "Some duties (like operating a davit) require training most people on board don't have.",
+        "Specific assignment avoids improvisation under stress for tasks that can't be improvised safely."
+      ],
+      "explanation": "Assigning specific people to specific duties ensures tasks requiring real training or equipment familiarity are performed by people who already have it, avoiding dangerous improvisation during a real emergency. Misconception tested: assuming general speed and effort can substitute for role-specific training under time pressure."
+    },
+    {
+      "id": "q-ep-11",
+      "topicId": "emergency-preparedness",
+      "prompt": "SCENARIO: The general alarm sounds. You are assigned as lifeboat crew, but you are currently assisting an elderly passenger who is struggling to walk. What should you do?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Continue helping the passenger toward the nearest muster point while making your way there yourself"
+        },
+        {
+          "id": "b",
+          "text": "Leave the passenger immediately to report to your lifeboat station, since duty-station reporting always comes first",
+          "misconception": "Treats 'report to your station first' as an absolute rule, when accounted-for passenger safety and moving toward assembly points are compatible with — not opposed to — reaching your duty."
+        },
+        {
+          "id": "c",
+          "text": "Tell the passenger to find their own way and that you'll check on them later",
+          "misconception": "Abandons a passenger who has already indicated they need assistance, which contradicts basic emergency-response priorities."
+        },
+        {
+          "id": "d",
+          "text": "Carry the passenger directly to a lifeboat, bypassing the muster area entirely",
+          "misconception": "Skips the accountability step (the muster area) that lets crew confirm who is where before launch decisions are made."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "very-hard",
+      "hints": [
+        "This isn't a choice between duty and helping — both are possible at once.",
+        "The trap answer sounds procedurally correct ('report to your station') but misapplies the rule."
+      ],
+      "explanation": "The best answer recognizes that assisting a vulnerable passenger toward the muster point and fulfilling your crew duty are not in conflict — you do both by escorting them there. The most tempting wrong answer treats 'report to your station' as an inflexible rule that overrides passenger safety, but that's a misapplication: your duty resumes once you're at the muster area, and getting a passenger who needs help to that same area is part of a coordinated response, not a distraction from it. Misconception tested: treating 'go straight to your assigned post' as always meaning 'without regard for someone who needs help along the way.'"
+    },
+    {
+      "id": "q-ep-12",
+      "topicId": "emergency-preparedness",
+      "prompt": "Emergency drills primarily reduce panic-driven errors during a real incident because they:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Reduce the mental effort of deciding what to do, so trained actions happen instead of improvised ones"
+        },
+        {
+          "id": "b",
+          "text": "Make people physically move faster, which is the main benefit",
+          "misconception": "Reduces the value of drilling to raw speed, missing the bigger effect on decision quality under stress."
+        },
+        {
+          "id": "c",
+          "text": "Eliminate fear responses entirely so no one feels afraid during a real emergency",
+          "misconception": "Overclaims what drilling accomplishes — fear isn't eliminated, but panic-driven mistakes are reduced."
+        },
+        {
+          "id": "d",
+          "text": "Only matter for crew, since passengers don't need to make decisions during an emergency",
+          "misconception": "Incorrectly assumes passengers have no decisions to make, when in fact they must find and follow muster procedures too."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "very-hard",
+      "hints": [
+        "It's not really about moving faster — it's about deciding faster and more correctly.",
+        "Drilling doesn't remove fear; it changes what fear-driven behavior looks like."
+      ],
+      "explanation": "The core benefit of repeated drilling is reducing the cognitive load of decision-making under stress, so trained responses take over instead of improvised, panic-driven ones. The tempting distractor about 'moving faster' captures a side effect but misses the actual mechanism — it's decision quality, not raw speed, that drilling mainly improves. Misconception tested: equating the benefit of drilling with physical speed rather than with reduced panic-driven decision errors."
+    },
+    {
       "id": "q-lb-1",
       "topicId": "lifeboats",
       "prompt": "What is a primary design requirement of a lifeboat?",
       "choices": [
-        { "id": "a", "text": "Buoyancy and stability even when partially flooded" },
-        { "id": "b", "text": "Maximum speed for racing to shore", "misconception": "Overweights speed versus the actual design priority of survivability." },
-        { "id": "c", "text": "Minimizing the number of occupants it can carry", "misconception": "Inverts the actual goal, which is adequate rated capacity." },
-        { "id": "d", "text": "Requiring no maintenance", "misconception": "No survival craft is maintenance-free; this ignores required inspection schedules." }
+        {
+          "id": "a",
+          "text": "Buoyancy and stability even when partially flooded"
+        },
+        {
+          "id": "b",
+          "text": "Maximum speed for racing to shore",
+          "misconception": "Overweights speed versus the actual design priority of survivability."
+        },
+        {
+          "id": "c",
+          "text": "Minimizing the number of occupants it can carry",
+          "misconception": "Inverts the actual goal, which is adequate rated capacity."
+        },
+        {
+          "id": "d",
+          "text": "Requiring no maintenance",
+          "misconception": "No survival craft is maintenance-free; this ignores required inspection schedules."
+        }
       ],
       "correctChoiceId": "a",
       "difficulty": "easy",
@@ -174,10 +531,25 @@
       "topicId": "lifeboats",
       "prompt": "Which of the following is typically required lifeboat equipment?",
       "choices": [
-        { "id": "a", "text": "Food, water, signaling devices, and first aid supplies" },
-        { "id": "b", "text": "Only navigation charts, nothing else", "misconception": "Underestimates the full survival equipment requirement to a single item." },
-        { "id": "c", "text": "Entertainment items only", "misconception": "Confuses survival equipment with comfort items." },
-        { "id": "d", "text": "No equipment is required if the boat is new", "misconception": "Incorrectly assumes equipment requirements depend on the boat's age." }
+        {
+          "id": "a",
+          "text": "Food, water, signaling devices, and first aid supplies"
+        },
+        {
+          "id": "b",
+          "text": "Only navigation charts, nothing else",
+          "misconception": "Underestimates the full survival equipment requirement to a single item."
+        },
+        {
+          "id": "c",
+          "text": "Entertainment items only",
+          "misconception": "Confuses survival equipment with comfort items."
+        },
+        {
+          "id": "d",
+          "text": "No equipment is required if the boat is new",
+          "misconception": "Incorrectly assumes equipment requirements depend on the boat's age."
+        }
       ],
       "correctChoiceId": "a",
       "difficulty": "easy",
@@ -192,10 +564,25 @@
       "topicId": "lifeboats",
       "prompt": "Why do lifeboat equipment lists exist at all?",
       "choices": [
-        { "id": "a", "text": "Because survival time after launch, not just flotation, must be supported" },
-        { "id": "b", "text": "To satisfy paperwork with no functional purpose", "misconception": "Dismisses safety equipment as bureaucratic rather than functional." },
-        { "id": "c", "text": "Because passengers request specific items", "misconception": "Confuses standardized safety equipment with passenger preference." },
-        { "id": "d", "text": "Only to add weight for stability", "misconception": "Misattributes the purpose of equipment to ballast rather than survival function." }
+        {
+          "id": "a",
+          "text": "Because survival time after launch, not just flotation, must be supported"
+        },
+        {
+          "id": "b",
+          "text": "To satisfy paperwork with no functional purpose",
+          "misconception": "Dismisses safety equipment as bureaucratic rather than functional."
+        },
+        {
+          "id": "c",
+          "text": "Because passengers request specific items",
+          "misconception": "Confuses standardized safety equipment with passenger preference."
+        },
+        {
+          "id": "d",
+          "text": "Only to add weight for stability",
+          "misconception": "Misattributes the purpose of equipment to ballast rather than survival function."
+        }
       ],
       "correctChoiceId": "a",
       "difficulty": "medium",
@@ -206,14 +593,326 @@
       "explanation": "A lifeboat that floats but has no food, water, or signaling equipment doesn't solve the real problem: surviving until rescue arrives. Equipment requirements address that extended survival window."
     },
     {
+      "id": "q-lb-4",
+      "topicId": "lifeboats",
+      "prompt": "What does the term 'rated capacity' mean for a lifeboat?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "The maximum number of persons the boat is certified to carry safely"
+        },
+        {
+          "id": "b",
+          "text": "The maximum speed the boat can travel",
+          "misconception": "Confuses a capacity rating with a performance/speed rating."
+        },
+        {
+          "id": "c",
+          "text": "The number of years before the boat must be replaced",
+          "misconception": "Confuses a capacity rating with an equipment lifespan or service interval."
+        },
+        {
+          "id": "d",
+          "text": "The amount of food and water stored aboard",
+          "misconception": "Confuses passenger capacity with a separate equipment/provisions inventory."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "medium",
+      "hints": [
+        "'Capacity' here refers to people, not speed or supplies.",
+        "It's the certified safe headcount for that specific craft."
+      ],
+      "explanation": "Rated capacity is the maximum number of people a lifeboat is certified to carry while remaining safely buoyant and stable. Confusing it with speed or provisions misses that it's specifically a headcount limit tied to the boat's structural and buoyancy design. Misconception tested: treating 'capacity' as a general performance spec rather than a specific safe-occupancy limit."
+    },
+    {
+      "id": "q-lb-5",
+      "topicId": "lifeboats",
+      "prompt": "Why are lifeboats typically brightly colored (often orange)?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "High-visibility color makes them easier for search and rescue to spot at sea"
+        },
+        {
+          "id": "b",
+          "text": "The color reflects sunlight to keep occupants cool",
+          "misconception": "Attributes a visibility feature to a thermal-comfort function it wasn't designed for."
+        },
+        {
+          "id": "c",
+          "text": "It indicates the manufacturer's brand, not a safety function",
+          "misconception": "Dismisses a deliberate visibility safety feature as mere branding."
+        },
+        {
+          "id": "d",
+          "text": "It has no functional purpose, only tradition",
+          "misconception": "Incorrectly treats a visibility safety measure as purely decorative or traditional."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "easy",
+      "hints": [
+        "Think about who needs to find the boat, and from how far away.",
+        "High-visibility colors serve the same purpose as safety vests or signal flares."
+      ],
+      "explanation": "High-visibility colors like orange make lifeboats easier to spot against open water from aircraft or vessels during a search, directly supporting rescue. Misconception tested: mistaking a deliberate visibility/safety design choice for decoration or an unrelated function."
+    },
+    {
+      "id": "q-lb-6",
+      "topicId": "lifeboats",
+      "prompt": "A lifeboat has been inspected and its equipment checklist signed off as complete. Does this guarantee the crew can use that equipment effectively in a real emergency?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "No — knowing equipment exists and is stocked is different from being able to use it correctly under stress"
+        },
+        {
+          "id": "b",
+          "text": "Yes — a completed checklist means the crew is automatically capable of using everything on it",
+          "misconception": "Confuses equipment presence/knowledge with trained, stress-tested proficiency using it."
+        },
+        {
+          "id": "c",
+          "text": "Yes, but only for equipment used in the last drill",
+          "misconception": "Implies partial automatic competence tied to recency, which still conflates inventory checks with skill training."
+        },
+        {
+          "id": "d",
+          "text": "No, because checklists are only about equipment expiration dates",
+          "misconception": "Understates what an equipment checklist actually verifies, which includes presence and condition, not just dates."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "medium",
+      "hints": [
+        "This is the difference between equipment KNOWLEDGE and equipment USE under stress.",
+        "A checklist confirms what's there — it doesn't confirm who can operate it calmly during a real emergency."
+      ],
+      "explanation": "A signed-off equipment checklist confirms the required items are present and in serviceable condition — it does not by itself confirm crew members can operate that equipment competently under real stress. That gap is exactly why drills, not just inspections, are required. Misconception tested: equating equipment knowledge/inventory with hands-on proficiency under pressure."
+    },
+    {
+      "id": "q-lb-7",
+      "topicId": "lifeboats",
+      "prompt": "Which best describes why lifeboats are enclosed or partially enclosed on many vessels, rather than open boats?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Enclosure protects occupants from weather, spray, and exposure over an extended survival period"
+        },
+        {
+          "id": "b",
+          "text": "It's purely to reduce the boat's manufacturing cost",
+          "misconception": "Attributes a safety design feature to a cost consideration with no supporting basis."
+        },
+        {
+          "id": "c",
+          "text": "Enclosed boats are faster than open boats",
+          "misconception": "Confuses hull enclosure with propulsion or speed characteristics."
+        },
+        {
+          "id": "d",
+          "text": "Enclosure prevents any water from ever entering the boat",
+          "misconception": "Overstates what enclosure achieves — it reduces exposure, but boats are still built to handle some water ingress and remain stable."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "medium",
+      "hints": [
+        "Think about survival time again, not just the moment of launch.",
+        "Weather and spray exposure over hours is a major factor in survivor condition."
+      ],
+      "explanation": "Enclosure primarily protects occupants from weather, wind, and spray over what could be a long wait for rescue — a direct extension of the 'survival time matters' design principle. It doesn't make the boat waterproof or faster; it manages exposure. Misconception tested: assuming full enclosure means full water exclusion, rather than reduced exposure."
+    },
+    {
+      "id": "q-lb-8",
+      "topicId": "lifeboats",
+      "prompt": "SCENARIO: While inspecting a lifeboat's equipment locker before a voyage, you notice the drinking water containers are present but nearly a year past their marked replacement date. What is the correct action?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Report it and have the water replaced before departure — expired provisions can't be relied on in an emergency"
+        },
+        {
+          "id": "b",
+          "text": "Leave it, since the containers are still physically present and the checklist only tracks presence",
+          "misconception": "Confuses 'present' with 'usable,' missing that expired provisions may not be safe or effective when actually needed."
+        },
+        {
+          "id": "c",
+          "text": "Replace the labels with new dates without replacing the water",
+          "misconception": "Falsifies safety records instead of addressing the actual problem, which is far worse than the original issue."
+        },
+        {
+          "id": "d",
+          "text": "Wait until the next scheduled inspection cycle to deal with it",
+          "misconception": "Defers a known safety gap to an arbitrary future date instead of correcting it before it could matter in a real emergency."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "hard",
+      "hints": [
+        "The goal of equipment checks is usability in a real emergency, not just presence on a list.",
+        "One of these options solves the problem; the others avoid it in different ways."
+      ],
+      "explanation": "Expired provisions should be replaced before departure — the point of carrying water is that it's reliable when actually needed, not just present in the locker. Falsifying dates or deferring the fix both leave the real safety gap in place. Misconception tested: treating an equipment checklist as satisfied by presence alone, without regard to whether the item is still fit for use."
+    },
+    {
+      "id": "q-lb-9",
+      "topicId": "lifeboats",
+      "prompt": "Two lifeboats on the same vessel have identical equipment lists but different rated capacities. What does this most likely reflect?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Differences in hull size/buoyancy design between the two boats, not a difference in equipment requirements"
+        },
+        {
+          "id": "b",
+          "text": "A mistake, since identical equipment should always mean identical capacity",
+          "misconception": "Wrongly assumes equipment list and rated capacity must scale together, when capacity is driven by hull design, not gear."
+        },
+        {
+          "id": "c",
+          "text": "The boat with less capacity must be older and due for replacement",
+          "misconception": "Introduces an assumption about age with no basis in the given information."
+        },
+        {
+          "id": "d",
+          "text": "One boat is for crew only and doesn't need to carry passengers",
+          "misconception": "Invents an unstated crew/passenger restriction not implied by a capacity difference."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "hard",
+      "hints": [
+        "Rated capacity comes from the hull's buoyancy and stability, not from what's stocked inside.",
+        "Two boats can carry the same survival kit but still safely hold different numbers of people."
+      ],
+      "explanation": "Rated capacity is a function of the boat's structural buoyancy and stability, which can differ between boats even when their equipment lists match — equipment requirements are generally about survival needs per occupant, not the hull's physical limits. Misconception tested: assuming equipment and capacity are the same kind of measurement and must move together."
+    },
+    {
+      "id": "q-lb-10",
+      "topicId": "lifeboats",
+      "prompt": "Which best captures the difference between EQUIPMENT KNOWLEDGE and CORRECT USE UNDER STRESS, using lifeboat gear as the example?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Knowing what a flare gun is and how it should work is not the same as being able to load and fire it correctly on the first try in a real, high-stress abandon-ship situation"
+        },
+        {
+          "id": "b",
+          "text": "There is no meaningful difference — if you know what a tool does, you can use it under any conditions",
+          "misconception": "Ignores the well-documented gap between conceptual knowledge and stress-tested motor skill."
+        },
+        {
+          "id": "c",
+          "text": "Correct use under stress is only a concern for powered equipment, not simple hand tools like flares",
+          "misconception": "Wrongly assumes 'simple' equipment can't be fumbled under stress, when stress affects fine motor skills broadly."
+        },
+        {
+          "id": "d",
+          "text": "Equipment knowledge matters more than practiced use, since the manual explains the steps",
+          "misconception": "Overvalues written knowledge relative to practiced, muscle-memory execution during an actual emergency."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "hard",
+      "hints": [
+        "This is the same gap tested in the checklist question, applied to a specific tool.",
+        "Stress affects fine motor skills — that's true even for 'simple' equipment."
+      ],
+      "explanation": "Being able to describe or identify a piece of equipment is not the same as being able to operate it correctly under the stress, urgency, and possibly poor visibility of a real emergency. This is exactly why practiced, hands-on drilling with actual equipment matters more than reading a manual. Misconception tested: assuming conceptual/verbal knowledge of equipment transfers automatically into reliable performance under stress."
+    },
+    {
+      "id": "q-lb-11",
+      "topicId": "lifeboats",
+      "prompt": "SCENARIO: During a drill, a crew member correctly names every item in the lifeboat's equipment locker from memory but has never physically operated the hand-cranked bilge pump. Which is the BEST assessment of this crew member's readiness?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Their equipment knowledge is solid, but their readiness gap is in hands-on operation under real conditions"
+        },
+        {
+          "id": "b",
+          "text": "They are fully ready, since naming every item correctly demonstrates complete mastery",
+          "misconception": "Treats verbal/knowledge mastery as equivalent to physical operational competence, missing the actual gap."
+        },
+        {
+          "id": "c",
+          "text": "They are not ready at all, since naming equipment items has no value",
+          "misconception": "Overcorrects by dismissing real, useful knowledge instead of identifying the specific gap that remains."
+        },
+        {
+          "id": "d",
+          "text": "Readiness can't be assessed without a written exam score",
+          "misconception": "Introduces an irrelevant assessment method not suited to a hands-on physical skill."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "very-hard",
+      "hints": [
+        "Don't treat this as all-or-nothing — identify exactly what's missing.",
+        "Naming equipment is real knowledge; it just isn't the same skill as operating it."
+      ],
+      "explanation": "The best answer avoids both overclaiming (full readiness) and overcorrecting (dismissing real knowledge): this crew member has solid equipment knowledge but a specific, identifiable gap in hands-on operation of the bilge pump under real conditions. The tempting 'fully ready' answer conflates naming items with being able to use them. Misconception tested: assuming verbal/knowledge fluency about equipment is the same competency as physically operating it under pressure."
+    },
+    {
+      "id": "q-lb-12",
+      "topicId": "lifeboats",
+      "prompt": "A lifeboat's manufacturer increases the amount of food and water it requires to carry, without changing the boat's hull or rated capacity. What does this change most directly reflect?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "An updated standard for how long occupants might need to survive before rescue, not a change in the boat's physical capacity"
+        },
+        {
+          "id": "b",
+          "text": "The boat can now safely carry more people than before",
+          "misconception": "Confuses a provisions requirement change with a structural capacity change — the two are governed separately."
+        },
+        {
+          "id": "c",
+          "text": "The hull must have been redesigned to be larger",
+          "misconception": "Assumes a provisions change implies a hull change that wasn't stated."
+        },
+        {
+          "id": "d",
+          "text": "The change is unrelated to survival planning and purely cosmetic",
+          "misconception": "Dismisses a deliberate provisions-requirement update as meaningless."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "very-hard",
+      "hints": [
+        "Separate 'how many people fit safely' from 'how long can they be sustained.'",
+        "One number is about the hull; the other is about survival planning assumptions."
+      ],
+      "explanation": "Provisions requirements and rated capacity are governed by different concerns: capacity comes from the hull's buoyancy/stability, while provisions requirements reflect assumptions about how long survivors might realistically wait for rescue. Increasing required food/water without touching the hull reflects updated survival-time planning, not a capacity or structural change. Misconception tested: assuming any equipment or provisioning change must correspond to a change in the boat's physical/structural specifications."
+    },
+    {
       "id": "q-launch-1",
       "topicId": "launching",
       "prompt": "Before launching survival craft, what should be confirmed first?",
       "choices": [
-        { "id": "a", "text": "Personnel are accounted for and the launch area is safe" },
-        { "id": "b", "text": "Food is divided equally", "misconception": "Prioritizes a post-launch survival task over pre-launch safety checks." },
-        { "id": "c", "text": "The radio is turned off", "misconception": "Turning off the radio is not a launch prerequisite and would be counterproductive." },
-        { "id": "d", "text": "All water is consumed", "misconception": "Confuses launch prep with resource consumption, which should be rationed, not exhausted." }
+        {
+          "id": "a",
+          "text": "Personnel are accounted for and the launch area is safe"
+        },
+        {
+          "id": "b",
+          "text": "Food is divided equally",
+          "misconception": "Prioritizes a post-launch survival task over pre-launch safety checks."
+        },
+        {
+          "id": "c",
+          "text": "The radio is turned off",
+          "misconception": "Turning off the radio is not a launch prerequisite and would be counterproductive."
+        },
+        {
+          "id": "d",
+          "text": "All water is consumed",
+          "misconception": "Confuses launch prep with resource consumption, which should be rationed, not exhausted."
+        }
       ],
       "correctChoiceId": "a",
       "difficulty": "easy",
@@ -228,10 +927,25 @@
       "topicId": "launching",
       "prompt": "What is a davit most closely associated with?",
       "choices": [
-        { "id": "a", "text": "Launching or handling a lifeboat" },
-        { "id": "b", "text": "Purifying drinking water", "misconception": "Confuses davit hardware with a water treatment device." },
-        { "id": "c", "text": "Sending Morse code signals", "misconception": "Confuses davit with signaling equipment." },
-        { "id": "d", "text": "Treating hypothermia", "misconception": "Confuses davit hardware with a medical treatment." }
+        {
+          "id": "a",
+          "text": "Launching or handling a lifeboat"
+        },
+        {
+          "id": "b",
+          "text": "Purifying drinking water",
+          "misconception": "Confuses davit hardware with a water treatment device."
+        },
+        {
+          "id": "c",
+          "text": "Sending Morse code signals",
+          "misconception": "Confuses davit with signaling equipment."
+        },
+        {
+          "id": "d",
+          "text": "Treating hypothermia",
+          "misconception": "Confuses davit hardware with a medical treatment."
+        }
       ],
       "correctChoiceId": "a",
       "difficulty": "easy",
@@ -246,10 +960,25 @@
       "topicId": "launching",
       "prompt": "What is the purpose of the painter line during launch?",
       "choices": [
-        { "id": "a", "text": "To keep the craft controlled and connected to the ship during launch" },
-        { "id": "b", "text": "To power the lifeboat's engine", "misconception": "Confuses a control/mooring line with a mechanical power source." },
-        { "id": "c", "text": "To purify water once aboard", "misconception": "Confuses the painter line with survival equipment unrelated to launching." },
-        { "id": "d", "text": "To transmit distress signals", "misconception": "Confuses a physical mooring line with electronic signaling equipment." }
+        {
+          "id": "a",
+          "text": "To keep the craft controlled and connected to the ship during launch"
+        },
+        {
+          "id": "b",
+          "text": "To power the lifeboat's engine",
+          "misconception": "Confuses a control/mooring line with a mechanical power source."
+        },
+        {
+          "id": "c",
+          "text": "To purify water once aboard",
+          "misconception": "Confuses the painter line with survival equipment unrelated to launching."
+        },
+        {
+          "id": "d",
+          "text": "To transmit distress signals",
+          "misconception": "Confuses a physical mooring line with electronic signaling equipment."
+        }
       ],
       "correctChoiceId": "a",
       "difficulty": "medium",
@@ -260,14 +989,326 @@
       "explanation": "The painter line is a rope that keeps the survival craft attached and controlled during and immediately after launch, preventing it from drifting away prematurely."
     },
     {
+      "id": "q-launch-4",
+      "topicId": "launching",
+      "prompt": "What is the purpose of a lifeboat's release mechanism (hook/gripes system)?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "To securely hold the boat during lowering and release it cleanly once safely in the water"
+        },
+        {
+          "id": "b",
+          "text": "To inflate the boat once it touches the water",
+          "misconception": "Confuses a mechanical hook/release system with an inflation mechanism, which lifeboats generally don't have."
+        },
+        {
+          "id": "c",
+          "text": "To purify water for occupants",
+          "misconception": "Confuses launch hardware with an unrelated survival-provisions function."
+        },
+        {
+          "id": "d",
+          "text": "To generate the general emergency alarm signal",
+          "misconception": "Confuses launch release hardware with the ship's alarm system."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "medium",
+      "hints": [
+        "Think about what has to happen at the exact moment the boat reaches the water.",
+        "It needs to let go cleanly, not before and not with people still exposed to a partial drop."
+      ],
+      "explanation": "The release mechanism holds the boat securely on its falls while being lowered and allows a clean release once it's safely waterborne. Confusing this with inflation or signaling equipment misses that it's purely mechanical launch hardware. Misconception tested: assuming most safety hardware pieces overlap in function rather than serving one distinct purpose."
+    },
+    {
+      "id": "q-launch-5",
+      "topicId": "launching",
+      "prompt": "Why is launching widely considered the highest-risk phase of an abandon-ship sequence?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Mechanical lowering, sea conditions, and timing create more opportunities for injury than floating in a completed launch"
+        },
+        {
+          "id": "b",
+          "text": "Because the water is always colder near the ship's hull",
+          "misconception": "Introduces an unsupported and irrelevant temperature claim instead of addressing the actual mechanical/procedural risks."
+        },
+        {
+          "id": "c",
+          "text": "Because passengers are required to swim during launch",
+          "misconception": "Incorrectly assumes launch always involves swimming, when craft are lowered directly to the water."
+        },
+        {
+          "id": "d",
+          "text": "It isn't actually higher risk; all phases carry equal risk",
+          "misconception": "Contradicts well-documented injury patterns showing launch as a disproportionately high-risk phase."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "easy",
+      "hints": [
+        "Think about moving mechanical parts, height, and timing all combined.",
+        "More things can go wrong here than once the boat is simply floating."
+      ],
+      "explanation": "Launching combines mechanical systems, height, sea motion, and timing, all of which create more injury opportunities than either standing at the muster station or floating in an already-launched craft. Misconception tested: assuming risk is evenly distributed across all phases of an abandon-ship sequence rather than concentrated at specific high-hazard moments."
+    },
+    {
+      "id": "q-launch-6",
+      "topicId": "launching",
+      "prompt": "SCENARIO: You are assigned to a lifeboat station and the order to abandon ship is given. The sea is choppy and the boat is swinging on its falls. What should you do?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Wait for crew direction on timing your boarding to the boat's motion, rather than jumping in in-between swings on your own judgment"
+        },
+        {
+          "id": "b",
+          "text": "Time your own jump into the boat as soon as it looks close enough",
+          "misconception": "Substitutes personal timing judgment for coordinated crew direction during a genuinely hazardous, motion-dependent boarding."
+        },
+        {
+          "id": "c",
+          "text": "Refuse to board until the sea is completely calm",
+          "misconception": "Sets an unrealistic and unsafe precondition — a rough sea during an actual emergency won't necessarily calm down, and waiting indefinitely isn't a real option."
+        },
+        {
+          "id": "d",
+          "text": "Board from the water after the boat is already lowered and moving away",
+          "misconception": "Introduces a much more dangerous boarding method than using the coordinated boarding process while still at the davit."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "medium",
+      "hints": [
+        "This is a coordinated, crew-directed process, not an individual judgment call.",
+        "Rough conditions call for more coordination, not less."
+      ],
+      "explanation": "In choppy conditions, boarding timing should be directed by crew coordinating with the boat's motion, not decided individually — rough seas are exactly when uncoordinated action is most dangerous. Misconception tested: assuming a hazardous, dynamic situation calls for faster individual action rather than more careful coordination."
+    },
+    {
+      "id": "q-launch-7",
+      "topicId": "launching",
+      "prompt": "What best distinguishes launching a LIFEBOAT from boarding a LIFERAFT?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Lifeboats are mechanically lowered by davits while occupants are typically aboard; liferafts are often deployed into the water first and then boarded, sometimes from the water itself"
+        },
+        {
+          "id": "b",
+          "text": "They are functionally identical procedures with different names",
+          "misconception": "Collapses a meaningful procedural difference — davit-lowering with occupants aboard versus deploy-then-board — into a single process."
+        },
+        {
+          "id": "c",
+          "text": "Liferafts are always launched with a davit, just like lifeboats",
+          "misconception": "Incorrectly assumes liferafts require the same mechanical lowering hardware as lifeboats."
+        },
+        {
+          "id": "d",
+          "text": "Lifeboats are boarded from the water, while liferafts are lowered with people already inside",
+          "misconception": "Reverses the typical sequence for each craft type."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "medium",
+      "hints": [
+        "Think about when people get into each craft relative to when it enters the water.",
+        "One process typically loads people first, then lowers; the other often deploys first, then loads."
+      ],
+      "explanation": "Lifeboats are typically lowered by davits with occupants already aboard, using a controlled mechanical process. Liferafts are more often released and inflated first, then boarded — sometimes directly from the water — which calls for a different set of skills (like righting a capsized raft) that lifeboat launching doesn't require. Misconception tested: treating 'getting into a survival craft' as one uniform procedure regardless of craft type."
+    },
+    {
+      "id": "q-launch-8",
+      "topicId": "launching",
+      "prompt": "During launch, a crew member notices the painter line is fouled (tangled) on a fitting as the boat nears the water. What should happen?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Alert the officer directing the launch immediately so the fouling can be cleared or the launch paused before it causes a control problem"
+        },
+        {
+          "id": "b",
+          "text": "Ignore it, since the painter line rarely matters once the boat is in the water",
+          "misconception": "Underestimates the painter line's role in keeping the boat controlled immediately after touching down."
+        },
+        {
+          "id": "c",
+          "text": "Cut the painter line immediately to prevent any possible tangling",
+          "misconception": "Removes the very line meant to keep the boat controlled and connected, potentially causing it to drift uncontrolled."
+        },
+        {
+          "id": "d",
+          "text": "Continue the launch at normal speed and deal with it after full lowering",
+          "misconception": "Delays addressing a control-line problem until after the boat may already be affected by it."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "hard",
+      "hints": [
+        "A fouled control line during a controlled lowering is worth pausing for.",
+        "Cutting it removes the tool, it doesn't solve the tangle."
+      ],
+      "explanation": "A fouled painter line during launch should be reported immediately so it can be cleared or the launch paused — it directly affects control of the boat once waterborne. Cutting it removes a needed safety line rather than fixing the actual problem. Misconception tested: assuming the fastest visible fix (cutting the line) is the same as the correct fix (clearing the fouling)."
+    },
+    {
+      "id": "q-launch-9",
+      "topicId": "launching",
+      "prompt": "Why must personnel be accounted for BEFORE launch begins, rather than counted after the boat reaches the water?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Because a missing person is far easier to locate and help while still aboard the ship than after a boat has already launched and moved away"
+        },
+        {
+          "id": "b",
+          "text": "It doesn't actually matter when the count happens, as long as it happens eventually",
+          "misconception": "Ignores that a launched boat has much less ability to search for or wait on a missing person."
+        },
+        {
+          "id": "c",
+          "text": "Counting afterward is actually more accurate since people settle into seats",
+          "misconception": "Prioritizes counting convenience over the safety reason for counting beforehand."
+        },
+        {
+          "id": "d",
+          "text": "The count is a formality with no bearing on launch safety",
+          "misconception": "Dismisses a safety-critical accountability step as procedural filler."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "hard",
+      "hints": [
+        "Think about what options you have if someone is missing — before versus after launch.",
+        "Once launched, going back for someone is far harder and riskier."
+      ],
+      "explanation": "Confirming personnel before launch means a missing person can still be searched for or waited on while options exist; after launch, the boat has limited ability to return, search, or delay. Misconception tested: assuming the timing of a safety check doesn't affect what options remain if something is wrong."
+    },
+    {
+      "id": "q-launch-10",
+      "topicId": "launching",
+      "prompt": "SCENARIO: The order to abandon ship is given. You reach your lifeboat station and notice one assigned crew member for your boat is missing. The area below is confirmed clear and the boat is ready. What should you do FIRST?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Report the missing crew member to the officer in charge of the launch before proceeding, rather than deciding alone whether to launch"
+        },
+        {
+          "id": "b",
+          "text": "Launch immediately since the area is clear and time may be limited",
+          "misconception": "Skips the accountability step in favor of speed, when reporting takes only moments and preserves the option to wait or search."
+        },
+        {
+          "id": "c",
+          "text": "Assume the missing person already boarded a different boat and proceed without reporting it",
+          "misconception": "Replaces a quick, verifiable report with an unverified assumption during a high-stakes decision."
+        },
+        {
+          "id": "d",
+          "text": "Delay the launch indefinitely on your own authority until the person is found",
+          "misconception": "Takes a unilateral decision that should be made by the officer coordinating the overall launch, who has visibility the individual boat doesn't."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "hard",
+      "hints": [
+        "This isn't a choice between 'launch now' and 'wait forever' — it's about who makes that call.",
+        "A quick report preserves options; guessing or unilateral action removes them."
+      ],
+      "explanation": "The correct first step is reporting the missing crew member to the officer coordinating the launch, who can decide whether to wait, search, or proceed with full picture of the situation — not deciding unilaterally to launch or to delay indefinitely, and not assuming the person is accounted for elsewhere without verification. Misconception tested: treating an individual boat's crew as having full authority or full information to make an abandon-ship timing decision alone."
+    },
+    {
+      "id": "q-launch-11",
+      "topicId": "launching",
+      "prompt": "Which best explains why launching procedures emphasize controlled, sequenced actions (confirm clear area → confirm personnel → release) rather than the fastest possible sequence?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Skipping or reordering safety checks to save seconds increases the chance of a launch-phase injury, which is already the highest-risk moment"
+        },
+        {
+          "id": "b",
+          "text": "The sequence exists only to satisfy inspection paperwork, not to prevent injury",
+          "misconception": "Dismisses a genuine risk-reduction sequence as bureaucratic rather than functional."
+        },
+        {
+          "id": "c",
+          "text": "Faster launches are always safer, so sequence doesn't matter as long as it's quick",
+          "misconception": "Assumes speed and safety always move together, when skipped checks during the highest-risk phase increase danger."
+        },
+        {
+          "id": "d",
+          "text": "The sequence is arbitrary and could be performed in any order with the same result",
+          "misconception": "Ignores that each check exists specifically to catch a problem before the next, less-reversible step."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "very-hard",
+      "hints": [
+        "Each step in the sequence exists to catch a specific kind of problem before it becomes unrecoverable.",
+        "This connects back to why launching is the highest-risk phase in the first place."
+      ],
+      "explanation": "The sequence (clear area, then personnel, then release) exists because each check catches a different failure mode before an irreversible action (release) happens — skipping or reordering them increases risk during what's already the highest-injury-risk phase of abandon-ship. The tempting 'faster is always safer' answer gets the tradeoff backwards for this specific phase. Misconception tested: assuming speed and safety trade off the same way in every phase, rather than recognizing launch as a phase where sequence specifically protects against irreversible mistakes."
+    },
+    {
+      "id": "q-launch-12",
+      "topicId": "launching",
+      "prompt": "A davit's mechanical release fails partway through lowering, leaving the lifeboat suspended a few feet above the water with occupants aboard. Which response best reflects correct priorities?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Occupants remain calm and seated while crew works the manual/backup release procedure, rather than attempting to jump or climb out"
+        },
+        {
+          "id": "b",
+          "text": "Occupants should jump into the water immediately rather than wait for the mechanism to be fixed",
+          "misconception": "Introduces a fall/impact hazard from height when a backup mechanical procedure is the intended fix for exactly this failure."
+        },
+        {
+          "id": "c",
+          "text": "The lifeboat should be abandoned and everyone should re-board the ship",
+          "misconception": "Assumes re-boarding the ship is safer or more available than it likely is during an abandon-ship scenario, and ignores that davits are designed with backup release procedures."
+        },
+        {
+          "id": "d",
+          "text": "Nothing can be done; occupants must wait indefinitely with no procedure available",
+          "misconception": "Incorrectly assumes there's no backup procedure, when launch equipment is specifically designed with manual overrides for this kind of failure."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "very-hard",
+      "hints": [
+        "Davit systems are designed with a backup for exactly this failure mode.",
+        "Jumping from height into the water introduces a new, avoidable hazard."
+      ],
+      "explanation": "A stuck release is a known failure mode that davit systems are built to handle via a manual/backup release procedure — the correct response is staying calm and seated while crew works that procedure, not jumping from height or assuming no fix exists. Misconception tested: assuming a mechanical failure means no safe procedure remains, when backup systems exist precisely for this scenario."
+    },
+    {
       "id": "q-raft-1",
       "topicId": "liferafts",
       "prompt": "If a liferaft capsizes, what skill may be required before boarding?",
       "choices": [
-        { "id": "a", "text": "Righting the raft" },
-        { "id": "b", "text": "Cutting all painter lines immediately", "misconception": "Cutting the painter line prematurely could cause the raft to drift away, unrelated to the righting problem." },
-        { "id": "c", "text": "Removing all flotation", "misconception": "Directly contradicts survival goals; flotation should never be removed." },
-        { "id": "d", "text": "Throwing away signaling devices", "misconception": "Confuses an unrelated and counterproductive action with the righting procedure." }
+        {
+          "id": "a",
+          "text": "Righting the raft"
+        },
+        {
+          "id": "b",
+          "text": "Cutting all painter lines immediately",
+          "misconception": "Cutting the painter line prematurely could cause the raft to drift away, unrelated to the righting problem."
+        },
+        {
+          "id": "c",
+          "text": "Removing all flotation",
+          "misconception": "Directly contradicts survival goals; flotation should never be removed."
+        },
+        {
+          "id": "d",
+          "text": "Throwing away signaling devices",
+          "misconception": "Confuses an unrelated and counterproductive action with the righting procedure."
+        }
       ],
       "correctChoiceId": "a",
       "difficulty": "easy",
@@ -282,10 +1323,25 @@
       "topicId": "liferafts",
       "prompt": "How is a capsized liferaft typically righted?",
       "choices": [
-        { "id": "a", "text": "Climb onto the CO2-bottle side and pull the righting strap to flip it over" },
-        { "id": "b", "text": "Push down on the open side underwater", "misconception": "Applies force in a way that would not flip the raft and could trap the survivor underneath." },
-        { "id": "c", "text": "Wait for the raft to right itself with no action", "misconception": "Assumes a passive outcome; most rafts require active righting by a survivor." },
-        { "id": "d", "text": "Deflate the raft and reinflate it", "misconception": "Confuses righting with deflation/reinflation, which is not the standard procedure." }
+        {
+          "id": "a",
+          "text": "Climb onto the CO2-bottle side and pull the righting strap to flip it over"
+        },
+        {
+          "id": "b",
+          "text": "Push down on the open side underwater",
+          "misconception": "Applies force in a way that would not flip the raft and could trap the survivor underneath."
+        },
+        {
+          "id": "c",
+          "text": "Wait for the raft to right itself with no action",
+          "misconception": "Assumes a passive outcome; most rafts require active righting by a survivor."
+        },
+        {
+          "id": "d",
+          "text": "Deflate the raft and reinflate it",
+          "misconception": "Confuses righting with deflation/reinflation, which is not the standard procedure."
+        }
       ],
       "correctChoiceId": "a",
       "difficulty": "medium",
@@ -300,10 +1356,25 @@
       "topicId": "liferafts",
       "prompt": "What generally triggers a liferaft to inflate?",
       "choices": [
-        { "id": "a", "text": "Release from its housing and activation of the painter line/inflation mechanism" },
-        { "id": "b", "text": "Exposure to sunlight alone", "misconception": "Incorrectly attributes inflation to an unrelated environmental trigger." },
-        { "id": "c", "text": "Manual pumping only, with no automatic option", "misconception": "Ignores that many rafts have automatic/hydrostatic release and inflation." },
-        { "id": "d", "text": "Radio signal from the bridge", "misconception": "Confuses raft inflation with remote/radio-controlled activation, which is not standard." }
+        {
+          "id": "a",
+          "text": "Release from its housing and activation of the painter line/inflation mechanism"
+        },
+        {
+          "id": "b",
+          "text": "Exposure to sunlight alone",
+          "misconception": "Incorrectly attributes inflation to an unrelated environmental trigger."
+        },
+        {
+          "id": "c",
+          "text": "Manual pumping only, with no automatic option",
+          "misconception": "Ignores that many rafts have automatic/hydrostatic release and inflation."
+        },
+        {
+          "id": "d",
+          "text": "Radio signal from the bridge",
+          "misconception": "Confuses raft inflation with remote/radio-controlled activation, which is not standard."
+        }
       ],
       "correctChoiceId": "a",
       "difficulty": "medium",
@@ -314,14 +1385,326 @@
       "explanation": "Liferafts inflate once released from their housing and the inflation mechanism (often tied to pulling the painter line) is activated, whether automatically or manually."
     },
     {
+      "id": "q-raft-4",
+      "topicId": "liferafts",
+      "prompt": "What is a hydrostatic release unit (HRU) used for on a liferaft?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "It automatically releases and can trigger inflation of the raft if the ship sinks before it's manually launched"
+        },
+        {
+          "id": "b",
+          "text": "It purifies seawater into drinking water",
+          "misconception": "Confuses a release/deployment mechanism with a water-treatment function."
+        },
+        {
+          "id": "c",
+          "text": "It powers a small motor on the raft",
+          "misconception": "Assumes the raft has propulsion equipment tied to this device, which it doesn't."
+        },
+        {
+          "id": "d",
+          "text": "It signals rescuers via radio automatically",
+          "misconception": "Confuses the release mechanism with a distress beacon function."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "easy",
+      "hints": [
+        "It's triggered by water pressure at a certain depth, not by a person.",
+        "It's a backup for when no one can manually launch the raft."
+      ],
+      "explanation": "A hydrostatic release unit uses water pressure to automatically free the raft (and can trigger inflation) if the vessel sinks before anyone manually deploys it — a critical backup, not a water, propulsion, or signaling device. Misconception tested: assuming a single piece of safety equipment must serve multiple unrelated survival functions."
+    },
+    {
+      "id": "q-raft-5",
+      "topicId": "liferafts",
+      "prompt": "Once boarded, why do liferaft occupants typically want to stay close to the canopy/covered area rather than the open edges?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "The canopy reduces exposure to wind, spray, and heat loss compared to the open edges"
+        },
+        {
+          "id": "b",
+          "text": "The canopy is purely for privacy and has no survival function",
+          "misconception": "Dismisses a functional exposure-protection feature as merely a comfort or privacy feature."
+        },
+        {
+          "id": "c",
+          "text": "Staying at the edges makes the raft more stable",
+          "misconception": "Reverses the actual concern — the canopy protects from exposure, and there's no established stability benefit to sitting at the edges."
+        },
+        {
+          "id": "d",
+          "text": "The open edges are only for signaling equipment and cannot be occupied",
+          "misconception": "Overstates a restriction — edges can be occupied, they're simply more exposed to weather."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "easy",
+      "hints": [
+        "Think back to why exposure protection matters so much at sea.",
+        "It's the same reason immersion suits and enclosed lifeboats matter."
+      ],
+      "explanation": "The canopy reduces wind, spray, and heat loss exposure, which matters because managing exposure is the top survival priority after getting aboard. Misconception tested: treating a functional exposure-protection feature (the canopy) as merely cosmetic or unrelated to survival."
+    },
+    {
+      "id": "q-raft-6",
+      "topicId": "liferafts",
+      "prompt": "What best distinguishes LAUNCHING a lifeboat from BOARDING a liferaft, in terms of the skills each requires from an average crew member or passenger?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Lifeboat launch mainly requires following a coordinated davit procedure; liferaft boarding may require individual skills like righting a capsized raft or swimming to it"
+        },
+        {
+          "id": "b",
+          "text": "Both require identical individual swimming skills",
+          "misconception": "Overstates the swimming requirement for lifeboat launch, which is normally boarded directly from the deck via davit, not swum to."
+        },
+        {
+          "id": "c",
+          "text": "Lifeboat launch requires righting skills, while liferafts never capsize",
+          "misconception": "Reverses which craft is prone to needing righting — liferafts, not davit-launched lifeboats, are the ones that can capsize and need righting."
+        },
+        {
+          "id": "d",
+          "text": "Neither requires any individual skill, since crew handle everything for both",
+          "misconception": "Understates that liferaft scenarios can require direct individual action, especially if the raft must be boarded from the water."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "very-hard",
+      "hints": [
+        "One process is coordinated and mechanical; the other can require solo physical skill.",
+        "Which craft is the one that might flip over and need righting?"
+      ],
+      "explanation": "Lifeboat launch is largely a coordinated, crew-directed mechanical process; liferaft situations can require individual skills like righting a capsized raft or swimming to and boarding it from the water, especially if it was deployed rather than boarded from the deck. Misconception tested: assuming all survival-craft boarding situations require the same skill set regardless of craft type or deployment method."
+    },
+    {
+      "id": "q-raft-7",
+      "topicId": "liferafts",
+      "prompt": "SCENARIO: You're in the water near an inflated but capsized liferaft. No one else is nearby yet. What should you do?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Locate the righting strap on the CO2-bottle side and use your body weight to flip the raft before attempting to board"
+        },
+        {
+          "id": "b",
+          "text": "Try to climb onto the capsized raft as-is without righting it",
+          "misconception": "Attempts to board an unstable, upside-down platform instead of correcting it first, risking repeated capsizing or injury."
+        },
+        {
+          "id": "c",
+          "text": "Wait in the water for other survivors before attempting anything",
+          "misconception": "Delays acting on hypothermia risk by staying in cold water longer than necessary when a solo righting procedure is possible."
+        },
+        {
+          "id": "d",
+          "text": "Deflate the raft since it capsized and is no longer usable",
+          "misconception": "Destroys a still-functional (if currently upside-down) survival craft instead of correcting its orientation."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "medium",
+      "hints": [
+        "A capsized raft is still usable — it just needs to be flipped first.",
+        "Every minute in cold water increases hypothermia risk, so acting solo (if trained) is better than waiting."
+      ],
+      "explanation": "A solo survivor should locate the righting strap and flip the raft before boarding — waiting for help prolongs cold-water exposure, and boarding it capsized or deflating it both leave you without a stable, usable craft. Misconception tested: treating a capsized (but intact) raft as unusable rather than as a raft needing one corrective step before boarding."
+    },
+    {
+      "id": "q-raft-8",
+      "topicId": "liferafts",
+      "prompt": "Why is it generally recommended to board a liferaft directly from the vessel or a lifeboat, rather than by swimming to it, whenever that option exists?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "It avoids unnecessary cold-water immersion time, which is a major survival risk"
+        },
+        {
+          "id": "b",
+          "text": "Swimming to a raft is against maritime law",
+          "misconception": "Invents a legal restriction that isn't the actual reason for the recommendation."
+        },
+        {
+          "id": "c",
+          "text": "Rafts cannot be boarded from the water under any circumstances",
+          "misconception": "Overstates the limitation — boarding from the water is possible and sometimes necessary, just not preferred when an alternative exists."
+        },
+        {
+          "id": "d",
+          "text": "It has no real safety benefit, it's just more comfortable",
+          "misconception": "Downgrades a genuine hypothermia-risk consideration to a mere comfort preference."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "medium",
+      "hints": [
+        "Every extra minute in cold water adds real risk.",
+        "This connects directly to why hypothermia is the top survival priority."
+      ],
+      "explanation": "Boarding directly avoids extra time immersed in cold water, directly reducing hypothermia risk — swimming to a raft is a real, sometimes necessary option, just not the preferred one when direct boarding is available. Misconception tested: treating exposure-time reduction as a comfort issue rather than a genuine survival-risk factor."
+    },
+    {
+      "id": "q-raft-9",
+      "topicId": "liferafts",
+      "prompt": "A liferaft has multiple ballast bags/water pockets hanging beneath it in the water. What is their purpose?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "They add stability and resist capsizing by weighting the raft's underside"
+        },
+        {
+          "id": "b",
+          "text": "They store extra drinking water for occupants",
+          "misconception": "Confuses ballast water (seawater, used for stability) with stored drinking water, which is a separate, sealed provision."
+        },
+        {
+          "id": "c",
+          "text": "They are used to slow the raft down so it doesn't drift",
+          "misconception": "Misattributes a stability feature to a drift-control function it isn't designed for."
+        },
+        {
+          "id": "d",
+          "text": "They are a manufacturing defect and should be cut away if found",
+          "misconception": "Treats a deliberate safety feature as an error to be removed, which would reduce raft stability."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "hard",
+      "hints": [
+        "They fill with seawater, not drinking water, once in the water.",
+        "Their weight underneath resists tipping."
+      ],
+      "explanation": "Ballast bags fill with seawater and hang below the raft to lower its center of gravity and resist capsizing in rough conditions — they are not a drinking water reserve and should never be cut away. Misconception tested: confusing a stability feature that uses seawater with a drinking-water storage system that must be kept separate and sealed."
+    },
+    {
+      "id": "q-raft-10",
+      "topicId": "liferafts",
+      "prompt": "SCENARIO: Several survivors are already aboard a liferaft when one more person is spotted swimming toward it, clearly exhausted. The raft is near its rated capacity. What is the best response?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Help pull them aboard — rated capacity figures typically include a safety margin, and leaving an exhausted swimmer in cold water is a more immediate danger than minor overcrowding"
+        },
+        {
+          "id": "b",
+          "text": "Refuse to let them board since the raft is at rated capacity",
+          "misconception": "Treats a capacity figure as an absolute cutoff in a life-or-death moment, when leaving someone in cold water is the greater immediate risk."
+        },
+        {
+          "id": "c",
+          "text": "Push the raft away from the swimmer to avoid exceeding capacity",
+          "misconception": "Actively endangers a survivor to preserve a capacity number, inverting the purpose of the capacity guideline."
+        },
+        {
+          "id": "d",
+          "text": "Wait to see if the swimmer can make it aboard unassisted",
+          "misconception": "Withholds help from an exhausted person when assistance is clearly needed and available."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "hard",
+      "hints": [
+        "Rated capacity is a planning guideline, not a rule to enforce against a drowning risk.",
+        "Compare the immediate risk of overcrowding versus the immediate risk of cold-water exhaustion."
+      ],
+      "explanation": "In an actual emergency, helping an exhausted swimmer aboard is the correct call — capacity figures are planning guidance with built-in margin, and leaving someone in cold water is a more urgent danger than moderate overcrowding. Misconception tested: treating a capacity number as a hard operational limit rather than a planning guideline that can be reasonably exceeded briefly to save a life."
+    },
+    {
+      "id": "q-raft-11",
+      "topicId": "liferafts",
+      "prompt": "Which best explains why liferaft righting procedure specifically directs survivors to the CO2-bottle side, rather than any side of the capsized raft?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "The CO2 bottle's weight is on that side, so climbing there and pulling the strap uses that weight as leverage to flip the raft"
+        },
+        {
+          "id": "b",
+          "text": "It doesn't matter which side; the instruction is arbitrary",
+          "misconception": "Ignores the actual mechanical reason (leverage from bottle weight) behind the specific-side instruction."
+        },
+        {
+          "id": "c",
+          "text": "The CO2 bottle side is simply the driest side to climb on",
+          "misconception": "Substitutes an irrelevant comfort factor for the actual mechanical leverage reason."
+        },
+        {
+          "id": "d",
+          "text": "Any side works equally well, but the CO2 side is chosen only for tradition",
+          "misconception": "Dismisses a functional, physics-based instruction as arbitrary custom."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "hard",
+      "hints": [
+        "Think about where the weight is concentrated on a capsized raft.",
+        "Leverage works better where there's already weight to pull against."
+      ],
+      "explanation": "The CO2 bottle's weight is mounted on that specific side, so climbing there and pulling the righting strap uses that weight as a leverage point to flip the raft — it's a specific mechanical instruction, not an arbitrary or comfort-based one. Misconception tested: assuming a specific procedural instruction is arbitrary rather than recognizing the physical/mechanical reason behind it."
+    },
+    {
+      "id": "q-raft-12",
+      "topicId": "liferafts",
+      "prompt": "SCENARIO: A liferaft has been successfully righted and boarded by several survivors, one of whom is conscious but shivering violently. Another survivor suggests removing the shivering person's wet clothing entirely and leaving them uncovered so they \"dry out faster.\" What is the BEST response?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Keep them as insulated and wind-protected as possible (dry covering if available, sheltered position); violent shivering is the body still actively generating heat, and exposing them further would accelerate heat loss"
+        },
+        {
+          "id": "b",
+          "text": "Follow the suggestion, since removing wet clothing helps drying and drying is the priority",
+          "misconception": "Correctly identifies that wet clothing is a problem but wrongly concludes that exposure (rather than insulation) is the fix — removing coverage increases heat loss from wind and evaporation."
+        },
+        {
+          "id": "c",
+          "text": "Do nothing, since violent shivering means the person is not in danger",
+          "misconception": "Misreads a warning sign as reassurance — shivering indicates significant cold stress, even though it also means the body is still responding."
+        },
+        {
+          "id": "d",
+          "text": "Have them do vigorous exercise to warm up faster",
+          "misconception": "Encourages a response that would increase blood flow to the skin and extremities, accelerating core heat loss rather than preserving it."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "very-hard",
+      "hints": [
+        "Shivering is the body's active defense against cold, not a sign of safety.",
+        "The fix for wet-and-cold is insulation and wind protection, not more exposure."
+      ],
+      "explanation": "Violent shivering means the body is still actively fighting to generate heat — the correct response is maximizing insulation and shelter from wind, not removing coverage or encouraging exercise, both of which increase heat loss. The tempting distractor about removing wet clothes has a grain of truth (wet clothing conducts heat away) but draws the wrong conclusion — the fix is dry insulation, not exposure. Misconception tested: treating shivering as either 'nothing to worry about' or as a cue to expose the person further, rather than recognizing it as an active cold-stress signal calling for more insulation."
+    },
+    {
       "id": "q-surv-1",
       "topicId": "survival-at-sea",
       "prompt": "In cold water survival, what is the major immediate danger?",
       "choices": [
-        { "id": "a", "text": "Hypothermia and loss of body heat" },
-        { "id": "b", "text": "Sunburn", "misconception": "Overweights a slower, lower-priority risk compared to acute cold exposure." },
-        { "id": "c", "text": "Hunger within minutes", "misconception": "Hunger is not an immediate life-threatening risk on the timescale of cold water immersion." },
-        { "id": "d", "text": "Seasickness only", "misconception": "Understates the severity of hypothermia by substituting a much less dangerous condition." }
+        {
+          "id": "a",
+          "text": "Hypothermia and loss of body heat"
+        },
+        {
+          "id": "b",
+          "text": "Sunburn",
+          "misconception": "Overweights a slower, lower-priority risk compared to acute cold exposure."
+        },
+        {
+          "id": "c",
+          "text": "Hunger within minutes",
+          "misconception": "Hunger is not an immediate life-threatening risk on the timescale of cold water immersion."
+        },
+        {
+          "id": "d",
+          "text": "Seasickness only",
+          "misconception": "Understates the severity of hypothermia by substituting a much less dangerous condition."
+        }
       ],
       "correctChoiceId": "a",
       "difficulty": "easy",
@@ -336,10 +1719,25 @@
       "topicId": "survival-at-sea",
       "prompt": "Why is an immersion suit used?",
       "choices": [
-        { "id": "a", "text": "To reduce heat loss and improve flotation" },
-        { "id": "b", "text": "To make swimming faster", "misconception": "Misattributes the suit's purpose to speed rather than thermal protection." },
-        { "id": "c", "text": "To replace a liferaft", "misconception": "Confuses a personal protective garment with a survival craft." },
-        { "id": "d", "text": "To signal Morse code", "misconception": "Confuses immersion suit with signaling equipment." }
+        {
+          "id": "a",
+          "text": "To reduce heat loss and improve flotation"
+        },
+        {
+          "id": "b",
+          "text": "To make swimming faster",
+          "misconception": "Misattributes the suit's purpose to speed rather than thermal protection."
+        },
+        {
+          "id": "c",
+          "text": "To replace a liferaft",
+          "misconception": "Confuses a personal protective garment with a survival craft."
+        },
+        {
+          "id": "d",
+          "text": "To signal Morse code",
+          "misconception": "Confuses immersion suit with signaling equipment."
+        }
       ],
       "correctChoiceId": "a",
       "difficulty": "easy",
@@ -354,10 +1752,25 @@
       "topicId": "survival-at-sea",
       "prompt": "After abandoning ship, what is usually a top early priority?",
       "choices": [
-        { "id": "a", "text": "Get clear of danger and account for all people" },
-        { "id": "b", "text": "Drink all water immediately", "misconception": "Water should be rationed, not consumed all at once early on." },
-        { "id": "c", "text": "Separate from the group", "misconception": "Contradicts safety-in-numbers; staying together aids rescue and mutual support." },
-        { "id": "d", "text": "Discard all equipment", "misconception": "Directly counterproductive; equipment should be retained and used deliberately." }
+        {
+          "id": "a",
+          "text": "Get clear of danger and account for all people"
+        },
+        {
+          "id": "b",
+          "text": "Drink all water immediately",
+          "misconception": "Water should be rationed, not consumed all at once early on."
+        },
+        {
+          "id": "c",
+          "text": "Separate from the group",
+          "misconception": "Contradicts safety-in-numbers; staying together aids rescue and mutual support."
+        },
+        {
+          "id": "d",
+          "text": "Discard all equipment",
+          "misconception": "Directly counterproductive; equipment should be retained and used deliberately."
+        }
       ],
       "correctChoiceId": "a",
       "difficulty": "medium",
@@ -372,10 +1785,25 @@
       "topicId": "survival-at-sea",
       "prompt": "How should food and water generally be managed after abandoning ship?",
       "choices": [
-        { "id": "a", "text": "Rationed carefully from the start, since rescue timing is uncertain" },
-        { "id": "b", "text": "Consumed freely since supplies are unlimited", "misconception": "Incorrectly assumes unlimited supply; survival craft carry only limited rations." },
-        { "id": "c", "text": "Ignored entirely until rescue arrives", "misconception": "Ignoring hydration/nutrition planning increases risk if rescue is delayed." },
-        { "id": "d", "text": "Given only to the strongest survivors", "misconception": "Contradicts standard equitable rationing practice among survivors." }
+        {
+          "id": "a",
+          "text": "Rationed carefully from the start, since rescue timing is uncertain"
+        },
+        {
+          "id": "b",
+          "text": "Consumed freely since supplies are unlimited",
+          "misconception": "Incorrectly assumes unlimited supply; survival craft carry only limited rations."
+        },
+        {
+          "id": "c",
+          "text": "Ignored entirely until rescue arrives",
+          "misconception": "Ignoring hydration/nutrition planning increases risk if rescue is delayed."
+        },
+        {
+          "id": "d",
+          "text": "Given only to the strongest survivors",
+          "misconception": "Contradicts standard equitable rationing practice among survivors."
+        }
       ],
       "correctChoiceId": "a",
       "difficulty": "medium",
@@ -386,14 +1814,293 @@
       "explanation": "Because rescue timing can't be predicted, food and especially water should be carefully rationed from the outset rather than consumed freely."
     },
     {
+      "id": "q-surv-5",
+      "topicId": "survival-at-sea",
+      "prompt": "What is 'cold shock response' in cold-water immersion?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "An immediate, involuntary reaction to sudden cold immersion — gasping and rapid breathing — in the first minute or so"
+        },
+        {
+          "id": "b",
+          "text": "Another name for hypothermia itself",
+          "misconception": "Confuses an immediate reflex response with the separate, slower process of core-temperature loss."
+        },
+        {
+          "id": "c",
+          "text": "A delayed reaction that appears only after hours in the water",
+          "misconception": "Misplaces the timing — cold shock is immediate, not delayed."
+        },
+        {
+          "id": "d",
+          "text": "A voluntary breathing technique survivors are trained to perform",
+          "misconception": "Mischaracterizes an involuntary reflex as a deliberate trained technique."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "easy",
+      "hints": [
+        "It happens in the first moments of hitting cold water, not hours later.",
+        "It's involuntary — your body reacts before you can control it."
+      ],
+      "explanation": "Cold shock is the body's immediate, involuntary reaction to sudden cold immersion — gasping, rapid breathing, and panic in roughly the first minute — which is a different hazard from hypothermia's slower core-temperature loss. Misconception tested: treating cold shock and hypothermia as the same phenomenon rather than two distinct, sequential dangers."
+    },
+    {
+      "id": "q-surv-6",
+      "topicId": "survival-at-sea",
+      "prompt": "Which best distinguishes HYPOTHERMIA from COLD SHOCK RESPONSE?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Cold shock is an immediate, involuntary reflex in the first minute; hypothermia is the gradual loss of core body temperature over a longer period"
+        },
+        {
+          "id": "b",
+          "text": "They are the same condition at different severities",
+          "misconception": "Treats two distinct physiological events (an immediate reflex vs. gradual heat loss) as one continuous condition."
+        },
+        {
+          "id": "c",
+          "text": "Hypothermia happens first, then leads to cold shock",
+          "misconception": "Reverses the actual sequence — cold shock is the immediate reaction, and hypothermia develops afterward if immersion continues."
+        },
+        {
+          "id": "d",
+          "text": "Cold shock only affects breathing, while hypothermia only affects the skin",
+          "misconception": "Both oversimplifies and misplaces the effects — hypothermia affects core body temperature and cognition, not just skin."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "very-hard",
+      "hints": [
+        "One is immediate and reflexive; the other develops over minutes to hours.",
+        "Getting the sequence right matters: which comes first?"
+      ],
+      "explanation": "Cold shock is the body's immediate reflex response to sudden cold immersion (gasping, hyperventilation, panic) in roughly the first minute. Hypothermia is the separate, slower process of core body temperature dropping over a longer period if immersion continues. Confusing the sequence or treating them as the same condition misses that they call for different immediate responses. Misconception tested: collapsing two distinct, sequential cold-water dangers into a single condition."
+    },
+    {
+      "id": "q-surv-7",
+      "topicId": "survival-at-sea",
+      "prompt": "SCENARIO: A crew member falls into cold water. In the FIRST minute, what is the most immediate danger to manage?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "The involuntary gasping/hyperventilation reflex of cold shock, which can cause inhaling water if the face goes under unexpectedly"
+        },
+        {
+          "id": "b",
+          "text": "Hypothermia-driven muscle failure",
+          "misconception": "Applies a later-stage hypothermia effect to the first minute, when cold shock's immediate breathing reflex is the more pressing first-minute danger."
+        },
+        {
+          "id": "c",
+          "text": "Dehydration",
+          "misconception": "Applies a much slower-developing concern to an acute first-minute situation."
+        },
+        {
+          "id": "d",
+          "text": "Sunburn from surface glare",
+          "misconception": "Introduces an irrelevant, low-priority risk in an acute immersion scenario."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "medium",
+      "hints": [
+        "This is the immediate reflex response, not the slower core-temperature process.",
+        "The danger in the first minute is breathing control, not muscle strength yet."
+      ],
+      "explanation": "In the first minute, the cold shock reflex — involuntary gasping and hyperventilation — is the most immediate danger, since it can cause water inhalation if a wave or submersion catches the person off guard. Hypothermia-driven muscle failure is a real risk but develops later, after continued exposure. Misconception tested: applying a later-stage hypothermia effect to the acute first-minute window, when the immediate reflex response is the priority to manage."
+    },
+    {
+      "id": "q-surv-8",
+      "topicId": "survival-at-sea",
+      "prompt": "Which best distinguishes IMMEDIATE survival priorities from LATER survival priorities after abandoning ship?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Immediate priorities focus on managing acute dangers (getting clear of the ship, cold shock, accounting for people); later priorities focus on sustaining survivors over time (rationing, signaling, morale)"
+        },
+        {
+          "id": "b",
+          "text": "There is no meaningful difference — all priorities matter equally at every moment",
+          "misconception": "Ignores that some dangers are acute and time-critical while others only matter if survival extends over hours or days."
+        },
+        {
+          "id": "c",
+          "text": "Later priorities are always more important since they determine long-term survival",
+          "misconception": "Wrongly ranks later priorities above the acute dangers that must be survived first before 'later' can even happen."
+        },
+        {
+          "id": "d",
+          "text": "Immediate priorities only apply to crew, later priorities only apply to passengers",
+          "misconception": "Incorrectly splits priorities by role rather than by timing and urgency."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "medium",
+      "hints": [
+        "Ask: what could kill someone in the first few minutes versus over the next several hours?",
+        "This is a timing-based distinction, similar to preparedness vs. response."
+      ],
+      "explanation": "Immediate priorities address acute, fast-moving dangers (getting clear of the sinking vessel, managing cold shock, accounting for people); later priorities address sustaining survivors over an uncertain wait for rescue (rationing, signaling, managing morale and exposure). Misconception tested: failing to separate time-critical acute dangers from longer-horizon sustainment tasks, which leads to misallocating attention in the first critical minutes."
+    },
+    {
+      "id": "q-surv-9",
+      "topicId": "survival-at-sea",
+      "prompt": "SCENARIO: A person pulled from the water is conscious but shivering violently. What does this most likely indicate?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Their body is still actively generating heat through shivering — a sign of significant cold stress, but one where the body's defenses are still working"
+        },
+        {
+          "id": "b",
+          "text": "They are not cold, since they are conscious and talking",
+          "misconception": "Treats consciousness as proof of being unaffected by cold, when shivering itself is clear evidence of cold stress."
+        },
+        {
+          "id": "c",
+          "text": "They are in the most severe stage of hypothermia",
+          "misconception": "Misreads an active defense response as the worst-case stage — severe hypothermia is actually marked by shivering STOPPING, not intensifying."
+        },
+        {
+          "id": "d",
+          "text": "Shivering means they should immediately do jumping jacks to generate more heat",
+          "misconception": "Encourages a response that increases blood flow to the skin/extremities, accelerating core heat loss rather than helping."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "hard",
+      "hints": [
+        "Shivering is the body's active furnace — it means the defenses are still running.",
+        "The scarier sign is when shivering STOPS, not when it's violent."
+      ],
+      "explanation": "Violent shivering shows the body is actively defending its core temperature — it indicates real cold stress, but the mechanism is still working. This is different from severe hypothermia, where shivering actually stops as the body's systems begin to fail. Misconception tested: assuming more intense shivering means more severe/dangerous hypothermia, when the reverse warning sign (shivering stopping) is actually more concerning."
+    },
+    {
+      "id": "q-surv-10",
+      "topicId": "survival-at-sea",
+      "prompt": "Why do survival guidelines generally recommend minimizing movement/swimming in cold water when a flotation aid is available, rather than swimming toward a distant target?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Swimming increases blood flow to the limbs and skin, which accelerates core heat loss compared to floating still"
+        },
+        {
+          "id": "b",
+          "text": "Swimming is forbidden by maritime regulation",
+          "misconception": "Invents a regulatory restriction instead of the actual physiological reason."
+        },
+        {
+          "id": "c",
+          "text": "Swimming has no effect on heat loss either way",
+          "misconception": "Ignores well-established physiology about circulation and heat loss during activity in cold water."
+        },
+        {
+          "id": "d",
+          "text": "Floating still is only recommended for non-swimmers",
+          "misconception": "Introduces an unsupported skill-based exception to a physiological guideline that applies regardless of swimming ability."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "hard",
+      "hints": [
+        "Think about where blood flow goes during exercise, and what that does to heat retention.",
+        "This is a physiology answer, not a rules-based one."
+      ],
+      "explanation": "Swimming or excessive movement increases blood flow to the limbs and skin, which accelerates heat loss from the body's core compared to floating as still as possible while awaiting rescue. Misconception tested: assuming activity level in cold water has no bearing on survival time, or attributing the guideline to a rule rather than physiology."
+    },
+    {
+      "id": "q-surv-11",
+      "topicId": "survival-at-sea",
+      "prompt": "SCENARIO: Survivors have been in a liferaft for several hours. One insists that everyone should eat a full ration now \"in case we don't get another chance.\" What is the best response?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Continue rationing on the planned schedule — eating fully now due to uncertainty is exactly the reasoning that rationing is designed to guard against"
+        },
+        {
+          "id": "b",
+          "text": "Agree, since an uncertain rescue timeline justifies eating everything sooner rather than later",
+          "misconception": "Uses uncertainty as a reason to abandon rationing, when uncertainty is precisely why rationing exists in the first place."
+        },
+        {
+          "id": "c",
+          "text": "Stop rationing entirely and let each person decide individually how much to eat",
+          "misconception": "Removes coordinated planning in favor of individual choice, undermining the equitable, uncertainty-driven purpose of rationing."
+        },
+        {
+          "id": "d",
+          "text": "Only ration water, since food isn't a real survival concern",
+          "misconception": "Understates food's role in sustaining survivors over a potentially long wait, even though water is the more urgent of the two."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "hard",
+      "hints": [
+        "The uncertainty argument cuts the opposite way from how it's being used here.",
+        "Rationing exists because you don't know how long you'll wait — that's not a reason to abandon it."
+      ],
+      "explanation": "The uncertainty of rescue timing is exactly why rationing exists — using that same uncertainty to justify eating everything now inverts the logic. The best response holds the line on the planned rationing schedule. Misconception tested: using the reason FOR a safety practice as if it were a reason AGAINST it."
+    },
+    {
+      "id": "q-surv-12",
+      "topicId": "survival-at-sea",
+      "prompt": "Which best explains why survival guidance treats managing morale/group cohesion as a genuine survival priority, not just a 'nice to have'?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Despair and group breakdown can lead to poor decisions (giving up on rationing, ignoring safety procedures, risky individual action) that directly reduce survival odds"
+        },
+        {
+          "id": "b",
+          "text": "Morale only affects how pleasant the experience is, not survival odds",
+          "misconception": "Understates the practical link between psychological state and the quality of survival decisions made under stress."
+        },
+        {
+          "id": "c",
+          "text": "Morale matters only for passengers, since crew are trained to ignore it",
+          "misconception": "Incorrectly assumes training makes crew immune to the decision-making effects of despair or group breakdown."
+        },
+        {
+          "id": "d",
+          "text": "Group cohesion has no bearing on rationing or safety compliance",
+          "misconception": "Ignores the well-documented link between morale/cohesion and whether survivors actually follow rationing and safety guidance."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "very-hard",
+      "hints": [
+        "Think about what happens to rationing discipline and safety compliance when a group loses hope.",
+        "This connects psychological state to concrete survival behaviors, not just comfort."
+      ],
+      "explanation": "Morale and cohesion are treated as real survival priorities because their breakdown tends to produce concrete bad outcomes — abandoning rationing discipline, ignoring safety procedures, or risky solo action — not because comfort itself is the goal. The tempting distractor treats morale as purely about how survivors feel rather than what they do as a result. Misconception tested: separating psychological state from the practical decisions it drives, when in a survival context the two are directly connected."
+    },
+    {
       "id": "q-sig-1",
       "topicId": "signaling",
       "prompt": "What is the primary purpose of an EPIRB?",
       "choices": [
-        { "id": "a", "text": "To alert search and rescue with distress and location information" },
-        { "id": "b", "text": "To steer a lifeboat", "misconception": "Confuses a signaling beacon with a steering/navigation device." },
-        { "id": "c", "text": "To inflate a liferaft", "misconception": "Confuses EPIRB with the raft's own inflation mechanism." },
-        { "id": "d", "text": "To purify drinking water", "misconception": "Confuses EPIRB with a water treatment device." }
+        {
+          "id": "a",
+          "text": "To alert search and rescue with distress and location information"
+        },
+        {
+          "id": "b",
+          "text": "To steer a lifeboat",
+          "misconception": "Confuses a signaling beacon with a steering/navigation device."
+        },
+        {
+          "id": "c",
+          "text": "To inflate a liferaft",
+          "misconception": "Confuses EPIRB with the raft's own inflation mechanism."
+        },
+        {
+          "id": "d",
+          "text": "To purify drinking water",
+          "misconception": "Confuses EPIRB with a water treatment device."
+        }
       ],
       "correctChoiceId": "a",
       "difficulty": "easy",
@@ -408,10 +2115,25 @@
       "topicId": "signaling",
       "prompt": "What does a SART primarily help rescuers do?",
       "choices": [
-        { "id": "a", "text": "Locate survivors precisely on radar once nearby" },
-        { "id": "b", "text": "Launch the lifeboat", "misconception": "Confuses SART's signaling function with a launch mechanism." },
-        { "id": "c", "text": "Prevent hypothermia", "misconception": "Confuses signaling equipment with survival/protective gear." },
-        { "id": "d", "text": "Store emergency water", "misconception": "Confuses SART with storage equipment." }
+        {
+          "id": "a",
+          "text": "Locate survivors precisely on radar once nearby"
+        },
+        {
+          "id": "b",
+          "text": "Launch the lifeboat",
+          "misconception": "Confuses SART's signaling function with a launch mechanism."
+        },
+        {
+          "id": "c",
+          "text": "Prevent hypothermia",
+          "misconception": "Confuses signaling equipment with survival/protective gear."
+        },
+        {
+          "id": "d",
+          "text": "Store emergency water",
+          "misconception": "Confuses SART with storage equipment."
+        }
       ],
       "correctChoiceId": "a",
       "difficulty": "medium",
@@ -426,10 +2148,25 @@
       "topicId": "signaling",
       "prompt": "What is VHF radio used for in an emergency?",
       "choices": [
-        { "id": "a", "text": "Direct communication with vessels and rescue authorities" },
-        { "id": "b", "text": "Starting a lifeboat engine", "misconception": "Confuses a communication device with engine controls." },
-        { "id": "c", "text": "Inflating a raft", "misconception": "Confuses VHF radio with the raft's inflation system." },
-        { "id": "d", "text": "Measuring water depth only", "misconception": "Confuses VHF radio with a depth sounder or similar instrument." }
+        {
+          "id": "a",
+          "text": "Direct communication with vessels and rescue authorities"
+        },
+        {
+          "id": "b",
+          "text": "Starting a lifeboat engine",
+          "misconception": "Confuses a communication device with engine controls."
+        },
+        {
+          "id": "c",
+          "text": "Inflating a raft",
+          "misconception": "Confuses VHF radio with the raft's inflation system."
+        },
+        {
+          "id": "d",
+          "text": "Measuring water depth only",
+          "misconception": "Confuses VHF radio with a depth sounder or similar instrument."
+        }
       ],
       "correctChoiceId": "a",
       "difficulty": "easy",
@@ -444,10 +2181,25 @@
       "topicId": "signaling",
       "prompt": "What is the key difference between an EPIRB and a SART?",
       "choices": [
-        { "id": "a", "text": "EPIRB alerts and gives approximate location over long range; SART aids precise location once rescuers are close" },
-        { "id": "b", "text": "They serve the exact same function with no difference", "misconception": "Ignores the distinct long-range vs. close-range roles of the two devices." },
-        { "id": "c", "text": "SART is for long-range alerting and EPIRB is for close-range radar", "misconception": "Reverses the actual roles of the two devices." },
-        { "id": "d", "text": "Only one of them is ever carried on survival craft", "misconception": "Incorrectly assumes the two devices are mutually exclusive rather than complementary." }
+        {
+          "id": "a",
+          "text": "EPIRB alerts and gives approximate location over long range; SART aids precise location once rescuers are close"
+        },
+        {
+          "id": "b",
+          "text": "They serve the exact same function with no difference",
+          "misconception": "Ignores the distinct long-range vs. close-range roles of the two devices."
+        },
+        {
+          "id": "c",
+          "text": "SART is for long-range alerting and EPIRB is for close-range radar",
+          "misconception": "Reverses the actual roles of the two devices."
+        },
+        {
+          "id": "d",
+          "text": "Only one of them is ever carried on survival craft",
+          "misconception": "Incorrectly assumes the two devices are mutually exclusive rather than complementary."
+        }
       ],
       "correctChoiceId": "a",
       "difficulty": "hard",
@@ -458,14 +2210,293 @@
       "explanation": "This is a classic compare-and-contrast pair: an EPIRB alerts SAR authorities to the distress and its approximate location over long range (often satellite), while a SART helps a nearby search unit precisely locate survivors on radar once already in the area."
     },
     {
+      "id": "q-sig-5",
+      "topicId": "signaling",
+      "prompt": "What is a handheld flare primarily used for?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Short-range visual signaling to alert nearby vessels or aircraft to your exact position"
+        },
+        {
+          "id": "b",
+          "text": "Long-range satellite alerting",
+          "misconception": "Confuses a short-range visual device with a long-range satellite beacon like an EPIRB."
+        },
+        {
+          "id": "c",
+          "text": "Purifying water for drinking",
+          "misconception": "Confuses a signaling device with an unrelated survival-provisions function."
+        },
+        {
+          "id": "d",
+          "text": "Powering emergency lighting inside a liferaft",
+          "misconception": "Confuses a one-time signaling device with a raft's internal lighting equipment."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "easy",
+      "hints": [
+        "Think 'nearby and visible,' not 'far away and automatic.'",
+        "It's meant to be seen, not heard or transmitted electronically."
+      ],
+      "explanation": "A handheld flare is a short-range visual signal meant to draw attention from nearby vessels or aircraft to your exact position — it isn't a long-range alerting device or a general-purpose survival tool. Misconception tested: assuming all signaling equipment serves the same long-range alerting function as an EPIRB."
+    },
+    {
+      "id": "q-sig-6",
+      "topicId": "signaling",
+      "prompt": "Why is it generally recommended to use a signal mirror or flare only when a potential rescuer (vessel or aircraft) is actually visible or likely nearby, rather than continuously?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Signaling devices are limited in number/duration, so they should be conserved for moments they can actually be seen"
+        },
+        {
+          "id": "b",
+          "text": "Continuous signaling is against maritime law",
+          "misconception": "Invents a legal restriction instead of the actual resource-conservation reason."
+        },
+        {
+          "id": "c",
+          "text": "It doesn't matter when you signal, since rescuers can see flares from any distance at any time",
+          "misconception": "Overstates the range and reliability of visual signaling devices regardless of conditions."
+        },
+        {
+          "id": "d",
+          "text": "Signal mirrors work equally well at night as flares do",
+          "misconception": "Confuses two device types with very different day/night effectiveness."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "medium",
+      "hints": [
+        "You have a limited number of flares — think about when they'll do the most good.",
+        "A flare fired when no one is around to see it is a flare you won't have later."
+      ],
+      "explanation": "Flares and similar devices are limited resources, so they're most valuable when used at a moment a rescuer can actually see them — firing them constantly wastes a limited resource on moments no one may be watching. Misconception tested: treating a limited-use signaling resource as unlimited or equally effective regardless of timing."
+    },
+    {
+      "id": "q-sig-7",
+      "topicId": "signaling",
+      "prompt": "What best distinguishes SIGNALING from CONSERVING ENERGY as competing survival priorities in a liferaft?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Signaling (waving, using devices, staying alert to spot rescuers) takes effort and attention; conserving energy means limiting unnecessary activity — the two must be balanced, not maximized simultaneously"
+        },
+        {
+          "id": "b",
+          "text": "They are the same activity and never conflict",
+          "misconception": "Ignores that active signaling (shouting, waving, watching constantly) draws on the same limited energy/attention reserves survivors need to conserve."
+        },
+        {
+          "id": "c",
+          "text": "Signaling should always take priority regardless of energy cost",
+          "misconception": "Overweights signaling in every circumstance, even when no rescuer is plausibly nearby to see or hear it."
+        },
+        {
+          "id": "d",
+          "text": "Conserving energy means never attempting to signal at all",
+          "misconception": "Overcorrects in the other direction — energy conservation doesn't mean abandoning signaling when a real opportunity arises."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "medium",
+      "hints": [
+        "Both matter — the skill is knowing when to lean toward one over the other.",
+        "Constant signaling with no one around wastes the same energy you'll need later."
+      ],
+      "explanation": "Signaling and energy conservation are both real priorities that can compete: active signaling (watching, waving, using devices) costs energy and attention, so survivors need to judge when a signaling opportunity is real versus when conserving energy for a later, more promising moment makes more sense. Misconception tested: treating these two priorities as identical, or resolving the tension by always favoring one extreme over the other."
+    },
+    {
+      "id": "q-sig-8",
+      "topicId": "signaling",
+      "prompt": "SCENARIO: You are in a liferaft. A signaling device (handheld flare) is available, but visibility is poor due to fog, and no vessel or aircraft is currently visible or audible. What is the best action regarding the flare?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Hold the flare in reserve and continue listening/watching for a rescuer, since firing it now with no one able to see it through the fog would waste a limited resource"
+        },
+        {
+          "id": "b",
+          "text": "Fire it immediately and repeatedly, since any chance of being seen is worth trying",
+          "misconception": "Ignores that fog specifically defeats visual signaling, making this close to the worst possible time to expend a limited flare."
+        },
+        {
+          "id": "c",
+          "text": "Discard the flare since it's useless in fog",
+          "misconception": "Wrongly treats a temporarily poor-visibility condition as a reason to permanently give up a resource that will regain value once conditions change or a rescuer is audible nearby."
+        },
+        {
+          "id": "d",
+          "text": "Use it only for warmth by burning it inside the raft",
+          "misconception": "Repurposes a signaling device for an unintended and hazardous use, risking fire or fumes inside an enclosed raft."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "medium",
+      "hints": [
+        "Fog defeats visual signals specifically — that changes the timing calculation.",
+        "The flare isn't worthless, it's just not useful at this specific moment."
+      ],
+      "explanation": "Fog specifically defeats visual signaling, so firing a limited flare into fog with no rescuer visible wastes it at the worst possible moment — the better move is conserving it for a moment of actual visibility or audible proximity. Misconception tested: treating 'any chance, however poor' as equivalent to a real signaling opportunity, rather than recognizing that fog specifically neutralizes this device's effectiveness."
+    },
+    {
+      "id": "q-sig-9",
+      "topicId": "signaling",
+      "prompt": "Why might a survivor choose an audible signal (whistle, shouting) over a visual one (flare, mirror) in certain conditions?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "In heavy fog or darkness where visual signals are hard to see, sound can carry and be noticed even when sightlines are poor"
+        },
+        {
+          "id": "b",
+          "text": "Audible signals always have longer range than visual ones in all conditions",
+          "misconception": "Overgeneralizes — visual signals like flares can be seen from much farther away in clear conditions than a voice or whistle can carry."
+        },
+        {
+          "id": "c",
+          "text": "Visual signals are only usable during the day",
+          "misconception": "Incorrectly excludes flares, which are specifically valuable at night for visibility."
+        },
+        {
+          "id": "d",
+          "text": "There's no reason to prefer one over the other in any condition",
+          "misconception": "Ignores that fog/darkness materially changes which signal type is more likely to be noticed."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "hard",
+      "hints": [
+        "Think about what fog blocks versus what it doesn't block as effectively.",
+        "The right signal type depends on the specific condition, not a fixed ranking."
+      ],
+      "explanation": "In heavy fog or very low visibility, sound can reach a nearby rescuer even when they couldn't see a flare or mirror at that distance — the choice of signal type should adapt to conditions rather than always defaulting to the same device. Misconception tested: assuming one signal type is universally superior rather than recognizing that different conditions favor different signal types."
+    },
+    {
+      "id": "q-sig-10",
+      "topicId": "signaling",
+      "prompt": "SCENARIO: Survivors hear what sounds like a distant aircraft engine but cannot see it through cloud cover. A handheld flare and a whistle are both available. What is the best combined approach?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Use the whistle/audible signal immediately since sound may carry through cloud cover, and hold the flare in reserve in case the aircraft becomes visible"
+        },
+        {
+          "id": "b",
+          "text": "Fire the flare immediately since it's the stronger signal overall",
+          "misconception": "Applies a general 'stronger signal' rule without accounting for cloud cover specifically defeating visual signals, wasting the flare on a moment it likely can't be seen."
+        },
+        {
+          "id": "c",
+          "text": "Do nothing until the aircraft is directly overhead and visible",
+          "misconception": "Passively waits through a real opportunity to be heard, when an audible signal doesn't require visual line of sight."
+        },
+        {
+          "id": "d",
+          "text": "Use both signals simultaneously and continuously regardless of the aircraft's position",
+          "misconception": "Wastes the limited flare resource on a moment where cloud cover likely prevents it from being seen, rather than saving it for when visibility might improve."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "hard",
+      "hints": [
+        "One signal type is defeated by cloud cover; the other isn't.",
+        "Save the limited resource for the moment it's more likely to work."
+      ],
+      "explanation": "Sound can travel through cloud cover in a way visual signals can't, so the audible signal is the better immediate choice, while the flare — a limited resource that clouds would likely block from view — is better held in reserve for a moment of actual visibility. Misconception tested: applying a fixed 'strongest signal wins' rule instead of matching signal choice to the specific condition (cloud cover) actually present."
+    },
+    {
+      "id": "q-sig-11",
+      "topicId": "signaling",
+      "prompt": "A rescue vessel is visible but appears to be moving away rather than toward the survivors. What is the best signaling response?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Escalate to the strongest available signal (flare if daylight/fog permits visibility, or any high-intensity option) to try to catch their attention before they move further away"
+        },
+        {
+          "id": "b",
+          "text": "Assume they've already seen you and there's nothing more to do",
+          "misconception": "Gives up on an active opportunity based on an unconfirmed assumption that you've already been spotted."
+        },
+        {
+          "id": "c",
+          "text": "Save all signaling devices for a closer approach, since this one seems to be leaving anyway",
+          "misconception": "Treats a fading opportunity as not worth using resources on, when this may be the best chance available if no other vessel is expected soon."
+        },
+        {
+          "id": "d",
+          "text": "Wait passively, since firing a flare at a distant, moving-away vessel is not worth attempting",
+          "misconception": "Discounts a real, if imperfect, chance to be noticed before the opportunity is gone entirely."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "very-hard",
+      "hints": [
+        "A fading opportunity is still an opportunity, and it may be your best one for a while.",
+        "This is a case where escalating, not conserving, is the better call."
+      ],
+      "explanation": "When a potential rescuer appears to be moving away, escalating to the strongest available signal is usually worth it — this may be the best chance available for some time, and assuming you've already been seen or saving resources for a 'better' moment risks losing a real opportunity. Misconception tested: applying a general 'conserve resources' instinct even in a moment that specifically calls for escalation because the opportunity is actively fading."
+    },
+    {
+      "id": "q-sig-12",
+      "topicId": "signaling",
+      "prompt": "Which best explains why signaling equipment knowledge (knowing what a flare or mirror does) is not the same as effective signaling UNDER STRESS?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Under stress, survivors may fumble device operation, misjudge timing, or panic-fire limited resources — skills that require practiced familiarity, not just knowing what the device is"
+        },
+        {
+          "id": "b",
+          "text": "There is no difference; if you know what a device does, you can use it correctly under any conditions",
+          "misconception": "Repeats the equipment-knowledge-vs-stressed-use misconception seen elsewhere in the course, applied here to signaling gear specifically."
+        },
+        {
+          "id": "c",
+          "text": "Signaling devices are too simple to be affected by stress or panic",
+          "misconception": "Wrongly assumes 'simple' devices are immune to stress-driven fumbling or poor timing judgment."
+        },
+        {
+          "id": "d",
+          "text": "This distinction only matters for radios, not visual signals like flares",
+          "misconception": "Arbitrarily excludes visual signaling devices from a stress-performance gap that applies broadly to equipment use under pressure."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "very-hard",
+      "hints": [
+        "This is the same equipment-knowledge-vs-stressed-use gap seen with lifeboat equipment, applied to signaling.",
+        "Panic can affect timing and judgment even with 'simple' devices."
+      ],
+      "explanation": "Knowing what a flare or mirror is meant to do doesn't guarantee calm, correctly-timed use of it during a real emergency — stress can cause fumbling, premature firing, or missed opportunities, which is why practiced familiarity (not just conceptual knowledge) matters. Misconception tested: assuming equipment simplicity or conceptual familiarity is sufficient for reliable performance under real stress."
+    },
+    {
       "id": "q-rescue-1",
       "topicId": "rescue",
       "prompt": "During helicopter hoist rescue, what should survivors generally do?",
       "choices": [
-        { "id": "a", "text": "Follow rescue crew instructions and avoid unsafe contact with equipment" },
-        { "id": "b", "text": "Jump toward the helicopter", "misconception": "Introduces unnecessary risk instead of waiting for controlled equipment lowering." },
-        { "id": "c", "text": "Tie the cable to the raft permanently", "misconception": "Could endanger the raft/survivors and the helicopter; rescue crews control cable attachment." },
-        { "id": "d", "text": "Ignore the rescue swimmer", "misconception": "Contradicts the core principle that the rescue crew directs the recovery." }
+        {
+          "id": "a",
+          "text": "Follow rescue crew instructions and avoid unsafe contact with equipment"
+        },
+        {
+          "id": "b",
+          "text": "Jump toward the helicopter",
+          "misconception": "Introduces unnecessary risk instead of waiting for controlled equipment lowering."
+        },
+        {
+          "id": "c",
+          "text": "Tie the cable to the raft permanently",
+          "misconception": "Could endanger the raft/survivors and the helicopter; rescue crews control cable attachment."
+        },
+        {
+          "id": "d",
+          "text": "Ignore the rescue swimmer",
+          "misconception": "Contradicts the core principle that the rescue crew directs the recovery."
+        }
       ],
       "correctChoiceId": "a",
       "difficulty": "easy",
@@ -480,10 +2511,25 @@
       "topicId": "rescue",
       "prompt": "Why should a survivor let a lowered hoist cable/basket touch the water or vessel before grabbing it?",
       "choices": [
-        { "id": "a", "text": "To discharge built-up static electricity safely" },
-        { "id": "b", "text": "To clean the equipment", "misconception": "Confuses the static discharge safety step with an unrelated cleaning purpose." },
-        { "id": "c", "text": "To test if the cable is strong enough", "misconception": "Misattributes the reason to a strength test rather than an electrical safety measure." },
-        { "id": "d", "text": "It is not necessary and can be skipped", "misconception": "Incorrectly dismisses an important safety precaution." }
+        {
+          "id": "a",
+          "text": "To discharge built-up static electricity safely"
+        },
+        {
+          "id": "b",
+          "text": "To clean the equipment",
+          "misconception": "Confuses the static discharge safety step with an unrelated cleaning purpose."
+        },
+        {
+          "id": "c",
+          "text": "To test if the cable is strong enough",
+          "misconception": "Misattributes the reason to a strength test rather than an electrical safety measure."
+        },
+        {
+          "id": "d",
+          "text": "It is not necessary and can be skipped",
+          "misconception": "Incorrectly dismisses an important safety precaution."
+        }
       ],
       "correctChoiceId": "a",
       "difficulty": "hard",
@@ -498,10 +2544,25 @@
       "topicId": "rescue",
       "prompt": "Who should be considered in charge of the pace and method during a rescue operation?",
       "choices": [
-        { "id": "a", "text": "The rescue crew" },
-        { "id": "b", "text": "The most senior survivor", "misconception": "Incorrectly assigns rescue authority to a survivor rather than the trained rescue team." },
-        { "id": "c", "text": "Whoever reaches the equipment first", "misconception": "Assumes rescue coordination is first-come-first-served rather than crew-directed." },
-        { "id": "d", "text": "No one; each person acts independently", "misconception": "Contradicts the coordinated, crew-led nature of rescue operations." }
+        {
+          "id": "a",
+          "text": "The rescue crew"
+        },
+        {
+          "id": "b",
+          "text": "The most senior survivor",
+          "misconception": "Incorrectly assigns rescue authority to a survivor rather than the trained rescue team."
+        },
+        {
+          "id": "c",
+          "text": "Whoever reaches the equipment first",
+          "misconception": "Assumes rescue coordination is first-come-first-served rather than crew-directed."
+        },
+        {
+          "id": "d",
+          "text": "No one; each person acts independently",
+          "misconception": "Contradicts the coordinated, crew-led nature of rescue operations."
+        }
       ],
       "correctChoiceId": "a",
       "difficulty": "medium",
@@ -510,6 +2571,303 @@
         "The trained team lowering equipment or approaching by vessel directs the process."
       ],
       "explanation": "The rescue crew directs the pace and method of any rescue operation; survivors should follow their lead rather than acting independently."
+    },
+    {
+      "id": "q-rescue-4",
+      "topicId": "rescue",
+      "prompt": "What is a rescue basket/sling primarily used for during a vessel or helicopter rescue?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Safely lifting or transferring a survivor to the rescue vessel or aircraft"
+        },
+        {
+          "id": "b",
+          "text": "Storing food and water for survivors",
+          "misconception": "Confuses a personnel-transfer device with a provisions-storage container."
+        },
+        {
+          "id": "c",
+          "text": "Generating a distress signal",
+          "misconception": "Confuses rescue-transfer hardware with signaling equipment."
+        },
+        {
+          "id": "d",
+          "text": "Righting a capsized liferaft",
+          "misconception": "Confuses a rescue-lift device with the raft's own righting strap system."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "easy",
+      "hints": [
+        "It's about moving a person, not storing or signaling anything.",
+        "Think of it as the 'elevator' from the water or deck to the rescuer."
+      ],
+      "explanation": "A rescue basket or sling is used to safely lift or transfer a survivor to a rescue vessel or aircraft — it's not related to provisions, signaling, or raft-righting equipment. Misconception tested: assuming all emergency-related equipment overlaps in function rather than serving one specific purpose."
+    },
+    {
+      "id": "q-rescue-5",
+      "topicId": "rescue",
+      "prompt": "Why are survivors generally told not to try to help the rescue crew operate their equipment (e.g., trying to guide the hoist cable themselves)?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Well-intentioned but untrained interference can create unpredictable movements or hazards for both the survivor and the rescue crew"
+        },
+        {
+          "id": "b",
+          "text": "Survivors are physically incapable of touching rescue equipment",
+          "misconception": "Overstates the restriction as a physical impossibility rather than a safety/coordination guideline."
+        },
+        {
+          "id": "c",
+          "text": "It is against the rescue crew's personal preference only, with no safety basis",
+          "misconception": "Downgrades a genuine safety coordination principle to a matter of personal preference."
+        },
+        {
+          "id": "d",
+          "text": "Helping is encouraged as long as the survivor feels confident",
+          "misconception": "Contradicts the core principle that the trained rescue crew, not survivor confidence, should determine what actions are taken."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "easy",
+      "hints": [
+        "This connects to the same 'equipment knowledge vs. trained use under stress' idea seen elsewhere.",
+        "Untrained help with specialized equipment can create new hazards instead of solving problems."
+      ],
+      "explanation": "Untrained interference with rescue equipment — even well-meaning — can create unpredictable movement or new hazards, since the rescue crew is specifically trained to operate it safely and predictably. Misconception tested: assuming confidence or good intentions substitute for trained, coordinated equipment operation."
+    },
+    {
+      "id": "q-rescue-6",
+      "topicId": "rescue",
+      "prompt": "SCENARIO: A rescue swimmer enters the water and swims toward your liferaft. What should survivors do as they approach?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Stay calm, remain visible, and follow the rescue swimmer's specific instructions once they arrive"
+        },
+        {
+          "id": "b",
+          "text": "Swim out to meet the rescue swimmer partway to save them time",
+          "misconception": "Adds unnecessary cold-water exposure and reduces the rescue swimmer's control over a coordinated approach."
+        },
+        {
+          "id": "c",
+          "text": "Have the most able-bodied survivor take charge of directing the rescue swimmer",
+          "misconception": "Assigns rescue coordination authority to an untrained survivor instead of the trained rescue professional."
+        },
+        {
+          "id": "d",
+          "text": "Ignore the rescue swimmer until the full rescue vessel arrives",
+          "misconception": "Disregards the qualified rescuer already present and able to begin coordinated assistance."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "medium",
+      "hints": [
+        "The rescue swimmer is trained specifically for this approach — let them lead it.",
+        "Unnecessary movement toward them adds risk without adding benefit."
+      ],
+      "explanation": "Survivors should stay calm, stay visible, and follow the rescue swimmer's specific instructions once they arrive — swimming out to meet them or trying to direct the rescue independently both undermine a process the rescue swimmer is specifically trained to lead. Misconception tested: assuming survivor initiative speeds up a rescue, when it often removes the rescuer's ability to control a coordinated approach."
+    },
+    {
+      "id": "q-rescue-7",
+      "topicId": "rescue",
+      "prompt": "What best explains why rescue crews often ask survivors to board or be lifted one at a time, rather than all at once?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "It allows the crew to control weight distribution, timing, and safety checks for each person rather than managing multiple simultaneous transfers"
+        },
+        {
+          "id": "b",
+          "text": "It's simply faster to do it one at a time",
+          "misconception": "Gets the reasoning backwards — one-at-a-time transfer is about control and safety, not raw speed."
+        },
+        {
+          "id": "c",
+          "text": "Group transfers are against maritime tradition, not a safety matter",
+          "misconception": "Reframes a safety-driven procedure as an arbitrary tradition."
+        },
+        {
+          "id": "d",
+          "text": "It only matters for helicopter rescues, not vessel-based rescues",
+          "misconception": "Incorrectly limits a general coordination principle to only one type of rescue method."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "medium",
+      "hints": [
+        "Think about what could go wrong if several transfers were attempted simultaneously.",
+        "This is about control and safety margins, not speed."
+      ],
+      "explanation": "Sequential transfer lets the rescue crew control weight distribution, timing, and individual safety checks — attempting several transfers simultaneously would multiply the things that could go wrong at once. Misconception tested: assuming a safety-driven sequencing choice is really about speed or tradition rather than risk control."
+    },
+    {
+      "id": "q-rescue-8",
+      "topicId": "rescue",
+      "prompt": "SCENARIO: During a helicopter hoist, the basket is lowered but begins spinning slowly due to rotor wash. What should a survivor do?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Wait for the rescue crew's guidance and let the basket stabilize or be guided by them rather than grabbing at it while it's spinning"
+        },
+        {
+          "id": "b",
+          "text": "Grab the basket as quickly as possible regardless of its motion to end the wait sooner",
+          "misconception": "Introduces a hazard by grabbing unstable, moving equipment instead of waiting for it to be controlled or guided."
+        },
+        {
+          "id": "c",
+          "text": "Signal the helicopter to leave and try a vessel-based rescue instead",
+          "misconception": "Abandons an active, appropriate rescue method over a normal and typically manageable equipment behavior."
+        },
+        {
+          "id": "d",
+          "text": "Try to stop the spinning by grabbing the cable above the basket",
+          "misconception": "Introduces a new hazard by grabbing the cable itself instead of waiting for the crew-directed basket approach."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "hard",
+      "hints": [
+        "Spinning from rotor wash is a normal, generally manageable occurrence, not an emergency in itself.",
+        "The rescue crew, not the survivor, should manage the equipment's motion."
+      ],
+      "explanation": "Basket spin from rotor wash is a common and typically manageable occurrence — the correct response is waiting for the rescue crew's guidance rather than grabbing at moving equipment or trying to intervene directly, both of which introduce new hazards. Misconception tested: treating a normal, expected equipment behavior as a crisis requiring survivor-initiated correction."
+    },
+    {
+      "id": "q-rescue-9",
+      "topicId": "rescue",
+      "prompt": "Why is it important for survivors to avoid touching a lowered hoist cable/basket to the raft or vessel themselves before it makes contact naturally, if instructed to let it discharge static first?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Deliberately forcing contact defeats the purpose of the static-discharge precaution, potentially exposing someone to a shock at the moment of contact"
+        },
+        {
+          "id": "b",
+          "text": "It doesn't matter who initiates contact, as long as it happens quickly",
+          "misconception": "Ignores the specific safety reason (static discharge) behind waiting for natural contact."
+        },
+        {
+          "id": "c",
+          "text": "Touching it early makes the hoist operate faster",
+          "misconception": "Invents a speed benefit that has no basis and ignores the actual electrical safety concern."
+        },
+        {
+          "id": "d",
+          "text": "This precaution only applies to metal rafts, not inflatable ones",
+          "misconception": "Incorrectly limits a general electrical safety precaution to a specific raft material."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "medium",
+      "hints": [
+        "This connects back to why letting the equipment touch the water/vessel first matters in the first place.",
+        "Forcing early contact undermines the exact precaution being taken."
+      ],
+      "explanation": "The static-discharge precaution exists so any built-up charge dissipates before a person touches the equipment — deliberately forcing early contact defeats that purpose and risks exposing someone to the very shock the precaution is meant to prevent. Misconception tested: treating a specific electrical-safety precaution as a flexible suggestion rather than a sequence that has to happen in order to work."
+    },
+    {
+      "id": "q-rescue-10",
+      "topicId": "rescue",
+      "prompt": "SCENARIO: You are being rescued by vessel (not helicopter). The rescue crew throws a heaving line that lands within reach but slightly off to your side. What should you do?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Reach for and secure the line as instructed, without leaving the raft or swimming toward the vessel independently"
+        },
+        {
+          "id": "b",
+          "text": "Jump into the water and swim to the vessel directly since the line missed its mark",
+          "misconception": "Introduces unnecessary cold-water exposure and independent action instead of using the line as intended."
+        },
+        {
+          "id": "c",
+          "text": "Wait for a second throw before attempting to reach the first line",
+          "misconception": "Passively ignores a usable line that's already within reach, wasting a real opportunity."
+        },
+        {
+          "id": "d",
+          "text": "Ask the vessel to come alongside directly instead of using a line",
+          "misconception": "Substitutes an unrequested alternative approach for the coordinated method already in progress, which may not be safe or possible given sea conditions."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "hard",
+      "hints": [
+        "A line 'within reach' is still usable — don't discount it because it wasn't a perfect throw.",
+        "The safest path stays connected to the coordinated process already underway."
+      ],
+      "explanation": "A heaving line landing within reach is still usable — the correct response is securing it as instructed rather than abandoning the raft to swim independently or waiting for a 'better' throw that may not come. Misconception tested: treating an imperfect but usable rescue attempt as a failure requiring independent action instead of simply using what's actually within reach."
+    },
+    {
+      "id": "q-rescue-11",
+      "topicId": "rescue",
+      "prompt": "Which best explains why 'follow the rescue crew's instructions' remains the correct guidance even when a survivor has strong equipment knowledge (e.g., they know exactly how a hoist basket works)?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "The rescue crew has real-time situational awareness (wind, aircraft/vessel positioning, timing) that an individual survivor cannot have from their position"
+        },
+        {
+          "id": "b",
+          "text": "Survivor equipment knowledge is always wrong and should be disregarded entirely",
+          "misconception": "Overcorrects by dismissing real knowledge instead of identifying the actual reason coordination still matters."
+        },
+        {
+          "id": "c",
+          "text": "It's simply a matter of protocol with no practical safety basis",
+          "misconception": "Downgrades a genuine coordination/safety reason to an arbitrary rule."
+        },
+        {
+          "id": "d",
+          "text": "Once a survivor understands the equipment, they should take over directing their own rescue",
+          "misconception": "Confuses equipment knowledge with situational authority — knowing how a tool works doesn't provide the real-time coordination picture the rescue crew has."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "very-hard",
+      "hints": [
+        "This isn't about whether the survivor's knowledge is correct — it's about who has the bigger picture in the moment.",
+        "Equipment knowledge and situational/coordination authority are two different things."
+      ],
+      "explanation": "Even a survivor with accurate equipment knowledge lacks the rescue crew's real-time situational picture — wind conditions, positioning, timing relative to other hazards — which is why following their direction remains correct regardless of the survivor's individual technical knowledge. The tempting distractor assumes equipment knowledge should translate into decision-making authority, which conflates two different kinds of expertise. Misconception tested: assuming technical/equipment knowledge is equivalent to situational command authority during a live rescue."
+    },
+    {
+      "id": "q-rescue-12",
+      "topicId": "rescue",
+      "prompt": "SCENARIO: A survivor has just been hoisted successfully into a helicopter, but a second survivor in the water starts shouting for the helicopter to also pick up a piece of floating personal luggage first. What should the rescue crew and remaining survivors prioritize?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Continue prioritizing survivor recovery in sequence; personal property is not retrieved ahead of remaining people still in danger"
+        },
+        {
+          "id": "b",
+          "text": "Retrieve the luggage first since it was specifically requested",
+          "misconception": "Prioritizes a personal-property request over the safety of people still in the water, inverting the actual priority order."
+        },
+        {
+          "id": "c",
+          "text": "Let the survivors vote on what to prioritize next",
+          "misconception": "Introduces an inappropriate decision-making process during a time-critical rescue that the trained crew should be directing."
+        },
+        {
+          "id": "d",
+          "text": "Pause the rescue entirely until the disagreement is resolved",
+          "misconception": "Halts an active rescue over a non-safety-critical disagreement, increasing risk to people still in the water."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "very-hard",
+      "hints": [
+        "This is a straightforward priority question once you strip away the distraction.",
+        "People in danger always come before property, no matter how the request is phrased."
+      ],
+      "explanation": "Rescue priority always keeps people who remain in danger ahead of retrieving property, no matter how the request is framed — the rescue crew should continue survivor recovery in sequence rather than pausing, voting, or diverting to retrieve luggage. Misconception tested: allowing a request framed with urgency ('first') to override the actual priority order of people-over-property during an active rescue."
     }
   ]
 }

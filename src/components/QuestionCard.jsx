@@ -6,6 +6,13 @@ const CONFIDENCE_OPTIONS = [
   { id: 'high', label: 'High confidence' },
 ]
 
+const DIFFICULTY_LABELS = {
+  easy: 'Easy',
+  medium: 'Medium',
+  hard: 'Hard',
+  'very-hard': 'Very Hard',
+}
+
 // Shared retrieval-practice flow used by Quiz, Drill, and Review Mistakes.
 // Enforces the anti-guessing workflow: the student must select an answer
 // AND commit a confidence level before the correct answer is revealed.
@@ -46,6 +53,9 @@ export default function QuestionCard({
 
   return (
     <div>
+      {question.difficulty && (
+        <span className={`pill difficulty-${question.difficulty}`}>{DIFFICULTY_LABELS[question.difficulty] ?? question.difficulty}</span>
+      )}
       <div className="question-prompt">{question.prompt}</div>
 
       {stage === 'choosing' && (
