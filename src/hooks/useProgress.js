@@ -1,0 +1,35 @@
+import { useCallback, useMemo, useState } from 'react'
+import { loadProgress, addAttempt, toggleFlag as toggleFlagStorage, getSessionId } from '../storage/progressStore.js'
+import { createAttempt } from '../engine/attempts.js'
+
+// Single hook bridging screens to the storage + engine layers, so no
+// component talks to localStorage directly.
+export function useProgress() {
+  const [progress, setProgress] = useState(() => loadProgress())
+  const sessionId = useMemo(() => getSessionId(), [])
+
+  const recordAttempt = useCallback(
+    ({ question, choiceId, confidence, timeMs, mode }) => {
+      const attempt = createAttempt({
+        attempts: progress.attempts,
+        question,
+        choiceId,
+        confidence,
+        timeMs,
+        mode,
+        sessionId,
+      })
+      const updated = addAttempt(attempt)
+      setProgress(updated)
+      return attempt
+    },
+    [progress.attempts, sessionId],
+  )
+
+  const toggleFlag = useCallback((questionId) => {
+    const updated = toggleFlagStorage(questionId)
+    setProgress(updated)
+  }, [])
+
+  return { progress, sessionId, recordAttempt, toggleFlag }
+}
