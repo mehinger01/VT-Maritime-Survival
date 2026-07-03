@@ -77,20 +77,24 @@ Flag a question any time you see:
 Flagged questions all show up in one place (**Flagged Questions**) so we
 can review them together and fix the content.
 
-## 6. Learning Journal (coming next)
+## 6. Learning Journal (now built)
 
 You asked for a spreadsheet-style record of your study sessions — dates,
-times, and notes on what was covered. That's not built yet, but it's the
-**next feature we build**, not a someday-maybe. It will include:
+times, and notes on what was covered. That's now a screen in the app:
+**Learning Journal**, in the main navigation.
 
-- Session date and time
-- Topics covered
+Each entry tracks:
+
+- Session number, date, start/end time, and duration
+- Topics covered and resources used
 - Notes from the session
-- Action items / follow-ups
-- Export to CSV, so it opens directly in a spreadsheet
+- Student action items and questions for the instructor
+- Status: Planned, Completed, or Needs Follow-Up
 
-Until it exists, keep jotting session notes wherever's easiest for you —
-we'll want that history once the Learning Journal is ready.
+Mike will keep this updated after each tutoring session. There's an
+**Export CSV** button on that screen any time you or Mike want the log
+open in Excel or Google Sheets — say, to share with an instructor or
+keep as a record of tutoring hours.
 
 ## 7. What's placeholder content (read this before trusting any question)
 
@@ -129,7 +133,8 @@ content is still being built out from your real material.
   sending this along — flag anything obviously wrong yourself first.
 - Tell Vinci plainly: the tool works, the content is still being verified
   against his real materials.
-- Next build task: **Learning Journal** (session log + CSV export) —
-  treat as first-class MVP scope, not a later nice-to-have.
-- After that: replace/expand placeholder content using Vinci's book,
-  notes, and instructor slides once he sends them back.
+- **Learning Journal is now built** (Learning Journal screen, CSV export).
+  Log each tutoring session there going forward — it's seeded with a
+  Session 1 entry already; add Session 2 onward as you go.
+- Next up: replace/expand placeholder content using Vinci's book, notes,
+  and instructor slides once he sends them back.

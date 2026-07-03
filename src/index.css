@@ -78,6 +78,26 @@ main.app-main { min-width: 0; }
 .topic-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 12px; }
 .topic-card h3 { margin: 0 0 6px; font-size: 16px; }
 
+.two { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+label { font-weight: 700; display: block; margin-top: 8px; font-size: 13px; }
+input, textarea, select {
+  width: 100%;
+  padding: 9px 10px;
+  border: 1px solid #cfd8e3;
+  border-radius: 10px;
+  margin: 5px 0 6px;
+  font: inherit;
+  font-size: 14px;
+}
+
+.table { width: 100%; border-collapse: collapse; font-size: 14px; }
+.table th, .table td { border-bottom: 1px solid #edf1f5; text-align: left; padding: 8px; vertical-align: top; }
+.table th { color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: 0.02em; }
+
+@media (max-width: 700px) {
+  .two { grid-template-columns: 1fr; }
+}
+
 .btn {
   border: 0;
   border-radius: 10px;

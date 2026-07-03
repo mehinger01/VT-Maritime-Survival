@@ -10,6 +10,7 @@ import DrillMode from './screens/DrillMode.jsx'
 import ReviewMistakes from './screens/ReviewMistakes.jsx'
 import FlaggedQuestions from './screens/FlaggedQuestions.jsx'
 import SessionReport from './screens/SessionReport.jsx'
+import LearningJournal from './screens/LearningJournal.jsx'
 
 const NAV_ITEMS = [
   { id: 'home', label: 'Course Home' },
@@ -20,6 +21,7 @@ const NAV_ITEMS = [
   { id: 'review', label: 'Review Mistakes' },
   { id: 'flagged', label: 'Flagged Questions' },
   { id: 'report', label: 'Session Report' },
+  { id: 'journal', label: 'Learning Journal' },
 ]
 
 export default function App() {
@@ -62,6 +64,7 @@ export default function App() {
           {route.view === 'review' && <ReviewMistakes {...screenProps} />}
           {route.view === 'flagged' && <FlaggedQuestions {...screenProps} />}
           {route.view === 'report' && <SessionReport {...screenProps} />}
+          {route.view === 'journal' && <LearningJournal {...screenProps} />}
         </main>
       </div>
     </>
