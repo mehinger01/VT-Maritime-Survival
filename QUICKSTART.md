@@ -112,8 +112,18 @@ manual's chapters. That's as far as the alignment goes, though — we only
 have the table of contents, not the manual's full chapter text, so the
 practice **questions inside each chapter are still draft/unverified** and
 have not been checked against what each chapter actually says. Appendix A
-(Glossary/Vocabulary Review) has no practice questions yet at all, since
-we don't have the glossary text to build them from.
+(Glossary/Vocabulary Review) now has a first batch of vocabulary
+questions (pintle, gudgeon, sea painter, and similar terms) — these come
+from an unverified practice-test source, not your manual's actual
+glossary, and still need checking once we have that.
+
+**Another update:** some of the newer questions — a handful in Chapter 2
+and the Appendix A glossary batch — were specifically inspired by an old
+third-party practice test found online (not your course, not your
+instructor). They're a reasonable starting guess at exam-style phrasing
+and vocabulary, but they carry the same "not yet verified" status as
+everything else here, if anything a notch more cautious, since they're
+not even based on a maritime-training source connected to your class.
 
 This means:
 
