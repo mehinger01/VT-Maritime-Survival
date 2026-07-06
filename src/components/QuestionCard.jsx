@@ -41,12 +41,14 @@ export default function QuestionCard({
   const [selectedChoiceId, setSelectedChoiceId] = useState(null)
   const [hintIndex, setHintIndex] = useState(0)
   const [startedAt, setStartedAt] = useState(() => Date.now())
+  const [justExcluded, setJustExcluded] = useState(false)
 
   useEffect(() => {
     setStage('choosing')
     setSelectedChoiceId(null)
     setHintIndex(0)
     setStartedAt(Date.now())
+    setJustExcluded(false)
   }, [question.id])
 
   function selectChoice(choiceId) {
@@ -68,7 +70,10 @@ export default function QuestionCard({
     const confirmed = window.confirm(
       'Exclude this question from all quizzes, drills, and reviews? It will stop appearing until a separate process re-adds it.',
     )
-    if (confirmed) onToggleExclude?.(question.id)
+    if (confirmed) {
+      onToggleExclude?.(question.id)
+      setJustExcluded(true)
+    }
   }
 
   return (
@@ -160,11 +165,12 @@ export default function QuestionCard({
         <button className="btn secondary small" onClick={() => onToggleFlag?.(question.id)}>
           {flagged ? 'Unflag this question' : 'Flag for later review'}
         </button>{' '}
-        {onToggleExclude && (
+        {onToggleExclude && !justExcluded && (
           <button className="btn secondary small" onClick={handleExclude}>
             Exclude this question
           </button>
         )}
+        {justExcluded && <span className="muted"> Excluded — won't reappear until re-added separately.</span>}
       </div>
     </div>
   )
