@@ -1,6 +1,7 @@
 import course from './content/course.json'
 import { useHashRoute } from './hooks/useHashRoute.js'
 import { useProgress } from './hooks/useProgress.js'
+import { useAuth } from './hooks/useAuth.js'
 
 import CourseHome from './screens/CourseHome.jsx'
 import TopicExplorer from './screens/TopicExplorer.jsx'
@@ -11,6 +12,8 @@ import ReviewMistakes from './screens/ReviewMistakes.jsx'
 import FlaggedQuestions from './screens/FlaggedQuestions.jsx'
 import SessionReport from './screens/SessionReport.jsx'
 import LearningJournal from './screens/LearningJournal.jsx'
+import CloudSessionReports from './screens/CloudSessionReports.jsx'
+import Login from './screens/Login.jsx'
 
 const NAV_ITEMS = [
   { id: 'home', label: 'Course Home' },
@@ -22,11 +25,13 @@ const NAV_ITEMS = [
   { id: 'flagged', label: 'Flagged Questions' },
   { id: 'report', label: 'Session Report' },
   { id: 'journal', label: 'Learning Journal' },
+  { id: 'cloudReports', label: 'Session Reports (Cloud)' },
 ]
 
 export default function App() {
   const { route, navigate } = useHashRoute()
   const progressApi = useProgress()
+  const auth = useAuth()
 
   // Excluded questions (toggled off via the question card) are dropped from
   // every pool here, at the one place questions enter the screens, so no
@@ -46,6 +51,14 @@ export default function App() {
       <header className="app-header">
         <h1>Maritime Survival Study Tool</h1>
         <p>{course.courseName} — retrieval practice, spaced review, and mastery tracking, all saved in this browser.</p>
+        {auth.isConfigured && auth.session && (
+          <p className="muted">
+            Signed in as {auth.profile?.email ?? auth.session.user.email}
+            {auth.profile?.role ? ` (${auth.profile.role})` : ''}
+            {' — '}
+            <button className="btn secondary small" onClick={auth.signOut}>Sign Out</button>
+          </p>
+        )}
       </header>
       <div className="app-shell">
         <nav className="app-nav">
@@ -70,6 +83,30 @@ export default function App() {
           {route.view === 'flagged' && <FlaggedQuestions {...screenProps} />}
           {route.view === 'report' && <SessionReport {...screenProps} />}
           {route.view === 'journal' && <LearningJournal {...screenProps} />}
+          {route.view === 'cloudReports' && (
+            <>
+              {!auth.isConfigured && (
+                <div className="card">
+                  <h2>Session Reports (Cloud)</h2>
+                  <p className="empty-state">
+                    Cloud reports aren't configured in this environment (missing Supabase env vars) — this
+                    doesn't affect the study tool above, which keeps working from localStorage.
+                  </p>
+                </div>
+              )}
+              {auth.isConfigured && auth.loading && <div className="card"><p className="muted">Loading…</p></div>}
+              {auth.isConfigured && !auth.loading && !auth.session && <Login signIn={auth.signIn} />}
+              {auth.isConfigured && !auth.loading && auth.session && auth.profile === undefined && (
+                <div className="card"><p className="muted">Loading profile…</p></div>
+              )}
+              {auth.isConfigured && !auth.loading && auth.session && auth.profile === null && (
+                <div className="card"><p className="empty-state">Could not load your profile. {auth.error}</p></div>
+              )}
+              {auth.isConfigured && !auth.loading && auth.session && auth.profile && (
+                <CloudSessionReports profile={auth.profile} />
+              )}
+            </>
+          )}
         </main>
       </div>
     </>
