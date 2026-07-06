@@ -55,7 +55,7 @@ function exportCsv(entries) {
 }
 
 export default function LearningJournal() {
-  const { journal } = useJournal()
+  const { journal, loading } = useJournal()
   const [expandedId, setExpandedId] = useState(null)
 
   const sortedEntries = journal.entries.slice().sort((a, b) => (a.sessionNumber ?? 0) - (b.sessionNumber ?? 0))
@@ -74,8 +74,9 @@ export default function LearningJournal() {
       </div>
 
       <div className="card">
-        {sortedEntries.length === 0 && <p className="empty-state">No sessions logged yet.</p>}
-        {sortedEntries.length > 0 && (
+        {loading && <p className="muted">Loading session reports...</p>}
+        {!loading && sortedEntries.length === 0 && <p className="empty-state">No sessions logged yet.</p>}
+        {!loading && sortedEntries.length > 0 && (
           <div style={{ overflowX: 'auto' }}>
             <table className="table">
               <thead>

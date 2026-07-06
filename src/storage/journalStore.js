@@ -3,6 +3,10 @@
 // treat-it-like-a-database-schema care as progressStore.js, kept as its
 // own key since it's operator-authored session history, not student quiz
 // progress.
+//
+// Now also syncs with Supabase session_reports table when logged in.
+
+import { supabase } from '../lib/supabaseClient.js'
 
 const STORAGE_KEY = 'sf_journal_v1'
 const SCHEMA_VERSION = 1
@@ -85,4 +89,49 @@ export function deleteJournalEntry(id) {
   journal.entries = journal.entries.filter((e) => e.id !== id)
   saveJournal(journal)
   return journal
+}
+
+// Fetch session reports from Supabase and transform to journal entry format.
+// Returns an array of entries or empty array if fetch fails.
+export async function loadSupabaseReports(studentIdOrUserId) {
+  if (!supabase || !studentIdOrUserId) return []
+
+  try {
+    // Fetch session_reports for this student
+    const { data, error } = await supabase
+      .from('session_reports')
+      .select('id, session_number, session_date, duration_minutes, topics_covered, coach_notes, action_items, created_at')
+      .eq('student_id', studentIdOrUserId)
+      .order('session_date', { ascending: true })
+
+    if (error) {
+      console.warn('Failed to load Supabase session reports:', error.message)
+      return []
+    }
+
+    // Transform Supabase records to journal entry format
+    return (data || []).map((report) => ({
+      id: `supabase-${report.id}`,
+      sessionNumber: report.session_number,
+      date: report.session_date,
+      startTime: null,
+      endTime: null,
+      durationMinutes: report.duration_minutes,
+      topicsCovered: Array.isArray(report.topics_covered)
+        ? report.topics_covered.join(', ')
+        : report.topics_covered || '',
+      resourcesUsed: null,
+      notes: report.coach_notes || null,
+      studentActionItems: Array.isArray(report.action_items)
+        ? report.action_items.join('\n')
+        : report.action_items || null,
+      instructorQuestions: null,
+      status: 'Completed',
+      createdAt: new Date(report.created_at).getTime(),
+      updatedAt: new Date(report.created_at).getTime(),
+    }))
+  } catch (err) {
+    console.warn('Error loading Supabase session reports:', err.message)
+    return []
+  }
 }
