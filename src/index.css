@@ -142,6 +142,9 @@ input, textarea, select {
 .pill.difficulty-medium { background: #eef3f8; color: var(--blue); }
 .pill.difficulty-hard { background: var(--warn-bg); color: var(--warn); }
 .pill.difficulty-very-hard { background: var(--bad-bg); color: var(--bad); font-weight: 700; }
+.pill.source-unverified { background: var(--warn-bg); color: var(--warn); border: 1px solid var(--warn); }
+.pill.source-confirmed { background: var(--good-bg); color: var(--good); }
+.pill.source-verified { background: var(--good-bg); color: var(--good); font-weight: 700; }
 
 .confidence-row { display: flex; gap: 8px; margin: 12px 0; }
 .confidence-row button { flex: 1; }
