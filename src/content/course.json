@@ -1394,7 +1394,9 @@
         "There's a specific side associated with the gas cylinder that provides leverage.",
         "A strap is provided specifically for this maneuver."
       ],
-      "explanation": "Survivors typically climb onto the side where the CO2 bottle is mounted and pull the righting strap, using body weight for leverage to flip the raft upright."
+      "explanation": "Survivors typically climb onto the side where the CO2 bottle is mounted and pull the righting strap, using body weight for leverage to flip the raft upright. Confirmed by an official source: the USCG/NMC Q445 Lifeboat Operator sample exam independently describes the same technique (stand on the CO2 bottle, hold the straps, throw your weight back).",
+      "sourceReference": "Confirmed by USCG/NMC Q445 Lifeboat Operator Sample Exam (official)",
+      "verificationStatus": "official-source-supported"
     },
     {
       "id": "q-raft-3",
@@ -1691,7 +1693,9 @@
         "Think about where the weight is concentrated on a capsized raft.",
         "Leverage works better where there's already weight to pull against."
       ],
-      "explanation": "The CO2 bottle's weight is mounted on that specific side, so climbing there and pulling the righting strap uses that weight as a leverage point to flip the raft — it's a specific mechanical instruction, not an arbitrary or comfort-based one. Misconception tested: assuming a specific procedural instruction is arbitrary rather than recognizing the physical/mechanical reason behind it."
+      "explanation": "The CO2 bottle's weight is mounted on that specific side, so climbing there and pulling the righting strap uses that weight as a leverage point to flip the raft — it's a specific mechanical instruction, not an arbitrary or comfort-based one. Confirmed by an official source: the USCG/NMC Q445 Lifeboat Operator sample exam independently describes standing on the CO2 bottle as the correct righting technique. Misconception tested: assuming a specific procedural instruction is arbitrary rather than recognizing the physical/mechanical reason behind it.",
+      "sourceReference": "Confirmed by USCG/NMC Q445 Lifeboat Operator Sample Exam (official)",
+      "verificationStatus": "official-source-supported"
     },
     {
       "id": "q-raft-12",
@@ -2747,7 +2751,9 @@
         "Think about what could go wrong if several transfers were attempted simultaneously.",
         "This is about control and safety margins, not speed."
       ],
-      "explanation": "Sequential transfer lets the rescue crew control weight distribution, timing, and individual safety checks — attempting several transfers simultaneously would multiply the things that could go wrong at once. Misconception tested: assuming a safety-driven sequencing choice is really about speed or tradition rather than risk control."
+      "explanation": "Sequential transfer lets the rescue crew control weight distribution, timing, and individual safety checks — attempting several transfers simultaneously would multiply the things that could go wrong at once. Confirmed by an official source: the USCG/NMC Q445 Lifeboat Operator sample exam specifically states that personnel transferring from an enclosed lifeboat to a rescue vessel should remain seated inside and transfer one person at a time. Misconception tested: assuming a safety-driven sequencing choice is really about speed or tradition rather than risk control.",
+      "sourceReference": "Confirmed by USCG/NMC Q445 Lifeboat Operator Sample Exam (official)",
+      "verificationStatus": "official-source-supported"
     },
     {
       "id": "q-rescue-8",
@@ -3030,9 +3036,9 @@
         "They're rigged where people board — the embarkation deck.",
         "Their job is steadying the boat against the ship's side, not sailing or signaling."
       ],
-      "explanation": "Frapping lines steady the lifeboat against the ship's side while it's being lowered, and are typically rigged at the embarkation deck. Misconception tested: confusing them with sailing rigging (halyards) or unrelated launch hardware.",
-      "sourceReference": "SIU 2019 Practice Test intake, unverified",
-      "verificationStatus": "draft-unverified"
+      "explanation": "Frapping lines are passed around the falls to steady the lifeboat and prevent it from swinging violently while it's being lowered, and are typically rigged at the embarkation deck. Confirmed by an official source: the USCG/NMC Q445 Lifeboat Operator sample exam independently states the same function and timing. Misconception tested: confusing them with sailing rigging (halyards) or unrelated launch hardware.",
+      "sourceReference": "SIU 2019 Practice Test intake; confirmed by USCG/NMC Q445 Lifeboat Operator Sample Exam (official)",
+      "verificationStatus": "official-source-supported"
     },
     {
       "id": "q-gloss-tricing",
@@ -3050,9 +3056,9 @@
         "They hold the boat in close to the ship — useful right up until boarding is done.",
         "Think about the order: people board first, then this line is let go."
       ],
-      "explanation": "Tricing pendants hold the lifeboat snug against the ship's side to make boarding safer, and are released only after all people have embarked. Misconception tested: reversing the sequence, or confusing 'pendant' with a signal flag rather than a line/fitting.",
-      "sourceReference": "SIU 2019 Practice Test intake, unverified",
-      "verificationStatus": "draft-unverified"
+      "explanation": "Tricing pendants hold the lifeboat snug against the ship's side (specifically at the embarkation deck) to make boarding safer, and are released only after all people have embarked — typically via a mechanism called the McCluny hook. Confirmed by an official source: the USCG/NMC Q445 Lifeboat Operator sample exam independently states the same purpose, and additionally identifies the release mechanism. Misconception tested: reversing the sequence, or confusing 'pendant' with a signal flag rather than a line/fitting.",
+      "sourceReference": "SIU 2019 Practice Test intake; confirmed by USCG/NMC Q445 Lifeboat Operator Sample Exam (official)",
+      "verificationStatus": "official-source-supported"
     },
     {
       "id": "q-gloss-preventer",
@@ -3197,22 +3203,22 @@
     {
       "id": "q-ch2-24hrfuel",
       "topicId": "chapter-2-using-lifeboats",
-      "prompt": "According to this (unverified) practice-test source, roughly how much fuel is a motor lifeboat expected to carry?",
+      "prompt": "How much fuel must a motor lifeboat carry?",
       "choices": [
         { "id": "a", "text": "Enough for about 24 hours of continuous operation" },
         { "id": "b", "text": "Only enough for a few minutes of maneuvering near the ship", "misconception": "Understates the fuel reserve needed to support an extended survival situation." },
         { "id": "c", "text": "An unlimited amount, since lifeboats can be refueled at sea", "misconception": "Assumes an at-sea refueling capability that survival craft don't have." },
-        { "id": "d", "text": "Exactly enough to reach the nearest port, calculated per voyage", "misconception": "Invents a voyage-specific fuel calculation rather than the flat endurance-based reserve this source describes." }
+        { "id": "d", "text": "Exactly enough to reach the nearest port, calculated per voyage", "misconception": "Invents a voyage-specific fuel calculation rather than the flat endurance-based reserve this figure describes." }
       ],
       "correctChoiceId": "a",
       "difficulty": "medium",
       "hints": [
         "Think endurance, not just maneuvering near the ship.",
-        "This exact figure comes from an unverified source — treat it as a planning ballpark, not a confirmed regulatory number."
+        "It's a flat requirement, not a per-voyage calculation."
       ],
-      "explanation": "This unverified practice-test source states a motor lifeboat should carry enough fuel for about 24 hours of continuous operation, reflecting that survival craft need real endurance, not just a few minutes of maneuvering. IMPORTANT: this specific figure has NOT been confirmed against Vinci's manual or an official regulation — treat it as a draft planning figure only, pending verification. Misconception tested: assuming lifeboats can be refueled at sea or only need fuel for the moments right after launch.",
-      "sourceReference": "SIU 2019 Practice Test intake, unverified",
-      "verificationStatus": "draft-unverified"
+      "explanation": "A motor lifeboat must carry enough fuel for about 24 hours of continuous operation, reflecting that survival craft need real endurance, not just a few minutes of maneuvering. This figure is confirmed by an official source (USCG/NMC Q445 Lifeboat Operator sample exam), independently matching what the earlier SIU 2019 practice-test intake also stated. Misconception tested: assuming lifeboats can be refueled at sea or only need fuel for the moments right after launch.",
+      "sourceReference": "SIU 2019 Practice Test intake; confirmed by USCG/NMC Q445 Lifeboat Operator Sample Exam (official)",
+      "verificationStatus": "official-source-supported"
     },
     {
       "id": "q-ch2-sprinklerspray",
@@ -3350,9 +3356,9 @@
         "This gear does not check whether the boat is in the water first.",
         "That's exactly why crew must be trained to control timing themselves, rather than relying on the gear to prevent an early release."
       ],
-      "explanation": "Rottmer-type releasing gear releases both falls simultaneously the moment the lever is turned, regardless of whether the boat has reached the water — there's no built-in interlock preventing an early release. This makes crew timing and training the actual safety control, not the gear itself. Misconception tested: assuming the releasing gear has a safety check that prevents premature release, when the responsibility for correct timing rests entirely on the crew operating it.",
-      "sourceReference": "SIU 2019 Practice Test intake, unverified",
-      "verificationStatus": "draft-unverified"
+      "explanation": "Rottmer-type releasing gear releases both falls simultaneously the moment the lever is turned, regardless of whether the boat has reached the water — there's no built-in interlock preventing an early release. This makes crew timing and training the actual safety control, not the gear itself. Misconception tested: assuming the releasing gear has a safety check that prevents premature release, when the responsibility for correct timing rests entirely on the crew operating it. Confirmed by an official source: the USCG/NMC Q445 Lifeboat Operator sample exam independently states the same fact.",
+      "sourceReference": "SIU 2019 Practice Test intake; confirmed by USCG/NMC Q445 Lifeboat Operator Sample Exam (official)",
+      "verificationStatus": "official-source-supported"
     },
     {
       "id": "q-ch2-backingport-hard",
@@ -3413,6 +3419,106 @@
       "explanation": "Per this unverified source, a hand-portable fire extinguisher is NOT among the items required to carry the vessel's name, unlike ring life buoys, lifeboats, and lifeboat oars. Misconception tested: over-generalizing the vessel-name marking rule to all safety equipment, rather than the specific survival-craft-related items this source names.",
       "sourceReference": "SIU 2019 Practice Test intake, unverified",
       "verificationStatus": "draft-unverified"
+    },
+    {
+      "id": "q-ch2-compasscare-official",
+      "topicId": "chapter-2-using-lifeboats",
+      "prompt": "When using a lifeboat compass, what three things must you be careful to do?",
+      "choices": [
+        { "id": "a", "text": "Set it on the centerline of the boat, keep metal objects away from it, and apply the correction for compass error" },
+        { "id": "b", "text": "Mount it as high as possible, point it toward the bow, and check it only once per voyage", "misconception": "Invents requirements (height, fixed orientation, one-time check) that aren't part of correct compass use." },
+        { "id": "c", "text": "Keep it belowdecks, away from sunlight, and recalibrate it monthly", "misconception": "Substitutes storage/maintenance concerns for the actual in-use precautions the compass requires." },
+        { "id": "d", "text": "Only the centerline placement matters; metal and compass error are minor concerns", "misconception": "Downplays two of the three genuinely required precautions as unimportant." }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "medium",
+      "hints": [
+        "Three separate things: where it sits, what's near it, and what correction to apply.",
+        "All three matter equally — this isn't a 'pick the most important one' question."
+      ],
+      "explanation": "When using a lifeboat compass, you must set it on the centerline of the boat, keep metal objects away from it (to avoid deviation), and apply the correction for compass error. This exact three-part checklist appears independently in both the SIU 2019 practice-test intake and the official USCG/NMC Q445 Lifeboat Operator sample exam — a genuine multi-source agreement. Misconception tested: assuming only one of the three precautions really matters, or substituting unrelated storage/maintenance advice for actual in-use precautions.",
+      "sourceReference": "SIU 2019 Practice Test intake; confirmed by USCG/NMC Q445 Lifeboat Operator Sample Exam (official)",
+      "verificationStatus": "official-source-supported"
+    },
+    {
+      "id": "q-ch1-lifeboatman-duty-list-official",
+      "topicId": "chapter-1-planning-ahead",
+      "prompt": "A certified lifeboatman assigned to command a lifeboat must do what?",
+      "choices": [
+        { "id": "a", "text": "Have a list of the persons assigned to that lifeboat" },
+        { "id": "b", "text": "Personally inspect every other lifeboat on the vessel before departure", "misconception": "Expands the duty beyond the specific lifeboat under this person's command to the entire vessel." },
+        { "id": "c", "text": "Be the last person to leave the ship, regardless of their assigned station", "misconception": "Confuses a general maritime tradition about the Master with a specific lifeboatman duty, which is not the same role or requirement." },
+        { "id": "d", "text": "Personally row the boat away from the ship before checking on passengers", "misconception": "Prioritizes an unrelated action over the actual required duty of accounting for assigned persons." }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "medium",
+      "hints": [
+        "This is about accountability for a specific group of people, not the whole vessel.",
+        "Think back to muster-list logic: someone in charge needs to know who's supposed to be there."
+      ],
+      "explanation": "A certified lifeboatman assigned to command a lifeboat must have a list of the persons assigned to that lifeboat, so they can account for everyone who should be aboard. This fact appears nearly word-for-word in both the SIU 2019 practice-test intake and the official USCG/NMC Q445 Lifeboat Operator sample exam. Misconception tested: expanding or substituting this specific accountability duty with unrelated responsibilities.",
+      "sourceReference": "SIU 2019 Practice Test intake; confirmed by USCG/NMC Q445 Lifeboat Operator Sample Exam (official)",
+      "verificationStatus": "official-source-supported"
+    },
+    {
+      "id": "q-ch2-numbering-official-vh",
+      "topicId": "chapter-2-using-lifeboats",
+      "prompt": "A vessel has 3 lifeboats on each side, numbered by standard convention. Which statement correctly describes the numbering?",
+      "choices": [
+        { "id": "a", "text": "Port-side boats get even numbers and starboard-side boats get odd numbers, ascending from forward to aft on each side" },
+        { "id": "b", "text": "All boats are numbered 1 through 6 based only on which side they're stowed, with no regard to fore/aft position", "misconception": "Drops the forward-to-aft ordering entirely, when position along the vessel is part of the convention." },
+        { "id": "c", "text": "Starboard-side boats get even numbers and port-side boats get odd numbers", "misconception": "Reverses the actual port/starboard even/odd assignment." },
+        { "id": "d", "text": "Numbering restarts at 1 on each side, so both sides can have a boat numbered 1", "misconception": "Ignores that the numbering is a single continuous sequence across both sides, not independent per side." }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "very-hard",
+      "hints": [
+        "Even and odd numbers are assigned by side, not restarted on each side.",
+        "Within a side, the numbers still climb from the front of the ship toward the back."
+      ],
+      "explanation": "Standard lifeboat numbering assigns even numbers to port-side boats and odd numbers to starboard-side boats, ascending from forward to aft on each side (so with 3 boats per side: port boats are 2, 4, 6 forward-to-aft; starboard boats are 1, 3, 5 forward-to-aft). This convention is confirmed by multiple scenario questions in both the SIU 2019 practice-test intake and the official USCG/NMC Q445 Lifeboat Operator sample exam, each testing a different boat position. Misconception tested: reversing the port/starboard assignment, dropping the forward-to-aft ordering, or assuming numbering restarts independently on each side.",
+      "sourceReference": "SIU 2019 Practice Test intake; confirmed by USCG/NMC Q445 Lifeboat Operator Sample Exam (official)",
+      "verificationStatus": "official-source-supported"
+    },
+    {
+      "id": "q-ch4-waterrequirement-official",
+      "topicId": "chapter-4-survival-methods",
+      "prompt": "On an international voyage, how much water is required to be stowed per person aboard a lifeboat on an oceangoing vessel?",
+      "choices": [
+        { "id": "a", "text": "3 liters per person" },
+        { "id": "b", "text": "3 liters per day, per person, for the whole voyage", "misconception": "Confuses a one-time required stowage amount with an ongoing daily rate — this figure is the total supply carried, not a daily ration." },
+        { "id": "c", "text": "1 pint per person, matching liferaft rationing rules exactly", "misconception": "Conflates the lifeboat's required stowed water supply with a liferaft daily-rationing figure — these are two different facts about two different situations." },
+        { "id": "d", "text": "No fixed amount; it varies entirely by voyage length", "misconception": "Incorrectly assumes there's no fixed regulatory figure at all." }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "hard",
+      "hints": [
+        "This is the total amount required to be carried, not a daily consumption rate.",
+        "Don't confuse this with any separate rule about how to ration water once adrift."
+      ],
+      "explanation": "On an international voyage, a lifeboat on an oceangoing vessel is required to carry 3 liters of water per person — this is the required stowed supply, a different fact from any daily rationing rate used once survivors are actually adrift (which is a separate question of how to pace consumption of whatever supply is on board). Misconception tested: merging the total-required-supply figure with a daily-rationing-rate figure, when they answer different questions.",
+      "sourceReference": "USCG/NMC Q445 Lifeboat Operator Sample Exam (official)",
+      "verificationStatus": "official-source-supported"
+    },
+    {
+      "id": "q-ch6-rescuesling-official-hard",
+      "topicId": "chapter-6-being-rescued",
+      "prompt": "SCENARIO: You abandoned ship in the North Atlantic and a crew member is now hypothermic. During a SAR helicopter extraction, which lifting device should be avoided when hoisting this patient to the aircraft?",
+      "choices": [
+        { "id": "a", "text": "The rescue sling" },
+        { "id": "b", "text": "The rescue litter", "misconception": "Picks a device actually well-suited to a hypothermic or otherwise incapacitated patient, rather than the one to avoid." },
+        { "id": "c", "text": "The rescue basket", "misconception": "Picks a device generally suitable for a weakened patient, rather than the one to avoid." },
+        { "id": "d", "text": "The rescue net", "misconception": "Picks a device generally suitable for a weakened patient, rather than the one to avoid." }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "hard",
+      "hints": [
+        "A rescue sling typically requires the patient to hold on and stay upright.",
+        "A hypothermic patient may be too weak or impaired to use it safely."
+      ],
+      "explanation": "A rescue sling should be avoided when hoisting a hypothermic patient, because it typically requires the person being hoisted to actively hold on and support themselves — something a hypothermic, weakened, or semi-conscious patient may not be able to do safely. Devices like the litter, basket, or net are designed to fully support a patient who can't help with their own lift. Misconception tested: assuming any standard hoist device works equally well regardless of the patient's physical condition.",
+      "sourceReference": "USCG/NMC Q445 Lifeboat Operator Sample Exam (official)",
+      "verificationStatus": "official-source-supported"
     }
   ]
 }
