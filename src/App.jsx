@@ -28,9 +28,14 @@ export default function App() {
   const { route, navigate } = useHashRoute()
   const progressApi = useProgress()
 
+  // Excluded questions (toggled off via the question card) are dropped from
+  // every pool here, at the one place questions enter the screens, so no
+  // screen needs its own exclusion check.
+  const activeQuestions = course.questions.filter((q) => !progressApi.progress.excluded.includes(q.id))
+
   const screenProps = {
     topics: course.topics,
-    questions: course.questions,
+    questions: activeQuestions,
     navigate,
     topicId: route.topicId,
     ...progressApi,

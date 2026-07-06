@@ -32,6 +32,7 @@ export default function QuestionCard({
   allowHints = true,
   flagged = false,
   onToggleFlag,
+  onToggleExclude,
   onAnswered,
   onNext,
   isLast = false,
@@ -62,6 +63,13 @@ export default function QuestionCard({
 
   const correct = selectedChoiceId === question.correctChoiceId
   const sourceBadge = question.sourceReference ? SOURCE_BADGES[question.verificationStatus] : null
+
+  function handleExclude() {
+    const confirmed = window.confirm(
+      'Exclude this question from all quizzes, drills, and reviews? It will stop appearing until a separate process re-adds it.',
+    )
+    if (confirmed) onToggleExclude?.(question.id)
+  }
 
   return (
     <div>
@@ -151,7 +159,12 @@ export default function QuestionCard({
       <div style={{ marginTop: 10 }}>
         <button className="btn secondary small" onClick={() => onToggleFlag?.(question.id)}>
           {flagged ? 'Unflag this question' : 'Flag for later review'}
-        </button>
+        </button>{' '}
+        {onToggleExclude && (
+          <button className="btn secondary small" onClick={handleExclude}>
+            Exclude this question
+          </button>
+        )}
       </div>
     </div>
   )

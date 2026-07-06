@@ -1,5 +1,11 @@
 import { useCallback, useMemo, useState } from 'react'
-import { loadProgress, addAttempt, toggleFlag as toggleFlagStorage, getSessionId } from '../storage/progressStore.js'
+import {
+  loadProgress,
+  addAttempt,
+  toggleFlag as toggleFlagStorage,
+  toggleExcluded as toggleExcludedStorage,
+  getSessionId,
+} from '../storage/progressStore.js'
 import { createAttempt } from '../engine/attempts.js'
 
 // Single hook bridging screens to the storage + engine layers, so no
@@ -31,5 +37,10 @@ export function useProgress() {
     setProgress(updated)
   }, [])
 
-  return { progress, sessionId, recordAttempt, toggleFlag }
+  const toggleExcluded = useCallback((questionId) => {
+    const updated = toggleExcludedStorage(questionId)
+    setProgress(updated)
+  }, [])
+
+  return { progress, sessionId, recordAttempt, toggleFlag, toggleExcluded }
 }
