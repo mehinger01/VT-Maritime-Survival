@@ -1,0 +1,115 @@
+[
+  {
+    "id": "vocab-muster-station",
+    "term": "Muster station",
+    "definition": "The designated location where a crew member or passenger reports during an emergency, per their assigned station bill/muster list duty.",
+    "source": "General SOLAS/IMO maritime-safety terminology — not yet cross-checked against Vinci's manual wording.",
+    "relatedConcepts": ["concept-ch1-003", "concept-ch1-004"],
+    "verificationStatus": "unverified-pending-manual-text"
+  },
+  {
+    "id": "vocab-station-bill",
+    "term": "Station bill",
+    "definition": "The official posted document assigning each crew member specific emergency duties and their muster station — the regulatory term for what this course's existing material calls a 'muster list.'",
+    "source": "General SOLAS/IMO maritime-safety terminology — not yet cross-checked against Vinci's manual wording.",
+    "relatedConcepts": ["concept-ch1-004"],
+    "verificationStatus": "unverified-pending-manual-text",
+    "note": "Flagged for review: confirm with Vinci whether his course uses 'station bill' or 'muster list' (or both interchangeably)."
+  },
+  {
+    "id": "vocab-solas",
+    "term": "SOLAS",
+    "definition": "The Safety of Life at Sea convention — the international treaty setting minimum safety standards for ship construction, equipment, and operation, including required vessel-specific safety manuals and drills.",
+    "source": "General SOLAS/IMO maritime-safety terminology.",
+    "relatedConcepts": ["concept-ch1-005"],
+    "verificationStatus": "unverified-pending-manual-text"
+  },
+  {
+    "id": "vocab-imo",
+    "term": "IMO",
+    "definition": "The International Maritime Organization — the UN agency responsible for regulating shipping, including SOLAS and the standardized safety pictograms used to mark equipment and escape routes.",
+    "source": "General SOLAS/IMO maritime-safety terminology.",
+    "relatedConcepts": ["concept-ch1-006"],
+    "verificationStatus": "unverified-pending-manual-text"
+  },
+  {
+    "id": "vocab-escape-route",
+    "term": "Escape route",
+    "definition": "A marked path leading from a vessel's compartments to a muster station or open deck, intended to remain usable during an emergency (e.g., during fire or flooding).",
+    "source": "General SOLAS/IMO maritime-safety terminology.",
+    "relatedConcepts": ["concept-ch1-003", "concept-ch1-006"],
+    "verificationStatus": "unverified-pending-manual-text"
+  },
+  {
+    "id": "vocab-lifebuoy",
+    "term": "Lifebuoy",
+    "definition": "A buoyant ring-shaped device thrown to a person in the water to keep them afloat until rescue — distinct from a lifeboat or liferaft, which carry people rather than just support one in the water.",
+    "source": "General SOLAS/IMO maritime-safety terminology.",
+    "relatedConcepts": ["concept-ch1-007"],
+    "verificationStatus": "unverified-pending-manual-text"
+  },
+  {
+    "id": "vocab-immersion-suit",
+    "term": "Immersion suit",
+    "definition": "A full-body waterproof suit that provides both flotation and thermal (insulation) protection to a person in cold water, worn during abandon-ship situations.",
+    "source": "General SOLAS/IMO maritime-safety terminology.",
+    "relatedConcepts": ["concept-ch1-010"],
+    "verificationStatus": "unverified-pending-manual-text"
+  },
+  {
+    "id": "vocab-thermal-protective-aid",
+    "term": "Thermal Protective Aid",
+    "definition": "A lightweight, low-bulk bag or covering (often foil-lined) providing thermal insulation for a survivor already wearing a lifejacket — a supplement to, not a substitute for, an immersion suit.",
+    "source": "General SOLAS/IMO maritime-safety terminology.",
+    "relatedConcepts": ["concept-ch1-010"],
+    "verificationStatus": "unverified-pending-manual-text"
+  },
+  {
+    "id": "vocab-rescue-boat",
+    "term": "Rescue boat",
+    "definition": "A small, fast boat designed to retrieve a person from the water or marshal liferafts — distinct from a lifeboat, which is a vessel's primary large-capacity abandon-ship craft.",
+    "source": "General SOLAS/IMO maritime-safety terminology.",
+    "relatedConcepts": ["concept-ch1-007"],
+    "verificationStatus": "unverified-pending-manual-text"
+  },
+  {
+    "id": "vocab-fire-station",
+    "term": "Fire station",
+    "definition": "An onboard location equipped with firefighting equipment (hoses, extinguishers, alarms) — a duty/equipment station referenced on the station bill, not a shoreside fire department.",
+    "source": "General SOLAS/IMO maritime-safety terminology.",
+    "relatedConcepts": ["concept-ch1-004", "concept-ch1-011"],
+    "verificationStatus": "unverified-pending-manual-text"
+  },
+  {
+    "id": "vocab-foundering",
+    "term": "Foundering",
+    "definition": "A vessel taking on water and sinking, typically due to flooding rather than grounding or structural collapse.",
+    "source": "General SOLAS/IMO maritime-safety terminology.",
+    "relatedConcepts": ["concept-ch1-007"],
+    "verificationStatus": "unverified-pending-manual-text"
+  },
+  {
+    "id": "vocab-grounding",
+    "term": "Grounding",
+    "definition": "A vessel running aground — striking the seabed or shore — which can cause hull damage independent of flooding from other causes.",
+    "source": "General SOLAS/IMO maritime-safety terminology.",
+    "relatedConcepts": ["concept-ch1-007"],
+    "verificationStatus": "unverified-pending-manual-text"
+  },
+  {
+    "id": "vocab-hull-failure",
+    "term": "Hull failure",
+    "definition": "A structural breach or failure of the vessel's hull, which can result from grounding, collision, age/fatigue, or other causes — and can itself lead to foundering.",
+    "source": "General SOLAS/IMO maritime-safety terminology.",
+    "relatedConcepts": ["concept-ch1-007"],
+    "verificationStatus": "unverified-pending-manual-text"
+  },
+  {
+    "id": "vocab-davits",
+    "term": "Davits",
+    "definition": "The crane-like devices mounted on a vessel used to raise, lower, and swing out a lifeboat for launching.",
+    "source": "General SOLAS/IMO maritime-safety terminology.",
+    "relatedConcepts": ["concept-ch1-010"],
+    "verificationStatus": "unverified-pending-manual-text"
+  }
+]
