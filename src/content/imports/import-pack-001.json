@@ -7,8 +7,8 @@
   "sourcePages": "9-11",
   "claimedStatus": "Primary Source",
   "claimedConfidence": "100%",
-  "verificationStatus": "unverified-pending-manual-text",
-  "verificationNote": "This pack supplies a concept/vocabulary SUMMARY of pages 9-11, not the verbatim manual text. Per docs/CONTENT_INTAKE_BENCHMARK.md, 'traced to' means a specific page can be pointed to and read, not that a summary is plausible. Also: this pack cites the 2021 edition, while the manual already confirmed for this course elsewhere in the repo is the 'revised June 2024' edition (see chapter-1-planning-ahead topic notes in course.json). Treat as Tier 3-equivalent (informative, not verifying) until the actual page text is supplied and the edition question is resolved with Vinci.",
+  "verificationStatus": "course-verified",
+  "verificationNote": "Originally intook as unverified (concept/vocabulary summary, not verbatim manual text; 2021 edition cited vs. this repo's previously-confirmed 'revised June 2024' edition). Promoted to course-verified per explicit course operator confirmation on 2026-07-06. The edition question was not separately re-confirmed as part of that promotion and remains worth a quick check with Vinci if it matters later.",
   "chapterMapping": "chapter-1-planning-ahead",
   "conceptsIdentified": [
     "Survival begins before the emergency.",

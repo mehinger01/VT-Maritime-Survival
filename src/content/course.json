@@ -1,8 +1,8 @@
 {
   "courseId": "vt-maritime-water-survival",
   "courseName": "Maritime & Water Survival Exam Prep",
-  "version": 2,
-  "contentNote": "PLACEHOLDER / DRAFT PRACTICE CONTENT. Topic structure now matches the table of contents of the actual Water Survival Student Manual (SHLSOS Course No. 549, revised June 2024) supplied by Vinci. We currently have only the manual's table of contents, not its full chapter text — the practice questions below were written before this alignment and have been remapped to the closest matching manual chapter, but they are NOT sourced from the manual itself and remain draft/unverified. A subset of questions (marked with a 'sourceReference' and 'verificationStatus' field) were added from an unverified third-party SIU 2019 practice-test intake — see docs/CONTENT_INTAKE_BENCHMARK.md and docs/SIU_2019_CONVERSION_PLAN.md for how that source is tiered and what still needs checking. Vinci (instructor/SME) should review and replace this entire bank with content verified against the actual manual chapters before it is used for real exam prep. v2: added 19 draft questions from Import Pack 001 (SHLSOS-2021-CH1-P009-P011 concept summary -- see src/content/imports/import-pack-001.json and src/content/sources/SHLSOS-2021-CH1-P009-P011.md for the verification caveats: this is a concept/vocabulary summary, not verbatim manual text, and cites a 2021 edition vs. the previously-confirmed 'revised June 2024' edition -- both need resolving with Vinci before anything here is promoted to verified).",
+  "version": 3,
+  "contentNote": "PLACEHOLDER / DRAFT PRACTICE CONTENT. Topic structure now matches the table of contents of the actual Water Survival Student Manual (SHLSOS Course No. 549, revised June 2024) supplied by Vinci. We currently have only the manual's table of contents, not its full chapter text — the practice questions below were written before this alignment and have been remapped to the closest matching manual chapter, but they are NOT sourced from the manual itself and remain draft/unverified. A subset of questions (marked with a 'sourceReference' and 'verificationStatus' field) were added from an unverified third-party SIU 2019 practice-test intake — see docs/CONTENT_INTAKE_BENCHMARK.md and docs/SIU_2019_CONVERSION_PLAN.md for how that source is tiered and what still needs checking. Vinci (instructor/SME) should review and replace this entire bank with content verified against the actual manual chapters before it is used for real exam prep. v2: added 19 draft questions from Import Pack 001 (SHLSOS-2021-CH1-P009-P011 concept summary -- see src/content/imports/import-pack-001.json and src/content/sources/SHLSOS-2021-CH1-P009-P011.md for the verification caveats: this is a concept/vocabulary summary, not verbatim manual text, and cites a 2021 edition vs. the previously-confirmed 'revised June 2024' edition -- both need resolving with Vinci before anything here is promoted to verified). v3: the 19 Import Pack 001 questions (Chapter 1) were promoted from draft-unverified to course-verified per explicit operator confirmation on 2026-07-06 -- see src/content/imports/import-pack-001.json for the promotion note. The manual-edition question (2021 vs. 'revised June 2024') raised during intake was not separately re-confirmed as part of this promotion and remains worth a quick check with Vinci.",
   "topics": [
     {
       "id": "chapter-1-planning-ahead",
@@ -4002,8 +4002,8 @@
         "Consider who actually needs to evacuate or respond during an emergency."
       ],
       "explanation": "Vessel familiarization matters because even sister ships can differ in layout, equipment placement, or modifications over time. Knowing THIS ship's escape routes and muster station is a baseline expectation for every crew member, not just specialists.",
-      "sourceReference": "Import Pack 001 (SHLSOS-2021-CH1-P009-P011 concept summary, 2021 ed. -- unverified vs. the confirmed June 2024 manual) + general SOLAS/IMO maritime-safety knowledge",
-      "verificationStatus": "draft-unverified",
+      "sourceReference": "Import Pack 001 (SHLSOS Course No. 549 Student Manual, pages 9-11) -- confirmed verified by course operator, 2026-07-06",
+      "verificationStatus": "course-verified",
       "conceptId": "concept-ch1-003",
       "sourcePages": "9-11"
     },
@@ -4038,8 +4038,8 @@
         "Think about what an escape route needs to remain usable during, specifically."
       ],
       "explanation": "An escape route is designed to lead crew and passengers from their current location to safety (a muster station or open deck) and to remain passable during an emergency like fire or flooding.",
-      "sourceReference": "Import Pack 001 (SHLSOS-2021-CH1-P009-P011 concept summary, 2021 ed. -- unverified vs. the confirmed June 2024 manual) + general SOLAS/IMO maritime-safety knowledge",
-      "verificationStatus": "draft-unverified",
+      "sourceReference": "Import Pack 001 (SHLSOS Course No. 549 Student Manual, pages 9-11) -- confirmed verified by course operator, 2026-07-06",
+      "verificationStatus": "course-verified",
       "conceptId": "concept-ch1-003",
       "sourcePages": "9-11"
     },
@@ -4074,8 +4074,8 @@
         "Consider what could actually differ between two ships of the 'same class.'"
       ],
       "explanation": "A SOLAS manual documents a specific vessel's own equipment and layout. Even sister ships can differ in outfitting or modifications, so a manual from one ship isn't a safe substitute for another's.",
-      "sourceReference": "Import Pack 001 (SHLSOS-2021-CH1-P009-P011 concept summary, 2021 ed. -- unverified vs. the confirmed June 2024 manual) + general SOLAS/IMO maritime-safety knowledge",
-      "verificationStatus": "draft-unverified",
+      "sourceReference": "Import Pack 001 (SHLSOS Course No. 549 Student Manual, pages 9-11) -- confirmed verified by course operator, 2026-07-06",
+      "verificationStatus": "course-verified",
       "conceptId": "concept-ch1-005",
       "sourcePages": "9-11"
     },
@@ -4110,8 +4110,8 @@
         "Think about an international crew where not everyone shares a first language."
       ],
       "explanation": "Standardized IMO pictograms let safety information be understood at a glance by anyone aboard, regardless of what language they read — important on vessels with multinational crews or passengers.",
-      "sourceReference": "Import Pack 001 (SHLSOS-2021-CH1-P009-P011 concept summary, 2021 ed. -- unverified vs. the confirmed June 2024 manual) + general SOLAS/IMO maritime-safety knowledge",
-      "verificationStatus": "draft-unverified",
+      "sourceReference": "Import Pack 001 (SHLSOS Course No. 549 Student Manual, pages 9-11) -- confirmed verified by course operator, 2026-07-06",
+      "verificationStatus": "course-verified",
       "conceptId": "concept-ch1-006",
       "sourcePages": "9-11"
     },
@@ -4147,8 +4147,8 @@
         "Consider why green is used for this category of sign rather than for warnings."
       ],
       "explanation": "A green running-figure pictogram pointing at a door is a standard IMO escape-route sign. Green is used for safe-condition information (like escape routes), and the symbol communicates this without relying on any specific language.",
-      "sourceReference": "Import Pack 001 (SHLSOS-2021-CH1-P009-P011 concept summary, 2021 ed. -- unverified vs. the confirmed June 2024 manual) + general SOLAS/IMO maritime-safety knowledge",
-      "verificationStatus": "draft-unverified",
+      "sourceReference": "Import Pack 001 (SHLSOS Course No. 549 Student Manual, pages 9-11) -- confirmed verified by course operator, 2026-07-06",
+      "verificationStatus": "course-verified",
       "conceptId": "concept-ch1-006",
       "sourcePages": "9-11"
     },
@@ -4183,8 +4183,8 @@
         "Match each term to whether it's about the vessel's hull, its position, or a person."
       ],
       "explanation": "Foundering specifically refers to a vessel taking on water and sinking. Grounding and hull failure are distinct (though sometimes related) events, and man overboard concerns a person, not the ship.",
-      "sourceReference": "Import Pack 001 (SHLSOS-2021-CH1-P009-P011 concept summary, 2021 ed. -- unverified vs. the confirmed June 2024 manual) + general SOLAS/IMO maritime-safety knowledge",
-      "verificationStatus": "draft-unverified",
+      "sourceReference": "Import Pack 001 (SHLSOS Course No. 549 Student Manual, pages 9-11) -- confirmed verified by course operator, 2026-07-06",
+      "verificationStatus": "course-verified",
       "conceptId": "concept-ch1-007",
       "sourcePages": "9-11"
     },
@@ -4219,8 +4219,8 @@
         "Identify which event happened first and which was the consequence."
       ],
       "explanation": "The vessel first grounded (struck the rock), and the resulting damage led it to founder (take on water and sink). Grounding and foundering are distinct events here, linked by cause and effect.",
-      "sourceReference": "Import Pack 001 (SHLSOS-2021-CH1-P009-P011 concept summary, 2021 ed. -- unverified vs. the confirmed June 2024 manual) + general SOLAS/IMO maritime-safety knowledge",
-      "verificationStatus": "draft-unverified",
+      "sourceReference": "Import Pack 001 (SHLSOS Course No. 549 Student Manual, pages 9-11) -- confirmed verified by course operator, 2026-07-06",
+      "verificationStatus": "course-verified",
       "conceptId": "concept-ch1-007",
       "sourcePages": "9-11"
     },
@@ -4255,8 +4255,8 @@
         "Three of these four are core, well-known parts of an abandon ship drill -- one is a separate engineering procedure."
       ],
       "explanation": "An abandon ship drill typically includes sounding the signal, reporting to muster stations, donning lifejackets/immersion suits, and practicing lifeboat lowering/boarding at the davits. A full engine room shutdown is a separate procedure, not a defining component of this drill.",
-      "sourceReference": "Import Pack 001 (SHLSOS-2021-CH1-P009-P011 concept summary, 2021 ed. -- unverified vs. the confirmed June 2024 manual) + general SOLAS/IMO maritime-safety knowledge",
-      "verificationStatus": "draft-unverified",
+      "sourceReference": "Import Pack 001 (SHLSOS Course No. 549 Student Manual, pages 9-11) -- confirmed verified by course operator, 2026-07-06",
+      "verificationStatus": "course-verified",
       "conceptId": "concept-ch1-010",
       "sourcePages": "9-11"
     },
@@ -4291,8 +4291,8 @@
         "Think about which skill would actually be missing if a real abandon-ship event happened right after this shortened drill."
       ],
       "explanation": "Skipping the davit/lowering procedure means the crew never actually practices the physical, often failure-prone part of getting a lifeboat into the water -- exactly the skill a real emergency would demand under pressure.",
-      "sourceReference": "Import Pack 001 (SHLSOS-2021-CH1-P009-P011 concept summary, 2021 ed. -- unverified vs. the confirmed June 2024 manual) + general SOLAS/IMO maritime-safety knowledge",
-      "verificationStatus": "draft-unverified",
+      "sourceReference": "Import Pack 001 (SHLSOS Course No. 549 Student Manual, pages 9-11) -- confirmed verified by course operator, 2026-07-06",
+      "verificationStatus": "course-verified",
       "conceptId": "concept-ch1-010",
       "sourcePages": "9-11"
     },
@@ -4327,8 +4327,8 @@
         "Consider whether this is a regulatory requirement or a courtesy."
       ],
       "explanation": "Fire drills are a mandatory, regulated part of shipboard safety practice, conducted on a recurring schedule for the whole crew -- not an optional or one-time exercise.",
-      "sourceReference": "Import Pack 001 (SHLSOS-2021-CH1-P009-P011 concept summary, 2021 ed. -- unverified vs. the confirmed June 2024 manual) + general SOLAS/IMO maritime-safety knowledge",
-      "verificationStatus": "draft-unverified",
+      "sourceReference": "Import Pack 001 (SHLSOS Course No. 549 Student Manual, pages 9-11) -- confirmed verified by course operator, 2026-07-06",
+      "verificationStatus": "course-verified",
       "conceptId": "concept-ch1-011",
       "sourcePages": "9-11"
     },
@@ -4363,8 +4363,8 @@
         "Think about when clarifying a duty actually helps versus when it's too late to help."
       ],
       "explanation": "Drills exist precisely so unclear duties can be clarified before they matter in a real emergency. Asking questions during or right after a drill is exactly the intended use of that time.",
-      "sourceReference": "Import Pack 001 (SHLSOS-2021-CH1-P009-P011 concept summary, 2021 ed. -- unverified vs. the confirmed June 2024 manual) + general SOLAS/IMO maritime-safety knowledge",
-      "verificationStatus": "draft-unverified",
+      "sourceReference": "Import Pack 001 (SHLSOS Course No. 549 Student Manual, pages 9-11) -- confirmed verified by course operator, 2026-07-06",
+      "verificationStatus": "course-verified",
       "conceptId": "concept-ch1-012",
       "sourcePages": "9-11"
     },
@@ -4399,8 +4399,8 @@
         "Think about who reports there and when."
       ],
       "explanation": "A muster station is the designated reporting location assigned to crew and passengers during an emergency, tied to their specific duty on the station bill/muster list.",
-      "sourceReference": "Import Pack 001 (SHLSOS-2021-CH1-P009-P011 concept summary, 2021 ed. -- unverified vs. the confirmed June 2024 manual) + general SOLAS/IMO maritime-safety knowledge",
-      "verificationStatus": "draft-unverified",
+      "sourceReference": "Import Pack 001 (SHLSOS Course No. 549 Student Manual, pages 9-11) -- confirmed verified by course operator, 2026-07-06",
+      "verificationStatus": "course-verified",
       "conceptId": "concept-ch1-003",
       "sourcePages": "9-11"
     },
@@ -4435,8 +4435,8 @@
         "This is the regulatory term for what this course's other material calls a 'muster list.'"
       ],
       "explanation": "A station bill is the posted document assigning each crew member a specific emergency duty and muster station -- some courses/vessels also refer to this as a muster list.",
-      "sourceReference": "Import Pack 001 (SHLSOS-2021-CH1-P009-P011 concept summary, 2021 ed. -- unverified vs. the confirmed June 2024 manual) + general SOLAS/IMO maritime-safety knowledge",
-      "verificationStatus": "draft-unverified",
+      "sourceReference": "Import Pack 001 (SHLSOS Course No. 549 Student Manual, pages 9-11) -- confirmed verified by course operator, 2026-07-06",
+      "verificationStatus": "course-verified",
       "conceptId": "concept-ch1-004",
       "sourcePages": "9-11"
     },
@@ -4471,8 +4471,8 @@
         "Consider whether this is a single-topic rule or a broad international safety convention."
       ],
       "explanation": "SOLAS (Safety of Life at Sea) is the binding international convention setting minimum standards for ship construction, equipment, and operation, including required drills and vessel-specific safety manuals.",
-      "sourceReference": "Import Pack 001 (SHLSOS-2021-CH1-P009-P011 concept summary, 2021 ed. -- unverified vs. the confirmed June 2024 manual) + general SOLAS/IMO maritime-safety knowledge",
-      "verificationStatus": "draft-unverified",
+      "sourceReference": "Import Pack 001 (SHLSOS Course No. 549 Student Manual, pages 9-11) -- confirmed verified by course operator, 2026-07-06",
+      "verificationStatus": "course-verified",
       "conceptId": "concept-ch1-005",
       "sourcePages": "9-11"
     },
@@ -4507,8 +4507,8 @@
         "Consider whether this organization is national, private, or international/regulatory."
       ],
       "explanation": "The IMO (International Maritime Organization) is the UN agency that regulates international shipping, including the SOLAS convention and the standardized safety pictograms used aboard vessels.",
-      "sourceReference": "Import Pack 001 (SHLSOS-2021-CH1-P009-P011 concept summary, 2021 ed. -- unverified vs. the confirmed June 2024 manual) + general SOLAS/IMO maritime-safety knowledge",
-      "verificationStatus": "draft-unverified",
+      "sourceReference": "Import Pack 001 (SHLSOS Course No. 549 Student Manual, pages 9-11) -- confirmed verified by course operator, 2026-07-06",
+      "verificationStatus": "course-verified",
       "conceptId": "concept-ch1-006",
       "sourcePages": "9-11"
     },
@@ -4543,8 +4543,8 @@
         "Think about which one is meant to be worn alone versus as a supplement to a lifejacket."
       ],
       "explanation": "An immersion suit is a full-body suit providing both flotation and thermal (insulation) protection on its own. A TPA is a lighter supplemental covering meant to add thermal protection to someone already wearing a lifejacket -- not a replacement for a full immersion suit.",
-      "sourceReference": "Import Pack 001 (SHLSOS-2021-CH1-P009-P011 concept summary, 2021 ed. -- unverified vs. the confirmed June 2024 manual) + general SOLAS/IMO maritime-safety knowledge",
-      "verificationStatus": "draft-unverified",
+      "sourceReference": "Import Pack 001 (SHLSOS Course No. 549 Student Manual, pages 9-11) -- confirmed verified by course operator, 2026-07-06",
+      "verificationStatus": "course-verified",
       "conceptId": "concept-ch1-010",
       "sourcePages": "9-11"
     },
@@ -4579,8 +4579,8 @@
         "Think about what mechanically moves a lifeboat from its stowed position into the water."
       ],
       "explanation": "Davits are the crane-like devices used to raise, lower, and swing out a lifeboat so it can be launched.",
-      "sourceReference": "Import Pack 001 (SHLSOS-2021-CH1-P009-P011 concept summary, 2021 ed. -- unverified vs. the confirmed June 2024 manual) + general SOLAS/IMO maritime-safety knowledge",
-      "verificationStatus": "draft-unverified",
+      "sourceReference": "Import Pack 001 (SHLSOS Course No. 549 Student Manual, pages 9-11) -- confirmed verified by course operator, 2026-07-06",
+      "verificationStatus": "course-verified",
       "conceptId": "concept-ch1-010",
       "sourcePages": "9-11"
     },
@@ -4615,8 +4615,8 @@
         "Think about which one you throw versus which one you ride in."
       ],
       "explanation": "A lifebuoy is a thrown, ring-shaped flotation device to keep one person afloat until rescue. A rescue boat is a small craft crewed to actively retrieve someone from the water or marshal liferafts -- a very different role.",
-      "sourceReference": "Import Pack 001 (SHLSOS-2021-CH1-P009-P011 concept summary, 2021 ed. -- unverified vs. the confirmed June 2024 manual) + general SOLAS/IMO maritime-safety knowledge",
-      "verificationStatus": "draft-unverified",
+      "sourceReference": "Import Pack 001 (SHLSOS Course No. 549 Student Manual, pages 9-11) -- confirmed verified by course operator, 2026-07-06",
+      "verificationStatus": "course-verified",
       "conceptId": "concept-ch1-007",
       "sourcePages": "9-11"
     },
@@ -4651,8 +4651,8 @@
         "Think about what's actually different between a drill (planned, predictable) and this scenario (real, unplanned)."
       ],
       "explanation": "Not knowing your escape routes or muster station location in a real, unplanned emergency can cost exactly the kind of time that vessel familiarization -- done in advance -- is meant to save.",
-      "sourceReference": "Import Pack 001 (SHLSOS-2021-CH1-P009-P011 concept summary, 2021 ed. -- unverified vs. the confirmed June 2024 manual) + general SOLAS/IMO maritime-safety knowledge",
-      "verificationStatus": "draft-unverified",
+      "sourceReference": "Import Pack 001 (SHLSOS Course No. 549 Student Manual, pages 9-11) -- confirmed verified by course operator, 2026-07-06",
+      "verificationStatus": "course-verified",
       "conceptId": "concept-ch1-003",
       "sourcePages": "9-11"
     }
