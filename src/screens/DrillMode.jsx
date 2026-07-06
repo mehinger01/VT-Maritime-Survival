@@ -4,7 +4,7 @@ import QuestionCard from '../components/QuestionCard.jsx'
 
 const SET_SIZE = 8
 
-export default function DrillMode({ topics, questions, progress, recordAttempt, toggleFlag, navigate }) {
+export default function DrillMode({ topics, questions, progress, recordAttempt, toggleFlag, toggleExcluded, navigate }) {
   const [setKey, setSetKey] = useState(null)
   const [index, setIndex] = useState(0)
   const [done, setDone] = useState(false)
@@ -58,6 +58,7 @@ export default function DrillMode({ topics, questions, progress, recordAttempt, 
               allowHints={false}
               flagged={progress.flags.includes(current.id)}
               onToggleFlag={toggleFlag}
+              onToggleExclude={toggleExcluded}
               onAnswered={handleAnswered}
               onNext={handleNext}
               isLast={index + 1 >= queue.length}

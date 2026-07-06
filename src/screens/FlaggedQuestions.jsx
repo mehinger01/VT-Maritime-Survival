@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react'
 import QuestionCard from '../components/QuestionCard.jsx'
 
-export default function FlaggedQuestions({ questions, topics, progress, recordAttempt, toggleFlag }) {
+export default function FlaggedQuestions({ questions, topics, progress, recordAttempt, toggleFlag, toggleExcluded }) {
   const [practicing, setPracticing] = useState(false)
   const [index, setIndex] = useState(0)
 
@@ -36,6 +36,7 @@ export default function FlaggedQuestions({ questions, topics, progress, recordAt
           question={current}
           flagged
           onToggleFlag={toggleFlag}
+          onToggleExclude={toggleExcluded}
           onAnswered={handleAnswered}
           onNext={handleNext}
           isLast={index + 1 >= flaggedQuestions.length}
