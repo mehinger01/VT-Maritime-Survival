@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { buildSessionReport } from '../engine/sessionReport.js'
 
 function formatDuration(ms) {
@@ -6,9 +7,53 @@ function formatDuration(ms) {
   return `${minutes} min`
 }
 
+// Plain text so it pastes cleanly into a text/email/Slack message — the
+// student copies this and sends it to the instructor, who finalizes it into
+// a Learning Journal entry. No backend involved: both the report and the
+// summary read from this browser's own localStorage.
+function buildSummaryText(report, topics) {
+  const topicName = (id) => topics.find((t) => t.id === id)?.title ?? id
+  const date = new Date().toISOString().slice(0, 10)
+
+  const lines = [
+    `Session Activity — ${date}`,
+    `Duration: ${formatDuration(report.durationMs)}`,
+    `Questions Answered: ${report.total} (Accuracy: ${report.accuracy}%)`,
+    `Topics Covered: ${report.topicsTouched.join(', ') || 'None'}`,
+    '',
+    'Confidence Flags:',
+    `- ${report.overconfidentCount} high-confidence wrong answer(s)`,
+    `- ${report.underconfidentCount} low-confidence correct answer(s)`,
+    `- ${report.rapidFireCount} rapid-fire answer(s)`,
+  ]
+
+  const missed = report.attempts.filter((a) => !a.correct)
+  if (missed.length > 0) {
+    lines.push('', 'Missed Questions:')
+    missed.forEach((a) => {
+      lines.push(`- ${topicName(a.topicId)}${a.misconception ? ` — ${a.misconception}` : ''}`)
+    })
+  }
+
+  return lines.join('\n')
+}
+
 export default function SessionReport({ topics, progress, sessionId, navigate }) {
   const report = buildSessionReport(progress.attempts, sessionId, topics)
   const topicName = (id) => topics.find((t) => t.id === id)?.title ?? id
+  const [copied, setCopied] = useState(false)
+  const summaryText = buildSummaryText(report, topics)
+
+  const handleCopy = async () => {
+    try {
+      await navigator.clipboard.writeText(summaryText)
+      setCopied(true)
+      setTimeout(() => setCopied(false), 2000)
+    } catch {
+      // Clipboard permission denied/unavailable — the textarea below still
+      // lets the student select-all and copy manually.
+    }
+  }
 
   return (
     <div>
@@ -71,6 +116,22 @@ export default function SessionReport({ topics, progress, sessionId, navigate })
             {a.confidence && <span className="pill">confidence: {a.confidence}</span>}
           </div>
         ))}
+      </div>
+
+      <div className="card">
+        <h3>Send to Instructor</h3>
+        <p className="muted">
+          Copy this summary and send it to your instructor — they'll finalize it into the Learning Journal.
+        </p>
+        <button className="btn secondary" onClick={handleCopy} disabled={report.total === 0}>
+          {copied ? 'Copied!' : 'Copy Summary'}
+        </button>
+        <textarea
+          readOnly
+          value={summaryText}
+          rows={10}
+          style={{ width: '100%', marginTop: '0.75rem', fontFamily: 'monospace', fontSize: 12 }}
+        />
       </div>
 
       <div className="card">
