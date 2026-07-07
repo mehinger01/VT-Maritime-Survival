@@ -1,0 +1,178 @@
+{
+  "manifestId": "vinci-2026-07-07-image-manifest",
+  "batchId": "vinci-2026-07-07",
+  "receivedDate": "2026-07-07",
+  "sourceDescription": "Photos of pages from the SHLSOS Course No. 549 Student Manual, taken by Vinci and delivered via Google Drive (Vinci/7-7-26). Same manual already cited elsewhere in this repo's content (see src/content/course.json contentNote and src/content/sources/). Repo is private; do not make this manifest or the underlying images public without separately confirming reproduction rights with the publisher.",
+  "sourceCitation": "SHLSOS Course No. 549 Student Manual, © 2021 The Seafarers Harry Lundeberg School of Seamanship, Piney Point, MD 20674",
+  "purpose": "Traceability record for the raw image batch. Adding an entry here does NOT add it to any live question. An image only reaches a student when a question in src/content/course.json explicitly sets its \"image\" field to this file's publicPath, using the existing optional image/imageAlt fields from src/components/QuestionCard.jsx.",
+  "images": [
+    {
+      "file": "2026-07-07_030301.jpg",
+      "publicPath": "/content/vinci/2026-07-07/2026-07-07_030301.jpg",
+      "batchId": "vinci-2026-07-07",
+      "originalFolder": "Vinci/7-7-26",
+      "initialUseStatus": "candidate-quiz-visual",
+      "notes": "Manual page 12: full page of IMO/LSA safety symbol pictograms (lifeboat, rescue boat, liferaft, lifebuoy, lifejacket, EPIRB, immersion suit, exit signs, and more). Directly matches the 'safety symbols' use case — strong quiz-visual candidate (e.g. 'which symbol means X'), but still requires a specific question to be written and reviewed before use."
+    },
+    {
+      "file": "2026-07-07_033837.jpg",
+      "publicPath": "/content/vinci/2026-07-07/2026-07-07_033837.jpg",
+      "batchId": "vinci-2026-07-07",
+      "originalFolder": "Vinci/7-7-26",
+      "initialUseStatus": "candidate-quiz-visual",
+      "notes": "Manual page 15: 'C.O.I (Certificate of Inspection)' section with a sample Certificate of Inspection document and a lifeboat-capacity / certified-lifeboatmen table. Matches the 'inspection/capacity examples' use case. Note: the Drive folder contained an exact byte-for-byte duplicate of this photo (title '2026-07-07_033837 (1).jpg'); only one copy was kept."
+    },
+    {
+      "file": "2026-07-07_034357.jpg",
+      "publicPath": "/content/vinci/2026-07-07/2026-07-07_034357.jpg",
+      "batchId": "vinci-2026-07-07",
+      "originalFolder": "Vinci/7-7-26",
+      "initialUseStatus": "candidate-learning-visual",
+      "notes": "Manual page 17: 'Chapter 2 USING LIFEBOATS' intro, with labeled photos of a Partially Enclosed Lifeboat and a Totally Enclosed Lifeboat (roller gravity davit). Useful for teaching lifeboat-type identification."
+    },
+    {
+      "file": "2026-07-07_034781.jpg",
+      "publicPath": "/content/vinci/2026-07-07/2026-07-07_034781.jpg",
+      "batchId": "vinci-2026-07-07",
+      "originalFolder": "Vinci/7-7-26",
+      "initialUseStatus": "candidate-learning-visual",
+      "notes": "Manual page 18: continues lifeboat-type coverage (totally enclosed / self-contained air support / fire-protected) with labeled photos of a Totally Enclosed Lifeboat (free-fall gravity davit) and a Fast Rescue Boat (FRB). Useful for teaching lifeboat/rescue-boat-type identification."
+    },
+    {
+      "file": "2026-07-07_041458.jpg",
+      "publicPath": "/content/vinci/2026-07-07/2026-07-07_041458.jpg",
+      "batchId": "vinci-2026-07-07",
+      "originalFolder": "Vinci/7-7-26",
+      "initialUseStatus": "candidate-quiz-visual",
+      "notes": "Manual page 19: 'Markings' section (required markings: vessel name, port, number of persons, boat number, nameplate contents) plus photos of an Open Lifeboat, a Lifeboat Tender, and a lifeboat nameplate on a davit. Directly matches the 'lifeboat markings' use case."
+    },
+    {
+      "file": "2026-07-07_041663-1.jpg",
+      "publicPath": "/content/vinci/2026-07-07/2026-07-07_041663-1.jpg",
+      "batchId": "vinci-2026-07-07",
+      "originalFolder": "Vinci/7-7-26",
+      "initialUseStatus": "source-only",
+      "notes": "Manual page 20: 'Coloring' section (international orange / Indian orange / red release lever requirements), text only, no diagram. Near-duplicate photo of the same page as 2026-07-07_041663-2.jpg (different capture, not byte-identical); both kept for traceability."
+    },
+    {
+      "file": "2026-07-07_041663-2.jpg",
+      "publicPath": "/content/vinci/2026-07-07/2026-07-07_041663-2.jpg",
+      "batchId": "vinci-2026-07-07",
+      "originalFolder": "Vinci/7-7-26",
+      "initialUseStatus": "source-only",
+      "notes": "Manual page 20: same 'Coloring' section as 2026-07-07_041663-1.jpg — near-duplicate photo of the same page, text only, no diagram."
+    },
+    {
+      "file": "2026-07-07_041663-3.jpg",
+      "publicPath": "/content/vinci/2026-07-07/2026-07-07_041663-3.jpg",
+      "batchId": "vinci-2026-07-07",
+      "originalFolder": "Vinci/7-7-26",
+      "initialUseStatus": "candidate-quiz-visual",
+      "notes": "Manual page 21: 'Numbering' section (odd/starboard, even/port lifeboat numbering diagram, numbered fwd-to-aft) and 'Capacity' section (150-person max, seating/mass rules). Directly matches both the 'lifeboat markings' (numbering) and 'inspection/capacity examples' use cases — one of the strongest candidates in this batch."
+    },
+    {
+      "file": "2026-07-07_041663-4.jpg",
+      "publicPath": "/content/vinci/2026-07-07/2026-07-07_041663-4.jpg",
+      "batchId": "vinci-2026-07-07",
+      "originalFolder": "Vinci/7-7-26",
+      "initialUseStatus": "source-only",
+      "notes": "Manual page 22: 'Design, Construction, and Performance of Modern Lifeboats' — regulatory spec table (46CFR160.135-7 / IMO LSA Code) covering design, stability, strength, capacity, access, buoyancy, engine. Text only, no diagram/photo."
+    },
+    {
+      "file": "2026-07-07_041663-5.jpg",
+      "publicPath": "/content/vinci/2026-07-07/2026-07-07_041663-5.jpg",
+      "batchId": "vinci-2026-07-07",
+      "originalFolder": "Vinci/7-7-26",
+      "initialUseStatus": "source-only",
+      "notes": "Manual page 23: continuation of the spec table — Steering, Handholds, Release Mechanism, Skates, Painter Release, Lighting. Text only, no diagram/photo."
+    },
+    {
+      "file": "2026-07-07_041663-6.jpg",
+      "publicPath": "/content/vinci/2026-07-07/2026-07-07_041663-6.jpg",
+      "batchId": "vinci-2026-07-07",
+      "originalFolder": "Vinci/7-7-26",
+      "initialUseStatus": "source-only",
+      "notes": "Manual page 24: 'Construction' / 'Lifeboat Shell' sections with a labeled hull diagram (gunwale, stem, keel, stern post). Structural/vocabulary content, not one of the flagged priority categories."
+    },
+    {
+      "file": "2026-07-07_041663-7.jpg",
+      "publicPath": "/content/vinci/2026-07-07/2026-07-07_041663-7.jpg",
+      "batchId": "vinci-2026-07-07",
+      "originalFolder": "Vinci/7-7-26",
+      "initialUseStatus": "source-only",
+      "notes": "Manual page 25: hull-plating diagram (sheer strake / bilge strake / garboard strake) and doubler-plating explanation. Structural/vocabulary content, not one of the flagged priority categories."
+    },
+    {
+      "file": "2026-07-07_041663-8.jpg",
+      "publicPath": "/content/vinci/2026-07-07/2026-07-07_041663-8.jpg",
+      "batchId": "vinci-2026-07-07",
+      "originalFolder": "Vinci/7-7-26",
+      "initialUseStatus": "source-only",
+      "notes": "Manual page 26: 'Interior Construction' labeled cutaway diagram (brackets, sidebench, thwarts, stanchions, buoyancy unit, grab rail, limber holes, keel, floors, bottom boards). Structural/vocabulary content, not one of the flagged priority categories."
+    },
+    {
+      "file": "2026-07-07_041663-9.jpg",
+      "publicPath": "/content/vinci/2026-07-07/2026-07-07_041663-9.jpg",
+      "batchId": "vinci-2026-07-07",
+      "originalFolder": "Vinci/7-7-26",
+      "initialUseStatus": "source-only",
+      "notes": "Manual page 27: labeled top-down cutaway diagram of interior lifeboat parts (mast hasp, releasing hook/gear, bottom boards, thwarts, sidebenches, painter ring, bow/stern sheets). Structural/vocabulary content, not one of the flagged priority categories."
+    },
+    {
+      "file": "2026-07-07_041663-10.jpg",
+      "publicPath": "/content/vinci/2026-07-07/2026-07-07_041663-10.jpg",
+      "batchId": "vinci-2026-07-07",
+      "originalFolder": "Vinci/7-7-26",
+      "initialUseStatus": "source-only",
+      "notes": "Manual page 28: 'Buoyancy and Stability Features' labeled diagram and 'Automatic Lifeboat Drain' diagram (drain cage/ball check). Mechanical/structural content, not one of the flagged priority categories."
+    },
+    {
+      "file": "2026-07-07_041663-11.jpg",
+      "publicPath": "/content/vinci/2026-07-07/2026-07-07_041663-11.jpg",
+      "batchId": "vinci-2026-07-07",
+      "originalFolder": "Vinci/7-7-26",
+      "initialUseStatus": "candidate-quiz-visual",
+      "notes": "Manual page 29: section literally titled 'Exterior Rescue Features', with a labeled photo of a lifeboat showing grab rail, lifeline, seine float, and rudder/nozzle. Directly matches the 'rescue features' use case."
+    },
+    {
+      "file": "2026-07-07_041663-12.jpg",
+      "publicPath": "/content/vinci/2026-07-07/2026-07-07_041663-12.jpg",
+      "batchId": "vinci-2026-07-07",
+      "originalFolder": "Vinci/7-7-26",
+      "initialUseStatus": "source-only",
+      "notes": "Manual page 30: 'Steering Equipment' — labeled tiller/rudder/pintle/gudgeon diagram plus photos of a Kort Nozzle and a steering wheel. Equipment identification, but not one of the flagged priority categories (markings/safety symbols/rescue features/capacity)."
+    },
+    {
+      "file": "2026-07-07_041663-13.jpg",
+      "publicPath": "/content/vinci/2026-07-07/2026-07-07_041663-13.jpg",
+      "batchId": "vinci-2026-07-07",
+      "originalFolder": "Vinci/7-7-26",
+      "initialUseStatus": "source-only",
+      "notes": "Manual page 31: 'Propulsion Systems' / 'Engine Powered Systems' with a labeled stern gland/stern tube/propeller shaft/engine diagram. Mechanical content, not one of the flagged priority categories."
+    },
+    {
+      "file": "2026-07-07_041663-14.jpg",
+      "publicPath": "/content/vinci/2026-07-07/2026-07-07_041663-14.jpg",
+      "batchId": "vinci-2026-07-07",
+      "originalFolder": "Vinci/7-7-26",
+      "initialUseStatus": "source-only",
+      "notes": "Manual page 32: engine starting/stopping procedures (manual/electric/hydraulic starting, electric start checklist) and propeller-characteristics intro. Text only, no diagram/photo."
+    },
+    {
+      "file": "2026-07-07_041663-15.jpg",
+      "publicPath": "/content/vinci/2026-07-07/2026-07-07_041663-15.jpg",
+      "batchId": "vinci-2026-07-07",
+      "originalFolder": "Vinci/7-7-26",
+      "initialUseStatus": "source-only",
+      "notes": "Manual page 33: propeller-rotation diagram (right-hand propeller) and fire-extinguisher use steps under 'Safety Notes on Engine Powered Lifeboats'. Mechanical/procedural content, not one of the flagged priority categories."
+    },
+    {
+      "file": "2026-07-07_041663-16.jpg",
+      "publicPath": "/content/vinci/2026-07-07/2026-07-07_041663-16.jpg",
+      "batchId": "vinci-2026-07-07",
+      "originalFolder": "Vinci/7-7-26",
+      "initialUseStatus": "source-only",
+      "notes": "Manual page 34: 'Hand Propelled Systems' (Fleming gear) labeled diagram and hand/oar-propelled lifeboat rules. Mechanical content, not one of the flagged priority categories."
+    }
+  ]
+}
