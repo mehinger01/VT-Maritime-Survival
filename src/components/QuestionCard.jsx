@@ -1,5 +1,23 @@
 import { useEffect, useState } from 'react'
 
+// Deterministic shuffle seeded by question ID ensures same question always
+// shows choices in same order, but different questions get different orders
+function shuffleChoices(choices, questionId) {
+  const arr = [...choices]
+  let seed = 0
+  for (let i = 0; i < questionId.length; i++) {
+    seed = ((seed << 5) - seed) + questionId.charCodeAt(i)
+    seed = seed & seed // Convert to 32-bit integer
+  }
+
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.abs(seed ^ (seed >>> 9)) % (i + 1)
+    seed = seed * 1103515245 + 12345 // Linear congruential generator
+    ;[arr[i], arr[j]] = [arr[j], arr[i]]
+  }
+  return arr
+}
+
 const CONFIDENCE_OPTIONS = [
   { id: 'low', label: 'Low confidence' },
   { id: 'medium', label: 'Medium confidence' },
@@ -42,6 +60,7 @@ export default function QuestionCard({
   const [hintIndex, setHintIndex] = useState(0)
   const [startedAt, setStartedAt] = useState(() => Date.now())
   const [justExcluded, setJustExcluded] = useState(false)
+  const [shuffledChoices, setShuffledChoices] = useState([])
 
   useEffect(() => {
     setStage('choosing')
@@ -49,6 +68,7 @@ export default function QuestionCard({
     setHintIndex(0)
     setStartedAt(Date.now())
     setJustExcluded(false)
+    setShuffledChoices(shuffleChoices(question.choices, question.id))
   }, [question.id])
 
   function selectChoice(choiceId) {
@@ -90,7 +110,7 @@ export default function QuestionCard({
 
       {stage === 'choosing' && (
         <>
-          {question.choices.map((choice) => (
+          {shuffledChoices.map((choice) => (
             <button key={choice.id} className="choice" onClick={() => selectChoice(choice.id)}>
               {choice.text}
             </button>
@@ -112,7 +132,7 @@ export default function QuestionCard({
 
       {stage === 'confidence' && (
         <>
-          {question.choices.map((choice) => (
+          {shuffledChoices.map((choice) => (
             <button
               key={choice.id}
               className={`choice${choice.id === selectedChoiceId ? ' selected' : ''}`}
@@ -135,7 +155,7 @@ export default function QuestionCard({
 
       {stage === 'revealed' && (
         <>
-          {question.choices.map((choice) => {
+          {shuffledChoices.map((choice) => {
             let cls = 'choice'
             if (choice.id === question.correctChoiceId) cls += ' correct'
             else if (choice.id === selectedChoiceId) cls += ' wrong'
