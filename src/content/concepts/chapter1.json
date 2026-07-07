@@ -1,0 +1,187 @@
+[
+  {
+    "id": "concept-ch1-001",
+    "chapter": "chapter-1-planning-ahead",
+    "title": "Survival begins before the emergency",
+    "description": "Preparation — knowing your duties, your equipment, and your ship — happens before an emergency, not during one.",
+    "source": "SHLSOS-2021-CH1-P009-P011",
+    "sourcePages": "9-11",
+    "tags": [
+      "chapter-1",
+      "survival-principles"
+    ],
+    "existingCoverage": "Substantially overlaps q-ep-6, q-ep-7 (preparedness vs. response). No new question written.",
+    "verificationStatus": "course-verified",
+    "verificationNote": "Confirmed verified by course operator on 2026-07-06, overriding the standard intake caveat. The manual-edition question (2021 vs. revised June 2024) was not separately re-confirmed as part of this promotion."
+  },
+  {
+    "id": "concept-ch1-002",
+    "chapter": "chapter-1-planning-ahead",
+    "title": "Training reduces fear and improves decision-making",
+    "description": "Drilled responses reduce hesitation and panic-driven errors when a real emergency occurs.",
+    "source": "SHLSOS-2021-CH1-P009-P011",
+    "sourcePages": "9-11",
+    "tags": [
+      "chapter-1",
+      "drills",
+      "survival-principles"
+    ],
+    "existingCoverage": "Substantially overlaps q-ep-3, q-ep-9, q-ep-12. No new question written.",
+    "verificationStatus": "course-verified",
+    "verificationNote": "Confirmed verified by course operator on 2026-07-06, overriding the standard intake caveat. The manual-edition question (2021 vs. revised June 2024) was not separately re-confirmed as part of this promotion."
+  },
+  {
+    "id": "concept-ch1-003",
+    "chapter": "chapter-1-planning-ahead",
+    "title": "Familiarization with the vessel is essential",
+    "description": "Every crew member should know the layout of the vessel they're on — escape routes, muster station location, and equipment locations — not just generic emergency procedure.",
+    "source": "SHLSOS-2021-CH1-P009-P011",
+    "sourcePages": "9-11",
+    "tags": [
+      "chapter-1",
+      "planning-ahead"
+    ],
+    "existingCoverage": "New ground — no prior question in the bank.",
+    "verificationStatus": "course-verified",
+    "verificationNote": "Confirmed verified by course operator on 2026-07-06, overriding the standard intake caveat. The manual-edition question (2021 vs. revised June 2024) was not separately re-confirmed as part of this promotion."
+  },
+  {
+    "id": "concept-ch1-004",
+    "chapter": "chapter-1-planning-ahead",
+    "title": "Every crew member has assigned emergency duties",
+    "description": "A station bill (muster list) assigns specific individuals to specific emergency duties and stations.",
+    "source": "SHLSOS-2021-CH1-P009-P011",
+    "sourcePages": "9-11",
+    "tags": [
+      "chapter-1",
+      "shipboard-emergencies"
+    ],
+    "existingCoverage": "Substantially overlaps q-ep-2, q-ep-8, q-ep-10. No new question written; see the 'station bill' vs. 'muster list' terminology note in import-pack-001.json.",
+    "verificationStatus": "course-verified",
+    "verificationNote": "Confirmed verified by course operator on 2026-07-06, overriding the standard intake caveat. The manual-edition question (2021 vs. revised June 2024) was not separately re-confirmed as part of this promotion."
+  },
+  {
+    "id": "concept-ch1-005",
+    "chapter": "chapter-1-planning-ahead",
+    "title": "SOLAS manuals are vessel-specific",
+    "description": "A SOLAS training/safety manual is written for a specific vessel's actual equipment and layout — it is not a generic document interchangeable between ships.",
+    "source": "SHLSOS-2021-CH1-P009-P011",
+    "sourcePages": "9-11",
+    "tags": [
+      "chapter-1",
+      "solas",
+      "planning-ahead"
+    ],
+    "existingCoverage": "New ground.",
+    "verificationStatus": "course-verified",
+    "verificationNote": "Confirmed verified by course operator on 2026-07-06, overriding the standard intake caveat. The manual-edition question (2021 vs. revised June 2024) was not separately re-confirmed as part of this promotion."
+  },
+  {
+    "id": "concept-ch1-006",
+    "chapter": "chapter-1-planning-ahead",
+    "title": "IMO safety symbols communicate emergency information",
+    "description": "Standardized IMO pictograms mark safety equipment and muster/escape routes so the information is understood regardless of a crew member's or passenger's spoken language.",
+    "source": "SHLSOS-2021-CH1-P009-P011",
+    "sourcePages": "9-11",
+    "tags": [
+      "chapter-1",
+      "imo",
+      "planning-ahead"
+    ],
+    "existingCoverage": "New ground.",
+    "verificationStatus": "course-verified",
+    "verificationNote": "Confirmed verified by course operator on 2026-07-06, overriding the standard intake caveat. The manual-edition question (2021 vs. revised June 2024) was not separately re-confirmed as part of this promotion."
+  },
+  {
+    "id": "concept-ch1-007",
+    "chapter": "chapter-1-planning-ahead",
+    "title": "Common shipboard emergencies",
+    "description": "Distinct emergency types — fire, foundering (taking on water/sinking), grounding, and hull failure among them — call for recognizably different responses.",
+    "source": "SHLSOS-2021-CH1-P009-P011",
+    "sourcePages": "9-11",
+    "tags": [
+      "chapter-1",
+      "shipboard-emergencies"
+    ],
+    "existingCoverage": "New ground — existing bank has general-alarm questions but no taxonomy of emergency types.",
+    "verificationStatus": "course-verified",
+    "verificationNote": "Confirmed verified by course operator on 2026-07-06, overriding the standard intake caveat. The manual-edition question (2021 vs. revised June 2024) was not separately re-confirmed as part of this promotion."
+  },
+  {
+    "id": "concept-ch1-008",
+    "chapter": "chapter-1-planning-ahead",
+    "title": "Panic reduces survival effectiveness",
+    "description": "Panic degrades decision-making and slows or derails correct emergency response.",
+    "source": "SHLSOS-2021-CH1-P009-P011",
+    "sourcePages": "9-11",
+    "tags": [
+      "chapter-1",
+      "survival-principles"
+    ],
+    "existingCoverage": "Substantially overlaps q-ep-3, q-ep-12. No new question written.",
+    "verificationStatus": "course-verified",
+    "verificationNote": "Confirmed verified by course operator on 2026-07-06, overriding the standard intake caveat. The manual-edition question (2021 vs. revised June 2024) was not separately re-confirmed as part of this promotion."
+  },
+  {
+    "id": "concept-ch1-009",
+    "chapter": "chapter-1-planning-ahead",
+    "title": "Drills increase survival readiness",
+    "description": "Regular practice, not one-time exposure, is what builds real readiness for an emergency.",
+    "source": "SHLSOS-2021-CH1-P009-P011",
+    "sourcePages": "9-11",
+    "tags": [
+      "chapter-1",
+      "drills"
+    ],
+    "existingCoverage": "Substantially overlaps q-ep-3, q-ep-9. No new question written.",
+    "verificationStatus": "course-verified",
+    "verificationNote": "Confirmed verified by course operator on 2026-07-06, overriding the standard intake caveat. The manual-edition question (2021 vs. revised June 2024) was not separately re-confirmed as part of this promotion."
+  },
+  {
+    "id": "concept-ch1-010",
+    "chapter": "chapter-1-planning-ahead",
+    "title": "Abandon ship drills have required components",
+    "description": "An abandon ship drill isn't just sounding an alarm — it includes reporting to muster stations, donning lifejackets/immersion suits, and lifeboat lowering/boarding procedure.",
+    "source": "SHLSOS-2021-CH1-P009-P011",
+    "sourcePages": "9-11",
+    "tags": [
+      "chapter-1",
+      "drills",
+      "shipboard-emergencies"
+    ],
+    "existingCoverage": "New ground.",
+    "verificationStatus": "course-verified",
+    "verificationNote": "Confirmed verified by course operator on 2026-07-06, overriding the standard intake caveat. The manual-edition question (2021 vs. revised June 2024) was not separately re-confirmed as part of this promotion."
+  },
+  {
+    "id": "concept-ch1-011",
+    "chapter": "chapter-1-planning-ahead",
+    "title": "Fire drills are mandatory",
+    "description": "Fire drills are a required, regulated part of shipboard safety practice, not an optional exercise.",
+    "source": "SHLSOS-2021-CH1-P009-P011",
+    "sourcePages": "9-11",
+    "tags": [
+      "chapter-1",
+      "drills"
+    ],
+    "existingCoverage": "New ground — existing bank has a fire-drill-dismissal scenario (q-ep-5) but not the regulatory-mandate framing.",
+    "verificationStatus": "course-verified",
+    "verificationNote": "Confirmed verified by course operator on 2026-07-06, overriding the standard intake caveat. The manual-edition question (2021 vs. revised June 2024) was not separately re-confirmed as part of this promotion."
+  },
+  {
+    "id": "concept-ch1-012",
+    "chapter": "chapter-1-planning-ahead",
+    "title": "Students should ask questions during drills",
+    "description": "Drills are the appropriate time to clarify anything unclear about your duties or the procedure — not something to save for a real emergency.",
+    "source": "SHLSOS-2021-CH1-P009-P011",
+    "sourcePages": "9-11",
+    "tags": [
+      "chapter-1",
+      "drills",
+      "survival-principles"
+    ],
+    "existingCoverage": "New ground.",
+    "verificationStatus": "course-verified",
+    "verificationNote": "Confirmed verified by course operator on 2026-07-06, overriding the standard intake caveat. The manual-edition question (2021 vs. revised June 2024) was not separately re-confirmed as part of this promotion."
+  }
+]

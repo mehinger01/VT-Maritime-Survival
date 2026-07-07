@@ -13,6 +13,17 @@ const DIFFICULTY_LABELS = {
   'very-hard': 'Very Hard',
 }
 
+// Only questions carrying a sourceReference came from outside Vinci's own
+// materials (practice tests, official exams, etc). Untagged questions predate
+// this tracking system and are left unbadged rather than guessed at.
+const SOURCE_BADGES = {
+  'draft-unverified': { label: 'Unverified source — not yet confirmed', className: 'source-unverified' },
+  'practice-test-informed': { label: 'Practice-test source', className: 'source-unverified' },
+  'multi-source-supported': { label: 'Confirmed by multiple sources', className: 'source-confirmed' },
+  'official-source-supported': { label: 'Confirmed against official exam', className: 'source-confirmed' },
+  'course-verified': { label: "Verified in Vinci's course material", className: 'source-verified' },
+}
+
 // Shared retrieval-practice flow used by Quiz, Drill, and Review Mistakes.
 // Enforces the anti-guessing workflow: the student must select an answer
 // AND commit a confidence level before the correct answer is revealed.
@@ -21,6 +32,7 @@ export default function QuestionCard({
   allowHints = true,
   flagged = false,
   onToggleFlag,
+  onToggleExclude,
   onAnswered,
   onNext,
   isLast = false,
@@ -29,12 +41,14 @@ export default function QuestionCard({
   const [selectedChoiceId, setSelectedChoiceId] = useState(null)
   const [hintIndex, setHintIndex] = useState(0)
   const [startedAt, setStartedAt] = useState(() => Date.now())
+  const [justExcluded, setJustExcluded] = useState(false)
 
   useEffect(() => {
     setStage('choosing')
     setSelectedChoiceId(null)
     setHintIndex(0)
     setStartedAt(Date.now())
+    setJustExcluded(false)
   }, [question.id])
 
   function selectChoice(choiceId) {
@@ -50,11 +64,27 @@ export default function QuestionCard({
   }
 
   const correct = selectedChoiceId === question.correctChoiceId
+  const sourceBadge = question.sourceReference ? SOURCE_BADGES[question.verificationStatus] : null
+
+  function handleExclude() {
+    const confirmed = window.confirm(
+      'Exclude this question from all quizzes, drills, and reviews? It will stop appearing until a separate process re-adds it.',
+    )
+    if (confirmed) {
+      onToggleExclude?.(question.id)
+      setJustExcluded(true)
+    }
+  }
 
   return (
     <div>
       {question.difficulty && (
         <span className={`pill difficulty-${question.difficulty}`}>{DIFFICULTY_LABELS[question.difficulty] ?? question.difficulty}</span>
+      )}
+      {sourceBadge && (
+        <span className={`pill ${sourceBadge.className}`} title={question.sourceReference}>
+          {sourceBadge.label}
+        </span>
       )}
       <div className="question-prompt">{question.prompt}</div>
 
@@ -134,7 +164,13 @@ export default function QuestionCard({
       <div style={{ marginTop: 10 }}>
         <button className="btn secondary small" onClick={() => onToggleFlag?.(question.id)}>
           {flagged ? 'Unflag this question' : 'Flag for later review'}
-        </button>
+        </button>{' '}
+        {onToggleExclude && !justExcluded && (
+          <button className="btn secondary small" onClick={handleExclude}>
+            Exclude this question
+          </button>
+        )}
+        {justExcluded && <span className="muted"> Excluded — won't reappear until re-added separately.</span>}
       </div>
     </div>
   )

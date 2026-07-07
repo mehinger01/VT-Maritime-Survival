@@ -11,6 +11,7 @@ function emptyProgress() {
     schemaVersion: SCHEMA_VERSION,
     attempts: [],
     flags: [],
+    excluded: [],
   }
 }
 
@@ -24,6 +25,7 @@ export function loadProgress() {
       schemaVersion: SCHEMA_VERSION,
       attempts: Array.isArray(parsed.attempts) ? parsed.attempts : [],
       flags: Array.isArray(parsed.flags) ? parsed.flags : [],
+      excluded: Array.isArray(parsed.excluded) ? parsed.excluded : [],
     }
   } catch {
     return emptyProgress()
@@ -52,6 +54,23 @@ export function toggleFlag(questionId) {
 
 export function isFlagged(progress, questionId) {
   return progress.flags.includes(questionId)
+}
+
+// Excluding a question removes it from every pool (quiz, drill, review,
+// topic counts) without deleting it from course.json. The toggle itself is
+// symmetric, but the shipped UI only exposes the exclude direction for now —
+// re-including an excluded question is a separate process, not yet built.
+export function toggleExcluded(questionId) {
+  const progress = loadProgress()
+  const idx = progress.excluded.indexOf(questionId)
+  if (idx === -1) progress.excluded.push(questionId)
+  else progress.excluded.splice(idx, 1)
+  saveProgress(progress)
+  return progress
+}
+
+export function isExcluded(progress, questionId) {
+  return progress.excluded.includes(questionId)
 }
 
 export function resetProgress() {

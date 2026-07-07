@@ -1,8 +1,8 @@
 {
   "courseId": "vt-maritime-water-survival",
   "courseName": "Maritime & Water Survival Exam Prep",
-  "version": 1,
-  "contentNote": "PLACEHOLDER / DRAFT PRACTICE CONTENT. Topic structure now matches the table of contents of the actual Water Survival Student Manual (SHLSOS Course No. 549, revised June 2024) supplied by Vinci. We currently have only the manual's table of contents, not its full chapter text — the practice questions below were written before this alignment and have been remapped to the closest matching manual chapter, but they are NOT sourced from the manual itself and remain draft/unverified. A subset of questions (marked with a 'sourceReference' and 'verificationStatus' field) were added from an unverified third-party SIU 2019 practice-test intake — see docs/CONTENT_INTAKE_BENCHMARK.md and docs/SIU_2019_CONVERSION_PLAN.md for how that source is tiered and what still needs checking. Vinci (instructor/SME) should review and replace this entire bank with content verified against the actual manual chapters before it is used for real exam prep.",
+  "version": 3,
+  "contentNote": "PLACEHOLDER / DRAFT PRACTICE CONTENT. Topic structure now matches the table of contents of the actual Water Survival Student Manual (SHLSOS Course No. 549, revised June 2024) supplied by Vinci. We currently have only the manual's table of contents, not its full chapter text — the practice questions below were written before this alignment and have been remapped to the closest matching manual chapter, but they are NOT sourced from the manual itself and remain draft/unverified. A subset of questions (marked with a 'sourceReference' and 'verificationStatus' field) were added from an unverified third-party SIU 2019 practice-test intake — see docs/CONTENT_INTAKE_BENCHMARK.md and docs/SIU_2019_CONVERSION_PLAN.md for how that source is tiered and what still needs checking. Vinci (instructor/SME) should review and replace this entire bank with content verified against the actual manual chapters before it is used for real exam prep. v2: added 19 draft questions from Import Pack 001 (SHLSOS-2021-CH1-P009-P011 concept summary -- see src/content/imports/import-pack-001.json and src/content/sources/SHLSOS-2021-CH1-P009-P011.md for the verification caveats: this is a concept/vocabulary summary, not verbatim manual text, and cites a 2021 edition vs. the previously-confirmed 'revised June 2024' edition -- both need resolving with Vinci before anything here is promoted to verified). v3: the 19 Import Pack 001 questions (Chapter 1) were promoted from draft-unverified to course-verified per explicit operator confirmation on 2026-07-06 -- see src/content/imports/import-pack-001.json for the promotion note. The manual-edition question (2021 vs. 'revised June 2024') raised during intake was not separately re-confirmed as part of this promotion and remains worth a quick check with Vinci.",
   "topics": [
     {
       "id": "chapter-1-planning-ahead",
@@ -1394,7 +1394,9 @@
         "There's a specific side associated with the gas cylinder that provides leverage.",
         "A strap is provided specifically for this maneuver."
       ],
-      "explanation": "Survivors typically climb onto the side where the CO2 bottle is mounted and pull the righting strap, using body weight for leverage to flip the raft upright."
+      "explanation": "Survivors typically climb onto the side where the CO2 bottle is mounted and pull the righting strap, using body weight for leverage to flip the raft upright. Confirmed by an official source: the USCG/NMC Q445 Lifeboat Operator sample exam independently describes the same technique (stand on the CO2 bottle, hold the straps, throw your weight back).",
+      "sourceReference": "Confirmed by USCG/NMC Q445 Lifeboat Operator Sample Exam (official)",
+      "verificationStatus": "official-source-supported"
     },
     {
       "id": "q-raft-3",
@@ -1691,7 +1693,9 @@
         "Think about where the weight is concentrated on a capsized raft.",
         "Leverage works better where there's already weight to pull against."
       ],
-      "explanation": "The CO2 bottle's weight is mounted on that specific side, so climbing there and pulling the righting strap uses that weight as a leverage point to flip the raft — it's a specific mechanical instruction, not an arbitrary or comfort-based one. Misconception tested: assuming a specific procedural instruction is arbitrary rather than recognizing the physical/mechanical reason behind it."
+      "explanation": "The CO2 bottle's weight is mounted on that specific side, so climbing there and pulling the righting strap uses that weight as a leverage point to flip the raft — it's a specific mechanical instruction, not an arbitrary or comfort-based one. Confirmed by an official source: the USCG/NMC Q445 Lifeboat Operator sample exam independently describes standing on the CO2 bottle as the correct righting technique. Misconception tested: assuming a specific procedural instruction is arbitrary rather than recognizing the physical/mechanical reason behind it.",
+      "sourceReference": "Confirmed by USCG/NMC Q445 Lifeboat Operator Sample Exam (official)",
+      "verificationStatus": "official-source-supported"
     },
     {
       "id": "q-raft-12",
@@ -2747,7 +2751,9 @@
         "Think about what could go wrong if several transfers were attempted simultaneously.",
         "This is about control and safety margins, not speed."
       ],
-      "explanation": "Sequential transfer lets the rescue crew control weight distribution, timing, and individual safety checks — attempting several transfers simultaneously would multiply the things that could go wrong at once. Misconception tested: assuming a safety-driven sequencing choice is really about speed or tradition rather than risk control."
+      "explanation": "Sequential transfer lets the rescue crew control weight distribution, timing, and individual safety checks — attempting several transfers simultaneously would multiply the things that could go wrong at once. Confirmed by an official source: the USCG/NMC Q445 Lifeboat Operator sample exam specifically states that personnel transferring from an enclosed lifeboat to a rescue vessel should remain seated inside and transfer one person at a time. Misconception tested: assuming a safety-driven sequencing choice is really about speed or tradition rather than risk control.",
+      "sourceReference": "Confirmed by USCG/NMC Q445 Lifeboat Operator Sample Exam (official)",
+      "verificationStatus": "official-source-supported"
     },
     {
       "id": "q-rescue-8",
@@ -2919,10 +2925,25 @@
       "topicId": "appendix-a-glossary",
       "prompt": "In lifeboat rudder hardware, what is a \"pintle\"?",
       "choices": [
-        { "id": "a", "text": "The pin fitted to the rudder that fits down into a matching socket on the boat" },
-        { "id": "b", "text": "The socket fitting mounted on the boat that receives the rudder pin", "misconception": "This describes the gudgeon, not the pintle — the two terms are a matched pair and easy to swap." },
-        { "id": "c", "text": "A type of lifeboat release mechanism", "misconception": "Confuses rudder hardware vocabulary with an unrelated release-gear term." },
-        { "id": "d", "text": "The lever used to steer the rudder", "misconception": "Confuses the pintle/gudgeon hinge hardware with a steering control." }
+        {
+          "id": "a",
+          "text": "The pin fitted to the rudder that fits down into a matching socket on the boat"
+        },
+        {
+          "id": "b",
+          "text": "The socket fitting mounted on the boat that receives the rudder pin",
+          "misconception": "This describes the gudgeon, not the pintle — the two terms are a matched pair and easy to swap."
+        },
+        {
+          "id": "c",
+          "text": "A type of lifeboat release mechanism",
+          "misconception": "Confuses rudder hardware vocabulary with an unrelated release-gear term."
+        },
+        {
+          "id": "d",
+          "text": "The lever used to steer the rudder",
+          "misconception": "Confuses the pintle/gudgeon hinge hardware with a steering control."
+        }
       ],
       "correctChoiceId": "a",
       "difficulty": "easy",
@@ -2939,10 +2960,25 @@
       "topicId": "appendix-a-glossary",
       "prompt": "In lifeboat rudder hardware, what is a \"gudgeon\"?",
       "choices": [
-        { "id": "a", "text": "The socket fitting mounted on the boat that receives the rudder's pintle pin" },
-        { "id": "b", "text": "The pin on the rudder itself that drops into a socket", "misconception": "This describes the pintle, not the gudgeon — the two terms are a matched pair and easy to swap." },
-        { "id": "c", "text": "A type of davit used to launch the rudder assembly", "misconception": "Invents an unrelated launching function for a simple hinge-socket fitting." },
-        { "id": "d", "text": "The compass bracket on an open lifeboat", "misconception": "Confuses rudder hinge hardware with unrelated compass-mounting hardware." }
+        {
+          "id": "a",
+          "text": "The socket fitting mounted on the boat that receives the rudder's pintle pin"
+        },
+        {
+          "id": "b",
+          "text": "The pin on the rudder itself that drops into a socket",
+          "misconception": "This describes the pintle, not the gudgeon — the two terms are a matched pair and easy to swap."
+        },
+        {
+          "id": "c",
+          "text": "A type of davit used to launch the rudder assembly",
+          "misconception": "Invents an unrelated launching function for a simple hinge-socket fitting."
+        },
+        {
+          "id": "d",
+          "text": "The compass bracket on an open lifeboat",
+          "misconception": "Confuses rudder hinge hardware with unrelated compass-mounting hardware."
+        }
       ],
       "correctChoiceId": "a",
       "difficulty": "easy",
@@ -2959,10 +2995,25 @@
       "topicId": "appendix-a-glossary",
       "prompt": "What does the term \"limber system\" refer to in a lifeboat's construction?",
       "choices": [
-        { "id": "a", "text": "A drainage system — holes in the floor structure that let water flow through compartments toward the bilge" },
-        { "id": "b", "text": "The flexible rubber seals around hatches", "misconception": "Confuses drainage holes with an unrelated sealing/waterproofing feature." },
-        { "id": "c", "text": "The set of exercises a lifeboat crew performs before a drill", "misconception": "Confuses a construction term with an unrelated physical-fitness meaning of 'limber.'" },
-        { "id": "d", "text": "The hinge system connecting the rudder to the hull", "misconception": "Confuses the limber (drainage) system with pintle/gudgeon rudder hardware." }
+        {
+          "id": "a",
+          "text": "A drainage system — holes in the floor structure that let water flow through compartments toward the bilge"
+        },
+        {
+          "id": "b",
+          "text": "The flexible rubber seals around hatches",
+          "misconception": "Confuses drainage holes with an unrelated sealing/waterproofing feature."
+        },
+        {
+          "id": "c",
+          "text": "The set of exercises a lifeboat crew performs before a drill",
+          "misconception": "Confuses a construction term with an unrelated physical-fitness meaning of 'limber.'"
+        },
+        {
+          "id": "d",
+          "text": "The hinge system connecting the rudder to the hull",
+          "misconception": "Confuses the limber (drainage) system with pintle/gudgeon rudder hardware."
+        }
       ],
       "correctChoiceId": "a",
       "difficulty": "medium",
@@ -2979,10 +3030,25 @@
       "topicId": "appendix-a-glossary",
       "prompt": "If someone refers to the \"stern sheets\" of a lifeboat, what are they talking about?",
       "choices": [
-        { "id": "a", "text": "The aftermost seating area of the boat" },
-        { "id": "b", "text": "A set of spare canvas sheets stored at the stern", "misconception": "Takes 'sheets' literally as fabric rather than as the nautical term for seating/flooring area." },
-        { "id": "c", "text": "The forwardmost rowing position", "misconception": "Reverses 'stern' (aft) with the bow (forward) end of the boat." },
-        { "id": "d", "text": "The paperwork tracking the boat's equipment", "misconception": "Confuses 'sheets' as in seating with 'sheets' as in paper records." }
+        {
+          "id": "a",
+          "text": "The aftermost seating area of the boat"
+        },
+        {
+          "id": "b",
+          "text": "A set of spare canvas sheets stored at the stern",
+          "misconception": "Takes 'sheets' literally as fabric rather than as the nautical term for seating/flooring area."
+        },
+        {
+          "id": "c",
+          "text": "The forwardmost rowing position",
+          "misconception": "Reverses 'stern' (aft) with the bow (forward) end of the boat."
+        },
+        {
+          "id": "d",
+          "text": "The paperwork tracking the boat's equipment",
+          "misconception": "Confuses 'sheets' as in seating with 'sheets' as in paper records."
+        }
       ],
       "correctChoiceId": "a",
       "difficulty": "easy",
@@ -2999,10 +3065,25 @@
       "topicId": "appendix-a-glossary",
       "prompt": "What is a lifeboat's \"sea painter\"?",
       "choices": [
-        { "id": "a", "text": "A line used to keep the lifeboat controlled and connected to the ship (or to help maneuver it) during launch and pickup" },
-        { "id": "b", "text": "The person responsible for painting the lifeboat's hull markings", "misconception": "Takes 'painter' literally as a job title rather than as the nautical term for a mooring/control line." },
-        { "id": "c", "text": "A waterproof coating applied to the hull before a voyage", "misconception": "Confuses the sea painter (a rope) with an unrelated hull-coating product." },
-        { "id": "d", "text": "The compass correction table used at sea", "misconception": "Confuses an unrelated navigation reference with a physical mooring line." }
+        {
+          "id": "a",
+          "text": "A line used to keep the lifeboat controlled and connected to the ship (or to help maneuver it) during launch and pickup"
+        },
+        {
+          "id": "b",
+          "text": "The person responsible for painting the lifeboat's hull markings",
+          "misconception": "Takes 'painter' literally as a job title rather than as the nautical term for a mooring/control line."
+        },
+        {
+          "id": "c",
+          "text": "A waterproof coating applied to the hull before a voyage",
+          "misconception": "Confuses the sea painter (a rope) with an unrelated hull-coating product."
+        },
+        {
+          "id": "d",
+          "text": "The compass correction table used at sea",
+          "misconception": "Confuses an unrelated navigation reference with a physical mooring line."
+        }
       ],
       "correctChoiceId": "a",
       "difficulty": "easy",
@@ -3019,10 +3100,25 @@
       "topicId": "appendix-a-glossary",
       "prompt": "What are \"frapping lines\" used for when launching a lifeboat?",
       "choices": [
-        { "id": "a", "text": "Steadying the boat against the ship's side as it's lowered, typically rigged at the embarkation deck" },
-        { "id": "b", "text": "Hoisting the sail on a lifeboat equipped with a sailing rig", "misconception": "Confuses frapping lines with halyards, which are used to hoist a sail." },
-        { "id": "c", "text": "Securing the drain plug in place", "misconception": "Confuses frapping lines with an unrelated hull-drainage fitting." },
-        { "id": "d", "text": "Signaling nearby vessels during a night launch", "misconception": "Confuses a physical steadying line with a signaling function." }
+        {
+          "id": "a",
+          "text": "Steadying the boat against the ship's side as it's lowered, typically rigged at the embarkation deck"
+        },
+        {
+          "id": "b",
+          "text": "Hoisting the sail on a lifeboat equipped with a sailing rig",
+          "misconception": "Confuses frapping lines with halyards, which are used to hoist a sail."
+        },
+        {
+          "id": "c",
+          "text": "Securing the drain plug in place",
+          "misconception": "Confuses frapping lines with an unrelated hull-drainage fitting."
+        },
+        {
+          "id": "d",
+          "text": "Signaling nearby vessels during a night launch",
+          "misconception": "Confuses a physical steadying line with a signaling function."
+        }
       ],
       "correctChoiceId": "a",
       "difficulty": "medium",
@@ -3030,19 +3126,34 @@
         "They're rigged where people board — the embarkation deck.",
         "Their job is steadying the boat against the ship's side, not sailing or signaling."
       ],
-      "explanation": "Frapping lines steady the lifeboat against the ship's side while it's being lowered, and are typically rigged at the embarkation deck. Misconception tested: confusing them with sailing rigging (halyards) or unrelated launch hardware.",
-      "sourceReference": "SIU 2019 Practice Test intake, unverified",
-      "verificationStatus": "draft-unverified"
+      "explanation": "Frapping lines are passed around the falls to steady the lifeboat and prevent it from swinging violently while it's being lowered, and are typically rigged at the embarkation deck. Confirmed by an official source: the USCG/NMC Q445 Lifeboat Operator sample exam independently states the same function and timing. Misconception tested: confusing them with sailing rigging (halyards) or unrelated launch hardware.",
+      "sourceReference": "SIU 2019 Practice Test intake; confirmed by USCG/NMC Q445 Lifeboat Operator Sample Exam (official)",
+      "verificationStatus": "official-source-supported"
     },
     {
       "id": "q-gloss-tricing",
       "topicId": "appendix-a-glossary",
       "prompt": "In lifeboat launching, what are \"tricing pendants,\" and when should they be released?",
       "choices": [
-        { "id": "a", "text": "Lines that hold the boat snug against the ship's side for boarding; released after all people have embarked" },
-        { "id": "b", "text": "Signal flags flown from the lifeboat during launch", "misconception": "Confuses 'pendants' as in signal flags with the nautical use of 'pendant' as a short line/fitting." },
-        { "id": "c", "text": "The manufacturer's identification tags on the boat's equipment", "misconception": "Confuses tricing pendants with unrelated equipment labeling." },
-        { "id": "d", "text": "Lines released before anyone boards, to make room for embarkation", "misconception": "Reverses the correct sequence — tricing pendants hold the boat in for boarding and are released after embarkation, not before." }
+        {
+          "id": "a",
+          "text": "Lines that hold the boat snug against the ship's side for boarding; released after all people have embarked"
+        },
+        {
+          "id": "b",
+          "text": "Signal flags flown from the lifeboat during launch",
+          "misconception": "Confuses 'pendants' as in signal flags with the nautical use of 'pendant' as a short line/fitting."
+        },
+        {
+          "id": "c",
+          "text": "The manufacturer's identification tags on the boat's equipment",
+          "misconception": "Confuses tricing pendants with unrelated equipment labeling."
+        },
+        {
+          "id": "d",
+          "text": "Lines released before anyone boards, to make room for embarkation",
+          "misconception": "Reverses the correct sequence — tricing pendants hold the boat in for boarding and are released after embarkation, not before."
+        }
       ],
       "correctChoiceId": "a",
       "difficulty": "medium",
@@ -3050,19 +3161,34 @@
         "They hold the boat in close to the ship — useful right up until boarding is done.",
         "Think about the order: people board first, then this line is let go."
       ],
-      "explanation": "Tricing pendants hold the lifeboat snug against the ship's side to make boarding safer, and are released only after all people have embarked. Misconception tested: reversing the sequence, or confusing 'pendant' with a signal flag rather than a line/fitting.",
-      "sourceReference": "SIU 2019 Practice Test intake, unverified",
-      "verificationStatus": "draft-unverified"
+      "explanation": "Tricing pendants hold the lifeboat snug against the ship's side (specifically at the embarkation deck) to make boarding safer, and are released only after all people have embarked — typically via a mechanism called the McCluny hook. Confirmed by an official source: the USCG/NMC Q445 Lifeboat Operator sample exam independently states the same purpose, and additionally identifies the release mechanism. Misconception tested: reversing the sequence, or confusing 'pendant' with a signal flag rather than a line/fitting.",
+      "sourceReference": "SIU 2019 Practice Test intake; confirmed by USCG/NMC Q445 Lifeboat Operator Sample Exam (official)",
+      "verificationStatus": "official-source-supported"
     },
     {
       "id": "q-gloss-preventer",
       "topicId": "appendix-a-glossary",
       "prompt": "What is the purpose of \"preventer bars\" fitted on a lifeboat's releasing gear?",
       "choices": [
-        { "id": "a", "text": "To prevent accidental unhooking when the falls become slack" },
-        { "id": "b", "text": "To stop the boat from being lowered too quickly", "misconception": "Confuses preventer bars with an unrelated speed-control/brake function." },
-        { "id": "c", "text": "To prevent water from entering through the drain plug", "misconception": "Confuses releasing-gear hardware with unrelated hull-drainage hardware." },
-        { "id": "d", "text": "To lock the rudder in place during storage", "misconception": "Confuses preventer bars with an unrelated steering-lock function." }
+        {
+          "id": "a",
+          "text": "To prevent accidental unhooking when the falls become slack"
+        },
+        {
+          "id": "b",
+          "text": "To stop the boat from being lowered too quickly",
+          "misconception": "Confuses preventer bars with an unrelated speed-control/brake function."
+        },
+        {
+          "id": "c",
+          "text": "To prevent water from entering through the drain plug",
+          "misconception": "Confuses releasing-gear hardware with unrelated hull-drainage hardware."
+        },
+        {
+          "id": "d",
+          "text": "To lock the rudder in place during storage",
+          "misconception": "Confuses preventer bars with an unrelated steering-lock function."
+        }
       ],
       "correctChoiceId": "a",
       "difficulty": "medium",
@@ -3079,10 +3205,25 @@
       "topicId": "appendix-a-glossary",
       "prompt": "What is a \"lifefloat\"?",
       "choices": [
-        { "id": "a", "text": "A rigid lifesaving device designed to support survivors in the water, rather than fully enclose them like a lifeboat or liferaft" },
-        { "id": "b", "text": "Another name for an inflatable liferaft", "misconception": "Confuses a lifefloat (a distinct rigid device) with the liferaft, which is a different, inflatable piece of equipment." },
-        { "id": "c", "text": "A personal flotation device worn by an individual crew member", "misconception": "Confuses a shared rigid support platform with an individual-wear item like a life jacket." },
-        { "id": "d", "text": "The float mechanism inside a hydrostatic release unit", "misconception": "Confuses the lifefloat (survivor-support equipment) with an unrelated internal release-mechanism part." }
+        {
+          "id": "a",
+          "text": "A rigid lifesaving device designed to support survivors in the water, rather than fully enclose them like a lifeboat or liferaft"
+        },
+        {
+          "id": "b",
+          "text": "Another name for an inflatable liferaft",
+          "misconception": "Confuses a lifefloat (a distinct rigid device) with the liferaft, which is a different, inflatable piece of equipment."
+        },
+        {
+          "id": "c",
+          "text": "A personal flotation device worn by an individual crew member",
+          "misconception": "Confuses a shared rigid support platform with an individual-wear item like a life jacket."
+        },
+        {
+          "id": "d",
+          "text": "The float mechanism inside a hydrostatic release unit",
+          "misconception": "Confuses the lifefloat (survivor-support equipment) with an unrelated internal release-mechanism part."
+        }
       ],
       "correctChoiceId": "a",
       "difficulty": "medium",
@@ -3099,10 +3240,25 @@
       "topicId": "appendix-a-glossary",
       "prompt": "What is \"compass error\"?",
       "choices": [
-        { "id": "a", "text": "The combined difference between a standard magnetic compass heading and the true heading" },
-        { "id": "b", "text": "A malfunction that makes the compass unusable", "misconception": "Treats 'error' as a defect/failure rather than as the normal, correctable difference between magnetic and true headings." },
-        { "id": "c", "text": "The difference caused only by metal objects on board", "misconception": "Describes deviation specifically, not the combined term 'compass error,' which also includes variation." },
-        { "id": "d", "text": "A mistake made by the navigator in reading the compass", "misconception": "Confuses the technical navigation term with a simple human reading mistake." }
+        {
+          "id": "a",
+          "text": "The combined difference between a standard magnetic compass heading and the true heading"
+        },
+        {
+          "id": "b",
+          "text": "A malfunction that makes the compass unusable",
+          "misconception": "Treats 'error' as a defect/failure rather than as the normal, correctable difference between magnetic and true headings."
+        },
+        {
+          "id": "c",
+          "text": "The difference caused only by metal objects on board",
+          "misconception": "Describes deviation specifically, not the combined term 'compass error,' which also includes variation."
+        },
+        {
+          "id": "d",
+          "text": "A mistake made by the navigator in reading the compass",
+          "misconception": "Confuses the technical navigation term with a simple human reading mistake."
+        }
       ],
       "correctChoiceId": "a",
       "difficulty": "medium",
@@ -3119,10 +3275,25 @@
       "topicId": "chapter-2-using-lifeboats",
       "prompt": "Prior to lowering a lifeboat, what is the most important single item to check?",
       "choices": [
-        { "id": "a", "text": "The boat (drain) plug" },
-        { "id": "b", "text": "The paint condition of the hull", "misconception": "Prioritizes a cosmetic detail over a safety-critical check." },
-        { "id": "c", "text": "The compass calibration", "misconception": "Compass calibration matters for navigation later, but it isn't the critical pre-lowering safety check." },
-        { "id": "d", "text": "The exact fuel level to the nearest gallon", "misconception": "Overweights a precise fuel measurement over the far more immediate concern of the boat taking on water." }
+        {
+          "id": "a",
+          "text": "The boat (drain) plug"
+        },
+        {
+          "id": "b",
+          "text": "The paint condition of the hull",
+          "misconception": "Prioritizes a cosmetic detail over a safety-critical check."
+        },
+        {
+          "id": "c",
+          "text": "The compass calibration",
+          "misconception": "Compass calibration matters for navigation later, but it isn't the critical pre-lowering safety check."
+        },
+        {
+          "id": "d",
+          "text": "The exact fuel level to the nearest gallon",
+          "misconception": "Overweights a precise fuel measurement over the far more immediate concern of the boat taking on water."
+        }
       ],
       "correctChoiceId": "a",
       "difficulty": "easy",
@@ -3139,10 +3310,25 @@
       "topicId": "chapter-2-using-lifeboats",
       "prompt": "Where should a lifeboat's sea painter be secured inside the boat?",
       "choices": [
-        { "id": "a", "text": "To an inboard thwart, in the forward one-third of the boat" },
-        { "id": "b", "text": "To the stern sheets, at the very back of the boat", "misconception": "Places the control line at the wrong end of the boat, which would work against, not with, controlled positioning during launch and pickup." },
-        { "id": "c", "text": "Anywhere convenient, since exact position doesn't matter", "misconception": "Ignores that a control line's effectiveness depends on where it's anchored in the boat." },
-        { "id": "d", "text": "To the rudder assembly", "misconception": "Confuses the sea painter (a separate control line) with steering hardware." }
+        {
+          "id": "a",
+          "text": "To an inboard thwart, in the forward one-third of the boat"
+        },
+        {
+          "id": "b",
+          "text": "To the stern sheets, at the very back of the boat",
+          "misconception": "Places the control line at the wrong end of the boat, which would work against, not with, controlled positioning during launch and pickup."
+        },
+        {
+          "id": "c",
+          "text": "Anywhere convenient, since exact position doesn't matter",
+          "misconception": "Ignores that a control line's effectiveness depends on where it's anchored in the boat."
+        },
+        {
+          "id": "d",
+          "text": "To the rudder assembly",
+          "misconception": "Confuses the sea painter (a separate control line) with steering hardware."
+        }
       ],
       "correctChoiceId": "a",
       "difficulty": "medium",
@@ -3159,10 +3345,25 @@
       "topicId": "chapter-2-using-lifeboats",
       "prompt": "Immediately after starting a lifeboat engine, what should you do?",
       "choices": [
-        { "id": "a", "text": "Check operating pressures and temperatures, and check for leaks" },
-        { "id": "b", "text": "Immediately open the throttle fully to confirm top speed", "misconception": "Risks the engine before confirming it's actually running safely." },
-        { "id": "c", "text": "Wait ten minutes before touching any controls", "misconception": "Passively delays a check that should happen right away, rather than confirming the engine is running safely from the start." },
-        { "id": "d", "text": "Immediately begin steering maneuvers to test the rudder", "misconception": "Tests an unrelated system (steering) instead of confirming the engine itself is running safely." }
+        {
+          "id": "a",
+          "text": "Check operating pressures and temperatures, and check for leaks"
+        },
+        {
+          "id": "b",
+          "text": "Immediately open the throttle fully to confirm top speed",
+          "misconception": "Risks the engine before confirming it's actually running safely."
+        },
+        {
+          "id": "c",
+          "text": "Wait ten minutes before touching any controls",
+          "misconception": "Passively delays a check that should happen right away, rather than confirming the engine is running safely from the start."
+        },
+        {
+          "id": "d",
+          "text": "Immediately begin steering maneuvers to test the rudder",
+          "misconception": "Tests an unrelated system (steering) instead of confirming the engine itself is running safely."
+        }
       ],
       "correctChoiceId": "a",
       "difficulty": "easy",
@@ -3179,10 +3380,25 @@
       "topicId": "chapter-2-using-lifeboats",
       "prompt": "What fuel is used in a typical lifeboat engine?",
       "choices": [
-        { "id": "a", "text": "Diesel oil" },
-        { "id": "b", "text": "Gasoline", "misconception": "Confuses lifeboat engine fuel with a more volatile fuel type not typically used in this application." },
-        { "id": "c", "text": "Compressed natural gas", "misconception": "Introduces a fuel type not associated with standard lifeboat engines." },
-        { "id": "d", "text": "It has no engine and is oar-powered only", "misconception": "Incorrectly assumes all lifeboats are engineless, when motor-propelled lifeboats are standard equipment." }
+        {
+          "id": "a",
+          "text": "Diesel oil"
+        },
+        {
+          "id": "b",
+          "text": "Gasoline",
+          "misconception": "Confuses lifeboat engine fuel with a more volatile fuel type not typically used in this application."
+        },
+        {
+          "id": "c",
+          "text": "Compressed natural gas",
+          "misconception": "Introduces a fuel type not associated with standard lifeboat engines."
+        },
+        {
+          "id": "d",
+          "text": "It has no engine and is oar-powered only",
+          "misconception": "Incorrectly assumes all lifeboats are engineless, when motor-propelled lifeboats are standard equipment."
+        }
       ],
       "correctChoiceId": "a",
       "difficulty": "easy",
@@ -3197,32 +3413,62 @@
     {
       "id": "q-ch2-24hrfuel",
       "topicId": "chapter-2-using-lifeboats",
-      "prompt": "According to this (unverified) practice-test source, roughly how much fuel is a motor lifeboat expected to carry?",
+      "prompt": "How much fuel must a motor lifeboat carry?",
       "choices": [
-        { "id": "a", "text": "Enough for about 24 hours of continuous operation" },
-        { "id": "b", "text": "Only enough for a few minutes of maneuvering near the ship", "misconception": "Understates the fuel reserve needed to support an extended survival situation." },
-        { "id": "c", "text": "An unlimited amount, since lifeboats can be refueled at sea", "misconception": "Assumes an at-sea refueling capability that survival craft don't have." },
-        { "id": "d", "text": "Exactly enough to reach the nearest port, calculated per voyage", "misconception": "Invents a voyage-specific fuel calculation rather than the flat endurance-based reserve this source describes." }
+        {
+          "id": "a",
+          "text": "Enough for about 24 hours of continuous operation"
+        },
+        {
+          "id": "b",
+          "text": "Only enough for a few minutes of maneuvering near the ship",
+          "misconception": "Understates the fuel reserve needed to support an extended survival situation."
+        },
+        {
+          "id": "c",
+          "text": "An unlimited amount, since lifeboats can be refueled at sea",
+          "misconception": "Assumes an at-sea refueling capability that survival craft don't have."
+        },
+        {
+          "id": "d",
+          "text": "Exactly enough to reach the nearest port, calculated per voyage",
+          "misconception": "Invents a voyage-specific fuel calculation rather than the flat endurance-based reserve this figure describes."
+        }
       ],
       "correctChoiceId": "a",
       "difficulty": "medium",
       "hints": [
         "Think endurance, not just maneuvering near the ship.",
-        "This exact figure comes from an unverified source — treat it as a planning ballpark, not a confirmed regulatory number."
+        "It's a flat requirement, not a per-voyage calculation."
       ],
-      "explanation": "This unverified practice-test source states a motor lifeboat should carry enough fuel for about 24 hours of continuous operation, reflecting that survival craft need real endurance, not just a few minutes of maneuvering. IMPORTANT: this specific figure has NOT been confirmed against Vinci's manual or an official regulation — treat it as a draft planning figure only, pending verification. Misconception tested: assuming lifeboats can be refueled at sea or only need fuel for the moments right after launch.",
-      "sourceReference": "SIU 2019 Practice Test intake, unverified",
-      "verificationStatus": "draft-unverified"
+      "explanation": "A motor lifeboat must carry enough fuel for about 24 hours of continuous operation, reflecting that survival craft need real endurance, not just a few minutes of maneuvering. This figure is confirmed by an official source (USCG/NMC Q445 Lifeboat Operator sample exam), independently matching what the earlier SIU 2019 practice-test intake also stated. Misconception tested: assuming lifeboats can be refueled at sea or only need fuel for the moments right after launch.",
+      "sourceReference": "SIU 2019 Practice Test intake; confirmed by USCG/NMC Q445 Lifeboat Operator Sample Exam (official)",
+      "verificationStatus": "official-source-supported"
     },
     {
       "id": "q-ch2-sprinklerspray",
       "topicId": "chapter-2-using-lifeboats",
       "prompt": "On a covered lifeboat, what is the difference between the sprinkler system and the water spray system?",
       "choices": [
-        { "id": "a", "text": "Both protect against fire heat, but they are separate systems — the water spray system in particular is powered by the air supply, not by the sprinkler line" },
-        { "id": "b", "text": "They are two names for the exact same single system", "misconception": "Collapses two related-but-distinct fire-protection systems into one, missing that the air supply pressurizes one but not the other." },
-        { "id": "c", "text": "The sprinkler system is for drinking water storage, and the water spray system is for fire protection", "misconception": "Misassigns the sprinkler system to water storage, when both systems are actually part of fire protection." },
-        { "id": "d", "text": "Only one of the two actually exists on real covered lifeboats", "misconception": "Incorrectly dismisses one of the two systems as fictional." }
+        {
+          "id": "a",
+          "text": "Both protect against fire heat, but they are separate systems — the water spray system in particular is powered by the air supply, not by the sprinkler line"
+        },
+        {
+          "id": "b",
+          "text": "They are two names for the exact same single system",
+          "misconception": "Collapses two related-but-distinct fire-protection systems into one, missing that the air supply pressurizes one but not the other."
+        },
+        {
+          "id": "c",
+          "text": "The sprinkler system is for drinking water storage, and the water spray system is for fire protection",
+          "misconception": "Misassigns the sprinkler system to water storage, when both systems are actually part of fire protection."
+        },
+        {
+          "id": "d",
+          "text": "Only one of the two actually exists on real covered lifeboats",
+          "misconception": "Incorrectly dismisses one of the two systems as fictional."
+        }
       ],
       "correctChoiceId": "a",
       "difficulty": "medium",
@@ -3239,10 +3485,25 @@
       "topicId": "chapter-2-using-lifeboats",
       "prompt": "A lifeboat has TWO different things commonly called \"air tanks.\" What is the key difference between them?",
       "choices": [
-        { "id": "a", "text": "General buoyancy air tanks keep the boat afloat if flooded; a totally enclosed lifeboat's separate breathing-air tank gives occupants and the engine only about ten minutes of air if the boat must pass through flames" },
-        { "id": "b", "text": "They are the same tank serving both purposes at once", "misconception": "Merges two genuinely separate systems — buoyancy (structural, passive) and breathing air (active life-support with a firm time limit) — into one, which could lead someone to overestimate how long the breathing-air supply actually lasts." },
-        { "id": "c", "text": "The buoyancy air tanks provide breathing air, and the fire-protection tank provides flotation", "misconception": "Swaps the two systems' actual functions." },
-        { "id": "d", "text": "Only totally enclosed lifeboats have any air tanks at all", "misconception": "Incorrectly assumes buoyancy air tanks are exclusive to totally enclosed lifeboats, when general buoyancy tanks are a broader lifeboat feature." }
+        {
+          "id": "a",
+          "text": "General buoyancy air tanks keep the boat afloat if flooded; a totally enclosed lifeboat's separate breathing-air tank gives occupants and the engine only about ten minutes of air if the boat must pass through flames"
+        },
+        {
+          "id": "b",
+          "text": "They are the same tank serving both purposes at once",
+          "misconception": "Merges two genuinely separate systems — buoyancy (structural, passive) and breathing air (active life-support with a firm time limit) — into one, which could lead someone to overestimate how long the breathing-air supply actually lasts."
+        },
+        {
+          "id": "c",
+          "text": "The buoyancy air tanks provide breathing air, and the fire-protection tank provides flotation",
+          "misconception": "Swaps the two systems' actual functions."
+        },
+        {
+          "id": "d",
+          "text": "Only totally enclosed lifeboats have any air tanks at all",
+          "misconception": "Incorrectly assumes buoyancy air tanks are exclusive to totally enclosed lifeboats, when general buoyancy tanks are a broader lifeboat feature."
+        }
       ],
       "correctChoiceId": "a",
       "difficulty": "very-hard",
@@ -3259,10 +3520,25 @@
       "topicId": "chapter-2-using-lifeboats",
       "prompt": "Which best distinguishes compass error, variation, and deviation from one another?",
       "choices": [
-        { "id": "a", "text": "Variation comes from the Earth's magnetic field and changes with location; deviation comes from magnetic material on board and changes with heading; compass error is the combined effect of both" },
-        { "id": "b", "text": "They are three different names for the exact same correction", "misconception": "Collapses three distinct, separately-caused navigation corrections into one, losing the ability to reason about where each correction actually comes from." },
-        { "id": "c", "text": "Deviation is caused by the Earth's magnetic field, and variation is caused by metal on board", "misconception": "Swaps the actual causes of variation and deviation." },
-        { "id": "d", "text": "Compass error only applies to magnetic compasses, while variation and deviation apply to all compass types equally", "misconception": "Introduces an unsupported distinction; all three terms are part of the same magnetic-compass correction framework." }
+        {
+          "id": "a",
+          "text": "Variation comes from the Earth's magnetic field and changes with location; deviation comes from magnetic material on board and changes with heading; compass error is the combined effect of both"
+        },
+        {
+          "id": "b",
+          "text": "They are three different names for the exact same correction",
+          "misconception": "Collapses three distinct, separately-caused navigation corrections into one, losing the ability to reason about where each correction actually comes from."
+        },
+        {
+          "id": "c",
+          "text": "Deviation is caused by the Earth's magnetic field, and variation is caused by metal on board",
+          "misconception": "Swaps the actual causes of variation and deviation."
+        },
+        {
+          "id": "d",
+          "text": "Compass error only applies to magnetic compasses, while variation and deviation apply to all compass types equally",
+          "misconception": "Introduces an unsupported distinction; all three terms are part of the same magnetic-compass correction framework."
+        }
       ],
       "correctChoiceId": "a",
       "difficulty": "very-hard",
@@ -3279,10 +3555,25 @@
       "topicId": "chapter-2-using-lifeboats",
       "prompt": "A lifeboat is advertised as \"self-righting.\" Under what condition will it actually return to an upright position if capsized?",
       "choices": [
-        { "id": "a", "text": "Only if all personnel are seated with seatbelts on and doors/hatches shut" },
-        { "id": "b", "text": "Automatically and unconditionally, regardless of occupant behavior", "misconception": "Overstates 'self-righting' as an unconditional guarantee, when it specifically depends on occupants being seated, belted, and the boat sealed." },
-        { "id": "c", "text": "Only if the engine is running at the time of capsize", "misconception": "Introduces an unsupported engine-state condition not part of the actual self-righting requirement." },
-        { "id": "d", "text": "Only in calm water, never in rough seas", "misconception": "Introduces an unsupported sea-state exclusion not part of the actual self-righting requirement." }
+        {
+          "id": "a",
+          "text": "Only if all personnel are seated with seatbelts on and doors/hatches shut"
+        },
+        {
+          "id": "b",
+          "text": "Automatically and unconditionally, regardless of occupant behavior",
+          "misconception": "Overstates 'self-righting' as an unconditional guarantee, when it specifically depends on occupants being seated, belted, and the boat sealed."
+        },
+        {
+          "id": "c",
+          "text": "Only if the engine is running at the time of capsize",
+          "misconception": "Introduces an unsupported engine-state condition not part of the actual self-righting requirement."
+        },
+        {
+          "id": "d",
+          "text": "Only in calm water, never in rough seas",
+          "misconception": "Introduces an unsupported sea-state exclusion not part of the actual self-righting requirement."
+        }
       ],
       "correctChoiceId": "a",
       "difficulty": "hard",
@@ -3299,10 +3590,25 @@
       "topicId": "chapter-2-using-lifeboats",
       "prompt": "You need to get a lifeboat away from the ship after launch. Which tool is most useful, and why does it depend on the ship's motion?",
       "choices": [
-        { "id": "a", "text": "The sea painter, if the ship still has way on (is moving); a boat hook, if the ship is making no headway at all" },
-        { "id": "b", "text": "The boat hook works best in every case, regardless of the ship's motion", "misconception": "Ignores that a boat hook has limited reach and leverage compared to a sea painter when the ship is actually moving." },
-        { "id": "c", "text": "The sea painter is only useful once the ship has come to a complete stop", "misconception": "Reverses the actual distinction — the sea painter is most useful specifically while the ship still has way on." },
-        { "id": "d", "text": "Neither tool matters; the lifeboat's own engine handles this in all cases", "misconception": "Assumes engine power alone solves a positioning problem that these specific tools are meant to help with, including in situations where relying on the engine alone may not be practical." }
+        {
+          "id": "a",
+          "text": "The sea painter, if the ship still has way on (is moving); a boat hook, if the ship is making no headway at all"
+        },
+        {
+          "id": "b",
+          "text": "The boat hook works best in every case, regardless of the ship's motion",
+          "misconception": "Ignores that a boat hook has limited reach and leverage compared to a sea painter when the ship is actually moving."
+        },
+        {
+          "id": "c",
+          "text": "The sea painter is only useful once the ship has come to a complete stop",
+          "misconception": "Reverses the actual distinction — the sea painter is most useful specifically while the ship still has way on."
+        },
+        {
+          "id": "d",
+          "text": "Neither tool matters; the lifeboat's own engine handles this in all cases",
+          "misconception": "Assumes engine power alone solves a positioning problem that these specific tools are meant to help with, including in situations where relying on the engine alone may not be practical."
+        }
       ],
       "correctChoiceId": "a",
       "difficulty": "hard",
@@ -3319,10 +3625,25 @@
       "topicId": "chapter-2-using-lifeboats",
       "prompt": "In heavy seas, how should a motor lifeboat be steered relative to the waves, and what happens if this is ignored?",
       "choices": [
-        { "id": "a", "text": "It should be steered into the seas; steering broadside to the sea instead risks capsizing" },
-        { "id": "b", "text": "It should be steered broadside to the sea for the smoothest ride", "misconception": "Directly inverts the correct heading — broadside orientation in heavy seas is a capsize risk, not a comfort improvement." },
-        { "id": "c", "text": "Heading relative to the waves doesn't affect capsize risk, only speed does", "misconception": "Ignores that heading relative to the sea is a major capsize factor independent of speed." },
-        { "id": "d", "text": "It should always run directly away from the seas at maximum speed", "misconception": "Introduces an extreme, unsupported steering strategy not aligned with the correct into-the-seas heading." }
+        {
+          "id": "a",
+          "text": "It should be steered into the seas; steering broadside to the sea instead risks capsizing"
+        },
+        {
+          "id": "b",
+          "text": "It should be steered broadside to the sea for the smoothest ride",
+          "misconception": "Directly inverts the correct heading — broadside orientation in heavy seas is a capsize risk, not a comfort improvement."
+        },
+        {
+          "id": "c",
+          "text": "Heading relative to the waves doesn't affect capsize risk, only speed does",
+          "misconception": "Ignores that heading relative to the sea is a major capsize factor independent of speed."
+        },
+        {
+          "id": "d",
+          "text": "It should always run directly away from the seas at maximum speed",
+          "misconception": "Introduces an extreme, unsupported steering strategy not aligned with the correct into-the-seas heading."
+        }
       ],
       "correctChoiceId": "a",
       "difficulty": "hard",
@@ -3339,10 +3660,25 @@
       "topicId": "chapter-2-using-lifeboats",
       "prompt": "On a lifeboat equipped with Rottmer-type releasing gear, what happens when the releasing lever is turned — and why does this matter?",
       "choices": [
-        { "id": "a", "text": "Both falls release at the same time, even if the boat has not yet reached the water — so it must never be turned before the boat is safely waterborne" },
-        { "id": "b", "text": "Only one fall releases at a time, giving a margin of safety either way", "misconception": "Understates the risk by assuming a staged, one-at-a-time release, when Rottmer-type gear releases both falls simultaneously regardless of the boat's position." },
-        { "id": "c", "text": "The lever only functions once the boat senses it has touched water", "misconception": "Assumes a water-sensing safety interlock that this type of releasing gear does not have." },
-        { "id": "d", "text": "Nothing happens unless the lever is turned twice in sequence", "misconception": "Invents a two-step safety sequence not part of how this releasing gear actually functions." }
+        {
+          "id": "a",
+          "text": "Both falls release at the same time, even if the boat has not yet reached the water — so it must never be turned before the boat is safely waterborne"
+        },
+        {
+          "id": "b",
+          "text": "Only one fall releases at a time, giving a margin of safety either way",
+          "misconception": "Understates the risk by assuming a staged, one-at-a-time release, when Rottmer-type gear releases both falls simultaneously regardless of the boat's position."
+        },
+        {
+          "id": "c",
+          "text": "The lever only functions once the boat senses it has touched water",
+          "misconception": "Assumes a water-sensing safety interlock that this type of releasing gear does not have."
+        },
+        {
+          "id": "d",
+          "text": "Nothing happens unless the lever is turned twice in sequence",
+          "misconception": "Invents a two-step safety sequence not part of how this releasing gear actually functions."
+        }
       ],
       "correctChoiceId": "a",
       "difficulty": "hard",
@@ -3350,19 +3686,34 @@
         "This gear does not check whether the boat is in the water first.",
         "That's exactly why crew must be trained to control timing themselves, rather than relying on the gear to prevent an early release."
       ],
-      "explanation": "Rottmer-type releasing gear releases both falls simultaneously the moment the lever is turned, regardless of whether the boat has reached the water — there's no built-in interlock preventing an early release. This makes crew timing and training the actual safety control, not the gear itself. Misconception tested: assuming the releasing gear has a safety check that prevents premature release, when the responsibility for correct timing rests entirely on the crew operating it.",
-      "sourceReference": "SIU 2019 Practice Test intake, unverified",
-      "verificationStatus": "draft-unverified"
+      "explanation": "Rottmer-type releasing gear releases both falls simultaneously the moment the lever is turned, regardless of whether the boat has reached the water — there's no built-in interlock preventing an early release. This makes crew timing and training the actual safety control, not the gear itself. Misconception tested: assuming the releasing gear has a safety check that prevents premature release, when the responsibility for correct timing rests entirely on the crew operating it. Confirmed by an official source: the USCG/NMC Q445 Lifeboat Operator sample exam independently states the same fact.",
+      "sourceReference": "SIU 2019 Practice Test intake; confirmed by USCG/NMC Q445 Lifeboat Operator Sample Exam (official)",
+      "verificationStatus": "official-source-supported"
     },
     {
       "id": "q-ch2-backingport-hard",
       "topicId": "chapter-2-using-lifeboats",
       "prompt": "You are backing a motor-propelled lifeboat with a right-hand propeller, rudder held amidships. Which way does the stern swing, and why is this worth knowing in advance?",
       "choices": [
-        { "id": "a", "text": "The stern swings to port — a right-hand propeller's backing effect pulls it that way even with the rudder centered, which can surprise someone expecting the rudder alone to control direction" },
-        { "id": "b", "text": "The stern stays perfectly straight since the rudder is centered", "misconception": "Assumes rudder position alone determines direction, ignoring the propeller's own backing effect (often called 'prop walk')." },
-        { "id": "c", "text": "The stern swings to starboard, matching the direction the propeller spins when viewed from behind", "misconception": "Guesses the opposite (and incorrect) direction, treating the backing effect as intuitive rather than something to specifically learn." },
-        { "id": "d", "text": "The direction depends entirely on wind, not on the propeller at all", "misconception": "Dismisses a real, propeller-driven mechanical effect in favor of an external factor that isn't the actual cause here." }
+        {
+          "id": "a",
+          "text": "The stern swings to port — a right-hand propeller's backing effect pulls it that way even with the rudder centered, which can surprise someone expecting the rudder alone to control direction"
+        },
+        {
+          "id": "b",
+          "text": "The stern stays perfectly straight since the rudder is centered",
+          "misconception": "Assumes rudder position alone determines direction, ignoring the propeller's own backing effect (often called 'prop walk')."
+        },
+        {
+          "id": "c",
+          "text": "The stern swings to starboard, matching the direction the propeller spins when viewed from behind",
+          "misconception": "Guesses the opposite (and incorrect) direction, treating the backing effect as intuitive rather than something to specifically learn."
+        },
+        {
+          "id": "d",
+          "text": "The direction depends entirely on wind, not on the propeller at all",
+          "misconception": "Dismisses a real, propeller-driven mechanical effect in favor of an external factor that isn't the actual cause here."
+        }
       ],
       "correctChoiceId": "a",
       "difficulty": "hard",
@@ -3379,10 +3730,25 @@
       "topicId": "chapter-2-using-lifeboats",
       "prompt": "Water is rising in the bilge of a lifeboat. What should you check FIRST, and why does the order matter?",
       "choices": [
-        { "id": "a", "text": "The bilge and drain plug first — it's the simplest, most likely cause, and ruling it out quickly avoids wasting time investigating more complex causes first" },
-        { "id": "b", "text": "The engine, since rising water is most likely an engine cooling-system leak", "misconception": "Jumps to a more complex, less likely cause before ruling out the simplest one (the drain plug)." },
-        { "id": "c", "text": "The radio, to call for help before doing any on-board investigation", "misconception": "Skips a fast, simple check that might resolve the problem immediately, in favor of an action that doesn't address the water itself." },
-        { "id": "d", "text": "The order doesn't matter as long as everything gets checked eventually", "misconception": "Ignores that checking the simplest, most likely cause first can resolve the problem faster and avoids wasted effort on more complex checks that turn out to be unnecessary." }
+        {
+          "id": "a",
+          "text": "The bilge and drain plug first — it's the simplest, most likely cause, and ruling it out quickly avoids wasting time investigating more complex causes first"
+        },
+        {
+          "id": "b",
+          "text": "The engine, since rising water is most likely an engine cooling-system leak",
+          "misconception": "Jumps to a more complex, less likely cause before ruling out the simplest one (the drain plug)."
+        },
+        {
+          "id": "c",
+          "text": "The radio, to call for help before doing any on-board investigation",
+          "misconception": "Skips a fast, simple check that might resolve the problem immediately, in favor of an action that doesn't address the water itself."
+        },
+        {
+          "id": "d",
+          "text": "The order doesn't matter as long as everything gets checked eventually",
+          "misconception": "Ignores that checking the simplest, most likely cause first can resolve the problem faster and avoids wasted effort on more complex checks that turn out to be unnecessary."
+        }
       ],
       "correctChoiceId": "a",
       "difficulty": "hard",
@@ -3399,10 +3765,25 @@
       "topicId": "chapter-2-using-lifeboats",
       "prompt": "Several items on a vessel must be marked with the vessel's name (per this unverified source: ring life buoys, lifeboats, and lifeboat oars). Which of these is NOT required to carry the vessel's name?",
       "choices": [
-        { "id": "a", "text": "A hand-portable fire extinguisher" },
-        { "id": "b", "text": "A lifeboat oar", "misconception": "Incorrectly picks an item that this source explicitly lists as requiring the vessel's name." },
-        { "id": "c", "text": "A ring life buoy", "misconception": "Incorrectly picks an item that this source explicitly lists as requiring the vessel's name." },
-        { "id": "d", "text": "A lifeboat itself", "misconception": "Incorrectly picks an item that this source explicitly lists as requiring the vessel's name." }
+        {
+          "id": "a",
+          "text": "A hand-portable fire extinguisher"
+        },
+        {
+          "id": "b",
+          "text": "A lifeboat oar",
+          "misconception": "Incorrectly picks an item that this source explicitly lists as requiring the vessel's name."
+        },
+        {
+          "id": "c",
+          "text": "A ring life buoy",
+          "misconception": "Incorrectly picks an item that this source explicitly lists as requiring the vessel's name."
+        },
+        {
+          "id": "d",
+          "text": "A lifeboat itself",
+          "misconception": "Incorrectly picks an item that this source explicitly lists as requiring the vessel's name."
+        }
       ],
       "correctChoiceId": "a",
       "difficulty": "hard",
@@ -3413,6 +3794,867 @@
       "explanation": "Per this unverified source, a hand-portable fire extinguisher is NOT among the items required to carry the vessel's name, unlike ring life buoys, lifeboats, and lifeboat oars. Misconception tested: over-generalizing the vessel-name marking rule to all safety equipment, rather than the specific survival-craft-related items this source names.",
       "sourceReference": "SIU 2019 Practice Test intake, unverified",
       "verificationStatus": "draft-unverified"
+    },
+    {
+      "id": "q-ch2-compasscare-official",
+      "topicId": "chapter-2-using-lifeboats",
+      "prompt": "When using a lifeboat compass, what three things must you be careful to do?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Set it on the centerline of the boat, keep metal objects away from it, and apply the correction for compass error"
+        },
+        {
+          "id": "b",
+          "text": "Mount it as high as possible, point it toward the bow, and check it only once per voyage",
+          "misconception": "Invents requirements (height, fixed orientation, one-time check) that aren't part of correct compass use."
+        },
+        {
+          "id": "c",
+          "text": "Keep it belowdecks, away from sunlight, and recalibrate it monthly",
+          "misconception": "Substitutes storage/maintenance concerns for the actual in-use precautions the compass requires."
+        },
+        {
+          "id": "d",
+          "text": "Only the centerline placement matters; metal and compass error are minor concerns",
+          "misconception": "Downplays two of the three genuinely required precautions as unimportant."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "medium",
+      "hints": [
+        "Three separate things: where it sits, what's near it, and what correction to apply.",
+        "All three matter equally — this isn't a 'pick the most important one' question."
+      ],
+      "explanation": "When using a lifeboat compass, you must set it on the centerline of the boat, keep metal objects away from it (to avoid deviation), and apply the correction for compass error. This exact three-part checklist appears independently in both the SIU 2019 practice-test intake and the official USCG/NMC Q445 Lifeboat Operator sample exam — a genuine multi-source agreement. Misconception tested: assuming only one of the three precautions really matters, or substituting unrelated storage/maintenance advice for actual in-use precautions.",
+      "sourceReference": "SIU 2019 Practice Test intake; confirmed by USCG/NMC Q445 Lifeboat Operator Sample Exam (official)",
+      "verificationStatus": "official-source-supported"
+    },
+    {
+      "id": "q-ch1-lifeboatman-duty-list-official",
+      "topicId": "chapter-1-planning-ahead",
+      "prompt": "A certified lifeboatman assigned to command a lifeboat must do what?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Have a list of the persons assigned to that lifeboat"
+        },
+        {
+          "id": "b",
+          "text": "Personally inspect every other lifeboat on the vessel before departure",
+          "misconception": "Expands the duty beyond the specific lifeboat under this person's command to the entire vessel."
+        },
+        {
+          "id": "c",
+          "text": "Be the last person to leave the ship, regardless of their assigned station",
+          "misconception": "Confuses a general maritime tradition about the Master with a specific lifeboatman duty, which is not the same role or requirement."
+        },
+        {
+          "id": "d",
+          "text": "Personally row the boat away from the ship before checking on passengers",
+          "misconception": "Prioritizes an unrelated action over the actual required duty of accounting for assigned persons."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "medium",
+      "hints": [
+        "This is about accountability for a specific group of people, not the whole vessel.",
+        "Think back to muster-list logic: someone in charge needs to know who's supposed to be there."
+      ],
+      "explanation": "A certified lifeboatman assigned to command a lifeboat must have a list of the persons assigned to that lifeboat, so they can account for everyone who should be aboard. This fact appears nearly word-for-word in both the SIU 2019 practice-test intake and the official USCG/NMC Q445 Lifeboat Operator sample exam. Misconception tested: expanding or substituting this specific accountability duty with unrelated responsibilities.",
+      "sourceReference": "SIU 2019 Practice Test intake; confirmed by USCG/NMC Q445 Lifeboat Operator Sample Exam (official)",
+      "verificationStatus": "official-source-supported"
+    },
+    {
+      "id": "q-ch2-numbering-official-vh",
+      "topicId": "chapter-2-using-lifeboats",
+      "prompt": "A vessel has 3 lifeboats on each side, numbered by standard convention. Which statement correctly describes the numbering?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Port-side boats get even numbers and starboard-side boats get odd numbers, ascending from forward to aft on each side"
+        },
+        {
+          "id": "b",
+          "text": "All boats are numbered 1 through 6 based only on which side they're stowed, with no regard to fore/aft position",
+          "misconception": "Drops the forward-to-aft ordering entirely, when position along the vessel is part of the convention."
+        },
+        {
+          "id": "c",
+          "text": "Starboard-side boats get even numbers and port-side boats get odd numbers",
+          "misconception": "Reverses the actual port/starboard even/odd assignment."
+        },
+        {
+          "id": "d",
+          "text": "Numbering restarts at 1 on each side, so both sides can have a boat numbered 1",
+          "misconception": "Ignores that the numbering is a single continuous sequence across both sides, not independent per side."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "very-hard",
+      "hints": [
+        "Even and odd numbers are assigned by side, not restarted on each side.",
+        "Within a side, the numbers still climb from the front of the ship toward the back."
+      ],
+      "explanation": "Standard lifeboat numbering assigns even numbers to port-side boats and odd numbers to starboard-side boats, ascending from forward to aft on each side (so with 3 boats per side: port boats are 2, 4, 6 forward-to-aft; starboard boats are 1, 3, 5 forward-to-aft). This convention is confirmed by multiple scenario questions in both the SIU 2019 practice-test intake and the official USCG/NMC Q445 Lifeboat Operator sample exam, each testing a different boat position. Misconception tested: reversing the port/starboard assignment, dropping the forward-to-aft ordering, or assuming numbering restarts independently on each side.",
+      "sourceReference": "SIU 2019 Practice Test intake; confirmed by USCG/NMC Q445 Lifeboat Operator Sample Exam (official)",
+      "verificationStatus": "official-source-supported"
+    },
+    {
+      "id": "q-ch4-waterrequirement-official",
+      "topicId": "chapter-4-survival-methods",
+      "prompt": "On an international voyage, how much water is required to be stowed per person aboard a lifeboat on an oceangoing vessel?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "3 liters per person"
+        },
+        {
+          "id": "b",
+          "text": "3 liters per day, per person, for the whole voyage",
+          "misconception": "Confuses a one-time required stowage amount with an ongoing daily rate — this figure is the total supply carried, not a daily ration."
+        },
+        {
+          "id": "c",
+          "text": "1 pint per person, matching liferaft rationing rules exactly",
+          "misconception": "Conflates the lifeboat's required stowed water supply with a liferaft daily-rationing figure — these are two different facts about two different situations."
+        },
+        {
+          "id": "d",
+          "text": "No fixed amount; it varies entirely by voyage length",
+          "misconception": "Incorrectly assumes there's no fixed regulatory figure at all."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "hard",
+      "hints": [
+        "This is the total amount required to be carried, not a daily consumption rate.",
+        "Don't confuse this with any separate rule about how to ration water once adrift."
+      ],
+      "explanation": "On an international voyage, a lifeboat on an oceangoing vessel is required to carry 3 liters of water per person — this is the required stowed supply, a different fact from any daily rationing rate used once survivors are actually adrift (which is a separate question of how to pace consumption of whatever supply is on board). Misconception tested: merging the total-required-supply figure with a daily-rationing-rate figure, when they answer different questions.",
+      "sourceReference": "USCG/NMC Q445 Lifeboat Operator Sample Exam (official)",
+      "verificationStatus": "official-source-supported"
+    },
+    {
+      "id": "q-ch6-rescuesling-official-hard",
+      "topicId": "chapter-6-being-rescued",
+      "prompt": "SCENARIO: You abandoned ship in the North Atlantic and a crew member is now hypothermic. During a SAR helicopter extraction, which lifting device should be avoided when hoisting this patient to the aircraft?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "The rescue sling"
+        },
+        {
+          "id": "b",
+          "text": "The rescue litter",
+          "misconception": "Picks a device actually well-suited to a hypothermic or otherwise incapacitated patient, rather than the one to avoid."
+        },
+        {
+          "id": "c",
+          "text": "The rescue basket",
+          "misconception": "Picks a device generally suitable for a weakened patient, rather than the one to avoid."
+        },
+        {
+          "id": "d",
+          "text": "The rescue net",
+          "misconception": "Picks a device generally suitable for a weakened patient, rather than the one to avoid."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "hard",
+      "hints": [
+        "A rescue sling typically requires the patient to hold on and stay upright.",
+        "A hypothermic patient may be too weak or impaired to use it safely."
+      ],
+      "explanation": "A rescue sling should be avoided when hoisting a hypothermic patient, because it typically requires the person being hoisted to actively hold on and support themselves — something a hypothermic, weakened, or semi-conscious patient may not be able to do safely. Devices like the litter, basket, or net are designed to fully support a patient who can't help with their own lift. Misconception tested: assuming any standard hoist device works equally well regardless of the patient's physical condition.",
+      "sourceReference": "USCG/NMC Q445 Lifeboat Operator Sample Exam (official)",
+      "verificationStatus": "official-source-supported"
+    },
+    {
+      "id": "q-ch1-vessel-familiarization-easy",
+      "topicId": "chapter-1-planning-ahead",
+      "prompt": "Why should you personally learn your vessel's layout (escape routes, muster station, equipment lockers) even if you've worked on similar ships before?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Every vessel's specific layout can differ, and during an emergency you need to know THIS ship, not a generic one."
+        },
+        {
+          "id": "b",
+          "text": "All vessels of the same class are laid out identically, so this is unnecessary.",
+          "misconception": "Assumes ship layout is generic/interchangeable rather than vessel-specific."
+        },
+        {
+          "id": "c",
+          "text": "Only the officer of the watch needs this knowledge.",
+          "misconception": "Assumes emergency knowledge is only an officer's responsibility, not every crew member's."
+        },
+        {
+          "id": "d",
+          "text": "It only matters if you're assigned to firefighting duty.",
+          "misconception": "Assumes vessel familiarization is duty-specific rather than a baseline for everyone aboard."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "easy",
+      "hints": [
+        "Think about what can change from ship to ship even within the same class.",
+        "Consider who actually needs to evacuate or respond during an emergency."
+      ],
+      "explanation": "Vessel familiarization matters because even sister ships can differ in layout, equipment placement, or modifications over time. Knowing THIS ship's escape routes and muster station is a baseline expectation for every crew member, not just specialists.",
+      "sourceReference": "Import Pack 001 (SHLSOS Course No. 549 Student Manual, pages 9-11) -- confirmed verified by course operator, 2026-07-06",
+      "verificationStatus": "course-verified",
+      "conceptId": "concept-ch1-003",
+      "sourcePages": "9-11"
+    },
+    {
+      "id": "q-ch1-escape-routes-easy",
+      "topicId": "chapter-1-planning-ahead",
+      "prompt": "What is the primary purpose of a marked escape route aboard a vessel?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "To provide a path from living/working spaces to a muster station or open deck that stays usable during an emergency."
+        },
+        {
+          "id": "b",
+          "text": "To show the fastest way to the ship's galley.",
+          "misconception": "Confuses a general convenience path with a designated emergency escape route."
+        },
+        {
+          "id": "c",
+          "text": "To mark restricted areas passengers shouldn't enter.",
+          "misconception": "Confuses escape-route marking with restricted-area marking."
+        },
+        {
+          "id": "d",
+          "text": "To indicate the route inspectors use during routine inspections.",
+          "misconception": "Confuses escape-route marking with an inspection route."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "easy",
+      "hints": [
+        "Think about what an escape route needs to remain usable during, specifically."
+      ],
+      "explanation": "An escape route is designed to lead crew and passengers from their current location to safety (a muster station or open deck) and to remain passable during an emergency like fire or flooding.",
+      "sourceReference": "Import Pack 001 (SHLSOS Course No. 549 Student Manual, pages 9-11) -- confirmed verified by course operator, 2026-07-06",
+      "verificationStatus": "course-verified",
+      "conceptId": "concept-ch1-003",
+      "sourcePages": "9-11"
+    },
+    {
+      "id": "q-ch1-solas-manual-vessel-specific-medium",
+      "topicId": "chapter-1-planning-ahead",
+      "prompt": "SCENARIO: A sailor who previously served on a sister ship of the same class assumes their old vessel's SOLAS manual applies equally well aboard their new assignment. What's wrong with that assumption?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "A SOLAS manual is written for a specific vessel's actual equipment and layout, so even a sister ship's manual may not match exactly."
+        },
+        {
+          "id": "b",
+          "text": "SOLAS manuals are standardized across the entire industry, so this is a safe assumption.",
+          "misconception": "Believes SOLAS manuals are generic/interchangeable rather than vessel-specific."
+        },
+        {
+          "id": "c",
+          "text": "SOLAS manuals only cover firefighting equipment, so it wouldn't affect abandon-ship procedure either way.",
+          "misconception": "Understates what a SOLAS manual actually covers."
+        },
+        {
+          "id": "d",
+          "text": "SOLAS manuals are optional reference material, so it doesn't matter which one is used.",
+          "misconception": "Dismisses the manual's authority rather than recognizing it needs to be vessel-specific."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "medium",
+      "hints": [
+        "Consider what could actually differ between two ships of the 'same class.'"
+      ],
+      "explanation": "A SOLAS manual documents a specific vessel's own equipment and layout. Even sister ships can differ in outfitting or modifications, so a manual from one ship isn't a safe substitute for another's.",
+      "sourceReference": "Import Pack 001 (SHLSOS Course No. 549 Student Manual, pages 9-11) -- confirmed verified by course operator, 2026-07-06",
+      "verificationStatus": "course-verified",
+      "conceptId": "concept-ch1-005",
+      "sourcePages": "9-11"
+    },
+    {
+      "id": "q-ch1-imo-symbols-easy",
+      "topicId": "chapter-1-planning-ahead",
+      "prompt": "Why does the IMO require standardized safety pictograms (symbols) rather than relying only on text labels for safety equipment and escape routes?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "So the information is understood by crew and passengers regardless of the language they speak."
+        },
+        {
+          "id": "b",
+          "text": "Because text labels are more expensive to produce.",
+          "misconception": "Not the actual reasoning behind standardized safety symbols."
+        },
+        {
+          "id": "c",
+          "text": "Because regulations require color-coding but not consistent meaning.",
+          "misconception": "Misses that IMO symbols standardize both color and meaning together."
+        },
+        {
+          "id": "d",
+          "text": "Because symbols look more professional than text.",
+          "misconception": "Not the actual reasoning behind standardized safety symbols."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "easy",
+      "hints": [
+        "Think about an international crew where not everyone shares a first language."
+      ],
+      "explanation": "Standardized IMO pictograms let safety information be understood at a glance by anyone aboard, regardless of what language they read — important on vessels with multinational crews or passengers.",
+      "sourceReference": "Import Pack 001 (SHLSOS Course No. 549 Student Manual, pages 9-11) -- confirmed verified by course operator, 2026-07-06",
+      "verificationStatus": "course-verified",
+      "conceptId": "concept-ch1-006",
+      "sourcePages": "9-11"
+    },
+    {
+      "id": "q-ch1-imo-symbols-scenario-medium",
+      "topicId": "chapter-1-planning-ahead",
+      "prompt": "SCENARIO: Aboard a vessel with an international crew, you notice a green pictogram showing a running figure pointing toward a door. What does this symbol most likely indicate, and why use a symbol instead of text here?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "It marks an escape route direction, using a standardized IMO symbol so crew who don't share a common language can still understand it."
+        },
+        {
+          "id": "b",
+          "text": "It's a decorative marking with no functional meaning.",
+          "misconception": "Treats a standardized safety symbol as merely decorative."
+        },
+        {
+          "id": "c",
+          "text": "It marks a restricted area, since green means 'caution' in maritime signage.",
+          "misconception": "Misapplies a color convention -- green safety signage generally indicates safe-condition/escape information, not restriction."
+        },
+        {
+          "id": "d",
+          "text": "It indicates where firefighting equipment is stored.",
+          "misconception": "Confuses escape-route signage with equipment-location signage."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "medium",
+      "hints": [
+        "The running-figure-toward-a-door pictogram is a very common IMO safety sign family.",
+        "Consider why green is used for this category of sign rather than for warnings."
+      ],
+      "explanation": "A green running-figure pictogram pointing at a door is a standard IMO escape-route sign. Green is used for safe-condition information (like escape routes), and the symbol communicates this without relying on any specific language.",
+      "sourceReference": "Import Pack 001 (SHLSOS Course No. 549 Student Manual, pages 9-11) -- confirmed verified by course operator, 2026-07-06",
+      "verificationStatus": "course-verified",
+      "conceptId": "concept-ch1-006",
+      "sourcePages": "9-11"
+    },
+    {
+      "id": "q-ch1-emergency-types-easy",
+      "topicId": "chapter-1-planning-ahead",
+      "prompt": "Which of the following describes a vessel taking on water and sinking, as distinct from striking the seabed or suffering a structural break?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Foundering"
+        },
+        {
+          "id": "b",
+          "text": "Grounding",
+          "misconception": "This describes running aground, not sinking from flooding specifically."
+        },
+        {
+          "id": "c",
+          "text": "Hull failure",
+          "misconception": "This describes a structural breach, which can cause foundering but isn't the same event."
+        },
+        {
+          "id": "d",
+          "text": "Man overboard",
+          "misconception": "This describes a person entering the water, not the vessel itself."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "easy",
+      "hints": [
+        "Match each term to whether it's about the vessel's hull, its position, or a person."
+      ],
+      "explanation": "Foundering specifically refers to a vessel taking on water and sinking. Grounding and hull failure are distinct (though sometimes related) events, and man overboard concerns a person, not the ship.",
+      "sourceReference": "Import Pack 001 (SHLSOS Course No. 549 Student Manual, pages 9-11) -- confirmed verified by course operator, 2026-07-06",
+      "verificationStatus": "course-verified",
+      "conceptId": "concept-ch1-007",
+      "sourcePages": "9-11"
+    },
+    {
+      "id": "q-ch1-emergency-taxonomy-compare-medium",
+      "topicId": "chapter-1-planning-ahead",
+      "prompt": "SCENARIO: A vessel strikes a submerged rock and later begins to take on water and sink. Which best describes this sequence of events?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Grounding, which then led to foundering."
+        },
+        {
+          "id": "b",
+          "text": "Foundering, which then led to grounding.",
+          "misconception": "Reverses the causal order -- the vessel sinking wouldn't typically cause it to run aground."
+        },
+        {
+          "id": "c",
+          "text": "Hull failure caused entirely independent of any grounding.",
+          "misconception": "Ignores that grounding is the described cause here."
+        },
+        {
+          "id": "d",
+          "text": "These are two names for the same single event.",
+          "misconception": "Treats grounding and foundering as synonyms rather than distinct events that can be causally linked."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "medium",
+      "hints": [
+        "Identify which event happened first and which was the consequence."
+      ],
+      "explanation": "The vessel first grounded (struck the rock), and the resulting damage led it to founder (take on water and sink). Grounding and foundering are distinct events here, linked by cause and effect.",
+      "sourceReference": "Import Pack 001 (SHLSOS Course No. 549 Student Manual, pages 9-11) -- confirmed verified by course operator, 2026-07-06",
+      "verificationStatus": "course-verified",
+      "conceptId": "concept-ch1-007",
+      "sourcePages": "9-11"
+    },
+    {
+      "id": "q-ch1-abandonship-drill-components-medium",
+      "topicId": "chapter-1-planning-ahead",
+      "prompt": "Which of the following is NOT typically one of the required components of an abandon ship drill?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "A full engine room shutdown procedure"
+        },
+        {
+          "id": "b",
+          "text": "Sounding the abandon ship signal and reporting to muster stations",
+          "misconception": "This is one of the actual required components of an abandon ship drill."
+        },
+        {
+          "id": "c",
+          "text": "Donning lifejackets or immersion suits",
+          "misconception": "This is one of the actual required components of an abandon ship drill."
+        },
+        {
+          "id": "d",
+          "text": "Practicing lifeboat lowering/boarding procedure at the davits",
+          "misconception": "This is one of the actual required components of an abandon ship drill."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "medium",
+      "hints": [
+        "Three of these four are core, well-known parts of an abandon ship drill -- one is a separate engineering procedure."
+      ],
+      "explanation": "An abandon ship drill typically includes sounding the signal, reporting to muster stations, donning lifejackets/immersion suits, and practicing lifeboat lowering/boarding at the davits. A full engine room shutdown is a separate procedure, not a defining component of this drill.",
+      "sourceReference": "Import Pack 001 (SHLSOS Course No. 549 Student Manual, pages 9-11) -- confirmed verified by course operator, 2026-07-06",
+      "verificationStatus": "course-verified",
+      "conceptId": "concept-ch1-010",
+      "sourcePages": "9-11"
+    },
+    {
+      "id": "q-ch1-abandonship-drill-scenario-hard",
+      "topicId": "chapter-1-planning-ahead",
+      "prompt": "SCENARIO: During an abandon ship drill, your crew sounds the signal and mans lifeboat stations, but skips actually swinging out and lowering the lifeboat on its davits 'to save time.' What's the problem with this shortened drill?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "It leaves the crew unpracticed in an actual required component of the drill -- the davit/lowering procedure -- which could cost critical time in a real emergency."
+        },
+        {
+          "id": "b",
+          "text": "Nothing -- sounding the signal and manning stations is the only part that matters.",
+          "misconception": "Treats a partial drill as functionally complete."
+        },
+        {
+          "id": "c",
+          "text": "It's fine as long as it's still logged as a completed drill.",
+          "misconception": "Treats drill documentation as equivalent to actual readiness."
+        },
+        {
+          "id": "d",
+          "text": "Lowering the lifeboat is only necessary during a vessel's very first drill.",
+          "misconception": "Assumes drill components are one-time rather than repeated in full each time."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "hard",
+      "hints": [
+        "Think about which skill would actually be missing if a real abandon-ship event happened right after this shortened drill."
+      ],
+      "explanation": "Skipping the davit/lowering procedure means the crew never actually practices the physical, often failure-prone part of getting a lifeboat into the water -- exactly the skill a real emergency would demand under pressure.",
+      "sourceReference": "Import Pack 001 (SHLSOS Course No. 549 Student Manual, pages 9-11) -- confirmed verified by course operator, 2026-07-06",
+      "verificationStatus": "course-verified",
+      "conceptId": "concept-ch1-010",
+      "sourcePages": "9-11"
+    },
+    {
+      "id": "q-ch1-firedrill-mandatory-easy",
+      "topicId": "chapter-1-planning-ahead",
+      "prompt": "Fire drills aboard a vessel are best described as:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "A mandatory, regulated safety practice, not an optional exercise."
+        },
+        {
+          "id": "b",
+          "text": "Optional, left to the master's discretion on any given voyage.",
+          "misconception": "Fire drills are a regulatory requirement, not discretionary."
+        },
+        {
+          "id": "c",
+          "text": "Required only after an actual fire incident has occurred.",
+          "misconception": "Fire drills are conducted on a regular schedule, not only reactively."
+        },
+        {
+          "id": "d",
+          "text": "A courtesy briefing for new crew only, not repeated for experienced crew.",
+          "misconception": "Fire drills are repeated for the whole crew on a regular basis, not a one-time new-hire briefing."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "easy",
+      "hints": [
+        "Consider whether this is a regulatory requirement or a courtesy."
+      ],
+      "explanation": "Fire drills are a mandatory, regulated part of shipboard safety practice, conducted on a recurring schedule for the whole crew -- not an optional or one-time exercise.",
+      "sourceReference": "Import Pack 001 (SHLSOS Course No. 549 Student Manual, pages 9-11) -- confirmed verified by course operator, 2026-07-06",
+      "verificationStatus": "course-verified",
+      "conceptId": "concept-ch1-011",
+      "sourcePages": "9-11"
+    },
+    {
+      "id": "q-ch1-ask-questions-drills-easy",
+      "topicId": "chapter-1-planning-ahead",
+      "prompt": "If you're unclear about your assigned duty during a drill, the best time to ask about it is:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "During the drill itself or immediately after, while it's fresh and before a real emergency."
+        },
+        {
+          "id": "b",
+          "text": "During an actual emergency, so the context is clearer.",
+          "misconception": "This is exactly the wrong time -- clarifying during a real emergency costs critical time."
+        },
+        {
+          "id": "c",
+          "text": "Never -- asking questions signals you're unprepared.",
+          "misconception": "Treats asking questions as a weakness rather than part of effective preparation."
+        },
+        {
+          "id": "d",
+          "text": "Only in a private conversation with the captain afterward.",
+          "misconception": "Unnecessarily narrows who and when you can ask, discouraging timely clarification."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "easy",
+      "hints": [
+        "Think about when clarifying a duty actually helps versus when it's too late to help."
+      ],
+      "explanation": "Drills exist precisely so unclear duties can be clarified before they matter in a real emergency. Asking questions during or right after a drill is exactly the intended use of that time.",
+      "sourceReference": "Import Pack 001 (SHLSOS Course No. 549 Student Manual, pages 9-11) -- confirmed verified by course operator, 2026-07-06",
+      "verificationStatus": "course-verified",
+      "conceptId": "concept-ch1-012",
+      "sourcePages": "9-11"
+    },
+    {
+      "id": "q-ch1-vocab-musterstation-easy",
+      "topicId": "chapter-1-planning-ahead",
+      "prompt": "What is a muster station?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "The designated location a crew member or passenger reports to during an emergency, per their assigned duty."
+        },
+        {
+          "id": "b",
+          "text": "The bridge, where the captain directs the response to any emergency.",
+          "misconception": "Confuses the ship's command location with a general crew/passenger reporting location."
+        },
+        {
+          "id": "c",
+          "text": "A storage locker for immersion suits only.",
+          "misconception": "Confuses a reporting location with an equipment storage location."
+        },
+        {
+          "id": "d",
+          "text": "The location where officers debrief after a drill.",
+          "misconception": "Confuses a muster station with a post-drill debrief location."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "easy",
+      "hints": [
+        "Think about who reports there and when."
+      ],
+      "explanation": "A muster station is the designated reporting location assigned to crew and passengers during an emergency, tied to their specific duty on the station bill/muster list.",
+      "sourceReference": "Import Pack 001 (SHLSOS Course No. 549 Student Manual, pages 9-11) -- confirmed verified by course operator, 2026-07-06",
+      "verificationStatus": "course-verified",
+      "conceptId": "concept-ch1-003",
+      "sourcePages": "9-11"
+    },
+    {
+      "id": "q-ch1-vocab-stationbill-easy",
+      "topicId": "chapter-1-planning-ahead",
+      "prompt": "What is a station bill?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "The official posted assignment of each crew member's specific emergency duty and muster station."
+        },
+        {
+          "id": "b",
+          "text": "An invoice for safety equipment maintenance.",
+          "misconception": "Confuses 'bill' as in an official list with 'bill' as in an invoice."
+        },
+        {
+          "id": "c",
+          "text": "A log of which drills have been completed this year.",
+          "misconception": "Confuses a duty assignment document with a drill completion log."
+        },
+        {
+          "id": "d",
+          "text": "A watch schedule for the bridge crew.",
+          "misconception": "Confuses a duty assignment document with a watch-keeping schedule."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "easy",
+      "hints": [
+        "This is the regulatory term for what this course's other material calls a 'muster list.'"
+      ],
+      "explanation": "A station bill is the posted document assigning each crew member a specific emergency duty and muster station -- some courses/vessels also refer to this as a muster list.",
+      "sourceReference": "Import Pack 001 (SHLSOS Course No. 549 Student Manual, pages 9-11) -- confirmed verified by course operator, 2026-07-06",
+      "verificationStatus": "course-verified",
+      "conceptId": "concept-ch1-004",
+      "sourcePages": "9-11"
+    },
+    {
+      "id": "q-ch1-vocab-solas-easy",
+      "topicId": "chapter-1-planning-ahead",
+      "prompt": "SOLAS stands for, and primarily concerns:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Safety of Life at Sea -- the international convention setting minimum ship safety standards, equipment, and drill requirements."
+        },
+        {
+          "id": "b",
+          "text": "Safety of Lifeboats at Sea -- a convention specifically limited to lifeboat equipment.",
+          "misconception": "Understates SOLAS's actual, much broader scope."
+        },
+        {
+          "id": "c",
+          "text": "Standard Operating Log for Abandon Ship -- a vessel's internal drill logbook.",
+          "misconception": "Confuses SOLAS with an internal ship record, not an international convention."
+        },
+        {
+          "id": "d",
+          "text": "A voluntary industry guideline with no binding force.",
+          "misconception": "SOLAS is a binding international treaty, not a voluntary guideline."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "easy",
+      "hints": [
+        "Consider whether this is a single-topic rule or a broad international safety convention."
+      ],
+      "explanation": "SOLAS (Safety of Life at Sea) is the binding international convention setting minimum standards for ship construction, equipment, and operation, including required drills and vessel-specific safety manuals.",
+      "sourceReference": "Import Pack 001 (SHLSOS Course No. 549 Student Manual, pages 9-11) -- confirmed verified by course operator, 2026-07-06",
+      "verificationStatus": "course-verified",
+      "conceptId": "concept-ch1-005",
+      "sourcePages": "9-11"
+    },
+    {
+      "id": "q-ch1-vocab-imo-easy",
+      "topicId": "chapter-1-planning-ahead",
+      "prompt": "The IMO is:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "The International Maritime Organization, the UN agency responsible for regulating international shipping, including SOLAS and standardized safety signage."
+        },
+        {
+          "id": "b",
+          "text": "A private maritime insurance company.",
+          "misconception": "Confuses a UN regulatory body with a private insurer."
+        },
+        {
+          "id": "c",
+          "text": "A national (single-country) coast guard authority.",
+          "misconception": "IMO is an international UN body, not a single nation's coast guard."
+        },
+        {
+          "id": "d",
+          "text": "A labor union for merchant mariners.",
+          "misconception": "Confuses a regulatory body with a labor organization."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "easy",
+      "hints": [
+        "Consider whether this organization is national, private, or international/regulatory."
+      ],
+      "explanation": "The IMO (International Maritime Organization) is the UN agency that regulates international shipping, including the SOLAS convention and the standardized safety pictograms used aboard vessels.",
+      "sourceReference": "Import Pack 001 (SHLSOS Course No. 549 Student Manual, pages 9-11) -- confirmed verified by course operator, 2026-07-06",
+      "verificationStatus": "course-verified",
+      "conceptId": "concept-ch1-006",
+      "sourcePages": "9-11"
+    },
+    {
+      "id": "q-ch1-vocab-immersionsuit-tpa-compare-medium",
+      "topicId": "chapter-1-planning-ahead",
+      "prompt": "What best distinguishes an immersion suit from a Thermal Protective Aid (TPA)?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "An immersion suit is a full-body suit providing both flotation and thermal protection; a TPA is a lightweight supplemental covering for someone already wearing a lifejacket, not a substitute for a full suit."
+        },
+        {
+          "id": "b",
+          "text": "They're two names for the same piece of equipment.",
+          "misconception": "Treats two distinct pieces of survival equipment as interchangeable."
+        },
+        {
+          "id": "c",
+          "text": "A TPA provides more thermal protection than a full immersion suit.",
+          "misconception": "Reverses the relative protection level -- an immersion suit provides more complete protection."
+        },
+        {
+          "id": "d",
+          "text": "An immersion suit is only used in drills, never in a real emergency.",
+          "misconception": "Misstates the actual purpose of an immersion suit, which is emergency-use equipment."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "medium",
+      "hints": [
+        "Think about which one is meant to be worn alone versus as a supplement to a lifejacket."
+      ],
+      "explanation": "An immersion suit is a full-body suit providing both flotation and thermal (insulation) protection on its own. A TPA is a lighter supplemental covering meant to add thermal protection to someone already wearing a lifejacket -- not a replacement for a full immersion suit.",
+      "sourceReference": "Import Pack 001 (SHLSOS Course No. 549 Student Manual, pages 9-11) -- confirmed verified by course operator, 2026-07-06",
+      "verificationStatus": "course-verified",
+      "conceptId": "concept-ch1-010",
+      "sourcePages": "9-11"
+    },
+    {
+      "id": "q-ch1-vocab-davits-easy",
+      "topicId": "chapter-1-planning-ahead",
+      "prompt": "What are davits used for aboard a vessel?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Raising, lowering, and swinging out a lifeboat for launching."
+        },
+        {
+          "id": "b",
+          "text": "Storing immersion suits between drills.",
+          "misconception": "Confuses launching equipment with storage equipment."
+        },
+        {
+          "id": "c",
+          "text": "Marking escape routes on deck.",
+          "misconception": "Confuses launching equipment with wayfinding signage."
+        },
+        {
+          "id": "d",
+          "text": "Sounding the general alarm.",
+          "misconception": "Confuses launching equipment with the ship's alarm system."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "easy",
+      "hints": [
+        "Think about what mechanically moves a lifeboat from its stowed position into the water."
+      ],
+      "explanation": "Davits are the crane-like devices used to raise, lower, and swing out a lifeboat so it can be launched.",
+      "sourceReference": "Import Pack 001 (SHLSOS Course No. 549 Student Manual, pages 9-11) -- confirmed verified by course operator, 2026-07-06",
+      "verificationStatus": "course-verified",
+      "conceptId": "concept-ch1-010",
+      "sourcePages": "9-11"
+    },
+    {
+      "id": "q-ch1-vocab-lifebuoy-rescueboat-compare-medium",
+      "topicId": "chapter-1-planning-ahead",
+      "prompt": "How does a lifebuoy differ from a rescue boat?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "A lifebuoy is a thrown flotation device to keep one person afloat until rescue; a rescue boat is a small craft used to actually retrieve a person from the water or marshal liferafts."
+        },
+        {
+          "id": "b",
+          "text": "They're interchangeable terms for the same piece of equipment.",
+          "misconception": "Treats two distinct pieces of equipment as the same."
+        },
+        {
+          "id": "c",
+          "text": "A lifebuoy is a type of small powered boat.",
+          "misconception": "Confuses a lifebuoy (a flotation ring) with a boat."
+        },
+        {
+          "id": "d",
+          "text": "A rescue boat is only used for firefighting, not for retrieving people from the water.",
+          "misconception": "Misstates a rescue boat's actual primary purpose."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "medium",
+      "hints": [
+        "Think about which one you throw versus which one you ride in."
+      ],
+      "explanation": "A lifebuoy is a thrown, ring-shaped flotation device to keep one person afloat until rescue. A rescue boat is a small craft crewed to actively retrieve someone from the water or marshal liferafts -- a very different role.",
+      "sourceReference": "Import Pack 001 (SHLSOS Course No. 549 Student Manual, pages 9-11) -- confirmed verified by course operator, 2026-07-06",
+      "verificationStatus": "course-verified",
+      "conceptId": "concept-ch1-007",
+      "sourcePages": "9-11"
+    },
+    {
+      "id": "q-ch1-familiarization-newcrew-scenario-hard",
+      "topicId": "chapter-1-planning-ahead",
+      "prompt": "SCENARIO: You've just joined a new vessel and haven't yet walked your escape routes or located your muster station. The general alarm sounds unexpectedly during a real emergency, not a drill. What's the biggest risk created by skipping vessel familiarization?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "You may not know how to reach your muster station or a safe exit quickly, costing critical time during an actual emergency."
+        },
+        {
+          "id": "b",
+          "text": "None -- the ship's layout is standard across the industry, so any crew member can find their way regardless of familiarization.",
+          "misconception": "Treats vessel layout as generic/interchangeable rather than vessel-specific."
+        },
+        {
+          "id": "c",
+          "text": "It only matters for firefighting-assigned crew.",
+          "misconception": "Assumes vessel familiarization is duty-specific rather than a baseline for everyone aboard."
+        },
+        {
+          "id": "d",
+          "text": "The muster station location becomes obvious once the alarm sounds.",
+          "misconception": "Assumes information becomes available automatically during an emergency rather than needing prior preparation."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "hard",
+      "hints": [
+        "Think about what's actually different between a drill (planned, predictable) and this scenario (real, unplanned)."
+      ],
+      "explanation": "Not knowing your escape routes or muster station location in a real, unplanned emergency can cost exactly the kind of time that vessel familiarization -- done in advance -- is meant to save.",
+      "sourceReference": "Import Pack 001 (SHLSOS Course No. 549 Student Manual, pages 9-11) -- confirmed verified by course operator, 2026-07-06",
+      "verificationStatus": "course-verified",
+      "conceptId": "concept-ch1-003",
+      "sourcePages": "9-11"
     }
   ]
 }

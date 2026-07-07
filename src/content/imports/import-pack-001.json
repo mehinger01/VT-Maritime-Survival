@@ -1,0 +1,79 @@
+{
+  "importPackId": "import-pack-001",
+  "receivedDate": "2026-07-06",
+  "sourceId": "SHLSOS-2021-CH1-P009-P011",
+  "sourceLabel": "SHLSOS Course No. 549 Student Manual",
+  "sourceEdition": "2021",
+  "sourcePages": "9-11",
+  "claimedStatus": "Primary Source",
+  "claimedConfidence": "100%",
+  "verificationStatus": "course-verified",
+  "verificationNote": "Originally intook as unverified (concept/vocabulary summary, not verbatim manual text; 2021 edition cited vs. this repo's previously-confirmed 'revised June 2024' edition). Promoted to course-verified per explicit course operator confirmation on 2026-07-06. The edition question was not separately re-confirmed as part of that promotion and remains worth a quick check with Vinci if it matters later.",
+  "chapterMapping": "chapter-1-planning-ahead",
+  "conceptsIdentified": [
+    "Survival begins before the emergency.",
+    "Training reduces fear and improves decision-making.",
+    "Familiarization with the vessel is essential.",
+    "Every crew member has assigned emergency duties.",
+    "SOLAS manuals are vessel-specific.",
+    "IMO safety symbols communicate emergency information.",
+    "Common shipboard emergencies.",
+    "Panic reduces survival effectiveness.",
+    "Drills increase survival readiness.",
+    "Abandon ship drills have required components.",
+    "Fire drills are mandatory.",
+    "Students should ask questions during drills."
+  ],
+  "vocabularyIdentified": [
+    "Muster station",
+    "Station bill",
+    "SOLAS",
+    "IMO",
+    "Escape route",
+    "Lifebuoy",
+    "Immersion suit",
+    "Thermal Protective Aid",
+    "Rescue boat",
+    "Fire station",
+    "Foundering",
+    "Grounding",
+    "Hull failure",
+    "Davits"
+  ],
+  "commonMisconceptions": [
+    "Training happens during emergencies instead of before them.",
+    "Panic is an acceptable survival strategy.",
+    "SOLAS is identical on every vessel.",
+    "Drills only satisfy regulations.",
+    "Ship familiarization is optional.",
+    "Fire drills and abandon ship drills are identical."
+  ],
+  "estimatedQuestionOpportunities": {
+    "easyRecall": 18,
+    "mediumApplication": 14,
+    "hardAnalysis": 10,
+    "scenario": 12,
+    "compareAndContrast": 8,
+    "vocabulary": 6,
+    "estimatedTotal": 68
+  },
+  "tags": [
+    "chapter-1",
+    "planning-ahead",
+    "solas",
+    "imo",
+    "drills",
+    "survival-principles",
+    "shipboard-emergencies"
+  ],
+  "processingNotes": {
+    "duplicateOverlapWithExistingBank": "Concepts 1, 2, 4, 8, and 9 substantially overlap existing chapter-1-planning-ahead questions (q-ep-1 through q-ep-12): general alarm response, muster list purpose, why drills are practiced, panic reduction, preparedness vs. response. No new questions were generated for those concepts to avoid duplicates per the required workflow's Step 6 — see conceptId cross-references in chapter1.json instead.",
+    "genuinelyNewGround": "Concepts 3, 5, 6, 7, 10, 11, 12 and all 14 vocabulary terms were not yet covered in the bank. New draft questions were written for these (see src/content/course.json entries with sourceReference starting 'Import Pack 001').",
+    "vocabularyDefinitionsCaveat": "The import pack supplied terms only, no definitions. Definitions in src/content/vocabulary/glossary.json were written from general SOLAS/IMO/USCG maritime-safety terminology (Tier 2-equivalent), not from the manual's own wording, since that wording was not supplied.",
+    "reviewNeeded": [
+      "Confirm which manual edition (2021 vs. the previously-confirmed 'revised June 2024') is the correct source of truth.",
+      "Supply actual page 9-11 text so concepts/vocabulary can be promoted from draft to verified.",
+      "Confirm 'station bill' vs. 'muster list' as the term Vinci's course actually uses — the existing question bank uses 'muster list' throughout; this pack introduces 'station bill' as a apparently-synonymous regulatory term."
+    ]
+  }
+}

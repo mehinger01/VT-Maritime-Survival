@@ -36,20 +36,36 @@ interactive, evidence-based learning experience.
 ## Current scope — read this before adding anything
 
 This repository supports **one student** preparing for **one maritime /
-water-survival exam.** That's it.
+water-survival exam.** That's it — but see the update below: a coached-
+platform backend now exists for one specific slice of the app.
 
-Explicitly out of scope, do not build toward these even "just in case":
-- No authentication / login / user accounts
-- No backend, server, or database
+**Update (2026-07-06):** the instructor deliberately decided to move the
+Session Reports feature onto a real backend (Supabase Auth + Postgres +
+Row Level Security) — this was a conscious scope expansion, not creep,
+driven by a real requirement: coach notes on a student are not something
+that should ever be world-readable, and cross-device sync (coach's
+machine seeing the student's activity) genuinely needs a server. That
+work lives in `supabase/migrations/`, `src/lib/supabaseClient.js`,
+`src/hooks/useAuth.js`, and `src/screens/CloudSessionReports.jsx` /
+`Login.jsx`. Roles (`student`/`coach`/`admin`/`instructor_viewer`) and
+RLS policies exist **only** to gate that one feature.
+
+Everything else in the app is still explicitly out of scope, do not
+build toward these even "just in case":
+- No authentication required for the core study tool (quiz/drill/learn/
+  review/flagged/journal) — those stay localStorage-only, no login wall.
+  Auth only gates the cloud Session Reports screen.
 - No payments or billing
-- No school/program/multi-tenant management
-- No admin console for instructors (yet)
+- No school/program/multi-tenant management beyond the coach/student/
+  admin roles already built
+- No admin console UI for instructors (student/assignment management is
+  still done directly against the database, not through the app)
 
-Everything is client-side: a React/Vite app, JSON course content, and
-`localStorage` for progress. If a requested feature implies a backend
-(e.g., syncing across devices, multi-student data), that's a signal it's
-future ScholarForge platform work, not this repo — say so instead of
-quietly adding infrastructure.
+If a requested feature implies *more* backend surface than the Session
+Reports slice above (e.g., moving quiz progress itself to the cloud,
+building a signup flow, building student-management UI), that's still a
+signal to pause and confirm before building — this update authorizes
+what's described above, not an open-ended expansion.
 
 When uncertain about any decision: choose **simplicity, maintainability,
 and learning effectiveness**, in that order of tie-breaking after

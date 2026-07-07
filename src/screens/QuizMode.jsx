@@ -4,7 +4,7 @@ import QuestionCard from '../components/QuestionCard.jsx'
 
 const SET_SIZE = 8
 
-export default function QuizMode({ topics, questions, topicId, progress, recordAttempt, toggleFlag, navigate }) {
+export default function QuizMode({ topics, questions, topicId, progress, recordAttempt, toggleFlag, toggleExcluded, navigate }) {
   const [scopeTopicId, setScopeTopicId] = useState(topicId || '')
   const [setKey, setSetKey] = useState(0)
   const [index, setIndex] = useState(0)
@@ -58,6 +58,7 @@ export default function QuizMode({ topics, questions, topicId, progress, recordA
               question={current}
               flagged={progress.flags.includes(current.id)}
               onToggleFlag={toggleFlag}
+              onToggleExclude={toggleExcluded}
               onAnswered={handleAnswered}
               onNext={handleNext}
               isLast={index + 1 >= queue.length}

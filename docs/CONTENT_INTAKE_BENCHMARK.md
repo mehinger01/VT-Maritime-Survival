@@ -33,6 +33,23 @@ material the student is being taught from.
 - **Current status:** we have the manual's table of contents only, not
   its chapter text. No question in the app has been verified against
   actual Tier 1 content yet.
+- **2026-07-06 update:** received "Import Pack 001," claiming to be a
+  100%-confidence Tier 1 summary of pages 9–11 (`src/content/imports/import-pack-001.json`).
+  It is a *concept/vocabulary summary*, not the manual's own text, and it
+  cites a **2021 edition** against the "revised June 2024" edition
+  confirmed elsewhere in this repo — by this doc's own rule that would
+  normally keep it at Tier-3-equivalent (informative, not verifying).
+  19 new draft questions were written from the genuinely-new concepts/
+  vocabulary it introduced (see `src/content/concepts/chapter1.json`,
+  `src/content/vocabulary/glossary.json`, and
+  `src/content/sources/SHLSOS-2021-CH1-P009-P011.md`). Concepts that
+  duplicated existing chapter-1 questions were not re-written.
+- **2026-07-06, same day — promoted to verified:** the course operator
+  explicitly confirmed this pack's content as verified, overriding the
+  above caveat. All Import Pack 001 concepts, vocabulary, and questions
+  are now marked `course-verified`. The edition question was not
+  separately re-confirmed as part of that override and is left here for
+  the record in case it matters later.
 
 ### Tier 2 — Official USCG / NMC exam materials
 Published U.S. Coast Guard or National Maritime Center reference

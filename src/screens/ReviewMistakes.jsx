@@ -9,7 +9,7 @@ function formatDue(ts) {
   return `due in ${days} days`
 }
 
-export default function ReviewMistakes({ questions, topics, progress, recordAttempt, toggleFlag }) {
+export default function ReviewMistakes({ questions, topics, progress, recordAttempt, toggleFlag, toggleExcluded }) {
   const [index, setIndex] = useState(0)
   const [refreshKey, setRefreshKey] = useState(0)
 
@@ -54,6 +54,7 @@ export default function ReviewMistakes({ questions, topics, progress, recordAtte
               question={current}
               flagged={progress.flags.includes(current.id)}
               onToggleFlag={toggleFlag}
+              onToggleExclude={toggleExcluded}
               onAnswered={handleAnswered}
               onNext={handleNext}
               isLast={due.length <= 1}
