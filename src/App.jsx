@@ -46,6 +46,8 @@ export default function App() {
     navigate,
     topicId: route.topicId,
     ...progressApi,
+    userRole: auth.profile?.role,
+    isAuthenticated: !!auth.session,
   }
 
   return (
@@ -127,8 +129,17 @@ export default function App() {
               {auth.isConfigured && !auth.loading && auth.session && auth.profile === null && (
                 <div className="card"><p className="empty-state">Could not load your profile. {auth.error}</p></div>
               )}
-              {auth.isConfigured && !auth.loading && auth.session && auth.profile && (
+              {auth.isConfigured && !auth.loading && auth.session && auth.profile && (auth.profile.role === 'coach' || auth.profile.role === 'admin' || auth.profile.role === 'instructor_viewer') && (
                 <SessionLogPrintView profile={auth.profile} />
+              )}
+              {auth.isConfigured && !auth.loading && auth.session && auth.profile && auth.profile.role === 'student' && (
+                <div className="card">
+                  <h2>Print Session Log</h2>
+                  <p className="empty-state">
+                    Full report generation is available for tutors and administrators only.
+                    You can view your session history in the Learning Journal tab.
+                  </p>
+                </div>
               )}
             </>
           )}

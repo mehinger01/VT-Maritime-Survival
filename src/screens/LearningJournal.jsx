@@ -54,9 +54,12 @@ function exportCsv(entries) {
   URL.revokeObjectURL(a.href)
 }
 
-export default function LearningJournal() {
+export default function LearningJournal({ userRole }) {
   const { journal, loading } = useJournal()
   const [expandedId, setExpandedId] = useState(null)
+
+  // Print log only available to coaches, admins, and instructor viewers
+  const canAccessPrintLog = userRole && ['coach', 'admin', 'instructor_viewer'].includes(userRole)
 
   const sortedEntries = journal.entries.slice().sort((a, b) => (a.sessionNumber ?? 0) - (b.sessionNumber ?? 0))
 
@@ -65,16 +68,22 @@ export default function LearningJournal() {
       <div className="card">
         <h2>Learning Journal</h2>
         <p className="muted">
-          A record of tutoring sessions: dates, times, topics covered, notes, and follow-ups.
-          This log is maintained by your tutor — export it to CSV any time to open in Excel or Google Sheets.
+          A summary record of your tutoring sessions showing dates, times, topics, and status.
+          {canAccessPrintLog && (
+            <>
+              {' '}Use Print Log to generate a detailed professional report for school or supervisor submission.
+            </>
+          )}
         </p>
         <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
           <button className="btn secondary" onClick={() => exportCsv(journal.entries)} disabled={journal.entries.length === 0}>
             Export CSV
           </button>
-          <a href="#/printLog" className="btn secondary" style={{ textDecoration: 'none', display: 'inline-block', padding: 'inherit' }}>
-            Print Log
-          </a>
+          {canAccessPrintLog && (
+            <a href="#/printLog" className="btn secondary" style={{ textDecoration: 'none', display: 'inline-block', padding: 'inherit' }}>
+              Print Log
+            </a>
+          )}
         </div>
       </div>
 
