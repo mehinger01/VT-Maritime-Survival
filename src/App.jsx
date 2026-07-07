@@ -13,6 +13,7 @@ import FlaggedQuestions from './screens/FlaggedQuestions.jsx'
 import SessionReport from './screens/SessionReport.jsx'
 import LearningJournal from './screens/LearningJournal.jsx'
 import CloudSessionReports from './screens/CloudSessionReports.jsx'
+import SessionLogPrintView from './screens/SessionLogPrintView.jsx'
 import Login from './screens/Login.jsx'
 
 const NAV_ITEMS = [
@@ -26,6 +27,7 @@ const NAV_ITEMS = [
   { id: 'report', label: 'Session Report' },
   { id: 'journal', label: 'Learning Journal' },
   { id: 'cloudReports', label: 'Session Reports (Cloud)' },
+  { id: 'printLog', label: 'Print Session Log' },
 ]
 
 export default function App() {
@@ -104,6 +106,29 @@ export default function App() {
               )}
               {auth.isConfigured && !auth.loading && auth.session && auth.profile && (
                 <CloudSessionReports profile={auth.profile} />
+              )}
+            </>
+          )}
+          {route.view === 'printLog' && (
+            <>
+              {!auth.isConfigured && (
+                <div className="card">
+                  <h2>Print Session Log</h2>
+                  <p className="empty-state">
+                    Cloud reports aren't configured in this environment (missing Supabase env vars).
+                  </p>
+                </div>
+              )}
+              {auth.isConfigured && auth.loading && <div className="card"><p className="muted">Loading…</p></div>}
+              {auth.isConfigured && !auth.loading && !auth.session && <Login signIn={auth.signIn} />}
+              {auth.isConfigured && !auth.loading && auth.session && auth.profile === undefined && (
+                <div className="card"><p className="muted">Loading profile…</p></div>
+              )}
+              {auth.isConfigured && !auth.loading && auth.session && auth.profile === null && (
+                <div className="card"><p className="empty-state">Could not load your profile. {auth.error}</p></div>
+              )}
+              {auth.isConfigured && !auth.loading && auth.session && auth.profile && (
+                <SessionLogPrintView profile={auth.profile} />
               )}
             </>
           )}
