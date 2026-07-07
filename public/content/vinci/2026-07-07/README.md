@@ -48,7 +48,14 @@ future batches will land too:
   there's a record of what was received and reviewed. `source-only` is
   the default status for exactly that reason; only promote an image to
   `candidate-learning-visual` or `candidate-quiz-visual` (and eventually
-  into an actual question) when there's a clear, specific reason to.
+  into an actual question) when there's a clear, specific reason to. Use
+  `do-not-use` for anything intake review finds unsuitable outright (bad
+  crop, wrong page, not actually source material).
+- **`sourceType` records what kind of page the photo is** — `book-photo`
+  (manual/textbook page, the case for this whole batch), `quiz-photo`,
+  `answer-key`, `worksheet`, `reference-sheet`, or `unknown`. It's
+  separate from `initialUseStatus`: what a page *is* vs. whether it's
+  been cleared to become a question.
 
 **Repo/publishing note:** this repository is currently private. Photos of
 a commercially published, copyrighted manual should not be committed to a
