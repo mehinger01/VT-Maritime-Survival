@@ -13,9 +13,31 @@
       "chapterGuess": "chapter-1-planning-ahead",
       "topicGuess": "IMO/LSA safety symbol pictograms (lifeboat, rescue boat, liferaft, lifebuoy, lifejacket, EPIRB, immersion suit, exit signs, etc.)",
       "visualUseStatus": "candidate-quiz-visual",
-      "extractionStatus": "not-started",
+      "extractionStatus": "extracted",
       "verificationStatus": "unverified",
-      "notes": "Manual page 12. No chapter header visible on this page itself; chapterGuess of chapter-1-planning-ahead is a guess based on it appearing before the explicit 'Chapter 2 USING LIFEBOATS' header on page 17, not a confirmed chapter assignment."
+      "notes": "Manual page 12. No chapter header visible on this page itself; chapterGuess of chapter-1-planning-ahead is a guess based on it appearing before the explicit 'Chapter 2 USING LIFEBOATS' header on page 17, not a confirmed chapter assignment.",
+      "extractedTitle": "IMO/LSA Safety Symbols Reference (full page)",
+      "extractedText": "Full-page grid of green and blue/purple IMO life-saving-appliance symbols, each captioned in block capitals. Green symbols (equipment/location): Emergency Flashlight, Pilot Ladder, Lifeboat, Rescue Boat, Liferaft, Davit Launched Liferaft, Embarkation Ladder, Evacuation Slide, Lifebuoy, Lifebuoy With Line, Lifebuoy With Light, Lifebuoy With Light And Smoke, Lifejacket, Child Lifejacket, Immersion Suit, Survival Craft Portable Radio, EPIRB, Radar Transponder, Survival Craft Pyrotechnics, Rocket Parachute Flares, Line-Throwing Appliance, Assembly Station, Evacuation Chute, Stretcher, TPA (Thermal Protective Aid), AES (Anti-exposure suit), Medical Locker, a Rescue Boat capacity symbol, Emergency Escape Breathing Device, Emergency Telephone, Lifebuoy With Light And Line, and 'SL'. Blue/purple symbols (operating instructions): Fasten Seat Belts, Secure Hatches, Start Engine, Lower Lifeboat, Lower Liferaft, Lower Rescue Boat, Release Falls, Start Water Supply, Start Air Supply, Release Gripes. Bottom row: Stairs to Fire Exit, a directional arrow, Exit (running figure + arrow), Escape Hatch, Escape Route.",
+      "keyFacts": [
+        "Green pictograms mark life-saving equipment/locations (Lifeboat, Rescue Boat, Liferaft, Davit Launched Liferaft, Embarkation Ladder, Pilot Ladder).",
+        "Personal flotation symbols include Lifebuoy, Lifebuoy with Line, Lifebuoy with Light, Lifebuoy with Light and Smoke, Lifejacket, and Child Lifejacket as visually distinct pictograms.",
+        "Signaling/rescue equipment symbols include EPIRB, Radar Transponder, Survival Craft Portable Radio, Survival Craft Pyrotechnics, Rocket Parachute Flares, and Line-Throwing Appliance.",
+        "Medical/assembly symbols include Assembly Station, Stretcher, Medical Locker, TPA (Thermal Protective Aid), and AES (Anti-Exposure Suit).",
+        "Blue/purple pictograms mark operating instructions rather than equipment locations: Fasten Seat Belts, Secure Hatches, Start Engine, Lower Lifeboat, Lower Liferaft, Lower Rescue Boat, Release Falls, Start Water Supply, Start Air Supply, Release Gripes.",
+        "Exit/escape symbols include Stairs to Fire Exit, a directional arrow, Exit (running figure + arrow), Escape Hatch, and Escape Route."
+      ],
+      "examAngles": [
+        "Matching: show a single symbol image and ask what equipment/instruction it represents (multiple choice).",
+        "Compare & contrast 'Lifebuoy with Light' vs 'Lifebuoy with Light and Smoke' — visually similar, differ only in the smoke marker.",
+        "Compare & contrast 'AES' (Anti-Exposure Suit) vs 'Immersion Suit' vs 'TPA' (Thermal Protective Aid) — three distinct thermal-protection symbols.",
+        "Category sort: is a given symbol green (equipment/location) or blue/purple (operating instruction)?"
+      ],
+      "possibleMisconceptions": [
+        "Confusing the Immersion Suit symbol with the AES (Anti-Exposure Suit) symbol — both show a person in a full-body suit but are regulatorily distinct.",
+        "Confusing green location/equipment symbols with blue/purple action/instruction symbols due to similar pictographic style."
+      ],
+      "extractionConfidence": "high",
+      "needsFollowUp": true
     },
     {
       "id": "vinci-2026-07-07-033837",
@@ -25,9 +47,33 @@
       "chapterGuess": "chapter-1-planning-ahead",
       "topicGuess": "C.O.I (Certificate of Inspection) — sample document and lifeboat-capacity / certified-lifeboatmen table",
       "visualUseStatus": "candidate-quiz-visual",
-      "extractionStatus": "not-started",
+      "extractionStatus": "extracted",
       "verificationStatus": "unverified",
-      "notes": "Manual page 15. Same chapter-guess caveat as page 12 — no explicit chapter header on this page, guessed from page position before page 17's chapter break. Drive folder contained an exact byte-for-byte duplicate of this photo ('2026-07-07_033837 (1).jpg'); only one copy was kept as an app asset."
+      "notes": "Manual page 15. Same chapter-guess caveat as page 12 — no explicit chapter header on this page, guessed from page position before page 17's chapter break. Drive folder contained an exact byte-for-byte duplicate of this photo ('2026-07-07_033837 (1).jpg'); only one copy was kept as an app asset.",
+      "extractedTitle": "C.O.I (Certificate of Inspection)",
+      "extractedText": "Every US-Flagged ship has a COI issued by the USCG. It states the minimum number of Endorsed Lifeboatman required. Table — Capacity of Lifeboats / Certified Lifeboatmen: 1-25 / 1; 26-40 / 2; 41-60 / 3; 61-85 / 4; 86-110 / 5; 110 and above / 6. A sample U.S. Certificate of Inspection document is pictured alongside the text; its fine print is not legible in this photo.",
+      "keyFacts": [
+        "Every US-Flagged ship has a C.O.I. (Certificate of Inspection) issued by the USCG.",
+        "The C.O.I. states the minimum number of Endorsed Lifeboatmen required aboard.",
+        "Lifeboat capacity 1-25 requires 1 certified lifeboatman.",
+        "Lifeboat capacity 26-40 requires 2 certified lifeboatmen.",
+        "Lifeboat capacity 41-60 requires 3 certified lifeboatmen.",
+        "Lifeboat capacity 61-85 requires 4 certified lifeboatmen.",
+        "Lifeboat capacity 86-110 requires 5 certified lifeboatmen.",
+        "Lifeboat capacity 110 and above requires 6 certified lifeboatmen."
+      ],
+      "examAngles": [
+        "Direct recall: what does C.O.I. stand for and who issues it?",
+        "Table lookup: a lifeboat has a capacity of 45 persons — how many certified lifeboatmen must be assigned?",
+        "Boundary-value lookup: a lifeboat's capacity is exactly 60 (or exactly 61) — how many lifeboatmen are required?",
+        "Conceptual: what information does a ship's C.O.I. specify regarding lifeboat crewing?"
+      ],
+      "possibleMisconceptions": [
+        "Confusing the vessel-level Certificate of Inspection (USCG-issued, covers the whole ship) with a lifeboat's own nameplate/capacity markings (boat-level, covered on a different page).",
+        "Off-by-one errors at table boundaries (e.g. assuming a 40-person boat needs 3 lifeboatmen instead of 2) since the ranges are inclusive."
+      ],
+      "extractionConfidence": "high",
+      "needsFollowUp": false
     },
     {
       "id": "vinci-2026-07-07-034357",
@@ -37,9 +83,34 @@
       "chapterGuess": "chapter-2-using-lifeboats",
       "topicGuess": "Lifeboat types — Partially Enclosed and Totally Enclosed (roller gravity davit)",
       "visualUseStatus": "candidate-learning-visual",
-      "extractionStatus": "not-started",
+      "extractionStatus": "extracted",
       "verificationStatus": "unverified",
-      "notes": "Manual page 17. Page carries an explicit 'Chapter 2 USING LIFEBOATS' header, so this chapterGuess is high-confidence relative to the others in this batch."
+      "notes": "Manual page 17. Page carries an explicit 'Chapter 2 USING LIFEBOATS' header, so this chapterGuess is high-confidence relative to the others in this batch.",
+      "extractedTitle": "Chapter 2 USING LIFEBOATS — Lifeboats (types and general requirements)",
+      "extractedText": "There are several types of life boats: open, partially enclosed, totally enclosed, totally enclosed with a self-contained air support system, and totally enclosed fire protected. All lifeboats must be of sufficient strength to enable them to be safely launched into the water when fully loaded with people and equipment. The maximum number of people, the ship's name that the lifeboat belongs to, and the number of the lifeboat will be clearly marked on the side of the lifeboat. Lifeboats are not approved to carry more than 150 people. Passenger ships require that there is a seat on a lifeboat for every passenger. Passenger ships will be arranged so that lifeboats can be boarded by all people in 10 minutes or less. Cargo ships require that there are at least twice as many seats on a lifeboat as there are crew and that they can be boarded in 3 minutes or less. All lifeboats will be equipped with a boarding ladder that can be used at any entrance. Lifeboats have buoyant material which will keep the boat afloat even if flooded by water. All surfaces on which persons might walk shall have a non-skid finish. Some lifeboats are self-righting; those that are not will have handholds on the bottom of the boat. All lifeboats will have watertight lockers for storing small equipment, water, and food. Open lifeboats comply with all regulations listed in the paragraph above for all lifeboats. They are not carried on passenger ships, and are only still carried on a limited number of merchant vessels. Partially enclosed lifeboats have permanent rigid covers that cover at least 20% of the lifeboat on both sides. They also have a foldable canopy which can connect to the permanent covers and totally enclose the lifeboat. The exterior is a highly visible color, normally international orange, and the interior is painted a light color that does not cause discomfort to passengers. Totally enclosed lifeboats are built with a rigid watertight cover that totally encloses the lifeboat. The lifeboat is boarded by hatches that can be closed to make the lifeboat watertight. There are windows which allow for daylight into the boat. The exterior is painted a highly visible color, and the interior is a light color. Each seat has safety belts which can hold passengers in place.",
+      "keyFacts": [
+        "Five lifeboat types: open, partially enclosed, totally enclosed, totally enclosed with self-contained air support, totally enclosed fire protected.",
+        "Lifeboats are not approved to carry more than 150 people.",
+        "Passenger ships require boarding of all people in 10 minutes or less; cargo ships require at least twice as many seats as crew, boardable in 3 minutes or less.",
+        "The maximum number of people, ship's name, and lifeboat number must be clearly marked on the side of the lifeboat.",
+        "Non-self-righting lifeboats must have handholds on the bottom of the boat.",
+        "Partially enclosed lifeboats have permanent rigid covers on at least 20% of both sides, plus a foldable canopy that can fully enclose the boat.",
+        "Totally enclosed lifeboats have a rigid watertight cover, boarding hatches, windows, and seat safety belts."
+      ],
+      "examAngles": [
+        "What is the maximum number of persons a lifeboat may be approved to carry? (150)",
+        "Compare passenger-ship vs cargo-ship lifeboat boarding time requirements (10 min vs 3 min).",
+        "Identify lifeboat type from a photo (partially enclosed vs totally enclosed).",
+        "What must non-self-righting lifeboats be equipped with? (handholds on the bottom)",
+        "What percentage of a partially enclosed lifeboat's sides must the rigid cover span? (at least 20%)"
+      ],
+      "possibleMisconceptions": [
+        "Confusing the 10-minute (passenger ship) vs 3-minute (cargo ship) boarding time requirements.",
+        "Assuming partially enclosed and totally enclosed differ only in degree of the same rigid cover, missing that partially enclosed also has a separate foldable canopy.",
+        "Assuming all lifeboats are self-righting; only some are, and non-self-righting types have a specific compensating feature (handholds)."
+      ],
+      "extractionConfidence": "high",
+      "needsFollowUp": false
     },
     {
       "id": "vinci-2026-07-07-034781",
@@ -49,9 +120,33 @@
       "chapterGuess": "chapter-2-using-lifeboats",
       "topicGuess": "Lifeboat/rescue boat types continued — Totally Enclosed (free-fall davit), Fast Rescue Boat (FRB)",
       "visualUseStatus": "candidate-learning-visual",
-      "extractionStatus": "not-started",
+      "extractionStatus": "extracted",
       "verificationStatus": "unverified",
-      "notes": "Manual page 18, directly follows the page-17 chapter break."
+      "notes": "Manual page 18, directly follows the page-17 chapter break.",
+      "extractedTitle": "Chapter 2 USING LIFEBOATS — Lifeboats (self-righting/fire protection) and Rescue Boats",
+      "extractedText": "[continuing from prior page] ...if the boat capsizes. Totally enclosed lifeboats are self-righting, so if they flip over, they will automatically flip back to normal. Ventilators are designed to automatically close if the boat capsizes. Totally enclosed lifeboats with self-contained air support uses compressed breathing air to provide air to the survivors and the engine. If the lifeboat hatches and ventilation have been properly secured this air supply will last for ten minutes. A slight positive pressure is built up inside the craft to keep out fumes and gases. Air is not recirculated. Totally enclosed fire-protected lifeboats have a water spray system that sprays the outside of the boat, and will protect passengers from an oil fire in the water for at least 8 minutes. For external fire protection, a pump driven off the engine, pumps sea water to spray nozzles along the top cover. This keeps the entire survival craft completely wet. The boat is usually made of fire retardant, fiberglass-reinforced plastic, so it will not burn easily. Rescue boats can be rigid, inflated, or constructed of a combination of both. They are capable of carrying at least 5 seated passengers and a person lying on a stretcher, all wearing immersion suits and/or life jackets. There will be sufficient fuel, suitable for the temperature range in that area, to maneuver at a speed of 6 knots for 4 hours. Rescue boats have the maneuverability for people to be retrieved from the water and from liferafts. They will also have a permanently fitted towing arrangement that is capable of towing the largest lifeboat on their ship, fully loaded with crew and equipment, at a speed of 2 knots. Rescue boats can have either an inboard or outboard engine; however outboard motors must have the fuel tanks protected against fire.",
+      "keyFacts": [
+        "Totally enclosed lifeboats are self-righting — if capsized, they automatically flip back upright, and ventilators automatically close during capsize.",
+        "Self-contained air support systems: if hatches/ventilation are properly secured, the air supply lasts ten minutes, with slight positive pressure keeping out fumes/gases (air not recirculated).",
+        "Totally enclosed fire-protected lifeboats have a water spray system protecting occupants from an oil fire in the water for at least 8 minutes.",
+        "Rescue boats must carry at least 5 seated passengers plus a person on a stretcher, all wearing immersion suits and/or life jackets.",
+        "Rescue boats must maneuver at 6 knots for 4 hours, and have a permanently fitted towing arrangement capable of towing the ship's largest fully-loaded lifeboat at 2 knots.",
+        "Rescue boats with outboard motors must have fuel tanks protected against fire."
+      ],
+      "examAngles": [
+        "How long does the compressed air supply last in a self-contained air support lifeboat with hatches/ventilation properly secured? (ten minutes)",
+        "How long must a totally enclosed fire-protected lifeboat's water spray system protect against an oil fire? (at least 8 minutes) — easily confused with the 10-minute air-support figure.",
+        "What is the minimum passenger/stretcher capacity a rescue boat must carry? (5 seated + 1 on stretcher)",
+        "At what speed must a rescue boat tow the ship's largest fully-loaded lifeboat, vs its own 6-knot cruising speed? (2 knots vs 6 knots)",
+        "Identify boat type from photo: Totally Enclosed Lifeboat (free-fall gravity davit) vs Fast Rescue Boat (FRB)."
+      ],
+      "possibleMisconceptions": [
+        "Confusing the 10-minute (air-support duration) with the 8-minute (fire-protected water-spray duration) figures — both appear in the same paragraph.",
+        "Confusing the rescue boat's cruising speed (6 knots) with its required towing speed (2 knots).",
+        "Assuming all totally enclosed lifeboats are automatically fire-protected; fire protection is a distinct sub-type, not universal."
+      ],
+      "extractionConfidence": "high",
+      "needsFollowUp": false
     },
     {
       "id": "vinci-2026-07-07-041458",
@@ -61,9 +156,33 @@
       "chapterGuess": "chapter-2-using-lifeboats",
       "topicGuess": "Markings — required vessel name/port/persons/boat-number markings, nameplate contents",
       "visualUseStatus": "candidate-quiz-visual",
-      "extractionStatus": "not-started",
+      "extractionStatus": "extracted",
       "verificationStatus": "unverified",
-      "notes": "Manual page 19, section header 'Markings'."
+      "notes": "Manual page 19, section header 'Markings'. Source text literally prints \"EPRIB & SART\" in item 5d — this reads as a likely typo for \"EPIRB\" (used correctly elsewhere in this same batch, e.g. page 12's safety symbols), but is preserved here exactly as printed per the no-guessing rule.",
+      "extractedTitle": "Chapter 2 USING LIFEBOATS — Markings",
+      "extractedText": "Each lifeboat and rescue boat must be plainly marked as follows: 1. Each side of each lifeboat and rescue boat bow must be marked in block capital letters and numbers with - (i) The name of the vessel; and (ii) The name of the port required to be marked on the stern of the vessel. 2. The number of persons for which the boat is equipped must be clearly marked, preferably on the bow, in permanent characters. The number of persons on the boat must not exceed the number of persons shown on its nameplate. 3. The number of the boat and a means of identifying the vessel to which the boat belongs, such as the vessel's name, must be plainly marked or painted so that the markings are visible from above the boat. 4. Each lifeboat will have a nameplate or label in a conspicuous place listing the following: a. The manufacture's name & serial number/ date of manufacture of boat. b. Light load and full load condition/weights. c. The number of persons allowed in the lifeboat. 5. The vessel's name must also be clearly printed on: a. Every oar. b. Every life preserver (PFD) c. Each life ring d. EPRIB & SART.",
+      "keyFacts": [
+        "Each lifeboat/rescue boat bow must be marked (both sides) in block capital letters/numbers with the vessel's name and the home port (port name marked on the vessel's stern).",
+        "The number of persons the boat is equipped for must be marked, preferably on the bow, in permanent characters, and must not exceed the number shown on the nameplate.",
+        "The lifeboat number and vessel identification must be marked so it's visible from above the boat.",
+        "Each lifeboat's nameplate/label must list: manufacturer's name & serial number/date of manufacture, light load and full load condition/weights, and the number of persons allowed.",
+        "The vessel's name must be clearly printed on every oar, every life preserver (PFD), each life ring, and the EPIRB & SART.",
+        "'Open Lifeboat' is described as an older style being phased out; 'Lifeboat Tender' is common on passenger ships, serving as both a tender and a lifeboat when necessary."
+      ],
+      "examAngles": [
+        "Where must the number of persons a lifeboat carries be marked, and what limit does it have relative to the nameplate?",
+        "List the items that must have the vessel's name printed on them (oar, PFD, life ring, EPIRB & SART).",
+        "What four things must appear on a lifeboat's nameplate?",
+        "Visual ID: distinguish 'Open Lifeboat' from 'Lifeboat Tender' by photo.",
+        "Where is the port name marked, relative to the vessel vs. the lifeboat bow?"
+      ],
+      "possibleMisconceptions": [
+        "Assuming the 'number of persons' marking can exceed the nameplate figure as long as it matches actual built capacity — it must not exceed the nameplate number.",
+        "Confusing what's marked on the BOW (vessel name + port, block capitals) vs. what's on the NAMEPLATE (manufacturer, weights, persons).",
+        "Thinking only the lifeboat itself needs the vessel's name — it explicitly extends to oars, PFDs, life rings, and EPIRB/SART."
+      ],
+      "extractionConfidence": "high",
+      "needsFollowUp": false
     },
     {
       "id": "vinci-2026-07-07-041663-1",
@@ -73,9 +192,29 @@
       "chapterGuess": "chapter-2-using-lifeboats",
       "topicGuess": "Coloring — international orange / Indian orange / red release-lever color requirements",
       "visualUseStatus": "source-only",
-      "extractionStatus": "not-started",
+      "extractionStatus": "extracted",
       "verificationStatus": "unverified",
-      "notes": "Manual page 20, section header 'Coloring'. Text only, no diagram/photo. Near-duplicate capture of the same page as vinci-2026-07-07-041663-2 (different photo, not byte-identical)."
+      "notes": "Manual page 20, section header 'Coloring'. Text only, no diagram. Near-duplicate photo of the same page as vinci-2026-07-07-041663-2 (different capture, not byte-identical) — extraction fields for both are the same content, captured twice.",
+      "extractedTitle": "Coloring",
+      "extractedText": "The canopy exteriors of enclosed lifeboats are also painted international orange. The tops of the thwarts, the side benches, and the footings of the open lifeboats are painted international orange. Sails and canvas canopies must be dyed Indian orange. The release lever must be red in color and the area immediately surrounding the control must be a sharply contrasting light color.",
+      "keyFacts": [
+        "Canopy exteriors of enclosed lifeboats are painted international orange.",
+        "Tops of thwarts, side benches, and footings of open lifeboats are painted international orange.",
+        "Sails and canvas canopies must be dyed Indian orange (a distinct term from international orange).",
+        "The release lever must be red.",
+        "The area immediately surrounding the release-lever control must be a sharply contrasting light color."
+      ],
+      "examAngles": [
+        "What color must sails and canvas canopies be dyed? (Indian orange — distinct from international orange)",
+        "What color is the release lever, and what must surround it? (red lever; sharply contrasting light color around it)",
+        "Compare & contrast 'international orange' (canopy exteriors, thwarts/benches/footings) vs 'Indian orange' (sails/canvas canopies)."
+      ],
+      "possibleMisconceptions": [
+        "Assuming 'international orange' and 'Indian orange' are the same color/requirement — they're distinct terms for different components.",
+        "Assuming the release-lever surrounding area must also be orange, when it's actually a sharply contrasting light color."
+      ],
+      "extractionConfidence": "high",
+      "needsFollowUp": false
     },
     {
       "id": "vinci-2026-07-07-041663-2",
@@ -85,9 +224,29 @@
       "chapterGuess": "chapter-2-using-lifeboats",
       "topicGuess": "Coloring — international orange / Indian orange / red release-lever color requirements",
       "visualUseStatus": "source-only",
-      "extractionStatus": "not-started",
+      "extractionStatus": "extracted",
       "verificationStatus": "unverified",
-      "notes": "Manual page 20, same 'Coloring' section as vinci-2026-07-07-041663-1 — near-duplicate capture of the same page. Text only, no diagram/photo."
+      "notes": "Manual page 20, same 'Coloring' section as vinci-2026-07-07-041663-1 — near-duplicate capture of the same page. Text only, no diagram.",
+      "extractedTitle": "Coloring",
+      "extractedText": "The canopy exteriors of enclosed lifeboats are also painted international orange. The tops of the thwarts, the side benches, and the footings of the open lifeboats are painted international orange. Sails and canvas canopies must be dyed Indian orange. The release lever must be red in color and the area immediately surrounding the control must be a sharply contrasting light color.",
+      "keyFacts": [
+        "Canopy exteriors of enclosed lifeboats are painted international orange.",
+        "Tops of thwarts, side benches, and footings of open lifeboats are painted international orange.",
+        "Sails and canvas canopies must be dyed Indian orange (a distinct term from international orange).",
+        "The release lever must be red.",
+        "The area immediately surrounding the release-lever control must be a sharply contrasting light color."
+      ],
+      "examAngles": [
+        "What color must sails and canvas canopies be dyed? (Indian orange — distinct from international orange)",
+        "What color is the release lever, and what must surround it? (red lever; sharply contrasting light color around it)",
+        "Compare & contrast 'international orange' (canopy exteriors, thwarts/benches/footings) vs 'Indian orange' (sails/canvas canopies)."
+      ],
+      "possibleMisconceptions": [
+        "Assuming 'international orange' and 'Indian orange' are the same color/requirement — they're distinct terms for different components.",
+        "Assuming the release-lever surrounding area must also be orange, when it's actually a sharply contrasting light color."
+      ],
+      "extractionConfidence": "high",
+      "needsFollowUp": false
     },
     {
       "id": "vinci-2026-07-07-041663-3",
@@ -97,9 +256,34 @@
       "chapterGuess": "chapter-2-using-lifeboats",
       "topicGuess": "Numbering (odd/starboard, even/port lifeboat numbering) and Capacity (150-person max, seating/mass rules)",
       "visualUseStatus": "candidate-quiz-visual",
-      "extractionStatus": "not-started",
+      "extractionStatus": "extracted",
       "verificationStatus": "unverified",
-      "notes": "Manual page 21, section headers 'Numbering' and 'Capacity'. One of the strongest candidates in this batch — matches both markings/numbering and inspection/capacity use cases."
+      "notes": "Manual page 21, section headers 'Numbering' and 'Capacity'. One of the strongest candidates in this batch — matches both markings/numbering and inspection/capacity use cases.",
+      "extractedTitle": "Numbering and Capacity",
+      "extractedText": "Each lifeboat is given a number that must be marked on each side of the bow in Block Capital letters. Odd numbered boats are on the starboard side of the ship. Even numbered boats are on the port side of the ship. In the diagram, notice that lifeboat number 2 is forward of lifeboat number 4 on the port side and lifeboat number 7 is abaft (behind or aft) of lifeboat number 5 on the starboard side. [Diagram: EVEN numbered lifeboats are on the PORT side of the ship, numbered from FWD to AFT (2, 4, 6, 8); ODD numbered lifeboats are on the STARBOARD side of the ship, numbered from FWD to AFT (1, 3, 5, 7).] Capacity: No lifeboat will be approved to accommodate more than 150 persons. The number of persons which a lifeboat, to be launched by falls, will be permitted to accommodate will be equal to the lesser of: 1. the number of persons having an average mass of 165 lbs. (for a lifeboat intended for a passenger ship) or 188 lbs. (for a lifeboat intended for a cargo ship), all wearing lifejackets, that can be seated in a normal position without interfering with the means of propulsion or the operation of any of the lifeboat's equipment; or 2. the number of spaces that can be provided on the seating arrangements. The spaces may be overlapped, provided footrests are fitted and there is sufficient room for legs and the vertical separation between the upper and lower seat is not less than 350 mm.",
+      "keyFacts": [
+        "Odd-numbered lifeboats are on the starboard side; even-numbered lifeboats are on the port side.",
+        "Both odd and even numbering run from forward (FWD) to aft.",
+        "Lifeboat numbers must be marked on each side of the bow in block capital letters.",
+        "No lifeboat may be approved to accommodate more than 150 persons.",
+        "Capacity is the LESSER of: (1) persons at average mass 165 lbs (passenger ship) or 188 lbs (cargo ship), wearing lifejackets, seated normally without interfering with propulsion/equipment; or (2) number of seating-arrangement spaces, which may overlap if footrests are fitted and vertical separation between upper/lower seat is at least 350 mm.",
+        "Example: lifeboat 2 is forward of lifeboat 4 (port side); lifeboat 7 is abaft (aft of) lifeboat 5 (starboard side)."
+      ],
+      "examAngles": [
+        "Lifeboat #6 — which side of the ship is it on, and is it forward or aft of lifeboat #8? (even = port; #6 is forward of #8)",
+        "What average passenger mass is used to calculate capacity on a passenger ship vs. a cargo ship? (165 lbs vs 188 lbs)",
+        "What is the minimum vertical separation required between overlapping upper and lower lifeboat seats? (350 mm)",
+        "A lifeboat's capacity is calculated two ways (mass-based and seating-space-based) — which value is actually used? (the lesser of the two)",
+        "Which numbered lifeboat is abaft lifeboat #3 on the starboard side? (#5)"
+      ],
+      "possibleMisconceptions": [
+        "Swapping odd/starboard with even/port.",
+        "Assuming the higher of the two capacity calculations is used, rather than the lesser.",
+        "Confusing which mass figure (165 vs 188 lbs) applies to passenger vs. cargo ships.",
+        "Assuming 150 persons is a general recommendation rather than an absolute regulatory ceiling."
+      ],
+      "extractionConfidence": "high",
+      "needsFollowUp": false
     },
     {
       "id": "vinci-2026-07-07-041663-4",
@@ -109,9 +293,36 @@
       "chapterGuess": "chapter-2-using-lifeboats",
       "topicGuess": "Design, Construction, and Performance of Modern Lifeboats — 46CFR160.135-7 / IMO LSA Code spec table",
       "visualUseStatus": "source-only",
-      "extractionStatus": "not-started",
+      "extractionStatus": "extracted",
       "verificationStatus": "unverified",
-      "notes": "Manual page 22. Text-only regulatory spec table (design, stability, strength, capacity, access, buoyancy, engine); no diagram/photo."
+      "notes": "Manual page 22. Text-only regulatory spec table; no diagram/photo. Left-margin category labels (Design/Visibility/Construction/Stability/Strength/Material/Seating/Capacity/Access/Buoyancy/Engine) are faint (bleed-through ghosting from the facing page) but legible from context. This page is explicitly framed by the manual as its own paraphrased 'summary from 46CFR160.135-7 and IMO LSA Code', not verbatim regulatory text — worth tracing to the actual regulation before treating any single figure here as verified.",
+      "extractedTitle": "Design, Construction, and Performance of Modern Lifeboats",
+      "extractedText": "The following is a summary from 46CFR160.135-7 and IMO LSA (Life Saving Appliances) Code - lifeboats constructed from 1998 on must meet these requirements: Design: Each lifeboat, other than a totally enclosed lifeboat, must be designed to be operable by persons wearing immersion suits. Visibility: The operator's station must be designed such that the operator, when seated at the control station, has visibility 360 degrees around the lifeboat, with any areas obstructed by the lifeboat structure or its fittings visible by moving the operator's head and torso. Construction: Each major rigid structural component of each lifeboat must be constructed of steel, aluminum, Fiber Reinforced Plastic (FRP), or materials accepted by the Commandant as equivalent or superior. Stability: Provide ample positive stability and sufficient freeboard when loaded with their full complement of persons and equipment even when holed in any one location below the waterline. Strength: Safely launched into the water when fully loaded with the ship making 5 knots headway, dropped into water at full weight from 3 m (10 ft), hold twice the allowable weight without deformation while suspended from falls, lateral (sideways) impact at 3.5m/s. Material: Be fire retardant or non-combustible (typically Fiber Reinforced Plastic-FRP, aka Fiberglass). Seating: Provided on thwarts, benches or fixed chairs capable of 100 kg (220 lbs) per seat. Capacity: Not to exceed 150 persons - average mass of 75 kg (165 lbs) - each seating position to be clearly indicated. Access: Passenger Ship: Be boarded by full complement in 10 min. Cargo Ship: Be boarded by full complement in 3 min. Buoyancy: Have inherent buoyancy/fitted buoyant material sufficient to float the lifeboat with full weight when flooded and open to the sea. Engine: Must be compression ignition that meets the U.S. Environmental Protection Agency (EPA) emission requirements. The engine will be capable of operating not less than 5 min out of water, be started in under 2 min at -15 C (5 F), make 6 knots (2 knots towing 25-person liferaft) fully loaded for 24 hours. Have operating instructions posted, propeller shrouded.",
+      "keyFacts": [
+        "Applies to lifeboats built 1998+, per 46CFR160.135-7 / IMO LSA Code.",
+        "All lifeboats except totally enclosed ones must be operable by someone wearing an immersion suit.",
+        "Operator's station must give 360-degree visibility when seated (moving head/torso to see around obstructions).",
+        "Rigid structural components: steel, aluminum, FRP, or Commandant-approved equivalent.",
+        "Structural strength: 5-knot launch, 3 m (10 ft) drop at full weight, hold 2x allowable weight suspended from falls, 3.5 m/s lateral impact — all without deformation.",
+        "Capacity not to exceed 150 persons, calculated at average mass 75 kg (165 lbs); seats must support 100 kg (220 lbs) each.",
+        "Boarding time for full complement: passenger ship 10 min, cargo ship 3 min.",
+        "Engine: compression ignition, EPA-compliant, starts under 2 min at -15C (5F), makes 6 knots (2 knots towing a 25-person liferaft) for 24 hrs fully loaded, shrouded propeller, posted operating instructions."
+      ],
+      "examAngles": [
+        "What is the maximum drop height a lifeboat must survive when fully loaded? (3 m / 10 ft)",
+        "What multiple of allowable weight must a lifeboat hold without deformation while suspended from falls? (twice)",
+        "At what temperature must the engine start in under 2 minutes? (-15C / 5F)",
+        "What towing speed must the engine maintain while towing a 25-person liferaft, vs its normal 6-knot speed? (2 knots vs 6 knots)",
+        "Which lifeboat type is exempt from the immersion-suit operability design requirement? (totally enclosed lifeboats)"
+      ],
+      "possibleMisconceptions": [
+        "Confusing the average-mass capacity figure (75 kg/165 lbs) with the per-seat structural load rating (100 kg/220 lbs).",
+        "Assuming the towing speed (2 knots) is the engine's normal operating speed rather than its reduced towing speed under load (6 knots normally).",
+        "Assuming ALL lifeboats must be operable by someone in an immersion suit — totally enclosed lifeboats are the explicit exception.",
+        "Mixing up the 10-minute (passenger ship) / 3-minute (cargo ship) boarding figures with the other timing figures on this page (5-minute out-of-water operation, 2-minute cold start)."
+      ],
+      "extractionConfidence": "high",
+      "needsFollowUp": false
     },
     {
       "id": "vinci-2026-07-07-041663-5",
@@ -121,9 +332,33 @@
       "chapterGuess": "chapter-2-using-lifeboats",
       "topicGuess": "Spec table continued — Steering, Handholds, Release Mechanism, Skates, Painter Release, Lighting",
       "visualUseStatus": "source-only",
-      "extractionStatus": "not-started",
+      "extractionStatus": "needs-better-photo",
       "verificationStatus": "unverified",
-      "notes": "Manual page 23, direct continuation of page 22's spec table. Text only, no diagram/photo."
+      "notes": "Manual page 23, direct continuation of page 22's spec table. Text only, no diagram/photo. The right edge of nearly every line is cropped out of frame (words cut off, e.g. 'ha[ve]', 'throt[tle]', 'syste[m]', 'plac[ard]'); most cut-off words are recoverable with very high confidence from the immediate sentence context, but the crop means some exact wording (especially around the release-mechanism placard requirements) is not fully confirmed. A re-photograph with the full page width in frame would resolve this.",
+      "extractedTitle": "Design/Construction spec table continued — Steering, Handholds, Release Mechanism, Skates, Painter Release, Lighting",
+      "extractedText": "Steering: Rudder must be permanently attached, must have tiller as a backup [to a] steering wheel. The operator's control and steering station must ha[ve] complete lifeboat lowering and launching, hook release, engine throt[tle,] steering controls, and if applicable, an air system and water spray syste[m]. Handholds: Must be provided on topsides of lifeboat and/or buoyant lifelines; For N[on-]Self-Righting Lifeboats- must have hand-holds on underside of lifeb[oat] (grab rails). Release Mechanism: The release lever or control in the lifeboat must be red in color, a[nd] the area immediately surrounding the control must be a shar[ply] contrasting light color. An illustrated operating instruction plate or plac[ard] showing the correct off-load and emergency on-load release proced[ure] and recovery procedure must be posted so that it is visible and legi[ble] from the coxswain's normal operating position. The plate or placard m[ust] be corrosion resistant and weatherproof and must be marked with [the] word \"Danger\". Skates: Lifeboats intended for launching down the side of the ship shall ha[ve] skates and fenders to prevent damage to lifeboat when launching. Painter Release: Must have device to secure and release the painter on the bow. Lighting: A manually controlled lamp shall be fitted both inside (positioned to re[veal] survival and equipment instructions) and outside (for identification- m[ust not] be blinking) and be able to operate continuously for 12 hours (oil lam[ps are] not permitted for this purpose).",
+      "keyFacts": [
+        "Steering: rudder must be permanently attached and have a tiller as backup steering (in addition to a wheel).",
+        "Handholds must be provided on topsides of the lifeboat and/or via buoyant lifelines; non-self-righting lifeboats must additionally have hand-holds (grab rails) on the underside.",
+        "Release Mechanism: the release lever/control must be red, with a sharply contrasting light color immediately surrounding it.",
+        "An illustrated operating instruction plate/placard (off-load and emergency on-load release procedure, plus recovery procedure) must be posted, visible/legible from the coxswain's operating position, corrosion-resistant, weatherproof, and marked with the word \"Danger\".",
+        "Skates: lifeboats launched down the ship's side must have skates and fenders to prevent launch damage.",
+        "Lighting: a manually controlled lamp must be fitted both inside and outside, run continuously for 12 hours; oil lamps are not permitted for this purpose."
+      ],
+      "examAngles": [
+        "What backup steering control must a lifeboat's rudder have, in addition to a wheel? (tiller)",
+        "What word must appear on the release-mechanism operating instruction placard? (\"Danger\")",
+        "What equipment prevents lifeboat damage during a side launch down the ship's hull? (skates and fenders)",
+        "How long must the manually controlled lighting operate continuously, and what's explicitly not permitted for it? (12 hours; oil lamps not permitted)",
+        "Which additional handhold feature is required specifically for non-self-righting lifeboats? (hand-holds/grab rails on the underside)"
+      ],
+      "possibleMisconceptions": [
+        "Assuming any lamp type is acceptable for the 12-hour lighting requirement — oil lamps are explicitly disallowed.",
+        "Confusing 'handholds on topsides/lifelines' (general requirement) with 'hand-holds on underside' (additional requirement only for non-self-righting lifeboats).",
+        "Assuming the release-mechanism placard only needs to show the release procedure — it must also show the recovery procedure and be marked \"Danger\"."
+      ],
+      "extractionConfidence": "medium",
+      "needsFollowUp": true
     },
     {
       "id": "vinci-2026-07-07-041663-6",
@@ -133,9 +368,36 @@
       "chapterGuess": "chapter-2-using-lifeboats",
       "topicGuess": "Construction / Lifeboat Shell — hull terminology (gunwale, stem, keel, stern post)",
       "visualUseStatus": "source-only",
-      "extractionStatus": "not-started",
+      "extractionStatus": "extracted",
       "verificationStatus": "unverified",
-      "notes": "Manual page 24, section headers 'Construction' and 'Lifeboat Shell', with a labeled hull diagram."
+      "notes": "Manual page 24, section headers 'Construction' and 'Lifeboat Shell', with a labeled hull diagram. Left-margin text is faint (bleed-through ghosting) but legible from context.",
+      "extractedTitle": "Construction; Lifeboat Shell",
+      "extractedText": "Lifeboats are considered to be the primary lifesaving equipment onboard ships. They are designed to keep you alive long enough to be rescued- not to get you home. They differ in their construction, but certain features and parts are the same on all lifeboats. We will discuss an open lifeboat of traditional construction, understanding that design and construction of lifeboats varies greatly with generation and application. Open lifeboats are normally double-ended, which means that they are pointed at both ends. This design makes them more seaworthy (less likely to be swamped or to \"broach to\"). Totally enclosed lifeboats frequently have flat transoms allowing for additional space. Lifeboats on modern ships are made of fiberglass. Older lifeboats may be made of galvanized steel or aluminum. An aluminum lifeboat is especially subject to damage by electrolytic corrosion (the aluminum being eaten away) if iron or steel tools are left lying on or near the boat. Only the Coast Guard can approve any changes in the design and/or construction of a lifeboat. In an emergency, changes can be made, but those changes must be reported to the Officer in Charge of Marine Inspection (OCMI) in the first port reached after the changes are made. Lifeboats are limited to a 150 person capacity (based on 165lbs average) and must be stopped, cleaned, and thoroughly overhauled at least once every year. Lifeboat Shell: The keel on a metal boat is a heavy, rectangular metal bar. The bar is joined to the stem and stern post. Together, the keel, stem, and stern post form the backbone of the lifeboat. The gunwales run along the top row of plating on both sides of the lifeboat. They are sturdy. Both the gunwales and the keel give the boat lengthwise strength. Plating is the metal siding on the lifeboat. The top row of plating is called the sheer strake. The sheer strake is just below the gunwale. The middle row of plating is the bilge strake. It is located where the sides turn in toward the bottom of the lifeboat. The garboard strake is the bottom row of plating. It is fitted next to the keel.",
+      "keyFacts": [
+        "Lifeboats are the primary lifesaving equipment onboard, designed to keep people alive long enough to be rescued — not to get them home.",
+        "Open lifeboats are normally double-ended (pointed at both ends), making them more seaworthy (less likely to be swamped or to 'broach to').",
+        "Lifeboats on modern ships are made of fiberglass; older lifeboats may be galvanized steel or aluminum.",
+        "Aluminum lifeboats are especially subject to electrolytic corrosion if iron or steel tools are left on or near the boat.",
+        "Only the Coast Guard can approve design/construction changes; emergency changes must be reported to the OCMI at the first port reached afterward.",
+        "Lifeboats are limited to 150-person capacity (based on 165 lbs average) and must be stopped, cleaned, and thoroughly overhauled at least once every year.",
+        "The keel, stem, and stern post together form the lifeboat's 'backbone'; the keel and gunwales give the boat lengthwise strength.",
+        "Hull plating rows top to bottom: sheer strake (just below gunwale), bilge strake (where sides turn toward bottom), garboard strake (bottom, next to keel)."
+      ],
+      "examAngles": [
+        "What is the primary purpose of a lifeboat, per the manual? (keep you alive long enough to be rescued, not to get you home)",
+        "Why does electrolytic corrosion pose a special risk to aluminum lifeboats? (iron/steel tools left on or near the boat)",
+        "Who must approve lifeboat design/construction changes, and who must emergency changes be reported to? (Coast Guard; OCMI at first port reached)",
+        "How often must a lifeboat be thoroughly overhauled? (at least once every year)",
+        "Which strake is located just below the gunwale, vs. next to the keel? (sheer strake; garboard strake)"
+      ],
+      "possibleMisconceptions": [
+        "Assuming a lifeboat's purpose is to bring survivors all the way home, rather than just keep them alive until rescue.",
+        "Confusing 'double-ended' (pointed at both ends, seaworthiness feature) with 'self-righting' (unrelated capsize-recovery feature).",
+        "Mixing up the top-to-bottom order of sheer/bilge/garboard strake.",
+        "Assuming any officer or the ship's captain can approve lifeboat design changes — only the Coast Guard can; the OCMI is only for after-the-fact reporting of emergency changes."
+      ],
+      "extractionConfidence": "high",
+      "needsFollowUp": false
     },
     {
       "id": "vinci-2026-07-07-041663-7",
@@ -145,9 +407,31 @@
       "chapterGuess": "chapter-2-using-lifeboats",
       "topicGuess": "Hull plating terminology — sheer strake, bilge strake, garboard strake, doubler plating",
       "visualUseStatus": "source-only",
-      "extractionStatus": "not-started",
+      "extractionStatus": "extracted",
       "verificationStatus": "unverified",
-      "notes": "Manual page 25, direct continuation of page 24's shell/plating discussion, with a labeled diagram."
+      "notes": "Manual page 25, direct continuation of page 24's shell/plating discussion, with a labeled diagram.",
+      "extractedTitle": "Lifeboat Shell — doubler plating and strakes (continued)",
+      "extractedText": "The lifeboat needs extra plating on the spots which rest on the cradle. The cradle holds the lifeboat when it is in the stowed position. This extra thickness of shell plating is called doubler plating. Doubler plating should be checked each time the boat is lifted or swung out. [Diagram] The top row of plating is called the sheer strake. The sheer strake is just below the gunwale. The middle row or plating is called the bilge strake. The bilge strake is where the sides turn in toward the bottom of the lifeboat. The bottom row of plating is called the garboard strake. The garboard strake is next to the keel.",
+      "keyFacts": [
+        "The cradle holds the lifeboat in its stowed position; spots resting on the cradle need extra shell-plating thickness.",
+        "This extra thickness is called 'doubler plating.'",
+        "Doubler plating should be checked each time the boat is lifted or swung out.",
+        "Sheer strake = top row of plating, just below the gunwale.",
+        "Bilge strake = middle row, where the sides turn in toward the bottom of the lifeboat.",
+        "Garboard strake = bottom row, next to the keel."
+      ],
+      "examAngles": [
+        "What is doubler plating, and when should it be checked? (extra plating at cradle contact points; checked each time the boat is lifted or swung out)",
+        "Which strake is located where the sides turn in toward the bottom of the boat? (bilge strake)",
+        "Which strake sits immediately next to the keel? (garboard strake)",
+        "What part of the lifeboat's stowage system does doubler plating protect against wear? (the cradle contact points)"
+      ],
+      "possibleMisconceptions": [
+        "Confusing bilge strake (middle, where sides curve toward the bottom) with garboard strake (bottom, next to keel).",
+        "Assuming doubler plating is general hull reinforcement rather than specifically at the cradle contact points."
+      ],
+      "extractionConfidence": "high",
+      "needsFollowUp": false
     },
     {
       "id": "vinci-2026-07-07-041663-8",
@@ -157,9 +441,31 @@
       "chapterGuess": "chapter-2-using-lifeboats",
       "topicGuess": "Interior Construction — brackets, sidebench, thwarts, stanchions, buoyancy unit, grab rail, limber holes, keel, floors, bottom boards",
       "visualUseStatus": "source-only",
-      "extractionStatus": "not-started",
+      "extractionStatus": "extracted",
       "verificationStatus": "unverified",
-      "notes": "Manual page 26, section header 'Interior Construction', with a labeled cutaway diagram."
+      "notes": "Manual page 26, section header 'Interior Construction', with a labeled cutaway diagram. Left-margin text faint (bleed-through) but legible from context.",
+      "extractedTitle": "Interior Construction — thwarts, side benches, stanchions, footrests",
+      "extractedText": "There are four places to sit in an open lifeboat: the thwarts, the side benches, the bow sheets, and stern sheets. (See diagram at bottom of page) The thwarts extend from side to side (athwartship) in a lifeboat. They provide the athwartship strength to the boat as well as a place for the rowers to sit while they are pulling on the oars. Upright stanchions beneath each thwart gives additional support to the thwart and strength to the boat. For each thwart, footrests (stretchers) are provided to the rowers to brace their feet against while they are rowing. [Diagram labels: Brackets, Sidebench, Thwarts, Stanchions, Gunwale, Buoyancy Unit, Grab Rail, Limber Holes, Keel, Floors, Bottom Boards (footings)]",
+      "keyFacts": [
+        "Four sitting places in an open lifeboat: thwarts, side benches, bow sheets, stern sheets.",
+        "Thwarts extend side to side (athwartship), provide athwartship strength, and are where rowers sit while pulling oars.",
+        "Upright stanchions beneath each thwart give additional support to the thwart and strength to the boat.",
+        "Footrests (stretchers) are provided for each thwart so rowers can brace their feet while rowing.",
+        "Labeled interior parts include: gunwale, brackets, sidebench, stanchions, buoyancy unit, grab rail, limber holes, keel, floors, bottom boards (footings)."
+      ],
+      "examAngles": [
+        "Name the four sitting places in an open lifeboat.",
+        "What do rowers brace their feet against while rowing? (footrests/stretchers)",
+        "What structural role do stanchions play beneath the thwarts? (support the thwart, add strength to the boat)",
+        "Diagram labeling: identify parts (brackets vs. stanchions vs. floors vs. bottom boards) from the cutaway diagram."
+      ],
+      "possibleMisconceptions": [
+        "Confusing 'thwarts' (athwartship seating for rowers) with 'side benches' (a separate seating location along the sides).",
+        "Confusing 'footrests (stretchers)' with 'stanchions' — both near the thwarts but serve different purposes.",
+        "Confusing 'bottom boards (footings)' with 'floors' — floors are the metal ribs; bottom boards rest on the floors."
+      ],
+      "extractionConfidence": "high",
+      "needsFollowUp": false
     },
     {
       "id": "vinci-2026-07-07-041663-9",
@@ -169,9 +475,31 @@
       "chapterGuess": "chapter-2-using-lifeboats",
       "topicGuess": "Interior parts continued — mast hasp, releasing hook/gear, bottom boards, thwarts, sidebenches, painter ring, bow/stern sheets",
       "visualUseStatus": "source-only",
-      "extractionStatus": "not-started",
+      "extractionStatus": "extracted",
       "verificationStatus": "unverified",
-      "notes": "Manual page 27, continuation of page 26's interior-construction coverage, with a labeled top-down cutaway diagram."
+      "notes": "Manual page 27, continuation of page 26's interior-construction coverage, with a labeled top-down cutaway diagram.",
+      "extractedTitle": "Interior Construction continued — side benches, bow/stern sheets, bottom boards, releasing gear",
+      "extractedText": "Side benches on both sides provide more seating in the lifeboat. Brackets are metal bars that help support the side benches and the thwarts. Brackets run from gunwales to the side benches and are bolted through the side benches and the ends of the thwarts. The bow sheets are the seating area furthest forward in the lifeboat. The stern sheets are the aftermost (furthest aft) seating area. The coxswain usually stands at the stern sheets when they are steering the lifeboat. Bottom boards (footing) are in the inside bottom of the lifeboat. The bottom boards in turn are attached to and rest upon floors, which are metal ribs or bars running athwartship in the bilge of the lifeboat. The bottom boards are wooden and run lengthwise of the boat. The bottom boards spread the weight of persons and equipment over a wide area of the thin shell plating of the hull. They also add to the overall strength of the lifeboat. They may be removed for painting or other maintenance work on the bottom of the boat. A releasing gear is installed in lifeboats to ensure that both ends of the lifeboat are released from the falls at the same instant. A complete explanation of releasing gear is included in the section on davits later in the manual. [Diagram labels: Mast Hasp, Releasing Hook, Painter Ring, Bow Sheets, Sidebenches, Thwarts, Releasing Lever, Bottom Boards or Footings, Stern Sheets, BOW, STERN]",
+      "keyFacts": [
+        "Brackets are metal bars supporting side benches and thwarts, running from gunwales to side benches, bolted through side benches and the ends of thwarts.",
+        "Bow sheets = seating area furthest forward; stern sheets = furthest aft seating area. The coxswain usually stands at the stern sheets while steering.",
+        "Bottom boards (footing) are inside the bottom of the lifeboat, attached to and resting on floors (metal ribs running athwartship in the bilge).",
+        "Bottom boards are wooden, run lengthwise, spread weight over the thin shell plating, add strength, and may be removed for painting/bottom maintenance.",
+        "A releasing gear ensures both ends of the lifeboat release from the falls at the same instant (full explanation given later, in the davits section)."
+      ],
+      "examAngles": [
+        "What connects the gunwales to the side benches and is bolted through the ends of the thwarts? (brackets)",
+        "Where does the coxswain usually stand while steering the lifeboat? (stern sheets)",
+        "What do floors rest under, and what direction do they run relative to the boat? (bottom boards rest on floors; floors run athwartship; bottom boards run lengthwise)",
+        "What is the purpose of a releasing gear? (ensures both ends of the lifeboat release from the falls simultaneously)"
+      ],
+      "possibleMisconceptions": [
+        "Swapping 'bow sheets' (forward) and 'stern sheets' (aft) seating locations.",
+        "Confusing 'floors' (metal ribs, athwartship) with 'bottom boards' (wooden, lengthwise).",
+        "Assuming the releasing gear relates to steering/launch speed rather than ensuring simultaneous release from both falls."
+      ],
+      "extractionConfidence": "high",
+      "needsFollowUp": false
     },
     {
       "id": "vinci-2026-07-07-041663-10",
@@ -181,9 +509,35 @@
       "chapterGuess": "chapter-2-using-lifeboats",
       "topicGuess": "Buoyancy and Stability Features; Automatic Lifeboat Drain (drain cage/ball check)",
       "visualUseStatus": "source-only",
-      "extractionStatus": "not-started",
+      "extractionStatus": "extracted",
       "verificationStatus": "unverified",
-      "notes": "Manual page 28, two section headers with labeled diagrams."
+      "notes": "Manual page 28, two section headers with labeled diagrams. Left-margin text faint (bleed-through) but legible from context.",
+      "extractedTitle": "Buoyancy and Stability Features; Automatic Lifeboat Drain",
+      "extractedText": "Under each side bench are buoyancy units, which provide enough flotation to keep the boat, loaded to capacity with people and equipment, afloat even if it is full of water. Buoyancy units are placed under the side benches to make the boat less likely to capsize (turn over). Buoyancy units are usually air tanks or units of unicellular plastic foam. Buoyancy units are generally constructed so they can be removed for painting and other maintenance. If the units are removed for any reason, they must be re-stowed (put back) in their original position. The older lifeboats will have air tanks used as buoyancy units. A seafarer can often tell if a tank is air tight by looking at it on a hot day. If the flat sides of any tank are not bulging, it is probably leaking. To check the tank for leaks, remove the nipple and force air into the tank with a small air pump or by blowing through rubber tubing. The sides of the tank will bulge if the tank is not leaking. If there is a large leak, the air will escape through it. To check for a small leak, replace the cap after you have filled the tank with air. Automatic Lifeboat Drain: Two or more drains are provided in each lifeboat (except free-fall lifeboats) to allow water to drain out when the boat is lifted out of the water. A small metal cage forms the part of the drain below the bottom of the boat. In the cage, there is a rubber ball which floats up when the boat is in the water. It acts as an automatic closing valve. The ball should be kept in good condition and cleaned of fuel oil which could damage it. Drains should be kept clean at all times. If there is trash or rubbish in the cage, the ball cannot function. A metal cap, secured to each drain by a short length of small chain, is used for closing off the drain. When entering a lifeboat to prepare to launch it, the first and most important thing to do is to close the drain by screwing on the metal cap. The boat drain on an open lifeboat should be open when the boat is in the stowed position. Enclosed boats may opt to leave the cap on when in the stowed position. A free-fall lifeboat, due to its position while stowed, most likely will not be fitted with a drain. Limber holes are openings in the support frame (floors) of a lifeboat. They do not go through the shell to the outside of the boat, but allow water in the bilge to flow from one compartment to the next so water can drain while out of the water/stowed.",
+      "keyFacts": [
+        "Buoyancy units under each side bench keep a fully loaded lifeboat afloat even when full of water, and make the boat less likely to capsize.",
+        "Buoyancy units are usually air tanks or unicellular plastic foam; removable for maintenance and must be re-stowed in their original position.",
+        "An air-tank buoyancy unit can be checked for leaks: on a hot day, if the flat sides aren't bulging, it's probably leaking.",
+        "Two or more drains are provided in each lifeboat (except free-fall lifeboats) to let water drain when the boat is lifted from the water.",
+        "The automatic lifeboat drain uses a metal cage with a rubber ball that floats up and acts as an automatic closing valve.",
+        "The first and most important thing to do when entering a lifeboat to prepare for launch is to close the drain by screwing on the metal cap.",
+        "Open lifeboat drains should be open when stowed; enclosed boats may leave the cap on when stowed; free-fall lifeboats likely have no drain fitted.",
+        "Limber holes are openings in the floors that let bilge water flow between compartments without going through the outer shell."
+      ],
+      "examAngles": [
+        "What is the first and most important thing to do when entering a lifeboat to prepare it for launch? (close the drain by screwing on the metal cap)",
+        "How can a seafarer tell if an air-tank buoyancy unit is leaking, just by looking at it on a hot day? (flat sides not bulging = probably leaking)",
+        "What acts as the automatic closing valve in a lifeboat's drain system? (a rubber ball in a metal cage)",
+        "Which lifeboat type most likely has no drain fitted at all, and why? (free-fall lifeboats, due to their stowed position)",
+        "What is the purpose of limber holes, and do they go through the outer shell? (let bilge water flow between compartments; do not go through the shell)"
+      ],
+      "possibleMisconceptions": [
+        "Assuming the drain should always be left open regardless of boat type/position — the rule differs by type.",
+        "Confusing 'buoyancy units' (flotation, under side benches) with 'limber holes' (drainage openings in the floors).",
+        "Assuming the drain should be OPEN before launch — closing it (screwing on the metal cap) is actually the first and most important launch-prep step."
+      ],
+      "extractionConfidence": "high",
+      "needsFollowUp": false
     },
     {
       "id": "vinci-2026-07-07-041663-11",
@@ -193,9 +547,31 @@
       "chapterGuess": "chapter-2-using-lifeboats",
       "topicGuess": "Exterior Rescue Features — grab rail, lifeline, seine float, rudder/nozzle",
       "visualUseStatus": "candidate-quiz-visual",
-      "extractionStatus": "not-started",
+      "extractionStatus": "extracted",
       "verificationStatus": "unverified",
-      "notes": "Manual page 29, section literally titled 'Exterior Rescue Features', with a labeled photo. Directly matches the rescue-features use case."
+      "notes": "Manual page 29, section literally titled 'Exterior Rescue Features', with a labeled photo. Directly matches the rescue-features use case.",
+      "extractedTitle": "Exterior Rescue Features",
+      "extractedText": "Lifeboats that do not have the inherent ability to right themselves automatically will have grab rails. On the outside of the lifeboat, near the turn of the bilges, there are metal bars called grab rails (also referred to as hand-holds). People can hold onto the grab rails if the boat turns over in the water. The grab rails are secured in such a way that the lifeboat will not get holes in the plating if the grab rails are broken off. Lifelines must be of size and strength not less than 3/8 inch manila line (typical line material is Polypropylene multifilament). They must be divided into bights (loops) of three feet or less. There is a seine float in each bight to hold the lifeline up in the water (float may be omitted if line is inherently buoyant). Lifelines have two purposes. They are something to hang onto for (1) swimmers or (2) people who cannot find space in a crowded boat. [Labeled photo: Seine Float, Lifeline, Grab Rail, Rudder/Nozzle]",
+      "keyFacts": [
+        "Grab rails (hand-holds) are metal bars on the outside of the lifeboat near the turn of the bilges, provided on lifeboats that don't self-right automatically.",
+        "Grab rails are secured so that if broken off, the lifeboat's plating will not get holes in it.",
+        "Lifelines must be at least 3/8 inch manila line (typical material: polypropylene multifilament).",
+        "Lifelines are divided into bights (loops) of three feet or less, each with a seine float to hold the line up in the water (float may be omitted if the line is inherently buoyant).",
+        "Lifelines serve two purposes: something for swimmers to hang onto, and something for people who can't find space in a crowded boat."
+      ],
+      "examAngles": [
+        "What is the minimum size/strength of lifeline material required? (3/8 inch manila line)",
+        "What is the maximum bight length for a lifeline? (3 feet or less)",
+        "What are the two purposes of a lifeline? (swimmers to hang onto; people who can't find space in a crowded boat)",
+        "Why are grab rails secured in a particular way regarding the lifeboat's plating? (so the plating doesn't get holes if the grab rails break off)"
+      ],
+      "possibleMisconceptions": [
+        "Assuming grab rails are on ALL lifeboats — they're specifically for lifeboats that do NOT self-right automatically.",
+        "Assuming a seine float is always required on a lifeline — it may be omitted if the line itself is inherently buoyant.",
+        "Confusing the 3-foot bight-length figure with the 3/8 inch line-size figure — both are '3' but measure different things."
+      ],
+      "extractionConfidence": "high",
+      "needsFollowUp": false
     },
     {
       "id": "vinci-2026-07-07-041663-12",
@@ -205,9 +581,34 @@
       "chapterGuess": "chapter-2-using-lifeboats",
       "topicGuess": "Steering Equipment — tiller, rudder, pintle, gudgeon, Kort Nozzle, steering wheel",
       "visualUseStatus": "source-only",
-      "extractionStatus": "not-started",
+      "extractionStatus": "extracted",
       "verificationStatus": "unverified",
-      "notes": "Manual page 30, section header 'Steering Equipment', with a labeled diagram and two equipment photos."
+      "notes": "Manual page 30, section header 'Steering Equipment', with a labeled diagram and two equipment photos. Left-margin text faint (bleed-through) but legible from context.",
+      "extractedTitle": "Steering Equipment",
+      "extractedText": "Open lifeboats are typically fitted with an unbalanced rudder which is provided for steering the lifeboat. You turn the rudder with the tiller. The tiller is attached to the top part of the rudder. A toggle pin is used to hold the tiller in place. The rudder is held in place by pintles and gudgeons (metal straps) that are on the stern post. Most rudders are made of wood. Sometimes, watertight metal rudders that will float are used. Lifeboats are relatively easy to maneuver because the size of the lifeboat rudder is large in proportion to the size of the boat. Remember, when you're steering a lifeboat with the tiller and rudder: When you put the tiller to starboard (right), the rudder moves to port (left), making the boat turn to port. When you put the tiller to port, the rudder moves to starboard, making the boat turn to starboard. When you're steering in heavy seas, and you want to keep the lifeboat on the correct course, allow the bow to swing back and forth on each side of the desired heading. You will not be able to steer a steady course in rough seas. Modern totally enclosed lifeboats are commonly fitted with rudder nozzles (Kort Nozzle) that also act as the required propeller guard and prevent fouling of the propeller by debris in the water. As these rudder nozzles are directing thrust generated by the propeller, the boat will have better directional control with an increase in thrust. Steering is accomplished through a wheel in normal conditions. An emergency steering tiller is typically provided to facilitate steering if the wheel steering system fails. [Photos: Kort Nozzle on lifeboat; Steering wheel]",
+      "keyFacts": [
+        "Open lifeboats are typically fitted with an unbalanced rudder, controlled by a tiller attached to the top of the rudder, held in place by a toggle pin.",
+        "The rudder is held in place by pintles and gudgeons (metal straps) on the stern post.",
+        "Rudders are usually made of wood; sometimes watertight metal rudders that will float are used.",
+        "Tiller-to-starboard moves the rudder to port, turning the boat to port; tiller-to-port moves the rudder to starboard, turning the boat to starboard.",
+        "In heavy seas, allow the bow to swing back and forth on each side of the desired heading — a steady course cannot be maintained in rough seas.",
+        "Modern totally enclosed lifeboats commonly use rudder nozzles (Kort Nozzle), which also act as the required propeller guard and prevent fouling by debris; they improve directional control as thrust increases.",
+        "Steering is normally by wheel; an emergency steering tiller is provided in case the wheel steering system fails."
+      ],
+      "examAngles": [
+        "If you put the tiller to starboard, which way does the rudder move, and which way does the boat turn? (rudder to port, boat turns port)",
+        "What holds the tiller in place on top of the rudder, vs what holds the rudder itself to the stern post? (toggle pin; pintles and gudgeons)",
+        "What dual function does a Kort Nozzle serve on a totally enclosed lifeboat? (rudder nozzle for steering AND required propeller guard)",
+        "What backup steering method is provided if the wheel steering system fails? (emergency steering tiller)",
+        "Why can't a steady course be maintained in heavy seas? (must allow the bow to swing back and forth around the desired heading)"
+      ],
+      "possibleMisconceptions": [
+        "The classic tiller/rudder inversion: assuming tiller-to-starboard turns the boat to starboard (it's actually the opposite).",
+        "Confusing 'pintles and gudgeons' (hold the rudder to the stern post) with 'toggle pin' (holds the tiller to the rudder).",
+        "Assuming Kort Nozzles are purely a steering aid — they also serve as the required propeller guard."
+      ],
+      "extractionConfidence": "high",
+      "needsFollowUp": false
     },
     {
       "id": "vinci-2026-07-07-041663-13",
@@ -217,9 +618,34 @@
       "chapterGuess": "chapter-2-using-lifeboats",
       "topicGuess": "Propulsion Systems / Engine Powered Systems — stern gland, stern tube, propeller shaft, engine",
       "visualUseStatus": "source-only",
-      "extractionStatus": "not-started",
+      "extractionStatus": "extracted",
       "verificationStatus": "unverified",
-      "notes": "Manual page 31, section headers 'Propulsion Systems' and 'Engine Powered Systems', with a labeled diagram."
+      "notes": "Manual page 31, section headers 'Propulsion Systems' and 'Engine Powered Systems', with a labeled diagram. Right-margin ghosting visible but belongs to the facing page's bleed-through, not this page's own content.",
+      "extractedTitle": "Propulsion Systems — Engine Powered Systems",
+      "extractedText": "All lifeboats will be designed with regard to safety of people in the water and the possibility of damage to the propulsion system by floating debris. Engine Powered Systems: Every lifeboat will be powered by a compression-ignition engine. No engine will be used for any lifeboat if its fuel has a flashpoint of 43C or less. Many lifeboats have diesel engines in them. This type of engine is also referred to as compression ignition. Diesel engines are preferable to gas engines because the fuel is less volatile. The engine is mounted inside the lifeboat. There is an opening in the hull of the lifeboat for the propeller shaft. The shaft, where it goes through the hull, is encased (inside) in a hollow pipe called the stern tube. There is a ring, called the stern gland that fits inside of the stern tube. The stern gland has packing in it that stops water from entering the boat. Engine powered lifeboats have forward, neutral, and reverse gears. The quickest way to stop a diesel engine is to shut off the air (pull the stop lever out). Diesel engines do not have spark plugs, they work off the heat of compression. [Diagram: Stern Gland, Stern Tube, Propeller Shaft, Propeller, Engine] The hull of lifeboat with a water-cooled engine has two other holes in its outer shell. A cooling water pump on the engine draws seawater in through one of these holes to cool the engine. The water is discharged through the other hole with the exhaust gases. Some lifeboat engines are air-cooled. A class 1 motor lifeboat, fitted with a compression ignition engine, is capable of being started in all conditions and has sufficient fuel for 24 hours continuous operation. The speed ahead in smooth water when loaded with its full complement of persons and equipment shall be at least 6 knots. Lifeboats designed to carry more than 100 persons shall be motor-propelled, except that a lifeboat designed to carry more than 100 persons may be hand-propelled if it is a replacement for a previously approved hand-propelled lifeboat. Enclosed Lifeboat Propulsion: The engine and transmission will be controlled by the coxswain. The engine and engine [continues on next page]",
+      "keyFacts": [
+        "No engine will be used for any lifeboat if its fuel has a flashpoint of 43C or less.",
+        "Diesel (compression-ignition) engines are preferred over gas because the fuel is less volatile; they have no spark plugs and work off the heat of compression.",
+        "The propeller shaft passes through the hull via the stern tube; the stern gland is a packed ring inside the stern tube that stops water from entering the boat.",
+        "The quickest way to stop a diesel engine is to shut off the air (pull the stop lever out).",
+        "Water-cooled engine lifeboats have two hull holes: one draws in seawater to cool the engine, the other discharges water with exhaust gases; some engines are air-cooled instead.",
+        "A Class 1 motor lifeboat must start in all conditions, carry fuel for 24 hours continuous operation, and reach at least 6 knots in smooth water fully loaded.",
+        "Lifeboats designed for more than 100 persons must be motor-propelled, except as a replacement for a previously approved hand-propelled lifeboat of that size."
+      ],
+      "examAngles": [
+        "What is the maximum fuel flashpoint allowed for an engine used in a lifeboat? (must be above 43C)",
+        "What is the quickest way to stop a diesel engine? (shut off the air / pull the stop lever)",
+        "What does the stern gland do? (packing that stops water entering the boat, seated inside the stern tube)",
+        "What minimum speed must a Class 1 motor lifeboat make in smooth water, fully loaded? (at least 6 knots)",
+        "Under what specific exception can a lifeboat designed for more than 100 persons be hand-propelled? (only as a replacement for a previously approved hand-propelled lifeboat)"
+      ],
+      "possibleMisconceptions": [
+        "Assuming diesel engines have spark plugs like gas engines — they do not; they ignite via heat of compression.",
+        "Confusing 'stern tube' (the hollow pipe encasing the shaft) with 'stern gland' (the packed ring inside it that seals against water).",
+        "Assuming ALL lifeboats over 100-person capacity must always be motor-propelled with no exceptions."
+      ],
+      "extractionConfidence": "high",
+      "needsFollowUp": false
     },
     {
       "id": "vinci-2026-07-07-041663-14",
@@ -229,9 +655,35 @@
       "chapterGuess": "chapter-2-using-lifeboats",
       "topicGuess": "Engine starting/stopping procedures (manual/electric/hydraulic starting, electric-start checklist); propeller-characteristics intro",
       "visualUseStatus": "source-only",
-      "extractionStatus": "not-started",
+      "extractionStatus": "extracted",
       "verificationStatus": "unverified",
-      "notes": "Manual page 32, continuation of engine-powered-systems coverage. Text only, no diagram/photo."
+      "notes": "Manual page 32, continuation of engine-powered-systems coverage. One cold-start temperature figure on this page is affected by scan ghosting (appears to read '-15C (5F)', consistent with the clearly-legible identical figure documented on this batch's page-22 item, vinci-2026-07-07-041663-4) but is not independently confirmed from this image alone. Left-margin text otherwise faint (bleed-through) but legible from context.",
+      "extractedTitle": "Engine Powered Systems continued — capsizing/starting/stopping; Propeller Characteristics intro",
+      "extractedText": "[Engine] installation is capable of running in any position during capsizing of the lifeboat and will continue running after the lifeboat uprights or it will stop during capsizing and will be easily restarted. The design of the fuel and lubrication system will prevent the loss of fuel of more than 250 mL of lubricating oil from the engine during capsizing. Enclosed lifeboats and free fall lifeboats are constructed to protect against harmful accelerations resulting from the launch or impact of a lifeboat with the water. The engine in a lifeboat must be operated each time an abandon ship drill is held. If the boat is not put in the water, the engine should only be on for a limited amount of time because the engine will eventually overheat. The engine is capable of operating for at least 3 minutes after starting from cold when the lifeboat is out of the water. There are several different types of engines and starting systems. Each will have a different starting procedure. Operating an engine under non-emergency conditions allows time for checking fluid levels, using block heaters etc. and this should be done every boat drill. Check the instructions for your own ship's boats soon after you report onboard. A lifeboat engine is required, under emergency conditions, to be started in under 2 min at [-15]C ([5]F). Lifeboats frequently have engine heaters installed to allow for easier starting. Common ways to start are: Manually (hand cranking); Electric (an electric starting motor powered by batteries); Hydraulic (using stored hydraulic pressure to power the starting motor). General instructions for STARTING an electric starting system are listed below. 1. Ensure batteries are to the 'ON' position. 2. Turn console power to 'ON'. 3. Ensure Transmission is in 'NEUTRAL' position. 4. Turn engine ignition to 'ON' position. 5. If equipped, turn ignition to 'glow' position for 5 seconds. 6. Turn ignition to 'START'- release once the engine has started. To STOP a lifeboat engine, typically a STOP switch/button will be provided. Older engines may use a pull cable to STOP the engine. Propeller Characteristics: Propellers work efficiently in one direction- producing thrust astern while propelling the boat forward. When propellers are backing (reversing) - they operate inefficiently and can create a 'side' thrust referred to as 'paddlewheel effect'.",
+      "keyFacts": [
+        "Lifeboat engines can run in any position during capsizing, and either continue running after the boat uprights, or stop during capsizing and can be easily restarted.",
+        "Fuel/lubrication system design prevents loss of more than 250 mL of lubricating oil from the engine during capsizing.",
+        "Enclosed and free-fall lifeboats are constructed to protect against harmful accelerations from launch or water impact.",
+        "The engine must be operated every abandon-ship drill; if not put in the water, run time should be limited (it will overheat); capable of operating at least 3 minutes after a cold start when the lifeboat is out of the water.",
+        "Three common engine-starting methods: manually (hand cranking), electric (battery-powered starting motor), hydraulic (stored hydraulic pressure).",
+        "Electric starting sequence: batteries ON, console power ON, transmission NEUTRAL, ignition ON, (if equipped) 'glow' for 5 seconds, ignition to 'START' and release once started.",
+        "A STOP switch/button is typically provided to stop the engine; older engines use a pull cable.",
+        "Propellers work efficiently producing thrust astern while propelling forward; when reversing, they operate inefficiently and create side thrust known as 'paddlewheel effect'."
+      ],
+      "examAngles": [
+        "How much lubricating oil loss (maximum) must the fuel/lubrication system design prevent during capsizing? (250 mL)",
+        "List the three common ways to start a lifeboat engine.",
+        "In the electric starting sequence, what comes right before turning the ignition to 'START'? (turning ignition to 'glow' for 5 seconds, if equipped)",
+        "What is 'paddlewheel effect'? (the inefficient side thrust created when a propeller is reversing)",
+        "How long must the engine be capable of operating after starting from cold when the lifeboat is out of the water? (at least 3 minutes)"
+      ],
+      "possibleMisconceptions": [
+        "Assuming the engine must always keep running after a capsize — it may either continue running OR stop and be restarted.",
+        "Mixing up the order of the electric-start sequence steps.",
+        "Assuming 'paddlewheel effect' happens during forward propulsion — it specifically occurs when the propeller is reversing."
+      ],
+      "extractionConfidence": "medium",
+      "needsFollowUp": true
     },
     {
       "id": "vinci-2026-07-07-041663-15",
@@ -241,9 +693,34 @@
       "chapterGuess": "chapter-2-using-lifeboats",
       "topicGuess": "Propeller rotation (right-hand propeller) and 'Safety Notes on Engine Powered Lifeboats' — fire extinguisher use steps",
       "visualUseStatus": "source-only",
-      "extractionStatus": "not-started",
+      "extractionStatus": "extracted",
       "verificationStatus": "unverified",
-      "notes": "Manual page 33, with a labeled propeller-rotation diagram."
+      "notes": "Manual page 33, with a labeled propeller-rotation diagram.",
+      "extractedTitle": "Propeller Characteristics (handedness/side-thrust); Safety Notes on Engine Powered Lifeboats — fire extinguisher use",
+      "extractedText": "First find out if the propeller turns to the left or right when going ahead. This is necessary because the direction of rotation will determine which way they will swing when moving. To find out if the direction of rotation is right or left-handed, look at the boat from astern (behind), when it is out of the water. If the propeller has a clockwise rotation with the engine in forward gear, it is right-handed. If the rotation is counterclockwise, the propeller is left-handed. The effect of the propeller side thrust is greater when the engine is going astern than when it is going ahead. With the rudder amidships and no current, the following characteristics may be observed: 1. In a right-handed propeller: a. Going astern kicks the stern to port. 2. In a left-handed propeller: a. Going astern kicks the stern to starboard. Most lifeboats are equipped with right-handed propellers. Therefore, when backing a lifeboat with the rudder amidships, the boat will back to port. So, right rudder must be applied to counteract the propeller side thrust. Boats equipped with a rudder nozzle (Kort Nozzle) will see this unwanted stern movement minimized. Safety Notes on Engine Powered Lifeboats: Avoid injuring people during drills. Keep the deck area around the propeller clear. Diesel fuel should not be able to ignite at ambient temperature but it is a good idea to keep flames away from fuel or fuel's vapor. Engine powered lifeboats have a fire extinguisher stowed at each end of the boat. These extinguishers may be used to extinguish class B (diesel fuel and other flammable liquids) and class C (electrical) fires. Most portable ABC Dry-Chemical extinguishers operate in the following manner: 1. Remove extinguisher from bracket. 2. Hold upright. 3. Pull pin out of handle. 4. Squeeze lever handle. 5. Aim just under the flames. 6. Sweep in side-to side motion the entire width of the fire. Check the extinguishers in your boat. They may operate differently.",
+      "keyFacts": [
+        "Propeller handedness is determined looking from astern, out of the water: clockwise rotation in forward gear = right-handed; counterclockwise = left-handed.",
+        "Propeller side-thrust effect is greater going astern than going ahead.",
+        "Right-handed propeller: going astern kicks the stern to port. Left-handed propeller: going astern kicks the stern to starboard.",
+        "Most lifeboats have right-handed propellers, so backing with rudder amidships kicks the stern to port; right rudder must be applied to counteract this.",
+        "Rudder nozzles (Kort Nozzles) minimize this unwanted stern movement.",
+        "Fire extinguishers are stowed at each end of engine-powered lifeboats, rated for class B (diesel/flammable liquids) and class C (electrical) fires.",
+        "ABC Dry-Chemical extinguisher steps: remove from bracket, hold upright, pull pin, squeeze lever handle, aim just under the flames, sweep side-to-side across the entire width of the fire."
+      ],
+      "examAngles": [
+        "Looking from astern with the engine in forward gear, a propeller rotates clockwise — is it right- or left-handed? (right-handed)",
+        "When backing a lifeboat with a right-handed propeller and rudder amidships, which way does the stern kick, and which rudder direction corrects it? (kicks to port; right rudder corrects it)",
+        "What two fire classes are lifeboat fire extinguishers rated for? (class B and class C)",
+        "In the extinguisher-use sequence, what comes right after pulling the pin, and where should you aim? (squeeze the lever handle; aim just under the flames)",
+        "Is propeller side-thrust effect stronger going ahead or going astern? (astern)"
+      ],
+      "possibleMisconceptions": [
+        "Swapping right-handed vs. left-handed propeller kick direction (port vs. starboard) when backing.",
+        "Assuming you should aim the extinguisher directly at the visible flames rather than 'just under the flames'.",
+        "Assuming lifeboat extinguishers cover class A fires — the manual specifies class B and class C only."
+      ],
+      "extractionConfidence": "high",
+      "needsFollowUp": false
     },
     {
       "id": "vinci-2026-07-07-041663-16",
@@ -253,9 +730,34 @@
       "chapterGuess": "chapter-2-using-lifeboats",
       "topicGuess": "Hand Propelled Systems (Fleming gear) and hand/oar-propelled lifeboat rules",
       "visualUseStatus": "source-only",
-      "extractionStatus": "not-started",
+      "extractionStatus": "extracted",
       "verificationStatus": "unverified",
-      "notes": "Manual page 34, section header 'Hand Propelled Systems', with a labeled diagram. Last page photographed in this batch."
+      "notes": "Manual page 34, section header 'Hand Propelled Systems', with a labeled diagram. Last page photographed in this batch. Left-margin text faint (bleed-through) but legible from context.",
+      "extractedTitle": "Hand Propelled Systems (Fleming gear); Oar Propelled Lifeboats",
+      "extractedText": "[Diagram: Hand Propelling levers; Gear Box, Stern Tube, Propeller, Stern Gland, Hand Propelling Levers] Hand Propelled Systems: There is hand propelling gear (Fleming gear) in some open lifeboats. This type of system [is not] used in new construction) includes a propeller, stern tube, stern gland, and gears. The boat is propelled (moved) by pulling lever handles fore (forward) and aft (backward). The bottom ends of the lever handles fit into sockets. The sockets are connected to a bar on each side of the boat. These two bars move cranks on the sides of the gear box. The cranks rotate the propeller shaft. The bars, cranks, and levers must always be kept clear [for the] gear to operate properly. The gear box is located near the stern of the boat. It controls the boat's forward and reverse gears. No water should be allowed to collect around the gear box in either an engine or hand propelled lifeboat. In cold weather, the water could freeze and make it impossible for the gears to operate. Oar Propelled Lifeboats: Oar propelled open lifeboats are moved by occupants rowing the boat. By regulation, the capacity of an oar propelled lifeboat is limited to a maximum of 59 persons. Lifeboats designed to carry 60 but not more than 100 persons must be either hand propelled (Fleming gear) or motor propelled. Lifeboats designed to carry more than 100 persons must be motor propelled. All open lifeboats (even those with motors or Fleming gear systems) must carry at least four rowing oars and one steering oar (sweep). Enclosed lifeboats must have enough oars to get underway in calm weather and provisions for emergency steering but are not required to carry a steering oar. 'Free-fall' davit-launched enclosed lifeboats may have no oars due to the danger of oars injuring personnel at launch and their inertia at launch will move them away from the ship by design.",
+      "keyFacts": [
+        "Fleming gear is a hand-propelling gear used in some open lifeboats (not used in new construction); includes a propeller, stern tube, stern gland, and gears.",
+        "The boat is propelled by pulling lever handles fore and aft; sockets connect to bars that move cranks on the gear box, rotating the propeller shaft.",
+        "The gear box, near the stern, controls forward/reverse gears; water must not collect around it, since it could freeze in cold weather and jam the gears.",
+        "Oar-propelled lifeboat capacity is limited by regulation to a maximum of 59 persons.",
+        "Lifeboats for 60-100 persons must be hand-propelled (Fleming gear) or motor-propelled; over 100 persons must be motor-propelled.",
+        "All open lifeboats (even motorized or Fleming-gear ones) must carry at least 4 rowing oars and one steering oar (sweep).",
+        "Free-fall davit-launched enclosed lifeboats may carry no oars, since oars risk injuring personnel at launch and the boat's launch inertia moves it away from the ship by design."
+      ],
+      "examAngles": [
+        "What is the maximum number of persons an oar-propelled lifeboat may carry, by regulation? (59)",
+        "For a lifeboat designed to carry 75 persons, what propulsion options are allowed? (hand-propelled/Fleming gear, or motor-propelled)",
+        "How many rowing oars and steering oars must an open lifeboat carry at minimum? (4 rowing oars, 1 steering oar/sweep)",
+        "Why might a free-fall davit-launched lifeboat carry no oars at all? (injury risk at launch; launch inertia moves it away from the ship)",
+        "Why is it important to keep water from collecting around the Fleming gear's gear box? (could freeze in cold weather, jamming the mechanism)"
+      ],
+      "possibleMisconceptions": [
+        "Confusing the 59-person cap (oar-propelled) with the 60-100 range (hand/motor either) and the >100 threshold (motor only).",
+        "Assuming all lifeboats must carry oars — free-fall davit-launched enclosed lifeboats are a specific exception.",
+        "Assuming Fleming gear is still used in new lifeboat construction — the manual states it is not."
+      ],
+      "extractionConfidence": "high",
+      "needsFollowUp": true
     }
   ]
 }
