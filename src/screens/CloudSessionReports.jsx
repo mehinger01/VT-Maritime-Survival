@@ -21,6 +21,31 @@ function arrayToLines(arr) {
   return (arr ?? []).join('\n')
 }
 
+const REQUIRED_IMPORT_FIELDS = ['session_number', 'session_date', 'duration_minutes', 'client_facing_report']
+const REQUIRED_IMPORT_FIELD_LABELS = {
+  session_number: 'Session #',
+  session_date: 'Date',
+  duration_minutes: 'Duration (minutes)',
+  client_facing_report: 'Client-Facing Report',
+}
+const OPTIONAL_IMPORT_FIELDS = [
+  'start_time', 'end_time', 'tutor_name', 'session_type', 'questions_answered',
+  'accuracy', 'mastery_level', 'resources_used', 'topics_covered', 'strengths',
+  'needs_reinforcement', 'skills_practiced', 'student_progress', 'coach_notes',
+  'private_coach_notes', 'action_items',
+]
+const IMPORTABLE_FIELDS = [...REQUIRED_IMPORT_FIELDS, ...OPTIONAL_IMPORT_FIELDS]
+
+function importValueToFormField(field, value) {
+  if (ARRAY_FIELDS.includes(field)) {
+    if (Array.isArray(value)) return arrayToLines(value)
+    if (typeof value === 'string') return value
+    return ''
+  }
+  if (value === null || value === undefined) return ''
+  return String(value)
+}
+
 function emptyForm(studentId, tutorId = null) {
   return {
     student_id: studentId,
@@ -150,6 +175,9 @@ function CoachReportsEditor({ profile }) {
   const [formOpen, setFormOpen] = useState(false)
   const [form, setForm] = useState(null)
   const [confirmDeleteId, setConfirmDeleteId] = useState(null)
+  const [importOpen, setImportOpen] = useState(false)
+  const [importText, setImportText] = useState('')
+  const [importError, setImportError] = useState(null)
 
   useEffect(() => {
     listAccessibleStudents().then(({ data, error: err }) => {
@@ -183,6 +211,57 @@ function CoachReportsEditor({ profile }) {
   const startEdit = (report) => {
     setForm(reportToForm(report))
     setFormOpen(true)
+  }
+
+  const startImport = () => {
+    setImportText('')
+    setImportError(null)
+    setImportOpen(true)
+  }
+
+  const cancelImport = () => {
+    setImportOpen(false)
+    setImportText('')
+    setImportError(null)
+  }
+
+  const handleImportSubmit = () => {
+    let parsed
+    try {
+      parsed = JSON.parse(importText)
+    } catch (e) {
+      setImportError(`Invalid JSON: ${e.message}`)
+      return
+    }
+    if (typeof parsed !== 'object' || parsed === null || Array.isArray(parsed)) {
+      setImportError('Invalid JSON: expected a JSON object with report fields.')
+      return
+    }
+
+    const missing = REQUIRED_IMPORT_FIELDS.filter((field) => {
+      const value = parsed[field]
+      return value === undefined || value === null || value === ''
+    })
+    if (missing.length > 0) {
+      setImportError(`Missing required field(s): ${missing.map((f) => REQUIRED_IMPORT_FIELD_LABELS[f] || f).join(', ')}`)
+      return
+    }
+
+    const next = emptyForm(selectedStudentId, profile.id)
+    for (const field of IMPORTABLE_FIELDS) {
+      if (Object.prototype.hasOwnProperty.call(parsed, field)) {
+        next[field] = importValueToFormField(field, parsed[field])
+      }
+    }
+    // student_id/tutor_id always come from app context, never from the pasted JSON
+    next.student_id = selectedStudentId
+    next.tutor_id = profile.id
+
+    setForm(next)
+    setFormOpen(true)
+    setImportOpen(false)
+    setImportText('')
+    setImportError(null)
   }
 
   const handleSubmit = async (e) => {
@@ -227,9 +306,33 @@ function CoachReportsEditor({ profile }) {
 
       {error && <div className="card"><p className="empty-state">{error}</p></div>}
 
-      {!formOpen && selectedStudentId && (
+      {!formOpen && !importOpen && selectedStudentId && (
         <div className="card">
-          <button className="btn" onClick={startCreate}>Add Report</button>
+          <button className="btn" onClick={startCreate}>Add Report</button>{' '}
+          <button className="btn secondary" onClick={startImport}>Import Report</button>
+        </div>
+      )}
+
+      {importOpen && (
+        <div className="card">
+          <h3>Import Report (JSON)</h3>
+          <p className="muted">
+            Paste a JSON session report below, then click Import into Form to review it. Nothing is saved
+            until you click Save on the form.
+          </p>
+          <textarea
+            rows={12}
+            value={importText}
+            onChange={(e) => setImportText(e.target.value)}
+            placeholder='{"session_number": 4, "session_date": "2026-07-08", "duration_minutes": 45, "client_facing_report": "..."}'
+          />
+          {importError && <p className="empty-state">{importError}</p>}
+          <div style={{ marginTop: '1rem' }}>
+            <button className="btn" type="button" onClick={handleImportSubmit}>Import into Form</button>
+            <button className="btn secondary" type="button" onClick={cancelImport} style={{ marginLeft: '0.5rem' }}>
+              Cancel
+            </button>
+          </div>
         </div>
       )}
 
