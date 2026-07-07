@@ -21,7 +21,7 @@ function arrayToLines(arr) {
   return (arr ?? []).join('\n')
 }
 
-function emptyForm(studentId) {
+function emptyForm(studentId, tutorId = null) {
   return {
     student_id: studentId,
     session_number: '',
@@ -43,6 +43,8 @@ function emptyForm(studentId) {
     action_items: '',
     student_progress: '',
     client_facing_report: '',
+    session_type: 'tutored',
+    tutor_id: tutorId,
   }
 }
 
@@ -60,12 +62,15 @@ function formToPayload(form) {
   payload.mastery_level = form.mastery_level === '' ? null : form.mastery_level
   payload.resources_used = form.resources_used === '' ? null : form.resources_used
   payload.private_coach_notes = form.private_coach_notes === '' ? null : form.private_coach_notes
+  payload.session_type = form.session_type === '' ? 'tutored' : form.session_type
+  payload.tutor_id = form.tutor_id || null
   return payload
 }
 
 function reportToForm(report) {
   const form = { ...report }
   for (const field of ARRAY_FIELDS) form[field] = arrayToLines(report[field])
+  if (!form.session_type) form.session_type = 'tutored'
   return form
 }
 
@@ -137,7 +142,7 @@ function StudentReportsView() {
 }
 
 // Coach/admin: pick a student, then list/add/edit/delete their reports.
-function CoachReportsEditor() {
+function CoachReportsEditor({ profile }) {
   const [students, setStudents] = useState([])
   const [selectedStudentId, setSelectedStudentId] = useState('')
   const [reports, setReports] = useState([])
@@ -171,7 +176,7 @@ function CoachReportsEditor() {
   const handleField = (field) => (e) => setForm((f) => ({ ...f, [field]: e.target.value }))
 
   const startCreate = () => {
-    setForm(emptyForm(selectedStudentId))
+    setForm(emptyForm(selectedStudentId, profile.id))
     setFormOpen(true)
   }
 
@@ -244,6 +249,12 @@ function CoachReportsEditor() {
             <input type="number" value={form.duration_minutes} onChange={handleField('duration_minutes')} />
             <label>Tutor Name</label>
             <input type="text" value={form.tutor_name} onChange={handleField('tutor_name')} placeholder="e.g., Mike Ehinger" />
+            <label>Session Type</label>
+            <select value={form.session_type} onChange={handleField('session_type')}>
+              <option value="tutored">Tutored (with coach)</option>
+              <option value="self-study">Self-Study (independent practice)</option>
+              <option value="group-study">Group Study</option>
+            </select>
             <label>Questions Answered</label>
             <input type="number" value={form.questions_answered} onChange={handleField('questions_answered')} />
             <label>Accuracy (%)</label>
@@ -309,6 +320,6 @@ function CoachReportsEditor() {
 }
 
 export default function CloudSessionReports({ profile }) {
-  if (profile.role === 'coach' || profile.role === 'admin') return <CoachReportsEditor />
+  if (profile.role === 'coach' || profile.role === 'admin') return <CoachReportsEditor profile={profile} />
   return <StudentReportsView />
 }

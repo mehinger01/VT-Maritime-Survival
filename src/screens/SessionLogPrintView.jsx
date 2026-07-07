@@ -19,6 +19,13 @@ function SessionLogDocument({ studentName, reports, tutorName, isCoach }) {
   const totalMinutes = reports.reduce((sum, r) => sum + (r.duration_minutes ?? 0), 0)
   const totalHours = (totalMinutes / 60).toFixed(1)
 
+  const tutoredMinutes = reports.reduce((sum, r) => sum + ((r.session_type === 'tutored' || !r.session_type) ? (r.duration_minutes ?? 0) : 0), 0)
+  const tutoredHours = (tutoredMinutes / 60).toFixed(1)
+  const selfStudyMinutes = reports.reduce((sum, r) => sum + (r.session_type === 'self-study' ? (r.duration_minutes ?? 0) : 0), 0)
+  const selfStudyHours = (selfStudyMinutes / 60).toFixed(1)
+  const groupStudyMinutes = reports.reduce((sum, r) => sum + (r.session_type === 'group-study' ? (r.duration_minutes ?? 0) : 0), 0)
+  const groupStudyHours = (groupStudyMinutes / 60).toFixed(1)
+
   return (
     <div style={styles.document}>
       {/* Header */}
@@ -50,6 +57,22 @@ function SessionLogDocument({ studentName, reports, tutorName, isCoach }) {
             <span style={styles.label}>Total Hours:</span>
             <span style={styles.value}>{totalHours} hrs</span>
           </div>
+          <div style={styles.infoPair}>
+            <span style={styles.label}>Tutored Hours:</span>
+            <span style={styles.value}>{tutoredHours} hrs</span>
+          </div>
+          {selfStudyHours > 0 && (
+            <div style={styles.infoPair}>
+              <span style={styles.label}>Self-Study Hours:</span>
+              <span style={styles.value}>{selfStudyHours} hrs</span>
+            </div>
+          )}
+          {groupStudyHours > 0 && (
+            <div style={styles.infoPair}>
+              <span style={styles.label}>Group Study Hours:</span>
+              <span style={styles.value}>{groupStudyHours} hrs</span>
+            </div>
+          )}
         </div>
       </div>
 
@@ -114,6 +137,12 @@ function SessionLogDocument({ studentName, reports, tutorName, isCoach }) {
                   <div style={styles.detailItem}>
                     <span style={styles.detailLabel}>Resources Used</span>
                     <span style={styles.detailValue}>{report.resources_used}</span>
+                  </div>
+                )}
+                {report.session_type && (
+                  <div style={styles.detailItem}>
+                    <span style={styles.detailLabel}>Session Type</span>
+                    <span style={styles.detailValue}>{report.session_type === 'self-study' ? 'Self-Study' : report.session_type === 'group-study' ? 'Group Study' : 'Tutored'}</span>
                   </div>
                 )}
               </div>

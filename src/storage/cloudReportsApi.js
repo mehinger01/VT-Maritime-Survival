@@ -24,7 +24,8 @@ export async function listOwnReports() {
       questions_answered, accuracy, topics_covered, strengths,
       needs_reinforcement, coach_notes, action_items, client_facing_report,
       created_by, created_at, updated_at, start_time, end_time, tutor_name,
-      skills_practiced, student_progress, mastery_level, resources_used
+      skills_practiced, student_progress, mastery_level, resources_used,
+      session_type, tutor_id
     `)
     .order('session_number', { ascending: true })
   return { data: data ?? [], error }
