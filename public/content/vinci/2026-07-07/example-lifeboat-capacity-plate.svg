@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#f4f7fb"/>
+  <rect x="40" y="40" width="720" height="520" rx="16" fill="#ffffff" stroke="#1e5d89" stroke-width="4"/>
+  <text x="400" y="220" text-anchor="middle" font-family="sans-serif" font-size="28" font-weight="700" fill="#17324d">PLACEHOLDER IMAGE</text>
+  <text x="400" y="270" text-anchor="middle" font-family="sans-serif" font-size="20" fill="#425466">Sample lifeboat capacity/markings plate</text>
+  <text x="400" y="310" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#5d7085">Replace with a real curated photo from Vinci</text>
+  <text x="400" y="340" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#5d7085">before this question is activated.</text>
+  <rect x="120" y="400" width="560" height="80" rx="10" fill="#eef3f8" stroke="#1e5d89" stroke-width="2"/>
+  <text x="400" y="448" text-anchor="middle" font-family="monospace" font-size="18" fill="#17324d">MAX PERSONS: 24 — SWL: 3200 kg</text>
+</svg>

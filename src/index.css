@@ -114,6 +114,8 @@ input, textarea, select {
 .btn.small { padding: 6px 10px; font-size: 12px; }
 .btn:disabled { opacity: 0.5; cursor: not-allowed; }
 
+.question-image { display: block; width: 100%; max-height: 360px; object-fit: contain; border-radius: 10px; background: #f4f7fb; margin-bottom: 14px; }
+
 .question-prompt { font-size: 19px; font-weight: 700; margin-bottom: 14px; }
 
 .choice {

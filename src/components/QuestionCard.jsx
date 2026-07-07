@@ -34,6 +34,21 @@ const DIFFICULTY_LABELS = {
   'very-hard': 'Very Hard',
 }
 
+// Falls back to a readable version of the topic slug when a question has an
+// image but no explicit imageAlt, so alt text is never just a raw src path.
+function humanizeSlug(slug) {
+  return slug
+    .split('-')
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(' ')
+}
+
+function imageAltFor(question) {
+  if (question.imageAlt) return question.imageAlt
+  if (question.topicId) return humanizeSlug(question.topicId)
+  return 'Reference image for this question'
+}
+
 // Only questions carrying a sourceReference came from outside Vinci's own
 // materials (practice tests, official exams, etc). Untagged questions predate
 // this tracking system and are left unbadged rather than guessed at.
@@ -108,6 +123,9 @@ export default function QuestionCard({
         <span className={`pill ${sourceBadge.className}`} title={question.sourceReference}>
           {sourceBadge.label}
         </span>
+      )}
+      {question.image && (
+        <img className="question-image" src={question.image} alt={imageAltFor(question)} />
       )}
       <div className="question-prompt">{question.prompt}</div>
 

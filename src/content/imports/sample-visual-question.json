@@ -1,0 +1,45 @@
+{
+  "importPackId": "sample-visual-question",
+  "receivedDate": "2026-07-07",
+  "purpose": "Demonstrates the optional image/imageAlt fields added to the question schema (see src/components/QuestionCard.jsx). This question is NOT part of src/content/course.json's live \"questions\" array and will not appear in the app until it is explicitly promoted there, the same way src/content/imports/import-pack-001.json's questions were promoted only after a separate, deliberate step.",
+  "activationRule": "Do not add this question to course.json unless its verificationStatus below has been changed to \"approved\" or \"active\" AND the placeholder image has been replaced with a real curated photo from Vinci.",
+  "questions": [
+    {
+      "id": "q-visual-sample-lifeboat-capacity-plate",
+      "topicId": "chapter-2-using-lifeboats",
+      "prompt": "The image shows a lifeboat's capacity/markings plate. What does the \"MAX PERSONS\" figure on a plate like this represent?",
+      "image": "/content/vinci/2026-07-07/example-lifeboat-capacity-plate.svg",
+      "imageAlt": "Photo of lifeboat markings from Vinci source batch 2026-07-07",
+      "choices": [
+        {
+          "id": "a",
+          "text": "The maximum number of persons the lifeboat is certified to carry"
+        },
+        {
+          "id": "b",
+          "text": "The number of crew required to launch the lifeboat",
+          "misconception": "Confuses the boat's certified passenger capacity with its minimum launch/operating crew, which is a separate figure."
+        },
+        {
+          "id": "c",
+          "text": "The lifeboat's registration or hull serial number",
+          "misconception": "Confuses a capacity marking with an identification/serial marking, which would appear elsewhere on the plate."
+        },
+        {
+          "id": "d",
+          "text": "The number of times the lifeboat has been inspected",
+          "misconception": "Confuses a capacity marking with an inspection/maintenance record, which is tracked separately."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "medium",
+      "hints": [
+        "This is a safety-critical number posted directly on the boat itself, not a log or maintenance record.",
+        "It tells crew and passengers the certified limit for how many people the lifeboat may safely carry."
+      ],
+      "explanation": "Lifeboat capacity/markings plates post the boat's certified maximum number of persons (\"MAX PERSONS\") so crew never exceed a safe loading limit during an emergency.",
+      "sourceReference": "Placeholder sample — pending a real curated image and source verification from Vinci",
+      "verificationStatus": "draft-unverified"
+    }
+  ]
+}
