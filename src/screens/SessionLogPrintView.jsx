@@ -16,6 +16,8 @@ function formatArray(arr) {
 function SessionLogDocument({ studentName, reports, tutorName, isCoach }) {
   const now = new Date()
   const formattedDate = now.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })
+  const totalMinutes = reports.reduce((sum, r) => sum + (r.duration_minutes ?? 0), 0)
+  const totalHours = (totalMinutes / 60).toFixed(1)
 
   return (
     <div style={styles.document}>
@@ -43,6 +45,10 @@ function SessionLogDocument({ studentName, reports, tutorName, isCoach }) {
           <div style={styles.infoPair}>
             <span style={styles.label}>Sessions:</span>
             <span style={styles.value}>{reports.length}</span>
+          </div>
+          <div style={styles.infoPair}>
+            <span style={styles.label}>Total Hours:</span>
+            <span style={styles.value}>{totalHours} hrs</span>
           </div>
         </div>
       </div>
