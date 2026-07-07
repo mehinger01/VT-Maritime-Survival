@@ -36,7 +36,10 @@ function emptyForm(studentId) {
     strengths: '',
     needs_reinforcement: '',
     skills_practiced: '',
+    mastery_level: '',
+    resources_used: '',
     coach_notes: '',
+    private_coach_notes: '',
     action_items: '',
     student_progress: '',
     client_facing_report: '',
@@ -54,6 +57,9 @@ function formToPayload(form) {
   payload.end_time = form.end_time === '' ? null : form.end_time
   payload.tutor_name = form.tutor_name === '' ? null : form.tutor_name
   payload.student_progress = form.student_progress === '' ? null : form.student_progress
+  payload.mastery_level = form.mastery_level === '' ? null : form.mastery_level
+  payload.resources_used = form.resources_used === '' ? null : form.resources_used
+  payload.private_coach_notes = form.private_coach_notes === '' ? null : form.private_coach_notes
   return payload
 }
 
@@ -242,6 +248,16 @@ function CoachReportsEditor() {
             <input type="number" value={form.questions_answered} onChange={handleField('questions_answered')} />
             <label>Accuracy (%)</label>
             <input type="number" value={form.accuracy} onChange={handleField('accuracy')} />
+            <label>Mastery Level</label>
+            <select value={form.mastery_level} onChange={handleField('mastery_level')}>
+              <option value="">— Select mastery level —</option>
+              <option value="not_started">Not Started</option>
+              <option value="developing">Developing</option>
+              <option value="proficient">Proficient</option>
+              <option value="advanced">Advanced</option>
+            </select>
+            <label>Resources Used</label>
+            <input type="text" value={form.resources_used} onChange={handleField('resources_used')} placeholder="e.g., Practice drills, textbook Chapter 5" />
             <label>Topics Covered (one per line)</label>
             <textarea rows={4} value={form.topics_covered} onChange={handleField('topics_covered')} />
             <label>Strengths (one per line)</label>
@@ -254,6 +270,8 @@ function CoachReportsEditor() {
             <textarea rows={3} value={form.student_progress} onChange={handleField('student_progress')} placeholder="e.g., Demonstrates solid understanding of Chapter 1 concepts. Needs more work on scenario-based questions." />
             <label>Coach Notes</label>
             <textarea rows={4} value={form.coach_notes} onChange={handleField('coach_notes')} />
+            <label>Private Coach Notes (not visible to student)</label>
+            <textarea rows={3} value={form.private_coach_notes} onChange={handleField('private_coach_notes')} placeholder="Personal observations, confidential notes (for coach/admin only)" />
             <label>Action Items (one per line)</label>
             <textarea rows={3} value={form.action_items} onChange={handleField('action_items')} />
             <label>Client-Facing Report</label>

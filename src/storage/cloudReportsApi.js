@@ -14,12 +14,18 @@ export async function listAccessibleStudents() {
 }
 
 // For a 'student' role caller: RLS's can_access_student() already limits
-// session_reports rows to their own, so no student_id filter is needed —
-// the student doesn't even need to know their own students.id.
+// session_reports rows to their own. We explicitly exclude private_coach_notes
+// here to add a second layer of protection beyond client-side filtering.
 export async function listOwnReports() {
   const { data, error } = await supabase
     .from('session_reports')
-    .select('*')
+    .select(`
+      id, student_id, session_number, session_date, duration_minutes,
+      questions_answered, accuracy, topics_covered, strengths,
+      needs_reinforcement, coach_notes, action_items, client_facing_report,
+      created_by, created_at, updated_at, start_time, end_time, tutor_name,
+      skills_practiced, student_progress, mastery_level, resources_used
+    `)
     .order('session_number', { ascending: true })
   return { data: data ?? [], error }
 }

@@ -13,7 +13,7 @@ function formatArray(arr) {
   return arr.join('; ')
 }
 
-function SessionLogDocument({ studentName, reports, tutorName }) {
+function SessionLogDocument({ studentName, reports, tutorName, isCoach }) {
   const now = new Date()
   const formattedDate = now.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })
 
@@ -98,6 +98,18 @@ function SessionLogDocument({ studentName, reports, tutorName }) {
                     <span style={styles.detailValue}>{report.questions_answered}</span>
                   </div>
                 )}
+                {report.mastery_level && (
+                  <div style={styles.detailItem}>
+                    <span style={styles.detailLabel}>Mastery Level</span>
+                    <span style={styles.detailValue}>{report.mastery_level.replace(/_/g, ' ').charAt(0).toUpperCase() + report.mastery_level.slice(1).replace(/_/g, ' ')}</span>
+                  </div>
+                )}
+                {report.resources_used && (
+                  <div style={styles.detailItem}>
+                    <span style={styles.detailLabel}>Resources Used</span>
+                    <span style={styles.detailValue}>{report.resources_used}</span>
+                  </div>
+                )}
               </div>
 
               {/* Topics Covered */}
@@ -173,6 +185,14 @@ function SessionLogDocument({ studentName, reports, tutorName }) {
                 <div style={styles.section}>
                   <h3 style={styles.sectionTitle}>Instructional Notes</h3>
                   <p style={styles.text}>{report.coach_notes}</p>
+                </div>
+              )}
+
+              {/* Private Coach Notes (Coach/Admin Only) */}
+              {isCoach && report.private_coach_notes && (
+                <div style={styles.section}>
+                  <h3 style={{ ...styles.sectionTitle, color: '#e74c3c', borderColor: '#fadbd8' }}>Private Coach Notes</h3>
+                  <p style={styles.text}>{report.private_coach_notes}</p>
                 </div>
               )}
 
@@ -383,7 +403,7 @@ function StudentPrintView() {
           Print / Save as PDF
         </button>
       </div>
-      <SessionLogDocument studentName={studentName} reports={reports} />
+      <SessionLogDocument studentName={studentName} reports={reports} isCoach={false} />
     </div>
   )
 }
@@ -450,7 +470,7 @@ function CoachPrintView() {
         )}
       </div>
       {students.length > 0 && (
-        <SessionLogDocument studentName={selectedStudentName} reports={reports} tutorName={tutorName} />
+        <SessionLogDocument studentName={selectedStudentName} reports={reports} tutorName={tutorName} isCoach={true} />
       )}
     </div>
   )
