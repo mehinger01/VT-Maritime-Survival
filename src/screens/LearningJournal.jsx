@@ -68,9 +68,14 @@ export default function LearningJournal() {
           A record of tutoring sessions: dates, times, topics covered, notes, and follow-ups.
           This log is maintained by your tutor — export it to CSV any time to open in Excel or Google Sheets.
         </p>
-        <button className="btn secondary" onClick={() => exportCsv(journal.entries)} disabled={journal.entries.length === 0}>
-          Export CSV
-        </button>
+        <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
+          <button className="btn secondary" onClick={() => exportCsv(journal.entries)} disabled={journal.entries.length === 0}>
+            Export CSV
+          </button>
+          <a href="#/printLog" className="btn secondary" style={{ textDecoration: 'none', display: 'inline-block', padding: 'inherit' }}>
+            Print Log
+          </a>
+        </div>
       </div>
 
       <div className="card">
