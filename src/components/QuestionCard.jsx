@@ -4,15 +4,18 @@ import { useEffect, useState } from 'react'
 // shows choices in same order, but different questions get different orders
 function shuffleChoices(choices, questionId) {
   const arr = [...choices]
+  // Create deterministic seed from question ID
   let seed = 0
   for (let i = 0; i < questionId.length; i++) {
     seed = ((seed << 5) - seed) + questionId.charCodeAt(i)
-    seed = seed & seed // Convert to 32-bit integer
+    seed = seed | 0 // Convert to 32-bit signed integer
   }
+  seed = Math.abs(seed) // Ensure positive
 
+  // Fisher-Yates shuffle with seeded randomness
   for (let i = arr.length - 1; i > 0; i--) {
-    const j = Math.abs(seed ^ (seed >>> 9)) % (i + 1)
-    seed = seed * 1103515245 + 12345 // Linear congruential generator
+    seed = (seed * 9301 + 49297) % 233280 // LCG
+    const j = (seed / 233280) * (i + 1) | 0 // Deterministic index
     ;[arr[i], arr[j]] = [arr[j], arr[i]]
   }
   return arr
