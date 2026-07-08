@@ -1,0 +1,82 @@
+{
+  "manifestId": "vinci-2026-07-08-quiz-1a-image-manifest",
+  "batchId": "vinci-2026-07-08-quiz-1a",
+  "receivedDate": "2026-07-08",
+  "sourceDescription": "Photos of a typed, printed 39-question multiple-choice final review quiz ('LIFEBOATMAN & WATER SURVIVAL, FINAL REVIEW QUIZ #1') with the correct answer hand-circled in pencil, plus one page of two labeled technical diagrams ('D011SA' lifeboat cross-section and 'D015SA' liferaft) referenced by number from three of the quiz questions. Pulled from Vinci's Google Drive folder 'Vinci / Quiz 1a' (folder ID 1s_u-Nm0rz51XfQwebWG_azV5I5s312De).",
+  "sourceCitation": "Untitled 'LIFEBOATMAN & WATER SURVIVAL, FINAL REVIEW QUIZ #1' handout, source/publisher not stated on the page itself -- treat as Vinci's own course-review material pending confirmation, same caution as other Vinci batches in this repo.",
+  "purpose": "Traceability record for this raw image batch. Adding an entry here does NOT add it to any live question. An image only reaches a student when a question in src/content/course.json explicitly sets its \"image\" field to this file's publicPath, using the existing optional image/imageAlt fields from src/components/QuestionCard.jsx.",
+  "images": [
+    {
+      "file": "2026-07-08_044219-1.jpg",
+      "publicPath": "/content/vinci/2026-07-08-quiz-1a/2026-07-08_044219-1.jpg",
+      "batchId": "vinci-2026-07-08-quiz-1a",
+      "originalFolder": "Vinci/Quiz 1a",
+      "initialUseStatus": "source-only",
+      "sourceType": "quiz-photo",
+      "notes": "Final Review Quiz #1, questions 1-4 (title page). Distress signal to warn against landing at a spot, false statement about Type I life preservers, abandon-ship drill passenger actions, fast-rescue-boat victim approach relative to wind. All four correct answers cleanly hand-circled, unambiguous."
+    },
+    {
+      "file": "2026-07-08_044219-2.jpg",
+      "publicPath": "/content/vinci/2026-07-08-quiz-1a/2026-07-08_044219-2.jpg",
+      "batchId": "vinci-2026-07-08-quiz-1a",
+      "originalFolder": "Vinci/Quiz 1a",
+      "initialUseStatus": "source-only",
+      "sourceType": "quiz-photo",
+      "notes": "Questions 5-9: liferaft cold-water protection, sea-anchor substitute, first water ration priority, why the first batch of rainwater is discarded, enclosed lifeboat max speed. Questions 7, 8, and 9 are cleanly circled. Questions 5 and 6 each have two candidate marks (a clean circle and a second circle with a diagonal strike-through) -- read as clean-circle-is-the-answer, struck-through-circle-is-an-eliminated-choice, but flagged as slightly lower confidence than the rest of this page."
+    },
+    {
+      "file": "2026-07-08_044219-3.jpg",
+      "publicPath": "/content/vinci/2026-07-08-quiz-1a/2026-07-08_044219-3.jpg",
+      "batchId": "vinci-2026-07-08-quiz-1a",
+      "originalFolder": "Vinci/Quiz 1a",
+      "initialUseStatus": "source-only",
+      "sourceType": "quiz-photo",
+      "notes": "Questions 10-14: where the required-lifeboatmen count is documented, what releases from the liferaft cradle on hydrostatic activation, meaning of a continuous whistle blast, purpose of liferaft sealing clamps, how to know a ship is searching for you. Questions 10, 13, and 14 are cleanly circled; question 12 shows a clear elimination pattern (two choices struck through, one left circled clean). Question 11 has two overlapping circles (B and C) with no strike-through on either -- genuinely ambiguous, not resolved, flagged needsFollowUp."
+    },
+    {
+      "file": "2026-07-08_044219-4.jpg",
+      "publicPath": "/content/vinci/2026-07-08-quiz-1a/2026-07-08_044219-4.jpg",
+      "batchId": "vinci-2026-07-08-quiz-1a",
+      "originalFolder": "Vinci/Quiz 1a",
+      "initialUseStatus": "source-only",
+      "sourceType": "quiz-photo",
+      "notes": "Questions 15-19: turnbuckle vocabulary (gripe tensioning), harbor-transport lifeboat equipment requirement, manual liferaft launch on the windward side, preferred liferaft launching method, finding the correct side of a capsized raft in the dark. All five correct answers cleanly circled, unambiguous."
+    },
+    {
+      "file": "2026-07-08_044219-5.jpg",
+      "publicPath": "/content/vinci/2026-07-08-quiz-1a/2026-07-08_044219-5.jpg",
+      "batchId": "vinci-2026-07-08-quiz-1a",
+      "originalFolder": "Vinci/Quiz 1a",
+      "initialUseStatus": "source-only",
+      "sourceType": "quiz-photo",
+      "notes": "Questions 20-26: liferaft heaving line length, preferred jump height, cold-water hypothermia temperature threshold, man-overboard true/false, diagram D011SA item 1, who is normally in charge of a liferaft, gunwale location on a lifeboat. All seven correct answers cleanly circled, unambiguous."
+    },
+    {
+      "file": "2026-07-08_044219-6.jpg",
+      "publicPath": "/content/vinci/2026-07-08-quiz-1a/2026-07-08_044219-6.jpg",
+      "batchId": "vinci-2026-07-08-quiz-1a",
+      "originalFolder": "Vinci/Quiz 1a",
+      "initialUseStatus": "source-only",
+      "sourceType": "quiz-photo",
+      "notes": "Questions 27-33: lifeboat lengthwise strength, limber holes, what's under an open lifeboat's side benches, diagram 'D014SA' item 9, what holds the tiller to the rudder, diagram 'D014SA' item representing the heaving line, 40-person-capacity motor-propulsion true/false. All seven correct answers cleanly circled, unambiguous. Note: questions 30 and 32 here (plus question 34 on the next page) cite 'diagram D014SA,' but the diagram sheet (image -8) is printed 'D015SA' -- see that item's notes."
+    },
+    {
+      "file": "2026-07-08_044219-7.jpg",
+      "publicPath": "/content/vinci/2026-07-08-quiz-1a/2026-07-08_044219-7.jpg",
+      "batchId": "vinci-2026-07-08-quiz-1a",
+      "originalFolder": "Vinci/Quiz 1a",
+      "initialUseStatus": "source-only",
+      "sourceType": "quiz-photo",
+      "notes": "Questions 34-39: diagram 'D014SA' item 4, rowing command to lift oars from the side benches onto the gunwales, coxswain command for a slow turn to the left, enclosed lifeboat equipment triad, what automatically deploys after a liferaft inflates, required bow-and-stern lifeboat equipment item. All six correct answers cleanly circled, unambiguous (the diagram-name mismatch noted on image -6 applies to question 34 here too)."
+    },
+    {
+      "file": "2026-07-08_044219-8.jpg",
+      "publicPath": "/content/vinci/2026-07-08-quiz-1a/2026-07-08_044219-8.jpg",
+      "batchId": "vinci-2026-07-08-quiz-1a",
+      "originalFolder": "Vinci/Quiz 1a",
+      "initialUseStatus": "candidate-quiz-visual",
+      "sourceType": "reference-sheet",
+      "notes": "Two labeled technical line-drawing diagrams referenced by number from questions 24 (D011SA), and 30/32/34 (printed 'D015SA', cited in the quiz text as 'D014SA' -- see the mismatch note above). D011SA is a lifeboat interior cross-section with 14 numbered leader lines; only item 1 ('Flemming gear to hand propel the boat', per question 24) has a confirmed identity from the quiz text -- items 2-14 are visible on the drawing but NOT labeled with text anywhere in this batch, so their identities are not guessed. D015SA is a liferaft line drawing with roughly 10 numbered leader lines (items 1-10, with '10' pointing to multiple rib segments); only items 4 (pressure relief valve), 5 (heaving line), and 9 (righting strap) have confirmed identities from the quiz text -- the rest are visible but unconfirmed. This is a clean, undoodled technical drawing -- a strong visual-question candidate for the confirmed items once cropped to the relevant diagram half."
+    }
+  ]
+}

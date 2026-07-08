@@ -1,0 +1,291 @@
+{
+  "batchId": "vinci_source_batch_2026_07_08_quiz_1a",
+  "student": "Vinci",
+  "dateReceived": "2026-07-08",
+  "sourceFolder": "Vinci/Quiz 1a",
+  "status": "intake",
+  "items": [
+    {
+      "id": "vinci-2026-07-08-quiz1a-044219-1",
+      "file": "2026-07-08_044219-1.jpg",
+      "publicPath": "/content/vinci/2026-07-08-quiz-1a/2026-07-08_044219-1.jpg",
+      "sourceType": "quiz-photo",
+      "chapterGuess": "chapter-5-signaling",
+      "topicGuess": "Mixed page: distress signal to warn against landing (chapter-5-signaling), Type I life preserver false-statement (chapter-1-planning-ahead or appendix-a-glossary), abandon-ship drill passenger actions (chapter-1-planning-ahead / chapter-4-survival-methods), fast-rescue-boat victim approach relative to wind (chapter-6-being-rescued)",
+      "visualUseStatus": "source-only",
+      "extractionStatus": "extracted",
+      "verificationStatus": "unverified",
+      "notes": "Title page: 'LIFEBOATMAN & WATER SURVIVAL, FINAL REVIEW QUIZ #1'. All four correct answers cleanly hand-circled in pencil, unambiguous.",
+      "extractedTitle": "LIFEBOATMAN & WATER SURVIVAL -- FINAL REVIEW QUIZ #1 (questions 1-4)",
+      "extractedText": "1. What signal would a shore-side rescue unit use to inform persons in a lifecraft that it would be dangerous to land at the spot they are heading for?\nA. Vertical motion of a white flag\nB. Flashing the Morse Code letter \"K\"\nC. A white star signal\nD. The firing of a red star signal [CIRCLED = correct]\n\n2. Which statement is not true concerning type I life preservers?\nA. Life preservers must be designed to turn an unconscious person's face clear of the water\nB. Lightly stained or faded life jackets will fail in the water and should not be used [CIRCLED = correct, i.e. this is the FALSE statement]\nC. A minimum of 22 pounds of buoyancy must factored into the making of a life jacket\nD. Life jackets are required to have reflective tape, a whistle, and strobe light\n\n3. Your vessel is conducting an abandon ship drill and has passengers embarked. What should they be doing during the drill?\nA. Staying out of the way as they are not crewmembers and shouldn't be involved\nB. Sipping on the drink they ordered from the bartender\nC. Gather in the salon and standby for further orders\nD. Go to their assigned muster station and properly don a PFD [CIRCLED = correct]\n\n4. When using a fast-rescue boat to pick up a conscious victim in the water, when considering the wind, how should you approach the victim?\nA. Keeping the boat between the wind and the victim (i.e., upwind) in order to provide the victim a lee [CIRCLED = correct]\nB. Keeping the victim upwind of the boat so that the wind will carry the victim to the boat after it has stopped\nC. Make the most direct approach as possible\nD. Keep the boat's bow into the seas and winds for an easier ride while picking up the victim",
+      "keyFacts": [
+        "A shore-side rescue unit signals 'dangerous to land here' by firing a red star signal.",
+        "It is FALSE that lightly stained or faded life jackets will fail in the water and shouldn't be used -- i.e., staining/fading alone does not make a Type I life preserver unsafe.",
+        "During an abandon-ship drill, embarked passengers should go to their assigned muster station and properly don a PFD.",
+        "When a fast-rescue boat approaches a conscious victim in the water, it should keep itself between the wind and the victim (upwind of the victim) to provide the victim a lee."
+      ],
+      "examAngles": [
+        "What signal means 'do not land here' from shore to a lifecraft? (direct recall)",
+        "Which statement about Type I life preservers is FALSE? (elimination/negative-format recall)",
+        "What should passengers do during an abandon-ship drill? (direct recall, corroborates existing q-ch1-abandonship-drill-components-medium)",
+        "How should a fast-rescue boat position itself relative to wind when approaching a conscious victim? (direct recall)"
+      ],
+      "possibleMisconceptions": [
+        "Confusing the red star signal (land-here-is-dangerous) with other pyrotechnic signals used for general distress.",
+        "Assuming cosmetic wear (staining/fading) alone disqualifies a life jacket, when the false statement specifically targets this assumption.",
+        "Assuming 'upwind of the victim' means the BOAT stays downwind -- it's the opposite: the boat positions itself upwind of the victim to block wind and give the victim a lee."
+      ],
+      "extractionConfidence": "high",
+      "needsFollowUp": false
+    },
+    {
+      "id": "vinci-2026-07-08-quiz1a-044219-2",
+      "file": "2026-07-08_044219-2.jpg",
+      "publicPath": "/content/vinci/2026-07-08-quiz-1a/2026-07-08_044219-2.jpg",
+      "sourceType": "quiz-photo",
+      "chapterGuess": "chapter-3-using-liferafts",
+      "topicGuess": "Mixed page: liferaft cold-water protection (chapter-3), sea-anchor substitute (chapter-3), water rationing priority (chapter-4-survival-methods), rainwater first-batch discard (chapter-4), enclosed lifeboat max speed (chapter-2-using-lifeboats)",
+      "visualUseStatus": "source-only",
+      "extractionStatus": "extracted",
+      "verificationStatus": "unverified",
+      "notes": "Questions 5 and 6 each show two candidate pencil marks (one clean circle, one circle with a diagonal strike-through). Read as: clean circle = the answer, struck-through circle = an eliminated choice the test-taker reconsidered. Flagged medium confidence for those two specific questions; the rest of the page (7, 8, 9) is cleanly and unambiguously marked.",
+      "extractedTitle": "Final Review Quiz #1 (questions 5-9)",
+      "extractedText": "5. What part of an inflatable liferaft is used to provide protection from cold water?\nA. Inflating the water pockets\nB. Inflating the inner floor [circled, no strike -- read as correct]\nC. The raft's floor is covered with thermal reflective material [small mark, unclear]\nD. The double-layered canopy [circled WITH a diagonal strike-through -- read as an eliminated choice, not final]\n\n6. Which of these items cannot be used as a substitute for a missing sea anchor?\nA. A bucket\nB. Some canvas tied between two oars\nC. An air buoyancy tank filled with air [circled, no strike -- read as correct]\nD. A few life jackets lashed together and weighted with small shackles [circled WITH a diagonal strike-through -- read as an eliminated choice, not final]\n\n7. Who can immediately receive water upon entering a life craft?\nA. No one because everyone is required to wait 24 hours\nB. The captain or officer in charge of the life craft because they are officers\nC. The seriously injured [CIRCLED = correct]\nD. Whoever draws the shortest straw\n\n8. Why must personnel in a liferaft throw out the first batch of water drawn from the rainwater collection device?\nA. Because there may initially be salt residue washed into it from the canopy [CIRCLED = correct]\nB. Because the container you may use to pour water into might be dirty\nC. As an old seafarer's tradition, we always pour one for the shipmates that didn't make it\nD. We never pour out any water whatsoever because water is scarce\n\n9. While running through smooth seas at maximum capacity, what is the maximum speed an enclosed lifeboat can make?\nA. 5 knots\nB. 6 knots [CIRCLED = correct]\nC. 7 knots\nD. 8 knots [has a diagonal strike-through mark near it, no circle -- read as unrelated/eliminated, not a competing answer]",
+      "keyFacts": [
+        "Inflating the inner floor is the part of an inflatable liferaft that provides protection from cold water. (medium confidence -- see notes)",
+        "An air buoyancy tank filled with air CANNOT substitute for a missing sea anchor. (medium confidence -- see notes)",
+        "The seriously injured are the ones who can immediately receive water upon entering a life craft (i.e., not everyone waits 24 hours -- injured survivors are the exception).",
+        "The first batch of water drawn from a liferaft's rainwater collection device must be thrown out because there may initially be salt residue washed into it from the canopy.",
+        "An enclosed lifeboat's maximum speed in smooth seas at maximum capacity is 6 knots."
+      ],
+      "examAngles": [
+        "What liferaft feature protects against cold water specifically? (direct recall -- verify marking before use)",
+        "What can/can't substitute for a missing sea anchor? (elimination format -- verify marking before use)",
+        "Who gets water first in a life craft, and why is this an exception to a 24-hour rule? (direct recall, likely relates to a 'don't drink water in the first 24 hours' general rule tested elsewhere)",
+        "Why discard the first batch of rainwater collected in a liferaft? (direct recall)",
+        "What is an enclosed lifeboat's max speed at full capacity in smooth seas? (direct recall, corroborates the existing 6-knot figure already used elsewhere in this repo's content)"
+      ],
+      "possibleMisconceptions": [
+        "Assuming everyone must wait 24 hours before drinking water in a liferaft, missing the seriously-injured exception.",
+        "Assuming the first batch of collected rainwater is fine to drink since it 'looks the same.'",
+        "Confusing this 6-knot enclosed-lifeboat max-speed figure with the separate Class 1 motor lifeboat minimum-speed figure (also 6 knots) already established elsewhere -- these are different claims (a maximum vs. a minimum) that happen to share a number."
+      ],
+      "extractionConfidence": "medium",
+      "needsFollowUp": true
+    },
+    {
+      "id": "vinci-2026-07-08-quiz1a-044219-3",
+      "file": "2026-07-08_044219-3.jpg",
+      "publicPath": "/content/vinci/2026-07-08-quiz-1a/2026-07-08_044219-3.jpg",
+      "sourceType": "quiz-photo",
+      "chapterGuess": "chapter-1-planning-ahead",
+      "topicGuess": "Mixed page: C.O.I./lifeboatmen count location (chapter-1-planning-ahead), liferaft cradle hydrostatic release (chapter-3-using-liferafts), continuous whistle blast meaning (chapter-5-signaling), liferaft sealing clamps (chapter-3), SART alarm (chapter-5-signaling)",
+      "visualUseStatus": "source-only",
+      "extractionStatus": "extracted",
+      "verificationStatus": "unverified",
+      "notes": "Question 11's correct answer is genuinely ambiguous -- two overlapping pencil circles around choices B and C, no strike-through on either to indicate elimination. Not resolved; flagged needsFollowUp. The rest of the page (10, 12, 13, 14) is clearly and unambiguously marked, including question 12 which shows a clean elimination pattern (two wrong choices struck through, one choice left cleanly circled).",
+      "extractedTitle": "Final Review Quiz #1 (questions 10-14)",
+      "extractedText": "10. How would you know that your 50-person capacity lifeboat is required to carry 3 certified lifeboatmen?\nA. Because every seafarer is required to memorize the number of lifeboatmen required for the lifeboat's capacity\nB. It can be found on the lifeboat's Certificate of Inspection [CIRCLED = correct]\nC. It can be found in 1-1/2\" lettering stenciled on each bow of the lifeboat\nD. It can be found on the Station Bill\n\n11. What part of the liferaft cradle system is released when the hydrostatic release is activated?\nA. The hydrostatic release itself\nB. The tie-down strap [circled -- overlaps with C, ambiguous]\nC. The sea painter [circled -- overlaps with B, ambiguous]\nD. Nothing is released since the buoyancy of the container will release the container\n[UNRESOLVED -- both B and C show overlapping pencil circles with no strike-through distinguishing a final answer; not guessed]\n\n12. You are on watch as a lookout and hear a ship sound a continuous blast of its whistle. This means what?\nA. Someone didn't do proper maintenance and now the whistle is stuck [struck through -- eliminated]\nB. They are abandoning ship [circled, then struck through -- eliminated]\nC. A fire or emergency is happening and they may require assistance\nD. The ship is in distress [CIRCLED, no strike -- correct]\n\n13. What is the purpose of sealing clamps found in the liferaft kit?\nA. To gag an unruly survivor going off the deep end and bringing down crew morale\nB. To cover and protect any container holding fresh rain water\nC. To stop air leaks from a puncture in the inflation tubes [CIRCLED = correct]\nD. To seal any bag carrying equipment in it to prevent water from getting inside\n\n14. How would you know that a ship is in the area possibly searching for you?\nA. The E.P.I.R.B. will change its beeping frequency\nB. You will notice a wave disturbance created by the ship's wake\nC. The S.A.R.T. will emit an audible alarm and visual signal [CIRCLED = correct]\nD. The ship will use its loud hailer to call out for you",
+      "keyFacts": [
+        "The number of certified lifeboatmen required for a lifeboat's capacity can be found on the lifeboat's Certificate of Inspection (C.O.I.).",
+        "What releases from the liferaft cradle system when the hydrostatic release activates is UNRESOLVED in this source -- the tie-down strap and the sea painter are both marked as candidates with no clear final answer.",
+        "A continuous whistle blast heard from another ship means that ship is in distress.",
+        "Sealing clamps in a liferaft kit are used to stop air leaks from a puncture in the inflation tubes.",
+        "A SART (Search and Rescue Transponder) emits an audible alarm and visual signal when a searching ship's radar is in range -- this is how you'd know a ship is nearby searching for you."
+      ],
+      "examAngles": [
+        "Where would you find the required-lifeboatmen figure for a given capacity? (direct recall, corroborates the already-promoted q-vinci-coi-lifeboatmen-4160)",
+        "What releases from a liferaft cradle on hydrostatic activation? (NOT usable until the marking ambiguity is resolved)",
+        "What does a continuous whistle blast from another vessel mean? (direct recall)",
+        "What are liferaft sealing clamps for? (direct recall)",
+        "How would you know a ship is nearby searching for you? (direct recall, ties into existing EPIRB/SART compare-and-contrast content already live)"
+      ],
+      "possibleMisconceptions": [
+        "Confusing the C.O.I. (ship-level document) with the Station Bill or bow-stenciled lettering as the source of the lifeboatmen figure -- all three are plausible-sounding distractors in the source.",
+        "Confusing a continuous blast (distress) with the 7-short-blasts-plus-1-long general emergency alarm already established live, or with a single short blast (commence lowering) already established from the quiz-review-1 batch -- three distinct whistle signals worth keeping straight."
+      ],
+      "extractionConfidence": "medium",
+      "needsFollowUp": true
+    },
+    {
+      "id": "vinci-2026-07-08-quiz1a-044219-4",
+      "file": "2026-07-08_044219-4.jpg",
+      "publicPath": "/content/vinci/2026-07-08-quiz-1a/2026-07-08_044219-4.jpg",
+      "sourceType": "quiz-photo",
+      "chapterGuess": "chapter-2-using-lifeboats",
+      "topicGuess": "Mixed page: turnbuckle vocabulary / gripe tensioning (chapter-2-using-lifeboats, Davits and Winches), harbor-transport lifeboat requirement (chapter-2, Other Uses of Lifeboats), manual liferaft launch on windward side (chapter-3-using-liferafts), preferred liferaft launch method (chapter-3), finding the correct side of a capsized raft in the dark (chapter-3)",
+      "visualUseStatus": "source-only",
+      "extractionStatus": "extracted",
+      "verificationStatus": "unverified",
+      "notes": "All five correct answers cleanly hand-circled, unambiguous.",
+      "extractedTitle": "Final Review Quiz #1 (questions 15-19)",
+      "extractedText": "15. What is the name of the threaded metal sleeve used to remove slack from the gripes that hold a lifeboat in its cradle?\nA. Thimble\nB. Spanish windlass\nC. Shackle\nD. Turnbuckle [CIRCLED = correct]\n\n16. What is a lifeboat used for the regular transport of personnel to and from the ship in a harbor required to have?\nA. A Boat Officer\nB. Navigation lights and a sound signaling device [CIRCLED = correct]\nC. An engineer Officer\nD. An extra boat plug\n\n17. What should you do if you have to manually launch your liferaft and it's located on the windward side?\nA. Don't bother with it as it should eventually inflate once its hydrostatic release mechanism has activated\nB. Go ahead and launch it from its side; the ship is sinking and you need to get off it\nC. Carry it over to the leeward side and launch it from there [CIRCLED = correct]\nD. Launch it on the side its located and then tow it to the leeward side by the sea painter\n\n18. What is the preferred method for liferaft launching?\nA. Davit launch [CIRCLED = correct]\nB. Manual launch\nC. Automatic launch\nD. None of the above\n\n19. You can just see that your liferaft has flipped upside down, but it's too dark to read the stencil, \"Right Here\". How can you find the correct side of the liferaft to go to in order to right the raft?\nA. Don't worry about it, just grab onto any part of the liferaft and get it flipped over ASAP\nB. You should be able to read the stencil because it is written in glow-in-the-dark letters\nC. Wait for the wind to eventually flip it over again\nD. Find the side with the CO2 cylinder and grab the righting strap [CIRCLED = correct]",
+      "keyFacts": [
+        "A turnbuckle is the threaded metal sleeve used to remove slack from the gripes that hold a lifeboat in its cradle.",
+        "A lifeboat used for regular harbor transport of personnel is required to have navigation lights and a sound signaling device.",
+        "If you must manually launch a liferaft located on the windward side, carry it over to the leeward side and launch it from there.",
+        "Davit launch is the preferred method for liferaft launching (over manual or automatic).",
+        "In the dark, if a capsized liferaft's 'Right Here' stencil can't be read, find the side with the CO2 cylinder and grab the righting strap -- this is the correct side regardless of stencil visibility."
+      ],
+      "examAngles": [
+        "What's the threaded sleeve used to tension lifeboat gripes called? (vocabulary recall)",
+        "What must a harbor-transport lifeboat carry that a standard lifeboat might not emphasize? (direct recall)",
+        "What do you do with a liferaft stuck on the windward launch side? (direct recall, scenario-style)",
+        "Which liferaft launch method is preferred? (direct recall, ranks three methods)",
+        "How do you find the right side of a capsized, unreadable liferaft in the dark? (direct recall -- corroborates/extends the CO2-cylinder-side righting technique already tested 4 ways in the live bank)"
+      ],
+      "possibleMisconceptions": [
+        "Confusing 'turnbuckle' with 'Spanish windlass' or 'shackle' -- all three are plausible-sounding rigging-hardware terms.",
+        "Assuming a windward-side liferaft should just be launched where it sits because of time pressure, rather than carried to the leeward side first.",
+        "Assuming automatic or manual launch is preferred over davit launch."
+      ],
+      "extractionConfidence": "high",
+      "needsFollowUp": false
+    },
+    {
+      "id": "vinci-2026-07-08-quiz1a-044219-5",
+      "file": "2026-07-08_044219-5.jpg",
+      "publicPath": "/content/vinci/2026-07-08-quiz-1a/2026-07-08_044219-5.jpg",
+      "sourceType": "quiz-photo",
+      "chapterGuess": "chapter-4-survival-methods",
+      "topicGuess": "Mixed page: liferaft heaving line length (chapter-3-using-liferafts), preferred jump height (chapter-4-survival-methods, Abandoning Ship), cold-water hypothermia threshold (chapter-4, Cold Water Survival), man-overboard true/false (chapter-4, Man Overboard), diagram D011SA item 1 (chapter-2-using-lifeboats, Hand Propelled Systems), who's in charge of a liferaft (chapter-3), gunwale location (chapter-2, Lifeboat Shell)",
+      "visualUseStatus": "source-only",
+      "extractionStatus": "extracted",
+      "verificationStatus": "unverified",
+      "notes": "All seven correct answers cleanly hand-circled, unambiguous. Question 24 references diagram 'D011SA' item 1 -- confirmed against the diagram sheet (image -8), which is consistently labeled D011SA (no naming mismatch for this diagram, unlike D014SA/D015SA -- see image -6, -7, and -8 notes).",
+      "extractedTitle": "Final Review Quiz #1 (questions 20-26)",
+      "extractedText": "20. How long is the heaving line on a liferaft?\nA. 100 feet [CIRCLED = correct]\nB. 115 feet\nC. 125 feet\nD. 150 feet\n\n21. What's the preferred height above water to jump in?\nA. Greater than 30 feet\nB. No more than 30 feet\nC. 15 feet or less [CIRCLED = correct]\nD. None of the above\n\n22. What's the maximum water temperature at which the average human cannot generate enough heat to keep up with the loss of body heat from their body while in the water?\nA. 90\u00b0\nB. 65\u00b0\nC. 50\u00b0\nD. 70\u00b0 [CIRCLED = correct]\n\n23. True or False; if you are a man overboard, it is best to try to swim for the ship to get rescued.\nA. True\nB. False [CIRCLED = correct]\n\n24. What does number 1 refer to in diagram D011SA\nA. The boat's radio antennae\nB. Stanchions to hold lifelines for passengers to hang onto in rough seas\nC. Anchor post for the shrouds\nD. Flemming gear to hand propel the boat [CIRCLED = correct]\n\n25. Who will normally be in charge of a liferaft?\nA. Deck Officer\nB. Captain\nC. Chief Engineer\nD. An officer assigned to the liferaft [CIRCLED = correct]\n\n26. Where are the gunwales located on a lifeboat?\nA. On the bow attached to the keel\nB. Just above the garboard strake\nC. Along the top of the sheer strake [CIRCLED = correct]\nD. On top of the rudder",
+      "keyFacts": [
+        "A liferaft's heaving line is 100 feet long.",
+        "The preferred height above water to jump in (e.g. abandoning ship) is 15 feet or less.",
+        "70\u00b0F is the maximum water temperature at which the average human cannot generate enough heat to keep up with body-heat loss while in the water (i.e., hypothermia risk begins at or below this temperature).",
+        "It is FALSE that a man overboard should try to swim for the ship to get rescued.",
+        "In diagram D011SA, item 1 is Flemming gear used to hand propel the boat.",
+        "An officer assigned to the liferaft is normally in charge of it (not automatically the deck officer, captain, or chief engineer).",
+        "Gunwales on a lifeboat are located along the top of the sheer strake."
+      ],
+      "examAngles": [
+        "How long is a liferaft's heaving line? (direct recall, specific figure)",
+        "What's the preferred jump height when abandoning ship? (direct recall, specific figure)",
+        "At what water temperature does the average person start losing the fight against hypothermia? (direct recall, specific figure -- 70\u00b0F is notably higher than people might assume)",
+        "Should a man overboard swim for the ship? (true/false, tests a common panic-response misconception)",
+        "What does item 1 on diagram D011SA represent? (visual-question, corroborates the Fleming-gear fact already in this repo's Learn Mode content)",
+        "Who is normally in charge of a liferaft? (direct recall)",
+        "Where are a lifeboat's gunwales located? (direct recall, ties to existing hull-plating/strake vocabulary already live)"
+      ],
+      "possibleMisconceptions": [
+        "Assuming a higher water temperature (90\u00b0) is the hypothermia-risk threshold, when 70\u00b0F is already dangerous over time.",
+        "The natural instinct to swim toward the ship when overboard, rather than staying put/using a flotation device and waiting for rescue.",
+        "Assuming the captain or a senior officer is automatically in charge of every liferaft, rather than the specific officer assigned to it."
+      ],
+      "extractionConfidence": "high",
+      "needsFollowUp": false
+    },
+    {
+      "id": "vinci-2026-07-08-quiz1a-044219-6",
+      "file": "2026-07-08_044219-6.jpg",
+      "publicPath": "/content/vinci/2026-07-08-quiz-1a/2026-07-08_044219-6.jpg",
+      "sourceType": "quiz-photo",
+      "chapterGuess": "chapter-2-using-lifeboats",
+      "topicGuess": "Mixed page: lifeboat lengthwise strength (chapter-2, Lifeboat Shell), limber holes (chapter-2, Automatic Lifeboat Drain), buoyancy units under side benches (chapter-2, Buoyancy and Stability), diagram item 9 = righting strap (chapter-3-using-liferafts, NOT chapter-2 -- see note), toggle pin holds tiller to rudder (chapter-2, Steering Equipment), diagram item = heaving line (chapter-3-using-liferafts), 40-person lifeboat motor-propulsion true/false (chapter-2, Propulsion Systems)",
+      "visualUseStatus": "source-only",
+      "extractionStatus": "extracted",
+      "verificationStatus": "unverified",
+      "notes": "All seven correct answers cleanly hand-circled, unambiguous. IMPORTANT: questions 30 and 32 cite 'diagram D014SA,' but the only diagram sheet in this batch (image -8) is printed 'D015SA', not D014SA -- the content matches (righting strap, heaving line are both liferaft features shown on the D015SA drawing), so this is almost certainly the same diagram under a text typo, but the mismatch itself is not resolved and is flagged needsFollowUp. Because of this, questions 30 and 32 are chapter-3-using-liferafts (liferaft diagram content), not chapter-2, despite being interleaved on a page otherwise about lifeboats.",
+      "extractedTitle": "Final Review Quiz #1 (questions 27-33)",
+      "extractedText": "27. What gives the lifeboat its lengthwise strength?\nA. Side benches\nB. Keel\nC. Gunwale\nD. Both B and C [CIRCLED = correct]\n\n28. What allows any liquid in the bilge to flow without hindrance to the drain?\nA. Water conduits\nB. Waterways\nC. Floors\nD. Limber holes [CIRCLED = correct]\n\n29. What is usually located under the side benches of an open lifeboat\nA. Buoyancy units [CIRCLED = correct]\nB. Storage lockers\nC. Stanchions\nD. Brackets\n\n30. In diagram D014SA [sic -- diagram sheet is printed D015SA], what does item number 9 represent?\nA. Pressure relief valve\nB. Water-activated battery\nC. Hose for CO2 system\nD. Righting strap [CIRCLED = correct]\n\n31. What item holds the tiller to the rudder?\nA. Pintle\nB. Gudgeon\nC. Cotter pin\nD. Toggle pin [CIRCLED = correct]\n\n32. In diagram D014SA [sic -- diagram sheet is printed D015SA], which number represents the heaving line?\nA. 6\nB. 3\nC. 8\nD. 5 [CIRCLED = correct]\n\n33. True or false. You are on a lifeboat with a capacity to hold 40 persons, therefore it is required to be motor propelled.\nA. True\nB. False [CIRCLED = correct]",
+      "keyFacts": [
+        "Both the keel and the gunwale (not side benches alone) give a lifeboat its lengthwise strength.",
+        "Limber holes allow liquid in the bilge to flow without hindrance to the drain.",
+        "Buoyancy units are usually located under the side benches of an open lifeboat.",
+        "On the liferaft diagram (printed 'D015SA', cited in this quiz as 'D014SA'), item 9 is the righting strap.",
+        "A toggle pin is the item that holds the tiller to the rudder.",
+        "On the same liferaft diagram, item 5 represents the heaving line.",
+        "It is FALSE that a 40-person-capacity lifeboat is required to be motor propelled (matches the already-established rule that only lifeboats over 100 persons must be motor-propelled, with 60-100 persons requiring hand-propulsion or motor)."
+      ],
+      "examAngles": [
+        "What gives a lifeboat its lengthwise strength? ('both of the above' format, corroborates existing hull-construction content)",
+        "What allows bilge water to flow to the drain? (direct recall, corroborates the already-established limber-holes fact)",
+        "What's under an open lifeboat's side benches? (direct recall, corroborates the already-established buoyancy-units fact)",
+        "Identify a labeled part on the liferaft diagram (visual-question, once the D014SA/D015SA naming mismatch is resolved)",
+        "What holds the tiller to the rudder? (direct recall -- this is a DIRECT, independent confirmation of the exact fact already used in the pending draft question q-vinci-togglepin-vs-pintlegudgeon)",
+        "Which number on the liferaft diagram is the heaving line? (visual-question, once the naming mismatch is resolved)",
+        "Does a 40-person lifeboat need to be motor-propelled? (true/false, corroborates the existing capacity/propulsion-method rule)"
+      ],
+      "possibleMisconceptions": [
+        "Picking only 'keel' or only 'gunwale' instead of recognizing both contribute to lengthwise strength.",
+        "Confusing toggle pin (tiller-to-rudder) with pintle/gudgeon (rudder-to-stern-post) -- the exact confusion this repo's pending draft question is built around.",
+        "Assuming any lifeboat below 100-person capacity is automatically not required to be motor-propelled, without knowing the 60-100 person band's separate hand-or-motor rule."
+      ],
+      "extractionConfidence": "high",
+      "needsFollowUp": true
+    },
+    {
+      "id": "vinci-2026-07-08-quiz1a-044219-7",
+      "file": "2026-07-08_044219-7.jpg",
+      "publicPath": "/content/vinci/2026-07-08-quiz-1a/2026-07-08_044219-7.jpg",
+      "sourceType": "quiz-photo",
+      "chapterGuess": "chapter-2-using-lifeboats",
+      "topicGuess": "Mixed page: diagram item 4 = pressure relief valve (chapter-3-using-liferafts, see naming-mismatch note), 'out oars' rowing command (chapter-2, new rowing-command vocabulary), coxswain slow-turn-left command (chapter-2, steering/rowing commands), enclosed lifeboat equipment triad (chapter-2, Design/Construction/Performance), liferaft auto-deploy sea anchor (chapter-3), lifeboat bow/stern required item (chapter-2, Markings or Survival Craft Equipment)",
+      "visualUseStatus": "source-only",
+      "extractionStatus": "extracted",
+      "verificationStatus": "unverified",
+      "notes": "All six correct answers cleanly hand-circled, unambiguous. Question 34 repeats the 'diagram D014SA' citation (see image -6 notes on the D014SA/D015SA mismatch). Question 39's answer ('Hatchet' required on both bow AND stern) is a fairly specific, surprising claim not corroborated anywhere else in this repo's content yet -- flagged for a closer look before treating as settled, though not because the handwriting/circle itself is unclear.",
+      "extractedTitle": "Final Review Quiz #1 (questions 34-39)",
+      "extractedText": "34. In diagram D014SA [sic -- diagram sheet is printed D015SA], what does number 4 represent?\nA. Internal lifeline\nB. Deflation plug\nC. Pressure relief valve [CIRCLED = correct]\nD. Inflation floor\n\n35. What command is used to get the lifeboat rowers to lift the oars off the side benches, place them on the gunwales with the blades pointed forward?\nA. Standby the oars\nB. Out oars [CIRCLED = correct]\nC. Up oars\nD. Toss oars\n\n36. What command would a coxswain give in order to make a slow turn to the left?\nA. Port side come ahead, starboard stop\nB. Starboard side hold water, port side give way\nC. Port side hold water, starboard give way [CIRCLED = correct]\nD. Starboard side come ahead, port stop\n\n37. Enclosed lifeboats are equipped with...\nA. Righting straps, vents, and oars\nB. External fire protection, ventilators, and a tank of compressed air [CIRCLED = correct]\nC. Paddles, 2 foot sea anchor, and ballast bags\nD. Storm oil, lantern, and paddles\n\n38. What automatically deploys on a liferaft after it has been inflated?\nA. EPIRB\nB. Sea anchor [CIRCLED = correct]\nC. SART\nD. Radar reflector\n\n39. A lifeboat is required to have one what located on the bow and stern?\nA. First aid kit\nB. Fire extinguisher\nC. Water catchment system\nD. Hatchet [CIRCLED = correct]",
+      "keyFacts": [
+        "On the liferaft diagram (printed 'D015SA', cited in this quiz as 'D014SA'), item 4 is the pressure relief valve.",
+        "'Out oars' is the command to get lifeboat rowers to lift the oars off the side benches and place them on the gunwales with blades pointed forward.",
+        "To make a slow turn to the left, a coxswain commands 'Port side hold water, starboard give way.'",
+        "Enclosed lifeboats are equipped with external fire protection, ventilators, and a tank of compressed air.",
+        "A sea anchor automatically deploys on a liferaft after it has been inflated.",
+        "A lifeboat is required to have one hatchet located on the bow and one on the stern."
+      ],
+      "examAngles": [
+        "Identify a labeled part on the liferaft diagram (visual-question, once the naming mismatch is resolved)",
+        "What command lifts the oars from the side benches to the gunwales? (direct recall -- this is a NEW, distinct rowing command from 'Way enough' [oars from rowlocks to side bench] already established in the quiz-review-1 batch; the two should not be conflated)",
+        "What command makes a lifeboat turn slowly to the left? (direct recall, new steering-command vocabulary)",
+        "What three things do enclosed lifeboats carry? (direct recall, corroborates existing air-support/fire-protection content)",
+        "What deploys automatically after a liferaft inflates? (direct recall, corroborates the sea-anchor content on the liferaft diagram from the quiz-review-1 batch)",
+        "What single item must be at both the bow AND stern of a lifeboat? (direct recall -- specific and slightly surprising, worth double-checking)"
+      ],
+      "possibleMisconceptions": [
+        "Confusing 'Out oars' (side benches to gunwales) with 'Way enough' (rowlocks to side bench) -- two distinct oar-stowage commands covering different starting/ending positions.",
+        "Reversing the port/starboard hold-water/give-way pairing for a turn command -- easy to get backwards under pressure.",
+        "Assuming a fire extinguisher or first aid kit (both plausible-sounding safety items) is the required bow/stern item, rather than a hatchet."
+      ],
+      "extractionConfidence": "high",
+      "needsFollowUp": true
+    },
+    {
+      "id": "vinci-2026-07-08-quiz1a-044219-8",
+      "file": "2026-07-08_044219-8.jpg",
+      "publicPath": "/content/vinci/2026-07-08-quiz-1a/2026-07-08_044219-8.jpg",
+      "sourceType": "reference-sheet",
+      "chapterGuess": "chapter-2-using-lifeboats",
+      "topicGuess": "Two labeled technical diagrams: D011SA (lifeboat interior cross-section, chapter-2-using-lifeboats, Interior Construction) and D015SA (liferaft, chapter-3-using-liferafts) -- cited in the quiz text as 'D014SA'",
+      "visualUseStatus": "candidate-quiz-visual",
+      "extractionStatus": "extracted",
+      "verificationStatus": "unverified",
+      "notes": "Clean, undoodled technical line drawings -- the strongest visual-question candidate in this batch. Two separate diagrams on one page: D011SA (top, a lifeboat interior cross-section with 14 numbered leader lines) and D015SA (bottom, a liferaft with roughly 10 numbered leader lines, several pointing to the same rib segment under number '10'). Only the numbered items explicitly asked about in the quiz text have confirmed identities (D011SA item 1; D015SA items 4, 5, 9) -- every other numbered item is visible on the drawing but NOT textually confirmed anywhere in this batch, and is deliberately not guessed here. IMPORTANT: this diagram is printed 'D015SA' at the bottom, but questions 30, 32, and 34 in this same quiz all cite 'diagram D014SA' -- almost certainly the same diagram (the cited item identities -- righting strap, heaving line, pressure relief valve -- are all liferaft features matching D015SA's content, and no other diagram sheet exists in this batch), but the label mismatch itself is unresolved and should be checked with Vinci before being treated as settled.",
+      "extractedTitle": "Diagram sheet: D011SA (lifeboat interior) and D015SA (liferaft)",
+      "extractedText": "D011SA -- lifeboat interior cross-section, 14 numbered leader lines (1-14). Only item 1 is textually confirmed by the quiz: 'Flemming gear to hand propel the boat' (question 24). Items 2-14 are visible on the drawing (appears to show thwarts/stanchions/interior framing along the length of the boat, plus labeled fittings near the bow and stern) but have no confirmed text identity in this batch.\n\nD015SA -- liferaft, roughly 10 numbered leader lines (1-10, with several arrows converging on '10' pointing to a ribbed/segmented section of the raft's tube). Three items are textually confirmed by the quiz: item 4 = pressure relief valve (question 34), item 5 = heaving line (question 32), item 9 = righting strap (question 30). Items 1, 2, 3, 6, 7, 8, and 10 are visible on the drawing (the picture shows a cylindrical inflatable raft on a rectangular cradle/frame, with small fittings visible near the left end that could plausibly be a knife, painter, or weak link, and a lid/cap shape near the top right that could plausibly be the CO2 cylinder cap or a boarding aid) but have no confirmed text identity in this batch -- not guessed.",
+      "keyFacts": [
+        "Diagram D011SA item 1 is Fleming gear (hand-propulsion mechanism).",
+        "Diagram D015SA (cited in the quiz as 'D014SA') item 4 is the pressure relief valve.",
+        "Diagram D015SA item 5 is the heaving line.",
+        "Diagram D015SA item 9 is the righting strap."
+      ],
+      "examAngles": [
+        "Identify D011SA item 1 (Fleming gear) from the diagram image (visual-question).",
+        "Identify D015SA items 4, 5, or 9 from the diagram image (visual-question) -- the only three confirmed identities on that diagram.",
+        "Do NOT draft a question asking about any other numbered item on either diagram until its identity is confirmed with Vinci or against the manual."
+      ],
+      "possibleMisconceptions": [
+        "Treating the D014SA/D015SA naming mismatch as resolved without checking -- it should be confirmed before any diagram-based question cites a diagram name."
+      ],
+      "extractionConfidence": "medium",
+      "needsFollowUp": true
+    }
+  ]
+}
