@@ -4,6 +4,7 @@ import {
   addAttempt,
   toggleFlag as toggleFlagStorage,
   toggleExcluded as toggleExcludedStorage,
+  toggleReviewMode as toggleReviewModeStorage,
   getSessionId,
 } from '../storage/progressStore.js'
 import { createAttempt } from '../engine/attempts.js'
@@ -42,5 +43,10 @@ export function useProgress() {
     setProgress(updated)
   }, [])
 
-  return { progress, sessionId, recordAttempt, toggleFlag, toggleExcluded }
+  const toggleReviewMode = useCallback(() => {
+    const updated = toggleReviewModeStorage()
+    setProgress(updated)
+  }, [])
+
+  return { progress, sessionId, recordAttempt, toggleFlag, toggleExcluded, toggleReviewMode }
 }

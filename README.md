@@ -15,6 +15,15 @@ The quiz/drill/learn/review/journal screens work immediately with no
 configuration — they persist to the browser's `localStorage` and don't
 require any of the environment variables below.
 
+## Question status model
+
+Every question can carry a `verificationStatus` (`course-verified`,
+`source-backed-study`, `quiz-derived-study`, `visual-study`, `needs-review`,
+or `draft-unverified`) that controls whether it appears in normal Quiz/Drill
+practice and what badge (if any) it shows on its card. See
+`docs/CONTENT_INTAKE_BENCHMARK.md` for the full definitions and how this
+relates to source intake tiers.
+
 ## Environment variables (Session Reports / cloud features only)
 
 Copy `.env.example` to `.env` and fill in your Supabase project's values:

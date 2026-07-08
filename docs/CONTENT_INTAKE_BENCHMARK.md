@@ -98,6 +98,60 @@ numbers, or procedures.
 | 3 — Practice test/Quizlet | Weak signal only | Yes | Yes, as unverified draft only | No |
 | 4 — General training-provider material | Weak signal only | No | No | No |
 
+## The live-question status model (study-app scope, 2026-07-08)
+
+The source tiers above govern *intake* — how much a piece of source
+material can be trusted before it feeds a question. Separately, every
+question object (in `course.json` or a draft pack) carries its own
+`verificationStatus` field, which governs what a *student* sees on
+that question's card once it's live. These two systems are related
+(a question's status is usually downstream of its source tier) but
+they answer different questions: intake tiers are about the source,
+`verificationStatus` is about the question.
+
+This model changed on 2026-07-08 when the app's scope expanded from a
+strict exam-simulation tool to a broader study tool for Vinci to use
+while retaking the course. The old model was effectively binary
+(`course-verified` or `draft-unverified`, with a few source-labeled
+statuses in between that weren't part of any enforced app behavior).
+The new model has six statuses, all enforced by the app itself
+(`src/App.jsx`) and `scripts/validate-questions.mjs`:
+
+| `verificationStatus` | Meaning | Shown in normal Quiz/Drill? | Student-facing badge |
+|---|---|---|---|
+| `course-verified` | Supported by the manual or already-accepted verified course material. | Yes | *(none — this is the trusted default)* |
+| `source-backed-study` | Supported by uploaded book/class material, but not necessarily cross-verified. | Yes | "Source-backed study" |
+| `quiz-derived-study` | Derived from Vinci's review quizzes or handwritten class quiz material. | Yes | "Quiz-derived study" |
+| `visual-study` | Image/diagram-based practice intended for recognition and learning. | Yes | "Visual study" |
+| `needs-review` | Retained, but held out of normal practice until a student turns on the "Show needs-review questions" toggle (Course Home). | No, unless review mode is on | "Needs review" |
+| `draft-unverified` | Not live at all, regardless of any toggle. | No, ever | *(not applicable — never rendered)* |
+
+A question with **no `verificationStatus` field at all** is treated as
+implicitly trusted (same as `course-verified`) — this covers original
+content that predates this tracking system entirely; it is not
+retroactively required.
+
+Three older statuses (`practice-test-informed`, `multi-source-supported`,
+`official-source-supported`) predate this model and remain supported —
+they behave like any non-`course-verified`, non-`needs-review`,
+non-`draft-unverified` status (visible in normal practice, with their
+own badge). New content should use the six statuses above; the three
+legacy ones exist only so already-live questions don't need relabeling
+just because this doc changed.
+
+**2026-07-08 correction:** the 21 questions sourced from the SIU 2019
+practice-test intake (Tier 3) had been live in `course.json` carrying
+`draft-unverified` status since before this model existed — under the
+old informal convention that was just "this question came from an
+unverified source," not "this question isn't live." Under the new
+model `draft-unverified` strictly means not-live, so those 21 were
+relabeled to `practice-test-informed` (which already existed for
+exactly this case, and matches their `sourceReference` field verbatim:
+"SIU 2019 Practice Test intake, unverified"). This was a metadata
+correction to already-live questions, not a new promotion — see
+`src/content/course.json`'s `contentNote` (v4) for the same note in
+context.
+
 ## Intake file conventions
 
 Any source ingested under this benchmark should land in

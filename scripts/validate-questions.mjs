@@ -27,6 +27,24 @@ if (!Array.isArray(questions)) {
 
 const REQUIRED_STRING_FIELDS = ['id', 'topicId', 'prompt', 'correctChoiceId', 'explanation']
 
+// The study-app status model (see docs/CONTENT_INTAKE_BENCHMARK.md). A
+// question with no verificationStatus at all is still valid -- that's
+// long-standing content that predates this field and is treated as
+// implicitly trusted, same as course-verified. The field is only checked
+// against this allow-list when present, never required.
+const ALLOWED_VERIFICATION_STATUSES = new Set([
+  'course-verified',
+  'source-backed-study',
+  'quiz-derived-study',
+  'visual-study',
+  'needs-review',
+  'draft-unverified',
+  // Legacy statuses predating the study-app status model, still in live use.
+  'practice-test-informed',
+  'multi-source-supported',
+  'official-source-supported',
+])
+
 function validateQuestion(q, index) {
   const errors = []
   const label = q?.id ? `question "${q.id}"` : `question at index ${index}`
@@ -69,6 +87,10 @@ function validateQuestion(q, index) {
   }
   if (q.image && !q.imageAlt) {
     console.warn(`Warning: ${label} has an image but no imageAlt (recommended, not required).`)
+  }
+
+  if (q.verificationStatus !== undefined && !ALLOWED_VERIFICATION_STATUSES.has(q.verificationStatus)) {
+    errors.push(`${label}: "verificationStatus" (${JSON.stringify(q.verificationStatus)}) is not a recognized status`)
   }
 
   return errors

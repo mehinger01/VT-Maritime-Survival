@@ -12,6 +12,7 @@ function emptyProgress() {
     attempts: [],
     flags: [],
     excluded: [],
+    reviewModeEnabled: false,
   }
 }
 
@@ -26,6 +27,10 @@ export function loadProgress() {
       attempts: Array.isArray(parsed.attempts) ? parsed.attempts : [],
       flags: Array.isArray(parsed.flags) ? parsed.flags : [],
       excluded: Array.isArray(parsed.excluded) ? parsed.excluded : [],
+      // Added after schemaVersion 1 shipped -- default false for progress
+      // blobs saved before this field existed, rather than bumping the
+      // schema version and wiping everyone's existing attempts/flags.
+      reviewModeEnabled: typeof parsed.reviewModeEnabled === 'boolean' ? parsed.reviewModeEnabled : false,
     }
   } catch {
     return emptyProgress()
@@ -71,6 +76,17 @@ export function toggleExcluded(questionId) {
 
 export function isExcluded(progress, questionId) {
   return progress.excluded.includes(questionId)
+}
+
+// Review mode is a student-facing, off-by-default toggle that reveals
+// needs-review questions (retained content that isn't shown in normal
+// practice) -- see docs/CONTENT_INTAKE_BENCHMARK.md. It's a plain
+// localStorage flag, not an authenticated admin mode.
+export function toggleReviewMode() {
+  const progress = loadProgress()
+  progress.reviewModeEnabled = !progress.reviewModeEnabled
+  saveProgress(progress)
+  return progress
 }
 
 export function resetProgress() {

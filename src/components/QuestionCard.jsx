@@ -49,15 +49,22 @@ function imageAltFor(question) {
   return 'Reference image for this question'
 }
 
-// Only questions carrying a sourceReference came from outside Vinci's own
-// materials (practice tests, official exams, etc). Untagged questions predate
-// this tracking system and are left unbadged rather than guessed at.
+// Student-facing status badges for the study-app status model (see
+// docs/CONTENT_INTAKE_BENCHMARK.md). A question is only badged when its
+// verificationStatus is set AND isn't course-verified -- untagged questions
+// predate this tracking system and course-verified questions are the
+// trusted default, so neither needs a call-out badge cluttering the card.
 const SOURCE_BADGES = {
+  'course-verified': { label: 'Verified', className: 'source-verified' },
+  'source-backed-study': { label: 'Source-backed study', className: 'source-confirmed' },
+  'quiz-derived-study': { label: 'Quiz-derived study', className: 'source-confirmed' },
+  'visual-study': { label: 'Visual study', className: 'source-confirmed' },
+  'needs-review': { label: 'Needs review', className: 'source-unverified' },
   'draft-unverified': { label: 'Unverified source — not yet confirmed', className: 'source-unverified' },
+  // Legacy statuses predating the study-app status model, still in live use.
   'practice-test-informed': { label: 'Practice-test source', className: 'source-unverified' },
   'multi-source-supported': { label: 'Confirmed by multiple sources', className: 'source-confirmed' },
   'official-source-supported': { label: 'Confirmed against official exam', className: 'source-confirmed' },
-  'course-verified': { label: "Verified in Vinci's course material", className: 'source-verified' },
 }
 
 // Shared retrieval-practice flow used by Quiz, Drill, and Review Mistakes.
@@ -102,7 +109,9 @@ export default function QuestionCard({
   }
 
   const correct = selectedChoiceId === question.correctChoiceId
-  const sourceBadge = question.sourceReference ? SOURCE_BADGES[question.verificationStatus] : null
+  const sourceBadge = question.verificationStatus && question.verificationStatus !== 'course-verified'
+    ? SOURCE_BADGES[question.verificationStatus]
+    : null
 
   function handleExclude() {
     const confirmed = window.confirm(

@@ -1,7 +1,7 @@
 import { computeAllTopicMastery, computeOverallReadiness } from '../engine/mastery.js'
 import { pickReviewQueue } from '../engine/selection.js'
 
-export default function CourseHome({ topics, questions, progress, navigate }) {
+export default function CourseHome({ topics, questions, progress, navigate, toggleReviewMode }) {
   const readiness = computeOverallReadiness(topics, questions, progress.attempts)
   const masteryByTopic = computeAllTopicMastery(topics, questions, progress.attempts)
   const { due } = pickReviewQueue(questions, progress.attempts)
@@ -48,6 +48,22 @@ export default function CourseHome({ topics, questions, progress, navigate }) {
         </ol>
         <button className="btn" onClick={() => navigate('quiz')}>Start a Quiz</button>
         <button className="btn secondary" onClick={() => navigate('topics')}>Browse Topics</button>
+      </div>
+
+      <div className="card">
+        <label style={{ display: 'flex', alignItems: 'center', gap: 8, cursor: 'pointer' }}>
+          <input
+            type="checkbox"
+            checked={progress.reviewModeEnabled}
+            onChange={toggleReviewMode}
+            style={{ width: 'auto', margin: 0, flex: '0 0 auto' }}
+          />
+          <span>Show "needs review" questions in Quiz/Drill</span>
+        </label>
+        <p className="muted" style={{ fontSize: 13, marginTop: 4 }}>
+          Off by default. These are retained questions the content team isn't confident enough in yet for
+          normal practice — turn this on if you want to see them anyway.
+        </p>
       </div>
 
       <div className="card">

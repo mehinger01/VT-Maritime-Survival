@@ -35,10 +35,18 @@ export default function App() {
   const progressApi = useProgress()
   const auth = useAuth()
 
-  // Excluded questions (toggled off via the question card) are dropped from
-  // every pool here, at the one place questions enter the screens, so no
-  // screen needs its own exclusion check.
-  const activeQuestions = course.questions.filter((q) => !progressApi.progress.excluded.includes(q.id))
+  // Excluded questions (toggled off via the question card), draft-unverified
+  // questions (never live, regardless of review mode), and needs-review
+  // questions (retained but hidden from normal practice unless the student
+  // has turned review mode on) are all dropped from every pool here, at the
+  // one place questions enter the screens, so no screen needs its own check.
+  // See docs/CONTENT_INTAKE_BENCHMARK.md for the full status model.
+  const activeQuestions = course.questions.filter((q) => {
+    if (progressApi.progress.excluded.includes(q.id)) return false
+    if (q.verificationStatus === 'draft-unverified') return false
+    if (q.verificationStatus === 'needs-review' && !progressApi.progress.reviewModeEnabled) return false
+    return true
+  })
 
   const screenProps = {
     topics: course.topics,

@@ -1,8 +1,8 @@
 {
   "courseId": "vt-maritime-water-survival",
   "courseName": "Maritime & Water Survival Exam Prep",
-  "version": 3,
-  "contentNote": "PLACEHOLDER / DRAFT PRACTICE CONTENT. Topic structure now matches the table of contents of the actual Water Survival Student Manual (SHLSOS Course No. 549, revised June 2024) supplied by Vinci. We currently have only the manual's table of contents, not its full chapter text \u2014 the practice questions below were written before this alignment and have been remapped to the closest matching manual chapter, but they are NOT sourced from the manual itself and remain draft/unverified. A subset of questions (marked with a 'sourceReference' and 'verificationStatus' field) were added from an unverified third-party SIU 2019 practice-test intake \u2014 see docs/CONTENT_INTAKE_BENCHMARK.md and docs/SIU_2019_CONVERSION_PLAN.md for how that source is tiered and what still needs checking. Vinci (instructor/SME) should review and replace this entire bank with content verified against the actual manual chapters before it is used for real exam prep. v2: added 19 draft questions from Import Pack 001 (SHLSOS-2021-CH1-P009-P011 concept summary -- see src/content/imports/import-pack-001.json and src/content/sources/SHLSOS-2021-CH1-P009-P011.md for the verification caveats: this is a concept/vocabulary summary, not verbatim manual text, and cites a 2021 edition vs. the previously-confirmed 'revised June 2024' edition -- both need resolving with Vinci before anything here is promoted to verified). v3: the 19 Import Pack 001 questions (Chapter 1) were promoted from draft-unverified to course-verified per explicit operator confirmation on 2026-07-06 -- see src/content/imports/import-pack-001.json for the promotion note. The manual-edition question (2021 vs. 'revised June 2024') raised during intake was not separately re-confirmed as part of this promotion and remains worth a quick check with Vinci.",
+  "version": 4,
+  "contentNote": "PLACEHOLDER / DRAFT PRACTICE CONTENT. Topic structure now matches the table of contents of the actual Water Survival Student Manual (SHLSOS Course No. 549, revised June 2024) supplied by Vinci. We currently have only the manual's table of contents, not its full chapter text \u2014 the practice questions below were written before this alignment and have been remapped to the closest matching manual chapter, but they are NOT sourced from the manual itself and remain draft/unverified. A subset of questions (marked with a 'sourceReference' and 'verificationStatus' field) were added from an unverified third-party SIU 2019 practice-test intake \u2014 see docs/CONTENT_INTAKE_BENCHMARK.md and docs/SIU_2019_CONVERSION_PLAN.md for how that source is tiered and what still needs checking. Vinci (instructor/SME) should review and replace this entire bank with content verified against the actual manual chapters before it is used for real exam prep. v2: added 19 draft questions from Import Pack 001 (SHLSOS-2021-CH1-P009-P011 concept summary -- see src/content/imports/import-pack-001.json and src/content/sources/SHLSOS-2021-CH1-P009-P011.md for the verification caveats: this is a concept/vocabulary summary, not verbatim manual text, and cites a 2021 edition vs. the previously-confirmed 'revised June 2024' edition -- both need resolving with Vinci before anything here is promoted to verified). v3: the 19 Import Pack 001 questions (Chapter 1) were promoted from draft-unverified to course-verified per explicit operator confirmation on 2026-07-06 -- see src/content/imports/import-pack-001.json for the promotion note. The manual-edition question (2021 vs. 'revised June 2024') raised during intake was not separately re-confirmed as part of this promotion and remains worth a quick check with Vinci. v4 (2026-07-08): the app's scope expanded from exam-simulation-only to a broader study tool, so the verificationStatus model now supports graded confidence levels instead of a strict verified/unverified split -- see docs/CONTENT_INTAKE_BENCHMARK.md for the full definitions (course-verified, source-backed-study, quiz-derived-study, visual-study, needs-review, draft-unverified). As part of this change, the 21 questions carrying draft-unverified status since the SIU 2019 practice-test intake (all appendix-a-glossary and chapter-2-using-lifeboats vocabulary/procedure questions -- q-gloss-* and q-ch2-*) were relabeled to practice-test-informed, which already existed for exactly this source type and is what their sourceReference (\"SIU 2019 Practice Test intake, unverified\") actually describes. This is a metadata correction, not a new promotion -- draft-unverified now means \"not live\" under the new model, and these 21 were already live and in active use, so leaving them mislabeled would have made them silently disappear from practice. No question content, choices, or explanations changed.",
   "topics": [
     {
       "id": "chapter-1-planning-ahead",
@@ -3371,7 +3371,7 @@
       ],
       "explanation": "A pintle is the pin fitted to the rudder that drops into a matching socket (the gudgeon) mounted on the boat, forming the rudder's hinge. Misconception tested: swapping which term is the pin and which is the socket.",
       "sourceReference": "SIU 2019 Practice Test intake, unverified",
-      "verificationStatus": "draft-unverified"
+      "verificationStatus": "practice-test-informed"
     },
     {
       "id": "q-gloss-gudgeon",
@@ -3406,7 +3406,7 @@
       ],
       "explanation": "A gudgeon is the socket fitting mounted on the boat's hull that receives the rudder's pintle pin, together forming the rudder's hinge. Misconception tested: confusing which half of the pintle/gudgeon pair is fixed to the boat versus the rudder.",
       "sourceReference": "SIU 2019 Practice Test intake, unverified",
-      "verificationStatus": "draft-unverified"
+      "verificationStatus": "practice-test-informed"
     },
     {
       "id": "q-gloss-limber",
@@ -3441,7 +3441,7 @@
       ],
       "explanation": "A limber system is a drainage arrangement \u2014 holes (limber holes) in the internal floor/frame structure that let water flow through compartments toward the bilge and drain plug, rather than pooling in isolated sections. Misconception tested: assuming 'limber' relates to flexibility rather than drainage.",
       "sourceReference": "SIU 2019 Practice Test intake, unverified",
-      "verificationStatus": "draft-unverified"
+      "verificationStatus": "practice-test-informed"
     },
     {
       "id": "q-gloss-sternsheets",
@@ -3476,7 +3476,7 @@
       ],
       "explanation": "The stern sheets are the aftermost seating area of a lifeboat. Misconception tested: taking 'sheets' literally (fabric or paperwork) instead of as nautical terminology for a seating area.",
       "sourceReference": "SIU 2019 Practice Test intake, unverified",
-      "verificationStatus": "draft-unverified"
+      "verificationStatus": "practice-test-informed"
     },
     {
       "id": "q-gloss-seapainter",
@@ -3511,7 +3511,7 @@
       ],
       "explanation": "A sea painter is a line that keeps the lifeboat controlled and connected to the ship (or otherwise maneuverable) during launch and pickup. Misconception tested: taking 'painter' literally instead of as nautical terminology for this control line.",
       "sourceReference": "SIU 2019 Practice Test intake, unverified",
-      "verificationStatus": "draft-unverified"
+      "verificationStatus": "practice-test-informed"
     },
     {
       "id": "q-gloss-frapping",
@@ -3616,7 +3616,7 @@
       ],
       "explanation": "Preventer bars are fitted to a lifeboat's releasing gear specifically to prevent accidental unhooking when the falls become slack \u2014 a real safety hazard if it happened unintentionally mid-launch. Misconception tested: attributing the bars to speed control or an unrelated hull/steering function.",
       "sourceReference": "SIU 2019 Practice Test intake, unverified",
-      "verificationStatus": "draft-unverified"
+      "verificationStatus": "practice-test-informed"
     },
     {
       "id": "q-gloss-lifefloat",
@@ -3651,7 +3651,7 @@
       ],
       "explanation": "A lifefloat is a rigid lifesaving device that supports survivors in the water, distinct from both the enclosed lifeboat and the inflatable liferaft. Misconception tested: treating 'lifefloat,' 'liferaft,' and personal flotation devices as interchangeable terms for the same equipment.",
       "sourceReference": "SIU 2019 Practice Test intake, unverified",
-      "verificationStatus": "draft-unverified"
+      "verificationStatus": "practice-test-informed"
     },
     {
       "id": "q-gloss-compasserror",
@@ -3686,7 +3686,7 @@
       ],
       "explanation": "Compass error is the combined difference between the standard magnetic compass heading and the true heading \u2014 made up of variation (from the Earth's magnetic field) and deviation (from magnetic material on board). It's a normal, correctable factor, not a malfunction. Misconception tested: treating compass error as a defect rather than a predictable, combined navigational correction.",
       "sourceReference": "SIU 2019 Practice Test intake, unverified",
-      "verificationStatus": "draft-unverified"
+      "verificationStatus": "practice-test-informed"
     },
     {
       "id": "q-ch2-boatplug",
@@ -3721,7 +3721,7 @@
       ],
       "explanation": "The drain plug is the single most important item to check before lowering \u2014 if it's missing or not seated, the boat can flood as soon as it's waterborne. Misconception tested: prioritizing a less time-critical check (paint, exact fuel level) over this simple but safety-critical one.",
       "sourceReference": "SIU 2019 Practice Test intake, unverified",
-      "verificationStatus": "draft-unverified"
+      "verificationStatus": "practice-test-informed"
     },
     {
       "id": "q-ch2-seapainteruse",
@@ -3756,7 +3756,7 @@
       ],
       "explanation": "The sea painter is secured to an inboard thwart in the forward one-third of the boat, which gives it the right leverage for controlling the boat during launch and pickup. Misconception tested: assuming exact placement doesn't matter, or confusing the painter with steering hardware.",
       "sourceReference": "SIU 2019 Practice Test intake, unverified",
-      "verificationStatus": "draft-unverified"
+      "verificationStatus": "practice-test-informed"
     },
     {
       "id": "q-ch2-enginecheck",
@@ -3791,7 +3791,7 @@
       ],
       "explanation": "Right after starting the engine, check operating pressures and temperatures and check for leaks, before relying on the engine for anything else. Misconception tested: skipping this basic check in favor of testing speed or unrelated systems first.",
       "sourceReference": "SIU 2019 Practice Test intake, unverified",
-      "verificationStatus": "draft-unverified"
+      "verificationStatus": "practice-test-informed"
     },
     {
       "id": "q-ch2-dieselfuel",
@@ -3826,7 +3826,7 @@
       ],
       "explanation": "A typical lifeboat engine runs on diesel oil. Misconception tested: assuming a more volatile or unrelated fuel type, or assuming all lifeboats are oar-only.",
       "sourceReference": "SIU 2019 Practice Test intake, unverified",
-      "verificationStatus": "draft-unverified"
+      "verificationStatus": "practice-test-informed"
     },
     {
       "id": "q-ch2-24hrfuel",
@@ -3896,7 +3896,7 @@
       ],
       "explanation": "Per this unverified source, a covered lifeboat's sprinkler system and water spray system both protect against fire heat but are separate systems \u2014 notably, the air supply system does NOT pressurize the water spray system, which is a detail worth not confusing. Misconception tested: assuming all of a covered lifeboat's fire-protection features are powered by the same single system.",
       "sourceReference": "SIU 2019 Practice Test intake, unverified",
-      "verificationStatus": "draft-unverified"
+      "verificationStatus": "practice-test-informed"
     },
     {
       "id": "q-ch2-airtanks-vh",
@@ -3931,7 +3931,7 @@
       ],
       "explanation": "This is a genuine, easy-to-miss distinction: general buoyancy air tanks are a structural feature that keeps the lifeboat afloat if flooded, while a totally enclosed lifeboat's separate breathing-air tank supplies occupants and the engine with only about ten minutes of air if the boat must pass through flames \u2014 not indefinite fire protection. Misconception tested: assuming 'air tank' always means the same thing, or that passing through flames is safe for any extended period. This ~10-minute figure and the tank distinction come from an unverified practice-test source and should be confirmed against Vinci's manual before being treated as exact.",
       "sourceReference": "SIU 2019 Practice Test intake, unverified",
-      "verificationStatus": "draft-unverified"
+      "verificationStatus": "practice-test-informed"
     },
     {
       "id": "q-ch2-compass3way-vh",
@@ -3966,7 +3966,7 @@
       ],
       "explanation": "Variation is caused by the Earth's magnetic field and depends on geographic location; deviation is caused by magnetic material aboard the vessel and depends on the boat's heading; compass error is simply the combined effect of variation and deviation together. Misconception tested: treating these as interchangeable synonyms rather than as two distinct causes plus their combined total.",
       "sourceReference": "SIU 2019 Practice Test intake, unverified",
-      "verificationStatus": "draft-unverified"
+      "verificationStatus": "practice-test-informed"
     },
     {
       "id": "q-ch2-selfrighting-hard",
@@ -4001,7 +4001,7 @@
       ],
       "explanation": "A self-righting lifeboat will return upright after a capsize provided all personnel are seated with seatbelts on and doors/hatches shut \u2014 it is not an unconditional guarantee regardless of occupant behavior. Misconception tested: assuming 'self-righting' means automatic righting no matter what, rather than a design feature that depends on occupants following specific safety conditions.",
       "sourceReference": "SIU 2019 Practice Test intake, unverified",
-      "verificationStatus": "draft-unverified"
+      "verificationStatus": "practice-test-informed"
     },
     {
       "id": "q-ch2-seapainterboathook-hard",
@@ -4036,7 +4036,7 @@
       ],
       "explanation": "The sea painter is the most useful tool for getting a lifeboat away from a ship that still has way on (is moving), while a boat hook is more useful when the ship is making no headway at all \u2014 the right tool depends on the ship's motion at that moment. Misconception tested: assuming one single tool is universally best regardless of whether the ship is moving or stationary.",
       "sourceReference": "SIU 2019 Practice Test intake, unverified",
-      "verificationStatus": "draft-unverified"
+      "verificationStatus": "practice-test-informed"
     },
     {
       "id": "q-ch2-steerbroadside-hard",
@@ -4071,7 +4071,7 @@
       ],
       "explanation": "In heavy seas, a motor lifeboat should be steered into the seas; steering broadside to the sea (sideways-on to the waves) risks capsizing. This is a heading decision, not primarily a speed decision. Misconception tested: assuming broadside orientation is more comfortable or that only speed (not heading) affects capsize risk.",
       "sourceReference": "SIU 2019 Practice Test intake, unverified",
-      "verificationStatus": "draft-unverified"
+      "verificationStatus": "practice-test-informed"
     },
     {
       "id": "q-ch2-rottmer-hard",
@@ -4141,7 +4141,7 @@
       ],
       "explanation": "With a right-hand propeller and the rudder held amidships, backing the lifeboat swings the stern to port \u2014 a propeller effect (sometimes called 'prop walk') that occurs independent of rudder position. It's worth knowing in advance specifically because it can surprise someone who expects a centered rudder to mean no directional pull. Misconception tested: assuming rudder position alone governs direction, or guessing the swing direction without having learned this specific propeller effect.",
       "sourceReference": "SIU 2019 Practice Test intake, unverified",
-      "verificationStatus": "draft-unverified"
+      "verificationStatus": "practice-test-informed"
     },
     {
       "id": "q-ch2-drainplugfirst-hard",
@@ -4176,7 +4176,7 @@
       ],
       "explanation": "The bilge and drain plug should be checked FIRST when water is rising, because it's the simplest and most likely cause \u2014 ruling it out quickly avoids wasted time chasing more complex explanations like an engine leak. Misconception tested: assuming a more complex or dramatic cause (engine failure) before ruling out the simple, common one, or assuming checking order doesn't matter.",
       "sourceReference": "SIU 2019 Practice Test intake, unverified",
-      "verificationStatus": "draft-unverified"
+      "verificationStatus": "practice-test-informed"
     },
     {
       "id": "q-ch2-markingstrap-hard",
@@ -4211,7 +4211,7 @@
       ],
       "explanation": "Per this unverified source, a hand-portable fire extinguisher is NOT among the items required to carry the vessel's name, unlike ring life buoys, lifeboats, and lifeboat oars. Misconception tested: over-generalizing the vessel-name marking rule to all safety equipment, rather than the specific survival-craft-related items this source names.",
       "sourceReference": "SIU 2019 Practice Test intake, unverified",
-      "verificationStatus": "draft-unverified"
+      "verificationStatus": "practice-test-informed"
     },
     {
       "id": "q-ch2-compasscare-official",
