@@ -1,5 +1,65 @@
 import { useState } from 'react'
 
+const CONFIDENCE_LABELS = {
+  high: 'High confidence',
+  medium: 'Medium confidence',
+  low: 'Low confidence',
+  unreadable: 'Unverified',
+}
+
+// A key point is either a bare placeholder heading (string, not yet backed by
+// verified source content) or a rich section object once real teaching
+// content has been written for that subtopic. Keeping both shapes in the
+// same array lets a topic mix "still placeholder" and "now real" subtopics
+// without a schema migration every time one more subtopic gets filled in.
+function LearnSection({ point }) {
+  if (typeof point === 'string') {
+    return <div className="explanation-box">{point} <span className="muted">(placeholder — not yet sourced)</span></div>
+  }
+
+  return (
+    <div className="explanation-box learn-section">
+      <h4 style={{ marginTop: 0 }}>{point.title}</h4>
+      {point.confidence && (
+        <span className={`pill source-${point.confidence === 'high' ? 'verified' : 'unverified'}`}>
+          {CONFIDENCE_LABELS[point.confidence] ?? point.confidence}
+        </span>
+      )}
+      {point.image && (
+        <img className="question-image" src={point.image} alt={point.imageAlt || point.title} />
+      )}
+      <p>{point.explanation}</p>
+
+      {point.keyFacts?.length > 0 && (
+        <>
+          <strong>Key facts to remember</strong>
+          <ul>{point.keyFacts.map((f, i) => <li key={i}>{f}</li>)}</ul>
+        </>
+      )}
+
+      {point.confusionTraps?.length > 0 && (
+        <div className="hint-box">
+          <strong>Common confusion traps</strong>
+          <ul>{point.confusionTraps.map((f, i) => <li key={i}>{f}</li>)}</ul>
+        </div>
+      )}
+
+      {point.examWatchFor?.length > 0 && (
+        <div className="hint-box">
+          <strong>Watch for this on the exam</strong>
+          <ul>{point.examWatchFor.map((f, i) => <li key={i}>{f}</li>)}</ul>
+        </div>
+      )}
+
+      {point.sourceReferences?.length > 0 && (
+        <p className="muted" style={{ fontSize: 12 }}>
+          Source: {point.sourceReferences.map((s) => `${s.file} (${s.note})`).join('; ')}
+        </p>
+      )}
+    </div>
+  )
+}
+
 // Progressive disclosure: concept first, key points revealed one at a time
 // rather than all at once, so the student engages with each idea before
 // moving to the next instead of skimming a wall of text.
@@ -32,7 +92,7 @@ export default function LearnMode({ topics, topicId, navigate }) {
         <p>{topic.learn?.concept}</p>
 
         {topic.learn?.keyPoints?.slice(0, revealedPoints).map((point, i) => (
-          <div key={i} className="explanation-box">{point}</div>
+          <LearnSection key={i} point={point} />
         ))}
 
         {revealedPoints < (topic.learn?.keyPoints?.length ?? 0) ? (

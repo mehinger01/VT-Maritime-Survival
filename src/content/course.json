@@ -2,40 +2,431 @@
   "courseId": "vt-maritime-water-survival",
   "courseName": "Maritime & Water Survival Exam Prep",
   "version": 3,
-  "contentNote": "PLACEHOLDER / DRAFT PRACTICE CONTENT. Topic structure now matches the table of contents of the actual Water Survival Student Manual (SHLSOS Course No. 549, revised June 2024) supplied by Vinci. We currently have only the manual's table of contents, not its full chapter text — the practice questions below were written before this alignment and have been remapped to the closest matching manual chapter, but they are NOT sourced from the manual itself and remain draft/unverified. A subset of questions (marked with a 'sourceReference' and 'verificationStatus' field) were added from an unverified third-party SIU 2019 practice-test intake — see docs/CONTENT_INTAKE_BENCHMARK.md and docs/SIU_2019_CONVERSION_PLAN.md for how that source is tiered and what still needs checking. Vinci (instructor/SME) should review and replace this entire bank with content verified against the actual manual chapters before it is used for real exam prep. v2: added 19 draft questions from Import Pack 001 (SHLSOS-2021-CH1-P009-P011 concept summary -- see src/content/imports/import-pack-001.json and src/content/sources/SHLSOS-2021-CH1-P009-P011.md for the verification caveats: this is a concept/vocabulary summary, not verbatim manual text, and cites a 2021 edition vs. the previously-confirmed 'revised June 2024' edition -- both need resolving with Vinci before anything here is promoted to verified). v3: the 19 Import Pack 001 questions (Chapter 1) were promoted from draft-unverified to course-verified per explicit operator confirmation on 2026-07-06 -- see src/content/imports/import-pack-001.json for the promotion note. The manual-edition question (2021 vs. 'revised June 2024') raised during intake was not separately re-confirmed as part of this promotion and remains worth a quick check with Vinci.",
+  "contentNote": "PLACEHOLDER / DRAFT PRACTICE CONTENT. Topic structure now matches the table of contents of the actual Water Survival Student Manual (SHLSOS Course No. 549, revised June 2024) supplied by Vinci. We currently have only the manual's table of contents, not its full chapter text \u2014 the practice questions below were written before this alignment and have been remapped to the closest matching manual chapter, but they are NOT sourced from the manual itself and remain draft/unverified. A subset of questions (marked with a 'sourceReference' and 'verificationStatus' field) were added from an unverified third-party SIU 2019 practice-test intake \u2014 see docs/CONTENT_INTAKE_BENCHMARK.md and docs/SIU_2019_CONVERSION_PLAN.md for how that source is tiered and what still needs checking. Vinci (instructor/SME) should review and replace this entire bank with content verified against the actual manual chapters before it is used for real exam prep. v2: added 19 draft questions from Import Pack 001 (SHLSOS-2021-CH1-P009-P011 concept summary -- see src/content/imports/import-pack-001.json and src/content/sources/SHLSOS-2021-CH1-P009-P011.md for the verification caveats: this is a concept/vocabulary summary, not verbatim manual text, and cites a 2021 edition vs. the previously-confirmed 'revised June 2024' edition -- both need resolving with Vinci before anything here is promoted to verified). v3: the 19 Import Pack 001 questions (Chapter 1) were promoted from draft-unverified to course-verified per explicit operator confirmation on 2026-07-06 -- see src/content/imports/import-pack-001.json for the promotion note. The manual-edition question (2021 vs. 'revised June 2024') raised during intake was not separately re-confirmed as part of this promotion and remains worth a quick check with Vinci.",
   "topics": [
     {
       "id": "chapter-1-planning-ahead",
-      "title": "Chapter 1 — Planning Ahead",
+      "title": "Chapter 1 \u2014 Planning Ahead",
       "summary": "Manual Chapter 1: emergency readiness, equipment, and knowing your shipboard duties before an incident occurs.",
       "learn": {
-        "concept": "This chapter corresponds to a chapter in the Water Survival Student Manual (SHLSOS Course No. 549, revised June 2024). We currently have only the manual's table of contents, not its full chapter text, so the list below reproduces the manual's own subtopic headings for this chapter rather than a verified content summary. Practice questions in this chapter are still draft/placeholder content pending verification against the actual chapter text.",
+        "concept": "This chapter corresponds to a chapter in the Water Survival Student Manual (SHLSOS Course No. 549, revised June 2024). We currently have only the manual's table of contents, not its full chapter text, so the list below reproduces the manual's own subtopic headings for this chapter rather than a verified content summary. Practice questions in this chapter are still draft/placeholder content pending verification against the actual chapter text. Update (2026-07-08): two subtopics below -- Certificate of Inspection (C.O.I.) & Required Lifeboatmen, and IMO/LSA Safety Symbol Color-Coding -- now have real teaching content built from Vinci's 2026-07-07 photographed manual pages (see each subtopic's source references and confidence level). The rest of this chapter's key points remain placeholder headings pending further source material.",
         "keyPoints": [
           "Be Prepared for Emergencies",
           "Have Proper Equipment Ready at All Times",
-          "Find Your Shipboard Emergency Duties"
+          "Find Your Shipboard Emergency Duties",
+          {
+            "title": "Certificate of Inspection (C.O.I.) & Required Lifeboatmen",
+            "explanation": "Every U.S.-flagged ship carries a Certificate of Inspection (C.O.I.) issued by the Coast Guard. Among other things, it states the minimum number of certified lifeboatmen who must be aboard -- and that minimum scales up directly with how many people a given lifeboat is rated to carry.",
+            "keyFacts": [
+              "Every US-flagged ship has a C.O.I. issued by the USCG.",
+              "The C.O.I. states the minimum number of Endorsed Lifeboatmen required aboard.",
+              "Required lifeboatmen scale with lifeboat capacity: 1-25 persons needs 1 lifeboatman, 26-40 needs 2, 41-60 needs 3, 61-85 needs 4, 86-110 needs 5, and 110+ needs 6."
+            ],
+            "confusionTraps": [
+              "Don't confuse the ship-level C.O.I. (a USCG-issued document covering the whole vessel) with a single lifeboat's own nameplate/capacity markings -- those are two different documents at two different levels.",
+              "The lifeboatman count doesn't scale one-to-one with capacity -- it steps up roughly every 15-25 person increase, not for every additional person."
+            ],
+            "examWatchFor": [
+              "Expect a table-reading question that gives a specific capacity (e.g. '52 persons') and asks how many certified lifeboatmen are required -- know the band boundaries (25/40/60/85/110), not just the general trend.",
+              "Watch for questions that swap 'C.O.I.' with 'nameplate' as if they were the same document."
+            ],
+            "sourceReferences": [
+              {
+                "file": "2026-07-07_033837.jpg",
+                "note": "C.O.I. sample document and lifeboat-capacity/certified-lifeboatmen table"
+              }
+            ],
+            "confidence": "high",
+            "image": "/content/vinci/2026-07-07/2026-07-07_033837.jpg",
+            "imageAlt": "Photo of a sample C.O.I. lifeboat-capacity / certified-lifeboatmen table"
+          },
+          {
+            "title": "IMO/LSA Safety Symbol Color-Coding",
+            "explanation": "Lifesaving equipment aboard ship is marked with standardized IMO/LSA pictograms. The fastest way to make sense of an unfamiliar symbol is to read its color first -- color tells you whether it's labeling equipment or instructing an action, before you even work out exactly what the icon shows.",
+            "keyFacts": [
+              "Green pictograms mark life-saving equipment or its location (Lifeboat, Rescue Boat, Liferaft, Davit Launched Liferaft, Embarkation Ladder, Pilot Ladder).",
+              "Personal flotation symbols (also green-family) include Lifebuoy, Lifebuoy with Line, Lifebuoy with Light, Lifebuoy with Light and Smoke, Lifejacket, and Child Lifejacket.",
+              "Signaling/rescue equipment symbols include EPIRB, Radar Transponder (SART), Survival Craft Portable Radio, Survival Craft Pyrotechnics, Rocket Parachute Flares, and Line-Throwing Appliance.",
+              "Medical/assembly symbols include Assembly Station, Stretcher, Medical Locker, TPA (Thermal Protective Aid), and AES (Anti-Exposure Suit).",
+              "Blue/purple pictograms mark operating instructions, not equipment locations (Fasten Seat Belts, Secure Hatches, Start Engine, Lower Lifeboat, Release Falls, Start Air Supply, Release Gripes, etc.).",
+              "Exit/escape symbols (Stairs to Fire Exit, Exit, Escape Hatch, Escape Route) form their own visual family."
+            ],
+            "confusionTraps": [
+              "'Lifebuoy with Light' vs. 'Lifebuoy with Light and Smoke' look almost identical -- the only difference is the smoke marker.",
+              "AES (Anti-Exposure Suit), Immersion Suit, and TPA (Thermal Protective Aid) are three distinct thermal-protection symbols that are easy to mix up.",
+              "Blue/purple 'do this' instruction symbols can be visually confused with green 'here's the equipment' symbols if you don't check color first."
+            ],
+            "examWatchFor": [
+              "If a question shows a pictogram and asks what it means, decide the color family first (green = equipment/location, blue/purple = instruction) before guessing at the specific icon.",
+              "Expect a 'which symbol is this' identification question rather than a definition question -- study the icons visually, not just their names."
+            ],
+            "sourceReferences": [
+              {
+                "file": "2026-07-07_030301.jpg",
+                "note": "IMO/LSA safety symbol pictogram chart"
+              }
+            ],
+            "confidence": "high",
+            "image": "/content/vinci/2026-07-07/2026-07-07_030301.jpg",
+            "imageAlt": "Photo of an IMO/LSA lifesaving safety symbol pictogram chart"
+          }
         ]
       }
     },
     {
       "id": "chapter-2-using-lifeboats",
-      "title": "Chapter 2 — Using Lifeboats",
+      "title": "Chapter 2 \u2014 Using Lifeboats",
       "summary": "Manual Chapter 2: lifeboat markings, construction, equipment, davits, launching, retrieval, and other uses.",
       "learn": {
-        "concept": "This chapter corresponds to a chapter in the Water Survival Student Manual (SHLSOS Course No. 549, revised June 2024). We currently have only the manual's table of contents, not its full chapter text, so the list below reproduces the manual's own subtopic headings for this chapter rather than a verified content summary. Practice questions in this chapter are still draft/placeholder content pending verification against the actual chapter text.",
+        "concept": "This chapter corresponds to a chapter in the Water Survival Student Manual (SHLSOS Course No. 549, revised June 2024). We currently have only the manual's table of contents, not its full chapter text, so the list below reproduces the manual's own subtopic headings for this chapter rather than a verified content summary. Practice questions in this chapter are still draft/placeholder content pending verification against the actual chapter text. Update (2026-07-08): the following subtopics below now have real teaching content built from Vinci's 2026-07-07 photographed manual pages -- Lifeboat Types, Partially Enclosed vs. Totally Enclosed Lifeboats, Markings, Coloring, Numbering, Design/Construction/Performance of Modern Lifeboats, Buoyancy and Stability Features, Automatic Lifeboat Drain, Exterior Rescue Features, Steering Equipment, Propulsion Systems, Engine/Fuel/Fire Safety, and Rescue Boats/Fast Rescue Boats (see each subtopic's source references and confidence level). The remaining subtopics (Construction, Lifeboat Shell, Interior Construction, Survival Craft Equipment, Davits and Winches, Common Features of Davit Systems, Types of Davits, Launching a Lifeboat from a Gravity Davit, Retrieving the Lifeboat, Navigating by Compass, and Other Uses of Lifeboats) remain placeholder headings pending further source material.",
         "keyPoints": [
-          "Markings",
-          "Coloring",
-          "Numbering",
-          "Design, Construction, and Performance of Modern Lifeboats",
+          {
+            "title": "Lifeboat Types",
+            "explanation": "Every lifeboat on a ship falls into one of five recognized types, ranging from fully open to fully enclosed with extra protection built in. Knowing the five types -- and which regulatory limits apply across all of them -- is foundational before getting into markings, construction, or equipment.",
+            "keyFacts": [
+              "Five recognized lifeboat types: open, partially enclosed, totally enclosed, totally enclosed with self-contained air support, and totally enclosed fire protected.",
+              "No lifeboat is approved to carry more than 150 persons, regardless of type.",
+              "The maximum number of people, ship's name, and lifeboat number must be clearly marked on the side of every lifeboat.",
+              "Non-self-righting lifeboats must have hand-holds (grab rails) on the bottom of the boat, since they can remain capsized.",
+              "Totally enclosed lifeboats are self-righting: if capsized, they automatically flip back upright, and their ventilators automatically close during capsize."
+            ],
+            "confusionTraps": [
+              "Don't assume every lifeboat self-rights automatically -- only the totally enclosed type does; other types compensate with bottom grab rails instead.",
+              "'Handholds on deck/topsides' (a general feature) and 'handholds on the underside' (a non-self-righting-specific requirement) are easy to conflate."
+            ],
+            "examWatchFor": [
+              "A 'which of these is NOT a real lifeboat type' question is common -- know all five exact names.",
+              "Expect a question pairing a lifeboat feature (self-righting, ventilator closure) with the specific type it applies to."
+            ],
+            "sourceReferences": [
+              {
+                "file": "2026-07-07_034357.jpg",
+                "note": "Lifeboat types -- Partially Enclosed and Totally Enclosed (roller gravity davit)"
+              },
+              {
+                "file": "2026-07-07_034781.jpg",
+                "note": "Lifeboat/rescue boat types continued -- Totally Enclosed (free-fall davit), Fast Rescue Boat"
+              }
+            ],
+            "confidence": "high",
+            "image": "/content/vinci/2026-07-07/2026-07-07_034357.jpg",
+            "imageAlt": "Photo of a lifeboat-types page covering partially enclosed and totally enclosed lifeboats"
+          },
+          {
+            "title": "Partially Enclosed vs. Totally Enclosed Lifeboats",
+            "explanation": "These two types are the ones most often confused with each other because both end up fully enclosed at some point -- the difference is how much of that enclosure is permanent, rigid construction versus a foldable canopy.",
+            "keyFacts": [
+              "Partially enclosed lifeboats have permanent rigid covers on at least 20% of both sides, plus a foldable canopy that can fully enclose the boat when needed.",
+              "Totally enclosed lifeboats have a rigid watertight cover, boarding hatches, windows, and seat safety belts as standard, permanent construction -- not a foldable add-on.",
+              "Totally enclosed lifeboats with self-contained air support supply about 10 minutes of (non-recirculated) air with slight positive pressure once hatches/ventilation are secured.",
+              "Totally enclosed fire-protected lifeboats add a water spray system protecting occupants from an oil fire in the water for at least 8 minutes."
+            ],
+            "confusionTraps": [
+              "The 10-minute air-support duration and the 8-minute fire-protected water-spray duration appear close together in the source material and are easy to swap.",
+              "'Partially enclosed' isn't just 'a smaller totally enclosed boat' -- the defining difference is permanent rigid cover (partial) vs. full rigid cover with hatches/windows/belts built in (total)."
+            ],
+            "examWatchFor": [
+              "Expect a direct compare-and-contrast question: 'what makes a lifeboat totally enclosed rather than partially enclosed?'",
+              "If a duration number appears (8 vs. 10 minutes), check carefully which system (air support vs. fire-protection water spray) it belongs to."
+            ],
+            "sourceReferences": [
+              {
+                "file": "2026-07-07_034357.jpg",
+                "note": "Lifeboat types -- Partially Enclosed and Totally Enclosed"
+              }
+            ],
+            "confidence": "high"
+          },
+          {
+            "title": "Markings",
+            "explanation": "A lifeboat carries several required markings, and each one lives in a specific place for a specific reason -- knowing where each piece of information goes (bow vs. nameplate vs. visible-from-above) matters as much as knowing what the information is.",
+            "keyFacts": [
+              "Each lifeboat's bow must be marked on both sides, in block capital letters/numbers, with the vessel's name.",
+              "The home port is marked on the vessel's stern, not on the lifeboat itself.",
+              "The number of persons the boat is equipped for must be marked (preferably on the bow) in permanent characters, and must not exceed the number shown on the nameplate.",
+              "The lifeboat number and vessel identification must be marked so they're visible from above the boat.",
+              "Each lifeboat's nameplate/label lists: manufacturer's name & serial number/date of manufacture, light-load and full-load condition/weights, and the number of persons allowed.",
+              "The vessel's name must also be printed on every oar, every life preserver (PFD), each life ring, and the EPIRB and SART."
+            ],
+            "confusionTraps": [
+              "The bow marking (vessel name, block capitals) and the nameplate (manufacturer, weights, persons) are two separate things carrying different information -- don't conflate them.",
+              "The 'number of persons' marking must not EXCEED the nameplate figure -- it doesn't just need to roughly match built capacity."
+            ],
+            "examWatchFor": [
+              "Expect a 'where is X marked' question (bow vs. nameplate vs. stern vs. visible-from-above) more than a 'what is marked' question.",
+              "Know the specific list of items required to carry the vessel's name (oar, PFD, life ring, EPIRB, SART) -- a common question format asks which item is NOT on that list."
+            ],
+            "sourceReferences": [
+              {
+                "file": "2026-07-07_041458.jpg",
+                "note": "Markings -- required vessel name/port/persons/boat-number markings, nameplate contents"
+              }
+            ],
+            "confidence": "high",
+            "image": "/content/vinci/2026-07-07/2026-07-07_041458.jpg",
+            "imageAlt": "Photo of a lifeboat markings requirements page"
+          },
+          {
+            "title": "Coloring",
+            "explanation": "Beyond text markings, a lifeboat's color scheme itself is regulated -- the goal is visibility for rescuers plus an unmistakable, easy-to-find release control in an emergency.",
+            "keyFacts": [
+              "Canopy exteriors of enclosed lifeboats are painted international orange.",
+              "Tops of thwarts, side benches, and footings of open lifeboats are painted international orange.",
+              "Sails and canvas canopies must be dyed Indian orange -- a distinct term from international orange, used for a different set of components.",
+              "The release lever must be red.",
+              "The area immediately surrounding the release-lever control must be a sharply contrasting light color."
+            ],
+            "confusionTraps": [
+              "'International orange' (hull/canopy/seating paint) and 'Indian orange' (sail/canopy dye) are two distinct terms for two different components -- don't treat them as interchangeable.",
+              "The area around the release lever is a contrasting LIGHT color, not more orange -- don't assume everything on the boat is orange."
+            ],
+            "examWatchFor": [
+              "Watch for a question that swaps 'international orange' and 'Indian orange' between the wrong components.",
+              "The red-lever-plus-light-surround combination is a favorite two-part fact to test together."
+            ],
+            "sourceReferences": [
+              {
+                "file": "2026-07-07_041663-1.jpg",
+                "note": "Coloring -- international orange / Indian orange / red release-lever color requirements"
+              }
+            ],
+            "confidence": "high"
+          },
+          {
+            "title": "Numbering",
+            "explanation": "Lifeboat numbers follow a fixed, predictable pattern based on which side of the ship they're stowed on -- once you know the pattern, you can figure out any boat's side and rough position just from its number.",
+            "keyFacts": [
+              "Odd-numbered lifeboats are stowed on the starboard side; even-numbered lifeboats are stowed on the port side.",
+              "Both odd and even numbering run from forward (FWD) to aft.",
+              "Lifeboat numbers must be marked on each side of the bow in block capital letters.",
+              "Example: lifeboat 2 is forward of lifeboat 4 (port side); lifeboat 7 is abaft (aft of) lifeboat 5 (starboard side)."
+            ],
+            "confusionTraps": [
+              "Odd/starboard vs. even/port is a classic swap -- if you use a mnemonic, double-check it points the right direction before relying on it under pressure."
+            ],
+            "examWatchFor": [
+              "Expect a scenario question ('lifeboat 6 is on which side, and is it forward or aft of lifeboat 4?') rather than a bare definition question.",
+              "Don't forget the numbering direction (forward to aft) matters as much as odd/even."
+            ],
+            "sourceReferences": [
+              {
+                "file": "2026-07-07_041663-3.jpg",
+                "note": "Numbering (odd/starboard, even/port lifeboat numbering) and Capacity"
+              }
+            ],
+            "confidence": "high"
+          },
+          {
+            "title": "Design, Construction, and Performance of Modern Lifeboats",
+            "explanation": "Modern lifeboats (built 1998 and later) have to meet a specific regulatory performance standard covering everything from who can operate them to how much abuse the hull can take before it's certified. This is denser material than the rest of the chapter -- it's the 'spec sheet' behind the equipment.",
+            "keyFacts": [
+              "Applies to lifeboats built 1998+, per 46CFR160.135-7 / IMO LSA Code.",
+              "All lifeboats except totally enclosed ones must be operable by someone wearing an immersion suit.",
+              "The operator's station must give 360-degree visibility when seated (moving head/torso to see around obstructions is allowed).",
+              "Rigid structural components must be steel, aluminum, FRP, or a Commandant-approved equivalent.",
+              "Structural strength tests (all without deformation): 5-knot launch, a 3 m (10 ft) drop at full weight, holding 2x allowable weight suspended from the falls, and a 3.5 m/s lateral impact.",
+              "Capacity may not exceed 150 persons, calculated at an average mass of 75 kg (165 lbs); each seat must support 100 kg (220 lbs).",
+              "Boarding time for a full complement: passenger ship 10 minutes, cargo ship 3 minutes."
+            ],
+            "confusionTraps": [
+              "Totally enclosed lifeboats are the EXCEPTION to the immersion-suit-operable rule, not an example of it -- easy to misread as 'all lifeboats.'",
+              "The average-mass capacity figure (75 kg / 165 lbs) is a different number from the per-seat structural load rating (100 kg / 220 lbs) -- don't mix them up.",
+              "The 10-minute (passenger) and 3-minute (cargo) boarding figures are easy to swap."
+            ],
+            "examWatchFor": [
+              "Numeric-heavy section -- expect a question that isolates just one figure (drop height, lateral impact speed, seat load) and asks you to identify it correctly among close-sounding distractors.",
+              "Know which single lifeboat type is exempt from the immersion-suit-operable requirement."
+            ],
+            "sourceReferences": [
+              {
+                "file": "2026-07-07_041663-4.jpg",
+                "note": "Design, Construction, and Performance of Modern Lifeboats -- 46CFR160.135-7 / IMO LSA Code spec table"
+              }
+            ],
+            "confidence": "high"
+          },
           "Construction",
           "Lifeboat Shell",
           "Interior Construction",
-          "Buoyancy and Stability Features",
-          "Automatic Lifeboat Drain",
-          "Exterior Rescue Features",
-          "Steering Equipment",
-          "Propulsion Systems",
+          {
+            "title": "Buoyancy and Stability Features",
+            "explanation": "A lifeboat has to stay afloat and stay upright even when it's taking on water -- buoyancy units built into the hull are what make that possible.",
+            "keyFacts": [
+              "Buoyancy units under each side bench keep a fully loaded lifeboat afloat even when full of water, and make the boat less likely to capsize.",
+              "Buoyancy units are usually air tanks or unicellular plastic foam.",
+              "Buoyancy units are removable for maintenance and must be re-stowed in their original position afterward.",
+              "An air-tank buoyancy unit can be checked for leaks: on a hot day, if its flat sides aren't bulging slightly, it's probably leaking."
+            ],
+            "confusionTraps": [
+              "Buoyancy units (flotation, mounted under side benches) are easy to confuse with limber holes (drainage, cut into the floors) -- they solve two different problems."
+            ],
+            "examWatchFor": [
+              "Expect a practical maintenance question (the hot-day bulge check) rather than just a definition question.",
+              "Know the two common buoyancy unit materials (air tanks, unicellular plastic foam)."
+            ],
+            "sourceReferences": [
+              {
+                "file": "2026-07-07_041663-10.jpg",
+                "note": "Buoyancy and Stability Features; Automatic Lifeboat Drain"
+              }
+            ],
+            "confidence": "high"
+          },
+          {
+            "title": "Automatic Lifeboat Drain",
+            "explanation": "Lifeboats need a way to get water out of the bilge, but that drain has to be closed before launch or the boat would flood instead of drain. The timing and the mechanism are both worth knowing cold.",
+            "keyFacts": [
+              "Two or more drains are fitted in each lifeboat (except free-fall lifeboats) to let water drain out when the boat is lifted from the water.",
+              "The automatic lifeboat drain uses a metal cage holding a rubber ball that floats up and acts as an automatic closing valve.",
+              "The first and most important thing to do when entering a lifeboat to prepare for launch is to close the drain by screwing on the metal cap.",
+              "Open lifeboat drains should be left open when stowed; enclosed boats may leave the cap on when stowed; free-fall lifeboats likely have no drain fitted at all.",
+              "Limber holes are separate openings in the floors that let bilge water flow between compartments without going through the outer shell."
+            ],
+            "confusionTraps": [
+              "It's easy to assume the drain should be OPEN before launch -- it's the opposite: closing it (screwing on the metal cap) is the first and most important launch-prep step.",
+              "The open/enclosed/free-fall drain-stowage rules differ by lifeboat type and are easy to conflate.",
+              "Limber holes (drainage between compartments) are a separate fitting from buoyancy units (flotation) -- don't mix them up."
+            ],
+            "examWatchFor": [
+              "This is a classic 'what do you check/do FIRST' scenario question -- the drain cap is the answer.",
+              "Know which lifeboat type (free-fall) is the exception to having a drain at all."
+            ],
+            "sourceReferences": [
+              {
+                "file": "2026-07-07_041663-10.jpg",
+                "note": "Buoyancy and Stability Features; Automatic Lifeboat Drain (drain cage/ball check)"
+              }
+            ],
+            "confidence": "high"
+          },
+          {
+            "title": "Exterior Rescue Features",
+            "explanation": "A lifeboat's exterior carries a few features specifically meant for people who end up in the water near the boat rather than inside it -- these are about rescuing swimmers, not steering or propulsion.",
+            "keyFacts": [
+              "Grab rails (hand-holds) are metal bars on the outside of the lifeboat near the turn of the bilges, provided on lifeboats that don't self-right automatically.",
+              "Grab rails are secured so that if broken off, the lifeboat's plating will not get holes in it.",
+              "Lifelines must be at least 3/8 inch manila line (typical material: polypropylene multifilament).",
+              "Lifelines are divided into bights (loops) of three feet or less, each with a seine float to hold the line up in the water -- the float may be omitted if the line is inherently buoyant.",
+              "Lifelines serve two purposes: something for swimmers to hang onto, and something for people who can't find space inside a crowded boat."
+            ],
+            "confusionTraps": [
+              "Grab rails are specifically for lifeboats that do NOT self-right automatically -- don't assume every lifeboat needs them.",
+              "A seine float isn't always required on a lifeline -- it can be omitted if the line itself is inherently buoyant."
+            ],
+            "examWatchFor": [
+              "Expect a question testing which lifeboat feature (grab rails) pairs with which lifeboat category (non-self-righting).",
+              "Know the lifeline material/size (3/8 inch) and bight spacing (3 feet or less) as specific numbers, not just general descriptions."
+            ],
+            "sourceReferences": [
+              {
+                "file": "2026-07-07_041663-11.jpg",
+                "note": "Exterior Rescue Features -- grab rail, lifeline, seine float, rudder/nozzle"
+              }
+            ],
+            "confidence": "high"
+          },
+          {
+            "title": "Steering Equipment",
+            "explanation": "An open lifeboat's steering gear is a chain of connected parts -- tiller to rudder to hull -- and each connection point uses different hardware for a different job. Modern totally enclosed lifeboats add a wheel and a Kort Nozzle on top of this basic system.",
+            "keyFacts": [
+              "Open lifeboats are typically fitted with an unbalanced rudder, controlled by a tiller attached to the top of the rudder and held in place by a toggle pin.",
+              "The rudder itself is held onto the stern post by pintles and gudgeons (a separate pin-and-socket pair from the toggle pin).",
+              "Rudders are usually made of wood; sometimes watertight metal rudders that will float are used instead.",
+              "Tiller-to-starboard moves the rudder to port and turns the boat to port; tiller-to-port moves the rudder to starboard and turns the boat to starboard.",
+              "In heavy seas, allow the bow to swing back and forth on each side of the desired heading -- a perfectly steady course can't be maintained in rough water.",
+              "Modern totally enclosed lifeboats commonly use a rudder nozzle (Kort Nozzle), which also serves as the required propeller guard and improves directional control as thrust increases.",
+              "Steering is normally by wheel on these boats, with an emergency steering tiller provided in case the wheel system fails."
+            ],
+            "confusionTraps": [
+              "The toggle pin (tiller-to-rudder) and the pintles/gudgeons (rudder-to-stern-post) are two separate connection points -- don't collapse them into one fitting.",
+              "'Tiller to starboard turns the boat to port' is a classic inversion trap -- the tiller and the boat's turn direction are opposite.",
+              "A Kort Nozzle isn't purely a steering aid -- it also functions as the required propeller guard."
+            ],
+            "examWatchFor": [
+              "Expect a tiller-direction question phrased as a scenario ('you push the tiller to starboard -- which way does the boat turn?') rather than a definition.",
+              "Know that the Kort Nozzle does double duty (steering + propeller guard) -- a common wrong answer treats it as steering-only."
+            ],
+            "sourceReferences": [
+              {
+                "file": "2026-07-07_041663-12.jpg",
+                "note": "Steering Equipment -- tiller, rudder, pintle, gudgeon, Kort Nozzle, steering wheel"
+              }
+            ],
+            "confidence": "high"
+          },
+          {
+            "title": "Propulsion Systems",
+            "explanation": "Lifeboats are propelled by engine, by hand-cranked gear, or by oars depending on their size and equipment -- and each method has its own quirks worth knowing, especially how a propeller behaves differently going forward versus in reverse.",
+            "keyFacts": [
+              "Diesel (compression-ignition) engines are preferred over gasoline: diesel fuel is less volatile, and diesel engines have no spark plugs, igniting fuel instead from the heat of compression.",
+              "The propeller shaft passes through the hull via the stern tube; the stern gland is a packed ring inside the stern tube that keeps water from entering the boat.",
+              "The quickest way to stop a diesel engine is to shut off the air supply (pull the stop lever out).",
+              "Propellers work efficiently producing thrust while propelling forward; when reversed, they work inefficiently and create unwanted side thrust known as the 'paddlewheel effect.'",
+              "Propeller handedness is judged looking from astern, out of the water: clockwise rotation in forward gear = right-handed; counterclockwise = left-handed.",
+              "Most lifeboats have right-handed propellers, so backing with the rudder amidships kicks the stern to port; right rudder must be applied to counteract this.",
+              "Fleming gear (hand-propelling gear, not used in new construction) uses fore-and-aft lever handles connected to a gear box that rotates the propeller shaft.",
+              "Oar-propelled lifeboat capacity is capped at 59 persons; boats for 60-100 persons must be hand-propelled (Fleming gear) or motor-propelled; boats over 100 persons must be motor-propelled.",
+              "All open lifeboats -- even motorized or Fleming-gear ones -- must carry at least 4 rowing oars and one steering oar (sweep); free-fall davit-launched enclosed lifeboats are the exception and may carry no oars at all."
+            ],
+            "confusionTraps": [
+              "The paddlewheel effect happens when the propeller is REVERSING, not while propelling forward.",
+              "The 59-person oar-propelled cap and the adjacent 60-100 / over-100 regulatory bands are easy to swap.",
+              "Assuming every lifeboat must carry oars -- free-fall davit-launched enclosed lifeboats are a specific, deliberate exception."
+            ],
+            "examWatchFor": [
+              "Backing-and-propeller-handedness questions are a classic scenario format: given a right- or left-handed propeller, predict which way the stern kicks going astern.",
+              "Know the exact capacity bands tied to propulsion method (\u2264 59 oar, 60-100 hand or motor, >100 motor-only)."
+            ],
+            "sourceReferences": [
+              {
+                "file": "2026-07-07_041663-13.jpg",
+                "note": "Propulsion Systems / Engine Powered Systems -- stern gland, stern tube, propeller shaft, engine"
+              },
+              {
+                "file": "2026-07-07_041663-14.jpg",
+                "note": "Engine starting/stopping procedures; propeller-characteristics intro"
+              },
+              {
+                "file": "2026-07-07_041663-15.jpg",
+                "note": "Propeller rotation (right-hand propeller)"
+              },
+              {
+                "file": "2026-07-07_041663-16.jpg",
+                "note": "Hand Propelled Systems (Fleming gear) and hand/oar-propelled lifeboat rules"
+              }
+            ],
+            "confidence": "high"
+          },
+          {
+            "title": "Engine, Fuel & Fire Safety",
+            "explanation": "Because a lifeboat engine runs in a small, enclosed space that may have just launched into a fire-hazard environment (like an oil spill fire), the rules around fuel choice and onboard firefighting equipment are stricter and more specific than a typical engine's.",
+            "keyFacts": [
+              "No engine may be used in a lifeboat if its fuel has a flashpoint of 43\u00b0C (about 109\u00b0F) or less.",
+              "Fire extinguishers are stowed at each end of engine-powered lifeboats, rated for Class B (flammable liquids like diesel) and Class C (electrical) fires.",
+              "ABC dry-chemical extinguisher use: remove from bracket, hold upright, pull the pin, squeeze the lever handle, aim just under the flames (not directly at them), and sweep side-to-side across the entire width of the fire.",
+              "A Class 1 motor lifeboat must start in all conditions, carry fuel for 24 hours of continuous operation, and reach at least 6 knots in smooth water fully loaded.",
+              "Rescue boats with outboard motors must have fuel tanks protected against fire."
+            ],
+            "confusionTraps": [
+              "Lifeboat extinguishers are rated Class B and C only -- not Class A (ordinary combustibles) and not Class D.",
+              "Aim the extinguisher just under the visible flames, not directly at them -- aiming at the flames themselves is a common beginner mistake."
+            ],
+            "examWatchFor": [
+              "Expect a scenario-style firefighting question walking through the extinguisher steps in order.",
+              "Know the exact flashpoint threshold (43\u00b0C) as a specific number, not just 'low flashpoint fuel is banned.'"
+            ],
+            "sourceReferences": [
+              {
+                "file": "2026-07-07_041663-13.jpg",
+                "note": "Propulsion Systems / Engine Powered Systems -- fuel flashpoint rule"
+              },
+              {
+                "file": "2026-07-07_041663-15.jpg",
+                "note": "Safety Notes on Engine Powered Lifeboats -- fire extinguisher use steps"
+              }
+            ],
+            "confidence": "high"
+          },
           "Survival Craft Equipment",
           "Davits and Winches",
           "Common Features of Davit Systems",
@@ -44,13 +435,40 @@
           "Retrieving the Lifeboat",
           "Navigating by Compass",
           "Other Uses of Lifeboats",
-          "Rescue Boats / Fast Rescue Boats"
+          {
+            "title": "Rescue Boats / Fast Rescue Boats",
+            "explanation": "Rescue boats are a distinct category from ordinary lifeboats -- built and equipped specifically to go get people out of the water quickly, tow a lifeboat if needed, and get back.",
+            "keyFacts": [
+              "Rescue boats must carry at least 5 seated passengers plus a person on a stretcher, all wearing immersion suits and/or life jackets.",
+              "Rescue boats must be able to maneuver at 6 knots for at least 4 hours.",
+              "Rescue boats must have a permanently fitted towing arrangement capable of towing the ship's largest fully loaded lifeboat at 2 knots.",
+              "Rescue boats with outboard motors must have fuel tanks protected against fire.",
+              "Passenger ships must be able to board their full survival craft complement within 10 minutes; cargo ships, which must provide at least twice as many lifeboat seats as crew, within 3 minutes."
+            ],
+            "confusionTraps": [
+              "The rescue boat's 6-knot cruising speed and its 2-knot towing speed are easy to swap.",
+              "Don't confuse a rescue boat's 4-hour maneuvering endurance with a Class 1 motor lifeboat's separate 24-hour fuel requirement."
+            ],
+            "examWatchFor": [
+              "Expect the 6-knot / 2-knot pairing to be tested directly, often with the numbers swapped as a distractor.",
+              "Know the minimum rescue-boat crew/casualty capacity (5 seated + 1 on a stretcher) as a specific figure."
+            ],
+            "sourceReferences": [
+              {
+                "file": "2026-07-07_034781.jpg",
+                "note": "Lifeboat/rescue boat types continued -- Totally Enclosed (free-fall davit), Fast Rescue Boat (FRB)"
+              }
+            ],
+            "confidence": "high",
+            "image": "/content/vinci/2026-07-07/2026-07-07_034781.jpg",
+            "imageAlt": "Photo of a page covering totally enclosed free-fall lifeboats and Fast Rescue Boats"
+          }
         ]
       }
     },
     {
       "id": "chapter-3-using-liferafts",
-      "title": "Chapter 3 — Using Liferafts",
+      "title": "Chapter 3 \u2014 Using Liferafts",
       "summary": "Manual Chapter 3: liferaft design, stowage, launching methods, righting, boarding, and assisting injured survivors.",
       "learn": {
         "concept": "This chapter corresponds to a chapter in the Water Survival Student Manual (SHLSOS Course No. 549, revised June 2024). We currently have only the manual's table of contents, not its full chapter text, so the list below reproduces the manual's own subtopic headings for this chapter rather than a verified content summary. Practice questions in this chapter are still draft/placeholder content pending verification against the actual chapter text.",
@@ -72,7 +490,7 @@
     },
     {
       "id": "chapter-4-survival-methods",
-      "title": "Chapter 4 — Understanding Survival Methods",
+      "title": "Chapter 4 \u2014 Understanding Survival Methods",
       "summary": "Manual Chapter 4: abandoning ship, immersion suits, cold water survival, rationing, and survival ashore.",
       "learn": {
         "concept": "This chapter corresponds to a chapter in the Water Survival Student Manual (SHLSOS Course No. 549, revised June 2024). We currently have only the manual's table of contents, not its full chapter text, so the list below reproduces the manual's own subtopic headings for this chapter rather than a verified content summary. Practice questions in this chapter are still draft/placeholder content pending verification against the actual chapter text.",
@@ -99,7 +517,7 @@
     },
     {
       "id": "chapter-5-signaling",
-      "title": "Chapter 5 — Signaling to Attract Attention",
+      "title": "Chapter 5 \u2014 Signaling to Attract Attention",
       "summary": "Manual Chapter 5: distress beacons, radios, Morse code, and lifesaving signal tables used to alert and guide rescuers.",
       "learn": {
         "concept": "This chapter corresponds to a chapter in the Water Survival Student Manual (SHLSOS Course No. 549, revised June 2024). We currently have only the manual's table of contents, not its full chapter text, so the list below reproduces the manual's own subtopic headings for this chapter rather than a verified content summary. Practice questions in this chapter are still draft/placeholder content pending verification against the actual chapter text.",
@@ -117,7 +535,7 @@
     },
     {
       "id": "chapter-6-being-rescued",
-      "title": "Chapter 6 — Being Rescued",
+      "title": "Chapter 6 \u2014 Being Rescued",
       "summary": "Manual Chapter 6: vessel and helicopter rescue procedures, medical evacuation, and drill/maintenance safety.",
       "learn": {
         "concept": "This chapter corresponds to a chapter in the Water Survival Student Manual (SHLSOS Course No. 549, revised June 2024). We currently have only the manual's table of contents, not its full chapter text, so the list below reproduces the manual's own subtopic headings for this chapter rather than a verified content summary. Practice questions in this chapter are still draft/placeholder content pending verification against the actual chapter text.",
@@ -131,7 +549,7 @@
     },
     {
       "id": "appendix-a-glossary",
-      "title": "Appendix A — Glossary / Vocabulary Review",
+      "title": "Appendix A \u2014 Glossary / Vocabulary Review",
       "summary": "Manual Appendix A: glossary and vocabulary review. This section now includes draft vocabulary practice inspired by intake material and still needs verification against the actual manual glossary.",
       "learn": {
         "concept": "This chapter corresponds to a chapter in the Water Survival Student Manual (SHLSOS Course No. 549, revised June 2024). We currently have only the manual's table of contents, not its full chapter text, so the list below reproduces the manual's own subtopic headings for this chapter rather than a verified content summary. Practice questions in this chapter are still draft/placeholder content pending verification against the actual chapter text. This appendix now includes a first batch of draft vocabulary questions inspired by intake material rather than the manual's own glossary text; it is included here so the topic structure matches the manual, and the questions should be revisited once the actual glossary text is available.",
@@ -203,7 +621,7 @@
       "correctChoiceId": "a",
       "difficulty": "easy",
       "hints": [
-        "Think about the word 'muster' — it relates to gathering people, not equipment.",
+        "Think about the word 'muster' \u2014 it relates to gathering people, not equipment.",
         "It answers: where do I go, and what is my job, during an emergency?"
       ],
       "explanation": "A muster list assigns each person a specific station and duty (e.g., lifeboat crew, passenger assistance) for use during drills and real emergencies."
@@ -269,7 +687,7 @@
       "correctChoiceId": "a",
       "difficulty": "easy",
       "hints": [
-        "It's designed to be unmistakable — short, sharp, and repeated, then one long tone.",
+        "It's designed to be unmistakable \u2014 short, sharp, and repeated, then one long tone.",
         "Count: several short blasts, then a single long one."
       ],
       "explanation": "The general emergency alarm is seven (or more) short blasts followed by one long blast. The tempting wrong answer, a single long blast, is actually associated with other alarm types and would delay recognition that this specific signal means 'proceed to muster stations.' Misconception tested: treating all shipboard alarms as interchangeable instead of recognizing this signal's distinct pattern."
@@ -291,7 +709,7 @@
         {
           "id": "c",
           "text": "Tell them drills are only for crew, not passengers",
-          "misconception": "Incorrect — passenger drills exist specifically because passengers need muster familiarity too."
+          "misconception": "Incorrect \u2014 passenger drills exist specifically because passengers need muster familiarity too."
         },
         {
           "id": "d",
@@ -302,10 +720,10 @@
       "correctChoiceId": "a",
       "difficulty": "medium",
       "hints": [
-        "The value of a drill isn't the drill itself — it's what it trains for.",
+        "The value of a drill isn't the drill itself \u2014 it's what it trains for.",
         "Half-hearted drills produce half-hearted real responses."
       ],
-      "explanation": "Treating a drill exactly like the real event is what builds the automatic, low-panic response needed during an actual emergency. The tempting distractor — letting them skip it — is wrong because muster familiarity has to be built before an emergency, not looked up during one. Misconception tested: believing a drill's value lies in the drill itself rather than in the response habits it builds."
+      "explanation": "Treating a drill exactly like the real event is what builds the automatic, low-panic response needed during an actual emergency. The tempting distractor \u2014 letting them skip it \u2014 is wrong because muster familiarity has to be built before an emergency, not looked up during one. Misconception tested: believing a drill's value lies in the drill itself rather than in the response habits it builds."
     },
     {
       "id": "q-ep-6",
@@ -371,7 +789,7 @@
         "Ask: has the incident actually started yet?",
         "Only one of these four happens before anything has gone wrong."
       ],
-      "explanation": "Reviewing a muster assignment during a scheduled drill happens before any real incident — that's preparedness. The other three all happen after an emergency has already started, making them response actions. Misconception tested: assuming any safety-related action counts as 'preparedness' regardless of whether an incident is already underway."
+      "explanation": "Reviewing a muster assignment during a scheduled drill happens before any real incident \u2014 that's preparedness. The other three all happen after an emergency has already started, making them response actions. Misconception tested: assuming any safety-related action counts as 'preparedness' regardless of whether an incident is already underway."
     },
     {
       "id": "q-ep-8",
@@ -390,7 +808,7 @@
         {
           "id": "c",
           "text": "Assume it's a false alarm since you don't have your assignment memorized yet",
-          "misconception": "Treats an unfamiliar situation as a reason to disregard a safety signal, which is backwards — unfamiliarity is a reason to move toward help, not away from it."
+          "misconception": "Treats an unfamiliar situation as a reason to disregard a safety signal, which is backwards \u2014 unfamiliarity is a reason to move toward help, not away from it."
         },
         {
           "id": "d",
@@ -404,7 +822,7 @@
         "Not knowing your exact assignment yet doesn't mean you should stay put.",
         "The general muster area is where you get accounted for and told what to do next."
       ],
-      "explanation": "When you don't have your specific assignment memorized, the correct move is still to get to the general muster area quickly so you're accounted for and can be directed — not to delay looking for paperwork or wait passively. Misconception tested: believing you need complete information before you can safely act, when getting to a known assembly point is itself the correct first action."
+      "explanation": "When you don't have your specific assignment memorized, the correct move is still to get to the general muster area quickly so you're accounted for and can be directed \u2014 not to delay looking for paperwork or wait passively. Misconception tested: believing you need complete information before you can safely act, when getting to a known assembly point is itself the correct first action."
     },
     {
       "id": "q-ep-9",
@@ -423,7 +841,7 @@
         {
           "id": "c",
           "text": "Abandon the task immediately in whatever state it's in, even if that leaves it unsafe",
-          "misconception": "Trades one safety risk for another — leaving a hazard behind is not actually faster or safer than a few seconds spent securing it."
+          "misconception": "Trades one safety risk for another \u2014 leaving a hazard behind is not actually faster or safer than a few seconds spent securing it."
         },
         {
           "id": "d",
@@ -434,10 +852,10 @@
       "correctChoiceId": "a",
       "difficulty": "hard",
       "hints": [
-        "The best answer isn't 'drop everything' or 'finish everything' — it's neither extreme.",
+        "The best answer isn't 'drop everything' or 'finish everything' \u2014 it's neither extreme.",
         "A task left in a dangerous state is its own hazard."
       ],
-      "explanation": "The best answer threads the needle: secure the task so it isn't left as a hazard, then respond to the drill exactly as you would a real emergency. The tempting distractor — abandoning it in an unsafe state — sounds fast and compliant but actually just trades a drilled emergency for a real one. Misconception tested: assuming 'respond immediately' means 'skip every other consideration,' rather than 'don't create a new hazard on your way out.'"
+      "explanation": "The best answer threads the needle: secure the task so it isn't left as a hazard, then respond to the drill exactly as you would a real emergency. The tempting distractor \u2014 abandoning it in an unsafe state \u2014 sounds fast and compliant but actually just trades a drilled emergency for a real one. Misconception tested: assuming 'respond immediately' means 'skip every other consideration,' rather than 'don't create a new hazard on your way out.'"
     },
     {
       "id": "q-ep-10",
@@ -456,7 +874,7 @@
         {
           "id": "c",
           "text": "Because untrained people are legally forbidden from helping in any way",
-          "misconception": "Overstates the restriction — untrained people can still assist, just not perform specialized duties they haven't trained for."
+          "misconception": "Overstates the restriction \u2014 untrained people can still assist, just not perform specialized duties they haven't trained for."
         },
         {
           "id": "d",
@@ -484,7 +902,7 @@
         {
           "id": "b",
           "text": "Leave the passenger immediately to report to your lifeboat station, since duty-station reporting always comes first",
-          "misconception": "Treats 'report to your station first' as an absolute rule, when accounted-for passenger safety and moving toward assembly points are compatible with — not opposed to — reaching your duty."
+          "misconception": "Treats 'report to your station first' as an absolute rule, when accounted-for passenger safety and moving toward assembly points are compatible with \u2014 not opposed to \u2014 reaching your duty."
         },
         {
           "id": "c",
@@ -500,10 +918,10 @@
       "correctChoiceId": "a",
       "difficulty": "very-hard",
       "hints": [
-        "This isn't a choice between duty and helping — both are possible at once.",
+        "This isn't a choice between duty and helping \u2014 both are possible at once.",
         "The trap answer sounds procedurally correct ('report to your station') but misapplies the rule."
       ],
-      "explanation": "The best answer recognizes that assisting a vulnerable passenger toward the muster point and fulfilling your crew duty are not in conflict — you do both by escorting them there. The most tempting wrong answer treats 'report to your station' as an inflexible rule that overrides passenger safety, but that's a misapplication: your duty resumes once you're at the muster area, and getting a passenger who needs help to that same area is part of a coordinated response, not a distraction from it. Misconception tested: treating 'go straight to your assigned post' as always meaning 'without regard for someone who needs help along the way.'"
+      "explanation": "The best answer recognizes that assisting a vulnerable passenger toward the muster point and fulfilling your crew duty are not in conflict \u2014 you do both by escorting them there. The most tempting wrong answer treats 'report to your station' as an inflexible rule that overrides passenger safety, but that's a misapplication: your duty resumes once you're at the muster area, and getting a passenger who needs help to that same area is part of a coordinated response, not a distraction from it. Misconception tested: treating 'go straight to your assigned post' as always meaning 'without regard for someone who needs help along the way.'"
     },
     {
       "id": "q-ep-12",
@@ -522,7 +940,7 @@
         {
           "id": "c",
           "text": "Eliminate fear responses entirely so no one feels afraid during a real emergency",
-          "misconception": "Overclaims what drilling accomplishes — fear isn't eliminated, but panic-driven mistakes are reduced."
+          "misconception": "Overclaims what drilling accomplishes \u2014 fear isn't eliminated, but panic-driven mistakes are reduced."
         },
         {
           "id": "d",
@@ -533,10 +951,10 @@
       "correctChoiceId": "a",
       "difficulty": "very-hard",
       "hints": [
-        "It's not really about moving faster — it's about deciding faster and more correctly.",
+        "It's not really about moving faster \u2014 it's about deciding faster and more correctly.",
         "Drilling doesn't remove fear; it changes what fear-driven behavior looks like."
       ],
-      "explanation": "The core benefit of repeated drilling is reducing the cognitive load of decision-making under stress, so trained responses take over instead of improvised, panic-driven ones. The tempting distractor about 'moving faster' captures a side effect but misses the actual mechanism — it's decision quality, not raw speed, that drilling mainly improves. Misconception tested: equating the benefit of drilling with physical speed rather than with reduced panic-driven decision errors."
+      "explanation": "The core benefit of repeated drilling is reducing the cognitive load of decision-making under stress, so trained responses take over instead of improvised, panic-driven ones. The tempting distractor about 'moving faster' captures a side effect but misses the actual mechanism \u2014 it's decision quality, not raw speed, that drilling mainly improves. Misconception tested: equating the benefit of drilling with physical speed rather than with reduced panic-driven decision errors."
     },
     {
       "id": "q-lb-1",
@@ -602,7 +1020,7 @@
         "Consider what occupants need to survive for an extended period, not just float.",
         "Required equipment lists cover both immediate safety and extended survival."
       ],
-      "explanation": "Lifeboats must carry food, water, signaling equipment, and first aid supplies, since survival time — not just flotation — is the point of required equipment lists."
+      "explanation": "Lifeboats must carry food, water, signaling equipment, and first aid supplies, since survival time \u2014 not just flotation \u2014 is the point of required equipment lists."
     },
     {
       "id": "q-lb-3",
@@ -632,7 +1050,7 @@
       "correctChoiceId": "a",
       "difficulty": "medium",
       "hints": [
-        "Think past the moment of launch — what happens hours later while awaiting rescue?",
+        "Think past the moment of launch \u2014 what happens hours later while awaiting rescue?",
         "Equipment supports the survival period, not just the boat's structural integrity."
       ],
       "explanation": "A lifeboat that floats but has no food, water, or signaling equipment doesn't solve the real problem: surviving until rescue arrives. Equipment requirements address that extended survival window."
@@ -710,11 +1128,11 @@
       "choices": [
         {
           "id": "a",
-          "text": "No — knowing equipment exists and is stocked is different from being able to use it correctly under stress"
+          "text": "No \u2014 knowing equipment exists and is stocked is different from being able to use it correctly under stress"
         },
         {
           "id": "b",
-          "text": "Yes — a completed checklist means the crew is automatically capable of using everything on it",
+          "text": "Yes \u2014 a completed checklist means the crew is automatically capable of using everything on it",
           "misconception": "Confuses equipment presence/knowledge with trained, stress-tested proficiency using it."
         },
         {
@@ -732,9 +1150,9 @@
       "difficulty": "medium",
       "hints": [
         "This is the difference between equipment KNOWLEDGE and equipment USE under stress.",
-        "A checklist confirms what's there — it doesn't confirm who can operate it calmly during a real emergency."
+        "A checklist confirms what's there \u2014 it doesn't confirm who can operate it calmly during a real emergency."
       ],
-      "explanation": "A signed-off equipment checklist confirms the required items are present and in serviceable condition — it does not by itself confirm crew members can operate that equipment competently under real stress. That gap is exactly why drills, not just inspections, are required. Misconception tested: equating equipment knowledge/inventory with hands-on proficiency under pressure."
+      "explanation": "A signed-off equipment checklist confirms the required items are present and in serviceable condition \u2014 it does not by itself confirm crew members can operate that equipment competently under real stress. That gap is exactly why drills, not just inspections, are required. Misconception tested: equating equipment knowledge/inventory with hands-on proficiency under pressure."
     },
     {
       "id": "q-lb-7",
@@ -758,7 +1176,7 @@
         {
           "id": "d",
           "text": "Enclosure prevents any water from ever entering the boat",
-          "misconception": "Overstates what enclosure achieves — it reduces exposure, but boats are still built to handle some water ingress and remain stable."
+          "misconception": "Overstates what enclosure achieves \u2014 it reduces exposure, but boats are still built to handle some water ingress and remain stable."
         }
       ],
       "correctChoiceId": "a",
@@ -767,7 +1185,7 @@
         "Think about survival time again, not just the moment of launch.",
         "Weather and spray exposure over hours is a major factor in survivor condition."
       ],
-      "explanation": "Enclosure primarily protects occupants from weather, wind, and spray over what could be a long wait for rescue — a direct extension of the 'survival time matters' design principle. It doesn't make the boat waterproof or faster; it manages exposure. Misconception tested: assuming full enclosure means full water exclusion, rather than reduced exposure."
+      "explanation": "Enclosure primarily protects occupants from weather, wind, and spray over what could be a long wait for rescue \u2014 a direct extension of the 'survival time matters' design principle. It doesn't make the boat waterproof or faster; it manages exposure. Misconception tested: assuming full enclosure means full water exclusion, rather than reduced exposure."
     },
     {
       "id": "q-lb-8",
@@ -776,7 +1194,7 @@
       "choices": [
         {
           "id": "a",
-          "text": "Report it and have the water replaced before departure — expired provisions can't be relied on in an emergency"
+          "text": "Report it and have the water replaced before departure \u2014 expired provisions can't be relied on in an emergency"
         },
         {
           "id": "b",
@@ -800,7 +1218,7 @@
         "The goal of equipment checks is usability in a real emergency, not just presence on a list.",
         "One of these options solves the problem; the others avoid it in different ways."
       ],
-      "explanation": "Expired provisions should be replaced before departure — the point of carrying water is that it's reliable when actually needed, not just present in the locker. Falsifying dates or deferring the fix both leave the real safety gap in place. Misconception tested: treating an equipment checklist as satisfied by presence alone, without regard to whether the item is still fit for use."
+      "explanation": "Expired provisions should be replaced before departure \u2014 the point of carrying water is that it's reliable when actually needed, not just present in the locker. Falsifying dates or deferring the fix both leave the real safety gap in place. Misconception tested: treating an equipment checklist as satisfied by presence alone, without regard to whether the item is still fit for use."
     },
     {
       "id": "q-lb-9",
@@ -833,7 +1251,7 @@
         "Rated capacity comes from the hull's buoyancy and stability, not from what's stocked inside.",
         "Two boats can carry the same survival kit but still safely hold different numbers of people."
       ],
-      "explanation": "Rated capacity is a function of the boat's structural buoyancy and stability, which can differ between boats even when their equipment lists match — equipment requirements are generally about survival needs per occupant, not the hull's physical limits. Misconception tested: assuming equipment and capacity are the same kind of measurement and must move together."
+      "explanation": "Rated capacity is a function of the boat's structural buoyancy and stability, which can differ between boats even when their equipment lists match \u2014 equipment requirements are generally about survival needs per occupant, not the hull's physical limits. Misconception tested: assuming equipment and capacity are the same kind of measurement and must move together."
     },
     {
       "id": "q-lb-10",
@@ -846,7 +1264,7 @@
         },
         {
           "id": "b",
-          "text": "There is no meaningful difference — if you know what a tool does, you can use it under any conditions",
+          "text": "There is no meaningful difference \u2014 if you know what a tool does, you can use it under any conditions",
           "misconception": "Ignores the well-documented gap between conceptual knowledge and stress-tested motor skill."
         },
         {
@@ -864,7 +1282,7 @@
       "difficulty": "hard",
       "hints": [
         "This is the same gap tested in the checklist question, applied to a specific tool.",
-        "Stress affects fine motor skills — that's true even for 'simple' equipment."
+        "Stress affects fine motor skills \u2014 that's true even for 'simple' equipment."
       ],
       "explanation": "Being able to describe or identify a piece of equipment is not the same as being able to operate it correctly under the stress, urgency, and possibly poor visibility of a real emergency. This is exactly why practiced, hands-on drilling with actual equipment matters more than reading a manual. Misconception tested: assuming conceptual/verbal knowledge of equipment transfers automatically into reliable performance under stress."
     },
@@ -896,7 +1314,7 @@
       "correctChoiceId": "a",
       "difficulty": "very-hard",
       "hints": [
-        "Don't treat this as all-or-nothing — identify exactly what's missing.",
+        "Don't treat this as all-or-nothing \u2014 identify exactly what's missing.",
         "Naming equipment is real knowledge; it just isn't the same skill as operating it."
       ],
       "explanation": "The best answer avoids both overclaiming (full readiness) and overcorrecting (dismissing real knowledge): this crew member has solid equipment knowledge but a specific, identifiable gap in hands-on operation of the bilge pump under real conditions. The tempting 'fully ready' answer conflates naming items with being able to use them. Misconception tested: assuming verbal/knowledge fluency about equipment is the same competency as physically operating it under pressure."
@@ -913,7 +1331,7 @@
         {
           "id": "b",
           "text": "The boat can now safely carry more people than before",
-          "misconception": "Confuses a provisions requirement change with a structural capacity change — the two are governed separately."
+          "misconception": "Confuses a provisions requirement change with a structural capacity change \u2014 the two are governed separately."
         },
         {
           "id": "c",
@@ -1028,7 +1446,7 @@
       "correctChoiceId": "a",
       "difficulty": "medium",
       "hints": [
-        "It's a rope, not equipment — think about what a rope does during launch.",
+        "It's a rope, not equipment \u2014 think about what a rope does during launch.",
         "It keeps the boat from drifting away uncontrolled before occupants are ready."
       ],
       "explanation": "The painter line is a rope that keeps the survival craft attached and controlled during and immediately after launch, preventing it from drifting away prematurely."
@@ -1116,7 +1534,7 @@
         {
           "id": "c",
           "text": "Refuse to board until the sea is completely calm",
-          "misconception": "Sets an unrealistic and unsafe precondition — a rough sea during an actual emergency won't necessarily calm down, and waiting indefinitely isn't a real option."
+          "misconception": "Sets an unrealistic and unsafe precondition \u2014 a rough sea during an actual emergency won't necessarily calm down, and waiting indefinitely isn't a real option."
         },
         {
           "id": "d",
@@ -1130,7 +1548,7 @@
         "This is a coordinated, crew-directed process, not an individual judgment call.",
         "Rough conditions call for more coordination, not less."
       ],
-      "explanation": "In choppy conditions, boarding timing should be directed by crew coordinating with the boat's motion, not decided individually — rough seas are exactly when uncoordinated action is most dangerous. Misconception tested: assuming a hazardous, dynamic situation calls for faster individual action rather than more careful coordination."
+      "explanation": "In choppy conditions, boarding timing should be directed by crew coordinating with the boat's motion, not decided individually \u2014 rough seas are exactly when uncoordinated action is most dangerous. Misconception tested: assuming a hazardous, dynamic situation calls for faster individual action rather than more careful coordination."
     },
     {
       "id": "q-launch-7",
@@ -1144,7 +1562,7 @@
         {
           "id": "b",
           "text": "They are functionally identical procedures with different names",
-          "misconception": "Collapses a meaningful procedural difference — davit-lowering with occupants aboard versus deploy-then-board — into a single process."
+          "misconception": "Collapses a meaningful procedural difference \u2014 davit-lowering with occupants aboard versus deploy-then-board \u2014 into a single process."
         },
         {
           "id": "c",
@@ -1163,7 +1581,7 @@
         "Think about when people get into each craft relative to when it enters the water.",
         "One process typically loads people first, then lowers; the other often deploys first, then loads."
       ],
-      "explanation": "Lifeboats are typically lowered by davits with occupants already aboard, using a controlled mechanical process. Liferafts are more often released and inflated first, then boarded — sometimes directly from the water — which calls for a different set of skills (like righting a capsized raft) that lifeboat launching doesn't require. Misconception tested: treating 'getting into a survival craft' as one uniform procedure regardless of craft type."
+      "explanation": "Lifeboats are typically lowered by davits with occupants already aboard, using a controlled mechanical process. Liferafts are more often released and inflated first, then boarded \u2014 sometimes directly from the water \u2014 which calls for a different set of skills (like righting a capsized raft) that lifeboat launching doesn't require. Misconception tested: treating 'getting into a survival craft' as one uniform procedure regardless of craft type."
     },
     {
       "id": "q-launch-8",
@@ -1196,7 +1614,7 @@
         "A fouled control line during a controlled lowering is worth pausing for.",
         "Cutting it removes the tool, it doesn't solve the tangle."
       ],
-      "explanation": "A fouled painter line during launch should be reported immediately so it can be cleared or the launch paused — it directly affects control of the boat once waterborne. Cutting it removes a needed safety line rather than fixing the actual problem. Misconception tested: assuming the fastest visible fix (cutting the line) is the same as the correct fix (clearing the fouling)."
+      "explanation": "A fouled painter line during launch should be reported immediately so it can be cleared or the launch paused \u2014 it directly affects control of the boat once waterborne. Cutting it removes a needed safety line rather than fixing the actual problem. Misconception tested: assuming the fastest visible fix (cutting the line) is the same as the correct fix (clearing the fouling)."
     },
     {
       "id": "q-launch-9",
@@ -1226,7 +1644,7 @@
       "correctChoiceId": "a",
       "difficulty": "hard",
       "hints": [
-        "Think about what options you have if someone is missing — before versus after launch.",
+        "Think about what options you have if someone is missing \u2014 before versus after launch.",
         "Once launched, going back for someone is far harder and riskier."
       ],
       "explanation": "Confirming personnel before launch means a missing person can still be searched for or waited on while options exist; after launch, the boat has limited ability to return, search, or delay. Misconception tested: assuming the timing of a safety check doesn't affect what options remain if something is wrong."
@@ -1259,15 +1677,15 @@
       "correctChoiceId": "a",
       "difficulty": "hard",
       "hints": [
-        "This isn't a choice between 'launch now' and 'wait forever' — it's about who makes that call.",
+        "This isn't a choice between 'launch now' and 'wait forever' \u2014 it's about who makes that call.",
         "A quick report preserves options; guessing or unilateral action removes them."
       ],
-      "explanation": "The correct first step is reporting the missing crew member to the officer coordinating the launch, who can decide whether to wait, search, or proceed with full picture of the situation — not deciding unilaterally to launch or to delay indefinitely, and not assuming the person is accounted for elsewhere without verification. Misconception tested: treating an individual boat's crew as having full authority or full information to make an abandon-ship timing decision alone."
+      "explanation": "The correct first step is reporting the missing crew member to the officer coordinating the launch, who can decide whether to wait, search, or proceed with full picture of the situation \u2014 not deciding unilaterally to launch or to delay indefinitely, and not assuming the person is accounted for elsewhere without verification. Misconception tested: treating an individual boat's crew as having full authority or full information to make an abandon-ship timing decision alone."
     },
     {
       "id": "q-launch-11",
       "topicId": "chapter-2-using-lifeboats",
-      "prompt": "Which best explains why launching procedures emphasize controlled, sequenced actions (confirm clear area → confirm personnel → release) rather than the fastest possible sequence?",
+      "prompt": "Which best explains why launching procedures emphasize controlled, sequenced actions (confirm clear area \u2192 confirm personnel \u2192 release) rather than the fastest possible sequence?",
       "choices": [
         {
           "id": "a",
@@ -1295,7 +1713,7 @@
         "Each step in the sequence exists to catch a specific kind of problem before it becomes unrecoverable.",
         "This connects back to why launching is the highest-risk phase in the first place."
       ],
-      "explanation": "The sequence (clear area, then personnel, then release) exists because each check catches a different failure mode before an irreversible action (release) happens — skipping or reordering them increases risk during what's already the highest-injury-risk phase of abandon-ship. The tempting 'faster is always safer' answer gets the tradeoff backwards for this specific phase. Misconception tested: assuming speed and safety trade off the same way in every phase, rather than recognizing launch as a phase where sequence specifically protects against irreversible mistakes."
+      "explanation": "The sequence (clear area, then personnel, then release) exists because each check catches a different failure mode before an irreversible action (release) happens \u2014 skipping or reordering them increases risk during what's already the highest-injury-risk phase of abandon-ship. The tempting 'faster is always safer' answer gets the tradeoff backwards for this specific phase. Misconception tested: assuming speed and safety trade off the same way in every phase, rather than recognizing launch as a phase where sequence specifically protects against irreversible mistakes."
     },
     {
       "id": "q-launch-12",
@@ -1328,7 +1746,7 @@
         "Davit systems are designed with a backup for exactly this failure mode.",
         "Jumping from height into the water introduces a new, avoidable hazard."
       ],
-      "explanation": "A stuck release is a known failure mode that davit systems are built to handle via a manual/backup release procedure — the correct response is staying calm and seated while crew works that procedure, not jumping from height or assuming no fix exists. Misconception tested: assuming a mechanical failure means no safe procedure remains, when backup systems exist precisely for this scenario."
+      "explanation": "A stuck release is a known failure mode that davit systems are built to handle via a manual/backup release procedure \u2014 the correct response is staying calm and seated while crew works that procedure, not jumping from height or assuming no fix exists. Misconception tested: assuming a mechanical failure means no safe procedure remains, when backup systems exist precisely for this scenario."
     },
     {
       "id": "q-raft-1",
@@ -1358,7 +1776,7 @@
       "correctChoiceId": "a",
       "difficulty": "easy",
       "hints": [
-        "Capsized means upside down — think about what must happen before it's usable.",
+        "Capsized means upside down \u2014 think about what must happen before it's usable.",
         "You may need to right the raft before it can be boarded safely."
       ],
       "explanation": "A capsized raft must typically be righted (flipped back over, often via a righting strap) before it can be safely boarded."
@@ -1462,7 +1880,7 @@
         "It's triggered by water pressure at a certain depth, not by a person.",
         "It's a backup for when no one can manually launch the raft."
       ],
-      "explanation": "A hydrostatic release unit uses water pressure to automatically free the raft (and can trigger inflation) if the vessel sinks before anyone manually deploys it — a critical backup, not a water, propulsion, or signaling device. Misconception tested: assuming a single piece of safety equipment must serve multiple unrelated survival functions."
+      "explanation": "A hydrostatic release unit uses water pressure to automatically free the raft (and can trigger inflation) if the vessel sinks before anyone manually deploys it \u2014 a critical backup, not a water, propulsion, or signaling device. Misconception tested: assuming a single piece of safety equipment must serve multiple unrelated survival functions."
     },
     {
       "id": "q-raft-5",
@@ -1481,12 +1899,12 @@
         {
           "id": "c",
           "text": "Staying at the edges makes the raft more stable",
-          "misconception": "Reverses the actual concern — the canopy protects from exposure, and there's no established stability benefit to sitting at the edges."
+          "misconception": "Reverses the actual concern \u2014 the canopy protects from exposure, and there's no established stability benefit to sitting at the edges."
         },
         {
           "id": "d",
           "text": "The open edges are only for signaling equipment and cannot be occupied",
-          "misconception": "Overstates a restriction — edges can be occupied, they're simply more exposed to weather."
+          "misconception": "Overstates a restriction \u2014 edges can be occupied, they're simply more exposed to weather."
         }
       ],
       "correctChoiceId": "a",
@@ -1514,7 +1932,7 @@
         {
           "id": "c",
           "text": "Lifeboat launch requires righting skills, while liferafts never capsize",
-          "misconception": "Reverses which craft is prone to needing righting — liferafts, not davit-launched lifeboats, are the ones that can capsize and need righting."
+          "misconception": "Reverses which craft is prone to needing righting \u2014 liferafts, not davit-launched lifeboats, are the ones that can capsize and need righting."
         },
         {
           "id": "d",
@@ -1558,10 +1976,10 @@
       "correctChoiceId": "a",
       "difficulty": "medium",
       "hints": [
-        "A capsized raft is still usable — it just needs to be flipped first.",
+        "A capsized raft is still usable \u2014 it just needs to be flipped first.",
         "Every minute in cold water increases hypothermia risk, so acting solo (if trained) is better than waiting."
       ],
-      "explanation": "A solo survivor should locate the righting strap and flip the raft before boarding — waiting for help prolongs cold-water exposure, and boarding it capsized or deflating it both leave you without a stable, usable craft. Misconception tested: treating a capsized (but intact) raft as unusable rather than as a raft needing one corrective step before boarding."
+      "explanation": "A solo survivor should locate the righting strap and flip the raft before boarding \u2014 waiting for help prolongs cold-water exposure, and boarding it capsized or deflating it both leave you without a stable, usable craft. Misconception tested: treating a capsized (but intact) raft as unusable rather than as a raft needing one corrective step before boarding."
     },
     {
       "id": "q-raft-8",
@@ -1580,7 +1998,7 @@
         {
           "id": "c",
           "text": "Rafts cannot be boarded from the water under any circumstances",
-          "misconception": "Overstates the limitation — boarding from the water is possible and sometimes necessary, just not preferred when an alternative exists."
+          "misconception": "Overstates the limitation \u2014 boarding from the water is possible and sometimes necessary, just not preferred when an alternative exists."
         },
         {
           "id": "d",
@@ -1594,7 +2012,7 @@
         "Every extra minute in cold water adds real risk.",
         "This connects directly to why hypothermia is the top survival priority."
       ],
-      "explanation": "Boarding directly avoids extra time immersed in cold water, directly reducing hypothermia risk — swimming to a raft is a real, sometimes necessary option, just not the preferred one when direct boarding is available. Misconception tested: treating exposure-time reduction as a comfort issue rather than a genuine survival-risk factor."
+      "explanation": "Boarding directly avoids extra time immersed in cold water, directly reducing hypothermia risk \u2014 swimming to a raft is a real, sometimes necessary option, just not the preferred one when direct boarding is available. Misconception tested: treating exposure-time reduction as a comfort issue rather than a genuine survival-risk factor."
     },
     {
       "id": "q-raft-9",
@@ -1627,7 +2045,7 @@
         "They fill with seawater, not drinking water, once in the water.",
         "Their weight underneath resists tipping."
       ],
-      "explanation": "Ballast bags fill with seawater and hang below the raft to lower its center of gravity and resist capsizing in rough conditions — they are not a drinking water reserve and should never be cut away. Misconception tested: confusing a stability feature that uses seawater with a drinking-water storage system that must be kept separate and sealed."
+      "explanation": "Ballast bags fill with seawater and hang below the raft to lower its center of gravity and resist capsizing in rough conditions \u2014 they are not a drinking water reserve and should never be cut away. Misconception tested: confusing a stability feature that uses seawater with a drinking-water storage system that must be kept separate and sealed."
     },
     {
       "id": "q-raft-10",
@@ -1636,7 +2054,7 @@
       "choices": [
         {
           "id": "a",
-          "text": "Help pull them aboard — rated capacity figures typically include a safety margin, and leaving an exhausted swimmer in cold water is a more immediate danger than minor overcrowding"
+          "text": "Help pull them aboard \u2014 rated capacity figures typically include a safety margin, and leaving an exhausted swimmer in cold water is a more immediate danger than minor overcrowding"
         },
         {
           "id": "b",
@@ -1660,7 +2078,7 @@
         "Rated capacity is a planning guideline, not a rule to enforce against a drowning risk.",
         "Compare the immediate risk of overcrowding versus the immediate risk of cold-water exhaustion."
       ],
-      "explanation": "In an actual emergency, helping an exhausted swimmer aboard is the correct call — capacity figures are planning guidance with built-in margin, and leaving someone in cold water is a more urgent danger than moderate overcrowding. Misconception tested: treating a capacity number as a hard operational limit rather than a planning guideline that can be reasonably exceeded briefly to save a life."
+      "explanation": "In an actual emergency, helping an exhausted swimmer aboard is the correct call \u2014 capacity figures are planning guidance with built-in margin, and leaving someone in cold water is a more urgent danger than moderate overcrowding. Misconception tested: treating a capacity number as a hard operational limit rather than a planning guideline that can be reasonably exceeded briefly to save a life."
     },
     {
       "id": "q-raft-11",
@@ -1693,7 +2111,7 @@
         "Think about where the weight is concentrated on a capsized raft.",
         "Leverage works better where there's already weight to pull against."
       ],
-      "explanation": "The CO2 bottle's weight is mounted on that specific side, so climbing there and pulling the righting strap uses that weight as a leverage point to flip the raft — it's a specific mechanical instruction, not an arbitrary or comfort-based one. Confirmed by an official source: the USCG/NMC Q445 Lifeboat Operator sample exam independently describes standing on the CO2 bottle as the correct righting technique. Misconception tested: assuming a specific procedural instruction is arbitrary rather than recognizing the physical/mechanical reason behind it.",
+      "explanation": "The CO2 bottle's weight is mounted on that specific side, so climbing there and pulling the righting strap uses that weight as a leverage point to flip the raft \u2014 it's a specific mechanical instruction, not an arbitrary or comfort-based one. Confirmed by an official source: the USCG/NMC Q445 Lifeboat Operator sample exam independently describes standing on the CO2 bottle as the correct righting technique. Misconception tested: assuming a specific procedural instruction is arbitrary rather than recognizing the physical/mechanical reason behind it.",
       "sourceReference": "Confirmed by USCG/NMC Q445 Lifeboat Operator Sample Exam (official)",
       "verificationStatus": "official-source-supported"
     },
@@ -1709,12 +2127,12 @@
         {
           "id": "b",
           "text": "Follow the suggestion, since removing wet clothing helps drying and drying is the priority",
-          "misconception": "Correctly identifies that wet clothing is a problem but wrongly concludes that exposure (rather than insulation) is the fix — removing coverage increases heat loss from wind and evaporation."
+          "misconception": "Correctly identifies that wet clothing is a problem but wrongly concludes that exposure (rather than insulation) is the fix \u2014 removing coverage increases heat loss from wind and evaporation."
         },
         {
           "id": "c",
           "text": "Do nothing, since violent shivering means the person is not in danger",
-          "misconception": "Misreads a warning sign as reassurance — shivering indicates significant cold stress, even though it also means the body is still responding."
+          "misconception": "Misreads a warning sign as reassurance \u2014 shivering indicates significant cold stress, even though it also means the body is still responding."
         },
         {
           "id": "d",
@@ -1728,7 +2146,7 @@
         "Shivering is the body's active defense against cold, not a sign of safety.",
         "The fix for wet-and-cold is insulation and wind protection, not more exposure."
       ],
-      "explanation": "Violent shivering means the body is still actively fighting to generate heat — the correct response is maximizing insulation and shelter from wind, not removing coverage or encouraging exercise, both of which increase heat loss. The tempting distractor about removing wet clothes has a grain of truth (wet clothing conducts heat away) but draws the wrong conclusion — the fix is dry insulation, not exposure. Misconception tested: treating shivering as either 'nothing to worry about' or as a cue to expose the person further, rather than recognizing it as an active cold-stress signal calling for more insulation."
+      "explanation": "Violent shivering means the body is still actively fighting to generate heat \u2014 the correct response is maximizing insulation and shelter from wind, not removing coverage or encouraging exercise, both of which increase heat loss. The tempting distractor about removing wet clothes has a grain of truth (wet clothing conducts heat away) but draws the wrong conclusion \u2014 the fix is dry insulation, not exposure. Misconception tested: treating shivering as either 'nothing to worry about' or as a cue to expose the person further, rather than recognizing it as an active cold-stress signal calling for more insulation."
     },
     {
       "id": "q-surv-1",
@@ -1869,7 +2287,7 @@
       "choices": [
         {
           "id": "a",
-          "text": "An immediate, involuntary reaction to sudden cold immersion — gasping and rapid breathing — in the first minute or so"
+          "text": "An immediate, involuntary reaction to sudden cold immersion \u2014 gasping and rapid breathing \u2014 in the first minute or so"
         },
         {
           "id": "b",
@@ -1879,7 +2297,7 @@
         {
           "id": "c",
           "text": "A delayed reaction that appears only after hours in the water",
-          "misconception": "Misplaces the timing — cold shock is immediate, not delayed."
+          "misconception": "Misplaces the timing \u2014 cold shock is immediate, not delayed."
         },
         {
           "id": "d",
@@ -1891,9 +2309,9 @@
       "difficulty": "easy",
       "hints": [
         "It happens in the first moments of hitting cold water, not hours later.",
-        "It's involuntary — your body reacts before you can control it."
+        "It's involuntary \u2014 your body reacts before you can control it."
       ],
-      "explanation": "Cold shock is the body's immediate, involuntary reaction to sudden cold immersion — gasping, rapid breathing, and panic in roughly the first minute — which is a different hazard from hypothermia's slower core-temperature loss. Misconception tested: treating cold shock and hypothermia as the same phenomenon rather than two distinct, sequential dangers."
+      "explanation": "Cold shock is the body's immediate, involuntary reaction to sudden cold immersion \u2014 gasping, rapid breathing, and panic in roughly the first minute \u2014 which is a different hazard from hypothermia's slower core-temperature loss. Misconception tested: treating cold shock and hypothermia as the same phenomenon rather than two distinct, sequential dangers."
     },
     {
       "id": "q-surv-6",
@@ -1912,12 +2330,12 @@
         {
           "id": "c",
           "text": "Hypothermia happens first, then leads to cold shock",
-          "misconception": "Reverses the actual sequence — cold shock is the immediate reaction, and hypothermia develops afterward if immersion continues."
+          "misconception": "Reverses the actual sequence \u2014 cold shock is the immediate reaction, and hypothermia develops afterward if immersion continues."
         },
         {
           "id": "d",
           "text": "Cold shock only affects breathing, while hypothermia only affects the skin",
-          "misconception": "Both oversimplifies and misplaces the effects — hypothermia affects core body temperature and cognition, not just skin."
+          "misconception": "Both oversimplifies and misplaces the effects \u2014 hypothermia affects core body temperature and cognition, not just skin."
         }
       ],
       "correctChoiceId": "a",
@@ -1959,7 +2377,7 @@
         "This is the immediate reflex response, not the slower core-temperature process.",
         "The danger in the first minute is breathing control, not muscle strength yet."
       ],
-      "explanation": "In the first minute, the cold shock reflex — involuntary gasping and hyperventilation — is the most immediate danger, since it can cause water inhalation if a wave or submersion catches the person off guard. Hypothermia-driven muscle failure is a real risk but develops later, after continued exposure. Misconception tested: applying a later-stage hypothermia effect to the acute first-minute window, when the immediate reflex response is the priority to manage."
+      "explanation": "In the first minute, the cold shock reflex \u2014 involuntary gasping and hyperventilation \u2014 is the most immediate danger, since it can cause water inhalation if a wave or submersion catches the person off guard. Hypothermia-driven muscle failure is a real risk but develops later, after continued exposure. Misconception tested: applying a later-stage hypothermia effect to the acute first-minute window, when the immediate reflex response is the priority to manage."
     },
     {
       "id": "q-surv-8",
@@ -1972,7 +2390,7 @@
         },
         {
           "id": "b",
-          "text": "There is no meaningful difference — all priorities matter equally at every moment",
+          "text": "There is no meaningful difference \u2014 all priorities matter equally at every moment",
           "misconception": "Ignores that some dangers are acute and time-critical while others only matter if survival extends over hours or days."
         },
         {
@@ -2001,7 +2419,7 @@
       "choices": [
         {
           "id": "a",
-          "text": "Their body is still actively generating heat through shivering — a sign of significant cold stress, but one where the body's defenses are still working"
+          "text": "Their body is still actively generating heat through shivering \u2014 a sign of significant cold stress, but one where the body's defenses are still working"
         },
         {
           "id": "b",
@@ -2011,7 +2429,7 @@
         {
           "id": "c",
           "text": "They are in the most severe stage of hypothermia",
-          "misconception": "Misreads an active defense response as the worst-case stage — severe hypothermia is actually marked by shivering STOPPING, not intensifying."
+          "misconception": "Misreads an active defense response as the worst-case stage \u2014 severe hypothermia is actually marked by shivering STOPPING, not intensifying."
         },
         {
           "id": "d",
@@ -2022,10 +2440,10 @@
       "correctChoiceId": "a",
       "difficulty": "hard",
       "hints": [
-        "Shivering is the body's active furnace — it means the defenses are still running.",
+        "Shivering is the body's active furnace \u2014 it means the defenses are still running.",
         "The scarier sign is when shivering STOPS, not when it's violent."
       ],
-      "explanation": "Violent shivering shows the body is actively defending its core temperature — it indicates real cold stress, but the mechanism is still working. This is different from severe hypothermia, where shivering actually stops as the body's systems begin to fail. Misconception tested: assuming more intense shivering means more severe/dangerous hypothermia, when the reverse warning sign (shivering stopping) is actually more concerning."
+      "explanation": "Violent shivering shows the body is actively defending its core temperature \u2014 it indicates real cold stress, but the mechanism is still working. This is different from severe hypothermia, where shivering actually stops as the body's systems begin to fail. Misconception tested: assuming more intense shivering means more severe/dangerous hypothermia, when the reverse warning sign (shivering stopping) is actually more concerning."
     },
     {
       "id": "q-surv-10",
@@ -2067,7 +2485,7 @@
       "choices": [
         {
           "id": "a",
-          "text": "Continue rationing on the planned schedule — eating fully now due to uncertainty is exactly the reasoning that rationing is designed to guard against"
+          "text": "Continue rationing on the planned schedule \u2014 eating fully now due to uncertainty is exactly the reasoning that rationing is designed to guard against"
         },
         {
           "id": "b",
@@ -2089,9 +2507,9 @@
       "difficulty": "hard",
       "hints": [
         "The uncertainty argument cuts the opposite way from how it's being used here.",
-        "Rationing exists because you don't know how long you'll wait — that's not a reason to abandon it."
+        "Rationing exists because you don't know how long you'll wait \u2014 that's not a reason to abandon it."
       ],
-      "explanation": "The uncertainty of rescue timing is exactly why rationing exists — using that same uncertainty to justify eating everything now inverts the logic. The best response holds the line on the planned rationing schedule. Misconception tested: using the reason FOR a safety practice as if it were a reason AGAINST it."
+      "explanation": "The uncertainty of rescue timing is exactly why rationing exists \u2014 using that same uncertainty to justify eating everything now inverts the logic. The best response holds the line on the planned rationing schedule. Misconception tested: using the reason FOR a safety practice as if it were a reason AGAINST it."
     },
     {
       "id": "q-surv-12",
@@ -2124,7 +2542,7 @@
         "Think about what happens to rationing discipline and safety compliance when a group loses hope.",
         "This connects psychological state to concrete survival behaviors, not just comfort."
       ],
-      "explanation": "Morale and cohesion are treated as real survival priorities because their breakdown tends to produce concrete bad outcomes — abandoning rationing discipline, ignoring safety procedures, or risky solo action — not because comfort itself is the goal. The tempting distractor treats morale as purely about how survivors feel rather than what they do as a result. Misconception tested: separating psychological state from the practical decisions it drives, when in a survival context the two are directly connected."
+      "explanation": "Morale and cohesion are treated as real survival priorities because their breakdown tends to produce concrete bad outcomes \u2014 abandoning rationing discipline, ignoring safety procedures, or risky solo action \u2014 not because comfort itself is the goal. The tempting distractor treats morale as purely about how survivors feel rather than what they do as a result. Misconception tested: separating psychological state from the practical decisions it drives, when in a survival context the two are directly connected."
     },
     {
       "id": "q-sig-1",
@@ -2188,7 +2606,7 @@
       "difficulty": "medium",
       "hints": [
         "Think radar, not long-range alerting.",
-        "SART is for close-range location once rescuers are already in the search area — this is the key difference from an EPIRB."
+        "SART is for close-range location once rescuers are already in the search area \u2014 this is the key difference from an EPIRB."
       ],
       "explanation": "A SART (Search and Rescue Transponder) creates a distinctive radar signature that helps a nearby rescue vessel pinpoint survivors' exact location, complementing the long-range alerting role of an EPIRB."
     },
@@ -2289,7 +2707,7 @@
         "Think 'nearby and visible,' not 'far away and automatic.'",
         "It's meant to be seen, not heard or transmitted electronically."
       ],
-      "explanation": "A handheld flare is a short-range visual signal meant to draw attention from nearby vessels or aircraft to your exact position — it isn't a long-range alerting device or a general-purpose survival tool. Misconception tested: assuming all signaling equipment serves the same long-range alerting function as an EPIRB."
+      "explanation": "A handheld flare is a short-range visual signal meant to draw attention from nearby vessels or aircraft to your exact position \u2014 it isn't a long-range alerting device or a general-purpose survival tool. Misconception tested: assuming all signaling equipment serves the same long-range alerting function as an EPIRB."
     },
     {
       "id": "q-sig-6",
@@ -2319,10 +2737,10 @@
       "correctChoiceId": "a",
       "difficulty": "medium",
       "hints": [
-        "You have a limited number of flares — think about when they'll do the most good.",
+        "You have a limited number of flares \u2014 think about when they'll do the most good.",
         "A flare fired when no one is around to see it is a flare you won't have later."
       ],
-      "explanation": "Flares and similar devices are limited resources, so they're most valuable when used at a moment a rescuer can actually see them — firing them constantly wastes a limited resource on moments no one may be watching. Misconception tested: treating a limited-use signaling resource as unlimited or equally effective regardless of timing."
+      "explanation": "Flares and similar devices are limited resources, so they're most valuable when used at a moment a rescuer can actually see them \u2014 firing them constantly wastes a limited resource on moments no one may be watching. Misconception tested: treating a limited-use signaling resource as unlimited or equally effective regardless of timing."
     },
     {
       "id": "q-sig-7",
@@ -2331,7 +2749,7 @@
       "choices": [
         {
           "id": "a",
-          "text": "Signaling (waving, using devices, staying alert to spot rescuers) takes effort and attention; conserving energy means limiting unnecessary activity — the two must be balanced, not maximized simultaneously"
+          "text": "Signaling (waving, using devices, staying alert to spot rescuers) takes effort and attention; conserving energy means limiting unnecessary activity \u2014 the two must be balanced, not maximized simultaneously"
         },
         {
           "id": "b",
@@ -2346,13 +2764,13 @@
         {
           "id": "d",
           "text": "Conserving energy means never attempting to signal at all",
-          "misconception": "Overcorrects in the other direction — energy conservation doesn't mean abandoning signaling when a real opportunity arises."
+          "misconception": "Overcorrects in the other direction \u2014 energy conservation doesn't mean abandoning signaling when a real opportunity arises."
         }
       ],
       "correctChoiceId": "a",
       "difficulty": "medium",
       "hints": [
-        "Both matter — the skill is knowing when to lean toward one over the other.",
+        "Both matter \u2014 the skill is knowing when to lean toward one over the other.",
         "Constant signaling with no one around wastes the same energy you'll need later."
       ],
       "explanation": "Signaling and energy conservation are both real priorities that can compete: active signaling (watching, waving, using devices) costs energy and attention, so survivors need to judge when a signaling opportunity is real versus when conserving energy for a later, more promising moment makes more sense. Misconception tested: treating these two priorities as identical, or resolving the tension by always favoring one extreme over the other."
@@ -2385,10 +2803,10 @@
       "correctChoiceId": "a",
       "difficulty": "medium",
       "hints": [
-        "Fog defeats visual signals specifically — that changes the timing calculation.",
+        "Fog defeats visual signals specifically \u2014 that changes the timing calculation.",
         "The flare isn't worthless, it's just not useful at this specific moment."
       ],
-      "explanation": "Fog specifically defeats visual signaling, so firing a limited flare into fog with no rescuer visible wastes it at the worst possible moment — the better move is conserving it for a moment of actual visibility or audible proximity. Misconception tested: treating 'any chance, however poor' as equivalent to a real signaling opportunity, rather than recognizing that fog specifically neutralizes this device's effectiveness."
+      "explanation": "Fog specifically defeats visual signaling, so firing a limited flare into fog with no rescuer visible wastes it at the worst possible moment \u2014 the better move is conserving it for a moment of actual visibility or audible proximity. Misconception tested: treating 'any chance, however poor' as equivalent to a real signaling opportunity, rather than recognizing that fog specifically neutralizes this device's effectiveness."
     },
     {
       "id": "q-sig-9",
@@ -2402,7 +2820,7 @@
         {
           "id": "b",
           "text": "Audible signals always have longer range than visual ones in all conditions",
-          "misconception": "Overgeneralizes — visual signals like flares can be seen from much farther away in clear conditions than a voice or whistle can carry."
+          "misconception": "Overgeneralizes \u2014 visual signals like flares can be seen from much farther away in clear conditions than a voice or whistle can carry."
         },
         {
           "id": "c",
@@ -2421,7 +2839,7 @@
         "Think about what fog blocks versus what it doesn't block as effectively.",
         "The right signal type depends on the specific condition, not a fixed ranking."
       ],
-      "explanation": "In heavy fog or very low visibility, sound can reach a nearby rescuer even when they couldn't see a flare or mirror at that distance — the choice of signal type should adapt to conditions rather than always defaulting to the same device. Misconception tested: assuming one signal type is universally superior rather than recognizing that different conditions favor different signal types."
+      "explanation": "In heavy fog or very low visibility, sound can reach a nearby rescuer even when they couldn't see a flare or mirror at that distance \u2014 the choice of signal type should adapt to conditions rather than always defaulting to the same device. Misconception tested: assuming one signal type is universally superior rather than recognizing that different conditions favor different signal types."
     },
     {
       "id": "q-sig-10",
@@ -2454,7 +2872,7 @@
         "One signal type is defeated by cloud cover; the other isn't.",
         "Save the limited resource for the moment it's more likely to work."
       ],
-      "explanation": "Sound can travel through cloud cover in a way visual signals can't, so the audible signal is the better immediate choice, while the flare — a limited resource that clouds would likely block from view — is better held in reserve for a moment of actual visibility. Misconception tested: applying a fixed 'strongest signal wins' rule instead of matching signal choice to the specific condition (cloud cover) actually present."
+      "explanation": "Sound can travel through cloud cover in a way visual signals can't, so the audible signal is the better immediate choice, while the flare \u2014 a limited resource that clouds would likely block from view \u2014 is better held in reserve for a moment of actual visibility. Misconception tested: applying a fixed 'strongest signal wins' rule instead of matching signal choice to the specific condition (cloud cover) actually present."
     },
     {
       "id": "q-sig-11",
@@ -2487,7 +2905,7 @@
         "A fading opportunity is still an opportunity, and it may be your best one for a while.",
         "This is a case where escalating, not conserving, is the better call."
       ],
-      "explanation": "When a potential rescuer appears to be moving away, escalating to the strongest available signal is usually worth it — this may be the best chance available for some time, and assuming you've already been seen or saving resources for a 'better' moment risks losing a real opportunity. Misconception tested: applying a general 'conserve resources' instinct even in a moment that specifically calls for escalation because the opportunity is actively fading."
+      "explanation": "When a potential rescuer appears to be moving away, escalating to the strongest available signal is usually worth it \u2014 this may be the best chance available for some time, and assuming you've already been seen or saving resources for a 'better' moment risks losing a real opportunity. Misconception tested: applying a general 'conserve resources' instinct even in a moment that specifically calls for escalation because the opportunity is actively fading."
     },
     {
       "id": "q-sig-12",
@@ -2496,7 +2914,7 @@
       "choices": [
         {
           "id": "a",
-          "text": "Under stress, survivors may fumble device operation, misjudge timing, or panic-fire limited resources — skills that require practiced familiarity, not just knowing what the device is"
+          "text": "Under stress, survivors may fumble device operation, misjudge timing, or panic-fire limited resources \u2014 skills that require practiced familiarity, not just knowing what the device is"
         },
         {
           "id": "b",
@@ -2520,7 +2938,7 @@
         "This is the same equipment-knowledge-vs-stressed-use gap seen with lifeboat equipment, applied to signaling.",
         "Panic can affect timing and judgment even with 'simple' devices."
       ],
-      "explanation": "Knowing what a flare or mirror is meant to do doesn't guarantee calm, correctly-timed use of it during a real emergency — stress can cause fumbling, premature firing, or missed opportunities, which is why practiced familiarity (not just conceptual knowledge) matters. Misconception tested: assuming equipment simplicity or conceptual familiarity is sufficient for reliable performance under real stress."
+      "explanation": "Knowing what a flare or mirror is meant to do doesn't guarantee calm, correctly-timed use of it during a real emergency \u2014 stress can cause fumbling, premature firing, or missed opportunities, which is why practiced familiarity (not just conceptual knowledge) matters. Misconception tested: assuming equipment simplicity or conceptual familiarity is sufficient for reliable performance under real stress."
     },
     {
       "id": "q-rescue-1",
@@ -2652,7 +3070,7 @@
         "It's about moving a person, not storing or signaling anything.",
         "Think of it as the 'elevator' from the water or deck to the rescuer."
       ],
-      "explanation": "A rescue basket or sling is used to safely lift or transfer a survivor to a rescue vessel or aircraft — it's not related to provisions, signaling, or raft-righting equipment. Misconception tested: assuming all emergency-related equipment overlaps in function rather than serving one specific purpose."
+      "explanation": "A rescue basket or sling is used to safely lift or transfer a survivor to a rescue vessel or aircraft \u2014 it's not related to provisions, signaling, or raft-righting equipment. Misconception tested: assuming all emergency-related equipment overlaps in function rather than serving one specific purpose."
     },
     {
       "id": "q-rescue-5",
@@ -2685,7 +3103,7 @@
         "This connects to the same 'equipment knowledge vs. trained use under stress' idea seen elsewhere.",
         "Untrained help with specialized equipment can create new hazards instead of solving problems."
       ],
-      "explanation": "Untrained interference with rescue equipment — even well-meaning — can create unpredictable movement or new hazards, since the rescue crew is specifically trained to operate it safely and predictably. Misconception tested: assuming confidence or good intentions substitute for trained, coordinated equipment operation."
+      "explanation": "Untrained interference with rescue equipment \u2014 even well-meaning \u2014 can create unpredictable movement or new hazards, since the rescue crew is specifically trained to operate it safely and predictably. Misconception tested: assuming confidence or good intentions substitute for trained, coordinated equipment operation."
     },
     {
       "id": "q-rescue-6",
@@ -2715,10 +3133,10 @@
       "correctChoiceId": "a",
       "difficulty": "medium",
       "hints": [
-        "The rescue swimmer is trained specifically for this approach — let them lead it.",
+        "The rescue swimmer is trained specifically for this approach \u2014 let them lead it.",
         "Unnecessary movement toward them adds risk without adding benefit."
       ],
-      "explanation": "Survivors should stay calm, stay visible, and follow the rescue swimmer's specific instructions once they arrive — swimming out to meet them or trying to direct the rescue independently both undermine a process the rescue swimmer is specifically trained to lead. Misconception tested: assuming survivor initiative speeds up a rescue, when it often removes the rescuer's ability to control a coordinated approach."
+      "explanation": "Survivors should stay calm, stay visible, and follow the rescue swimmer's specific instructions once they arrive \u2014 swimming out to meet them or trying to direct the rescue independently both undermine a process the rescue swimmer is specifically trained to lead. Misconception tested: assuming survivor initiative speeds up a rescue, when it often removes the rescuer's ability to control a coordinated approach."
     },
     {
       "id": "q-rescue-7",
@@ -2732,7 +3150,7 @@
         {
           "id": "b",
           "text": "It's simply faster to do it one at a time",
-          "misconception": "Gets the reasoning backwards — one-at-a-time transfer is about control and safety, not raw speed."
+          "misconception": "Gets the reasoning backwards \u2014 one-at-a-time transfer is about control and safety, not raw speed."
         },
         {
           "id": "c",
@@ -2751,7 +3169,7 @@
         "Think about what could go wrong if several transfers were attempted simultaneously.",
         "This is about control and safety margins, not speed."
       ],
-      "explanation": "Sequential transfer lets the rescue crew control weight distribution, timing, and individual safety checks — attempting several transfers simultaneously would multiply the things that could go wrong at once. Confirmed by an official source: the USCG/NMC Q445 Lifeboat Operator sample exam specifically states that personnel transferring from an enclosed lifeboat to a rescue vessel should remain seated inside and transfer one person at a time. Misconception tested: assuming a safety-driven sequencing choice is really about speed or tradition rather than risk control.",
+      "explanation": "Sequential transfer lets the rescue crew control weight distribution, timing, and individual safety checks \u2014 attempting several transfers simultaneously would multiply the things that could go wrong at once. Confirmed by an official source: the USCG/NMC Q445 Lifeboat Operator sample exam specifically states that personnel transferring from an enclosed lifeboat to a rescue vessel should remain seated inside and transfer one person at a time. Misconception tested: assuming a safety-driven sequencing choice is really about speed or tradition rather than risk control.",
       "sourceReference": "Confirmed by USCG/NMC Q445 Lifeboat Operator Sample Exam (official)",
       "verificationStatus": "official-source-supported"
     },
@@ -2786,7 +3204,7 @@
         "Spinning from rotor wash is a normal, generally manageable occurrence, not an emergency in itself.",
         "The rescue crew, not the survivor, should manage the equipment's motion."
       ],
-      "explanation": "Basket spin from rotor wash is a common and typically manageable occurrence — the correct response is waiting for the rescue crew's guidance rather than grabbing at moving equipment or trying to intervene directly, both of which introduce new hazards. Misconception tested: treating a normal, expected equipment behavior as a crisis requiring survivor-initiated correction."
+      "explanation": "Basket spin from rotor wash is a common and typically manageable occurrence \u2014 the correct response is waiting for the rescue crew's guidance rather than grabbing at moving equipment or trying to intervene directly, both of which introduce new hazards. Misconception tested: treating a normal, expected equipment behavior as a crisis requiring survivor-initiated correction."
     },
     {
       "id": "q-rescue-9",
@@ -2819,7 +3237,7 @@
         "This connects back to why letting the equipment touch the water/vessel first matters in the first place.",
         "Forcing early contact undermines the exact precaution being taken."
       ],
-      "explanation": "The static-discharge precaution exists so any built-up charge dissipates before a person touches the equipment — deliberately forcing early contact defeats that purpose and risks exposing someone to the very shock the precaution is meant to prevent. Misconception tested: treating a specific electrical-safety precaution as a flexible suggestion rather than a sequence that has to happen in order to work."
+      "explanation": "The static-discharge precaution exists so any built-up charge dissipates before a person touches the equipment \u2014 deliberately forcing early contact defeats that purpose and risks exposing someone to the very shock the precaution is meant to prevent. Misconception tested: treating a specific electrical-safety precaution as a flexible suggestion rather than a sequence that has to happen in order to work."
     },
     {
       "id": "q-rescue-10",
@@ -2849,10 +3267,10 @@
       "correctChoiceId": "a",
       "difficulty": "hard",
       "hints": [
-        "A line 'within reach' is still usable — don't discount it because it wasn't a perfect throw.",
+        "A line 'within reach' is still usable \u2014 don't discount it because it wasn't a perfect throw.",
         "The safest path stays connected to the coordinated process already underway."
       ],
-      "explanation": "A heaving line landing within reach is still usable — the correct response is securing it as instructed rather than abandoning the raft to swim independently or waiting for a 'better' throw that may not come. Misconception tested: treating an imperfect but usable rescue attempt as a failure requiring independent action instead of simply using what's actually within reach."
+      "explanation": "A heaving line landing within reach is still usable \u2014 the correct response is securing it as instructed rather than abandoning the raft to swim independently or waiting for a 'better' throw that may not come. Misconception tested: treating an imperfect but usable rescue attempt as a failure requiring independent action instead of simply using what's actually within reach."
     },
     {
       "id": "q-rescue-11",
@@ -2876,16 +3294,16 @@
         {
           "id": "d",
           "text": "Once a survivor understands the equipment, they should take over directing their own rescue",
-          "misconception": "Confuses equipment knowledge with situational authority — knowing how a tool works doesn't provide the real-time coordination picture the rescue crew has."
+          "misconception": "Confuses equipment knowledge with situational authority \u2014 knowing how a tool works doesn't provide the real-time coordination picture the rescue crew has."
         }
       ],
       "correctChoiceId": "a",
       "difficulty": "very-hard",
       "hints": [
-        "This isn't about whether the survivor's knowledge is correct — it's about who has the bigger picture in the moment.",
+        "This isn't about whether the survivor's knowledge is correct \u2014 it's about who has the bigger picture in the moment.",
         "Equipment knowledge and situational/coordination authority are two different things."
       ],
-      "explanation": "Even a survivor with accurate equipment knowledge lacks the rescue crew's real-time situational picture — wind conditions, positioning, timing relative to other hazards — which is why following their direction remains correct regardless of the survivor's individual technical knowledge. The tempting distractor assumes equipment knowledge should translate into decision-making authority, which conflates two different kinds of expertise. Misconception tested: assuming technical/equipment knowledge is equivalent to situational command authority during a live rescue."
+      "explanation": "Even a survivor with accurate equipment knowledge lacks the rescue crew's real-time situational picture \u2014 wind conditions, positioning, timing relative to other hazards \u2014 which is why following their direction remains correct regardless of the survivor's individual technical knowledge. The tempting distractor assumes equipment knowledge should translate into decision-making authority, which conflates two different kinds of expertise. Misconception tested: assuming technical/equipment knowledge is equivalent to situational command authority during a live rescue."
     },
     {
       "id": "q-rescue-12",
@@ -2918,7 +3336,7 @@
         "This is a straightforward priority question once you strip away the distraction.",
         "People in danger always come before property, no matter how the request is phrased."
       ],
-      "explanation": "Rescue priority always keeps people who remain in danger ahead of retrieving property, no matter how the request is framed — the rescue crew should continue survivor recovery in sequence rather than pausing, voting, or diverting to retrieve luggage. Misconception tested: allowing a request framed with urgency ('first') to override the actual priority order of people-over-property during an active rescue."
+      "explanation": "Rescue priority always keeps people who remain in danger ahead of retrieving property, no matter how the request is framed \u2014 the rescue crew should continue survivor recovery in sequence rather than pausing, voting, or diverting to retrieve luggage. Misconception tested: allowing a request framed with urgency ('first') to override the actual priority order of people-over-property during an active rescue."
     },
     {
       "id": "q-gloss-pintle",
@@ -2932,7 +3350,7 @@
         {
           "id": "b",
           "text": "The socket fitting mounted on the boat that receives the rudder pin",
-          "misconception": "This describes the gudgeon, not the pintle — the two terms are a matched pair and easy to swap."
+          "misconception": "This describes the gudgeon, not the pintle \u2014 the two terms are a matched pair and easy to swap."
         },
         {
           "id": "c",
@@ -2948,7 +3366,7 @@
       "correctChoiceId": "a",
       "difficulty": "easy",
       "hints": [
-        "Pintle and gudgeon always come as a pair — one is the pin, one is the socket.",
+        "Pintle and gudgeon always come as a pair \u2014 one is the pin, one is the socket.",
         "Think of a door hinge: one part is the pin, the other is what it drops into."
       ],
       "explanation": "A pintle is the pin fitted to the rudder that drops into a matching socket (the gudgeon) mounted on the boat, forming the rudder's hinge. Misconception tested: swapping which term is the pin and which is the socket.",
@@ -2967,7 +3385,7 @@
         {
           "id": "b",
           "text": "The pin on the rudder itself that drops into a socket",
-          "misconception": "This describes the pintle, not the gudgeon — the two terms are a matched pair and easy to swap."
+          "misconception": "This describes the pintle, not the gudgeon \u2014 the two terms are a matched pair and easy to swap."
         },
         {
           "id": "c",
@@ -2997,7 +3415,7 @@
       "choices": [
         {
           "id": "a",
-          "text": "A drainage system — holes in the floor structure that let water flow through compartments toward the bilge"
+          "text": "A drainage system \u2014 holes in the floor structure that let water flow through compartments toward the bilge"
         },
         {
           "id": "b",
@@ -3021,7 +3439,7 @@
         "It's about water movement inside the hull, not flexibility.",
         "Think holes in the floor structure that let water reach the drain."
       ],
-      "explanation": "A limber system is a drainage arrangement — holes (limber holes) in the internal floor/frame structure that let water flow through compartments toward the bilge and drain plug, rather than pooling in isolated sections. Misconception tested: assuming 'limber' relates to flexibility rather than drainage.",
+      "explanation": "A limber system is a drainage arrangement \u2014 holes (limber holes) in the internal floor/frame structure that let water flow through compartments toward the bilge and drain plug, rather than pooling in isolated sections. Misconception tested: assuming 'limber' relates to flexibility rather than drainage.",
       "sourceReference": "SIU 2019 Practice Test intake, unverified",
       "verificationStatus": "draft-unverified"
     },
@@ -3089,7 +3507,7 @@
       "difficulty": "easy",
       "hints": [
         "It's a rope, not a person or a coating.",
-        "Its job is control — keeping the boat from drifting away uncontrolled."
+        "Its job is control \u2014 keeping the boat from drifting away uncontrolled."
       ],
       "explanation": "A sea painter is a line that keeps the lifeboat controlled and connected to the ship (or otherwise maneuverable) during launch and pickup. Misconception tested: taking 'painter' literally instead of as nautical terminology for this control line.",
       "sourceReference": "SIU 2019 Practice Test intake, unverified",
@@ -3123,7 +3541,7 @@
       "correctChoiceId": "a",
       "difficulty": "medium",
       "hints": [
-        "They're rigged where people board — the embarkation deck.",
+        "They're rigged where people board \u2014 the embarkation deck.",
         "Their job is steadying the boat against the ship's side, not sailing or signaling."
       ],
       "explanation": "Frapping lines are passed around the falls to steady the lifeboat and prevent it from swinging violently while it's being lowered, and are typically rigged at the embarkation deck. Confirmed by an official source: the USCG/NMC Q445 Lifeboat Operator sample exam independently states the same function and timing. Misconception tested: confusing them with sailing rigging (halyards) or unrelated launch hardware.",
@@ -3152,16 +3570,16 @@
         {
           "id": "d",
           "text": "Lines released before anyone boards, to make room for embarkation",
-          "misconception": "Reverses the correct sequence — tricing pendants hold the boat in for boarding and are released after embarkation, not before."
+          "misconception": "Reverses the correct sequence \u2014 tricing pendants hold the boat in for boarding and are released after embarkation, not before."
         }
       ],
       "correctChoiceId": "a",
       "difficulty": "medium",
       "hints": [
-        "They hold the boat in close to the ship — useful right up until boarding is done.",
+        "They hold the boat in close to the ship \u2014 useful right up until boarding is done.",
         "Think about the order: people board first, then this line is let go."
       ],
-      "explanation": "Tricing pendants hold the lifeboat snug against the ship's side (specifically at the embarkation deck) to make boarding safer, and are released only after all people have embarked — typically via a mechanism called the McCluny hook. Confirmed by an official source: the USCG/NMC Q445 Lifeboat Operator sample exam independently states the same purpose, and additionally identifies the release mechanism. Misconception tested: reversing the sequence, or confusing 'pendant' with a signal flag rather than a line/fitting.",
+      "explanation": "Tricing pendants hold the lifeboat snug against the ship's side (specifically at the embarkation deck) to make boarding safer, and are released only after all people have embarked \u2014 typically via a mechanism called the McCluny hook. Confirmed by an official source: the USCG/NMC Q445 Lifeboat Operator sample exam independently states the same purpose, and additionally identifies the release mechanism. Misconception tested: reversing the sequence, or confusing 'pendant' with a signal flag rather than a line/fitting.",
       "sourceReference": "SIU 2019 Practice Test intake; confirmed by USCG/NMC Q445 Lifeboat Operator Sample Exam (official)",
       "verificationStatus": "official-source-supported"
     },
@@ -3196,7 +3614,7 @@
         "Think about what could go wrong if the falls (lifting lines) go slack.",
         "The bars are a safety catch against accidental unhooking, not a speed or steering control."
       ],
-      "explanation": "Preventer bars are fitted to a lifeboat's releasing gear specifically to prevent accidental unhooking when the falls become slack — a real safety hazard if it happened unintentionally mid-launch. Misconception tested: attributing the bars to speed control or an unrelated hull/steering function.",
+      "explanation": "Preventer bars are fitted to a lifeboat's releasing gear specifically to prevent accidental unhooking when the falls become slack \u2014 a real safety hazard if it happened unintentionally mid-launch. Misconception tested: attributing the bars to speed control or an unrelated hull/steering function.",
       "sourceReference": "SIU 2019 Practice Test intake, unverified",
       "verificationStatus": "draft-unverified"
     },
@@ -3228,7 +3646,7 @@
       "correctChoiceId": "a",
       "difficulty": "medium",
       "hints": [
-        "It's rigid, not inflatable — that distinguishes it from a liferaft.",
+        "It's rigid, not inflatable \u2014 that distinguishes it from a liferaft.",
         "It supports survivors in the water rather than fully enclosing them."
       ],
       "explanation": "A lifefloat is a rigid lifesaving device that supports survivors in the water, distinct from both the enclosed lifeboat and the inflatable liferaft. Misconception tested: treating 'lifefloat,' 'liferaft,' and personal flotation devices as interchangeable terms for the same equipment.",
@@ -3263,10 +3681,10 @@
       "correctChoiceId": "a",
       "difficulty": "medium",
       "hints": [
-        "It's not a malfunction — every compass has this to some degree.",
+        "It's not a malfunction \u2014 every compass has this to some degree.",
         "It's the combined effect of two other named factors."
       ],
-      "explanation": "Compass error is the combined difference between the standard magnetic compass heading and the true heading — made up of variation (from the Earth's magnetic field) and deviation (from magnetic material on board). It's a normal, correctable factor, not a malfunction. Misconception tested: treating compass error as a defect rather than a predictable, combined navigational correction.",
+      "explanation": "Compass error is the combined difference between the standard magnetic compass heading and the true heading \u2014 made up of variation (from the Earth's magnetic field) and deviation (from magnetic material on board). It's a normal, correctable factor, not a malfunction. Misconception tested: treating compass error as a defect rather than a predictable, combined navigational correction.",
       "sourceReference": "SIU 2019 Practice Test intake, unverified",
       "verificationStatus": "draft-unverified"
     },
@@ -3301,7 +3719,7 @@
         "If this one item is missing, the boat can take on water the moment it's in the sea.",
         "It's simple, but easy to overlook under time pressure."
       ],
-      "explanation": "The drain plug is the single most important item to check before lowering — if it's missing or not seated, the boat can flood as soon as it's waterborne. Misconception tested: prioritizing a less time-critical check (paint, exact fuel level) over this simple but safety-critical one.",
+      "explanation": "The drain plug is the single most important item to check before lowering \u2014 if it's missing or not seated, the boat can flood as soon as it's waterborne. Misconception tested: prioritizing a less time-critical check (paint, exact fuel level) over this simple but safety-critical one.",
       "sourceReference": "SIU 2019 Practice Test intake, unverified",
       "verificationStatus": "draft-unverified"
     },
@@ -3369,7 +3787,7 @@
       "difficulty": "easy",
       "hints": [
         "Check the engine's own vital signs before doing anything else with it.",
-        "Pressure, temperature, and leaks — all engine-specific checks."
+        "Pressure, temperature, and leaks \u2014 all engine-specific checks."
       ],
       "explanation": "Right after starting the engine, check operating pressures and temperatures and check for leaks, before relying on the engine for anything else. Misconception tested: skipping this basic check in favor of testing speed or unrelated systems first.",
       "sourceReference": "SIU 2019 Practice Test intake, unverified",
@@ -3452,7 +3870,7 @@
       "choices": [
         {
           "id": "a",
-          "text": "Both protect against fire heat, but they are separate systems — the water spray system in particular is powered by the air supply, not by the sprinkler line"
+          "text": "Both protect against fire heat, but they are separate systems \u2014 the water spray system in particular is powered by the air supply, not by the sprinkler line"
         },
         {
           "id": "b",
@@ -3474,9 +3892,9 @@
       "difficulty": "medium",
       "hints": [
         "Both are about surviving a fire, but they're not the same plumbing.",
-        "One of them is NOT pressurized by the air supply system — that's the key distinguishing detail from this source."
+        "One of them is NOT pressurized by the air supply system \u2014 that's the key distinguishing detail from this source."
       ],
-      "explanation": "Per this unverified source, a covered lifeboat's sprinkler system and water spray system both protect against fire heat but are separate systems — notably, the air supply system does NOT pressurize the water spray system, which is a detail worth not confusing. Misconception tested: assuming all of a covered lifeboat's fire-protection features are powered by the same single system.",
+      "explanation": "Per this unverified source, a covered lifeboat's sprinkler system and water spray system both protect against fire heat but are separate systems \u2014 notably, the air supply system does NOT pressurize the water spray system, which is a detail worth not confusing. Misconception tested: assuming all of a covered lifeboat's fire-protection features are powered by the same single system.",
       "sourceReference": "SIU 2019 Practice Test intake, unverified",
       "verificationStatus": "draft-unverified"
     },
@@ -3492,7 +3910,7 @@
         {
           "id": "b",
           "text": "They are the same tank serving both purposes at once",
-          "misconception": "Merges two genuinely separate systems — buoyancy (structural, passive) and breathing air (active life-support with a firm time limit) — into one, which could lead someone to overestimate how long the breathing-air supply actually lasts."
+          "misconception": "Merges two genuinely separate systems \u2014 buoyancy (structural, passive) and breathing air (active life-support with a firm time limit) \u2014 into one, which could lead someone to overestimate how long the breathing-air supply actually lasts."
         },
         {
           "id": "c",
@@ -3509,9 +3927,9 @@
       "difficulty": "very-hard",
       "hints": [
         "One 'air tank' is about staying afloat; the other is about staying alive while breathing.",
-        "The breathing-air tank has a firm time limit — it is NOT indefinite protection from fire."
+        "The breathing-air tank has a firm time limit \u2014 it is NOT indefinite protection from fire."
       ],
-      "explanation": "This is a genuine, easy-to-miss distinction: general buoyancy air tanks are a structural feature that keeps the lifeboat afloat if flooded, while a totally enclosed lifeboat's separate breathing-air tank supplies occupants and the engine with only about ten minutes of air if the boat must pass through flames — not indefinite fire protection. Misconception tested: assuming 'air tank' always means the same thing, or that passing through flames is safe for any extended period. This ~10-minute figure and the tank distinction come from an unverified practice-test source and should be confirmed against Vinci's manual before being treated as exact.",
+      "explanation": "This is a genuine, easy-to-miss distinction: general buoyancy air tanks are a structural feature that keeps the lifeboat afloat if flooded, while a totally enclosed lifeboat's separate breathing-air tank supplies occupants and the engine with only about ten minutes of air if the boat must pass through flames \u2014 not indefinite fire protection. Misconception tested: assuming 'air tank' always means the same thing, or that passing through flames is safe for any extended period. This ~10-minute figure and the tank distinction come from an unverified practice-test source and should be confirmed against Vinci's manual before being treated as exact.",
       "sourceReference": "SIU 2019 Practice Test intake, unverified",
       "verificationStatus": "draft-unverified"
     },
@@ -3544,7 +3962,7 @@
       "difficulty": "very-hard",
       "hints": [
         "One cause is external (the Earth); one cause is internal (the vessel itself).",
-        "Compass error isn't a separate cause — it's the sum of the other two."
+        "Compass error isn't a separate cause \u2014 it's the sum of the other two."
       ],
       "explanation": "Variation is caused by the Earth's magnetic field and depends on geographic location; deviation is caused by magnetic material aboard the vessel and depends on the boat's heading; compass error is simply the combined effect of variation and deviation together. Misconception tested: treating these as interchangeable synonyms rather than as two distinct causes plus their combined total.",
       "sourceReference": "SIU 2019 Practice Test intake, unverified",
@@ -3581,7 +3999,7 @@
         "\"Self-righting\" doesn't mean \"righting no matter what occupants do.\"",
         "Two specific conditions: seated with belts on, and doors/hatches shut."
       ],
-      "explanation": "A self-righting lifeboat will return upright after a capsize provided all personnel are seated with seatbelts on and doors/hatches shut — it is not an unconditional guarantee regardless of occupant behavior. Misconception tested: assuming 'self-righting' means automatic righting no matter what, rather than a design feature that depends on occupants following specific safety conditions.",
+      "explanation": "A self-righting lifeboat will return upright after a capsize provided all personnel are seated with seatbelts on and doors/hatches shut \u2014 it is not an unconditional guarantee regardless of occupant behavior. Misconception tested: assuming 'self-righting' means automatic righting no matter what, rather than a design feature that depends on occupants following specific safety conditions.",
       "sourceReference": "SIU 2019 Practice Test intake, unverified",
       "verificationStatus": "draft-unverified"
     },
@@ -3602,7 +4020,7 @@
         {
           "id": "c",
           "text": "The sea painter is only useful once the ship has come to a complete stop",
-          "misconception": "Reverses the actual distinction — the sea painter is most useful specifically while the ship still has way on."
+          "misconception": "Reverses the actual distinction \u2014 the sea painter is most useful specifically while the ship still has way on."
         },
         {
           "id": "d",
@@ -3616,7 +4034,7 @@
         "One tool suits a moving ship; the other suits a stationary one.",
         "Match the tool to whether the ship is still making way or not."
       ],
-      "explanation": "The sea painter is the most useful tool for getting a lifeboat away from a ship that still has way on (is moving), while a boat hook is more useful when the ship is making no headway at all — the right tool depends on the ship's motion at that moment. Misconception tested: assuming one single tool is universally best regardless of whether the ship is moving or stationary.",
+      "explanation": "The sea painter is the most useful tool for getting a lifeboat away from a ship that still has way on (is moving), while a boat hook is more useful when the ship is making no headway at all \u2014 the right tool depends on the ship's motion at that moment. Misconception tested: assuming one single tool is universally best regardless of whether the ship is moving or stationary.",
       "sourceReference": "SIU 2019 Practice Test intake, unverified",
       "verificationStatus": "draft-unverified"
     },
@@ -3632,7 +4050,7 @@
         {
           "id": "b",
           "text": "It should be steered broadside to the sea for the smoothest ride",
-          "misconception": "Directly inverts the correct heading — broadside orientation in heavy seas is a capsize risk, not a comfort improvement."
+          "misconception": "Directly inverts the correct heading \u2014 broadside orientation in heavy seas is a capsize risk, not a comfort improvement."
         },
         {
           "id": "c",
@@ -3648,7 +4066,7 @@
       "correctChoiceId": "a",
       "difficulty": "hard",
       "hints": [
-        "\"Broadside\" means sideways-on to the waves — that's the dangerous orientation.",
+        "\"Broadside\" means sideways-on to the waves \u2014 that's the dangerous orientation.",
         "The safer heading points the bow toward the oncoming seas."
       ],
       "explanation": "In heavy seas, a motor lifeboat should be steered into the seas; steering broadside to the sea (sideways-on to the waves) risks capsizing. This is a heading decision, not primarily a speed decision. Misconception tested: assuming broadside orientation is more comfortable or that only speed (not heading) affects capsize risk.",
@@ -3658,11 +4076,11 @@
     {
       "id": "q-ch2-rottmer-hard",
       "topicId": "chapter-2-using-lifeboats",
-      "prompt": "On a lifeboat equipped with Rottmer-type releasing gear, what happens when the releasing lever is turned — and why does this matter?",
+      "prompt": "On a lifeboat equipped with Rottmer-type releasing gear, what happens when the releasing lever is turned \u2014 and why does this matter?",
       "choices": [
         {
           "id": "a",
-          "text": "Both falls release at the same time, even if the boat has not yet reached the water — so it must never be turned before the boat is safely waterborne"
+          "text": "Both falls release at the same time, even if the boat has not yet reached the water \u2014 so it must never be turned before the boat is safely waterborne"
         },
         {
           "id": "b",
@@ -3686,7 +4104,7 @@
         "This gear does not check whether the boat is in the water first.",
         "That's exactly why crew must be trained to control timing themselves, rather than relying on the gear to prevent an early release."
       ],
-      "explanation": "Rottmer-type releasing gear releases both falls simultaneously the moment the lever is turned, regardless of whether the boat has reached the water — there's no built-in interlock preventing an early release. This makes crew timing and training the actual safety control, not the gear itself. Misconception tested: assuming the releasing gear has a safety check that prevents premature release, when the responsibility for correct timing rests entirely on the crew operating it. Confirmed by an official source: the USCG/NMC Q445 Lifeboat Operator sample exam independently states the same fact.",
+      "explanation": "Rottmer-type releasing gear releases both falls simultaneously the moment the lever is turned, regardless of whether the boat has reached the water \u2014 there's no built-in interlock preventing an early release. This makes crew timing and training the actual safety control, not the gear itself. Misconception tested: assuming the releasing gear has a safety check that prevents premature release, when the responsibility for correct timing rests entirely on the crew operating it. Confirmed by an official source: the USCG/NMC Q445 Lifeboat Operator sample exam independently states the same fact.",
       "sourceReference": "SIU 2019 Practice Test intake; confirmed by USCG/NMC Q445 Lifeboat Operator Sample Exam (official)",
       "verificationStatus": "official-source-supported"
     },
@@ -3697,7 +4115,7 @@
       "choices": [
         {
           "id": "a",
-          "text": "The stern swings to port — a right-hand propeller's backing effect pulls it that way even with the rudder centered, which can surprise someone expecting the rudder alone to control direction"
+          "text": "The stern swings to port \u2014 a right-hand propeller's backing effect pulls it that way even with the rudder centered, which can surprise someone expecting the rudder alone to control direction"
         },
         {
           "id": "b",
@@ -3721,7 +4139,7 @@
         "This is a propeller effect, not primarily a rudder or wind effect.",
         "It's often surprising precisely because the rudder is centered and 'shouldn't' be doing anything."
       ],
-      "explanation": "With a right-hand propeller and the rudder held amidships, backing the lifeboat swings the stern to port — a propeller effect (sometimes called 'prop walk') that occurs independent of rudder position. It's worth knowing in advance specifically because it can surprise someone who expects a centered rudder to mean no directional pull. Misconception tested: assuming rudder position alone governs direction, or guessing the swing direction without having learned this specific propeller effect.",
+      "explanation": "With a right-hand propeller and the rudder held amidships, backing the lifeboat swings the stern to port \u2014 a propeller effect (sometimes called 'prop walk') that occurs independent of rudder position. It's worth knowing in advance specifically because it can surprise someone who expects a centered rudder to mean no directional pull. Misconception tested: assuming rudder position alone governs direction, or guessing the swing direction without having learned this specific propeller effect.",
       "sourceReference": "SIU 2019 Practice Test intake, unverified",
       "verificationStatus": "draft-unverified"
     },
@@ -3732,7 +4150,7 @@
       "choices": [
         {
           "id": "a",
-          "text": "The bilge and drain plug first — it's the simplest, most likely cause, and ruling it out quickly avoids wasting time investigating more complex causes first"
+          "text": "The bilge and drain plug first \u2014 it's the simplest, most likely cause, and ruling it out quickly avoids wasting time investigating more complex causes first"
         },
         {
           "id": "b",
@@ -3756,7 +4174,7 @@
         "Start with the simplest, most common explanation before assuming something more complex.",
         "This mirrors the same 'check the basics first' logic as the boat-plug question before launch."
       ],
-      "explanation": "The bilge and drain plug should be checked FIRST when water is rising, because it's the simplest and most likely cause — ruling it out quickly avoids wasted time chasing more complex explanations like an engine leak. Misconception tested: assuming a more complex or dramatic cause (engine failure) before ruling out the simple, common one, or assuming checking order doesn't matter.",
+      "explanation": "The bilge and drain plug should be checked FIRST when water is rising, because it's the simplest and most likely cause \u2014 ruling it out quickly avoids wasted time chasing more complex explanations like an engine leak. Misconception tested: assuming a more complex or dramatic cause (engine failure) before ruling out the simple, common one, or assuming checking order doesn't matter.",
       "sourceReference": "SIU 2019 Practice Test intake, unverified",
       "verificationStatus": "draft-unverified"
     },
@@ -3824,9 +4242,9 @@
       "difficulty": "medium",
       "hints": [
         "Three separate things: where it sits, what's near it, and what correction to apply.",
-        "All three matter equally — this isn't a 'pick the most important one' question."
+        "All three matter equally \u2014 this isn't a 'pick the most important one' question."
       ],
-      "explanation": "When using a lifeboat compass, you must set it on the centerline of the boat, keep metal objects away from it (to avoid deviation), and apply the correction for compass error. This exact three-part checklist appears independently in both the SIU 2019 practice-test intake and the official USCG/NMC Q445 Lifeboat Operator sample exam — a genuine multi-source agreement. Misconception tested: assuming only one of the three precautions really matters, or substituting unrelated storage/maintenance advice for actual in-use precautions.",
+      "explanation": "When using a lifeboat compass, you must set it on the centerline of the boat, keep metal objects away from it (to avoid deviation), and apply the correction for compass error. This exact three-part checklist appears independently in both the SIU 2019 practice-test intake and the official USCG/NMC Q445 Lifeboat Operator sample exam \u2014 a genuine multi-source agreement. Misconception tested: assuming only one of the three precautions really matters, or substituting unrelated storage/maintenance advice for actual in-use precautions.",
       "sourceReference": "SIU 2019 Practice Test intake; confirmed by USCG/NMC Q445 Lifeboat Operator Sample Exam (official)",
       "verificationStatus": "official-source-supported"
     },
@@ -3912,12 +4330,12 @@
         {
           "id": "b",
           "text": "3 liters per day, per person, for the whole voyage",
-          "misconception": "Confuses a one-time required stowage amount with an ongoing daily rate — this figure is the total supply carried, not a daily ration."
+          "misconception": "Confuses a one-time required stowage amount with an ongoing daily rate \u2014 this figure is the total supply carried, not a daily ration."
         },
         {
           "id": "c",
           "text": "1 pint per person, matching liferaft rationing rules exactly",
-          "misconception": "Conflates the lifeboat's required stowed water supply with a liferaft daily-rationing figure — these are two different facts about two different situations."
+          "misconception": "Conflates the lifeboat's required stowed water supply with a liferaft daily-rationing figure \u2014 these are two different facts about two different situations."
         },
         {
           "id": "d",
@@ -3931,7 +4349,7 @@
         "This is the total amount required to be carried, not a daily consumption rate.",
         "Don't confuse this with any separate rule about how to ration water once adrift."
       ],
-      "explanation": "On an international voyage, a lifeboat on an oceangoing vessel is required to carry 3 liters of water per person — this is the required stowed supply, a different fact from any daily rationing rate used once survivors are actually adrift (which is a separate question of how to pace consumption of whatever supply is on board). Misconception tested: merging the total-required-supply figure with a daily-rationing-rate figure, when they answer different questions.",
+      "explanation": "On an international voyage, a lifeboat on an oceangoing vessel is required to carry 3 liters of water per person \u2014 this is the required stowed supply, a different fact from any daily rationing rate used once survivors are actually adrift (which is a separate question of how to pace consumption of whatever supply is on board). Misconception tested: merging the total-required-supply figure with a daily-rationing-rate figure, when they answer different questions.",
       "sourceReference": "USCG/NMC Q445 Lifeboat Operator Sample Exam (official)",
       "verificationStatus": "official-source-supported"
     },
@@ -3966,7 +4384,7 @@
         "A rescue sling typically requires the patient to hold on and stay upright.",
         "A hypothermic patient may be too weak or impaired to use it safely."
       ],
-      "explanation": "A rescue sling should be avoided when hoisting a hypothermic patient, because it typically requires the person being hoisted to actively hold on and support themselves — something a hypothermic, weakened, or semi-conscious patient may not be able to do safely. Devices like the litter, basket, or net are designed to fully support a patient who can't help with their own lift. Misconception tested: assuming any standard hoist device works equally well regardless of the patient's physical condition.",
+      "explanation": "A rescue sling should be avoided when hoisting a hypothermic patient, because it typically requires the person being hoisted to actively hold on and support themselves \u2014 something a hypothermic, weakened, or semi-conscious patient may not be able to do safely. Devices like the litter, basket, or net are designed to fully support a patient who can't help with their own lift. Misconception tested: assuming any standard hoist device works equally well regardless of the patient's physical condition.",
       "sourceReference": "USCG/NMC Q445 Lifeboat Operator Sample Exam (official)",
       "verificationStatus": "official-source-supported"
     },
@@ -4109,7 +4527,7 @@
       "hints": [
         "Think about an international crew where not everyone shares a first language."
       ],
-      "explanation": "Standardized IMO pictograms let safety information be understood at a glance by anyone aboard, regardless of what language they read — important on vessels with multinational crews or passengers.",
+      "explanation": "Standardized IMO pictograms let safety information be understood at a glance by anyone aboard, regardless of what language they read \u2014 important on vessels with multinational crews or passengers.",
       "sourceReference": "Import Pack 001 (SHLSOS Course No. 549 Student Manual, pages 9-11) -- confirmed verified by course operator, 2026-07-06",
       "verificationStatus": "course-verified",
       "conceptId": "concept-ch1-006",
