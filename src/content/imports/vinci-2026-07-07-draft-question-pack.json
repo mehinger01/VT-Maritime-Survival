@@ -16,10 +16,25 @@
       "image": "/content/vinci/2026-07-07/2026-07-07_030301.jpg",
       "imageAlt": "Photo of an IMO/LSA lifesaving safety symbol pictogram chart from the Vinci 2026-07-07 source batch",
       "choices": [
-        { "id": "a", "text": "Green marks life-saving equipment or its location; blue/purple marks an operating instruction" },
-        { "id": "b", "text": "Green marks operating instructions; blue/purple marks equipment locations", "misconception": "Reverses the actual color coding shown on the chart." },
-        { "id": "c", "text": "Green is for personal flotation devices only; blue/purple is for signaling equipment only", "misconception": "Invents a device-category split instead of the real function-based (location vs. instruction) split." },
-        { "id": "d", "text": "The color has no fixed meaning and varies by ship", "misconception": "Assumes the pictograms aren't standardized, when IMO/LSA symbol color-coding is consistent across ships." }
+        {
+          "id": "a",
+          "text": "Green marks life-saving equipment or its location; blue/purple marks an operating instruction"
+        },
+        {
+          "id": "b",
+          "text": "Green marks operating instructions; blue/purple marks equipment locations",
+          "misconception": "Reverses the actual color coding shown on the chart."
+        },
+        {
+          "id": "c",
+          "text": "Green is for personal flotation devices only; blue/purple is for signaling equipment only",
+          "misconception": "Invents a device-category split instead of the real function-based (location vs. instruction) split."
+        },
+        {
+          "id": "d",
+          "text": "The color has no fixed meaning and varies by ship",
+          "misconception": "Assumes the pictograms aren't standardized, when IMO/LSA symbol color-coding is consistent across ships."
+        }
       ],
       "correctChoiceId": "a",
       "difficulty": "medium",
@@ -32,142 +47,29 @@
       "verificationStatus": "draft-unverified"
     },
     {
-      "id": "q-vinci-coi-lifeboatmen-4160",
-      "topicId": "chapter-1-planning-ahead",
-      "prompt": "Per the Certificate of Inspection table shown here, how many certified lifeboatmen are required for a lifeboat with a capacity of 41-60 persons?",
-      "image": "/content/vinci/2026-07-07/2026-07-07_033837.jpg",
-      "imageAlt": "Photo of a sample C.O.I. (Certificate of Inspection) lifeboat-capacity / certified-lifeboatmen table from the Vinci 2026-07-07 source batch",
-      "choices": [
-        { "id": "a", "text": "3" },
-        { "id": "b", "text": "2", "misconception": "Applies the 26-40 person band's requirement to the 41-60 band instead." },
-        { "id": "c", "text": "4", "misconception": "Applies the 61-85 person band's requirement to the 41-60 band instead." },
-        { "id": "d", "text": "5", "misconception": "Applies the 86-110 person band's requirement to the 41-60 band instead." }
-      ],
-      "correctChoiceId": "a",
-      "difficulty": "hard",
-      "hints": [
-        "This comes from a step table on the C.O.I. where the required lifeboatmen count increases by one person per capacity band.",
-        "Bands: 1-25 -> 1, 26-40 -> 2, 41-60 -> 3, 61-85 -> 4, 86-110 -> 5, 110+ -> 6."
-      ],
-      "explanation": "A vessel's C.O.I. lists the minimum number of certified lifeboatmen required per lifeboat capacity band. The bands step up by one lifeboatman as capacity increases: 1-25 persons needs 1, 26-40 needs 2, 41-60 needs 3, 61-85 needs 4, 86-110 needs 5, and 110+ needs 6.",
-      "sourceReference": "Vinci source batch 2026-07-07, image 2026-07-07_033837.jpg (chapter-1-planning-ahead, C.O.I. sample document and lifeboat-capacity/certified-lifeboatmen table); see src/content/imports/vinci-2026-07-07-verification-map.json",
-      "verificationStatus": "draft-unverified"
-    },
-    {
-      "id": "q-vinci-partial-vs-total-enclosed",
-      "topicId": "chapter-2-using-lifeboats",
-      "prompt": "What distinguishes a PARTIALLY enclosed lifeboat from a TOTALLY enclosed lifeboat?",
-      "image": "/content/vinci/2026-07-07/2026-07-07_034357.jpg",
-      "imageAlt": "Photo of a lifeboat-types page (partially enclosed and totally enclosed lifeboats) from the Vinci 2026-07-07 source batch",
-      "choices": [
-        { "id": "a", "text": "A partially enclosed boat has a permanent rigid cover on only part of its sides plus a foldable canopy that can fully enclose it; a totally enclosed boat has a full rigid watertight cover with boarding hatches, windows, and seat belts built in" },
-        { "id": "b", "text": "A partially enclosed boat has no cover at all; a totally enclosed boat has a foldable canvas canopy", "misconception": "Describes open vs. partially enclosed, not partially vs. totally enclosed." },
-        { "id": "c", "text": "The only real difference is the paint color used on the canopy", "misconception": "Ignores the actual structural/coverage difference between the two types." },
-        { "id": "d", "text": "A partially enclosed boat is only used on cargo ships; a totally enclosed boat is only used on passenger ships", "misconception": "Invents a ship-type restriction that isn't part of the actual distinction between the two lifeboat types." }
-      ],
-      "correctChoiceId": "a",
-      "difficulty": "medium",
-      "hints": [
-        "Both types have some kind of cover -- the question is how much is permanent/rigid versus foldable, and whether hatches/windows/seat belts are built in.",
-        "One type reaches full enclosure only when its canopy is folded up; the other is built fully enclosed from the start."
-      ],
-      "explanation": "Partially enclosed lifeboats have permanent rigid covers on at least 20% of both sides plus a foldable canopy that can fully enclose the boat, while totally enclosed lifeboats are built with a full rigid watertight cover, boarding hatches, windows, and seat safety belts as standard construction.",
-      "sourceReference": "Vinci source batch 2026-07-07, image 2026-07-07_034357.jpg (chapter-2-using-lifeboats, Lifeboat types -- Partially Enclosed and Totally Enclosed); see src/content/imports/vinci-2026-07-07-verification-map.json",
-      "verificationStatus": "draft-unverified"
-    },
-    {
-      "id": "q-vinci-bow-marking-blockcaps",
-      "topicId": "chapter-2-using-lifeboats",
-      "prompt": "Where and how must a lifeboat's vessel name be marked on the boat itself?",
-      "image": "/content/vinci/2026-07-07/2026-07-07_041458.jpg",
-      "imageAlt": "Photo of a lifeboat markings requirements page from the Vinci 2026-07-07 source batch",
-      "choices": [
-        { "id": "a", "text": "On both sides of the bow, in block capital letters (the home port is marked on the vessel's stern, not the lifeboat's bow)" },
-        { "id": "b", "text": "Only on the nameplate mounted inside the boat", "misconception": "Confuses the required bow marking with the separate nameplate, which instead lists manufacturer info, load weights, and persons allowed." },
-        { "id": "c", "text": "Only on the stern sheets, in cursive lettering", "misconception": "Invents an incorrect location and lettering style." },
-        { "id": "d", "text": "Nowhere on the lifeboat itself -- only on the ship's official paperwork", "misconception": "Assumes the marking lives only in documentation rather than being physically marked on the boat." }
-      ],
-      "correctChoiceId": "a",
-      "difficulty": "easy",
-      "hints": [
-        "This marking needs to be visible on the boat itself, not just on paperwork.",
-        "It's required on both sides of one specific end of the boat, in a specific lettering style."
-      ],
-      "explanation": "Each lifeboat's bow must be marked on both sides, in block capital letters and numbers, with the vessel's name (the home port itself is marked on the vessel's stern). This is separate from the lifeboat's own nameplate, which lists manufacturer info, load weights, and the number of persons allowed.",
-      "sourceReference": "Vinci source batch 2026-07-07, image 2026-07-07_041458.jpg (chapter-2-using-lifeboats, Markings -- required vessel name/port/persons/boat-number markings, nameplate contents); see src/content/imports/vinci-2026-07-07-verification-map.json",
-      "verificationStatus": "draft-unverified"
-    },
-    {
-      "id": "q-vinci-capacity-lesser-of-vh",
-      "topicId": "chapter-2-using-lifeboats",
-      "prompt": "A lifeboat's certified capacity is set by taking the LESSER of two separate calculations. What are they?",
-      "image": "/content/vinci/2026-07-07/2026-07-07_041663-3.jpg",
-      "imageAlt": "Photo of a lifeboat capacity-calculation page from the Vinci 2026-07-07 source batch",
-      "choices": [
-        { "id": "a", "text": "The number of persons of average mass (165 lbs on a passenger ship, 188 lbs on a cargo ship) who can be seated normally without interfering with propulsion/equipment, versus the number of available seating-arrangement spaces" },
-        { "id": "b", "text": "The GREATER, not the lesser, of the mass-based and seating-based calculations", "misconception": "Reverses the actual rule -- the lesser of the two is used, to avoid over-certifying capacity." },
-        { "id": "c", "text": "The number of persons at 188 lbs average on a passenger ship, or 165 lbs average on a cargo ship", "misconception": "Swaps which ship type uses which average-mass figure." },
-        { "id": "d", "text": "Only the seating-arrangement space count -- average body mass isn't part of the calculation at all", "misconception": "Drops the mass-based calculation entirely, when it's one of the two figures being compared." }
-      ],
-      "correctChoiceId": "a",
-      "difficulty": "very-hard",
-      "hints": [
-        "Two different numbers get calculated, and the smaller one wins -- this keeps a boat from being certified for more people than it can actually seat.",
-        "The average body mass used for the calculation isn't the same on a passenger ship as it is on a cargo ship."
-      ],
-      "explanation": "A lifeboat's capacity is the LESSER of: (1) the number of persons of average mass (165 lbs on a passenger ship, 188 lbs on a cargo ship) who can be seated normally without interfering with propulsion or equipment while wearing lifejackets, or (2) the number of available seating-arrangement spaces. Using the lesser of the two prevents a boat from being over-certified on paper capacity it can't actually seat safely.",
-      "sourceReference": "Vinci source batch 2026-07-07, image 2026-07-07_041663-3.jpg (chapter-2-using-lifeboats, Numbering and Capacity -- 150-person max, seating/mass rules); see src/content/imports/vinci-2026-07-07-verification-map.json",
-      "verificationStatus": "draft-unverified"
-    },
-    {
-      "id": "q-vinci-five-lifeboat-types",
-      "topicId": "chapter-2-using-lifeboats",
-      "prompt": "Which of the following is NOT one of the five recognized lifeboat types?",
-      "choices": [
-        { "id": "a", "text": "Totally enclosed fire protected" },
-        { "id": "b", "text": "Semi-submersible" },
-        { "id": "c", "text": "Partially enclosed", "misconception": "This is one of the five recognized types, not the odd one out." },
-        { "id": "d", "text": "Totally enclosed with self-contained air support", "misconception": "This is one of the five recognized types, not the odd one out." }
-      ],
-      "correctChoiceId": "b",
-      "difficulty": "easy",
-      "hints": [
-        "The five types range from fully open to fully enclosed, with two special totally-enclosed variants for air and fire protection.",
-        "One of these options describes a submarine-like design that isn't part of the standard lifeboat-type list at all."
-      ],
-      "explanation": "The five recognized lifeboat types are: open, partially enclosed, totally enclosed, totally enclosed with self-contained air support, and totally enclosed fire protected. 'Semi-submersible' is not one of the recognized categories.",
-      "sourceReference": "Vinci source batch 2026-07-07, image 2026-07-07_034357.jpg (chapter-2-using-lifeboats, Lifeboat types -- Partially Enclosed and Totally Enclosed); see src/content/imports/vinci-2026-07-07-verification-map.json",
-      "verificationStatus": "draft-unverified"
-    },
-    {
-      "id": "q-vinci-nonselfrighting-handholds",
-      "topicId": "chapter-2-using-lifeboats",
-      "prompt": "Non-self-righting lifeboats must have a safety feature that self-righting lifeboats aren't specifically required to have for this purpose. What is it?",
-      "choices": [
-        { "id": "a", "text": "Hand-holds (grab rails) fitted to the underside/bottom of the boat" },
-        { "id": "b", "text": "An extra buoyancy unit mounted under the keel", "misconception": "Invents an unrelated buoyancy fix instead of the actual underside hand-hold requirement." },
-        { "id": "c", "text": "A second rudder mounted upside down", "misconception": "Not a real lifeboat feature." },
-        { "id": "d", "text": "A louder engine alarm", "misconception": "Unrelated to capsize recovery." }
-      ],
-      "correctChoiceId": "a",
-      "difficulty": "easy",
-      "hints": [
-        "Not every lifeboat automatically flips back upright if capsized.",
-        "Survivors clinging to an overturned hull need something specific to hold onto."
-      ],
-      "explanation": "Because a non-self-righting lifeboat can remain capsized, it must have hand-holds (grab rails) on its bottom/underside so survivors clinging to the hull have something to hold onto -- a feature not specifically required in the same way on self-righting lifeboats.",
-      "sourceReference": "Vinci source batch 2026-07-07, images 2026-07-07_034357.jpg and 2026-07-07_041663-11.jpg (chapter-2-using-lifeboats, Lifeboat types; Exterior Rescue Features -- grab rail); see src/content/imports/vinci-2026-07-07-verification-map.json",
-      "verificationStatus": "draft-unverified"
-    },
-    {
       "id": "q-vinci-limber-holes",
       "topicId": "chapter-2-using-lifeboats",
       "prompt": "What are 'limber holes' in a lifeboat's construction?",
       "choices": [
-        { "id": "a", "text": "Openings in the floors (the athwartship ribs in the bilge) that let bilge water flow between compartments without going through the outer shell" },
-        { "id": "b", "text": "The buoyancy units mounted under the side benches", "misconception": "Confuses limber holes (drainage) with buoyancy units (flotation)." },
-        { "id": "c", "text": "Holes drilled in the gunwale for rigging oars", "misconception": "Invents an oar-related function limber holes don't serve." },
-        { "id": "d", "text": "The drain-plug fitting at the bottom of the hull", "misconception": "Confuses limber holes with the separate automatic drain / drain-plug fitting." }
+        {
+          "id": "a",
+          "text": "Openings in the floors (the athwartship ribs in the bilge) that let bilge water flow between compartments without going through the outer shell"
+        },
+        {
+          "id": "b",
+          "text": "The buoyancy units mounted under the side benches",
+          "misconception": "Confuses limber holes (drainage) with buoyancy units (flotation)."
+        },
+        {
+          "id": "c",
+          "text": "Holes drilled in the gunwale for rigging oars",
+          "misconception": "Invents an oar-related function limber holes don't serve."
+        },
+        {
+          "id": "d",
+          "text": "The drain-plug fitting at the bottom of the hull",
+          "misconception": "Confuses limber holes with the separate automatic drain / drain-plug fitting."
+        }
       ],
       "correctChoiceId": "a",
       "difficulty": "easy",
@@ -180,34 +82,28 @@
       "verificationStatus": "draft-unverified"
     },
     {
-      "id": "q-vinci-boarding-time-10-3",
-      "topicId": "chapter-2-using-lifeboats",
-      "prompt": "How quickly must a ship's full survival craft complement be able to board, per vessel type?",
-      "choices": [
-        { "id": "a", "text": "Passenger ships: within 10 minutes; cargo ships: within 3 minutes" },
-        { "id": "b", "text": "Passenger ships: within 3 minutes; cargo ships: within 10 minutes", "misconception": "Swaps the two boarding-time figures." },
-        { "id": "c", "text": "Both passenger and cargo ships: within 10 minutes", "misconception": "Ignores that cargo ships have a stricter (faster) boarding standard." },
-        { "id": "d", "text": "Both passenger and cargo ships: within 3 minutes", "misconception": "Ignores that passenger ships, with larger complements, are allowed more boarding time." }
-      ],
-      "correctChoiceId": "a",
-      "difficulty": "medium",
-      "hints": [
-        "Cargo ships carry smaller crews and must also provide extra lifeboat seats beyond their crew count -- both point toward a faster boarding standard.",
-        "The larger number belongs to the ship type with more people to move."
-      ],
-      "explanation": "Passenger ships must be able to board their full survival craft complement within 10 minutes, while cargo ships -- which carry smaller crews and must provide at least twice as many lifeboat seats as crew -- must be boardable within 3 minutes.",
-      "sourceReference": "Vinci source batch 2026-07-07, images 2026-07-07_034357.jpg and 2026-07-07_041663-4.jpg (chapter-2-using-lifeboats); see src/content/imports/vinci-2026-07-07-verification-map.json",
-      "verificationStatus": "draft-unverified"
-    },
-    {
       "id": "q-vinci-air-support-10min",
       "topicId": "chapter-2-using-lifeboats",
       "prompt": "On a totally enclosed lifeboat with a self-contained air support system, about how long does the air supply last once hatches and ventilation are properly secured?",
       "choices": [
-        { "id": "a", "text": "About 10 minutes, using slight positive pressure to keep out fumes and gases (the air is not recirculated)" },
-        { "id": "b", "text": "About 8 minutes, the same as the fire-protected water-spray duration", "misconception": "Swaps the air-support duration with the separate 8-minute fire-protected water-spray duration." },
-        { "id": "c", "text": "About 30 minutes" },
-        { "id": "d", "text": "Indefinitely, since the system recirculates air", "misconception": "The air in this system is explicitly not recirculated." }
+        {
+          "id": "a",
+          "text": "About 10 minutes, using slight positive pressure to keep out fumes and gases (the air is not recirculated)"
+        },
+        {
+          "id": "b",
+          "text": "About 8 minutes, the same as the fire-protected water-spray duration",
+          "misconception": "Swaps the air-support duration with the separate 8-minute fire-protected water-spray duration."
+        },
+        {
+          "id": "c",
+          "text": "About 30 minutes"
+        },
+        {
+          "id": "d",
+          "text": "Indefinitely, since the system recirculates air",
+          "misconception": "The air in this system is explicitly not recirculated."
+        }
       ],
       "correctChoiceId": "a",
       "difficulty": "medium",
@@ -224,10 +120,25 @@
       "topicId": "chapter-2-using-lifeboats",
       "prompt": "Why are diesel (compression-ignition) engines preferred over gasoline engines for lifeboats?",
       "choices": [
-        { "id": "a", "text": "Diesel fuel is less volatile, and diesel engines ignite fuel from the heat of compression rather than using spark plugs" },
-        { "id": "b", "text": "Diesel engines are quieter, which is the primary safety reason for their use", "misconception": "Invents a noise-based rationale rather than the actual fuel-volatility/ignition-method rationale." },
-        { "id": "c", "text": "Diesel engines don't require any fuel storage tank", "misconception": "Not a real distinction between diesel and gasoline engines." },
-        { "id": "d", "text": "Gasoline engines can't produce enough horsepower for a lifeboat", "misconception": "Invents a power-output rationale rather than the actual fuel-safety rationale." }
+        {
+          "id": "a",
+          "text": "Diesel fuel is less volatile, and diesel engines ignite fuel from the heat of compression rather than using spark plugs"
+        },
+        {
+          "id": "b",
+          "text": "Diesel engines are quieter, which is the primary safety reason for their use",
+          "misconception": "Invents a noise-based rationale rather than the actual fuel-volatility/ignition-method rationale."
+        },
+        {
+          "id": "c",
+          "text": "Diesel engines don't require any fuel storage tank",
+          "misconception": "Not a real distinction between diesel and gasoline engines."
+        },
+        {
+          "id": "d",
+          "text": "Gasoline engines can't produce enough horsepower for a lifeboat",
+          "misconception": "Invents a power-output rationale rather than the actual fuel-safety rationale."
+        }
       ],
       "correctChoiceId": "a",
       "difficulty": "medium",
@@ -240,94 +151,29 @@
       "verificationStatus": "draft-unverified"
     },
     {
-      "id": "q-vinci-stop-diesel-air",
-      "topicId": "chapter-2-using-lifeboats",
-      "prompt": "What is the quickest way to stop a lifeboat's diesel engine?",
-      "choices": [
-        { "id": "a", "text": "Shut off the air supply (pull the stop lever out)" },
-        { "id": "b", "text": "Turn the ignition key to 'off'", "misconception": "Assumes a spark-ignition-style shutdown, but diesel engines don't rely on an ignition spark to run." },
-        { "id": "c", "text": "Disconnect the fuel line at the tank", "misconception": "A slower, indirect method compared to the actual stop-lever action." },
-        { "id": "d", "text": "Shift the transmission into reverse", "misconception": "Confuses a propulsion control with an engine-stop control." }
-      ],
-      "correctChoiceId": "a",
-      "difficulty": "medium",
-      "hints": [
-        "Diesel engines ignite fuel using compression heat, not a spark -- so think about what starves that process.",
-        "There's a dedicated lever for this, separate from the throttle or ignition."
-      ],
-      "explanation": "Because a diesel engine ignites fuel from compression heat rather than a spark, cutting fuel or ignition alone won't stop it quickly. The quickest way to stop it is to shut off its air supply by pulling the stop lever, which starves the compression-ignition process immediately.",
-      "sourceReference": "Vinci source batch 2026-07-07, image 2026-07-07_041663-13.jpg (chapter-2-using-lifeboats, Propulsion Systems / Engine Powered Systems); see src/content/imports/vinci-2026-07-07-verification-map.json",
-      "verificationStatus": "draft-unverified"
-    },
-    {
-      "id": "q-vinci-rescueboat-speed-tow-hard",
-      "topicId": "chapter-2-using-lifeboats",
-      "prompt": "What are a rescue boat's required maneuvering speed and towing capability?",
-      "choices": [
-        { "id": "a", "text": "Able to maneuver at 6 knots for at least 4 hours, with a permanent towing arrangement able to tow the ship's largest fully loaded lifeboat at 2 knots" },
-        { "id": "b", "text": "Able to maneuver at 2 knots for 4 hours, towing the largest lifeboat at 6 knots", "misconception": "Swaps the cruising speed and the towing speed figures." },
-        { "id": "c", "text": "Able to maneuver at 6 knots for 4 hours, with no towing capability required", "misconception": "Drops the required permanent towing arrangement entirely." },
-        { "id": "d", "text": "Able to maneuver at 6 knots for 24 hours, matching a Class 1 motor lifeboat's fuel endurance", "misconception": "Confuses the rescue boat's 4-hour endurance figure with a Class 1 motor lifeboat's separate 24-hour fuel requirement." }
-      ],
-      "correctChoiceId": "a",
-      "difficulty": "hard",
-      "hints": [
-        "The rescue boat's normal cruising speed is faster than the speed it uses while towing a heavy, fully loaded lifeboat.",
-        "This endurance figure is measured in hours, not days -- don't confuse it with a lifeboat's fuel-duration requirement."
-      ],
-      "explanation": "A rescue boat must be able to maneuver at 6 knots for at least 4 hours and must have a permanently fitted towing arrangement able to tow the ship's largest fully loaded lifeboat at 2 knots -- two related but distinct speed figures that are easy to swap.",
-      "sourceReference": "Vinci source batch 2026-07-07, image 2026-07-07_034781.jpg (chapter-2-using-lifeboats, Totally Enclosed free-fall davit, Fast Rescue Boat); see src/content/imports/vinci-2026-07-07-verification-map.json",
-      "verificationStatus": "draft-unverified"
-    },
-    {
-      "id": "q-vinci-flashpoint-43c",
-      "topicId": "chapter-2-using-lifeboats",
-      "prompt": "A lifeboat engine may not use fuel with a flashpoint at or below what temperature?",
-      "choices": [
-        { "id": "a", "text": "43°C" },
-        { "id": "b", "text": "0°C", "misconception": "Understates the actual regulatory threshold." },
-        { "id": "c", "text": "100°C", "misconception": "Overstates the threshold, which would permit far more volatile fuels than allowed." },
-        { "id": "d", "text": "There is no flashpoint restriction on lifeboat engine fuel", "misconception": "Denies that a flashpoint restriction exists at all." }
-      ],
-      "correctChoiceId": "a",
-      "difficulty": "hard",
-      "hints": [
-        "This is a specific numeric threshold, not a general 'use common sense' rule.",
-        "It's meant to keep highly volatile, easily-ignited fuels out of a small enclosed survival craft."
-      ],
-      "explanation": "No engine may be used in a lifeboat if its fuel has a flashpoint of 43°C (about 109°F) or less -- a rule meant to keep highly volatile, easily-ignited fuels out of a small enclosed survival craft.",
-      "sourceReference": "Vinci source batch 2026-07-07, image 2026-07-07_041663-13.jpg (chapter-2-using-lifeboats, Propulsion Systems / Engine Powered Systems); see src/content/imports/vinci-2026-07-07-verification-map.json",
-      "verificationStatus": "draft-unverified"
-    },
-    {
-      "id": "q-vinci-extinguisher-classbc",
-      "topicId": "chapter-2-using-lifeboats",
-      "prompt": "Fire extinguishers stowed aboard engine-powered lifeboats are rated for which classes of fire?",
-      "choices": [
-        { "id": "a", "text": "Class B (flammable liquids, such as diesel) and Class C (electrical)" },
-        { "id": "b", "text": "Class A (ordinary combustibles) only", "misconception": "Assumes coverage for wood/paper-type fires rather than the actual diesel/electrical rating." },
-        { "id": "c", "text": "Class A, B, and C (all three)", "misconception": "Overstates the rated coverage." },
-        { "id": "d", "text": "Class D (combustible metals)", "misconception": "Assigns a fire class not relevant to a lifeboat's typical fire hazards." }
-      ],
-      "correctChoiceId": "a",
-      "difficulty": "hard",
-      "hints": [
-        "Think about what could actually catch fire on a small engine-powered survival craft: fuel and electrical systems.",
-        "The rating skips the 'ordinary combustibles' class entirely."
-      ],
-      "explanation": "Lifeboat fire extinguishers are stowed at each end of engine-powered lifeboats and are rated for Class B fires (flammable liquids like diesel fuel) and Class C fires (energized electrical equipment) -- the two fire hazards most relevant to a small engine-powered survival craft.",
-      "sourceReference": "Vinci source batch 2026-07-07, image 2026-07-07_041663-15.jpg (chapter-2-using-lifeboats, Propeller rotation and Safety Notes on Engine Powered Lifeboats); see src/content/imports/vinci-2026-07-07-verification-map.json",
-      "verificationStatus": "draft-unverified"
-    },
-    {
       "id": "q-vinci-togglepin-vs-pintlegudgeon",
       "topicId": "chapter-2-using-lifeboats",
       "prompt": "A lifeboat's tiller is attached to the top of the rudder by a toggle pin. What holds the rudder itself onto the boat's stern post?",
       "choices": [
-        { "id": "a", "text": "Pintles and gudgeons -- a separate set of metal fittings from the toggle pin" },
-        { "id": "b", "text": "The same toggle pin that attaches the tiller", "misconception": "Conflates the toggle pin (tiller-to-rudder) with the separate pintle/gudgeon hardware (rudder-to-stern-post)." },
-        { "id": "c", "text": "A Kort Nozzle", "misconception": "Confuses steering-hinge hardware with an unrelated propeller-guard/steering-aid fitting." },
-        { "id": "d", "text": "Nothing -- the rudder simply rests loose against the stern post", "misconception": "Ignores that the rudder is a fixed, hinged fitting, not a loose one." }
+        {
+          "id": "a",
+          "text": "Pintles and gudgeons -- a separate set of metal fittings from the toggle pin"
+        },
+        {
+          "id": "b",
+          "text": "The same toggle pin that attaches the tiller",
+          "misconception": "Conflates the toggle pin (tiller-to-rudder) with the separate pintle/gudgeon hardware (rudder-to-stern-post)."
+        },
+        {
+          "id": "c",
+          "text": "A Kort Nozzle",
+          "misconception": "Confuses steering-hinge hardware with an unrelated propeller-guard/steering-aid fitting."
+        },
+        {
+          "id": "d",
+          "text": "Nothing -- the rudder simply rests loose against the stern post",
+          "misconception": "Ignores that the rudder is a fixed, hinged fitting, not a loose one."
+        }
       ],
       "correctChoiceId": "a",
       "difficulty": "hard",
@@ -344,10 +190,25 @@
       "topicId": "chapter-2-using-lifeboats",
       "prompt": "A lifeboat's propeller can create an unwanted sideways 'paddlewheel effect.' When does this effect occur?",
       "choices": [
-        { "id": "a", "text": "When the propeller is running in reverse (backing down), not while propelling forward" },
-        { "id": "b", "text": "Only while propelling forward at full throttle", "misconception": "Reverses when the effect actually occurs." },
-        { "id": "c", "text": "Only when the engine is first started, regardless of gear", "misconception": "Unrelated to gear direction, which is what actually triggers the effect." },
-        { "id": "d", "text": "Equally in both forward and reverse gear", "misconception": "Ignores that the effect is specifically a reversing-gear phenomenon." }
+        {
+          "id": "a",
+          "text": "When the propeller is running in reverse (backing down), not while propelling forward"
+        },
+        {
+          "id": "b",
+          "text": "Only while propelling forward at full throttle",
+          "misconception": "Reverses when the effect actually occurs."
+        },
+        {
+          "id": "c",
+          "text": "Only when the engine is first started, regardless of gear",
+          "misconception": "Unrelated to gear direction, which is what actually triggers the effect."
+        },
+        {
+          "id": "d",
+          "text": "Equally in both forward and reverse gear",
+          "misconception": "Ignores that the effect is specifically a reversing-gear phenomenon."
+        }
       ],
       "correctChoiceId": "a",
       "difficulty": "very-hard",
@@ -358,26 +219,28 @@
       "explanation": "Propellers are designed to work efficiently producing thrust while propelling forward. When reversed, they operate inefficiently and generate an unwanted side thrust known as the 'paddlewheel effect' -- which is why backing a lifeboat under power requires compensating rudder action.",
       "sourceReference": "Vinci source batch 2026-07-07, image 2026-07-07_041663-14.jpg (chapter-2-using-lifeboats, Engine starting/stopping procedures; propeller-characteristics intro); see src/content/imports/vinci-2026-07-07-verification-map.json",
       "verificationStatus": "draft-unverified"
-    },
+    }
+  ],
+  "promotionHistory": [
     {
-      "id": "q-vinci-kortnozzle-dualfunction-vh",
-      "topicId": "chapter-2-using-lifeboats",
-      "prompt": "Modern totally enclosed lifeboats commonly use a rudder nozzle (Kort Nozzle) around the propeller. Besides improving steering control as thrust increases, what is its other required function?",
-      "choices": [
-        { "id": "a", "text": "It also serves as the required propeller guard, helping prevent fouling by debris" },
-        { "id": "b", "text": "It also functions as a buoyancy unit", "misconception": "Confuses the Kort Nozzle with the separate buoyancy units mounted under the side benches." },
-        { "id": "c", "text": "It also acts as the automatic self-righting mechanism", "misconception": "Confuses a propeller-guard fitting with an unrelated capsize-recovery feature." },
-        { "id": "d", "text": "It has no function beyond steering -- the propeller guard is always a separate fitting", "misconception": "Misses that the Kort Nozzle itself fulfills the propeller-guard requirement." }
+      "promotedDate": "2026-07-08",
+      "promotedCount": 12,
+      "promotedIds": [
+        "q-vinci-five-lifeboat-types",
+        "q-vinci-nonselfrighting-handholds",
+        "q-vinci-bow-marking-blockcaps",
+        "q-vinci-partial-vs-total-enclosed",
+        "q-vinci-boarding-time-10-3",
+        "q-vinci-stop-diesel-air",
+        "q-vinci-coi-lifeboatmen-4160",
+        "q-vinci-rescueboat-speed-tow-hard",
+        "q-vinci-flashpoint-43c",
+        "q-vinci-extinguisher-classbc",
+        "q-vinci-capacity-lesser-of-vh",
+        "q-vinci-kortnozzle-dualfunction-vh"
       ],
-      "correctChoiceId": "a",
-      "difficulty": "very-hard",
-      "hints": [
-        "This fitting wraps directly around the propeller, so think about what else that position could protect against.",
-        "It does double duty: one steering-related job, and one safety-related job."
-      ],
-      "explanation": "A Kort Nozzle does more than improve directional control as engine thrust increases -- it also serves as the lifeboat's required propeller guard, helping prevent the propeller from fouling on debris or lines in the water.",
-      "sourceReference": "Vinci source batch 2026-07-07, image 2026-07-07_041663-12.jpg (chapter-2-using-lifeboats, Steering Equipment -- tiller, rudder, pintle, gudgeon, Kort Nozzle, steering wheel); see src/content/imports/vinci-2026-07-07-verification-map.json",
-      "verificationStatus": "draft-unverified"
+      "promotedTo": "src/content/course.json (verificationStatus set to course-verified)",
+      "note": "First promotion wave per src/content/imports/vinci-2026-07-07-first-promotion-plan.md. The remaining 6 questions below stay in this file, inactive, pending the fixes/verification noted in vinci-2026-07-07-question-promotion-review.md (q-vinci-limber-holes and q-vinci-togglepin-vs-pintlegudgeon need a reframe; q-vinci-symbol-colorcode and q-vinci-paddlewheel-effect-vh need source/topic verification; q-vinci-diesel-vs-gas-safety and q-vinci-air-support-10min are approved but held for a deliberate second wave)."
     }
   ]
 }
