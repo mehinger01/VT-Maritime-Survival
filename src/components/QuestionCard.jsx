@@ -60,7 +60,7 @@ const SOURCE_BADGES = {
   'quiz-derived-study': { label: 'Quiz-derived study', className: 'source-confirmed' },
   'visual-study': { label: 'Visual study', className: 'source-confirmed' },
   'needs-review': { label: 'Needs review', className: 'source-unverified' },
-  'draft-unverified': { label: 'Unverified source — not yet confirmed', className: 'source-unverified' },
+  'draft-unverified': { label: 'Draft', className: 'source-unverified' },
   // Legacy statuses predating the study-app status model, still in live use.
   'practice-test-informed': { label: 'Practice-test source', className: 'source-unverified' },
   'multi-source-supported': { label: 'Confirmed by multiple sources', className: 'source-confirmed' },

@@ -93,10 +93,25 @@ function validateQuestion(q, index) {
     errors.push(`${label}: "verificationStatus" (${JSON.stringify(q.verificationStatus)}) is not a recognized status`)
   }
 
+  // sourceReference is optional (untagged questions predate this tracking),
+  // but if present it must be a real string, not an empty placeholder.
+  if (q.sourceReference !== undefined && (typeof q.sourceReference !== 'string' || q.sourceReference.trim() === '')) {
+    errors.push(`${label}: "sourceReference" must be a non-empty string when present`)
+  }
+
   return errors
 }
 
 const allErrors = questions.flatMap(validateQuestion)
+
+const idCounts = new Map()
+for (const q of questions) {
+  if (typeof q.id !== 'string' || q.id.trim() === '') continue
+  idCounts.set(q.id, (idCounts.get(q.id) ?? 0) + 1)
+}
+for (const [id, count] of idCounts) {
+  if (count > 1) allErrors.push(`duplicate question id "${id}" appears ${count} times`)
+}
 
 if (allErrors.length > 0) {
   console.error(`\n${allErrors.length} error(s) found in ${target}:\n`)
