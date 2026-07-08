@@ -1,0 +1,197 @@
+{
+  "batchId": "vinci_source_batch_2026_07_08_quiz_review_1",
+  "student": "Vinci",
+  "dateReceived": "2026-07-08",
+  "sourceFolder": "Vinci/_Archive/Received through 2026-07-08 - Not all processed/Not yet processed/Quiz",
+  "status": "intake",
+  "items": [
+    {
+      "id": "vinci-2026-07-08-063330-1",
+      "file": "2026-07-07_063330-1.jpg",
+      "publicPath": "/content/vinci/2026-07-08-quiz-review-1/2026-07-07_063330-1.jpg",
+      "sourceType": "worksheet",
+      "chapterGuess": "chapter-3-using-liferafts",
+      "topicGuess": "Liferaft Design -- labeled parts identification diagram (23 numbered points on an inflatable liferaft illustration, with a handwritten answer key)",
+      "visualUseStatus": "candidate-quiz-visual",
+      "extractionStatus": "extracted",
+      "verificationStatus": "unverified",
+      "notes": "Diagram title: 'IDENTIFY THE PARTS OF THE LIFERAFT'. Printed diagram has arrows/circled numbers 1-23 pointing to parts of an inflatable liferaft illustration; a handwritten table below matches each number to a part name. The raw photo has pencil scribbles/doodles across the top margin and scattered over the diagram (unrelated to the exercise) that would need cropping before use as a live question image. Item #15 in the answer table was left blank by the student, and no corresponding numbered arrow for '15' is visible anywhere on the diagram in this photo -- flagged rather than guessed. Item #4's diagram label reads 'PRV' but the handwritten answer list spells it out as 'Pressure pellet valve' -- the standard nautical term is 'Pressure Relief Valve', so this may be a student transcription slip; flagged for verification rather than silently corrected. Item #8's answer ('Rain water') is completed by a second line below the answer table ('Catchment tube assembly'), so the full answer is read as one phrase.",
+      "extractedTitle": "IDENTIFY THE PARTS OF THE LIFERAFT",
+      "extractedText": "Numbered answer key (as handwritten, 23 items, #15 left blank):\n1. Internal lifeline\n2. Equipment bags\n3. Recognition light\n4. Pressure pellet valve [diagram's own printed label reads \"PRV\" -- likely means Pressure Relief Valve; discrepancy not resolved]\n5. Heaving line\n6. Canopy\n7. Water activated battery\n8. Rainwater catchment tube assembly [answer continues below the table on its own line]\n9. Righting strap\n10. CO2 inflation system\n11. Deflation plug\n12. External lifelines\n13. Ballast bags\n14. Buoyancy tube\n15. [left blank -- no answer written, and no numbered arrow for '15' visible on the diagram in this photo]\n16. Operating Cord [answer continues below the table with \"Painter/sea painter\"]\n17. Weak link\n18. Sea anchor\n19. Towing connection\n20. Towing bridle\n21. Boarding ladder\n22. Inflatable floor\n23. Floating sheath knife",
+      "keyFacts": [
+        "A liferaft has an internal lifeline running across the ceiling of the canopy interior.",
+        "Equipment bags are stowed inside the liferaft canopy.",
+        "A recognition light and a pressure relief valve (labeled 'PRV' on the diagram) are both mounted near the top of the canopy.",
+        "A heaving line is stowed near the canopy entrance/top.",
+        "The canopy is the liferaft's overhead cover.",
+        "A water-activated battery is mounted on the liferaft's side, near the entrance.",
+        "A rainwater catchment tube assembly collects rainwater off the canopy for drinking.",
+        "A righting strap is mounted on the underside/exterior for flipping a capsized raft upright.",
+        "A CO2 inflation system provides the gas that inflates the raft.",
+        "A deflation plug allows controlled deflation.",
+        "External lifelines run around the outside of the raft for swimmers to grab.",
+        "Ballast bags hang underwater below the raft to resist capsizing.",
+        "The buoyancy tube is the raft's main inflatable ring structure.",
+        "An operating cord (also called a sea painter) is attached near the towing connection and leads to the CO2 inflation/painter system.",
+        "A weak link is built into the painter/towing line so it parts under excess strain rather than dragging the raft under with the sinking ship.",
+        "A sea anchor (drogue) is deployed from the far end of the towing line/painter to stabilize the raft's drift.",
+        "A towing connection and towing bridle are used to tow the raft.",
+        "A boarding ladder hangs from the raft's side for climbing in from the water.",
+        "The inflatable floor provides insulation from cold water beneath the raft.",
+        "A floating sheath knife is stowed near the entrance for cutting the painter line in an emergency."
+      ],
+      "examAngles": [
+        "Identify a labeled part from a liferaft diagram image (visual-question).",
+        "Explain the purpose of the weak link vs. the painter/towing connection (compare-and-contrast, easy to confuse which one is meant to fail on purpose).",
+        "Explain why a sea anchor is deployed (drift stabilization) vs. what a ballast bag does (anti-capsize) -- both are underwater fittings, easy to conflate.",
+        "Identify what the rainwater catchment tube assembly is for."
+      ],
+      "possibleMisconceptions": [
+        "Confusing the sea anchor (drift/stability) with ballast bags (anti-capsize) -- both hang below the raft in the water.",
+        "Confusing the weak link (designed to fail/part) with the towing bridle or painter (designed to hold).",
+        "Assuming 'PRV' and the handwritten 'pressure pellet valve' answer are two different fittings rather than possibly the same one under an imprecise label -- needs verification, not an assumption either way."
+      ],
+      "extractionConfidence": "medium",
+      "needsFollowUp": true
+    },
+    {
+      "id": "vinci-2026-07-08-063330-2",
+      "file": "2026-07-07_063330-2.jpg",
+      "publicPath": "/content/vinci/2026-07-08-quiz-review-1/2026-07-07_063330-2.jpg",
+      "sourceType": "quiz-photo",
+      "chapterGuess": "chapter-2-using-lifeboats",
+      "topicGuess": "Mixed page: Station Bill/muster lists (chapter-1-planning-ahead), lifeboat survival equipment list (chapter-2, Survival Craft Equipment), abandon-ship drill actions (chapter-4-survival-methods, Abandoning Ship), double-ended lifeboat design rationale (chapter-2, Construction/Lifeboat Shell)",
+      "visualUseStatus": "source-only",
+      "extractionStatus": "extracted",
+      "verificationStatus": "unverified",
+      "notes": "Review Quiz #1, Water Survival, SHLSOS Course #549, page 1 of 4. Course name/number and all four question+answer pairs are legible despite heavy pencil doodles overlaid on the page (a personal photo of a physical worksheet, not a clean scan). This page mixes topics from three different manual chapters in one quiz -- unlike the 2026-07-07 book-photo batch where each page was a single topic, treat chapterGuess/topicGuess here as page-level approximations; see keyFacts for the actual per-question breakdown.",
+      "extractedTitle": "Review Quiz #1 -- Water Survival (SHLSOS Course #549), Page 1 of 4",
+      "extractedText": "COURSE NAME: Water Survival\nSHLSOS COURSE #: 549\n\n1. What does the Station Bill list?\nA: Muster stations during emergency\n\n2. List all the items you would find in a lifeboat to assist your survival:\nA: Bailer, Bilge pump, Boathook, Bucket, Can Opener, Compass, Dipper, Drinking cup, Fire Extinguisher, First aid kit, Fishing kit, Flashlight, Hatchet, Heaving line, Instruction card, Jackknife, Ladder, Mirror\n\n3. During an abandon ship drill what should passengers be doing?\nA: Secure their workstation / Report to muster station\n\n4. What purpose does the double-ended design of an open lifeboat serve?\nA: Being double ended (pointed at both ends) makes them more seaworthy (less likely to be swamped or to 'broach to')",
+      "keyFacts": [
+        "The Station Bill lists muster stations to report to during an emergency.",
+        "A lifeboat's survival equipment includes: bailer, bilge pump, boathook, bucket, can opener, compass, dipper, drinking cup, fire extinguisher, first aid kit, fishing kit, flashlight, hatchet, heaving line, instruction card, jackknife, ladder, and mirror.",
+        "During an abandon-ship drill, passengers should secure their workstation/area and report to their assigned muster station.",
+        "Open lifeboats are double-ended (pointed at both bow and stern), which makes them more seaworthy and less likely to be swamped or to broach to."
+      ],
+      "examAngles": [
+        "What does the Station Bill list? (direct recall)",
+        "Which of the following is NOT typically found in a lifeboat's survival equipment? (elimination format, given the long equipment list)",
+        "What should a passenger do during an abandon-ship drill? (direct recall)",
+        "Why are open lifeboats built double-ended? (direct recall / compare against self-righting, a separate unrelated feature)"
+      ],
+      "possibleMisconceptions": [
+        "Confusing the Station Bill (muster station assignments) with a Muster List or the C.O.I. (different documents with related but distinct purposes) -- worth confirming the manual's exact distinction before using as a quiz fact.",
+        "Assuming double-ended design is the same thing as self-righting -- these are two unrelated seaworthiness features."
+      ],
+      "extractionConfidence": "medium",
+      "needsFollowUp": true
+    },
+    {
+      "id": "vinci-2026-07-08-063330-3",
+      "file": "2026-07-07_063330-3.jpg",
+      "publicPath": "/content/vinci/2026-07-08-quiz-review-1/2026-07-07_063330-3.jpg",
+      "sourceType": "quiz-photo",
+      "chapterGuess": "chapter-2-using-lifeboats",
+      "topicGuess": "Mixed chapter-2 subtopics: nameplate/capacity (Markings), limber holes (Automatic Lifeboat Drain), electrolytic corrosion (Construction/Lifeboat Shell), footrests (Interior Construction), buoyancy units (Buoyancy and Stability Features)",
+      "visualUseStatus": "source-only",
+      "extractionStatus": "extracted",
+      "verificationStatus": "unverified",
+      "notes": "Review Quiz #1, page 2 of 4. Cleanest page in the batch -- no stray doodles, all five question+answer pairs clearly legible.",
+      "extractedTitle": "Review Quiz #1 -- Water Survival (SHLSOS Course #549), Page 2 of 4",
+      "extractedText": "5. How can crew members determine the personnel capacity of a lifeboat?\nA: Name plate will have manufacturer's name, serial number, date of manufacture, light load, full load, num of persons allowed in the lifeboat. Capacity may also be marked on the bow w/ permanent characters.\n\n6. Describe what allows water to flow from one compartment to the next in a lifeboat so water can drain while out of the water or stowed.\nA: Limber holes, openings in the support frame of a lifeboat\n\n7. Why should iron or steel tools not be left lying in or near an aluminum lifeboat?\nA: Possibility of electrolytic corrosion\n\n8. What is the alternate term for foot rests?\nA: Footrests are also known as stretchers\n\n9. What provides buoyancy in an open lifeboat that allows it to remain afloat when completely filled with water, equipment and survivors?\nA: Buoyancy units, usually air tanks or units of unicellular plastic foam",
+      "keyFacts": [
+        "A lifeboat's nameplate lists the manufacturer's name, serial number, date of manufacture, light-load and full-load figures, and the number of persons allowed -- this is how crew determine personnel capacity.",
+        "Capacity may also be marked on the bow in permanent characters, in addition to the nameplate.",
+        "Limber holes are openings in a lifeboat's support frame (floors) that let water flow from one compartment to the next so the boat can drain, whether out of the water or stowed.",
+        "Iron or steel tools should not be left in or near an aluminum lifeboat because of the possibility of electrolytic corrosion.",
+        "Foot rests are also known as stretchers.",
+        "Buoyancy units -- usually air tanks or units of unicellular plastic foam -- keep an open lifeboat afloat even when completely filled with water, equipment, and survivors."
+      ],
+      "examAngles": [
+        "Where would you find the information needed to determine a lifeboat's personnel capacity? (nameplate contents recall)",
+        "What are limber holes and what do they do? (direct recall)",
+        "Why is electrolytic corrosion a specific risk for aluminum lifeboats? (direct recall)",
+        "What is another name for foot rests? (vocabulary)",
+        "What keeps a swamped open lifeboat afloat? (direct recall)"
+      ],
+      "possibleMisconceptions": [
+        "Confusing limber holes (drainage between compartments) with buoyancy units (flotation) or the automatic drain (water exit from the boat) -- three related but distinct fittings.",
+        "Assuming electrolytic corrosion risk applies to all lifeboat hull materials equally, rather than specifically aluminum hulls near dissimilar metal."
+      ],
+      "extractionConfidence": "high",
+      "needsFollowUp": false
+    },
+    {
+      "id": "vinci-2026-07-08-063330-4",
+      "file": "2026-07-07_063330-4.jpg",
+      "publicPath": "/content/vinci/2026-07-08-quiz-review-1/2026-07-07_063330-4.jpg",
+      "sourceType": "quiz-photo",
+      "chapterGuess": "chapter-2-using-lifeboats",
+      "topicGuess": "Mixed chapter-2 subtopics: drain-before-launch (Automatic Lifeboat Drain), stretcher purpose (Interior Construction), coxswain backing-up commands and lowering signal (Launching a Lifeboat from a Gravity Davit), release-lever labeling (Coloring)",
+      "visualUseStatus": "source-only",
+      "extractionStatus": "extracted",
+      "verificationStatus": "unverified",
+      "notes": "Review Quiz #1, page 3 of 4. All five question+answer pairs clearly legible, no stray doodles.",
+      "extractedTitle": "Review Quiz #1 -- Water Survival (SHLSOS Course #549), Page 3 of 4",
+      "extractedText": "10. What would be the first action taken by the lifeboat crew when entering a lifeboat to prepare to launch it?\nA: First & most important thing to do is to close the drain by screwing on the metal cap. The boat drain should be open when the boat is in the stowed position.\n\n11. What purpose do stretchers serve?\nA: Provided for the rowers to brace their feet against while rowing.\n\n12. Describe the commands you would hear from the coxswain and how the rowers would execute that command if the lifeboat coxswain wanted to back the boat up.\nA: 'Oars', 'Standby to backwater', 'Backwater all.' Upon hearing 'Oars', rowers will put oars horizontal to the water w/ blades feathered. 'Backwater': rowers will place blades of the oars in the water w/ blades perpendicular to the surface & the handle against their chest.\n\n13. The signal given to commence lowering the lifeboats is ______.\nA: 1 short blast on the whistle\n\n14. In open lifeboats, how is the releasing lever labeled?\nA: Lever is painted red & labeled 'Danger -- lever drops boat', w/ 12in wide white stripe",
+      "keyFacts": [
+        "The first and most important action when entering a lifeboat to prepare to launch is to close the drain by screwing on the metal cap.",
+        "The boat drain should be left open when the boat is in its stowed position (i.e., not about to launch).",
+        "Stretchers (foot rests) let rowers brace their feet while rowing.",
+        "To back a lifeboat up under oars, the coxswain calls 'Oars' (rowers put oars horizontal to the water, blades feathered), then 'Standby to backwater' and 'Backwater all' (rowers place the oar blades in the water perpendicular to the surface, handle against their chest).",
+        "The signal to commence lowering the lifeboats is one short blast on the whistle.",
+        "In open lifeboats, the releasing lever is painted red and labeled 'Danger -- lever drops boat', with a 12-inch-wide white stripe."
+      ],
+      "examAngles": [
+        "What is the first thing to do when entering a lifeboat before launch? (direct recall, matches existing live drain-plug questions)",
+        "When should the boat drain be left open vs. closed? (stowed vs. about-to-launch distinction)",
+        "What command sequence does a coxswain give to back a lifeboat up, and what do rowers do at each command? (multi-step procedural recall)",
+        "What signal means 'commence lowering the lifeboats'? (direct recall)",
+        "How exactly is an open lifeboat's releasing lever labeled -- color, wording, and stripe width? (specific detail recall)"
+      ],
+      "possibleMisconceptions": [
+        "Assuming the drain should always be open, rather than open only when stowed and closed before launch.",
+        "Mixing up the order/wording of the three backing-up commands ('Oars' vs. 'Standby to backwater' vs. 'Backwater all') and which rower action goes with which command.",
+        "Assuming the release lever's red paint alone is the full labeling requirement, missing the specific 'Danger -- lever drops boat' wording and the 12-inch white stripe detail (this specific stripe width and wording were not captured in the 2026-07-07 book-photo batch, so this is new detail worth verifying against the manual directly)."
+      ],
+      "extractionConfidence": "high",
+      "needsFollowUp": false
+    },
+    {
+      "id": "vinci-2026-07-08-063330-5",
+      "file": "2026-07-07_063330-5.jpg",
+      "publicPath": "/content/vinci/2026-07-08-quiz-review-1/2026-07-07_063330-5.jpg",
+      "sourceType": "quiz-photo",
+      "chapterGuess": "chapter-2-using-lifeboats",
+      "topicGuess": "Mixed chapter-2 subtopics: rowing commands (Launching/rowing procedures), Class 1 motor lifeboat speed (Propulsion Systems), muster responsibility, sailing/reefing and sail color (Other Uses of Lifeboats / Coloring)",
+      "visualUseStatus": "source-only",
+      "extractionStatus": "extracted",
+      "verificationStatus": "unverified",
+      "notes": "Review Quiz #1, page 4 of 4 (final page). All six question+answer pairs clearly legible, no stray doodles. Question 20's answer ('Indian orange') has a second, mostly illegible word written just below it that may be a correction or restatement -- not confidently transcribable, flagged rather than guessed.",
+      "extractedTitle": "Review Quiz #1 -- Water Survival (SHLSOS Course #549), Page 4 of 4",
+      "extractedText": "15. Describe the actions taken if the lifeboat coxswain gave the command, 'Way enough'.\nA: Rowers should finish the stroke, lift the oars from the rowlocks & place them on the side bench w/ the blades pointing forward. The oars come in from the bow.\n\n16. The lifeboat command where the oars are put horizontal to the water with the blades feathered means?\nA: Oars\n\n17. Describe the speed requirement for a class 1 motor lifeboat.\nA: In smooth water when loaded w/ its full complement of persons & equipment shall be at least 6 knots\n\n18. Who is responsible for taking a muster of all personnel assigned to a lifeboat?\nA: Coxswain\n\n19. What can be done on a lifeboat with a sail if the winds become too strong?\nA: Reef the sail\n\n20. What color is the sail on a lifeboat?\nA: Indian orange [a second, mostly illegible word is written just beneath this answer -- not confidently transcribable]",
+      "keyFacts": [
+        "On the command 'Way enough', rowers finish their stroke, lift the oars from the rowlocks, and place them on the side bench with blades pointing forward; the oars come in from the bow.",
+        "The command 'Oars' means: put the oars horizontal to the water with the blades feathered.",
+        "A Class 1 motor lifeboat, in smooth water when loaded with its full complement of persons and equipment, must make at least 6 knots.",
+        "The coxswain is responsible for taking a muster of all personnel assigned to a lifeboat.",
+        "If winds become too strong on a lifeboat under sail, the sail should be reefed.",
+        "A lifeboat's sail is Indian orange in color."
+      ],
+      "examAngles": [
+        "What do rowers do when the coxswain calls 'Way enough'? (procedural recall)",
+        "What does the command 'Oars' mean? (direct recall, pairs with 'Way enough' and the backing-up commands from page 3 as a compare-and-contrast rowing-commands set)",
+        "What speed must a Class 1 motor lifeboat make, fully loaded, in smooth water? (direct recall, corroborates the 6-knot figure already used elsewhere in this repo's content)",
+        "Who takes the muster of lifeboat personnel? (direct recall)",
+        "What should be done if winds get too strong while sailing a lifeboat? (direct recall)",
+        "What color is a lifeboat's sail? (direct recall, corroborates the 'Indian orange' fact already used elsewhere in this repo's content)"
+      ],
+      "possibleMisconceptions": [
+        "Confusing 'Oars' (blades horizontal, feathered -- a ready/pause position) with 'Way enough' (stroke finished, oars stowed on the side bench) -- both are rowing-stop commands but leave the oars in different positions.",
+        "Confusing the lifeboat's own sail color (Indian orange) with international orange, which is used elsewhere on the boat's canopy/hull -- these are two distinct 'orange' terms already flagged as a confusion risk in this repo's other Vinci-sourced content."
+      ],
+      "extractionConfidence": "high",
+      "needsFollowUp": false
+    }
+  ]
+}

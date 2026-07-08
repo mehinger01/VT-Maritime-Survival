@@ -1,0 +1,55 @@
+{
+  "manifestId": "vinci-2026-07-08-quiz-review-1-image-manifest",
+  "batchId": "vinci-2026-07-08-quiz-review-1",
+  "receivedDate": "2026-07-08",
+  "sourceDescription": "Photos pulled from Vinci's Google Drive archive folder 'Vinci / _Archive / Received through 2026-07-08 - Not all processed / Not yet processed / Quiz'. Unlike the 2026-07-07 batch (photographed manual pages), these are photos of a completed, handwritten student review quiz ('Review Quiz #1', Water Survival, SHLSOS Course #549) plus one liferaft parts-labeling worksheet with a handwritten answer key filled in. All five files share the original capture-date prefix '2026-07-07_063330' but were found in the 2026-07-08 archive sweep, hence this batch's dated name reflects when it was pulled for processing, not the capture date on the filename.",
+  "sourceCitation": "SHLSOS Course No. 549 Water Survival, Review Quiz #1 handout, © 2024 The Seafarers Harry Lundeberg School of Seamanship, Piney Point, MD 20674 (page footer date differs from the 2021/2024 editions cited elsewhere in this repo's content -- not yet reconciled, see notes below).",
+  "purpose": "Traceability record for this raw image batch. Adding an entry here does NOT add it to any live question. An image only reaches a student when a question in src/content/course.json explicitly sets its \"image\" field to this file's publicPath, using the existing optional image/imageAlt fields from src/components/QuestionCard.jsx.",
+  "images": [
+    {
+      "file": "2026-07-07_063330-1.jpg",
+      "publicPath": "/content/vinci/2026-07-08-quiz-review-1/2026-07-07_063330-1.jpg",
+      "batchId": "vinci-2026-07-08-quiz-review-1",
+      "originalFolder": "Vinci/_Archive/Received through 2026-07-08 - Not all processed/Not yet processed/Quiz",
+      "initialUseStatus": "candidate-quiz-visual",
+      "sourceType": "worksheet",
+      "notes": "'IDENTIFY THE PARTS OF THE LIFERAFT' -- a numbered diagram (23 labeled arrow points) of an inflatable liferaft, with a handwritten answer key underneath matching numbers 1-23 to part names (internal lifeline, equipment bags, recognition light, PRV, heaving line, canopy, water-activated battery, rainwater catchment tube assembly, righting strap, CO2 inflation system, deflation plug, external lifelines, ballast bags, buoyancy tube, [15 left blank], operating cord/sea painter, weak link, sea anchor, towing connection, towing bridle, boarding ladder, inflatable floor, floating sheath knife). Strong quiz-visual candidate once cropped -- the raw photo has extensive pencil scribbles/doodles across the top and margins (unrelated to the diagram content) that would need cropping out before use in a live question."
+    },
+    {
+      "file": "2026-07-07_063330-2.jpg",
+      "publicPath": "/content/vinci/2026-07-08-quiz-review-1/2026-07-07_063330-2.jpg",
+      "batchId": "vinci-2026-07-08-quiz-review-1",
+      "originalFolder": "Vinci/_Archive/Received through 2026-07-08 - Not all processed/Not yet processed/Quiz",
+      "initialUseStatus": "source-only",
+      "sourceType": "quiz-photo",
+      "notes": "'Review Quiz #1', page 1 of 4 -- questions 1-4 (Station Bill contents, lifeboat survival equipment list, abandon-ship-drill passenger actions, double-ended lifeboat design rationale), each with a handwritten student answer already filled in. The extracted text/facts are the useful part here, not the image itself -- this page also has heavy pencil doodles/scribbles overlaid (a school binder page, not a clean reference photo)."
+    },
+    {
+      "file": "2026-07-07_063330-3.jpg",
+      "publicPath": "/content/vinci/2026-07-08-quiz-review-1/2026-07-07_063330-3.jpg",
+      "batchId": "vinci-2026-07-08-quiz-review-1",
+      "originalFolder": "Vinci/_Archive/Received through 2026-07-08 - Not all processed/Not yet processed/Quiz",
+      "initialUseStatus": "source-only",
+      "sourceType": "quiz-photo",
+      "notes": "'Review Quiz #1', page 2 of 4 -- questions 5-9 (nameplate/capacity determination, limber holes, electrolytic corrosion in aluminum lifeboats, footrests/stretchers, buoyancy units), each with a handwritten answer. Cleanest page in the batch -- no stray doodles. Text content is the useful part."
+    },
+    {
+      "file": "2026-07-07_063330-4.jpg",
+      "publicPath": "/content/vinci/2026-07-08-quiz-review-1/2026-07-07_063330-4.jpg",
+      "batchId": "vinci-2026-07-08-quiz-review-1",
+      "originalFolder": "Vinci/_Archive/Received through 2026-07-08 - Not all processed/Not yet processed/Quiz",
+      "initialUseStatus": "source-only",
+      "sourceType": "quiz-photo",
+      "notes": "'Review Quiz #1', page 3 of 4 -- questions 10-14 (first action before launch/drain plug, stretcher purpose, coxswain backing-up commands, lowering signal, releasing-lever labeling), each with a handwritten answer. Text content is the useful part."
+    },
+    {
+      "file": "2026-07-07_063330-5.jpg",
+      "publicPath": "/content/vinci/2026-07-08-quiz-review-1/2026-07-07_063330-5.jpg",
+      "batchId": "vinci-2026-07-08-quiz-review-1",
+      "originalFolder": "Vinci/_Archive/Received through 2026-07-08 - Not all processed/Not yet processed/Quiz",
+      "initialUseStatus": "source-only",
+      "sourceType": "quiz-photo",
+      "notes": "'Review Quiz #1', page 4 of 4 -- questions 15-20 ('way enough' command, 'oars' command, Class 1 motor lifeboat speed, muster responsibility, reefing a sail, sail color), each with a handwritten answer. Text content is the useful part."
+    }
+  ]
+}
