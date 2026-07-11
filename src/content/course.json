@@ -7094,8 +7094,8 @@
         "The wording isn't a vague 'caution' -- it spells out exactly what pulling the lever does."
       ],
       "explanation": "In open lifeboats, the releasing lever is painted red and labeled 'Danger -- lever drops boat', with a 12-inch-wide white stripe -- a deliberately unmistakable marking distinct from the boat's general international-orange paint scheme.",
-      "sourceReference": "Vinci source batch 2026-07-08-quiz-review-1, image 2026-07-07_063330-4.jpg (Review Quiz #1, question 14 of 20); see src/content/imports/vinci-2026-07-08-quiz-review-1-source-intake.json",
-      "verificationStatus": "needs-review"
+      "sourceReference": "Vinci source batch 2026-07-08-quiz-review-1, image 2026-07-07_063330-4.jpg (Review Quiz #1, question 14 of 20); see src/content/imports/vinci-2026-07-08-quiz-review-1-source-intake.json Corroborated 2026-07-11 against 46 CFR 160.133-7(b)(9)-(10) (Document(6).PDF.pdf, sea-trials batch): confirms two of this question's three specific claims -- the release lever/control 'must be red in color, and the area immediately surrounding the control must be a sharply contrasting light color' (matches 'painted red... with a...white stripe'), and the release/recovery instruction plate 'must be marked with the word Danger' (matches the 'Danger' wording, though the CFR text describes a nearby instruction plate, not necessarily the lever itself carrying the exact phrase 'lever drops boat'). The specific '12-inch-wide' stripe measurement remains unconfirmed by any source found so far. Given two of three claims are now independently regulation-backed, upgraded from needs-review to quiz-derived-study.",
+      "verificationStatus": "quiz-derived-study"
     },
     {
       "id": "q-quizr1-liferaft-sheathknife",
