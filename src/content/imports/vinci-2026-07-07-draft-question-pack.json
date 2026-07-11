@@ -8,150 +8,7 @@
   "purpose": "Draft (inactive) question objects derived from the Vinci 2026-07-07 verification map's 'quiz-question' and 'visual-question' facts. These are NOT part of src/content/course.json's live \"questions\" array and will not appear in the app until explicitly promoted there, after each question's verificationStatus is upgraded from draft-unverified and each fact is checked against Vinci's confirmed manual copy (per the verification map's needsVerification flag, which is true on every source fact).",
   "activationRule": "Do not add any of these questions to course.json unless: (1) its verificationStatus has been changed away from 'draft-unverified' following direct confirmation against the manual, and (2) for image-based questions, the image/imageAlt have been reviewed for exam relevance and remain within the copyright/publishing constraints noted in public/content/vinci/2026-07-07/README.md.",
   "duplicateCheckNotes": "Cross-referenced against all 133 live questions in src/content/course.json (not just chapter-2-using-lifeboats) before drafting. Deliberately excluded from this pack: lifeboat numbering odd/starboard-even/port (duplicates q-ch2-numbering-official-vh), propeller-handedness backing-to-port (duplicates q-ch2-backingport-hard), drain-plug-closed-before-launch (duplicates q-ch2-boatplug / q-ch2-drainplugfirst-hard), 24-hour motor-lifeboat fuel duration (duplicates q-ch2-24hrfuel), general painter-attachment location (duplicates q-ch2-seapainteruse), and bare pintle/gudgeon/stern-sheets vocabulary definitions (duplicate q-gloss-pintle, q-gloss-gudgeon, q-gloss-sternsheets). Where this pack still touches related hardware (toggle pin, bow-vs-stern-sheets coxswain position), the question is framed around a distinct fact the live bank does not already test.",
-  "questions": [
-    {
-      "id": "q-vinci-symbol-colorcode",
-      "topicId": "chapter-1-planning-ahead",
-      "prompt": "In the IMO/LSA safety-symbol pictogram system shown here, what's the difference between a GREEN pictogram and a BLUE/PURPLE pictogram?",
-      "image": "/content/vinci/2026-07-07/2026-07-07_030301.jpg",
-      "imageAlt": "Photo of an IMO/LSA lifesaving safety symbol pictogram chart from the Vinci 2026-07-07 source batch",
-      "choices": [
-        {
-          "id": "a",
-          "text": "Green marks safe-condition information -- life-saving equipment and its location is one such category, alongside others like escape-route direction signs; blue/purple instead marks an operating instruction"
-        },
-        {
-          "id": "b",
-          "text": "Green marks operating instructions; blue/purple marks equipment locations",
-          "misconception": "Reverses the actual color coding shown on the chart."
-        },
-        {
-          "id": "c",
-          "text": "Green is for personal flotation devices only; blue/purple is for signaling equipment only",
-          "misconception": "Invents a device-category split instead of the real function-based (safe-condition info vs. instruction) split."
-        },
-        {
-          "id": "d",
-          "text": "The color has no fixed meaning and varies by ship",
-          "misconception": "Assumes the pictograms aren't standardized, when IMO/LSA symbol color-coding is consistent across ships."
-        }
-      ],
-      "correctChoiceId": "a",
-      "difficulty": "medium",
-      "hints": [
-        "Think about what the pictogram is telling you to do versus what it's simply labeling.",
-        "One color family marks 'where equipment is/what's safe'; the other marks 'what action to take.'"
-      ],
-      "explanation": "On IMO/LSA lifesaving symbol charts, green pictograms mark safe-condition information. Life-saving equipment and its stowage location (lifeboat, liferaft, embarkation ladder, etc.) is one common category shown here -- the same green family also covers other safe-condition signs, such as escape-route direction markers (tested separately in this course, see q-ch1-imo-symbols-scenario-medium). Blue/purple pictograms, by contrast, mark operating instructions (fasten seat belts, release gripes, start engine, etc.) rather than equipment or safe-condition locations.",
-      "sourceReference": "Vinci source batch 2026-07-07, image 2026-07-07_030301.jpg (chapter-1-planning-ahead, IMO/LSA safety symbol pictograms); see src/content/imports/vinci-2026-07-07-verification-map.json. Revised 2026-07-09 per vinci-held-question-remediation-report.md to explicitly reconcile with the live q-ch1-imo-symbols-scenario-medium's escape-route framing, so the two green-pictogram questions read as complementary (different safe-condition sub-categories) rather than contradictory.",
-      "verificationStatus": "draft-unverified"
-    },
-    {
-      "id": "q-vinci-limber-holes",
-      "topicId": "chapter-2-using-lifeboats",
-      "prompt": "What are 'limber holes' in a lifeboat's construction?",
-      "choices": [
-        {
-          "id": "a",
-          "text": "Openings in the floors (the athwartship ribs in the bilge) that let bilge water flow between compartments without going through the outer shell"
-        },
-        {
-          "id": "b",
-          "text": "The buoyancy units mounted under the side benches",
-          "misconception": "Confuses limber holes (drainage) with buoyancy units (flotation)."
-        },
-        {
-          "id": "c",
-          "text": "Holes drilled in the gunwale for rigging oars",
-          "misconception": "Invents an oar-related function limber holes don't serve."
-        },
-        {
-          "id": "d",
-          "text": "The drain-plug fitting at the bottom of the hull",
-          "misconception": "Confuses limber holes with the separate automatic drain / drain-plug fitting."
-        }
-      ],
-      "correctChoiceId": "a",
-      "difficulty": "easy",
-      "hints": [
-        "Think about how water that's already inside the boat needs to move around, not how it gets out of the boat entirely.",
-        "They're cut into the metal ribs running side to side in the bottom of the boat."
-      ],
-      "explanation": "Limber holes are openings cut in a lifeboat's floors (the athwartship metal ribs in the bilge) that let bilge water flow freely between compartments without having to pass through the boat's outer shell plating.",
-      "sourceReference": "Vinci source batch 2026-07-07, image 2026-07-07_041663-10.jpg (chapter-2-using-lifeboats, Buoyancy and Stability Features; Automatic Lifeboat Drain); see src/content/imports/vinci-2026-07-07-verification-map.json",
-      "verificationStatus": "draft-unverified"
-    },
-    {
-      "id": "q-vinci-togglepin-vs-pintlegudgeon",
-      "topicId": "chapter-2-using-lifeboats",
-      "prompt": "A lifeboat's steering gear has two separate pin connections that are easy to mix up: a toggle pin, and a pintle-and-gudgeon pair. What's the key difference in what each one connects?",
-      "choices": [
-        {
-          "id": "a",
-          "text": "The toggle pin holds the tiller onto the top of the rudder; the pintles and gudgeons are a completely separate pin-and-socket pair that hinge the rudder itself onto the boat's stern post"
-        },
-        {
-          "id": "b",
-          "text": "They're the same connection point -- just two different names for the same pin",
-          "misconception": "Conflates two distinct, separately located fittings as if they were one."
-        },
-        {
-          "id": "c",
-          "text": "The pintles and gudgeons hold the tiller to the rudder; the toggle pin hinges the rudder to the stern post",
-          "misconception": "Reverses which fitting connects to which part."
-        },
-        {
-          "id": "d",
-          "text": "Both the toggle pin and the pintle/gudgeon pair hinge the rudder to the stern post, just at different heights",
-          "misconception": "Misses that the toggle pin's job is the tiller connection entirely, not a second stern-post hinge point."
-        }
-      ],
-      "correctChoiceId": "a",
-      "difficulty": "hard",
-      "hints": [
-        "There are two separate connection points on a lifeboat's steering gear: one for the tiller, and one for the rudder itself.",
-        "The rudder-to-boat connection uses a pin-and-socket pair, not the same pin that holds the tiller."
-      ],
-      "explanation": "These are two separate fittings that are easy to mix up: a toggle pin holds the tiller onto the top of the rudder, while pintles and gudgeons (a pin-and-socket pair) hold the rudder itself onto the boat's stern post, forming the rudder's hinge.",
-      "sourceReference": "Vinci source batch 2026-07-07, image 2026-07-07_041663-12.jpg (chapter-2-using-lifeboats, Steering Equipment -- tiller, rudder, pintle, gudgeon, Kort Nozzle, steering wheel); see src/content/imports/vinci-2026-07-07-verification-map.json. Revised 2026-07-09 per vinci-held-question-remediation-report.md: originally framed so the correct answer restated the already-live pintle/gudgeon fact (q-gloss-pintle, q-gloss-gudgeon) instead of testing the toggle pin. Reframing to test the toggle pin directly was considered, but q-quiz1a-toggle-pin-tiller (promoted 2026-07-09) now already tests exactly that fact, so this question was rewritten as a compare-and-contrast between the two fittings instead -- the only angle neither existing live question covers.",
-      "verificationStatus": "draft-unverified"
-    },
-    {
-      "id": "q-vinci-paddlewheel-effect-vh",
-      "topicId": "chapter-2-using-lifeboats",
-      "prompt": "A lifeboat's propeller can create an unwanted sideways 'paddlewheel effect.' When does this effect occur?",
-      "choices": [
-        {
-          "id": "a",
-          "text": "When the propeller is running in reverse (backing down), not while propelling forward"
-        },
-        {
-          "id": "b",
-          "text": "Only while propelling forward at full throttle",
-          "misconception": "Reverses when the effect actually occurs."
-        },
-        {
-          "id": "c",
-          "text": "Only when the engine is first started, regardless of gear",
-          "misconception": "Unrelated to gear direction, which is what actually triggers the effect."
-        },
-        {
-          "id": "d",
-          "text": "Equally in both forward and reverse gear",
-          "misconception": "Ignores that the effect is specifically a reversing-gear phenomenon."
-        }
-      ],
-      "correctChoiceId": "a",
-      "difficulty": "very-hard",
-      "hints": [
-        "Propellers are shaped to work efficiently in one direction of travel.",
-        "This effect is exactly why backing a lifeboat under power requires extra rudder correction."
-      ],
-      "explanation": "Propellers are designed to work efficiently producing thrust while propelling forward. When reversed, they operate inefficiently and generate an unwanted side thrust known as the 'paddlewheel effect' -- which is why backing a lifeboat under power requires compensating rudder action.",
-      "sourceReference": "Vinci source batch 2026-07-07, image 2026-07-07_041663-14.jpg (chapter-2-using-lifeboats, Engine starting/stopping procedures; propeller-characteristics intro); see src/content/imports/vinci-2026-07-07-verification-map.json",
-      "verificationStatus": "draft-unverified"
-    }
-  ],
+  "questions": [],
   "promotionHistory": [
     {
       "promotedDate": "2026-07-08",
@@ -182,6 +39,18 @@
       ],
       "promotedTo": "src/content/course.json (verificationStatus set to source-backed-study, per the study-app status model)",
       "note": "Second promotion wave per src/content/imports/vinci-filtered-question-recovery-inventory.md's 'quick wins' list. The remaining 4 questions below stay in this file, inactive: q-vinci-symbol-colorcode and q-vinci-paddlewheel-effect-vh need source/topic verification; q-vinci-limber-holes and q-vinci-togglepin-vs-pintlegudgeon need the reframe noted in the original promotion review before they add anything beyond what's already live."
+    },
+    {
+      "promotedDate": "2026-07-11",
+      "promotedCount": 4,
+      "promotedIds": [
+        "q-vinci-symbol-colorcode",
+        "q-vinci-limber-holes",
+        "q-vinci-togglepin-vs-pintlegudgeon",
+        "q-vinci-paddlewheel-effect-vh"
+      ],
+      "promotedTo": "src/content/course.json (verificationStatus set per the recommendation in vinci-held-question-remediation-report.md)",
+      "note": "Final promotion of this pack's remaining held questions. The 5 questions across all three packs that the remediation report still flagged as needing source/manual verification were promoted anyway, at their recommended needs-review status, per explicit instruction to put them in front of Vinci for review/flagging rather than continuing to withhold them from the app. This pack now has 0 questions remaining."
     }
   ]
 }

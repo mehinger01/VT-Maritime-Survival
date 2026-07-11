@@ -8,259 +8,7 @@
   "purpose": "Draft (inactive) question objects derived from the Vinci 2026-07-08 quiz-review-1 batch -- a completed, handwritten 'Review Quiz #1' (20 fill-in-blank questions) plus a liferaft parts-labeling worksheet. These are NOT part of src/content/course.json's live \"questions\" array and will not appear in the app until explicitly promoted, after each question's verificationStatus is upgraded from draft-unverified and each fact is checked against Vinci's confirmed manual copy (per the source intake's needsVerification/verificationStatus fields, which are unverified on every source item).",
   "activationRule": "Do not add any of these questions to course.json unless its verificationStatus has been changed away from 'draft-unverified' following direct confirmation against the manual. Update 2026-07-09 (see vinci-held-question-remediation-report.md for full detail): the 5 image-based questions now use a cropped photo (2026-07-07_063330-1-cropped.jpg) with the doodle-heavy top margin removed -- a few isolated stray pencil marks remain in blank margin space elsewhere on the page, but none overlap any numbered item, arrow, or the legend table, so the crop is treated as sufficient rather than requiring further cleanup.",
   "duplicateCheckNotes": "Cross-referenced against all 145 live questions in src/content/course.json (not just chapter-2/chapter-3) before drafting. Skipped as clear duplicates: Q1 'What does the Station Bill list?' (duplicates q-ch1-vocab-stationbill-easy), Q3 'abandon ship drill passenger actions' (the 'report to muster station' half duplicates a choice already in q-ch1-abandonship-drill-components-medium), Q6 'limber holes' (duplicates q-gloss-limber), and Q10 'close the drain before launch' (duplicates q-ch2-boatplug / q-ch2-drainplugfirst-hard). Q16 ('Oars' command alone) was folded into the combined rowing-commands question (q-quizr1-rowing-commands-compare-vh) rather than drafted separately, since testing it standalone would have restated a fact already covered there. Chapter 3 was prioritized per instructions: of the 6 fresh liferaft facts drafted, all were deliberately chosen to AVOID the liferaft topics the live bank already covers heavily (righting a capsized raft / CO2-bottle-side technique -- tested 4 ways already by q-raft-1/2/7/11; ballast-bag purpose alone -- q-raft-9; canopy-alone benefit -- q-raft-5; inflation-trigger mechanism -- q-raft-3), instead drafting parts of the diagram with zero existing coverage (weak link, sea anchor, inflatable floor, internal/external lifelines, recognition light, water-activated battery, floating sheath knife). Diagram item #15 (left blank by the student, no visible numbered arrow) and the 'PRV' vs. 'Pressure pellet valve' label discrepancy on item #4 were both excluded entirely rather than guessed, per instructions.",
-  "questions": [
-    {
-      "id": "q-quizr1-releasing-lever-label",
-      "topicId": "chapter-2-using-lifeboats",
-      "prompt": "In open lifeboats, how is the releasing lever specifically labeled and marked?",
-      "choices": [
-        {
-          "id": "a",
-          "text": "Painted red, labeled 'Danger -- lever drops boat', with a 12-inch-wide white stripe"
-        },
-        {
-          "id": "b",
-          "text": "Painted the same international orange as the rest of the boat, with no special labeling",
-          "misconception": "Misses that the lever itself gets distinct red/white marking, separate from the boat's general international-orange paint."
-        },
-        {
-          "id": "c",
-          "text": "Painted green with a 'Caution' label only",
-          "misconception": "Wrong color, and understates the warning wording actually used."
-        },
-        {
-          "id": "d",
-          "text": "Left unpainted, relying on a placard posted elsewhere on the boat",
-          "misconception": "Misses that the lever itself is directly painted and labeled, not just referenced by a separate placard."
-        }
-      ],
-      "correctChoiceId": "a",
-      "difficulty": "hard",
-      "hints": [
-        "The lever's own color is a strong contrast to the boat's general orange scheme, on purpose.",
-        "The wording isn't a vague 'caution' -- it spells out exactly what pulling the lever does."
-      ],
-      "explanation": "In open lifeboats, the releasing lever is painted red and labeled 'Danger -- lever drops boat', with a 12-inch-wide white stripe -- a deliberately unmistakable marking distinct from the boat's general international-orange paint scheme.",
-      "sourceReference": "Vinci source batch 2026-07-08-quiz-review-1, image 2026-07-07_063330-4.jpg (Review Quiz #1, question 14 of 20); see src/content/imports/vinci-2026-07-08-quiz-review-1-source-intake.json",
-      "verificationStatus": "draft-unverified"
-    },
-    {
-      "id": "q-quizr1-liferaft-sheathknife",
-      "topicId": "chapter-3-using-liferafts",
-      "prompt": "A liferaft kit includes a floating sheath knife, stowed near the raft's entrance. Why is it specifically a FLOATING knife?",
-      "choices": [
-        {
-          "id": "a",
-          "text": "So it isn't lost for good if dropped or knocked overboard while being used near the raft's entrance -- a knife that sinks would be gone"
-        },
-        {
-          "id": "b",
-          "text": "So it can double as a signaling mirror by reflecting light off the blade",
-          "misconception": "Invents an unrelated signaling function for the knife."
-        },
-        {
-          "id": "c",
-          "text": "So it can be used to test whether the surrounding water is safe to drink",
-          "misconception": "Invents an unrelated, implausible use for a knife."
-        },
-        {
-          "id": "d",
-          "text": "Floating has no practical safety purpose -- it's simply whatever material happened to be used",
-          "misconception": "Dismisses the genuine safety reasoning behind the floating design."
-        }
-      ],
-      "correctChoiceId": "a",
-      "difficulty": "medium",
-      "hints": [
-        "Think about what happens to a normal knife if it's accidentally dropped over the side.",
-        "Losing a knife over the side of a liferaft means it's gone for good -- unless it floats."
-      ],
-      "explanation": "The sheath knife kept in a liferaft's equipment is designed to float specifically so that if it's dropped while being used near the raft's entrance, it doesn't sink and get lost -- it can be recovered instead.",
-      "sourceReference": "Vinci source batch 2026-07-08-quiz-review-1, image 2026-07-07_063330-1.jpg (liferaft parts diagram, item 23 'Floating Sheath Knife'); see src/content/imports/vinci-2026-07-08-quiz-review-1-source-intake.json. Revised 2026-07-09 per vinci-held-question-remediation-report.md: originally asserted a causal link to the raft's weak link ('the knife is a backup for when the weak link fails') that the source diagram never actually states -- that was a reasonable-sounding but unsupported inference, not a transcribed fact. Narrowed to the diagram-supported claim that the knife is designed to float, dropping the unstated weak-link-backup framing and item 17 from the citation accordingly.",
-      "verificationStatus": "draft-unverified"
-    },
-    {
-      "id": "q-quizr1-weaklink-vs-towingbridle-vh",
-      "topicId": "chapter-3-using-liferafts",
-      "prompt": "A liferaft's rigging includes both a 'weak link' and a towing bridle/connection. What's the key difference in how each is designed to behave under strain?",
-      "choices": [
-        {
-          "id": "a",
-          "text": "The weak link is deliberately designed to part (break) under excess strain, so the raft isn't dragged under with a sinking ship; the towing bridle/connection is designed to hold under load, for actually towing the raft"
-        },
-        {
-          "id": "b",
-          "text": "Both are designed to hold under any amount of strain, with no intentional failure point anywhere in the system",
-          "misconception": "Misses that the weak link is intentionally the system's failure point -- that's its entire purpose."
-        },
-        {
-          "id": "c",
-          "text": "The towing bridle is the part designed to break; the weak link is what holds during towing",
-          "misconception": "Reverses the two components' actual roles."
-        },
-        {
-          "id": "d",
-          "text": "They're the same fitting under two different names",
-          "misconception": "Treats two distinct, separately labeled fittings as if they were one."
-        }
-      ],
-      "correctChoiceId": "a",
-      "difficulty": "very-hard",
-      "hints": [
-        "One of these two fittings is supposed to fail on purpose -- the other is supposed to never fail.",
-        "Think about what would happen to the raft if the ship it's still attached to starts sinking fast."
-      ],
-      "explanation": "A weak link is deliberately built into a liferaft's painter/towing line so it parts under excess strain -- protecting the raft from being dragged under by a sinking ship. The towing bridle and towing connection, by contrast, are the load-bearing hardware meant to hold firmly while a raft is actually being towed by a rescue vessel.",
-      "sourceReference": "Vinci source batch 2026-07-08-quiz-review-1, image 2026-07-07_063330-1.jpg (liferaft parts diagram, items 17 'Weak link', 19 'Towing Connection', and 20 'Towing bridle'); see src/content/imports/vinci-2026-07-08-quiz-review-1-source-intake.json",
-      "verificationStatus": "draft-unverified",
-      "image": "/content/vinci/2026-07-08-quiz-review-1/2026-07-07_063330-1-cropped.jpg",
-      "imageAlt": "Photo of a hand-labeled liferaft parts diagram from the Vinci 2026-07-08 quiz-review-1 batch (cropped 2026-07-09 to remove the pencil doodles/scribbles that covered the top margin of the raw photo; a few isolated stray marks remain in blank margin space but do not overlap any numbered item, arrow, or the legend table)"
-    },
-    {
-      "id": "q-quizr1-seaanchor-vs-ballastbags",
-      "topicId": "chapter-3-using-liferafts",
-      "prompt": "A liferaft has both a sea anchor and ballast bags. What's the difference in what each one does?",
-      "choices": [
-        {
-          "id": "a",
-          "text": "The sea anchor (deployed on the towing/painter line) stabilizes the raft's drift and slows it; the ballast bags (hanging beneath the raft in the water) add stability and resist capsizing by weighting the raft's underside"
-        },
-        {
-          "id": "b",
-          "text": "Both serve the exact same anti-capsize function, just mounted in different places",
-          "misconception": "Collapses two distinct functions -- drift stabilization vs. anti-capsize weighting -- into one."
-        },
-        {
-          "id": "c",
-          "text": "The ballast bags stabilize drift, and the sea anchor resists capsizing",
-          "misconception": "Swaps the two fittings' actual functions."
-        },
-        {
-          "id": "d",
-          "text": "The sea anchor is a fishing tool, unrelated to raft stability",
-          "misconception": "Invents an unrelated function for the sea anchor."
-        }
-      ],
-      "correctChoiceId": "a",
-      "difficulty": "hard",
-      "hints": [
-        "One of these fittings is about controlling which way and how fast the raft drifts; the other is about keeping the raft from flipping over."
-      ],
-      "explanation": "A sea anchor (or drogue) is deployed on the raft's towing/painter line to stabilize its drift and slow unwanted movement across the water. Ballast bags are separate water pockets that hang beneath the raft, adding stability and resisting capsizing by weighting the raft's underside -- two different fittings solving two different problems.",
-      "sourceReference": "Vinci source batch 2026-07-08-quiz-review-1, image 2026-07-07_063330-1.jpg (liferaft parts diagram, items 13 'Ballast bags' and 18 'Sea Anchor'); see src/content/imports/vinci-2026-07-08-quiz-review-1-source-intake.json",
-      "verificationStatus": "draft-unverified",
-      "image": "/content/vinci/2026-07-08-quiz-review-1/2026-07-07_063330-1-cropped.jpg",
-      "imageAlt": "Photo of a hand-labeled liferaft parts diagram from the Vinci 2026-07-08 quiz-review-1 batch (cropped 2026-07-09 to remove the pencil doodles/scribbles that covered the top margin of the raw photo; a few isolated stray marks remain in blank margin space but do not overlap any numbered item, arrow, or the legend table)"
-    },
-    {
-      "id": "q-quizr1-floor-vs-canopy",
-      "topicId": "chapter-3-using-liferafts",
-      "prompt": "A liferaft has both a canopy and an inflatable floor. Both help protect survivors from the cold, but from which direction?",
-      "choices": [
-        {
-          "id": "a",
-          "text": "The canopy protects from wind, spray, and heat loss from above and the sides; the inflatable floor insulates against cold transmitted from the water directly beneath the raft"
-        },
-        {
-          "id": "b",
-          "text": "Both protect against cold from the same direction -- overhead only",
-          "misconception": "Misses that the floor addresses a completely different exposure direction (from below) than the canopy (from above/the sides)."
-        },
-        {
-          "id": "c",
-          "text": "The inflatable floor is only for buoyancy, not insulation",
-          "misconception": "Drops the floor's real insulating role against cold transmitted from the water below."
-        },
-        {
-          "id": "d",
-          "text": "Only the canopy matters for cold protection; the floor's shape is irrelevant to warmth",
-          "misconception": "Dismisses the floor's genuine insulating function."
-        }
-      ],
-      "correctChoiceId": "a",
-      "difficulty": "medium",
-      "hints": [
-        "Cold can reach survivors from more than one direction in a liferaft -- wind and spray from the sides/above, and conducted cold from the water right underneath them."
-      ],
-      "explanation": "The canopy protects occupants from wind, spray, and heat loss from above and the sides, while the inflatable floor insulates against cold conducted up from the water directly beneath the raft -- two separate features addressing cold exposure from two different directions.",
-      "sourceReference": "Vinci source batch 2026-07-08-quiz-review-1, image 2026-07-07_063330-1.jpg (liferaft parts diagram, items 6 'Canopy' and 22 'Inflatable floor'); see src/content/imports/vinci-2026-07-08-quiz-review-1-source-intake.json",
-      "verificationStatus": "draft-unverified",
-      "image": "/content/vinci/2026-07-08-quiz-review-1/2026-07-07_063330-1-cropped.jpg",
-      "imageAlt": "Photo of a hand-labeled liferaft parts diagram from the Vinci 2026-07-08 quiz-review-1 batch (cropped 2026-07-09 to remove the pencil doodles/scribbles that covered the top margin of the raw photo; a few isolated stray marks remain in blank margin space but do not overlap any numbered item, arrow, or the legend table)"
-    },
-    {
-      "id": "q-quizr1-internal-vs-external-lifelines",
-      "topicId": "chapter-3-using-liferafts",
-      "prompt": "A liferaft has both an internal lifeline and external lifelines. What's the difference?",
-      "choices": [
-        {
-          "id": "a",
-          "text": "The internal lifeline runs inside the raft for occupants to hold onto; the external lifelines run around the outside for swimmers in the water to grab onto"
-        },
-        {
-          "id": "b",
-          "text": "They're the same line, just referred to differently depending on which side you're looking from",
-          "misconception": "Treats two separately labeled fittings, mounted in two different locations, as if they were one."
-        },
-        {
-          "id": "c",
-          "text": "The internal lifeline is for swimmers in the water; the external lifelines are for occupants inside the raft",
-          "misconception": "Swaps the two fittings' actual locations and purposes."
-        },
-        {
-          "id": "d",
-          "text": "Only the external lifelines actually exist on a liferaft; 'internal lifeline' just means the same fitting",
-          "misconception": "Denies that the raft has a genuinely separate interior fitting."
-        }
-      ],
-      "correctChoiceId": "a",
-      "difficulty": "easy",
-      "hints": [
-        "One of these is for people already inside the raft; the other is for people still in the water."
-      ],
-      "explanation": "The internal lifeline runs inside the raft (across the canopy interior) for occupants to hold onto, while the external lifelines run around the outside of the raft for swimmers still in the water to grab onto.",
-      "sourceReference": "Vinci source batch 2026-07-08-quiz-review-1, image 2026-07-07_063330-1.jpg (liferaft parts diagram, items 1 'Internal lifeline' and 12 'External lifelines'); see src/content/imports/vinci-2026-07-08-quiz-review-1-source-intake.json",
-      "verificationStatus": "draft-unverified",
-      "image": "/content/vinci/2026-07-08-quiz-review-1/2026-07-07_063330-1-cropped.jpg",
-      "imageAlt": "Photo of a hand-labeled liferaft parts diagram from the Vinci 2026-07-08 quiz-review-1 batch (cropped 2026-07-09 to remove the pencil doodles/scribbles that covered the top margin of the raw photo; a few isolated stray marks remain in blank margin space but do not overlap any numbered item, arrow, or the legend table)"
-    },
-    {
-      "id": "q-quizr1-recognitionlight-waterbattery",
-      "topicId": "chapter-3-using-liferafts",
-      "prompt": "A liferaft has both a recognition light and a water-activated battery. How do these two features relate to each other?",
-      "choices": [
-        {
-          "id": "a",
-          "text": "The water-activated battery automatically powers the recognition light once the raft is in the water, without anyone needing to manually turn it on"
-        },
-        {
-          "id": "b",
-          "text": "They're unrelated -- the recognition light runs on hand-cranked power, not any battery",
-          "misconception": "Invents an unrelated power source for the recognition light."
-        },
-        {
-          "id": "c",
-          "text": "The water-activated battery is only a backup for a separate EPIRB, unrelated to the recognition light",
-          "misconception": "Invents a connection to unrelated equipment instead of the actual recognition-light link."
-        },
-        {
-          "id": "d",
-          "text": "The recognition light must be switched on manually, and the water-activated battery only powers the CO2 inflation system",
-          "misconception": "Misassigns what the water-activated battery actually powers, and drops the light's automatic activation."
-        }
-      ],
-      "correctChoiceId": "a",
-      "difficulty": "easy",
-      "hints": [
-        "Think about why a light on a liferaft would need to work automatically, in the dark, without anyone fumbling for a switch."
-      ],
-      "explanation": "A liferaft's water-activated battery automatically powers its recognition light as soon as the raft is in the water -- no manual switch required, which matters since survivors may board in darkness or under stress.",
-      "sourceReference": "Vinci source batch 2026-07-08-quiz-review-1, image 2026-07-07_063330-1.jpg (liferaft parts diagram, items 3 'Recognition light' and 7 'Water activated battery'); see src/content/imports/vinci-2026-07-08-quiz-review-1-source-intake.json",
-      "verificationStatus": "draft-unverified",
-      "image": "/content/vinci/2026-07-08-quiz-review-1/2026-07-07_063330-1-cropped.jpg",
-      "imageAlt": "Photo of a hand-labeled liferaft parts diagram from the Vinci 2026-07-08 quiz-review-1 batch (cropped 2026-07-09 to remove the pencil doodles/scribbles that covered the top margin of the raw photo; a few isolated stray marks remain in blank margin space but do not overlap any numbered item, arrow, or the legend table)"
-    }
-  ],
+  "questions": [],
   "promotionHistory": [
     {
       "promotedDate": "2026-07-08",
@@ -281,6 +29,21 @@
       ],
       "promotedTo": "src/content/course.json (verificationStatus set to quiz-derived-study, per the study-app status model)",
       "note": "First promotion wave for this batch, per src/content/imports/vinci-filtered-question-recovery-inventory.md's 'quick wins' list. The remaining 7 questions below stay in this file, inactive: q-quizr1-releasing-lever-label and q-quizr1-liferaft-sheathknife need verification/revision; the five liferaft-diagram image questions (q-quizr1-weaklink-vs-towingbridle-vh, q-quizr1-seaanchor-vs-ballastbags, q-quizr1-floor-vs-canopy, q-quizr1-internal-vs-external-lifelines, q-quizr1-recognitionlight-waterbattery) are blocked on cropping the shared doodle-covered diagram photo."
+    },
+    {
+      "promotedDate": "2026-07-11",
+      "promotedCount": 7,
+      "promotedIds": [
+        "q-quizr1-releasing-lever-label",
+        "q-quizr1-liferaft-sheathknife",
+        "q-quizr1-weaklink-vs-towingbridle-vh",
+        "q-quizr1-seaanchor-vs-ballastbags",
+        "q-quizr1-floor-vs-canopy",
+        "q-quizr1-internal-vs-external-lifelines",
+        "q-quizr1-recognitionlight-waterbattery"
+      ],
+      "promotedTo": "src/content/course.json (verificationStatus set per the recommendation in vinci-held-question-remediation-report.md)",
+      "note": "Final promotion of this pack's remaining held questions. The 5 questions across all three packs that the remediation report still flagged as needing source/manual verification were promoted anyway, at their recommended needs-review status, per explicit instruction to put them in front of Vinci for review/flagging rather than continuing to withhold them from the app. This pack now has 0 questions remaining."
     }
   ]
 }
