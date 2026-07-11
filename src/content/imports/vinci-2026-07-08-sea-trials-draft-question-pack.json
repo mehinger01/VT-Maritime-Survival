@@ -1,0 +1,44 @@
+{
+  "importPackId": "vinci-2026-07-08-sea-trials-draft-question-pack",
+  "receivedDate": "2026-07-08",
+  "generatedFrom": [
+    "src/content/imports/vinci-2026-07-08-sea-trials-source-intake.json",
+    "src/content/imports/vinci-2026-07-08-sea-trials-file-manifest.json"
+  ],
+  "purpose": "Draft (inactive at creation) question objects derived from the deepened 2026-07-11 extraction pass of the Vinci 2026-07-08 sea-trials CFR batch -- 33 CFR Part 87 (Annex IV, Distress Signals) and 46 CFR Parts 160/169/199 (Lifesaving Equipment, Sailing School Vessel Operations, Lifesaving Systems). Unlike the photographed/handwritten Vinci batches, this batch's source is typed, official U.S. federal regulation text transcribed directly and verbatim from the source PDFs -- there is no pencil-mark ambiguity or handwriting-transcription risk the way there was with the quiz batches.",
+  "activationRule": "Every question in this pack cites a specific CFR section transcribed directly from the source PDF (see sourceReference on each question and the extractedText in the source intake). Cross-checked against all 206 live questions before drafting -- see duplicateCheckNotes.",
+  "duplicateCheckNotes": "Checked each candidate fact against all 206 live questions before drafting. Two candidates were dropped entirely rather than drafted: (1) the boat-stations/boat-drill whistle signal (46 CFR 169.815(b)(3), 'more than six short blasts, followed by one long blast') duplicates the already-live q-ep-4 exactly; (2) a planned question testing the lifeboat release lever's red color / 'Danger' wording (46 CFR 160.133-7(b)(9)-(10)) was dropped as a new question because it would substantially duplicate the already-live q-quizr1-releasing-lever-label -- instead, that CFR citation was used to corroborate and upgrade that existing live question directly (see its updated sourceReference and verificationStatus, changed from needs-review to quiz-derived-study). All 22 questions below test facts with zero live coverage.",
+  "questions": [],
+  "promotionHistory": [
+    {
+      "promotedDate": "2026-07-11",
+      "promotedCount": 22,
+      "promotedIds": [
+        "q-cfr-gunsignal-distress",
+        "q-cfr-mayday-radiotelephony",
+        "q-cfr-sos-morse-distress",
+        "q-cfr-nc-flag-distress",
+        "q-cfr-squareflag-ball-distress",
+        "q-cfr-orangesmoke-distress",
+        "q-cfr-armwave-distress",
+        "q-cfr-whitelight-flash-distress",
+        "q-cfr-suit-color-vividorange",
+        "q-cfr-suit-jumpheight",
+        "q-cfr-suit-coverage",
+        "q-cfr-release-two-actions",
+        "q-cfr-lifeboat-360visibility",
+        "q-cfr-lifeboat-secondincommand",
+        "q-cfr-lifeboatmen-25person-threshold",
+        "q-cfr-lifeboat-lowered-quarterly",
+        "q-cfr-liferaft-radarreflector-optional",
+        "q-cfr-liferaft-heavingline-attachment",
+        "q-cfr-liferaft-paddles-length",
+        "q-cfr-stoplowering-signal",
+        "q-cfr-epirb-monthly-test",
+        "q-cfr-firedrill-frequency"
+      ],
+      "promotedTo": "src/content/course.json (verificationStatus set to source-backed-study)",
+      "note": "All 22 questions promoted in one pass. Every question in this pack is transcribed directly and verbatim from typed, official CFR text (33 CFR Part 87 and 46 CFR Parts 160/169/199) -- unlike the photographed/handwritten Vinci batches, there is no pencil-mark ambiguity or handwriting-transcription risk, so source-backed-study was assigned immediately rather than staging through a separate review step. This pack now has 0 questions remaining."
+    }
+  ]
+}

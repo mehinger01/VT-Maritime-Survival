@@ -7592,6 +7592,754 @@
       "explanation": "A lifeboat is required to have one hatchet located at the bow and one at the stern, for quickly cutting lines in an emergency.",
       "sourceReference": "Vinci source batch 2026-07-08-quiz-1a, image 2026-07-08_044219-7.jpg (Final Review Quiz #1, question 39 of 39); see src/content/imports/vinci-2026-07-08-quiz-1a-source-intake.json VERIFICATION FLAG (original): this was a specific, somewhat surprising claim not corroborated anywhere else in this repo's content (a fire extinguisher at each end of engine-powered lifeboats IS already established, which this question's choice B deliberately trades on as a plausible-sounding distractor). RESOLVED 2026-07-09 per vinci-held-question-remediation-report.md: independently confirmed by 46 CFR 169.529(k) (Document(7).PDF.pdf, src/content/imports/vinci-2026-07-08-sea-trials-source-intake.json), which states a lifeboat hatchet must be 'readily available for use, one at each end of the lifeboat' -- a second, independent federal-regulation source matching this question's marked answer word-for-word in substance.",
       "verificationStatus": "source-backed-study"
+    },
+    {
+      "id": "q-cfr-gunsignal-distress",
+      "topicId": "chapter-5-signaling",
+      "prompt": "How often must a gun or other explosive signal be fired to count as a recognized distress signal?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "At intervals of about a minute"
+        },
+        {
+          "id": "b",
+          "text": "Continuously, with no interval between shots",
+          "misconception": "Describes the separate fog-signaling-apparatus method, not the gun/explosive-signal method."
+        },
+        {
+          "id": "c",
+          "text": "Once only, and never repeated",
+          "misconception": "A single shot wouldn't reliably be recognized as ongoing distress rather than an isolated, ambiguous noise."
+        },
+        {
+          "id": "d",
+          "text": "At intervals of about an hour",
+          "misconception": "Far too infrequent to function as a distress signal."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "medium",
+      "hints": [
+        "This is meant to be recognizable as a repeating pattern, not a single ambiguous bang."
+      ],
+      "explanation": "Per 33 CFR 87.1(a), a gun or other explosive signal fired at intervals of about a minute is a recognized distress signal.",
+      "sourceReference": "Sea-trials batch, Document(1).PDF.pdf (33 CFR Part 87, Annex IV: Distress Signals, \u00a7 87.1(a)); see src/content/imports/vinci-2026-07-08-sea-trials-source-intake.json",
+      "verificationStatus": "source-backed-study"
+    },
+    {
+      "id": "q-cfr-mayday-radiotelephony",
+      "topicId": "chapter-5-signaling",
+      "prompt": "What spoken word is the recognized radiotelephone distress signal?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "\"Mayday\""
+        },
+        {
+          "id": "b",
+          "text": "\"SOS\"",
+          "misconception": "SOS is the Morse Code / radiotelegraphy distress signal, a different signaling method from spoken radiotelephony."
+        },
+        {
+          "id": "c",
+          "text": "\"Pan-pan\"",
+          "misconception": "Pan-pan is the urgency signal, one level below distress -- not the distress word itself."
+        },
+        {
+          "id": "d",
+          "text": "\"Roger\"",
+          "misconception": "A standard acknowledgment word, not a distress signal."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "easy",
+      "hints": [
+        "This word is repeated three times in an actual distress call, though the regulation itself just names the single word."
+      ],
+      "explanation": "Per 33 CFR 87.1(e), a distress signal sent by radiotelephony consists of the spoken word \"Mayday.\"",
+      "sourceReference": "Sea-trials batch, Document(1).PDF.pdf (33 CFR Part 87, Annex IV: Distress Signals, \u00a7 87.1(e)); see src/content/imports/vinci-2026-07-08-sea-trials-source-intake.json",
+      "verificationStatus": "source-backed-study"
+    },
+    {
+      "id": "q-cfr-sos-morse-distress",
+      "topicId": "chapter-5-signaling",
+      "prompt": "What does the Morse Code group \". . . -- -- -- . . .\" represent as a distress signal?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "SOS"
+        },
+        {
+          "id": "b",
+          "text": "Mayday",
+          "misconception": "Mayday is the spoken radiotelephony word, a different signaling method from Morse Code."
+        },
+        {
+          "id": "c",
+          "text": "N.C.",
+          "misconception": "N.C. is the International Code Signal flag hoist for distress, a different signaling method."
+        },
+        {
+          "id": "d",
+          "text": "CQD",
+          "misconception": "An older distress call since replaced, not the current recognized signal."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "medium",
+      "hints": [
+        "Three short, three long, three short."
+      ],
+      "explanation": "Per 33 CFR 87.1(d), a signal made by radiotelegraphy or any other signaling method consisting of the group \". . . -- -- -- . . .\" (SOS) in Morse Code is a recognized distress signal.",
+      "sourceReference": "Sea-trials batch, Document(1).PDF.pdf (33 CFR Part 87, Annex IV: Distress Signals, \u00a7 87.1(d)); see src/content/imports/vinci-2026-07-08-sea-trials-source-intake.json",
+      "verificationStatus": "source-backed-study"
+    },
+    {
+      "id": "q-cfr-nc-flag-distress",
+      "topicId": "chapter-5-signaling",
+      "prompt": "What two-letter International Code Signal, displayed as a flag hoist, indicates distress?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "N.C."
+        },
+        {
+          "id": "b",
+          "text": "S.O.",
+          "misconception": "Not a real International Code Signal distress hoist."
+        },
+        {
+          "id": "c",
+          "text": "M.D.",
+          "misconception": "Invents a code not part of the actual signal system."
+        },
+        {
+          "id": "d",
+          "text": "P.D.",
+          "misconception": "Invents a code not part of the actual signal system."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "hard",
+      "hints": [
+        "Two letters, hoisted as flags -- not related to \"no can do\" or similar mnemonics."
+      ],
+      "explanation": "Per 33 CFR 87.1(f), the International Code Signal of distress is indicated by the flag hoist N.C.",
+      "sourceReference": "Sea-trials batch, Document(1).PDF.pdf (33 CFR Part 87, Annex IV: Distress Signals, \u00a7 87.1(f)); see src/content/imports/vinci-2026-07-08-sea-trials-source-intake.json",
+      "verificationStatus": "source-backed-study"
+    },
+    {
+      "id": "q-cfr-squareflag-ball-distress",
+      "topicId": "chapter-5-signaling",
+      "prompt": "Besides flags, flares, and radio signals, what simple shape combination hoisted on a vessel can indicate distress?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "A square flag having above or below it a ball or anything resembling a ball"
+        },
+        {
+          "id": "b",
+          "text": "A triangular flag with a circle beside it",
+          "misconception": "Not the shape combination described by the regulation."
+        },
+        {
+          "id": "c",
+          "text": "Two square flags side by side",
+          "misconception": "Not the shape combination described by the regulation."
+        },
+        {
+          "id": "d",
+          "text": "A ball alone, with no flag",
+          "misconception": "The regulation requires the flag-plus-ball combination, not the ball by itself."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "hard",
+      "hints": [
+        "Think of a flag with a round shape positioned either above or below it."
+      ],
+      "explanation": "Per 33 CFR 87.1(g), a signal consisting of a square flag having above or below it a ball or anything resembling a ball is a recognized distress signal.",
+      "sourceReference": "Sea-trials batch, Document(1).PDF.pdf (33 CFR Part 87, Annex IV: Distress Signals, \u00a7 87.1(g)); see src/content/imports/vinci-2026-07-08-sea-trials-source-intake.json",
+      "verificationStatus": "source-backed-study"
+    },
+    {
+      "id": "q-cfr-orangesmoke-distress",
+      "topicId": "chapter-5-signaling",
+      "prompt": "What color smoke signal is a recognized distress signal?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Orange"
+        },
+        {
+          "id": "b",
+          "text": "Black",
+          "misconception": "Not the color specified by the regulation for a distress smoke signal."
+        },
+        {
+          "id": "c",
+          "text": "White",
+          "misconception": "Not the color specified by the regulation for a distress smoke signal."
+        },
+        {
+          "id": "d",
+          "text": "Green",
+          "misconception": "Not the color specified by the regulation for a distress smoke signal."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "easy",
+      "hints": [
+        "Same color family as a liferaft's buoyant smoke signal."
+      ],
+      "explanation": "Per 33 CFR 87.1(j), a smoke signal giving off orange-colored smoke is a recognized distress signal.",
+      "sourceReference": "Sea-trials batch, Document(1).PDF.pdf (33 CFR Part 87, Annex IV: Distress Signals, \u00a7 87.1(j)); see src/content/imports/vinci-2026-07-08-sea-trials-source-intake.json",
+      "verificationStatus": "source-backed-study"
+    },
+    {
+      "id": "q-cfr-armwave-distress",
+      "topicId": "chapter-5-signaling",
+      "prompt": "If you have no flares, radio, or any other equipment, what body motion alone can signal distress to a nearby vessel or aircraft?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Slowly and repeatedly raising and lowering your arms outstretched to each side"
+        },
+        {
+          "id": "b",
+          "text": "Waving one arm rapidly overhead",
+          "misconception": "Easily mistaken for a routine greeting or wave, not a designated distress motion."
+        },
+        {
+          "id": "c",
+          "text": "Pointing repeatedly toward the horizon",
+          "misconception": "Not the recognized distress motion -- doesn't clearly signal an emergency to a distant observer."
+        },
+        {
+          "id": "d",
+          "text": "Clapping your hands above your head",
+          "misconception": "Not visible or distinctive enough at a distance to serve as a distress signal."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "medium",
+      "hints": [
+        "Think of a slow, deliberate, wide motion -- something that reads clearly as different from a casual wave, even from far away."
+      ],
+      "explanation": "Per 33 CFR 87.1(k), slowly and repeatedly raising and lowering arms outstretched to each side is a recognized distress signal -- valuable precisely because it requires no equipment at all.",
+      "sourceReference": "Sea-trials batch, Document(1).PDF.pdf (33 CFR Part 87, Annex IV: Distress Signals, \u00a7 87.1(k)); see src/content/imports/vinci-2026-07-08-sea-trials-source-intake.json",
+      "verificationStatus": "source-backed-study"
+    },
+    {
+      "id": "q-cfr-whitelight-flash-distress",
+      "topicId": "chapter-5-signaling",
+      "prompt": "A high-intensity white light flashing at what rate is a recognized distress signal?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "50 to 70 times per minute"
+        },
+        {
+          "id": "b",
+          "text": "10 to 20 times per minute",
+          "misconception": "Too slow to match the regulated flash-rate range."
+        },
+        {
+          "id": "c",
+          "text": "100 to 120 times per minute",
+          "misconception": "Too fast to match the regulated flash-rate range."
+        },
+        {
+          "id": "d",
+          "text": "Any flash rate qualifies, as long as the light is white",
+          "misconception": "The regulation specifies a particular rate range, not an unrestricted flash rate."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "very-hard",
+      "hints": [
+        "Roughly once per second, give or take."
+      ],
+      "explanation": "Per 33 CFR 87.1(p), a high intensity white light flashing at regular intervals from 50 to 70 times per minute is a recognized distress signal.",
+      "sourceReference": "Sea-trials batch, Document(1).PDF.pdf (33 CFR Part 87, Annex IV: Distress Signals, \u00a7 87.1(p)); see src/content/imports/vinci-2026-07-08-sea-trials-source-intake.json",
+      "verificationStatus": "source-backed-study"
+    },
+    {
+      "id": "q-cfr-suit-color-vividorange",
+      "topicId": "chapter-1-planning-ahead",
+      "prompt": "What is the required primary exterior color of an approved immersion suit?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Vivid reddish orange"
+        },
+        {
+          "id": "b",
+          "text": "Safety yellow",
+          "misconception": "A common high-visibility color, but not the specific color the regulation requires for immersion suits."
+        },
+        {
+          "id": "c",
+          "text": "The same International Orange used for life preservers, since both are lifesaving gear",
+          "misconception": "Immersion suits have their own specifically-named color requirement, not simply the life preserver color reused."
+        },
+        {
+          "id": "d",
+          "text": "Black, for heat absorption",
+          "misconception": "Black would work against the suit's high-visibility rescue purpose."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "medium",
+      "hints": [
+        "Compare this to the Type I life preserver color options (Indian Orange, International Orange, Scarlet Munsell Red) tested elsewhere -- this is a related but separately-defined requirement."
+      ],
+      "explanation": "Per 46 CFR 160.171-9(h), the primary color of the exterior of each immersion suit must be vivid reddish orange (color number 34 of National Bureau of Standards Publication 440) -- a distinct, specifically-defined shade, not simply the life preserver color requirement reused.",
+      "sourceReference": "Sea-trials batch, Document(6).PDF.pdf (46 CFR 160.171-9(h), Immersion Suits); see src/content/imports/vinci-2026-07-08-sea-trials-source-intake.json",
+      "verificationStatus": "source-backed-study"
+    },
+    {
+      "id": "q-cfr-suit-jumpheight",
+      "topicId": "chapter-1-planning-ahead",
+      "prompt": "An immersion suit's body must be designed to let the wearer jump into the water from what minimum height without injury or damage to the suit?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "4.5 meters (about 15 feet)"
+        },
+        {
+          "id": "b",
+          "text": "1 meter (about 3 feet)",
+          "misconception": "Understates the tested design height."
+        },
+        {
+          "id": "c",
+          "text": "10 meters (about 33 feet)",
+          "misconception": "Overstates the tested design height."
+        },
+        {
+          "id": "d",
+          "text": "Immersion suits aren't designed to be jumped in at all",
+          "misconception": "The suit's construction is specifically tested for exactly this scenario."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "hard",
+      "hints": [
+        "This figure, converted to feet, closely matches a jump-height fact taught elsewhere in this course -- but it's a separate, independent design spec, not a restatement of that fact."
+      ],
+      "explanation": "Per 46 CFR 160.171-9(b), an immersion suit's body must be designed to allow the wearer to jump from a height of at least 4.5 m (about 15 feet) into the water without injury and without dislodging or damaging the suit. This closely matches this course's separately-taught 'preferred jump height of 15 feet or less' guidance -- two independent facts (a suit design spec and a general abandon-ship practice) that reinforce rather than duplicate each other.",
+      "sourceReference": "Sea-trials batch, Document(6).PDF.pdf (46 CFR 160.171-9(b), Immersion Suits); see src/content/imports/vinci-2026-07-08-sea-trials-source-intake.json",
+      "verificationStatus": "source-backed-study"
+    },
+    {
+      "id": "q-cfr-suit-coverage",
+      "topicId": "chapter-1-planning-ahead",
+      "prompt": "How much of the wearer's body must an approved immersion suit cover?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "The entire body, except for the area of the nose and eyes"
+        },
+        {
+          "id": "b",
+          "text": "Only the torso and legs, leaving the arms free",
+          "misconception": "Understates the required coverage -- the arms are covered too."
+        },
+        {
+          "id": "c",
+          "text": "Everything including the face, with a clear panel over the eyes",
+          "misconception": "Overstates the coverage -- the nose and eyes remain uncovered, not covered by a clear panel."
+        },
+        {
+          "id": "d",
+          "text": "Only from the waist down",
+          "misconception": "Drastically understates the required coverage."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "easy",
+      "hints": [
+        "Think about what a survivor still needs to be able to do while wearing it: see and breathe freely."
+      ],
+      "explanation": "Per 46 CFR 160.171-9(a), an immersion suit must be designed to cover the wearer's entire body, except for the area of the nose and eyes.",
+      "sourceReference": "Sea-trials batch, Document(6).PDF.pdf (46 CFR 160.171-9(a), Immersion Suits); see src/content/imports/vinci-2026-07-08-sea-trials-source-intake.json",
+      "verificationStatus": "source-backed-study"
+    },
+    {
+      "id": "q-cfr-release-two-actions",
+      "topicId": "chapter-2-using-lifeboats",
+      "prompt": "Why must a lifeboat's on-load release mechanism require two separate, deliberate actions by the operator to activate?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "To prevent the boat from being accidentally released while it's still loaded and suspended from the falls"
+        },
+        {
+          "id": "b",
+          "text": "To make the mechanism slower to use during a genuine emergency",
+          "misconception": "Reverses the actual safety intent -- the requirement exists to prevent an unwanted release, not to slow down an intended one."
+        },
+        {
+          "id": "c",
+          "text": "To allow two different crew members to physically share the task",
+          "misconception": "Invents an unstated crew-coordination purpose the regulation doesn't describe."
+        },
+        {
+          "id": "d",
+          "text": "There's no specific reason -- it's an arbitrary design choice",
+          "misconception": "Dismisses a deliberate, documented safety requirement as arbitrary."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "hard",
+      "hints": [
+        "Think about what happens if a fully loaded, suspended lifeboat's hooks release by accident, before the boat is in the water."
+      ],
+      "explanation": "Per 46 CFR 160.133-7(b)(7), the on-load operation of a lifeboat's release mechanism must require two separate, deliberate actions by the operator -- a safeguard against an accidental release while the boat is still loaded and suspended from the falls.",
+      "sourceReference": "Sea-trials batch, Document(6).PDF.pdf (46 CFR 160.133-7(b)(7), Release Mechanisms for Lifeboats and Rescue Boats); see src/content/imports/vinci-2026-07-08-sea-trials-source-intake.json",
+      "verificationStatus": "source-backed-study"
+    },
+    {
+      "id": "q-cfr-lifeboat-360visibility",
+      "topicId": "chapter-2-using-lifeboats",
+      "prompt": "What visibility must a lifeboat's operator have from the control station, per Coast Guard design requirements?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "A full 360 degrees around the lifeboat, moving their head and torso as needed to see past any obstructions"
+        },
+        {
+          "id": "b",
+          "text": "Only a forward-facing view, like a car's windshield",
+          "misconception": "Understates the required field of view."
+        },
+        {
+          "id": "c",
+          "text": "Only a rear-facing view, for backing down",
+          "misconception": "Describes only a fraction of the actual requirement."
+        },
+        {
+          "id": "d",
+          "text": "No specific visibility requirement exists -- it's left entirely to the manufacturer",
+          "misconception": "Dismisses a real, specific regulatory requirement."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "hard",
+      "hints": [
+        "Think about needing to see approaching hazards, other survivors in the water, and the boat's own surroundings all at once."
+      ],
+      "explanation": "Per 46 CFR 160.135-7(b)(2), a lifeboat's operator's station must be designed so the operator, when seated at the control station, has visibility 360 degrees around the lifeboat, with any areas obstructed by the lifeboat's structure or fittings made visible by moving the operator's head and torso.",
+      "sourceReference": "Sea-trials batch, Document(6).PDF.pdf (46 CFR 160.135-7(b)(2), Lifeboats (SOLAS)); see src/content/imports/vinci-2026-07-08-sea-trials-source-intake.json",
+      "verificationStatus": "source-backed-study"
+    },
+    {
+      "id": "q-cfr-lifeboat-secondincommand",
+      "topicId": "chapter-2-using-lifeboats",
+      "prompt": "Besides the person placed in charge of a lifeboat, what other leadership role must be designated for it?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "A second-in-command"
+        },
+        {
+          "id": "b",
+          "text": "A backup coxswain who only acts if the vessel sinks",
+          "misconception": "Invents a conditional role not described by the regulation."
+        },
+        {
+          "id": "c",
+          "text": "No other role is required beyond the person in charge",
+          "misconception": "A second-in-command is specifically required in addition to the person in charge."
+        },
+        {
+          "id": "d",
+          "text": "A designated note-taker to log the voyage",
+          "misconception": "Invents an unrelated clerical role not part of the actual requirement."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "medium",
+      "hints": [
+        "Think about who takes over if the person in charge is incapacitated."
+      ],
+      "explanation": "Per 46 CFR 199.100(d), a second-in-command must be designated for each lifeboat, in addition to the person placed in charge -- and the second-in-command must also have a list of the lifeboat's crew.",
+      "sourceReference": "Sea-trials batch, Document(7).PDF.pdf (46 CFR 199.100(d), Manning of Survival Craft and Supervision); see src/content/imports/vinci-2026-07-08-sea-trials-source-intake.json",
+      "verificationStatus": "source-backed-study"
+    },
+    {
+      "id": "q-cfr-lifeboatmen-25person-threshold",
+      "topicId": "chapter-2-using-lifeboats",
+      "prompt": "A lifeboat or liferaft has a prescribed complement of 25 or more persons. What additional crewing requirement does this trigger?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "One additional certificated lifeboatman, beyond the person placed in command"
+        },
+        {
+          "id": "b",
+          "text": "A second full crew must be trained and kept on standby",
+          "misconception": "Overstates the actual requirement."
+        },
+        {
+          "id": "c",
+          "text": "No additional requirement -- capacity alone doesn't affect crewing",
+          "misconception": "A complement of 25 or more persons specifically does trigger an additional crewing requirement."
+        },
+        {
+          "id": "d",
+          "text": "The vessel must carry a spare lifeboat of equal capacity",
+          "misconception": "Invents an unrelated equipment requirement, not a crewing one."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "hard",
+      "hints": [
+        "Larger capacity means more people to manage during a real emergency -- the crewing requirement scales with it."
+      ],
+      "explanation": "Per 46 CFR 169.819(b), the master must place a licensed deck officer, able seaman, or certificated lifeboatman in command of each lifeboat or liferaft -- and each one with a prescribed complement of 25 or more persons must have one additional certificated lifeboatman.",
+      "sourceReference": "Sea-trials batch, Document(7).PDF.pdf (46 CFR 169.819(b), Manning of Lifeboats and Liferafts); see src/content/imports/vinci-2026-07-08-sea-trials-source-intake.json",
+      "verificationStatus": "source-backed-study"
+    },
+    {
+      "id": "q-cfr-lifeboat-lowered-quarterly",
+      "topicId": "chapter-2-using-lifeboats",
+      "prompt": "How often must each lifeboat actually be lowered into the water (not just swung out), per drill requirements?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "At least once every 3 months"
+        },
+        {
+          "id": "b",
+          "text": "At least once every 3 years",
+          "misconception": "Understates how often by a large margin."
+        },
+        {
+          "id": "c",
+          "text": "Only once, during initial vessel certification",
+          "misconception": "Treats a recurring requirement as a one-time event."
+        },
+        {
+          "id": "d",
+          "text": "Every single week, without exception",
+          "misconception": "Overstates the frequency -- weekly is the requirement for the fire-and-boat drill itself, which doesn't necessarily put every lifeboat in the water each time."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "medium",
+      "hints": [
+        "This is a distinct, less-frequent requirement from the weekly fire-and-boat drill schedule tested elsewhere."
+      ],
+      "explanation": "Per 46 CFR 169.833(b)(5), the master shall ensure that each lifeboat is lowered to the water at least once every 3 months -- distinct from the weekly fire-and-boat-drill requirement, which doesn't necessarily put every lifeboat in the water each time.",
+      "sourceReference": "Sea-trials batch, Document(7).PDF.pdf (46 CFR 169.833(b)(5), Fire and Boat Drills); see src/content/imports/vinci-2026-07-08-sea-trials-source-intake.json",
+      "verificationStatus": "source-backed-study"
+    },
+    {
+      "id": "q-cfr-liferaft-radarreflector-optional",
+      "topicId": "chapter-3-using-liferafts",
+      "prompt": "Is a radar reflector always required inside a SOLAS inflatable liferaft?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "No -- it may be omitted if the outside of the raft's container is marked with a notice saying so"
+        },
+        {
+          "id": "b",
+          "text": "Yes, without exception, on every SOLAS liferaft",
+          "misconception": "The regulation explicitly allows a marked exception."
+        },
+        {
+          "id": "c",
+          "text": "No, radar reflectors are never permitted inside liferafts",
+          "misconception": "Reverses the actual rule -- radar reflectors are normally included, with a specific marked exception, not banned outright."
+        },
+        {
+          "id": "d",
+          "text": "Only liferafts under a certain size are exempt",
+          "misconception": "Invents a size-based exemption that isn't the actual condition -- the exemption depends on the container being marked, not the raft's size."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "hard",
+      "hints": [
+        "The exception depends on a label on the container, not on the raft's size or class."
+      ],
+      "explanation": "Per 46 CFR 160.151-21(n), a SOLAS inflatable liferaft's radar reflector may be omitted if the outside of the raft's container includes a notice near the \"SOLAS A\" or \"SOLAS B\" marking indicating that no radar reflector is included.",
+      "sourceReference": "Sea-trials batch, Document(6).PDF.pdf (46 CFR 160.151-21(n), Equipment required for SOLAS A and SOLAS B inflatable liferafts); see src/content/imports/vinci-2026-07-08-sea-trials-source-intake.json",
+      "verificationStatus": "source-backed-study"
+    },
+    {
+      "id": "q-cfr-liferaft-heavingline-attachment",
+      "topicId": "chapter-3-using-liferafts",
+      "prompt": "Where must a SOLAS inflatable liferaft's heaving line be attached?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Near the entrance furthest from the painter attachment"
+        },
+        {
+          "id": "b",
+          "text": "Directly beside the painter attachment",
+          "misconception": "Reverses the actual required placement."
+        },
+        {
+          "id": "c",
+          "text": "Coiled loose inside the raft, unattached to any point",
+          "misconception": "The line must be attached at a specific point, not left loose."
+        },
+        {
+          "id": "d",
+          "text": "At the exact center of the raft's floor",
+          "misconception": "Not the attachment point described by the regulation."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "hard",
+      "hints": [
+        "Think about wanting the heaving line accessible from the side of the raft that's farthest from where it's already tethered to the ship or another line."
+      ],
+      "explanation": "Per 46 CFR 160.151-21(a), a SOLAS inflatable liferaft's buoyant heaving line must have a breaking strength of not less than 1.1 kN (250 lb) and must be attached to the raft near the entrance furthest from the painter attachment -- a different fact from the heaving line's overall length, which is tested elsewhere in this course.",
+      "sourceReference": "Sea-trials batch, Document(6).PDF.pdf (46 CFR 160.151-21(a), Equipment required for SOLAS A and SOLAS B inflatable liferafts); see src/content/imports/vinci-2026-07-08-sea-trials-source-intake.json",
+      "verificationStatus": "source-backed-study"
+    },
+    {
+      "id": "q-cfr-liferaft-paddles-length",
+      "topicId": "chapter-3-using-liferafts",
+      "prompt": "What is the minimum length required for paddles carried in a SOLAS inflatable liferaft?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "1.2 meters (about 4 feet)"
+        },
+        {
+          "id": "b",
+          "text": "0.3 meters (about 1 foot)",
+          "misconception": "Far too short to be a usable paddle."
+        },
+        {
+          "id": "c",
+          "text": "3 meters (about 10 feet)",
+          "misconception": "Overstates the actual minimum length."
+        },
+        {
+          "id": "d",
+          "text": "No minimum length is specified",
+          "misconception": "The regulation specifies a concrete minimum length."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "medium",
+      "hints": [
+        "About the height of a tall person's torso and arm combined."
+      ],
+      "explanation": "Per 46 CFR 160.151-21(f), the paddles carried in a SOLAS inflatable liferaft must be at least 1.2 m (4 ft) long.",
+      "sourceReference": "Sea-trials batch, Document(6).PDF.pdf (46 CFR 160.151-21(f), Equipment required for SOLAS A and SOLAS B inflatable liferafts); see src/content/imports/vinci-2026-07-08-sea-trials-source-intake.json",
+      "verificationStatus": "source-backed-study"
+    },
+    {
+      "id": "q-cfr-stoplowering-signal",
+      "topicId": "chapter-2-using-lifeboats",
+      "prompt": "What whistle signal is used to STOP lowering a lifeboat that's already being lowered?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Two short blasts"
+        },
+        {
+          "id": "b",
+          "text": "One short blast",
+          "misconception": "One short blast is the signal to START lowering, not stop it."
+        },
+        {
+          "id": "c",
+          "text": "One long blast",
+          "misconception": "Not the signal used for this specific action."
+        },
+        {
+          "id": "d",
+          "text": "Three short blasts",
+          "misconception": "Not the signal used for this specific action."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "medium",
+      "hints": [
+        "This is the direct complement to the already-taught signal for commencing lowering -- one more blast than that one."
+      ],
+      "explanation": "Per 46 CFR 169.815(c), where whistle signals are used for handling lifeboats, one short blast means lower the lifeboats, and two short blasts means stop lowering them.",
+      "sourceReference": "Sea-trials batch, Document(7).PDF.pdf (46 CFR 169.815(c)(2), Emergency Signals); see src/content/imports/vinci-2026-07-08-sea-trials-source-intake.json",
+      "verificationStatus": "source-backed-study"
+    },
+    {
+      "id": "q-cfr-epirb-monthly-test",
+      "topicId": "chapter-5-signaling",
+      "prompt": "How often must a vessel's EPIRB be tested using its integrated test circuit?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Monthly"
+        },
+        {
+          "id": "b",
+          "text": "Weekly",
+          "misconception": "More frequent than actually required."
+        },
+        {
+          "id": "c",
+          "text": "Annually",
+          "misconception": "Less frequent than actually required."
+        },
+        {
+          "id": "d",
+          "text": "Only once, at installation",
+          "misconception": "Treats a recurring test requirement as a one-time event."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "medium",
+      "hints": [
+        "This is a routine, recurring self-test, not an annual inspection."
+      ],
+      "explanation": "Per 46 CFR 169.831(a), the master shall ensure the EPIRB is tested monthly, using the integrated test circuit and output indicator, to determine that it is operative.",
+      "sourceReference": "Sea-trials batch, Document(7).PDF.pdf (46 CFR 169.831(a), Emergency Position Indicating Radio Beacon (EPIRB)); see src/content/imports/vinci-2026-07-08-sea-trials-source-intake.json",
+      "verificationStatus": "source-backed-study"
+    },
+    {
+      "id": "q-cfr-firedrill-frequency",
+      "topicId": "chapter-1-planning-ahead",
+      "prompt": "Besides being conducted weekly, when else must a fire and boat drill be held, per Coast Guard regulation?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Within 24 hours of leaving a port, if more than 25 percent of the ship's company was replaced there"
+        },
+        {
+          "id": "b",
+          "text": "Only after an actual emergency has occurred",
+          "misconception": "Drills are proactive preparation, not something triggered only by a real incident -- and this ignores the actual crew-turnover trigger."
+        },
+        {
+          "id": "c",
+          "text": "Whenever a passenger specifically requests one",
+          "misconception": "Invents an unstated passenger-driven trigger."
+        },
+        {
+          "id": "d",
+          "text": "There is no additional trigger beyond the weekly schedule",
+          "misconception": "The crew-turnover trigger is a real, specific additional requirement beyond the weekly schedule."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "medium",
+      "hints": [
+        "Think about a large fraction of the crew being new to the vessel all at once -- they haven't drilled on this specific ship yet."
+      ],
+      "explanation": "Per 46 CFR 169.833(a), the master shall conduct a fire and boat drill each week -- and at least one fire and boat drill must be held within 24 hours of leaving a port if more than 25 percent of the ship's company have been replaced at that port.",
+      "sourceReference": "Sea-trials batch, Document(7).PDF.pdf (46 CFR 169.833(a), Fire and Boat Drills); see src/content/imports/vinci-2026-07-08-sea-trials-source-intake.json",
+      "verificationStatus": "source-backed-study"
     }
   ]
 }
