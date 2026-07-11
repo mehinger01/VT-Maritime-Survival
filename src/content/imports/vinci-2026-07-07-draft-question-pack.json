@@ -18,7 +18,7 @@
       "choices": [
         {
           "id": "a",
-          "text": "Green marks life-saving equipment or its location; blue/purple marks an operating instruction"
+          "text": "Green marks safe-condition information -- life-saving equipment and its location is one such category, alongside others like escape-route direction signs; blue/purple instead marks an operating instruction"
         },
         {
           "id": "b",
@@ -28,7 +28,7 @@
         {
           "id": "c",
           "text": "Green is for personal flotation devices only; blue/purple is for signaling equipment only",
-          "misconception": "Invents a device-category split instead of the real function-based (location vs. instruction) split."
+          "misconception": "Invents a device-category split instead of the real function-based (safe-condition info vs. instruction) split."
         },
         {
           "id": "d",
@@ -40,10 +40,10 @@
       "difficulty": "medium",
       "hints": [
         "Think about what the pictogram is telling you to do versus what it's simply labeling.",
-        "One color family marks 'where equipment is'; the other marks 'what action to take.'"
+        "One color family marks 'where equipment is/what's safe'; the other marks 'what action to take.'"
       ],
-      "explanation": "On IMO/LSA lifesaving symbol charts, green pictograms mark life-saving equipment and its stowage location (lifeboat, liferaft, embarkation ladder, etc.), while blue/purple pictograms mark operating instructions (fasten seat belts, release gripes, start engine, etc.) rather than equipment locations.",
-      "sourceReference": "Vinci source batch 2026-07-07, image 2026-07-07_030301.jpg (chapter-1-planning-ahead, IMO/LSA safety symbol pictograms); see src/content/imports/vinci-2026-07-07-verification-map.json",
+      "explanation": "On IMO/LSA lifesaving symbol charts, green pictograms mark safe-condition information. Life-saving equipment and its stowage location (lifeboat, liferaft, embarkation ladder, etc.) is one common category shown here -- the same green family also covers other safe-condition signs, such as escape-route direction markers (tested separately in this course, see q-ch1-imo-symbols-scenario-medium). Blue/purple pictograms, by contrast, mark operating instructions (fasten seat belts, release gripes, start engine, etc.) rather than equipment or safe-condition locations.",
+      "sourceReference": "Vinci source batch 2026-07-07, image 2026-07-07_030301.jpg (chapter-1-planning-ahead, IMO/LSA safety symbol pictograms); see src/content/imports/vinci-2026-07-07-verification-map.json. Revised 2026-07-09 per vinci-held-question-remediation-report.md to explicitly reconcile with the live q-ch1-imo-symbols-scenario-medium's escape-route framing, so the two green-pictogram questions read as complementary (different safe-condition sub-categories) rather than contradictory.",
       "verificationStatus": "draft-unverified"
     },
     {
@@ -84,26 +84,26 @@
     {
       "id": "q-vinci-togglepin-vs-pintlegudgeon",
       "topicId": "chapter-2-using-lifeboats",
-      "prompt": "A lifeboat's tiller is attached to the top of the rudder by a toggle pin. What holds the rudder itself onto the boat's stern post?",
+      "prompt": "A lifeboat's steering gear has two separate pin connections that are easy to mix up: a toggle pin, and a pintle-and-gudgeon pair. What's the key difference in what each one connects?",
       "choices": [
         {
           "id": "a",
-          "text": "Pintles and gudgeons -- a separate set of metal fittings from the toggle pin"
+          "text": "The toggle pin holds the tiller onto the top of the rudder; the pintles and gudgeons are a completely separate pin-and-socket pair that hinge the rudder itself onto the boat's stern post"
         },
         {
           "id": "b",
-          "text": "The same toggle pin that attaches the tiller",
-          "misconception": "Conflates the toggle pin (tiller-to-rudder) with the separate pintle/gudgeon hardware (rudder-to-stern-post)."
+          "text": "They're the same connection point -- just two different names for the same pin",
+          "misconception": "Conflates two distinct, separately located fittings as if they were one."
         },
         {
           "id": "c",
-          "text": "A Kort Nozzle",
-          "misconception": "Confuses steering-hinge hardware with an unrelated propeller-guard/steering-aid fitting."
+          "text": "The pintles and gudgeons hold the tiller to the rudder; the toggle pin hinges the rudder to the stern post",
+          "misconception": "Reverses which fitting connects to which part."
         },
         {
           "id": "d",
-          "text": "Nothing -- the rudder simply rests loose against the stern post",
-          "misconception": "Ignores that the rudder is a fixed, hinged fitting, not a loose one."
+          "text": "Both the toggle pin and the pintle/gudgeon pair hinge the rudder to the stern post, just at different heights",
+          "misconception": "Misses that the toggle pin's job is the tiller connection entirely, not a second stern-post hinge point."
         }
       ],
       "correctChoiceId": "a",
@@ -113,7 +113,7 @@
         "The rudder-to-boat connection uses a pin-and-socket pair, not the same pin that holds the tiller."
       ],
       "explanation": "These are two separate fittings that are easy to mix up: a toggle pin holds the tiller onto the top of the rudder, while pintles and gudgeons (a pin-and-socket pair) hold the rudder itself onto the boat's stern post, forming the rudder's hinge.",
-      "sourceReference": "Vinci source batch 2026-07-07, image 2026-07-07_041663-12.jpg (chapter-2-using-lifeboats, Steering Equipment -- tiller, rudder, pintle, gudgeon, Kort Nozzle, steering wheel); see src/content/imports/vinci-2026-07-07-verification-map.json",
+      "sourceReference": "Vinci source batch 2026-07-07, image 2026-07-07_041663-12.jpg (chapter-2-using-lifeboats, Steering Equipment -- tiller, rudder, pintle, gudgeon, Kort Nozzle, steering wheel); see src/content/imports/vinci-2026-07-07-verification-map.json. Revised 2026-07-09 per vinci-held-question-remediation-report.md: originally framed so the correct answer restated the already-live pintle/gudgeon fact (q-gloss-pintle, q-gloss-gudgeon) instead of testing the toggle pin. Reframing to test the toggle pin directly was considered, but q-quiz1a-toggle-pin-tiller (promoted 2026-07-09) now already tests exactly that fact, so this question was rewritten as a compare-and-contrast between the two fittings instead -- the only angle neither existing live question covers.",
       "verificationStatus": "draft-unverified"
     },
     {

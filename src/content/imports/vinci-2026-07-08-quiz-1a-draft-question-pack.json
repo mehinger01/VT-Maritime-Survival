@@ -6,7 +6,7 @@
     "src/content/imports/vinci-2026-07-08-quiz-1a-image-manifest.json"
   ],
   "purpose": "Draft (inactive) question objects derived from the Vinci 2026-07-08 quiz-1a batch -- a typed, 39-question multiple-choice 'LIFEBOATMAN & WATER SURVIVAL FINAL REVIEW QUIZ #1' with hand-circled correct answers, plus a diagram sheet (D011SA lifeboat interior, D015SA liferaft). These are NOT part of src/content/course.json's live \"questions\" array and will not appear in the app until explicitly promoted, after each question's verificationStatus is upgraded from draft-unverified and each fact is checked against Vinci's confirmed manual copy.",
-  "activationRule": "Do not add any of these questions to course.json unless its verificationStatus has been changed away from 'draft-unverified' following direct confirmation against the manual. The four image-based questions (q-quiz1a-d011sa-flemming-gear, q-quiz1a-d015sa-righting-strap, q-quiz1a-d015sa-heavingline-number, q-quiz1a-d015sa-pressurevalve) additionally need the D014SA/D015SA diagram-naming mismatch resolved before promotion, and q-quiz1a-bow-stern-hatchet needs its surprising bow+stern-hatchet claim confirmed.",
+  "activationRule": "Do not add any of these questions to course.json unless its verificationStatus has been changed away from 'draft-unverified' following direct confirmation against the manual. Update 2026-07-09 (see vinci-held-question-remediation-report.md for full detail): the four image-based questions (q-quiz1a-d011sa-flemming-gear, q-quiz1a-d015sa-righting-strap, q-quiz1a-d015sa-heavingline-number, q-quiz1a-d015sa-pressurevalve) now use cropped, per-diagram images (2026-07-08_044219-8-d011sa.jpg / -d015sa.jpg) instead of the original shared photo -- the D014SA/D015SA diagram-naming mismatch remains unresolved as a citation-only footnote (it's never asserted in any prompt/choice text, so it doesn't block promotion). q-quiz1a-bow-stern-hatchet's claim is now independently confirmed by 46 CFR 169.529(k) (see its sourceReference) and no longer needs manual/Vinci confirmation. q-quiz1a-liferaft-cold-protection and q-quiz1a-seaanchor-substitute remain blocked on their own separate issue (medium-confidence pencil-mark reading, not source verification) -- unaffected by this update.",
   "duplicateCheckNotes": "Cross-referenced against all 145 live questions in src/content/course.json AND both prior unpromoted draft packs (vinci-2026-07-07-draft-question-pack.json, 6 remaining questions; vinci-2026-07-08-quiz-review-1-draft-question-pack.json, 19 questions) before drafting -- 170 existing question objects checked in total. Skipped as duplicates: question 11 (correct-answer marking is genuinely ambiguous -- two overlapping pencil circles with no way to resolve which was final, per instructions), question 19 (finding a capsized liferaft's correct side via the CO2-cylinder/righting-strap technique -- already tested four ways by live q-raft-2, q-raft-7, and q-raft-11, plus the general technique in q-raft-1; this question's 'too dark to read the stencil' framing doesn't add enough beyond those four to justify a fifth), and question 28 (limber holes allow bilge liquid to flow to the drain -- already tested by live q-gloss-limber AND flagged as a near-duplicate in the pending draft q-vinci-limber-holes AND independently skipped as a duplicate in the 2026-07-08-quiz-review-1 batch; this would be a fourth occurrence of the identical fact with no new angle). Several included questions deliberately test a distinct angle from a related existing question rather than being excluded as duplicates -- see each question's sourceReference for the specific relationship noted (e.g. question 10 tests WHERE the lifeboatmen figure is documented vs. the already-promoted question's specific table VALUE; question 29 tests WHERE buoyancy units are located vs. the pending draft's WHAT they're made of; question 31 is a clean, correctly-framed toggle-pin question that resolves the framing problem flagged in the pending q-vinci-togglepin-vs-pintlegudgeon's promotion review).",
   "questions": [
     {
@@ -105,10 +105,10 @@
       "correctChoiceId": "b",
       "difficulty": "hard",
       "hints": [
-        "This figure happens to match a different, separate lifeboat speed requirement elsewhere in this course -- read carefully whether a question is asking about a MAXIMUM or a MINIMUM speed."
+        "This figure (6 knots) also happens to be the separate Class 1 motor lifeboat's MINIMUM speed requirement, already live in this course as its own question -- read carefully whether a question is asking about a MAXIMUM or a MINIMUM speed."
       ],
       "explanation": "An enclosed lifeboat's maximum speed in smooth seas at maximum capacity is 6 knots. Careful: this is a different claim from the Class 1 motor lifeboat's minimum required speed (also 6 knots) -- same number, different meaning (a ceiling here vs. a floor there).",
-      "sourceReference": "Vinci source batch 2026-07-08-quiz-1a, image 2026-07-08_044219-2.jpg (Final Review Quiz #1, question 9 of 39); see src/content/imports/vinci-2026-07-08-quiz-1a-source-intake.json Confusion-risk note: shares the number '6 knots' with the separately-established Class 1 motor lifeboat MINIMUM speed requirement (pending draft q-quizr1-class1-speed, 2026-07-08-quiz-review-1 batch) -- this question is about a MAXIMUM, that one is about a MINIMUM.",
+      "sourceReference": "Vinci source batch 2026-07-08-quiz-1a, image 2026-07-08_044219-2.jpg (Final Review Quiz #1, question 9 of 39); see src/content/imports/vinci-2026-07-08-quiz-1a-source-intake.json Confusion-risk note: shares the number '6 knots' with the separately-established Class 1 motor lifeboat MINIMUM speed requirement (live q-quizr1-class1-speed, promoted 2026-07-08 from the 2026-07-08-quiz-review-1 batch) -- this question is about a MAXIMUM, that one is about a MINIMUM. Wording checked 2026-07-09 per vinci-held-question-remediation-report.md -- hint updated to name the live cross-reference directly now that it's confirmed live, rather than referring to it vaguely.",
       "verificationStatus": "draft-unverified"
     },
     {
@@ -144,8 +144,8 @@
       "explanation": "In diagram D011SA, item 1 is the Flemming (Fleming) gear used to hand propel the boat.",
       "sourceReference": "Vinci source batch 2026-07-08-quiz-1a, image 2026-07-08_044219-5.jpg (Final Review Quiz #1, question 24 of 39); see src/content/imports/vinci-2026-07-08-quiz-1a-source-intake.json Diagram sheet: 2026-07-08_044219-8.jpg, top diagram (printed 'D011SA', consistent with the quiz text -- no naming mismatch for this diagram).",
       "verificationStatus": "draft-unverified",
-      "image": "/content/vinci/2026-07-08-quiz-1a/2026-07-08_044219-8.jpg",
-      "imageAlt": "Photo of two labeled technical diagrams from the Vinci 2026-07-08 quiz-1a batch -- top diagram is D011SA (lifeboat interior cross-section), referenced by this question's item 1"
+      "image": "/content/vinci/2026-07-08-quiz-1a/2026-07-08_044219-8-d011sa.jpg",
+      "imageAlt": "Photo of the D011SA lifeboat interior cross-section diagram from the Vinci 2026-07-08 quiz-1a batch, cropped 2026-07-09 to isolate this diagram from the D015SA liferaft diagram it originally shared a page with -- item 1 (Flemming gear) referenced by this question"
     },
     {
       "id": "q-quiz1a-d015sa-righting-strap",
@@ -180,8 +180,8 @@
       "explanation": "On the liferaft diagram, item 9 is the righting strap.",
       "sourceReference": "Vinci source batch 2026-07-08-quiz-1a, image 2026-07-08_044219-6.jpg (Final Review Quiz #1, question 30 of 39); see src/content/imports/vinci-2026-07-08-quiz-1a-source-intake.json Diagram sheet: 2026-07-08_044219-8.jpg, bottom diagram, printed 'D015SA'. Note: the quiz text cites this as 'diagram D014SA' -- the printed diagram is labeled D015SA, and this naming mismatch is unresolved (see source intake notes). Content otherwise matches (a liferaft diagram with a righting strap, heaving line, and pressure relief valve all present).",
       "verificationStatus": "draft-unverified",
-      "image": "/content/vinci/2026-07-08-quiz-1a/2026-07-08_044219-8.jpg",
-      "imageAlt": "Photo of two labeled technical diagrams from the Vinci 2026-07-08 quiz-1a batch -- bottom diagram is a liferaft (printed 'D015SA', cited in the quiz as 'D014SA'), item 9 referenced by this question"
+      "image": "/content/vinci/2026-07-08-quiz-1a/2026-07-08_044219-8-d015sa.jpg",
+      "imageAlt": "Photo of the D015SA liferaft diagram from the Vinci 2026-07-08 quiz-1a batch, cropped 2026-07-09 to isolate this diagram from the D011SA lifeboat-interior diagram it originally shared a page with -- item 9 (righting strap) referenced by this question"
     },
     {
       "id": "q-quiz1a-d015sa-heavingline-number",
@@ -216,8 +216,8 @@
       "explanation": "On the liferaft diagram, item 5 represents the heaving line.",
       "sourceReference": "Vinci source batch 2026-07-08-quiz-1a, image 2026-07-08_044219-6.jpg (Final Review Quiz #1, question 32 of 39); see src/content/imports/vinci-2026-07-08-quiz-1a-source-intake.json Diagram sheet: 2026-07-08_044219-8.jpg, bottom diagram, printed 'D015SA'. Note: the quiz text cites this as 'diagram D014SA' -- the printed diagram is labeled D015SA, and this naming mismatch is unresolved (see source intake notes).",
       "verificationStatus": "draft-unverified",
-      "image": "/content/vinci/2026-07-08-quiz-1a/2026-07-08_044219-8.jpg",
-      "imageAlt": "Photo of two labeled technical diagrams from the Vinci 2026-07-08 quiz-1a batch -- bottom diagram is a liferaft (printed 'D015SA', cited in the quiz as 'D014SA'), numbered items referenced by this question"
+      "image": "/content/vinci/2026-07-08-quiz-1a/2026-07-08_044219-8-d015sa.jpg",
+      "imageAlt": "Photo of the D015SA liferaft diagram from the Vinci 2026-07-08 quiz-1a batch, cropped 2026-07-09 to isolate this diagram from the D011SA lifeboat-interior diagram it originally shared a page with -- numbered items referenced by this question (item 5, the heaving line)"
     },
     {
       "id": "q-quiz1a-d015sa-pressurevalve",
@@ -252,8 +252,8 @@
       "explanation": "On the liferaft diagram, item 4 is the pressure relief valve.",
       "sourceReference": "Vinci source batch 2026-07-08-quiz-1a, image 2026-07-08_044219-7.jpg (Final Review Quiz #1, question 34 of 39); see src/content/imports/vinci-2026-07-08-quiz-1a-source-intake.json Diagram sheet: 2026-07-08_044219-8.jpg, bottom diagram, printed 'D015SA'. Note: the quiz text cites this as 'diagram D014SA' -- the printed diagram is labeled D015SA, and this naming mismatch is unresolved (see source intake notes).",
       "verificationStatus": "draft-unverified",
-      "image": "/content/vinci/2026-07-08-quiz-1a/2026-07-08_044219-8.jpg",
-      "imageAlt": "Photo of two labeled technical diagrams from the Vinci 2026-07-08 quiz-1a batch -- bottom diagram is a liferaft (printed 'D015SA', cited in the quiz as 'D014SA'), item 4 referenced by this question"
+      "image": "/content/vinci/2026-07-08-quiz-1a/2026-07-08_044219-8-d015sa.jpg",
+      "imageAlt": "Photo of the D015SA liferaft diagram from the Vinci 2026-07-08 quiz-1a batch, cropped 2026-07-09 to isolate this diagram from the D011SA lifeboat-interior diagram it originally shared a page with -- item 4 (pressure relief valve) referenced by this question"
     },
     {
       "id": "q-quiz1a-bow-stern-hatchet",
@@ -286,7 +286,7 @@
         "This tool would be useful for quickly cutting lines at either end of the boat during an emergency."
       ],
       "explanation": "A lifeboat is required to have one hatchet located at the bow and one at the stern, for quickly cutting lines in an emergency.",
-      "sourceReference": "Vinci source batch 2026-07-08-quiz-1a, image 2026-07-08_044219-7.jpg (Final Review Quiz #1, question 39 of 39); see src/content/imports/vinci-2026-07-08-quiz-1a-source-intake.json VERIFICATION FLAG: this is a specific, somewhat surprising claim not corroborated anywhere else in this repo's content yet (a fire extinguisher at each end of engine-powered lifeboats IS already established, which this question's choice B deliberately trades on as a plausible-sounding distractor) -- confirm against the manual or with Vinci before treating as settled.",
+      "sourceReference": "Vinci source batch 2026-07-08-quiz-1a, image 2026-07-08_044219-7.jpg (Final Review Quiz #1, question 39 of 39); see src/content/imports/vinci-2026-07-08-quiz-1a-source-intake.json VERIFICATION FLAG (original): this was a specific, somewhat surprising claim not corroborated anywhere else in this repo's content (a fire extinguisher at each end of engine-powered lifeboats IS already established, which this question's choice B deliberately trades on as a plausible-sounding distractor). RESOLVED 2026-07-09 per vinci-held-question-remediation-report.md: independently confirmed by 46 CFR 169.529(k) (Document(7).PDF.pdf, src/content/imports/vinci-2026-07-08-sea-trials-source-intake.json), which states a lifeboat hatchet must be 'readily available for use, one at each end of the lifeboat' -- a second, independent federal-regulation source matching this question's marked answer word-for-word in substance.",
       "verificationStatus": "draft-unverified"
     }
   ],
