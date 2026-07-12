@@ -1,0 +1,100 @@
+{
+  "batchId": "vinci_source_batch_2026_07_08_quiz_3",
+  "student": "Vinci",
+  "dateReceived": "2026-07-08",
+  "sourceFolder": "Vinci/_Archive/Received through 2026-07-08 - Not all processed/Not yet processed/quiz 3",
+  "status": "intake",
+  "items": [
+    {
+      "id": "vinci-2026-07-08-quiz3-064497-1",
+      "file": "2026-07-07_064497-1.jpg",
+      "publicPath": "/content/vinci/2026-07-08-quiz-3/2026-07-07_064497-1.jpg",
+      "sourceType": "quiz-photo",
+      "chapterGuess": "chapter-3-using-liferafts (Q1), chapter-2-using-lifeboats (Q2, Q4), chapter-4-survival-methods (Q3)",
+      "visualUseStatus": "source-only",
+      "extractionStatus": "extracted",
+      "verificationStatus": "unverified",
+      "notes": "Title page: 'Review Quiz #3', Water Survival, SHLSOS Course #549. All four answers clearly legible in pencil/pen; one trailing phrase on Q2's answer is illegible (see extractedText) and was not guessed.",
+      "extractedTitle": "Review Quiz #3 (questions 1-4)",
+      "extractedText": "1. Name some materials or equipment found in lifeboats that could substitute for a lost sea anchor.\nStudent answer: 'Buckets'\n\n2. What is the standard requirement used to determine the length of a lifeboat's sea painter?\nStudent answer: 'At least 2 3/4 inches in circumference made of manila fiber or equal strength synthetic line are provided. The painters must be at least two times as long as the distance between the boat deck & the ship's waterline when the ship is light or [ILLEGIBLE -- final 1-2 words of the sentence could not be confidently read; not guessed].'\n\n3. After abandoning ship and boarding a life craft, when is it permissible for personnel to take water and food?\nStudent answer: 'after 24 hrs'\n\n4. What requirements are there for hatchets in a lifeboat?\nStudent answer (two false starts crossed out: 'To disconnect from...' and 'To pull the lifeboats open'): 'They are used for cutting/freeing the lifeboat from gear it may become entangled/fouled with. 2 hatchets secured by lanyards to each end of the boat near the releasing gear.'",
+      "keyFacts": [
+        "A bucket is named as a substitute for a lost sea anchor.",
+        "A lifeboat's sea painter must be at least 2 3/4 inches in circumference, made of manila fiber or equal-strength synthetic line, and at least twice as long as the distance between the boat deck and the ship's waterline when the ship is light.",
+        "Water and food may be taken after 24 hours of abandoning ship.",
+        "Lifeboat hatchets are used for cutting/freeing the boat from fouled gear; 2 hatchets are secured by lanyards to each end of the boat, near the releasing gear."
+      ],
+      "examAngles": [
+        "What determines a sea painter's required length and material? (NEW -- not yet tested anywhere in the live bank)",
+        "Where specifically are a lifeboat's hatchets secured, beyond just 'one at each end'? (NEW angle on an already-tested fact -- the 'near the releasing gear' detail)"
+      ],
+      "possibleMisconceptions": [
+        "Assuming sea painter length is a fixed absolute figure rather than a ratio tied to the ship's freeboard (boat deck to waterline distance)."
+      ],
+      "extractionConfidence": "high, except the one illegible trailing phrase on Q2 (not used)",
+      "needsFollowUp": false
+    },
+    {
+      "id": "vinci-2026-07-08-quiz3-064497-2",
+      "file": "2026-07-07_064497-2.jpg",
+      "publicPath": "/content/vinci/2026-07-08-quiz-3/2026-07-07_064497-2.jpg",
+      "sourceType": "quiz-photo",
+      "chapterGuess": "chapter-2-using-lifeboats (Q5, Q6, Q8, Q9), chapter-1-planning-ahead (Q7)",
+      "visualUseStatus": "source-only",
+      "extractionStatus": "extracted",
+      "verificationStatus": "unverified",
+      "notes": "All five answers legible. Q7's answer includes two crossed-out items ('Abandon ship alarm', 'Dismissal signal') not used -- only the four items the student left standing were extracted. Q8's answer is legible for the clearly-written parts ('portside of the vessel', 'forward of lifeboat #6') but the connecting relationship to the inserted 'lifeboat #2' note (squeezed in above the line, no connecting word like 'aft of' clearly visible) required inference from standard lifeboat-numbering convention rather than direct transcription -- flagged as medium confidence, not guessed as fact but reconstructed from the already-established numbering rule and noted as such.",
+      "extractedTitle": "Review Quiz #3 (questions 5-9)",
+      "extractedText": "5. What equipment is available in a lifeboat that reduces the possibility of it capsizing?\nStudent answer: 'Sea anchor/drougue [drogue]'\n\n6. Describe the proper procedure for retrieving a lifeboat's sea anchor\nStudent answer: 'retrieving it by the tripping line'\n\n7. List the items or directions that can be found on a ship's Station Bill\nStudent answer (4 items left standing, 2 crossed out and excluded): 'Emergency alarms, Signals, & Instructions' / 'Fire alarm' / 'Emergency duties' / 'Alarm signals'\n\n8. Your vessel has 3 lifeboats on each side; in relation to the other lifeboats on its side, where would #4 lifeboat be located?\nStudent answer: 'On the portside of the vessel [lifeboat #2 inserted above the line, connecting word not clearly legible] & forward of lifeboat #6'. MEDIUM CONFIDENCE: the clearly-legible parts are 'portside of the vessel' and 'forward of lifeboat #6'; the relationship to 'lifeboat #2' was reconstructed as 'aft of' based on the already-live standard numbering convention (even numbers ascend bow-to-aft on the port side, so #4 sits between #2 and #6), not directly read from the handwriting.\n\n9. Describe the lines attached to a sea anchor and their uses.\nStudent answer: 'Tripping line, This will bring the apex forward + empty the sea anchor of water, allowing it to be pulled onto the boat. Drag line, the cone fills with water & creates a drag on the lifeboat. To create most drag the holding line should be towed while slacking.'",
+      "keyFacts": [
+        "A sea anchor (or drogue) is lifeboat equipment that reduces the possibility of capsizing.",
+        "A lifeboat's sea anchor is retrieved by its tripping line.",
+        "A sea anchor's tripping line brings the apex forward and empties it of water so it can be pulled aboard; a separate drag/holding line is what creates drag when towed with slack paid out.",
+        "A Station Bill lists emergency alarms/signals/instructions, the fire alarm, emergency duties, and alarm signals (per this student's own enumeration).",
+        "In a 3-per-side lifeboat arrangement, #4 lifeboat is on the port side, aft of #2 and forward of #6 (the 'aft of #2' half is a reconstruction from standard convention, not directly legible)."
+      ],
+      "examAngles": [
+        "What equipment reduces a lifeboat's capsize risk? (NEW -- distinct from the already-tested liferaft ballast-bag/canopy content)",
+        "How is a sea anchor retrieved, and what's the difference between its tripping line and its drag/holding line? (NEW -- rich compare-and-contrast content)",
+        "Applying the lifeboat numbering convention to a concrete worked example (#4 relative to #2 and #6), distinct in format from the abstract rule already tested live",
+        "Station Bill contents as an enumerated list -- distinct format from the already-live bare-definition question, but low new-information value"
+      ],
+      "possibleMisconceptions": [
+        "Confusing the tripping line (retrieval/collapse) with the drag/holding line (creates drag while deployed) -- exactly the kind of two-similar-fittings mixup this course targets elsewhere.",
+        "Assuming lifeboat numbering restarts or doesn't follow a strict fore-to-aft order per side."
+      ],
+      "extractionConfidence": "high for Q5, Q6, Q9; medium for Q7 (near-duplicate low-value) and Q8 (partial reconstruction, see notes)",
+      "needsFollowUp": true
+    },
+    {
+      "id": "vinci-2026-07-08-quiz3-064497-3",
+      "file": "2026-07-07_064497-3.jpg",
+      "publicPath": "/content/vinci/2026-07-08-quiz-3/2026-07-07_064497-3.jpg",
+      "sourceType": "quiz-photo",
+      "chapterGuess": "chapter-1-planning-ahead (Q10), chapter-2-using-lifeboats (Q11, Q12, Q13, Q14)",
+      "visualUseStatus": "source-only",
+      "extractionStatus": "extracted",
+      "verificationStatus": "unverified",
+      "notes": "All five answers legible. Q10 has a crossed-out X mark before the final '3' (looks like a false start, not a separate answer). Q14 has a crossed-out 'Releasing gear' false start before the actual answer.",
+      "extractedTitle": "Review Quiz #3 (questions 10-14)",
+      "extractedText": "10. How many certified lifeboatmen are required to crew a lifeboat that carries 50 passengers?\nStudent answer (false start crossed out): '3'\n\n11. What is the diameter requirement for the sheaves for the davit falls?\nStudent answer: 'Diameter at the base of the groove equal to at least 12 times the diameter of the wire rope.'\n\n12. Why is it important to adequately lubricate fall wires?\nStudent answer: 'They'll corrode internally & lose their flexibility. Protect against corrosion'\n\n13. How often are lifeboats required to be fully lowered into the water during an abandon ship drill?\nStudent answer: 'Once every 3 months'\n\n14. What kind of material are falls made from when the davit has a winch?\nStudent answer (false start crossed out: 'Releasing gear'): 'Wire rope falls of 6x19 regular lay filler wire'",
+      "keyFacts": [
+        "3 certified lifeboatmen are required for a 50-passenger lifeboat.",
+        "A davit fall sheave's groove-base diameter must be at least 12 times the diameter of the wire rope.",
+        "Fall wires must be adequately lubricated to prevent internal corrosion and loss of flexibility.",
+        "Lifeboats must be fully lowered into the water at least once every 3 months during drills.",
+        "When a davit has a winch, the falls are made of 6x19 regular lay filler-wire wire rope."
+      ],
+      "examAngles": [
+        "What is the required sheave diameter relative to the wire rope diameter? (NEW)",
+        "Why must fall wires be lubricated? (NEW)",
+        "What wire rope construction is used for winch-davit falls? (NEW, technical vocabulary)"
+      ],
+      "possibleMisconceptions": [
+        "Assuming sheave diameter is an absolute fixed dimension rather than a multiple of the wire rope's own diameter."
+      ],
+      "extractionConfidence": "high, except '6x19 regular lay filler wire' (Q14) where the middle term is a specific technical term read with reasonable but not absolute confidence -- '6x19' wire rope construction with a 'filler wire' core is a real, standard industry term consistent with the handwriting, so this was used rather than treated as illegible, but is flagged for a quick confirmation.",
+      "needsFollowUp": false
+    }
+  ],
+  "duplicateCheckNotes": "Checked all 14 questions' facts against the current 228 live questions before drafting. Four facts are exact or near-exact duplicates of already-live content and were deliberately NOT drafted as new questions: Q1 ('a bucket' as a sea-anchor substitute) duplicates live q-quiz1a-seaanchor-substitute, whose choice A is literally 'A bucket'; Q3 ('after 24 hrs') restates the general rule already embedded in live q-quiz1a-first-water-liferaft (that question tests the injured-person EXCEPTION to this same 24-hour rule); Q10 ('3' lifeboatmen for 50 passengers) is the same Certificate-of-Inspection table entry as live q-vinci-coi-lifeboatmen-4160 (41-60 person band), just with a specific number substituted for the range; Q13 ('once every 3 months') is the same fact as live q-cfr-lifeboat-lowered-quarterly, word-for-word. Q4's core 'hatchet at each end' fact also duplicates live q-quiz1a-bow-stern-hatchet, but its 'near the releasing gear' detail is new and was drafted as a distinct, narrower question. Q7 (Station Bill item list) and Q8 (lifeboat #4 location) were drafted despite proximity to live content because they test a genuinely different angle/format (an enumerated list vs. a bare definition; a worked scenario vs. an abstract rule) -- both flagged needs-review rather than treated as clean quick-wins, consistent with how this project has handled review-variant content in prior batches."
+}

@@ -1,0 +1,318 @@
+{
+  "importPackId": "vinci-2026-07-08-quiz-3-draft-question-pack",
+  "receivedDate": "2026-07-08",
+  "generatedFrom": [
+    "src/content/imports/vinci-2026-07-08-quiz-3-source-intake.json",
+    "src/content/imports/vinci-2026-07-08-quiz-3-image-manifest.json"
+  ],
+  "purpose": "Draft (inactive) question objects derived from the Vinci 2026-07-08 quiz-3 batch -- a completed, handwritten 'Review Quiz #3' (Water Survival, SHLSOS Course #549), 14 fill-in-the-blank questions across 3 pages. These are NOT part of src/content/course.json's live \"questions\" array and will not appear in the app until explicitly promoted.",
+  "activationRule": "Do not add any of these questions to course.json unless its verificationStatus has been changed away from 'draft-unverified'. q-quiz3-lifeboat4-location-scenario and q-quiz3-stationbill-itemslist are recommended needs-review (not quiz-derived-study) -- see each question's sourceReference for why.",
+  "duplicateCheckNotes": "Cross-referenced against all 228 live questions in src/content/course.json before drafting -- see the fuller duplicateCheckNotes in vinci-2026-07-08-quiz-3-source-intake.json for the specific matches found. Four of the 14 source questions were deliberately not drafted at all (exact/near-exact duplicates of live content, no new angle): Q1 (bucket as sea-anchor substitute, duplicates q-quiz1a-seaanchor-substitute), Q3 (24-hour water/food rule, duplicates the premise of q-quiz1a-first-water-liferaft), Q10 (3 lifeboatmen for 50 persons, duplicates q-vinci-coi-lifeboatmen-4160's 41-60 band), Q13 (lifeboats lowered every 3 months, duplicates q-cfr-lifeboat-lowered-quarterly word-for-word). Q4's core hatchet-count/location fact also duplicates live q-quiz1a-bow-stern-hatchet and was not redrafted; only its new 'near the releasing gear' placement detail was drafted as a distinct question.",
+  "questions": [
+    {
+      "id": "q-quiz3-seapainter-length",
+      "topicId": "chapter-2-using-lifeboats",
+      "prompt": "What is the standard requirement used to determine the length of a lifeboat's sea painter?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "At least twice the distance between the boat deck and the ship's waterline when the ship is light"
+        },
+        {
+          "id": "b",
+          "text": "A fixed length of 50 feet, regardless of the ship's size",
+          "misconception": "Sea painter length scales with the ship's freeboard, not a single fixed figure for every vessel."
+        },
+        {
+          "id": "c",
+          "text": "Exactly equal to the distance between the boat deck and the waterline, with no multiplier",
+          "misconception": "Understates the required length -- the actual requirement is at least twice that distance, not a 1-to-1 match."
+        },
+        {
+          "id": "d",
+          "text": "Half the distance between the boat deck and the waterline",
+          "misconception": "Inverts the actual ratio -- the painter must be longer than the deck-to-waterline distance, not shorter."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "hard",
+      "hints": [
+        "Think about needing enough slack for the boat to reach the water safely even as the ship's freeboard changes with loading."
+      ],
+      "explanation": "A lifeboat's sea painter must be at least twice as long as the distance between the boat deck and the ship's waterline when the ship is light (i.e., at its lightest draft) -- made of manila fiber or an equal-strength synthetic line at least 2 3/4 inches in circumference.",
+      "sourceReference": "Vinci source batch 2026-07-08-quiz-3, image 2026-07-07_064497-1.jpg (Review Quiz #3, question 2 of 14); see src/content/imports/vinci-2026-07-08-quiz-3-source-intake.json",
+      "verificationStatus": "draft-unverified"
+    },
+    {
+      "id": "q-quiz3-hatchet-releasinggear-location",
+      "topicId": "chapter-2-using-lifeboats",
+      "prompt": "A lifeboat's two hatchets are secured by lanyards to each end of the boat. Where specifically, at each end, are they positioned?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Near the releasing gear"
+        },
+        {
+          "id": "b",
+          "text": "Inside the sealed equipment locker",
+          "misconception": "Hatchets must be readily available for use, not sealed away in a locker."
+        },
+        {
+          "id": "c",
+          "text": "Underneath the side benches",
+          "misconception": "Confuses hatchet stowage with where buoyancy units are typically located."
+        },
+        {
+          "id": "d",
+          "text": "Wherever there's convenient space -- no specific spot is required",
+          "misconception": "A specific position near the releasing gear is required, not an arbitrary convenient spot."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "hard",
+      "hints": [
+        "Think about why a hatchet needs to be close at hand to the gear that could become fouled or need emergency cutting."
+      ],
+      "explanation": "A lifeboat's two hatchets are secured by lanyards to each end of the boat, near the releasing gear -- positioned there so they're immediately at hand if gear becomes entangled or fouled and needs to be cut free.",
+      "sourceReference": "Vinci source batch 2026-07-08-quiz-3, image 2026-07-07_064497-1.jpg (Review Quiz #3, question 4 of 14); see src/content/imports/vinci-2026-07-08-quiz-3-source-intake.json. Note: the underlying 'one hatchet at each end' fact is already live via q-quiz1a-bow-stern-hatchet (also independently confirmed by 46 CFR 169.529(k)) -- this question deliberately tests only the additional 'near the releasing gear' placement detail, which is new content not covered by that existing question.",
+      "verificationStatus": "draft-unverified"
+    },
+    {
+      "id": "q-quiz3-seaanchor-anticapsize",
+      "topicId": "chapter-2-using-lifeboats",
+      "prompt": "What piece of lifeboat equipment reduces the possibility of the boat capsizing?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "A sea anchor (drogue)"
+        },
+        {
+          "id": "b",
+          "text": "The boat's compass",
+          "misconception": "A compass aids navigation, not stability."
+        },
+        {
+          "id": "c",
+          "text": "The bailer",
+          "misconception": "A bailer removes water that's already inside the boat -- it doesn't prevent capsizing."
+        },
+        {
+          "id": "d",
+          "text": "The releasing gear",
+          "misconception": "Releasing gear frees the boat from the falls during launch -- unrelated to stability once underway."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "medium",
+      "hints": [
+        "Think about what keeps the boat's bow pointed into oncoming seas rather than turning broadside to them."
+      ],
+      "explanation": "A sea anchor (drogue) is lifeboat equipment that reduces the possibility of capsizing, primarily by holding the boat's bow into the seas and slowing unwanted drift.",
+      "sourceReference": "Vinci source batch 2026-07-08-quiz-3, image 2026-07-07_064497-2.jpg (Review Quiz #3, question 5 of 14); see src/content/imports/vinci-2026-07-08-quiz-3-source-intake.json",
+      "verificationStatus": "draft-unverified"
+    },
+    {
+      "id": "q-quiz3-seaanchor-lines-compare-vh",
+      "topicId": "chapter-2-using-lifeboats",
+      "prompt": "A lifeboat's sea anchor rig includes both a tripping line and a drag (holding) line. What's the difference in what each one does?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "The tripping line brings the sea anchor's apex forward and empties it of water so it can be retrieved; the drag line is what fills with water and creates drag while the sea anchor is deployed"
+        },
+        {
+          "id": "b",
+          "text": "Both lines do the same thing -- create drag -- just attached at different points",
+          "misconception": "Collapses two distinct functions -- retrieval/collapsing vs. active drag-creation -- into one."
+        },
+        {
+          "id": "c",
+          "text": "The drag line is used to retrieve and collapse the sea anchor; the tripping line creates the drag while deployed",
+          "misconception": "Reverses the two lines' actual roles."
+        },
+        {
+          "id": "d",
+          "text": "The tripping line and drag line are two names for the same single line",
+          "misconception": "Treats two distinct, separately-purposed lines as if they were one."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "very-hard",
+      "hints": [
+        "One of these lines is for bringing the sea anchor IN; the other is for keeping it working WHILE it's out.",
+        "To get the most drag from a sea anchor, the line that creates that drag should be towed while slack is paid out."
+      ],
+      "explanation": "A sea anchor's tripping line brings its apex forward, emptying it of water so it can be pulled aboard -- it's the retrieval line. The drag (holding) line is the one that fills the sea anchor's cone with water and creates drag on the lifeboat while it's deployed; towing it with slack paid out creates the most drag.",
+      "sourceReference": "Vinci source batch 2026-07-08-quiz-3, image 2026-07-07_064497-2.jpg (Review Quiz #3, questions 6 and 9 of 14, combined -- question 6 asked only for the retrieval procedure, question 9 asked for both lines and their uses; merged into one compare-and-contrast question rather than drafted as two overlapping questions on the same tripping-line fact); see src/content/imports/vinci-2026-07-08-quiz-3-source-intake.json",
+      "verificationStatus": "draft-unverified"
+    },
+    {
+      "id": "q-quiz3-lifeboat4-location-scenario",
+      "topicId": "chapter-2-using-lifeboats",
+      "prompt": "Your vessel has 3 lifeboats on each side, numbered by standard convention. Where is #4 lifeboat located relative to the other boats on its side?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "On the port side, aft of #2 and forward of #6"
+        },
+        {
+          "id": "b",
+          "text": "On the starboard side, aft of #2 and forward of #6",
+          "misconception": "Even-numbered lifeboats are on the port side by convention, not starboard."
+        },
+        {
+          "id": "c",
+          "text": "On the port side, forward of #2",
+          "misconception": "Reverses the fore-to-aft ascending order -- #2 is the forward-most boat on the port side, not #4."
+        },
+        {
+          "id": "d",
+          "text": "It could be on either side, depending on the vessel",
+          "misconception": "Lifeboat numbering follows a standardized, not vessel-specific, convention."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "hard",
+      "hints": [
+        "Even numbers are on the port side, ascending from forward to aft -- so with 3 boats per side numbered #2, #4, #6, where does #4 fall?"
+      ],
+      "explanation": "By standard convention, port-side lifeboats are even-numbered, ascending from forward to aft. With 3 boats per side (#2, #4, #6), #4 sits on the port side, aft of #2 and forward of #6.",
+      "sourceReference": "Vinci source batch 2026-07-08-quiz-3, image 2026-07-07_064497-2.jpg (Review Quiz #3, question 8 of 14); see src/content/imports/vinci-2026-07-08-quiz-3-source-intake.json. CONFIDENCE NOTE: the student's answer clearly states 'portside of the vessel' and 'forward of lifeboat #6'; the 'aft of #2' portion was reconstructed from the already-live standard numbering convention (q-ch2-numbering-official-vh) rather than directly read from the handwriting, since the connecting word linking to the inserted 'lifeboat #2' note was not clearly legible. Recommended needs-review rather than quiz-derived-study for this reason, even though it's a worked-example application of an already-confirmed live rule rather than a new fact.",
+      "verificationStatus": "draft-unverified"
+    },
+    {
+      "id": "q-quiz3-stationbill-itemslist",
+      "topicId": "chapter-1-planning-ahead",
+      "prompt": "Which of the following is NOT typically something a ship's Station Bill lists?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Cargo manifest and stowage plan"
+        },
+        {
+          "id": "b",
+          "text": "Emergency alarms, signals, and instructions"
+        },
+        {
+          "id": "c",
+          "text": "Crew members' emergency duties"
+        },
+        {
+          "id": "d",
+          "text": "The fire alarm signal"
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "medium",
+      "hints": [
+        "A Station Bill is about emergency preparedness and duties, not cargo logistics."
+      ],
+      "explanation": "A Station Bill lists emergency-related items -- alarms, signals, and instructions; individual crew members' emergency duties; and the specific alarm signals used (e.g., the fire alarm). A cargo manifest and stowage plan is a separate document, unrelated to emergency muster/duty assignments.",
+      "sourceReference": "Vinci source batch 2026-07-08-quiz-3, image 2026-07-07_064497-2.jpg (Review Quiz #3, question 7 of 14); see src/content/imports/vinci-2026-07-08-quiz-3-source-intake.json. Note: the live q-ch1-vocab-stationbill-easy already tests the bare definition of a Station Bill; this question tests the same general fact from an enumerated-list/elimination angle using this student's own itemization (emergency alarms/signals/instructions, fire alarm, emergency duties, alarm signals). Given the substantial overlap with already-live content and the low amount of genuinely new information, recommended needs-review / low promotion priority rather than a front-line status, per the same reasoning already applied to other review-variant content in this project (e.g. q-vinci-limber-holes).",
+      "verificationStatus": "draft-unverified"
+    },
+    {
+      "id": "q-quiz3-sheave-diameter",
+      "topicId": "chapter-2-using-lifeboats",
+      "prompt": "What is the diameter requirement for the sheaves used with davit falls?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "The diameter at the base of the groove must be at least 12 times the diameter of the wire rope"
+        },
+        {
+          "id": "b",
+          "text": "The diameter at the base of the groove must be at least equal to the diameter of the wire rope",
+          "misconception": "Understates the required ratio -- a 1-to-1 match would be far too small to protect the wire rope from excessive bending stress."
+        },
+        {
+          "id": "c",
+          "text": "The diameter at the base of the groove must be at least 50 times the diameter of the wire rope",
+          "misconception": "Overstates the required ratio well beyond the actual requirement."
+        },
+        {
+          "id": "d",
+          "text": "There is no specific diameter requirement -- any sheave that fits the wire rope is acceptable",
+          "misconception": "A specific minimum ratio is required, not an arbitrary fit."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "hard",
+      "hints": [
+        "Think about protecting the wire rope from excessive bending stress and fatigue as it runs over the sheave."
+      ],
+      "explanation": "A davit fall sheave's groove-base diameter must be at least 12 times the diameter of the wire rope running over it -- too small a sheave would over-stress and fatigue the wire.",
+      "sourceReference": "Vinci source batch 2026-07-08-quiz-3, image 2026-07-07_064497-3.jpg (Review Quiz #3, question 11 of 14); see src/content/imports/vinci-2026-07-08-quiz-3-source-intake.json",
+      "verificationStatus": "draft-unverified"
+    },
+    {
+      "id": "q-quiz3-fallwire-lubrication",
+      "topicId": "chapter-2-using-lifeboats",
+      "prompt": "Why is it important to adequately lubricate a lifeboat davit's fall wires?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Without lubrication, the wires will corrode internally and lose their flexibility"
+        },
+        {
+          "id": "b",
+          "text": "Lubrication is purely cosmetic and has no protective function",
+          "misconception": "Dismisses a genuine protective function -- lubrication actively prevents internal corrosion."
+        },
+        {
+          "id": "c",
+          "text": "Lubrication makes the wire rope heavier, which improves lowering speed",
+          "misconception": "Invents an unrelated, incorrect benefit -- lubrication is about corrosion protection, not weight."
+        },
+        {
+          "id": "d",
+          "text": "It's only necessary in freshwater ports, not at sea",
+          "misconception": "Invents an unstated freshwater-specific exception -- the corrosion risk applies generally."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "medium",
+      "hints": [
+        "Think about what happens to the individual wires bundled inside a wire rope if moisture reaches them and isn't kept out."
+      ],
+      "explanation": "Fall wires must be adequately lubricated because, without it, they'll corrode internally and lose their flexibility -- lubrication protects against that corrosion.",
+      "sourceReference": "Vinci source batch 2026-07-08-quiz-3, image 2026-07-07_064497-3.jpg (Review Quiz #3, question 12 of 14); see src/content/imports/vinci-2026-07-08-quiz-3-source-intake.json",
+      "verificationStatus": "draft-unverified"
+    },
+    {
+      "id": "q-quiz3-winch-falls-material",
+      "topicId": "chapter-2-using-lifeboats",
+      "prompt": "When a lifeboat's davit is fitted with a winch, what material and construction are the falls typically made from?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Wire rope, 6x19 regular lay, filler wire construction"
+        },
+        {
+          "id": "b",
+          "text": "Manila fiber rope, matching the sea painter's material",
+          "misconception": "Confuses the falls (which must withstand the mechanical load of a winch) with the sea painter's fiber-rope material."
+        },
+        {
+          "id": "c",
+          "text": "Nylon webbing, for maximum stretch under load",
+          "misconception": "Excess stretch under load is undesirable for falls -- wire rope is used specifically because it doesn't stretch significantly."
+        },
+        {
+          "id": "d",
+          "text": "Chain, for maximum strength",
+          "misconception": "Not the actual material used -- chain would be impractical to spool on a winch drum."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "very-hard",
+      "hints": [
+        "Think about what needs to wind cleanly and repeatedly around a winch drum without excessive stretch."
+      ],
+      "explanation": "When a davit has a winch, the falls are made of wire rope -- specifically 6x19 regular lay, filler wire construction.",
+      "sourceReference": "Vinci source batch 2026-07-08-quiz-3, image 2026-07-07_064497-3.jpg (Review Quiz #3, question 14 of 14); see src/content/imports/vinci-2026-07-08-quiz-3-source-intake.json. CONFIDENCE NOTE: '6x19 regular lay filler wire' is a real, standard wire-rope construction term consistent with the handwriting and used with reasonable confidence, but was not independently cross-verified against a second source the way some other batches' facts have been -- worth a quick confirmation before treating as fully settled.",
+      "verificationStatus": "draft-unverified"
+    }
+  ],
+  "promotionHistory": []
+}

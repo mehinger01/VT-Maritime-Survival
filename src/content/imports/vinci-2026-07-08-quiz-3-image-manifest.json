@@ -1,0 +1,37 @@
+{
+  "manifestId": "vinci-2026-07-08-quiz-3-image-manifest",
+  "batchId": "vinci-2026-07-08-quiz-3",
+  "receivedDate": "2026-07-08",
+  "sourceDescription": "3 photos from Vinci's Google Drive archive folder 'Vinci / _Archive / Received through 2026-07-08 - Not all processed / Not yet processed / quiz 3' (folder ID 1rlB1M4OxxvcvDfNHHmEEUj3N3rMmeX7r). A completed, handwritten 'Review Quiz #3' (Water Survival, SHLSOS Course #549), 14 fill-in-the-blank questions across 3 pages -- same format as the 2026-07-08-quiz-review-1 batch (handwritten essay-style answers, no multiple-choice options given on the source itself).",
+  "sourceCitation": "SHLSOS Course No. 549 Water Survival, Review Quiz #3 handout, (c) 2024 The Seafarers Harry Lundeberg School of Seamanship, Piney Point, MD 20674.",
+  "purpose": "Traceability record for this raw image batch. Adding an entry here does NOT add it to any live question or draft pack. An image only reaches a student when a question in src/content/course.json explicitly sets its \"image\" field to this file's publicPath -- none of the questions drafted from this batch use an image, since the source is handwritten essay-style text with no diagrams.",
+  "images": [
+    {
+      "file": "2026-07-07_064497-1.jpg",
+      "publicPath": "/content/vinci/2026-07-08-quiz-3/2026-07-07_064497-1.jpg",
+      "batchId": "vinci-2026-07-08-quiz-3",
+      "originalFolder": "Vinci/_Archive/Received through 2026-07-08 - Not all processed/Not yet processed/quiz 3",
+      "initialUseStatus": "source-only",
+      "sourceType": "quiz-photo",
+      "notes": "'Review Quiz #3', page 1 of 3 -- questions 1-4 (sea anchor substitute materials, sea painter length requirement, water/food rationing after abandoning ship, lifeboat hatchet requirements), each with a handwritten answer filled in. Clean page, no doodles -- a faint school-crest watermark ('Paul Hall Center / Maritime Training & Education') runs through the page background but does not obscure any handwriting. Text content is the useful part; no diagram."
+    },
+    {
+      "file": "2026-07-07_064497-2.jpg",
+      "publicPath": "/content/vinci/2026-07-08-quiz-3/2026-07-07_064497-2.jpg",
+      "batchId": "vinci-2026-07-08-quiz-3",
+      "originalFolder": "Vinci/_Archive/Received through 2026-07-08 - Not all processed/Not yet processed/quiz 3",
+      "initialUseStatus": "source-only",
+      "sourceType": "quiz-photo",
+      "notes": "'Review Quiz #3', page 2 of 3 -- questions 5-9 (equipment that reduces capsizing, sea anchor retrieval procedure, Station Bill contents, lifeboat #4 location relative to other boats on its side, sea anchor line functions), each with a handwritten answer. Has a pencil sketch of an unrelated object (looks like a kite or sail shape) doodled in the left margin -- doesn't overlap any question text or answer, no cleanup needed. Text content is the useful part; no diagram relevant to any drafted question."
+    },
+    {
+      "file": "2026-07-07_064497-3.jpg",
+      "publicPath": "/content/vinci/2026-07-08-quiz-3/2026-07-07_064497-3.jpg",
+      "batchId": "vinci-2026-07-08-quiz-3",
+      "originalFolder": "Vinci/_Archive/Received through 2026-07-08 - Not all processed/Not yet processed/quiz 3",
+      "initialUseStatus": "source-only",
+      "sourceType": "quiz-photo",
+      "notes": "'Review Quiz #3', page 3 of 3 -- questions 10-14 (certified lifeboatmen count for 50 passengers, davit fall sheave diameter requirement, fall-wire lubrication rationale, lifeboat lowering-drill frequency, winch-davit fall material), each with a handwritten answer. Clean page, no doodles. Text content is the useful part; no diagram."
+    }
+  ]
+}
