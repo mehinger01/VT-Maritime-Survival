@@ -1,0 +1,180 @@
+{
+  "batchId": "vinci_source_batch_2026_07_08_quiz_4",
+  "student": "Vinci",
+  "dateReceived": "2026-07-08",
+  "sourceFolder": "Vinci/_Archive/Received through 2026-07-08 - Not all processed/Not yet processed/quiz 4",
+  "status": "intake",
+  "items": [
+    {
+      "id": "vinci-2026-07-08-quiz4-064994-1",
+      "file": "2026-07-07_064994-1.jpg",
+      "publicPath": "/content/vinci/2026-07-08-quiz-4/2026-07-07_064994-1.jpg",
+      "sourceType": "quiz-photo",
+      "chapterGuess": "chapter-2-using-lifeboats (all four)",
+      "visualUseStatus": "source-only",
+      "extractionStatus": "extracted",
+      "verificationStatus": "unverified",
+      "notes": "Title page: 'Review Quiz #4', Water Survival, SHLSOS Course #549. All four answers clearly legible.",
+      "extractedTitle": "Review Quiz #4 (questions 1-4)",
+      "extractedText": "1. On what type davits would you find a limit switch?\nStudent answer: 'Roller gravity davits'\n\n2. What purpose do lifeboat gripes serve?\nStudent answer: 'They're used to fasten a lifeboat firmly against the ship davit frame or cradle when in a stowed position'\n\n3. What is the proper way of setting up and leading an open lifeboat's sea painter?\nStudent answer: 'Secured to a strong point on the forward inboard thwart using a toggle pin arrangement'\n\n4. What prevents the lifeboat fall's block rings from prematurely falling out of the lifeboat's releasing hooks?\nStudent answer: 'locking cam behind the main hook, a hydrostatic interlock.'",
+      "keyFacts": [
+        "Roller gravity davits are the type of davit on which a limit switch is found.",
+        "Lifeboat gripes fasten the boat firmly against the ship's davit frame or cradle when in a stowed position.",
+        "An open lifeboat's sea painter is secured to a strong point on the forward inboard thwart using a toggle pin arrangement.",
+        "A locking cam behind the main hook, plus a hydrostatic interlock, prevents the lifeboat fall's block rings from prematurely leaving the releasing hooks."
+      ],
+      "examAngles": [
+        "What davit type has a limit switch, and what does the limit switch do? (combined with Q18 on page 5, which asks the limit switch's function -- same fitting, complementary angles)",
+        "What is the specific purpose of lifeboat gripes? (distinct from the already-live broader 'hook/gripes release-mechanism' question and the turnbuckle-that-tensions-gripes question)",
+        "What mechanism secures a sea painter, as distinct from WHERE it's secured (already live)",
+        "What prevents premature release of the fall's block rings? (new, technical)"
+      ],
+      "possibleMisconceptions": [
+        "Confusing the gripes' cradle-securing function with the separate hook/releasing-gear system that releases the boat during lowering."
+      ],
+      "extractionConfidence": "high",
+      "needsFollowUp": false
+    },
+    {
+      "id": "vinci-2026-07-08-quiz4-064994-2",
+      "file": "2026-07-07_064994-2.jpg",
+      "publicPath": "/content/vinci/2026-07-08-quiz-4/2026-07-07_064994-2.jpg",
+      "sourceType": "quiz-photo",
+      "chapterGuess": "chapter-2-using-lifeboats (all three)",
+      "visualUseStatus": "source-only",
+      "extractionStatus": "extracted",
+      "verificationStatus": "unverified",
+      "notes": "All three answers clearly legible.",
+      "extractedTitle": "Review Quiz #4 (questions 5-7)",
+      "extractedText": "5. How should the frapping lines of a davit be set up if the ship is pitching and rolling excessively?\nStudent answer: 'Frapping lines should be rigged fore & aft.'\n\n6. List the steps for lowering an open lifeboat (classroom model)\nStudent answer: 'Preparing the boat, swinging it out over the ship side, boarding, & safely releasing it into the water.'\n\n7. What davit equipment pulls the open lifeboat up to the edge of the embarkation deck when lowering the lifeboat?\nStudent answer: 'Tricing pendant'",
+      "keyFacts": [
+        "When a ship is pitching and rolling excessively, a davit's frapping lines should be rigged fore and aft.",
+        "The general sequence for lowering an open lifeboat (classroom model) is: preparing the boat, swinging it out over the ship's side, boarding, and safely releasing it into the water.",
+        "A tricing pendant is the davit equipment that pulls an open lifeboat up to the edge of the embarkation deck."
+      ],
+      "examAngles": [
+        "How should frapping lines be rigged specifically under pitching/rolling conditions? (distinct new detail from the already-live bare definition of frapping lines)",
+        "What is the general sequence of steps for lowering an open lifeboat?"
+      ],
+      "possibleMisconceptions": [
+        "Assuming frapping lines are rigged athwartship (side to side) rather than fore-and-aft."
+      ],
+      "extractionConfidence": "high",
+      "needsFollowUp": false
+    },
+    {
+      "id": "vinci-2026-07-08-quiz4-064994-3",
+      "file": "2026-07-07_064994-3.jpg",
+      "publicPath": "/content/vinci/2026-07-08-quiz-4/2026-07-07_064994-3.jpg",
+      "sourceType": "quiz-photo",
+      "chapterGuess": "chapter-2-using-lifeboats (all four)",
+      "visualUseStatus": "source-only",
+      "extractionStatus": "extracted",
+      "verificationStatus": "unverified",
+      "notes": "All four answers clearly legible.",
+      "extractedTitle": "Review Quiz #4 (questions 8-11)",
+      "extractedText": "8. What piece of equipment regulates the speed at which a gravity davit will lower a lifeboat? What is the maximum speed?\nStudent answer: 'Governor / Centrifugal brake / 120 ft per min'\n\n9. What is the best procedure for picking up a lifeboat at sea while utilizing the lifeboat's sea painter?\nStudent answer: 'Position your ship ahead & to leeward of the lifeboat, w/ the wind broad on the bow.'\n\n10. Name the signals used when conducting lifeboat launching or recovery operations\nStudent answer: 'Internationally standardized sound signals, visual communication, & verbal commands'\n\n11. When picking up a lifeboat at sea with way on the ship, how should the sea painter be secured?\nStudent answer: 'Well forward in the lifeboat'",
+      "keyFacts": [
+        "A governor/centrifugal brake regulates a gravity davit's lowering speed; the maximum speed is 120 feet per minute.",
+        "To pick up a lifeboat at sea using its sea painter, position the ship ahead and to leeward of the lifeboat, with the wind broad on the bow.",
+        "Lifeboat launching/recovery operations use a combination of internationally standardized sound signals, visual communication, and verbal commands.",
+        "When picking up a lifeboat at sea with way on the ship, the sea painter should be secured well forward in the lifeboat."
+      ],
+      "examAngles": [
+        "What regulates a gravity davit's lowering speed, and what is the maximum speed?",
+        "How should a ship position itself to pick up a lifeboat at sea using the sea painter? (new -- distinct from all other sea-painter facts already live/drafted, which cover definition, attachment location, attachment mechanism, and length)"
+      ],
+      "possibleMisconceptions": [
+        "Assuming the ship should approach directly downwind or from an arbitrary angle rather than deliberately positioning ahead and to leeward with the wind broad on the bow."
+      ],
+      "extractionConfidence": "high",
+      "needsFollowUp": false
+    },
+    {
+      "id": "vinci-2026-07-08-quiz4-064994-4",
+      "file": "2026-07-07_064994-4.jpg",
+      "publicPath": "/content/vinci/2026-07-08-quiz-4/2026-07-07_064994-4.jpg",
+      "sourceType": "quiz-photo",
+      "chapterGuess": "chapter-2-using-lifeboats (Q12, Q14, Q15)",
+      "visualUseStatus": "source-only",
+      "extractionStatus": "extracted",
+      "verificationStatus": "unverified",
+      "notes": "Question 13 was left BLANK by the student -- no answer given, not guessed. The other three answers are clearly legible; question 12's answer only addresses the 'what' half of the two-part question ('what must be done... and why is it important') -- the 'why' was not answered.",
+      "extractedTitle": "Review Quiz #4 (questions 12-15)",
+      "extractedText": "12. What must be done prior to using the hand crank on the winch and why is it important?\nStudent answer (only the 'what' half answered): 'Disable power/motor.'\n\n13. Once the open lifeboat has been pulled to the embarkation deck, what needs to be passed around the fall wires prior to boarding personnel?\nStudent answer: [BLANK -- left unanswered]\n\n14. What is the most common and easily operated type of lifeboat davit usually found on ships these days?\nStudent answer: 'Gravity davit'\n\n15. Lifeboat fall wires are constructed from what type of wire?\nStudent answer: 'Rotation-resistant & Corrosion-resistant steel wire rope'",
+      "keyFacts": [
+        "Power/motor must be disabled prior to using a winch's hand crank.",
+        "Question 13 has no source-supported answer -- not usable.",
+        "Gravity davits are the most common and easily operated lifeboat davit type found on ships today.",
+        "Lifeboat fall wires are rotation-resistant and corrosion-resistant steel wire rope."
+      ],
+      "examAngles": [
+        "What must be disabled before hand-cranking a winch? (only the 'what' is source-supported; the 'why' was left unanswered by the student and is not included in any drafted question)",
+        "What type of davit is most common on ships today? (paired with Q19 on page 5, which asks the same davit type from a 'one-person-operated' angle -- same fact, drafted once)"
+      ],
+      "possibleMisconceptions": [
+        "Assuming the winch's motor can stay engaged while hand-cranking."
+      ],
+      "extractionConfidence": "high, except question 13 (left blank, not extracted)",
+      "needsFollowUp": false
+    },
+    {
+      "id": "vinci-2026-07-08-quiz4-064994-5",
+      "file": "2026-07-07_064994-5.jpg",
+      "publicPath": "/content/vinci/2026-07-08-quiz-4/2026-07-07_064994-5.jpg",
+      "sourceType": "quiz-photo",
+      "chapterGuess": "chapter-2-using-lifeboats (all five)",
+      "visualUseStatus": "source-only",
+      "extractionStatus": "extracted",
+      "verificationStatus": "unverified",
+      "notes": "All five answers legible. Question 20's answer notation ('3M') is ambiguous -- read as a literal transcription, not interpreted as a specific value, since 'Minimum Safety Factor' figures in this domain are typically plain ratios (e.g. '4.5:1') and 'M' isn't a standard unit for this kind of factor; flagged for confirmation rather than assumed to mean '3' or any other specific value.",
+      "extractedTitle": "Review Quiz #4 (questions 16-20)",
+      "extractedText": "16. What types of davits must be hand-cranked to move the lifeboat from its stowed position to the ship's side for lowering?\nStudent answer: 'Mechanical davits'\n\n17. What's the proper way to safely launch a lifeboat when the ship is making way?\nStudent answer: 'Reducing the vessel's speed to minimize the effects of propeller wash & drag'\n\n18. What piece of equipment on the davit should prevent the lifeboat from being raised to the davit stops?\nStudent answer: 'A limit switch'\n\n19. What type of davit is designed to be operated by one person?\nStudent answer: 'The Gravity davit'\n\n20. What is the \"Minimum Safety Factor\" for all lifeboat launching gear?\nStudent answer: '3M' [AMBIGUOUS NOTATION -- see notes]",
+      "keyFacts": [
+        "Mechanical davits must be hand-cranked to move the lifeboat from its stowed position to the ship's side for lowering.",
+        "The proper way to safely launch a lifeboat when the ship is making way is to reduce the vessel's speed, to minimize the effects of propeller wash and drag.",
+        "A limit switch is the davit equipment that prevents the lifeboat from being raised to the davit stops (same fitting as question 1, complementary angle).",
+        "The gravity davit is designed to be operated by one person (same fact as question 14's 'most common' davit, different angle -- drafted once).",
+        "The Minimum Safety Factor for lifeboat launching gear is written '3M' in the source -- notation unclear, not confidently interpreted as a specific number."
+      ],
+      "examAngles": [
+        "What davit type requires hand-cranking to move the boat to the ship's side? (distinct from question 16's near-twin, question 12's winch hand-crank fact)",
+        "What's the correct way to launch a lifeboat when the ship still has way on? (new)",
+        "What does a limit switch do, combined with question 1's 'which davit type has one'"
+      ],
+      "possibleMisconceptions": [
+        "Assuming the ship should stop completely rather than just reduce speed when launching with way on."
+      ],
+      "extractionConfidence": "high, except question 20's numeric notation",
+      "needsFollowUp": true
+    },
+    {
+      "id": "vinci-2026-07-08-quiz4-064994-6",
+      "file": "2026-07-07_064994-6.jpg",
+      "publicPath": "/content/vinci/2026-07-08-quiz-4/2026-07-07_064994-6.jpg",
+      "sourceType": "quiz-photo",
+      "chapterGuess": "chapter-2-using-lifeboats (Q21, Q22, Q23), chapter-1-planning-ahead (Q24)",
+      "visualUseStatus": "source-only",
+      "extractionStatus": "extracted",
+      "verificationStatus": "unverified",
+      "notes": "All four answers legible. Question 24's answer directly conflicts with already-live content -- see verifiesOrContradictsLive below. Not drafted as a question.",
+      "extractedTitle": "Review Quiz #4 (questions 21-24)",
+      "extractedText": "21. At what moment is the Rottmer releasing gear released?\nStudent answer: 'Only when the lifeboat is waterborne'\n\n22. What is the error in a compass caused by metal objects in the boat?\nStudent answer: 'Deviation'\n\n23. What should be done with the magnetic compass on a lifeboat when it's not in use?\nStudent answer: 'Removed from its mounting bracket & securely stowed in its designated storage box inside the lifeboat.'\n\n24. Where would you find information telling you how many certified lifeboatmen each lifeboat should have?\nStudent answer: 'SOLAS.' / 'Station bill'",
+      "keyFacts": [
+        "Rottmer releasing gear releases only when the lifeboat is waterborne -- already live via q-ch2-rottmer-hard, not redrafted.",
+        "Deviation is the compass error caused by metal objects in the boat -- already live via q-ch2-compass3way-vh, not redrafted.",
+        "A lifeboat's magnetic compass, when not in use, should be removed from its mounting bracket and securely stowed in its designated storage box inside the lifeboat.",
+        "CONTRADICTION: this student's answer for where the required-lifeboatmen count is documented is 'SOLAS' and 'Station bill' -- but the already-live q-quiz1a-coi-lifeboatmen-source (drawn from a different Vinci quiz batch) has 'Certificate of Inspection' as its correct answer and explicitly marks 'Station Bill' as WRONG ('The Station Bill covers muster assignments and emergency duties, not the lifeboatmen-per-capacity table'). Not drafted as a new question -- flagged for Vinci to resolve which source is authoritative (or whether more than one document legitimately carries this information)."
+      ],
+      "examAngles": [
+        "What should be done with a lifeboat's magnetic compass when not in use? (new)"
+      ],
+      "possibleMisconceptions": [
+        "Leaving the compass mounted and exposed when not in use, risking damage or drift in accuracy."
+      ],
+      "extractionConfidence": "high (marking is unambiguous throughout; question 24's issue is a content contradiction with live material, not a legibility problem)",
+      "needsFollowUp": true
+    }
+  ],
+  "duplicateCheckNotes": "Checked all 24 questions' facts against the current 235 live questions before drafting. Dropped as exact/near-exact duplicates with no new angle: Q21 (Rottmer waterborne timing, duplicates q-ch2-rottmer-hard), Q22 (deviation from metal, duplicates q-ch2-compass3way-vh), Q7 (tricing pendant pulls boat to embarkation edge, too close to the already-live q-gloss-tricing's 'what are tricing pendants' definition), Q11 (sea painter secured well forward, duplicates the already-live q-ch2-seapainteruse's 'forward one-third of the boat' fact). Q13 was left blank by the student and not drafted. Q24 was NOT drafted because its answer directly contradicts already-live content (see item 6 above) rather than merely duplicating or extending it -- this needs a human/Vinci call, not an automated resolution. Two internal near-duplicate pairs within this same quiz were merged into single questions rather than drafted twice: Q1+Q18 (both about the limit switch, complementary angles -- davit type vs. function) and Q14+Q19 (both 'gravity davit,' complementary angles -- most common vs. one-person-operated)."
+}
