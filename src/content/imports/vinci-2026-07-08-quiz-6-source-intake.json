@@ -1,0 +1,159 @@
+{
+  "batchId": "vinci_source_batch_2026_07_08_quiz_6",
+  "student": "Vinci",
+  "dateReceived": "2026-07-08",
+  "sourceFolder": "Vinci/_Archive/Received through 2026-07-08 - Not all processed/Not yet processed/quiz 6",
+  "status": "intake",
+  "items": [
+    {
+      "id": "vinci-2026-07-08-quiz6-065906-1",
+      "file": "2026-07-07_065906-1.jpg",
+      "publicPath": "/content/vinci/2026-07-08-quiz-6/2026-07-07_065906-1.jpg",
+      "sourceType": "quiz-photo",
+      "chapterGuess": "chapter-3-using-liferafts (Q1, Q3, Q4), chapter-4-survival-methods (Q2), chapter-1-planning-ahead (Q5)",
+      "visualUseStatus": "source-only",
+      "extractionStatus": "extracted",
+      "verificationStatus": "unverified",
+      "notes": "Title page: 'Review Quiz #6', Water Survival, SHLSOS Course #549. All five answers clearly legible.",
+      "extractedTitle": "Review Quiz #6 (questions 1-5)",
+      "extractedText": "1. What should be done if there are a number of liferafts scattered about after their ship sinks?\nStudent answer: 'Group them up & tie them together'\n\n2. After landing on a beach with your liferaft, what should you do with the liferaft?\nStudent answer: 'Carry it past the high tide line'\n\n3. What can you do to lessen cold water radiation into the inside of the liferaft in higher latitudes?\nStudent answer: 'Inflate the floor, close the doors'\n\n4. What procedures can be used if your liferaft is in tropical waters?\nStudent answer: 'Open the entry ways to the canopy, deflate floor'\n\n5. List the items a lifejacket or personal flotation device should have on it.\nStudent answer: 'Light, whistle, reflective patches, name of vessel'",
+      "keyFacts": [
+        "Multiple liferafts scattered after a ship sinks should be grouped up and tied together.",
+        "After landing a liferaft on a beach, it should be carried past the high tide line.",
+        "In higher (colder) latitudes, inflating the floor and closing the doors lessens cold water radiation into a liferaft.",
+        "In tropical waters, the canopy entryways should be opened and the floor deflated.",
+        "A lifejacket/PFD should have a light, whistle, reflective patches, and the name of the vessel on it."
+      ],
+      "examAngles": [
+        "What should survivors do with multiple scattered liferafts? (new)",
+        "What should be done with a liferaft after a beach landing? (new)",
+        "How should liferaft setup differ between cold/high-latitude and tropical conditions? (a natural compare-and-contrast pairing of questions 3 and 4 -- drafted as one combined question)",
+        "What items are required on a PFD? (partially overlaps the already-live q-quiz1a-typeI-pfd-false, which lists 'reflective tape, a whistle, and strobe light' as a true statement about Type I life preservers -- this question adds 'name of vessel' as a new item; drafted with that overlap flagged)"
+      ],
+      "possibleMisconceptions": [
+        "Leaving liferafts scattered and separate rather than grouping and tying them together for visibility and mutual support.",
+        "Leaving a landed liferaft near the waterline, where a rising tide could carry it back out or damage it.",
+        "Applying the same setup (floor/doors/canopy) regardless of climate, rather than adapting for heat retention vs. heat/humidity relief."
+      ],
+      "extractionConfidence": "high",
+      "needsFollowUp": false
+    },
+    {
+      "id": "vinci-2026-07-08-quiz6-065906-2",
+      "file": "2026-07-07_065906-2.jpg",
+      "publicPath": "/content/vinci/2026-07-08-quiz-6/2026-07-07_065906-2.jpg",
+      "sourceType": "quiz-photo",
+      "chapterGuess": "chapter-1-planning-ahead (Q6), chapter-2-using-lifeboats (Q7), chapter-1-planning-ahead (Q8), chapter-4-survival-methods (Q9), chapter-4-survival-methods (Q10)",
+      "visualUseStatus": "source-only",
+      "extractionStatus": "extracted",
+      "verificationStatus": "unverified",
+      "notes": "Questions 7, 8, and 9 were left BLANK by the student -- no answers, not guessed, not usable. Questions 6 and 10 are clearly legible.",
+      "extractedTitle": "Review Quiz #6 (questions 6-10)",
+      "extractedText": "6. Why are only Type I lifejackets required as abandon ship gear?\nStudent answer: 'flip person over that are faced down'\n\n7. Describe the proper procedures for landing an open lifeboat in heavy surf.\nStudent answer: [BLANK -- left unanswered]\n\n8. Describe how a survivor would fill the bladder or pillow of an immersion suit with air.\nStudent answer: [BLANK -- left unanswered]\n\n9. Provided every effort has been made to preserve hydration by avoiding perspiration, how long is it normally possible to survive without water?\nStudent answer: [BLANK -- left unanswered]\n\n10. What is the safest method of entering the water from a sinking ship if there is an oil fire on the surface?\nStudent answer: 'Stern, bow, windward side'",
+      "keyFacts": [
+        "Type I lifejackets are required as abandon-ship gear because they flip a face-down person over -- the same face-up/self-righting design principle already tested live for Type I life preservers.",
+        "Questions 7, 8, and 9 have no source-supported answer -- not usable.",
+        "The safest way to enter the water from a sinking ship with an oil fire on the surface is from the stern or bow, on the windward side."
+      ],
+      "examAngles": [
+        "Why is only Type I required as abandon-ship gear? (substantially overlaps the already-live q-quiz1a-typeI-pfd-false's face-up design fact -- not drafted as a new question)",
+        "What's the safest entry point/side when there's an oil fire on the water? (new)"
+      ],
+      "possibleMisconceptions": [
+        "Entering the water on the leeward side, where fire and smoke would be blown toward the survivor rather than away."
+      ],
+      "extractionConfidence": "high, except questions 7-9 (left blank, not extracted)",
+      "needsFollowUp": false
+    },
+    {
+      "id": "vinci-2026-07-08-quiz6-065906-3",
+      "file": "2026-07-07_065906-3.jpg",
+      "publicPath": "/content/vinci/2026-07-08-quiz-6/2026-07-07_065906-3.jpg",
+      "sourceType": "quiz-photo",
+      "chapterGuess": "chapter-4-survival-methods (Q11), chapter-2-using-lifeboats (Q12), chapter-3-using-liferafts (Q13), chapter-6-being-rescued (Q14)",
+      "visualUseStatus": "source-only",
+      "extractionStatus": "extracted",
+      "verificationStatus": "unverified",
+      "notes": "All four answers legible. Question 14's answer is terse ('Williamson turn 60°' and '90 = 150°') but internally consistent with the well-established, standard Williamson Turn procedure -- read as: turn toward the side the person fell until the ship's heading has changed 60 degrees from its original course (090°T + 60° = 150°T, matching the '90 = 150' notation). The full Williamson Turn also includes a second phase (reversing rudder to reach the reciprocal heading, 270°T) that the student's answer doesn't mention -- only the first-phase fact is used in drafting, not the unstated second phase.",
+      "extractedTitle": "Review Quiz #6 (questions 11-14)",
+      "extractedText": "11. Describe the steps taken when trying to swim to a shore where there is a strong current.\nStudent answer: '45° out of current'\n\n12. What are the steps taken to maneuver your lifeboat to make way while avoiding broaching in heavy seas.\nStudent answer: 'Keep bow to the seas & use sea anchor if necessary'\n\n13. What is the purpose of collecting condensation in a liferaft?\nStudent answer: 'Collect it w/ sponge & drink it'\n\n14. Describe the steps the mate on watch will take if your ship is on course 090° T and someone falls overboard, starboard side.\nStudent answer: 'Williamson turn 60°' / '90 = 150°'",
+      "keyFacts": [
+        "When swimming to shore against a strong current, swim at a 45-degree angle out of (relative to) the current, rather than straight against it.",
+        "To maneuver a lifeboat and avoid broaching in heavy seas, keep the bow to the seas and use a sea anchor if necessary.",
+        "Condensation in a liferaft is collected (with a sponge) so it can be used as drinking water.",
+        "For a man-overboard on a ship heading 090°T with the person falling on the starboard side, the mate on watch executes a Williamson Turn -- turning toward the side the person fell until the heading changes 60 degrees from the original course (090°T + 60° = 150°T)."
+      ],
+      "examAngles": [
+        "At what angle should a swimmer approach shore against a strong current? (new)",
+        "How is broaching avoided when maneuvering a lifeboat in heavy seas? (new)",
+        "Why is condensation collected in a liferaft, and how? (combined with question 16 on page 4, which asks the same 'how' with an additional tool -- a t-shirt -- not mentioned here; merged into one question)",
+        "What maneuver does a ship execute for a man overboard, and what's the first heading change? (new, high-value -- a well-established, standard maritime procedure)"
+      ],
+      "possibleMisconceptions": [
+        "Swimming directly against a strong current rather than at an angle, which wastes energy fighting the current head-on.",
+        "Turning the stern to the seas rather than the bow, risking broaching.",
+        "Turning away from the side the person fell overboard, rather than toward it, during the first phase of a Williamson Turn."
+      ],
+      "extractionConfidence": "high, except question 14's answer completeness (see notes -- the marking itself is clear, but the answer only documents the turn's first phase)",
+      "needsFollowUp": false
+    },
+    {
+      "id": "vinci-2026-07-08-quiz6-065906-4",
+      "file": "2026-07-07_065906-4.jpg",
+      "publicPath": "/content/vinci/2026-07-08-quiz-6/2026-07-07_065906-4.jpg",
+      "sourceType": "quiz-photo",
+      "chapterGuess": "chapter-4-survival-methods (Q15), chapter-3-using-liferafts (Q16), chapter-5-signaling (Q17), chapter-2-using-lifeboats (Q18)",
+      "visualUseStatus": "source-only",
+      "extractionStatus": "extracted",
+      "verificationStatus": "unverified",
+      "notes": "All four answers legible.",
+      "extractedTitle": "Review Quiz #6 (questions 15-18)",
+      "extractedText": "15. Describe the proper procedure for jumping into the water when abandoning ship.\nStudent answer: 'Cross your arms, legs. Make sure no debris'\n\n16. How would you collect condensation in a liferaft?\nStudent answer: 'With a sponge, t-shirt'\n\n17. What does a continuous ringing for no less than 10 seconds of the general alarm bell as well as a continuous blast of the ship's whistle for more than 10 seconds indicate?\nStudent answer: 'Fire & general emergency'\n\n18. What is the purpose of the air tanks located under the side benches of a lifeboat?\nStudent answer: 'Provide buoyancy'",
+      "keyFacts": [
+        "When jumping into the water to abandon ship, cross your arms and legs, and make sure there's no debris below.",
+        "Condensation in a liferaft can be collected with a sponge or a t-shirt (same fact as question 13, additional tool).",
+        "A continuous ringing of the general alarm bell for no less than 10 seconds, plus a continuous blast of the ship's whistle for more than 10 seconds, indicates fire or a general emergency.",
+        "The air tanks located under the side benches of a lifeboat provide buoyancy -- already established live via q-quiz1a-side-bench-buoyancy-location and q-ch2-airtanks-vh."
+      ],
+      "examAngles": [
+        "What is the proper body position and safety check when jumping into the water abandoning ship? (new, distinct from the already-live 'preferred jump height' fact)",
+        "What does the ship's continuous-ringing/continuous-blast (10+ second) alarm signal indicate? (new -- distinct from the already-live 7-short-blasts-plus-1-long boat-stations signal; this is the ship's general/first alarm signal instead)",
+        "What is the purpose of side-bench air tanks? (duplicates already-live content -- not drafted)"
+      ],
+      "possibleMisconceptions": [
+        "Jumping without checking for debris or people already in the water below.",
+        "Confusing the continuous-ringing/continuous-blast general alarm with the separate, distinctly-patterned boat-stations signal (seven-plus short blasts, one long) already tested live."
+      ],
+      "extractionConfidence": "high",
+      "needsFollowUp": false
+    },
+    {
+      "id": "vinci-2026-07-08-quiz6-065906-5",
+      "file": "2026-07-07_065906-5.jpg",
+      "publicPath": "/content/vinci/2026-07-08-quiz-6/2026-07-07_065906-5.jpg",
+      "sourceType": "quiz-photo",
+      "chapterGuess": "chapter-3-using-liferafts (Q19, Q20, Q22), chapter-2-using-lifeboats (Q21)",
+      "visualUseStatus": "source-only",
+      "extractionStatus": "extracted",
+      "verificationStatus": "unverified",
+      "notes": "All four answers legible.",
+      "extractedTitle": "Review Quiz #6 (questions 19-22)",
+      "extractedText": "19. What can you do to temporarily stop a large leak in the buoyancy tube of your liferaft?\nStudent answer: 'Sealing clamp'\n\n20. When should the tricing pendants be released?\nStudent answer: 'When everyone is boarded & seated'\n\n21. What oar command is given to take all the way off a lifeboat moving through the water?\nStudent answer: 'Hold water all'\n\n22. What is the disadvantage of launching a liferaft on the windward side?\nStudent answer: 'More wind & stronger seas being blown onto the boat'",
+      "keyFacts": [
+        "A sealing clamp temporarily stops a large leak in a liferaft's buoyancy tube -- already established live via q-quiz1a-sealing-clamps, just asked in reverse (what tool do you use vs. what's the tool for).",
+        "Tricing pendants are released when everyone is boarded and seated -- already established live via q-gloss-tricing.",
+        "'Hold water all' is the oar command to take all the way off a lifeboat moving through the water.",
+        "The disadvantage of launching a liferaft on the windward side is more wind and stronger seas being blown onto the boat -- substantially the same reasoning already given in the misconception text of the already-live q-quiz1a-windward-manual-launch."
+      ],
+      "examAngles": [
+        "What oar command stops a lifeboat's way through the water? (new -- distinct from 'Oars', 'Backwater all', 'Way enough', and 'Out oars', all already tested live)"
+      ],
+      "possibleMisconceptions": [
+        "Confusing 'Hold water all' (stopping the boat's way) with 'Way enough' (finishing the stroke and stowing oars) or 'Backwater all' (reversing) -- three distinct oar commands covering different actions."
+      ],
+      "extractionConfidence": "high",
+      "needsFollowUp": false
+    }
+  ],
+  "duplicateCheckNotes": "Checked all 22 questions' facts against the current 250 live questions before drafting. Dropped as exact/near-exact duplicates with no new angle: Q6 (Type I face-up design rationale, duplicates q-quiz1a-typeI-pfd-false), Q18 (side-bench air tanks provide buoyancy, duplicates q-quiz1a-side-bench-buoyancy-location and q-ch2-airtanks-vh), Q19 (sealing clamp stops a buoyancy-tube leak, duplicates q-quiz1a-sealing-clamps), Q20 (tricing pendants released once boarded/seated, duplicates q-gloss-tricing), Q22 (windward liferaft launch disadvantage, substantially the same reasoning already given in q-quiz1a-windward-manual-launch's own misconception text). Questions 7, 8, and 9 were left blank by the student. Two pairs of near-duplicate questions within this same quiz were merged into single questions: Q3+Q4 (liferaft climate adaptation, cold vs. tropical -- a natural compare-and-contrast pairing) and Q13+Q16 (condensation collection, same fact with Q16 adding a second tool)."
+}

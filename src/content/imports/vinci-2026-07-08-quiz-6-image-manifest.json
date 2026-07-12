@@ -1,0 +1,55 @@
+{
+  "manifestId": "vinci-2026-07-08-quiz-6-image-manifest",
+  "batchId": "vinci-2026-07-08-quiz-6",
+  "receivedDate": "2026-07-08",
+  "sourceDescription": "5 photos from Vinci's Google Drive archive folder 'Vinci / _Archive / Received through 2026-07-08 - Not all processed / Not yet processed / quiz 6' (folder ID 1xqVJeYzptbFHHhs4Bw0ZPRbv6fY0DsBE). A completed, handwritten 'Review Quiz #6' (Water Survival, SHLSOS Course #549), 22 fill-in-the-blank questions across 5 pages -- same format as the quiz-review-1, quiz-3, and quiz-4 batches.",
+  "sourceCitation": "SHLSOS Course No. 549 Water Survival, Review Quiz #6 handout, (c) 2024 The Seafarers Harry Lundeberg School of Seamanship, Piney Point, MD 20674.",
+  "purpose": "Traceability record for this raw image batch. Adding an entry here does NOT add it to any live question or draft pack. An image only reaches a student when a question in src/content/course.json explicitly sets its \"image\" field to this file's publicPath -- none of the questions drafted from this batch use an image, since the source is handwritten essay-style text with no diagrams.",
+  "images": [
+    {
+      "file": "2026-07-07_065906-1.jpg",
+      "publicPath": "/content/vinci/2026-07-08-quiz-6/2026-07-07_065906-1.jpg",
+      "batchId": "vinci-2026-07-08-quiz-6",
+      "originalFolder": "Vinci/_Archive/Received through 2026-07-08 - Not all processed/Not yet processed/quiz 6",
+      "initialUseStatus": "source-only",
+      "sourceType": "quiz-photo",
+      "notes": "'Review Quiz #6', page 1 of 5 -- title page plus questions 1-5 (grouping scattered liferafts, beach-landing procedure, cold-water/tropical-water liferaft adaptations, required PFD items). Clean page, no doodles."
+    },
+    {
+      "file": "2026-07-07_065906-2.jpg",
+      "publicPath": "/content/vinci/2026-07-08-quiz-6/2026-07-07_065906-2.jpg",
+      "batchId": "vinci-2026-07-08-quiz-6",
+      "originalFolder": "Vinci/_Archive/Received through 2026-07-08 - Not all processed/Not yet processed/quiz 6",
+      "initialUseStatus": "source-only",
+      "sourceType": "quiz-photo",
+      "notes": "'Review Quiz #6', page 2 of 5 -- questions 6-10 (Type I lifejacket rationale, heavy-surf lifeboat landing, immersion suit air bladder, survival time without water, safest water-entry method with an oil fire). Questions 7, 8, and 9 were left BLANK by the student -- no answers, not guessed. Some unrelated pencil doodles (a sail-like sketch) near questions 6-7, don't overlap any text."
+    },
+    {
+      "file": "2026-07-07_065906-3.jpg",
+      "publicPath": "/content/vinci/2026-07-08-quiz-6/2026-07-07_065906-3.jpg",
+      "batchId": "vinci-2026-07-08-quiz-6",
+      "originalFolder": "Vinci/_Archive/Received through 2026-07-08 - Not all processed/Not yet processed/quiz 6",
+      "initialUseStatus": "source-only",
+      "sourceType": "quiz-photo",
+      "notes": "'Review Quiz #6', page 3 of 5 -- questions 11-14 (swimming to shore against a strong current, avoiding broaching in heavy seas, condensation-collection purpose, Williamson turn for a man overboard). Clean page, no doodles."
+    },
+    {
+      "file": "2026-07-07_065906-4.jpg",
+      "publicPath": "/content/vinci/2026-07-08-quiz-6/2026-07-07_065906-4.jpg",
+      "batchId": "vinci-2026-07-08-quiz-6",
+      "originalFolder": "Vinci/_Archive/Received through 2026-07-08 - Not all processed/Not yet processed/quiz 6",
+      "initialUseStatus": "source-only",
+      "sourceType": "quiz-photo",
+      "notes": "'Review Quiz #6', page 4 of 5 -- questions 15-18 (jumping-into-water procedure, condensation-collection method, general alarm bell/whistle signal meaning, purpose of side-bench air tanks). Clean page, no doodles."
+    },
+    {
+      "file": "2026-07-07_065906-5.jpg",
+      "publicPath": "/content/vinci/2026-07-08-quiz-6/2026-07-07_065906-5.jpg",
+      "batchId": "vinci-2026-07-08-quiz-6",
+      "originalFolder": "Vinci/_Archive/Received through 2026-07-08 - Not all processed/Not yet processed/quiz 6",
+      "initialUseStatus": "source-only",
+      "sourceType": "quiz-photo",
+      "notes": "'Review Quiz #6', page 5 of 5 -- questions 19-22 (stopping a liferaft buoyancy-tube leak, tricing pendant release timing, oar command to stop way, disadvantage of a windward liferaft launch). Clean page, no doodles."
+    }
+  ]
+}
