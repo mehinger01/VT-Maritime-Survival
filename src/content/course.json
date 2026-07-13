@@ -557,7 +557,47 @@
           "International Morse Code",
           "Signals to Communicate from Shore",
           "Table of Lifesaving Signals",
-          "International Distress Signals",
+          {
+            "title": "International Distress Signals — The Recognized List",
+            "explanation": "A distress signal's whole job is to be unmistakable -- something a rescuer can recognize instantly, from a distance, with no ambiguity about what it means. That's why recognized distress signals aren't just 'anything alarming' -- they come from a specific, closed list (33 CFR Part 87, Annex IV). If a signal isn't on that list, it doesn't count as a legally-recognized distress signal, no matter how urgent it looks. Knowing the actual list -- and spotting invented-sounding lookalikes -- is most of what these exam questions test.",
+            "keyFacts": [
+              "Visual signals (need daylight or a light source to see): the N.C. flag hoist (the two-letter International Code Signal for distress); a square flag with a ball, or anything ball-shaped, above or below it; orange smoke; a high-intensity white light flashing 50 to 70 times per minute; and slowly raising and lowering both arms outstretched to the sides, repeatedly -- the one distress signal that needs zero equipment at all.",
+              "Audible signals (heard, not seen): a gun or other explosive signal fired at intervals of about a minute; a continuous blast of a ship's whistle, which on its own means that ship is in distress; and a continuous ringing of the general alarm bell (10+ seconds) combined with a continuous whistle blast (10+ seconds) together, which means fire or a general emergency -- a distinct, more specific signal from a plain continuous whistle blast alone.",
+              "Radio/electronic signals: the spoken word \"Mayday\" is the recognized radiotelephone (voice) distress signal; SOS in Morse code (. . . -- -- -- . . .) is the recognized radiotelegraphy/Morse distress signal. Same underlying message, two different methods with two different exact forms.",
+              "Related but different category -- a signal sent TO you, not BY you: a shore-side rescue unit fires a red star signal to warn people in a lifecraft that it's dangerous to land where they're heading. This is a rescuer signaling to a survivor, the opposite direction of every other signal on this page, and it isn't a distress signal at all -- it's a warning signal."
+            ],
+            "confusionTraps": [
+              "Mayday and SOS test the same underlying idea (distress) through two totally different signaling methods -- voice radio vs. Morse code. A question that swaps one for the other is testing whether you know which method uses which word/code, not whether you understand that both mean distress.",
+              "A continuous whistle blast alone means distress. The general alarm bell-plus-whistle combination (10+ seconds each, together) means something more specific: fire or general emergency. Don't collapse these into 'the same alarm' -- they're two different signals with two different precise meanings.",
+              "Watch for signals that sound official but aren't real: 'CQD' (an old distress call, long since replaced by SOS), invented flag-hoist letters, or made-up smoke colors. If a choice sounds plausible but you don't recognize it from the actual list, that's usually the tell that it's a distractor.",
+              "The red star signal isn't a distress signal you send -- it's a warning signal a rescuer sends to you. Don't lump it in with 'ways to signal you're in distress'; it belongs to a different part of the signaling picture (shore-to-survivor guidance, not survivor-to-rescuer distress calling)."
+            ],
+            "examWatchFor": [
+              "When answer choices include a real signal's exact number (a flash rate, an interval, a duration), the wrong answers are almost always the same fact with the number changed slightly (e.g. 50-70 flashes/min vs. 10-20 or 100-120 as distractors). Read the number carefully -- don't just recognize the general shape of the fact.",
+              "If a question describes signaling with 'no equipment at all,' the answer is almost certainly the arm-waving signal -- it's the one distress signal here that requires nothing but your own body.",
+              "Self-check: without looking back at this page, can you sort every signal above into 'visual,' 'audible,' and 'radio/electronic' from memory? If you can, you're ready for a 'which of these is NOT a [category] signal' question.",
+              "Self-check: could you explain in one sentence why the red star signal is a different category from the rest, and who's sending it to whom?"
+            ],
+            "sourceReferences": [
+              {
+                "file": "Document(1).PDF.pdf",
+                "note": "33 CFR Part 87, Annex IV (Distress Signals) -- Mayday, SOS, N.C. flag hoist, square-flag-and-ball, orange smoke, arm-wave, white-light flash rate, gun-signal interval"
+              },
+              {
+                "file": "2026-07-07_065906-4.jpg",
+                "note": "Vinci Quiz 6 -- general alarm bell-plus-whistle combination signal"
+              },
+              {
+                "file": "2026-07-08_044219-3.jpg",
+                "note": "Vinci Quiz 1a -- continuous whistle blast alone means distress"
+              },
+              {
+                "file": "2026-07-08_044219-1.jpg",
+                "note": "Vinci Quiz 1a -- red star signal (shore-to-lifecraft danger-to-land warning)"
+              }
+            ],
+            "confidence": "high"
+          },
           "Signaling Devices"
         ]
       }
