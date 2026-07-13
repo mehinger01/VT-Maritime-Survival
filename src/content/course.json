@@ -529,7 +529,37 @@
           },
           "Anti-Exposure Suit",
           "Swimming for Survival",
-          "Man Overboard",
+          {
+            "title": "Man Overboard & Swimming for Survival",
+            "explanation": "\"Man overboard\" is a specific, different situation from abandoning ship: one person has unexpectedly ended up in the water while their own ship is still underway, rather than a group deliberately leaving a sinking vessel together. That difference changes what the right response actually is. If you're the person in the water, your job is to survive and be found -- not to close the distance to your own ship yourself. If you're on deck or the bridge, your job is to keep that person visible and get the ship back to them safely. Survival swimming -- deciding when to swim and when not to -- follows the same underlying logic in both situations: work with the water, don't fight it, and don't spend energy you don't need to spend.",
+            "keyFacts": [
+              "If you're the one who went overboard: do not try to swim after your own ship. A moving vessel can't realistically be caught by swimming, and the attempt burns energy and body heat you need for the wait ahead -- stay calm, stay afloat, and stay visible instead.",
+              "For the crew: the immediate priority is keeping continuous, unbroken visual contact with the person in the water. The manual's response sequence: throw ring buoys with lifelines toward them (a light at night, a smoke signal by day helps them be seen), hail \"Man Overboard, Port (or Starboard) Side\" to the wheelhouse immediately, and have a lookout keep pointing at and watching the person without interruption. Losing sight of someone in open water, even briefly, makes relocating them dramatically harder.",
+              "The ship's recovery maneuver exists to bring the vessel safely back to the person's position -- the mate on watch also deliberately turns the ship's stern away from the person first, to keep the propeller clear of them. This module covers why the maneuver happens and what it's for, not its full step-by-step compass arithmetic, which belongs to a separate, more technical treatment.",
+              "Turning the ship around gets it back to the person -- it doesn't rescue them by itself. A separate recovery method (a cargo net, a ladder, a lifeboat, or a swimmer with a lifeline for an injured person) is still needed once the ship is alongside.",
+              "Survival swimming follows the same \"work with the water\" principle: if a strong current stands between you and shore, swim at an angle across the current -- roughly 45 degrees -- rather than fighting straight against it. This makes real progress toward shore while conserving far more energy than a head-on fight against the current.",
+              "Swimming is a tool, not a default reaction. It helps when there's a real, reachable target you can actually make progress toward, like angling across a current to a shore you can reach. It's the wrong move when the target isn't realistically reachable by swimming at all (a moving ship), or when conserving energy and body heat matters more than covering distance -- extended cold-water survival is exactly that case (see the Cold Water Survival module)."
+            ],
+            "confusionTraps": [
+              "\"Do something active\" is not automatically the safe answer. Both man-overboard and survival-swimming questions often pair an active-sounding wrong answer (swim after the ship, swim straight against a current) with a calmer, more passive-sounding correct one (stay put and signal, angle across the current). More effort isn't the same as more correct.",
+              "Man overboard and abandoning ship are different scenarios with different correct responses -- one person unexpectedly in the water while the ship is still operating, versus a group deliberately leaving a disabled or sinking vessel together. Don't answer a man-overboard question with abandon-ship logic, or the reverse.",
+              "The recovery maneuver bringing the ship back to the person is not the same as the person being rescued -- a real recovery method still has to happen once the ship arrives."
+            ],
+            "examWatchFor": [
+              "If a question puts you in the water (\"you are a man overboard...\"), the expected answer is usually calm and passive: don't swim after the ship, conserve energy, stay visible.",
+              "If a question puts you on deck, the bridge, or as a lookout, the expected answer is active but specific: alert the wheelhouse, throw flotation, keep continuous eyes on the person -- not \"wait and see what happens.\"",
+              "If a question mentions a current and an actual reachable destination like a shore, swimming at an angle relative to the current is usually correct -- watch for distractor answers that say to swim straight against the current or straight with it.",
+              "Self-check: can you explain, in your own words, why \"swim after the ship\" is wrong but \"swim at 45 degrees across a current toward shore\" is right, even though both involve swimming?",
+              "Self-check: can you name the ship crew's immediate response actions from memory -- alert the wheelhouse, throw flotation, keep eyes on the person -- without looking back at this page?"
+            ],
+            "sourceReferences": [
+              {
+                "file": "vinci-2026-07-13-chapter-4-manual-source-intake.md",
+                "note": "Water Survival Student Manual, Chapter 4, pages ~95 and ~99-100 -- Swimming for Survival and Man Overboard sections"
+              }
+            ],
+            "confidence": "high"
+          },
           {
             "title": "Cold Water Survival — Hypothermia & Cold Shock Response",
             "explanation": "Cold water is dangerous for more than one reason, and they don't all happen at once. Cold water pulls heat out of your body much faster than cold air does, but the danger that kills people fastest usually isn't the slow loss of core heat -- it's what happens in the first few minutes, before hypothermia has even had time to set in. Treating 'cold water is dangerous' as one single problem is a mistake; it's really a sequence of distinct dangers, each with its own timeline and its own correct response.",
