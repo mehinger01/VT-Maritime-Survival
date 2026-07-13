@@ -497,7 +497,36 @@
         "keyPoints": [
           "Understanding Coast Guard Searches",
           "Abandoning Ship",
-          "Immersion Suits",
+          {
+            "title": "Immersion Suits & Thermal Protection",
+            "explanation": "An immersion suit's job is simple: keep you alive in cold water long enough to be rescued. It does that two ways at once -- it slows how fast your body loses heat, and it adds buoyancy so you float without having to work at it. Hypothermia, not drowning, is the biggest threat in cold-water survival, so this is arguably the single most important piece of gear you can put on before going in the water.",
+            "keyFacts": [
+              "Purpose: reduce heat loss and add flotation -- directly targets hypothermia, the top cold-water survival threat.",
+              "Coverage: an approved suit must cover your entire body except the area of the nose and eyes.",
+              "Color: the exterior must be vivid reddish orange -- a specific, defined shade chosen for high-visibility rescue, not just 'orange in general.'",
+              "\"Donning time\" just means how long it takes a person to put the suit on correctly. An approved suit must be designed so a person can don it correctly within 2 minutes after reading the suit's own instructions -- and in a real emergency, minutes matter.",
+              "Jump-height design point: the suit must be built to let you jump from at least 4.5 meters (about 15 feet) into the water without injury and without the suit coming loose or getting damaged.",
+              "Thermal protection point: after that jump, the suit has to keep your core body temperature from dropping more than 2°C over 6 hours of immersion in near-freezing water (0-2°C). That's the actual performance bar the insulation is built to -- not just 'it feels warm.'"
+            ],
+            "confusionTraps": [
+              "Immersion suit vs. Thermal Protective Aid (TPA): they are not the same thing and one doesn't substitute for the other. An immersion suit is a full-body suit that provides both flotation AND thermal protection on its own. A TPA is a lightweight supplemental covering for someone who is already wearing a lifejacket -- it adds warmth, it doesn't replace a full suit.",
+              "Two different '15 feet' facts, don't merge them: the immersion suit's 4.5 m (~15 ft) jump-height design spec is a construction/performance requirement for the suit itself. It's a separate fact from the general abandon-ship guidance to prefer a jump height of 15 feet or less when possible -- one is about what the suit is built to survive, the other is about how you should jump. They happen to land on a similar number; they are not the same rule.",
+              "Warm suit material color is not a design choice -- it's specifically 'vivid reddish orange' for visibility to rescuers, not just any bright color, and not the same requirement as a life preserver's color."
+            ],
+            "examWatchFor": [
+              "A straightforward 'what is an immersion suit for' question usually wants BOTH effects named: reduces heat loss AND improves flotation. An answer naming only one is often the trap.",
+              "Watch for numeric-swap distractors on the two headline figures: donning time is 2 minutes (not 5, not 10); jump height is 4.5 m / ~15 ft (not 1 m, not 10 m).",
+              "Self-check: without looking back at this page, can you state the donning-time standard and the jump-height figure, and explain in one sentence why both exist?",
+              "Self-check: can you explain the difference between an immersion suit and a TPA well enough to answer a compare-and-contrast question, not just a definition question?"
+            ],
+            "sourceReferences": [
+              {
+                "file": "Document(6).PDF.pdf",
+                "note": "46 CFR 160.171-9(a),(b),(c),(d),(h) -- Immersion Suits, construction and performance requirements"
+              }
+            ],
+            "confidence": "high"
+          },
           "Anti-Exposure Suit",
           "Swimming for Survival",
           "Man Overboard",
