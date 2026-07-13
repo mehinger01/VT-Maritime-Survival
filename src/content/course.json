@@ -594,7 +594,39 @@
             ],
             "confidence": "high"
           },
-          "Organizing for Survival",
+          {
+            "title": "Organizing for Survival & Survival on the Sea",
+            "explanation": "Once immediate danger is behind you and everyone is accounted for, survival becomes a waiting game with an unknown length -- and how well a group organizes itself in the first hour often decides how well they hold together over the following hours or days. Good organization isn't about staying busy. It's about establishing a routine, assigning specific roles so nothing falls through the cracks, and making calm, disciplined decisions about scarce resources like water -- rather than reacting to each moment as it comes.",
+            "keyFacts": [
+              "Priorities come in two phases, not one flat list: immediate priorities are about acute danger -- getting clear of the ship, managing the shock of what just happened, and accounting for everyone. Only once that's handled does the group shift to sustaining priorities -- rationing, signaling, and morale.",
+              "Someone has to be in charge: the senior ship's officer present, or the senior lifeboat-endorsed crew member if no officer is available, or someone the group elects if neither is present. That leader's real job is building a routine -- a roll call to confirm who's aboard, and assigning specific roles (a ration keeper, lookouts, a repair party, bailers, first-aid persons, someone handling signaling) so tasks don't get missed or duplicated.",
+              "Water and food are rationed from the very start, not figured out later -- because nobody knows how long the wait for rescue will be, rationing has to begin immediately and hold, even when it feels overly cautious in the moment.",
+              "The seriously injured are the one exception to standard water rationing -- they can receive water right away rather than waiting out the normal schedule, because medical need outweighs the general conservation rule.",
+              "Morale is a survival priority, not a comfort issue. When a group's morale breaks down, people tend to abandon rationing discipline, skip safety procedures, or take risky solo action -- all of which directly hurt survival odds. A clear routine and steady leadership are what prevent that slide.",
+              "Ongoing at-sea priorities once organized: keep the sea anchor set on every craft with a dedicated anchor watch, watch for breaking seas in heavy weather so nobody is caught off guard by incoming water, and know the basic capsize-recovery method for your craft (an open lifeboat is righted from one side using grab rails; a raft uses righting straps).",
+              "Preserving body fluids is a quiet but real priority: taking anti-seasickness medication (before abandoning ship if possible, or as soon as everyone's aboard) protects fluids that are very hard to replace once adrift, and urinating within about two hours of boarding protects against bladder strain -- neither is dramatic, but both matter precisely because they're easy to overlook."
+            ],
+            "confusionTraps": [
+              "\"We should eat/drink extra now since we don't know how long this will take\" sounds reasonable, but it's backwards -- that same uncertainty about rescue timing is exactly WHY rationing exists, not a reason to break it.",
+              "Don't confuse a required STOWED supply (a fixed amount of water a lifeboat is required to carry per person, before anyone even boards) with a RATIONING RATE (how much survivors are allowed to drink per day once adrift) -- they answer two different questions, and a question testing one shouldn't be answered with the other's figure.",
+              "Morale isn't just about how survivors feel -- it's a survival priority because a breakdown in morale predictably leads to concrete bad decisions (abandoning rationing, skipping safety steps, risky solo action), not because comfort is the goal in itself.",
+              "Good organization is often about restraint -- holding a rationing schedule, keeping a routine, standing a quiet watch -- rather than constant visible activity. Don't assume the most active-sounding answer is automatically the best-organized one."
+            ],
+            "examWatchFor": [
+              "If a question asks about the FIRST priority after abandoning ship, the answer is almost always about clearing danger and accounting for people -- not rationing, signaling, or anything longer-term.",
+              "If a question tests a required stowage amount, don't answer with a daily rationing figure, and vice versa -- read carefully whether it's asking \"how much is carried aboard\" or \"how much is used per day.\"",
+              "If a question describes someone pushing to break rationing \"just this once\" because of uncertainty, the correct answer almost always holds the line on the existing schedule.",
+              "Self-check: can you name the specific survival-craft roles from memory -- ration keeper, lookouts, repair party, bailers, first-aid, signaling -- without looking back at this page?",
+              "Self-check: could you explain, in one sentence, why morale counts as a genuine survival priority rather than just \"nice to have\"?"
+            ],
+            "sourceReferences": [
+              {
+                "file": "vinci-2026-07-13-chapter-4-manual-source-intake.md",
+                "note": "Water Survival Student Manual, Chapter 4, pages ~108-113 -- Organizing for Survival, Survival on the Sea, Preserve Body Fluids/Avoid Seasickness, Urinate Soon After Boarding, and Drinking Water sections"
+              }
+            ],
+            "confidence": "high"
+          },
           "Survival on the Sea",
           "Preserve Body Fluids / Avoid Seasickness",
           "Urinate Soon After Boarding",
