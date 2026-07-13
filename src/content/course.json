@@ -530,7 +530,40 @@
           "Anti-Exposure Suit",
           "Swimming for Survival",
           "Man Overboard",
-          "Cold Water Survival",
+          {
+            "title": "Cold Water Survival — Hypothermia & Cold Shock Response",
+            "explanation": "Cold water is dangerous for more than one reason, and they don't all happen at once. Cold water pulls heat out of your body much faster than cold air does, but the danger that kills people fastest usually isn't the slow loss of core heat -- it's what happens in the first few minutes, before hypothermia has even had time to set in. Treating 'cold water is dangerous' as one single problem is a mistake; it's really a sequence of distinct dangers, each with its own timeline and its own correct response.",
+            "keyFacts": [
+              "Stage 1 -- Cold Shock Response: lasts about the first minute. An involuntary gasp reflex and rapid breathing kick in the moment cold water hits you. The real danger here is inhaling water if your face goes under while you're gasping -- not hypothermia. Staying calm and keeping your airway clear is the priority in this window.",
+              "Stage 2 -- Cold Incapacitation (sometimes described as swimming failure): roughly 5 to 15 minutes in. Blood flow to your arms and legs drops, and your hands, arms, and legs stop responding the way you expect. This is why swimming any real distance in cold water becomes unreliable fast -- it's not that you get tired, it's that your limbs stop working well enough to swim or even hold onto something.",
+              "Stage 3 -- Circum-Rescue Collapse: a real danger that can strike before, during, or immediately after rescue -- not just while still in the water. Symptoms range from fainting to more serious collapse. This is part of why survivors need careful handling right up through and after being pulled out, not just while they're still in the water.",
+              "Stage 4 -- Hypothermia: the slower loss of core body temperature. Exactly how fast this develops varies a lot by water temperature, body fat, clothing, activity level, and conditions -- sources describe it starting anywhere from roughly 10-15 minutes in colder water up to much longer in milder conditions, so treat any specific number as a rough guide, not a guarantee, and never assume you have more time than you actually do.",
+              "70°F is a useful benchmark: at or below that water temperature, the average person can't generate body heat fast enough to keep up with how quickly they're losing it -- hypothermia risk is real even in water that doesn't feel shockingly cold.",
+              "Shivering is a symptom, but which DIRECTION it's heading matters more than whether it's happening. Violent shivering means the body's heat-defense system is still actively working -- a real sign of cold stress, but not the worst sign. Shivering that STOPS is more dangerous: it can mean the body's systems are starting to fail, not that the person is warming up.",
+              "Other hypothermia warning signs beyond shivering: confusion, slurred speech, clumsy or uncoordinated movement, and slow or labored breathing. These build gradually as core temperature keeps dropping, unlike the sudden, immediate onset of cold shock.",
+              "Practical survival priorities, in the order they matter: stay calm through the first minute (control the gasp reflex, protect your airway); use flotation if you have it so you don't have to work to stay up; minimize swimming and unnecessary movement, since moving pumps blood to your limbs and skin and speeds up how fast your core loses heat; get as much of your body out of the water as you can, even partially."
+            ],
+            "confusionTraps": [
+              "Don't lump every cold-water danger together as \"hypothermia.\" Cold shock (first minute, breathing/panic reflex), cold incapacitation (minutes in, limb/swimming failure), circum-rescue collapse (around the moment of rescue), and hypothermia (slower core-temperature loss) are four separate, sequential dangers -- a question asking about the FIRST minute is testing cold shock, not hypothermia, even though both are \"cold water dangers.\"",
+              "Shivering violently is not the danger sign it sounds like -- it means the body is still fighting. The scarier sign is shivering that stops, which can mean the body's defenses are failing, not that the person has warmed up or recovered.",
+              "Don't assume more time has passed than it has, or less. Exact hypothermia onset timing genuinely varies by water temperature, clothing, body fat, and activity level -- don't memorize one single number as if it always applies; know the rough range and the factors that move it.",
+              "\"They're conscious and talking\" doesn't mean \"they're fine.\" Mild cold stress can look alert; it's the progression toward confusion, slurred speech, and eventually unconsciousness that signals things are getting worse, not simply being conscious or not."
+            ],
+            "examWatchFor": [
+              "If a question specifies a time window (\"in the first minute...\", \"after several minutes...\"), match it to the right stage: first minute = cold shock (breathing/gasp danger); several minutes in = cold incapacitation (limb/swimming failure); around the point of rescue = circum-rescue collapse; longer exposure = hypothermia proper.",
+              "If a question describes someone shivering violently and asks what that means, the correct answer is usually \"the body is still actively defending itself\" -- not \"severe hypothermia.\" Severe hypothermia is more associated with shivering STOPPING.",
+              "If a question asks why swimming toward a distant target is discouraged when a flotation aid is available, the answer is about blood flow to the limbs/skin accelerating core heat loss -- not about energy or exhaustion alone.",
+              "Self-check: without looking back at this page, can you name all four stages in order, with a rough sense of when each one happens and what the actual danger is in each?",
+              "Self-check: could you explain why a shivering person and a not-shivering person in cold water might actually have the more serious case reversed from what your first instinct says?"
+            ],
+            "sourceReferences": [
+              {
+                "file": "vinci-2026-07-13-chapter-4-manual-source-intake.md",
+                "note": "Water Survival Student Manual, Chapter 4, pages ~100-107 -- Cold Water Survival / Hypothermia / Cold Shock Response section, including the 4-stage progression chart and symptom/first-aid material"
+              }
+            ],
+            "confidence": "high"
+          },
           "Organizing for Survival",
           "Survival on the Sea",
           "Preserve Body Fluids / Avoid Seasickness",
