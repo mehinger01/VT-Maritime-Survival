@@ -9090,6 +9090,410 @@
       "explanation": "A lifeboat's magnetic compass, when not in use, should be removed from its mounting bracket and securely stowed in its designated storage box inside the lifeboat.",
       "sourceReference": "Vinci source batch 2026-07-08-quiz-4, image 2026-07-07_064994-6.jpg (Review Quiz #4, question 23 of 24); see src/content/imports/vinci-2026-07-08-quiz-4-source-intake.json",
       "verificationStatus": "quiz-derived-study"
+    },
+    {
+      "id": "q-quiz6-liferafts-scattered-grouptogether",
+      "topicId": "chapter-3-using-liferafts",
+      "prompt": "If there are a number of liferafts scattered about after their ship sinks, what should be done?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Group them up and tie them together"
+        },
+        {
+          "id": "b",
+          "text": "Keep them spread apart to cover more search area",
+          "misconception": "Spreading rafts apart makes each one individually harder to spot and reduces survivors' ability to share resources and support each other."
+        },
+        {
+          "id": "c",
+          "text": "Each raft should deploy its own sea anchor and drift independently",
+          "misconception": "Ignores the value of grouping rafts together for visibility and mutual aid."
+        },
+        {
+          "id": "d",
+          "text": "Nothing -- rafts should be left exactly as they land in the water",
+          "misconception": "Passively leaving rafts scattered misses a real, actionable step survivors can take."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "medium",
+      "hints": [
+        "Think about visibility to searchers and the ability of survivors in different rafts to help each other."
+      ],
+      "explanation": "If a number of liferafts are scattered about after their ship sinks, survivors should group them up and tie them together -- improving visibility to search and rescue and allowing mutual support between rafts.",
+      "sourceReference": "Vinci source batch 2026-07-08-quiz-6, image 2026-07-07_065906-1.jpg (Review Quiz #6, question 1 of 22); see src/content/imports/vinci-2026-07-08-quiz-6-source-intake.json",
+      "verificationStatus": "quiz-derived-study"
+    },
+    {
+      "id": "q-quiz6-beach-landing-hightideline",
+      "topicId": "chapter-4-survival-methods",
+      "prompt": "After landing on a beach with your liferaft, what should you do with the liferaft?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Carry it past the high tide line"
+        },
+        {
+          "id": "b",
+          "text": "Leave it at the waterline for easy relaunching if needed",
+          "misconception": "A rising tide could carry the raft back out to sea or damage it against the shore if left near the waterline."
+        },
+        {
+          "id": "c",
+          "text": "Deflate it immediately and discard it",
+          "misconception": "The raft remains valuable shelter and equipment after landing -- it shouldn't be discarded."
+        },
+        {
+          "id": "d",
+          "text": "Push it back out to sea once everyone is ashore",
+          "misconception": "The raft is still useful survival equipment on land and shouldn't be sent back out to sea."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "medium",
+      "hints": [
+        "Think about what the tide will do to anything left too close to the water's edge."
+      ],
+      "explanation": "After landing a liferaft on a beach, it should be carried past the high tide line -- protecting it (and its continued usefulness as shelter and equipment) from being carried off or damaged by a rising tide.",
+      "sourceReference": "Vinci source batch 2026-07-08-quiz-6, image 2026-07-07_065906-1.jpg (Review Quiz #6, question 2 of 22); see src/content/imports/vinci-2026-07-08-quiz-6-source-intake.json",
+      "verificationStatus": "quiz-derived-study"
+    },
+    {
+      "id": "q-quiz6-liferaft-climate-adaptation-compare-vh",
+      "topicId": "chapter-3-using-liferafts",
+      "prompt": "A liferaft's setup should differ depending on climate. What's the difference between the proper setup in higher (colder) latitudes versus tropical waters?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "In higher latitudes, inflate the floor and close the doors to lessen cold water radiation; in tropical waters, open the canopy entryways and deflate the floor for ventilation"
+        },
+        {
+          "id": "b",
+          "text": "The setup is identical regardless of climate -- floor and doors are never adjusted",
+          "misconception": "Ignores that climate-specific adjustments to the floor and doors are a real, deliberate survival practice."
+        },
+        {
+          "id": "c",
+          "text": "In higher latitudes, open the doors for ventilation; in tropical waters, inflate the floor for insulation",
+          "misconception": "Reverses the two climate-specific setups."
+        },
+        {
+          "id": "d",
+          "text": "The floor should always be deflated and the doors always closed, regardless of climate",
+          "misconception": "Applies one climate's setup universally, ignoring the need to adapt to conditions."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "very-hard",
+      "hints": [
+        "Think about which direction you want heat to move in each climate -- keeping cold out in higher latitudes, versus letting heat and humidity escape in the tropics."
+      ],
+      "explanation": "In higher (colder) latitudes, inflating the floor and closing the doors lessens cold water radiation into the raft. In tropical waters, the opposite adjustments help: opening the canopy entryways and deflating the floor improve ventilation and reduce heat/humidity buildup.",
+      "sourceReference": "Vinci source batch 2026-07-08-quiz-6, image 2026-07-07_065906-1.jpg (Review Quiz #6, questions 3 and 4 of 22, combined -- a natural compare-and-contrast pairing of cold-climate and tropical-climate liferaft setup, merged into one question rather than drafted as two separate ones); see src/content/imports/vinci-2026-07-08-quiz-6-source-intake.json",
+      "verificationStatus": "quiz-derived-study"
+    },
+    {
+      "id": "q-quiz6-pfd-required-items",
+      "topicId": "chapter-1-planning-ahead",
+      "prompt": "Besides basic flotation, what items should a lifejacket or personal flotation device have on it?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "A light, a whistle, reflective patches, and the name of the vessel"
+        },
+        {
+          "id": "b",
+          "text": "A GPS transponder and a two-way radio",
+          "misconception": "Overstates what's actually required -- these are far more elaborate than the standard items on a PFD."
+        },
+        {
+          "id": "c",
+          "text": "Only a whistle -- no light or reflective material is required",
+          "misconception": "Understates the required items -- a light and reflective material are also required, not just a whistle."
+        },
+        {
+          "id": "d",
+          "text": "Nothing beyond the flotation material itself"
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "medium",
+      "hints": [
+        "Think about what helps rescuers both see and hear a survivor, plus what helps identify which vessel they came from."
+      ],
+      "explanation": "A lifejacket or PFD should have a light, a whistle, reflective patches, and the name of the vessel on it -- helping rescuers locate, hear, and identify survivors.",
+      "sourceReference": "Vinci source batch 2026-07-08-quiz-6, image 2026-07-07_065906-1.jpg (Review Quiz #6, question 5 of 22); see src/content/imports/vinci-2026-07-08-quiz-6-source-intake.json. Note: the already-live q-quiz1a-typeI-pfd-false lists 'reflective tape, a whistle, and strobe light' as a true statement about Type I life preservers in passing (as a distractor's descriptive text, not that question's tested answer) -- this question directly tests the fuller item list as its own fact, adding 'name of vessel' as new content.",
+      "verificationStatus": "quiz-derived-study"
+    },
+    {
+      "id": "q-quiz6-oilfire-waterentry",
+      "topicId": "chapter-4-survival-methods",
+      "prompt": "What is the safest method of entering the water from a sinking ship if there is an oil fire on the surface?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Enter from the stern or bow, on the windward side"
+        },
+        {
+          "id": "b",
+          "text": "Enter from amidships, on the leeward side",
+          "misconception": "The leeward side is where wind would blow burning oil and smoke toward the survivor -- the opposite of safe."
+        },
+        {
+          "id": "c",
+          "text": "Enter from wherever is most convenient -- fire location doesn't affect the choice",
+          "misconception": "Dismisses a real, deliberate safety consideration -- the fire's position relative to wind direction matters a great deal."
+        },
+        {
+          "id": "d",
+          "text": "Wait until the fire burns out before entering the water at all",
+          "misconception": "Waiting isn't a safe option when abandoning a sinking ship -- entry point and side matter, not delay."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "hard",
+      "hints": [
+        "Think about which side of the ship the wind would blow burning oil and smoke away from."
+      ],
+      "explanation": "The safest way to enter the water from a sinking ship with an oil fire on the surface is from the stern or bow, on the windward side -- keeping the wind blowing the fire and smoke away from the survivor rather than toward them.",
+      "sourceReference": "Vinci source batch 2026-07-08-quiz-6, image 2026-07-07_065906-2.jpg (Review Quiz #6, question 10 of 22); see src/content/imports/vinci-2026-07-08-quiz-6-source-intake.json",
+      "verificationStatus": "quiz-derived-study"
+    },
+    {
+      "id": "q-quiz6-swim-strongcurrent-45deg",
+      "topicId": "chapter-4-survival-methods",
+      "prompt": "When trying to swim to a shore where there is a strong current, what angle should you swim relative to the current?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "45 degrees out of (across) the current"
+        },
+        {
+          "id": "b",
+          "text": "Straight against the current, head-on",
+          "misconception": "Fighting a strong current head-on wastes energy rather than working with it at an angle."
+        },
+        {
+          "id": "c",
+          "text": "Directly with the current, ignoring the shore's direction",
+          "misconception": "Swimming purely with the current abandons the goal of actually reaching shore."
+        },
+        {
+          "id": "d",
+          "text": "90 degrees, directly across the current with no angle toward shore",
+          "misconception": "A full 90-degree crossing doesn't make progress toward shore -- a 45-degree angle balances crossing the current with heading toward land."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "hard",
+      "hints": [
+        "Think about balancing two goals at once: not exhausting yourself fighting the current, and still making progress toward shore."
+      ],
+      "explanation": "When swimming to shore against a strong current, swim at a 45-degree angle out of (relative to) the current rather than straight against it -- conserving energy while still making progress toward land.",
+      "sourceReference": "Vinci source batch 2026-07-08-quiz-6, image 2026-07-07_065906-3.jpg (Review Quiz #6, question 11 of 22); see src/content/imports/vinci-2026-07-08-quiz-6-source-intake.json",
+      "verificationStatus": "quiz-derived-study"
+    },
+    {
+      "id": "q-quiz6-lifeboat-avoidbroaching",
+      "topicId": "chapter-2-using-lifeboats",
+      "prompt": "What steps should be taken to maneuver a lifeboat and make way while avoiding broaching in heavy seas?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Keep the bow to the seas, and use a sea anchor if necessary"
+        },
+        {
+          "id": "b",
+          "text": "Keep the stern to the seas, running directly downwind",
+          "misconception": "Running with the stern to the seas increases the risk of broaching, not avoids it."
+        },
+        {
+          "id": "c",
+          "text": "Turn broadside to the seas for a more stable ride",
+          "misconception": "Being broadside to heavy seas is precisely the broaching risk this question is asking how to avoid."
+        },
+        {
+          "id": "d",
+          "text": "Maintain maximum speed regardless of the boat's heading relative to the seas",
+          "misconception": "Speed alone doesn't prevent broaching -- heading relative to the seas, and using a sea anchor if needed, is what matters."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "hard",
+      "hints": [
+        "Broaching happens when a boat turns unexpectedly broadside to the seas -- think about which heading avoids that."
+      ],
+      "explanation": "To maneuver a lifeboat and make way while avoiding broaching in heavy seas, keep the bow to the seas, and use a sea anchor if necessary to help maintain that heading.",
+      "sourceReference": "Vinci source batch 2026-07-08-quiz-6, image 2026-07-07_065906-3.jpg (Review Quiz #6, question 12 of 22); see src/content/imports/vinci-2026-07-08-quiz-6-source-intake.json",
+      "verificationStatus": "quiz-derived-study"
+    },
+    {
+      "id": "q-quiz6-condensation-collect-drink",
+      "topicId": "chapter-3-using-liferafts",
+      "prompt": "What is the purpose of collecting condensation in a liferaft, and how is it typically done?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "It's collected -- with a sponge or a t-shirt -- as a source of drinking water"
+        },
+        {
+          "id": "b",
+          "text": "It's collected to keep the raft's interior dry, then discarded",
+          "misconception": "Discards the actual value of the collected condensation -- it's kept and used as drinking water, not thrown away."
+        },
+        {
+          "id": "c",
+          "text": "It's collected only to test whether the canopy has a leak",
+          "misconception": "Invents an unrelated diagnostic purpose -- the real purpose is obtaining drinking water."
+        },
+        {
+          "id": "d",
+          "text": "Condensation isn't worth collecting in a liferaft"
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "medium",
+      "hints": [
+        "Think about how scarce fresh water is in a liferaft, and how even small amounts matter."
+      ],
+      "explanation": "Condensation inside a liferaft is collected -- using a sponge or a t-shirt to soak it up -- as a supplementary source of drinking water, since fresh water is scarce for survivors.",
+      "sourceReference": "Vinci source batch 2026-07-08-quiz-6, image 2026-07-07_065906-3.jpg and 2026-07-07_065906-4.jpg (Review Quiz #6, questions 13 and 16 of 22, combined -- question 13 asked the purpose, question 16 asked the method with an additional tool; merged into one question rather than drafted as two overlapping questions); see src/content/imports/vinci-2026-07-08-quiz-6-source-intake.json",
+      "verificationStatus": "quiz-derived-study"
+    },
+    {
+      "id": "q-quiz6-williamsonturn-manoverboard",
+      "topicId": "chapter-6-being-rescued",
+      "prompt": "Your ship is on course 090\u00b0T and someone falls overboard on the starboard side. What maneuver does the mate on watch execute, and what's the ship's heading after its first phase?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "A Williamson Turn -- turning toward the side the person fell until the heading changes 60 degrees from the original course, reaching 150\u00b0T"
+        },
+        {
+          "id": "b",
+          "text": "A Williamson Turn -- turning away from the side the person fell, reaching 030\u00b0T",
+          "misconception": "Turns away from (rather than toward) the side the person fell, and applies the heading change in the wrong direction."
+        },
+        {
+          "id": "c",
+          "text": "An immediate full stop, with no turn at all",
+          "misconception": "A full stop alone doesn't reposition the ship to recover the person -- the Williamson Turn's heading change is the actual maneuver."
+        },
+        {
+          "id": "d",
+          "text": "A Williamson Turn, but the heading change is 180 degrees immediately, with no intermediate phase"
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "very-hard",
+      "hints": [
+        "The Williamson Turn's first phase changes the ship's heading by a specific number of degrees from its original course, toward the side the person fell -- not straight to the reciprocal course."
+      ],
+      "explanation": "For a man overboard, the mate on watch executes a Williamson Turn -- turning toward the side the person fell (starboard, here) until the ship's heading has changed 60 degrees from its original course: 090\u00b0T + 60\u00b0 = 150\u00b0T. (The full maneuver continues from there to reach the reciprocal heading, retracing the ship's track back to the person's position, but this question covers the well-documented first phase.)",
+      "sourceReference": "Vinci source batch 2026-07-08-quiz-6, image 2026-07-07_065906-3.jpg (Review Quiz #6, question 14 of 22); see src/content/imports/vinci-2026-07-08-quiz-6-source-intake.json. Note: the student's answer ('Williamson turn 60\u00b0' / '90 = 150\u00b0') documents only the turn's first phase; this question is scoped to match exactly what the source supports, not the full maneuver's later steps.",
+      "verificationStatus": "quiz-derived-study"
+    },
+    {
+      "id": "q-quiz6-abandonship-jump-procedure",
+      "topicId": "chapter-4-survival-methods",
+      "prompt": "What is the proper procedure for jumping into the water when abandoning ship?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Cross your arms and legs, and make sure there's no debris below before jumping"
+        },
+        {
+          "id": "b",
+          "text": "Keep your arms and legs spread wide for a bigger splash landing",
+          "misconception": "A wide, spread-limb landing increases the risk of injury on impact -- crossing the arms and legs is the safer technique."
+        },
+        {
+          "id": "c",
+          "text": "Dive in headfirst to minimize impact",
+          "misconception": "A headfirst dive risks serious head/neck injury, especially into unknown water conditions below."
+        },
+        {
+          "id": "d",
+          "text": "Jump immediately without checking what's below, to save time"
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "medium",
+      "hints": [
+        "Think about protecting your limbs on impact, and checking for hazards in the water below before you commit to jumping."
+      ],
+      "explanation": "When jumping into the water to abandon ship, cross your arms and legs to protect them on impact, and make sure there's no debris (or people) below before jumping.",
+      "sourceReference": "Vinci source batch 2026-07-08-quiz-6, image 2026-07-07_065906-4.jpg (Review Quiz #6, question 15 of 22); see src/content/imports/vinci-2026-07-08-quiz-6-source-intake.json. Note: distinct from the already-live 'preferred jump height of 15 feet or less' fact -- this question covers body position and a pre-jump safety check, not height.",
+      "verificationStatus": "quiz-derived-study"
+    },
+    {
+      "id": "q-quiz6-generalalarm-continuoussignal",
+      "topicId": "chapter-5-signaling",
+      "prompt": "What does a continuous ringing of the general alarm bell (no less than 10 seconds), combined with a continuous blast of the ship's whistle (more than 10 seconds), indicate?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Fire or a general emergency"
+        },
+        {
+          "id": "b",
+          "text": "Commence lowering the lifeboats",
+          "misconception": "The lowering signal is a single short blast, not a continuous bell-and-whistle combination."
+        },
+        {
+          "id": "c",
+          "text": "Man overboard",
+          "misconception": "Not the signal associated with this specific continuous bell-and-whistle combination."
+        },
+        {
+          "id": "d",
+          "text": "Boat drill dismissal",
+          "misconception": "Dismissal from boat stations uses a different signal (three short blasts of the whistle), not this continuous combination."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "hard",
+      "hints": [
+        "This is the ship's first/general alarm -- distinct from the separate signal used specifically to call the crew to boat stations."
+      ],
+      "explanation": "A continuous ringing of the general alarm bell for no less than 10 seconds, combined with a continuous blast of the ship's whistle for more than 10 seconds, indicates fire or a general emergency -- the ship's first alarm signal, distinct from the separate seven-short-blasts-plus-one-long signal used specifically to call the crew to boat stations.",
+      "sourceReference": "Vinci source batch 2026-07-08-quiz-6, image 2026-07-07_065906-4.jpg (Review Quiz #6, question 17 of 22); see src/content/imports/vinci-2026-07-08-quiz-6-source-intake.json",
+      "verificationStatus": "quiz-derived-study"
+    },
+    {
+      "id": "q-quiz6-holdwaterall-command",
+      "topicId": "chapter-2-using-lifeboats",
+      "prompt": "What oar command is given to take all the way off a lifeboat that's moving through the water?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "\"Hold water all\""
+        },
+        {
+          "id": "b",
+          "text": "\"Way enough\"",
+          "misconception": "'Way enough' is the command to finish the stroke and lift the oars from the rowlocks -- a different action from stopping the boat's way through the water."
+        },
+        {
+          "id": "c",
+          "text": "\"Backwater all\"",
+          "misconception": "'Backwater all' reverses the oar stroke to row backward, rather than bracing the oars to stop the boat's forward way."
+        },
+        {
+          "id": "d",
+          "text": "\"Out oars\"",
+          "misconception": "'Out oars' moves the oars from the side benches to the gunwales, an entirely different action from stopping the boat."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "very-hard",
+      "hints": [
+        "This command braces the oar blades in the water to act as a brake, distinct from the commands that reposition or stow the oars."
+      ],
+      "explanation": "\"Hold water all\" is the oar command given to take all the way off a lifeboat that's moving through the water -- distinct from 'Way enough' (finishing the stroke and stowing oars), 'Backwater all' (reversing), and 'Out oars' (repositioning oars from the side benches to the gunwales).",
+      "sourceReference": "Vinci source batch 2026-07-08-quiz-6, image 2026-07-07_065906-5.jpg (Review Quiz #6, question 21 of 22); see src/content/imports/vinci-2026-07-08-quiz-6-source-intake.json",
+      "verificationStatus": "quiz-derived-study"
     }
   ]
 }
