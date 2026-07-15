@@ -705,7 +705,35 @@
             ],
             "confidence": "high"
           },
-          "Search and Rescue Radar Transponder / SART",
+          {
+            "title": "Search and Rescue Radar Transponder (SART) \u2014 Quick Reference",
+            "explanation": "This is the standalone, quick-lookup version of the SART facts already covered in the EPIRB-vs-SART comparison section above. Use that section to understand how SART differs from an EPIRB; use this one when a question is entirely about SART on its own and you need the exact figures fast.",
+            "keyFacts": [
+              "Detected by a nearby vessel's own X-Band (9 GHz) navigational radar -- not by satellite. It does not broadcast on its own; it reacts to a radar pulse hitting it.",
+              "On the rescuing ship's radar screen, a SART appears as a distinctive series of 12 blips extending outward from the ship's position, which resolve into arcs as the vessel closes in.",
+              "Rigged about 1 meter above the water in standby mode; automatically activates (with an audio and/or visual indication) when struck by a nearby radar pulse, and can also be manually activated or deactivated.",
+              "Battery must operate for 96 hours in standby mode. (The additional transponder-mode duration figure from the source manual did not survive OCR clearly and is not stated here -- see the note below.)",
+              "Built to survive a 20-meter drop and remain watertight to 10 meters for 5 minutes.",
+              "Minimum detection range per IMO standard: 5 miles at 1 meter height above the water; a Coast Guard aircraft searching at 3,000 feet should detect one at 30 miles.",
+              "Carriage requirement: 1 SART on vessels 300-500 gross tons; 2 SARTs (one per side) on passenger vessels and vessels over 500 gross tons."
+            ],
+            "confusionTraps": [
+              "Don't confuse SART with EPIRB -- SART needs a nearby ship's own radar to be detected; it has no satellite link and doesn't broadcast a position on its own.",
+              "The 96-hour figure is specifically the standby-mode battery life, not a transmit duration -- don't swap it with the EPIRB's 48-hour minimum transmit duration.",
+              "This section deliberately does not give a number for how long the battery lasts once in active transponder mode -- that specific figure is a known OCR gap in the source manual (page ~123) and has not been confirmed. Do not guess it if it comes up; it needs a direct read of the source image."
+            ],
+            "examWatchFor": [
+              "Memory anchor: SART = radar-to-radar, short range, reactive. EPIRB = satellite, long range, proactive.",
+              "Self-check: A vessel is already searching your last known position and closing in. Which device are they most likely using to pinpoint you -- EPIRB or SART? (SART -- it's built for exactly this stage of a rescue.)"
+            ],
+            "sourceReferences": [
+              {
+                "file": "vinci-2026-07-14-chapter-5-source-intake.md",
+                "note": "Water Survival Student Manual, Chapter 5, page ~123 -- Search and Rescue Radar Transponder (SART) section. Same source facts as the EPIRB-vs-SART comparison section; the transponder-mode battery duration figure is intentionally omitted as an unresolved OCR gap."
+              }
+            ],
+            "confidence": "high"
+          },
           {
             "title": "International Morse Code",
             "explanation": "Morse code is a coding system, not a device -- the same dots and dashes can be sent by radio, light, sound, or even ground markings. In this chapter, the one pattern worth knowing cold is SOS, the most universally recognized distress symbol in Morse.",
@@ -756,7 +784,32 @@
             ],
             "confidence": "high"
           },
-          "Table of Lifesaving Signals",
+          {
+            "title": "Table of Lifesaving Signals \u2014 Fast Lookup Format",
+            "explanation": "This is the concise, fast-lookup companion to the narrative \"Signals to Communicate From Shore\" section above -- same underlying IMO table, same facts, formatted here as short entries for quick pre-quiz review rather than full sentences.",
+            "keyFacts": [
+              "Best place to land: vertical motion of a white flag/arms/flare (day or night), OR a green star signal, OR code letter K (dash-dot-dash) by light/sound.",
+              "Landing here is highly dangerous: horizontal motion of a white flag/arms/flare (day or night), OR a red star signal, OR code letter S (dot-dot-dot) by light/sound.",
+              "Landing dangerous, better spot to the right: code letters S then R -- \"right\" is from the survival craft's own point of view facing the shore, not the shore party's.",
+              "Landing dangerous, better spot to the left: code letters S then L -- same right/left rule as above.",
+              "You are seen, help is coming (the standard shore-station reply to any distress signal): 3 combined light-and-sound signals about 1 minute apart, OR 3 white star rockets about 1 minute apart, OR an orange smoke signal by day.",
+              "Shore apparatus (rocket-line/breeches-buoy) signals reuse the same grammar: vertical motion or a green star = affirmative (haul away); horizontal motion or a red star = negative (slack away / avast hauling)."
+            ],
+            "confusionTraps": [
+              "This table and the narrative shore-signals section above describe the same signal system in two formats, not two different systems -- don't study them as if they were separate facts to memorize twice.",
+              "Vertical/green always means good news (proceed); horizontal/red always means danger (stop) -- the pattern repeats across every signal pair in this table."
+            ],
+            "examWatchFor": [
+              "Self-check: A shore party waves a white flag side to side, horizontally. What are they telling you? (Landing here is highly dangerous.)"
+            ],
+            "sourceReferences": [
+              {
+                "file": "vinci-2026-07-14-chapter-5-source-intake.md",
+                "note": "Water Survival Student Manual, Chapter 5, pages ~125-129 -- Signals to Communicate From Shore and Table of Lifesaving Signals sections. Page 129 (shore apparatus signals) was flagged in the source intake as rougher OCR quality; this fact is cross-corroborated by the cleaner prose on pages 125-126 describing the same signal grammar, consistent with how it's already presented in the narrative section above. No figure from an OCR-uncertain or unconfirmed source is used in this section."
+              }
+            ],
+            "confidence": "high"
+          },
           {
             "title": "International Distress Signals \u2014 The Recognized List",
             "explanation": "A distress signal's whole job is to be unmistakable -- something a rescuer can recognize instantly, from a distance, with no ambiguity about what it means. That's why recognized distress signals aren't just 'anything alarming' -- they come from a specific, closed list (33 CFR Part 87, Annex IV). If a signal isn't on that list, it doesn't count as a legally-recognized distress signal, no matter how urgent it looks. Knowing the actual list -- and spotting invented-sounding lookalikes -- is most of what these exam questions test.",

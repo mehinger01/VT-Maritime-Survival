@@ -51,3 +51,45 @@ session, and was not promoted here.
 transcription) and `vinci-2026-07-14-chapter-5-promotion-review.md`
 (question-bank status reference), both already staged from a prior
 session; no new source extraction or OCR was performed in this session.
+
+---
+
+## 2026-07-15 — Chapter 5 Narrow Cleanup Review
+
+**Scope:** Chapter 5 — Signaling to Attract Attention. Review-and-close
+pass on the gaps left open by the prior two Chapter 5 sessions. No new
+questions, no promotions, no OCR rerun.
+
+**What was reviewed:**
+
+- **Held-back question `q-ch5man-shore-apparatus-signals`:** remains
+  held, not promoted. Recommendation stands unchanged from the prior
+  review — promote later, once manual page 129 gets a direct visual
+  check, not revise or drop.
+- **Two OCR-uncertain figures** (EPIRB hydrostatic-release submersion
+  depth, page ~121; SART transponder-mode battery duration, page ~123):
+  confirmed still unresolved. Neither number is guessed anywhere in the
+  app. Exact re-check needed: a direct read of the source manual page
+  itself (not a re-run of the existing OCR pass) for each figure.
+- **Learn Mode placeholders:** confirmed the standalone "SART" and
+  "Table of Lifesaving Signals" sections were still bare placeholders
+  (the fuller material had only been written into the combined
+  EPIRB-vs-SART and Shore-Signals sections from the prior session).
+  Filled both with concise, standalone quick-reference content, built
+  entirely from facts already established and sourced in the prior
+  session's Learn Mode content and the source intake — no new source
+  material was read. Chapter 5 Learn Mode is now 8 of 8 sections with
+  real content.
+- **Signal-selection flowchart:** not built. Recommended as a
+  reasonable future addition (see below) but held for a separate,
+  explicitly-requested task.
+
+**What did not change:** No quiz questions were created, edited, or
+promoted. The live question count remains 336. No unrelated chapters or
+Quiz 1a content were touched. `q-ch5man-shore-apparatus-signals` remains
+out of the live bank.
+
+**Source basis:** `vinci-2026-07-14-chapter-5-source-intake.md` and
+`vinci-2026-07-14-chapter-5-promotion-review.md`, both already staged;
+no new source extraction, OCR, or Drive access was performed in this
+session.
