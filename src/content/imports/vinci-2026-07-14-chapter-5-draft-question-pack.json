@@ -1,0 +1,1203 @@
+{
+  "importPackId": "vinci-2026-07-14-chapter-5-draft-question-pack",
+  "receivedDate": "2026-07-14",
+  "generatedFrom": [
+    "src/content/imports/vinci-2026-07-14-chapter-5-source-intake.md"
+  ],
+  "purpose": "Draft (inactive) Chapter 5 question objects derived from the Water Survival Student Manual excerpt (pages 120-132) processed in vinci-2026-07-14-chapter-5-source-intake.md. These are NOT part of src/content/course.json's live \"questions\" array and will not appear in the app until explicitly promoted. Category assignments (ready for review / needs verification / unclear-OCR) live in vinci-2026-07-14-chapter-5-promotion-review.md, not in this file.",
+  "activationRule": "Do not add any of these questions to course.json unless its verificationStatus has been changed away from 'draft-unverified' as part of an explicitly-requested promotion task.",
+  "sourceHandlingNotes": "Excludes two OCR-uncertain figures entirely rather than drafting-then-flagging them: the EPIRB hydrostatic release submersion depth (OCR read '3-10 feet' inside a heavily garbled sentence) and the SART transponder-mode battery duration (the number did not survive OCR at all -- only the 96-hour standby figure is used). Excludes the Morse code page's content beyond SOS, since SOS as a distress symbol is already live (q-cfr-sos-morse-distress) and the rest of that page is a reference chart, not prose. Checked against all 25 live chapter-5-signaling questions before drafting -- basic 'what is an EPIRB/SART/VHF for' definitional questions (q-sig-1 through q-sig-4) were deliberately not re-drafted; this pack focuses on more specific technical facts, procedures, and figures instead.",
+  "questions": [
+    {
+      "id": "q-ch5man-vhf-radio-count",
+      "topicId": "chapter-5-signaling",
+      "prompt": "How many portable VHF survival craft transceivers are required aboard a passenger ship or a cargo vessel of 500 gross tons or over?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Three"
+        },
+        {
+          "id": "b",
+          "text": "Two",
+          "misconception": "Two is the number required on smaller cargo vessels (300-500 gross tons), not on passenger ships or vessels 500 gross tons and over."
+        },
+        {
+          "id": "c",
+          "text": "One",
+          "misconception": "Understates the requirement -- one radio is not the required minimum on any of the vessel classes described."
+        },
+        {
+          "id": "d",
+          "text": "Five",
+          "misconception": "Overstates the requirement -- five radios is not a figure given anywhere in the source."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "medium",
+      "hints": [
+        "There's a different, smaller number required on smaller cargo vessels between 300 and 500 tons."
+      ],
+      "explanation": "Three portable handheld VHF survival craft transceivers are required aboard passenger ships and cargo vessels 500 gross tons and over. Smaller cargo vessels between 300 and 500 tons only require two.",
+      "sourceReference": "Chapter 5 manual source intake, VHF Survival Craft Transceiver / SCT section (manual page ~120); see src/content/imports/vinci-2026-07-14-chapter-5-source-intake.md",
+      "verificationStatus": "draft-unverified"
+    },
+    {
+      "id": "q-ch5man-vhf-channel-purposes",
+      "topicId": "chapter-5-signaling",
+      "prompt": "Which VHF channel should be used first in an emergency, and which channel is used for search-and-rescue communications with the Coast Guard and aircraft?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Channel 16 first for the emergency itself; channel 6 for SAR communications"
+        },
+        {
+          "id": "b",
+          "text": "Channel 6 first for the emergency itself; channel 16 for SAR communications",
+          "misconception": "Reverses the two channels' roles."
+        },
+        {
+          "id": "c",
+          "text": "Both channels serve the same purpose interchangeably",
+          "misconception": "Ignores the distinct, separate role each channel plays."
+        },
+        {
+          "id": "d",
+          "text": "Channel 16 for both purposes; channel 6 is unused in survival situations",
+          "misconception": "Ignores channel 6's specific SAR-communications role."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "medium",
+      "hints": [
+        "One channel is specifically for the initial emergency call; the other is for ongoing coordination with rescuers."
+      ],
+      "explanation": "Channel 16 (156.8 MHz) should be used first in an emergency. Channel 6 is used for search-and-rescue communications with the Coast Guard and aircraft.",
+      "sourceReference": "Chapter 5 manual source intake, VHF Survival Craft Transceiver / SCT section (manual page ~120); see src/content/imports/vinci-2026-07-14-chapter-5-source-intake.md",
+      "verificationStatus": "draft-unverified"
+    },
+    {
+      "id": "q-ch5man-vhf-specs",
+      "topicId": "chapter-5-signaling",
+      "prompt": "What are the watertightness and battery specifications for a VHF survival craft transceiver?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Watertight to 1 meter for 5 minutes, with a battery capacity of 8 hours of operation"
+        },
+        {
+          "id": "b",
+          "text": "Watertight to 10 meters for 5 minutes, with a battery capacity of 48 hours of operation",
+          "misconception": "These are the SART's and EPIRB's own separate specifications (10m/5min watertight for SART; 48-hour minimum transmit time for EPIRB), not the VHF transceiver's."
+        },
+        {
+          "id": "c",
+          "text": "Not water-resistant at all, with a battery capacity of 8 hours of operation",
+          "misconception": "Understates the radio's watertightness -- it is rated watertight to 1 meter for 5 minutes."
+        },
+        {
+          "id": "d",
+          "text": "Watertight to 1 meter for 5 minutes, with an unlimited battery capacity",
+          "misconception": "Overstates the battery capacity, which is specifically 8 hours, not unlimited."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "medium",
+      "hints": [
+        "Don't mix this radio's specs up with the EPIRB's or SART's own separate watertight/duration ratings."
+      ],
+      "explanation": "A VHF survival craft transceiver is watertight to 1 meter for 5 minutes, and its battery has a capacity of 8 hours of operation -- different figures from the EPIRB's 48-hour minimum transmit time or the SART's 10-meter/5-minute watertight rating.",
+      "sourceReference": "Chapter 5 manual source intake, VHF Survival Craft Transceiver / SCT section (manual page ~120); see src/content/imports/vinci-2026-07-14-chapter-5-source-intake.md",
+      "verificationStatus": "draft-unverified"
+    },
+    {
+      "id": "q-ch5man-vhf-when-to-turn-on",
+      "topicId": "chapter-5-signaling",
+      "prompt": "When should a survival craft transceiver be turned on?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Only when you know there is a vessel or rescue aircraft nearby"
+        },
+        {
+          "id": "b",
+          "text": "Continuously, from the moment you board the survival craft",
+          "misconception": "Wastes limited battery capacity by running continuously rather than only when a rescuer is known to be nearby."
+        },
+        {
+          "id": "c",
+          "text": "Only after the first 24 hours have passed",
+          "misconception": "Confuses this guidance with the unrelated 24-hour food/water rationing rule."
+        },
+        {
+          "id": "d",
+          "text": "Only at night, to conserve the battery during daylight",
+          "misconception": "Invents a day/night restriction that isn't the actual guidance, which is about proximity to a known rescuer, not time of day."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "medium",
+      "hints": [
+        "Think about the radio's limited battery life, and why running it constantly on the chance someone might be listening would be wasteful."
+      ],
+      "explanation": "The radio should not be turned on unless you know there is a vessel or rescue aircraft nearby -- the radios are designed for unskilled operators who are in sight of a rescue craft, and battery life is limited.",
+      "sourceReference": "Chapter 5 manual source intake, VHF Survival Craft Transceiver / SCT section (manual page ~120); see src/content/imports/vinci-2026-07-14-chapter-5-source-intake.md",
+      "verificationStatus": "draft-unverified"
+    },
+    {
+      "id": "q-ch5man-vhf-nicad-battery",
+      "topicId": "chapter-5-signaling",
+      "prompt": "If a survival craft transceiver uses rechargeable Ni-Cad batteries, what should be done before recharging?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "The battery should be allowed to run down before recharging"
+        },
+        {
+          "id": "b",
+          "text": "The battery should be recharged as frequently as possible, regardless of remaining charge",
+          "misconception": "Reverses the actual guidance -- Ni-Cad batteries should be run down before recharging, not topped off frequently."
+        },
+        {
+          "id": "c",
+          "text": "The radio must be sent to an approved facility for any battery service",
+          "misconception": "Invents a facility requirement not described for this specific radio; the guidance given is a simple usage habit, not a service restriction."
+        },
+        {
+          "id": "d",
+          "text": "Ni-Cad batteries in this radio cannot be recharged at all",
+          "misconception": "Contradicts the source, which explicitly describes Ni-Cad batteries as usable and rechargeable in this radio."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "easy",
+      "hints": [
+        "This is a habit related to how Ni-Cad battery chemistry behaves over repeated partial charges."
+      ],
+      "explanation": "If the survival craft transceiver uses rechargeable Ni-Cad batteries, the battery should be allowed to run down before recharging.",
+      "sourceReference": "Chapter 5 manual source intake, VHF Survival Craft Transceiver / SCT section (manual page ~120); see src/content/imports/vinci-2026-07-14-chapter-5-source-intake.md",
+      "verificationStatus": "draft-unverified"
+    },
+    {
+      "id": "q-ch5man-epirb-classI-stowage",
+      "topicId": "chapter-5-signaling",
+      "prompt": "Where is a SOLAS-required Class I EPIRB normally located, and why?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "On the flying bridge or bridge wing, so its stowed location allows for unobstructed automatic float-free operation"
+        },
+        {
+          "id": "b",
+          "text": "Inside a locked cabin, to prevent accidental activation",
+          "misconception": "Would defeat the EPIRB's automatic float-free release function, which requires an unobstructed path if the ship sinks."
+        },
+        {
+          "id": "c",
+          "text": "In the engine room, for easy access by the engineering crew",
+          "misconception": "Places the EPIRB somewhere that would prevent automatic float-free release if the ship sank, and is not the described stowage location."
+        },
+        {
+          "id": "d",
+          "text": "Location doesn't matter as long as it's registered with NOAA",
+          "misconception": "Registration matters for a different reason (feeding the SAR database), but doesn't address the stowage-location requirement this question is asking about."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "medium",
+      "hints": [
+        "A Class I EPIRB is specifically capable of float-free operation -- think about what stowage location that function requires."
+      ],
+      "explanation": "A SOLAS-required ship carries at least 1 Class I EPIRB (capable of float-free operation), normally located on the flying bridge or bridge wing, so its stowed location allows for unobstructed automatic float-free release if the vessel sinks.",
+      "sourceReference": "Chapter 5 manual source intake, Emergency Position Indicating Radio Beacon (EPIRB) section (manual page ~121); see src/content/imports/vinci-2026-07-14-chapter-5-source-intake.md",
+      "verificationStatus": "draft-unverified"
+    },
+    {
+      "id": "q-ch5man-epirb-noaa-registration",
+      "topicId": "chapter-5-signaling",
+      "prompt": "What must a US-flagged vessel's EPIRB be registered with, and what database does that feed?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "NOAA (National Oceanic and Atmospheric Administration), feeding the 406 MHz Registration Database used by SAR organizations worldwide"
+        },
+        {
+          "id": "b",
+          "text": "The Coast Guard's local district office only, with no wider database",
+          "misconception": "Understates the scope of the registration -- it feeds a database available to SAR organizations worldwide, not just a local office."
+        },
+        {
+          "id": "c",
+          "text": "The vessel's insurance provider",
+          "misconception": "Invents an insurance-related registration requirement not described in the source."
+        },
+        {
+          "id": "d",
+          "text": "No registration is required for EPIRBs on US-flagged vessels",
+          "misconception": "Contradicts the explicit NOAA registration requirement for US-flagged vessels."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "medium",
+      "hints": [
+        "This registration feeds a specific frequency-named database used internationally by search-and-rescue organizations."
+      ],
+      "explanation": "EPIRBs must be registered with NOAA for US-flagged vessels. That registration information feeds the 406 MHz Registration Database, available to SAR organizations worldwide, including the vessel's name and number of passengers.",
+      "sourceReference": "Chapter 5 manual source intake, EPIRB section (manual page ~121); see src/content/imports/vinci-2026-07-14-chapter-5-source-intake.md",
+      "verificationStatus": "draft-unverified"
+    },
+    {
+      "id": "q-ch5man-cospas-sarsat-detection-time",
+      "topicId": "chapter-5-signaling",
+      "prompt": "What satellite system does an EPIRB rely on, and roughly how long does it currently take on average to detect a distress beacon?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "The COSPAS-SARSAT system, averaging around 45 minutes for distress beacon detection"
+        },
+        {
+          "id": "b",
+          "text": "The COSPAS-SARSAT system, averaging around 5 minutes for distress beacon detection",
+          "misconception": "Understates the average detection time considerably."
+        },
+        {
+          "id": "c",
+          "text": "The COSPAS-SARSAT system, averaging around 24 hours for distress beacon detection",
+          "misconception": "Greatly overstates the average detection time."
+        },
+        {
+          "id": "d",
+          "text": "GPS alone, with no dedicated search-and-rescue satellite network involved",
+          "misconception": "Understates the system -- EPIRB detection relies on a dedicated SAR satellite network (COSPAS-SARSAT) combined with cooperating satellites, not GPS alone."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "medium",
+      "hints": [
+        "This program has been running since the 1980s, combining dedicated search-and-rescue satellites with cooperating satellite networks."
+      ],
+      "explanation": "An EPIRB relies on the COSPAS-SARSAT system, in place since the 1980s, which combines dedicated search-and-rescue satellites with cooperating satellite networks for worldwide beacon detection. In its current configuration, the program averages around 45 minutes for distress beacon detection, with a much lower time over most of the world's ship-transited ocean surface.",
+      "sourceReference": "Chapter 5 manual source intake, EPIRB section (manual page ~121); see src/content/imports/vinci-2026-07-14-chapter-5-source-intake.md",
+      "verificationStatus": "draft-unverified"
+    },
+    {
+      "id": "q-ch5man-epirb-two-frequencies",
+      "topicId": "chapter-5-signaling",
+      "prompt": "An EPIRB broadcasts on two different frequencies for two different purposes. What are they?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "406 MHz at 5 watts to satellites for initial detection, and a lower-power 121.5 MHz homing signal for nearby SAR assets to zero in on the exact position"
+        },
+        {
+          "id": "b",
+          "text": "156.8 MHz for the initial satellite alert, and 406 MHz as the homing signal",
+          "misconception": "Confuses the EPIRB's own frequencies with VHF channel 16's frequency (156.8 MHz), and reverses which frequency serves which role."
+        },
+        {
+          "id": "c",
+          "text": "A single frequency is used for both satellite detection and close-range homing",
+          "misconception": "Understates the EPIRB's design, which specifically uses two separate frequencies for two separate purposes."
+        },
+        {
+          "id": "d",
+          "text": "9 GHz to satellites, and 406 MHz as the homing signal",
+          "misconception": "9 GHz is the SART's radar-detection frequency, not one of the EPIRB's own broadcast frequencies."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "hard",
+      "hints": [
+        "One frequency reaches satellites far overhead; the other is a shorter-range signal meant for rescuers who are already close by."
+      ],
+      "explanation": "An EPIRB broadcasts its main distress signal to satellites at 406 MHz / 5 watts, and separately broadcasts a lower-power 121.5 MHz homing signal specifically for nearby SAR assets to zero in on the exact position -- two frequencies for two different jobs.",
+      "sourceReference": "Chapter 5 manual source intake, EPIRB section (manual page ~121); see src/content/imports/vinci-2026-07-14-chapter-5-source-intake.md",
+      "verificationStatus": "draft-unverified"
+    },
+    {
+      "id": "q-ch5man-epirb-transmit-duration",
+      "topicId": "chapter-5-signaling",
+      "prompt": "For how long must an EPIRB be able to transmit once activated?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "At least 48 hours"
+        },
+        {
+          "id": "b",
+          "text": "At least 8 hours",
+          "misconception": "8 hours is the VHF survival craft transceiver's own separate battery specification, not the EPIRB's minimum transmit duration."
+        },
+        {
+          "id": "c",
+          "text": "At least 96 hours",
+          "misconception": "96 hours is the SART's standby-mode battery requirement, not the EPIRB's minimum transmit duration."
+        },
+        {
+          "id": "d",
+          "text": "There is no minimum transmit duration specified",
+          "misconception": "Contradicts the source, which gives an explicit minimum transmit duration."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "medium",
+      "hints": [
+        "This is the same figure as the minimum wait time before deploying a second EPIRB, if more than one is available."
+      ],
+      "explanation": "An EPIRB must be able to transmit for at least 48 hours once activated -- the same figure behind the guidance that if more than one EPIRB is available, only one should be deployed at a time, waiting 48 hours before deploying the second.",
+      "sourceReference": "Chapter 5 manual source intake, EPIRB section (manual page ~121); see src/content/imports/vinci-2026-07-14-chapter-5-source-intake.md",
+      "verificationStatus": "draft-unverified"
+    },
+    {
+      "id": "q-ch5man-epirb-deployment-procedure",
+      "topicId": "chapter-5-signaling",
+      "prompt": "Once a survival craft is clear of a sinking vessel, how should a manually-deployed EPIRB be handled?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Place it in the water secured to the survival craft by its lanyard, and don't grab the antenna or remove it from the water once it's broadcasting"
+        },
+        {
+          "id": "b",
+          "text": "Keep it inside the survival craft at all times to protect it from waves",
+          "misconception": "Keeping the EPIRB inside the craft, rather than in the water on its lanyard, works against the water-grounding effect that produces a strong signal, and can obstruct its antenna's view of the sky."
+        },
+        {
+          "id": "c",
+          "text": "Hold the antenna upright by hand to maximize signal strength",
+          "misconception": "Handling the antenna is explicitly discouraged -- it interferes with signal quality rather than improving it."
+        },
+        {
+          "id": "d",
+          "text": "Turn it off periodically to conserve battery life once activated",
+          "misconception": "Contradicts the explicit guidance that once activated, an EPIRB should never be turned off -- it must broadcast continuously to work correctly."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "hard",
+      "hints": [
+        "The water itself plays a role in producing a strong signal -- think about why the EPIRB should stay in the water rather than being brought aboard."
+      ],
+      "explanation": "Once the survival craft is clear of the sinking vessel, the EPIRB should be placed in the water and secured to the craft with its lanyard -- the water grounds the battery and produces a strong signal. Don't grab the antenna or remove it from the water, since this interferes with signal quality, and once activated, never turn the EPIRB off.",
+      "sourceReference": "Chapter 5 manual source intake, EPIRB section (manual page ~122); see src/content/imports/vinci-2026-07-14-chapter-5-source-intake.md",
+      "verificationStatus": "draft-unverified"
+    },
+    {
+      "id": "q-ch5man-sart-radar-band",
+      "topicId": "chapter-5-signaling",
+      "prompt": "What kind of radar is required to detect a SART's signal?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "X-Band, 9 GHz (3 cm) navigational radar"
+        },
+        {
+          "id": "b",
+          "text": "Any radar band will detect a SART equally well",
+          "misconception": "Understates the requirement -- a SART is specifically designed to be detected by X-Band, 9 GHz navigational radar, not any radar band."
+        },
+        {
+          "id": "c",
+          "text": "S-Band, 3 GHz weather radar",
+          "misconception": "Names the wrong radar band and frequency; the SART's design frequency is 9 GHz X-Band."
+        },
+        {
+          "id": "d",
+          "text": "A SART is detected by satellite, not by shipboard radar",
+          "misconception": "Confuses SART detection (shipboard X-Band radar) with EPIRB detection (satellite-based), two different devices with two different detection methods."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "medium",
+      "hints": [
+        "This is a specific radar band and frequency, not detection by satellite."
+      ],
+      "explanation": "A SART's signal is picked up on a ship's X-Band, 9 GHz (3 cm) navigational radar -- unlike an EPIRB, which is detected via satellite, not shipboard radar.",
+      "sourceReference": "Chapter 5 manual source intake, Search and Rescue Radar Transponder (SART) section (manual page ~123); see src/content/imports/vinci-2026-07-14-chapter-5-source-intake.md",
+      "verificationStatus": "draft-unverified"
+    },
+    {
+      "id": "q-ch5man-sart-radar-appearance",
+      "topicId": "chapter-5-signaling",
+      "prompt": "How does a SART's signal appear on a rescuing ship's radar screen?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "As a series of 12 blips or dots extending outward from the SART's position, which turn into arcs as the rescue craft closes in"
+        },
+        {
+          "id": "b",
+          "text": "As a single, continuously blinking dot with no change as range decreases",
+          "misconception": "Understates the SART's distinctive radar signature, which specifically changes shape (blips turning into arcs) as range decreases."
+        },
+        {
+          "id": "c",
+          "text": "As a solid, unbroken circle around the SART's position at all ranges",
+          "misconception": "Understates the SART's distinctive signature -- a solid unbroken circle isn't the described appearance; the actual pattern is blips turning into arcs as range decreases."
+        },
+        {
+          "id": "d",
+          "text": "As a text label displaying the vessel's name directly on the radar screen",
+          "misconception": "Radar cannot display text; the SART is identified by its distinctive blip-to-arc radar signature, not a text label."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "medium",
+      "hints": [
+        "The signal's appearance actually changes shape as the rescuing vessel gets closer -- that's part of what makes it recognizable."
+      ],
+      "explanation": "A SART's signal appears on radar as a series of 12 blips or dots extending outward from its position, which turn into arcs as the rescue craft closes the distance -- a distinctive pattern designed to be immediately recognizable to a radar operator.",
+      "sourceReference": "Chapter 5 manual source intake, SART section (manual page ~123); see src/content/imports/vinci-2026-07-14-chapter-5-source-intake.md",
+      "verificationStatus": "draft-unverified"
+    },
+    {
+      "id": "q-ch5man-sart-deployment",
+      "topicId": "chapter-5-signaling",
+      "prompt": "How should a SART be rigged and activated once deployed?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Rigged about 1 meter above the water in standby mode; it automatically activates, with an audio and/or visual indication, when struck by a nearby radar pulse"
+        },
+        {
+          "id": "b",
+          "text": "It launches and activates fully automatically, with no rigging or standby mode involved",
+          "misconception": "Contradicts the source's explicit statement that SARTs are not designed to launch and operate automatically -- they must be rigged and set to standby mode by a person."
+        },
+        {
+          "id": "c",
+          "text": "Submerged fully underwater, activating on contact with seawater",
+          "misconception": "Misdescribes both the rigging height (about 1 meter above the water, not submerged) and the activation trigger (a nearby radar pulse, not water contact)."
+        },
+        {
+          "id": "d",
+          "text": "It must remain in transponder mode at all times, with no standby mode available",
+          "misconception": "Ignores the standby mode the SART is set to before activation -- it doesn't stay in transponder mode continuously from the start."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "hard",
+      "hints": [
+        "A SART needs a person to rig and arm it -- it doesn't do this step on its own."
+      ],
+      "explanation": "A SART is rigged about 1 meter above the water and turned on to standby mode. It automatically activates -- usually with an audio and/or visual indication -- when a nearby radar pulse strikes it, and also has a manual activate/deactivate switch. SARTs are not designed to launch and operate automatically; a person must rig and arm one first.",
+      "sourceReference": "Chapter 5 manual source intake, SART section (manual page ~123); see src/content/imports/vinci-2026-07-14-chapter-5-source-intake.md",
+      "verificationStatus": "draft-unverified"
+    },
+    {
+      "id": "q-ch5man-sart-standby-battery",
+      "topicId": "chapter-5-signaling",
+      "prompt": "For how many hours must a SART's battery operate in standby mode?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "96 hours"
+        },
+        {
+          "id": "b",
+          "text": "48 hours",
+          "misconception": "48 hours is the EPIRB's minimum transmit duration, not the SART's standby-mode battery requirement."
+        },
+        {
+          "id": "c",
+          "text": "8 hours",
+          "misconception": "8 hours is the VHF survival craft transceiver's battery capacity, not the SART's standby-mode requirement."
+        },
+        {
+          "id": "d",
+          "text": "There is no minimum standby-mode battery requirement specified",
+          "misconception": "Contradicts the source, which gives an explicit standby-mode battery requirement."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "medium",
+      "hints": [
+        "This is the longest of the three signaling devices' battery-duration figures covered in this chapter."
+      ],
+      "explanation": "A SART's battery must operate for 96 hours in standby mode, the longest standby/duration figure among the VHF transceiver (8 hours), EPIRB (48-hour minimum transmit), and SART covered in this chapter.",
+      "sourceReference": "Chapter 5 manual source intake, SART section (manual page ~123); see src/content/imports/vinci-2026-07-14-chapter-5-source-intake.md. Note: the source also specifies an additional transponder-mode battery duration beyond the 96-hour standby figure, but that specific number did not survive OCR in this batch and is not used here -- see the source intake's OCR-uncertainty notes.",
+      "verificationStatus": "draft-unverified"
+    },
+    {
+      "id": "q-ch5man-sart-range-standard",
+      "topicId": "chapter-5-signaling",
+      "prompt": "What is the IMO performance standard for a SART's minimum detection range, and how far should a Coast Guard aircraft flying at 3,000 feet be able to detect one?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "At least 5 miles when positioned 1 meter above sea level; an aircraft at 3,000 feet should detect it at 30 miles"
+        },
+        {
+          "id": "b",
+          "text": "At least 30 miles at sea level in all conditions, with no altitude-dependent figure given",
+          "misconception": "Reverses the two figures -- 5 miles is the sea-level standard, and 30 miles is specifically the aircraft-at-altitude detection distance, not a universal sea-level figure."
+        },
+        {
+          "id": "c",
+          "text": "At least 1 mile when positioned 1 meter above sea level, with no aircraft-specific figure given",
+          "misconception": "Understates the required range considerably -- the actual IMO standard is 5 miles at 1 meter height, not 1 mile."
+        },
+        {
+          "id": "d",
+          "text": "Range is unaffected by the SART's height above the water",
+          "misconception": "Contradicts the source, which explicitly ties detection range to height above the water."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "hard",
+      "hints": [
+        "Detection range increases with height above the water -- an aircraft at altitude can detect a SART from much farther away than a nearby ship at sea level."
+      ],
+      "explanation": "The IMO performance standard requires a SART to have a detection range of at least 5 miles when positioned at least 1 meter above sea level -- range increases with height, so a Coast Guard aircraft flying a search pattern at 3,000 feet should detect the SART at a distance of 30 miles.",
+      "sourceReference": "Chapter 5 manual source intake, SART section (manual page ~123); see src/content/imports/vinci-2026-07-14-chapter-5-source-intake.md",
+      "verificationStatus": "draft-unverified"
+    },
+    {
+      "id": "q-ch5man-sart-durability-requirements",
+      "topicId": "chapter-5-signaling",
+      "prompt": "What durability standards must a SART meet, and how many are required on a passenger vessel or a vessel over 500 tons?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Survive a 20-meter drop into the water without damage and remain watertight to 10 meters for 5 minutes; two SARTs are required, stowed one on each side of the vessel"
+        },
+        {
+          "id": "b",
+          "text": "Survive a 20-meter drop and remain watertight to 10 meters for 5 minutes; only one SART is required regardless of vessel size",
+          "misconception": "Gets the durability figures right but misstates the quantity requirement -- passenger vessels and vessels over 500 tons require two SARTs, not one."
+        },
+        {
+          "id": "c",
+          "text": "Survive a 3-meter drop and remain watertight to 1 meter for 5 minutes; two SARTs are required",
+          "misconception": "Understates the durability figures -- the actual standards are a 20-meter drop and 10-meter/5-minute watertight rating, considerably higher than stated here."
+        },
+        {
+          "id": "d",
+          "text": "No specific drop or watertight standard is specified; only a quantity requirement exists",
+          "misconception": "Contradicts the source, which gives explicit drop-height and watertight figures alongside the quantity requirement."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "hard",
+      "hints": [
+        "Two separate durability figures (a drop height and a watertight depth/duration) plus a quantity-and-placement rule for larger vessels."
+      ],
+      "explanation": "A SART is designed to survive a 20-meter drop into the water without damage, and remain watertight to 10 meters for 5 minutes. On passenger vessels and vessels over 500 tons, two SARTs are required, one stowed on each side of the vessel (vessels between 300-500 tons require only one).",
+      "sourceReference": "Chapter 5 manual source intake, SART section (manual page ~123); see src/content/imports/vinci-2026-07-14-chapter-5-source-intake.md",
+      "verificationStatus": "draft-unverified"
+    },
+    {
+      "id": "q-ch5man-shore-signal-bestplace-land",
+      "topicId": "chapter-5-signaling",
+      "prompt": "What signal indicates \"this is the best place to land\" from a shore party or another craft?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Vertical motion of a white flag or arms (by day), or vertical motion of a white flag/flare, a green star signal, or code letter K by light/sound (day or night)"
+        },
+        {
+          "id": "b",
+          "text": "Horizontal motion of a white flag or arms, or a red star signal",
+          "misconception": "Describes the 'landing here is highly dangerous' signal, the opposite meaning, not 'best place to land.'"
+        },
+        {
+          "id": "c",
+          "text": "Any color smoke signal, day or night",
+          "misconception": "Not part of the described 'best place to land' signal set -- smoke signal color isn't used to convey this particular message in the source."
+        },
+        {
+          "id": "d",
+          "text": "Three white star rockets fired one minute apart",
+          "misconception": "Describes the 'you are seen, help will be given as soon as possible' reply signal, a different message from 'best place to land.'"
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "hard",
+      "hints": [
+        "Vertical motion, a green star, or the letter K -- contrast this with the horizontal-motion, red-star signal for the opposite message."
+      ],
+      "explanation": "\"This is the best place to land\" is signaled by vertical motion of a white flag or arms (by day), or by vertical motion of a white flag/flare, firing a green star signal, or signaling code letter K (dash-dot-dash) by light or sound (day or night).",
+      "sourceReference": "Chapter 5 manual source intake, Signals to Communicate From Shore section (manual page ~125); see src/content/imports/vinci-2026-07-14-chapter-5-source-intake.md",
+      "verificationStatus": "draft-unverified"
+    },
+    {
+      "id": "q-ch5man-shore-signal-dangerous-landing",
+      "topicId": "chapter-5-signaling",
+      "prompt": "What signal indicates \"landing here is highly dangerous\"?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Horizontal motion of arms or a white flag/flare (by day), or horizontal motion of a white flag/light/flare, a red star signal, or code letter S by light/sound (day or night)"
+        },
+        {
+          "id": "b",
+          "text": "Vertical motion of arms or a white flag, or a green star signal",
+          "misconception": "Describes the 'best place to land' signal, the opposite meaning, not 'landing here is highly dangerous.'"
+        },
+        {
+          "id": "c",
+          "text": "A steady white light placed at a lower level",
+          "misconception": "Describes a reference technique used to help a landing party approach in a direct line, not the specific 'landing here is highly dangerous' signal itself."
+        },
+        {
+          "id": "d",
+          "text": "Firing a rocket parachute flare with a red light",
+          "misconception": "Describes a general distress signal for attracting attention from a distance, not the specific shore-to-craft 'landing is dangerous' signal."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "hard",
+      "hints": [
+        "Horizontal motion, a red star, or the letter S -- the opposite motion and color from the 'best place to land' signal."
+      ],
+      "explanation": "\"Landing here is highly dangerous\" is signaled by holding arms horizontally or horizontal motion of a white flag/flare (by day), or by horizontal motion of a white flag/light/flare, firing a red star signal, or signaling code letter S (dot-dot-dot) by sound or light (day or night).",
+      "sourceReference": "Chapter 5 manual source intake, Signals to Communicate From Shore section (manual page ~126); see src/content/imports/vinci-2026-07-14-chapter-5-source-intake.md",
+      "verificationStatus": "draft-unverified"
+    },
+    {
+      "id": "q-ch5man-shore-signal-better-direction",
+      "topicId": "chapter-5-signaling",
+      "prompt": "If a shore party signals code letter S followed by code letter R, what are they communicating?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Landing here is dangerous, but a better landing place is located more to the right, as seen by the survival craft's occupants facing the shore"
+        },
+        {
+          "id": "b",
+          "text": "Landing here is dangerous, but a better landing place is located more to the left",
+          "misconception": "Reverses the direction -- code letter R specifically indicates the better landing place is to the right, not the left (that's code letter L)."
+        },
+        {
+          "id": "c",
+          "text": "This is the best place to land, with no direction change needed",
+          "misconception": "Misreads the code letters -- S followed by R or L specifically signals a direction for a better landing place, not that the current location is the best place to land."
+        },
+        {
+          "id": "d",
+          "text": "\"Right\" and \"left\" here refer to the shore party's own orientation, not the survival craft's",
+          "misconception": "Reverses whose perspective 'right' and 'left' are defined from -- the manual specifies these directions are as seen by the survival craft's occupants facing the shore, not the shore party's own orientation."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "very-hard",
+      "hints": [
+        "R and L are used the way you'd expect (Right, Left) -- but whose 'right' and 'left' are they describing?"
+      ],
+      "explanation": "Code letter S followed by R means landing here is dangerous, but a better landing place is located more to the right; S followed by L means more to the left. \"Right\" and \"left\" are specifically defined as seen by the survival craft's occupants facing the shore -- not the shore party's own perspective.",
+      "sourceReference": "Chapter 5 manual source intake, Signals to Communicate From Shore section (manual page ~126); see src/content/imports/vinci-2026-07-14-chapter-5-source-intake.md",
+      "verificationStatus": "draft-unverified"
+    },
+    {
+      "id": "q-ch5man-shore-apparatus-signals",
+      "topicId": "chapter-5-signaling",
+      "prompt": "In shore lifesaving apparatus operations (rocket line / breeches buoy rescue), what do vertical and horizontal signal motions mean?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Vertical motion (or a green star) means \"affirmative\" (e.g., haul away); horizontal motion (or a red star) means \"negative\" (e.g., slack away, avast hauling)"
+        },
+        {
+          "id": "b",
+          "text": "Vertical motion means \"negative\"; horizontal motion means \"affirmative\"",
+          "misconception": "Reverses the meaning of the two motions."
+        },
+        {
+          "id": "c",
+          "text": "Both vertical and horizontal motion mean the same thing: stop all operations",
+          "misconception": "Contradicts the source's clear affirmative/negative distinction between the two motions -- they don't share an identical stop-everything meaning."
+        },
+        {
+          "id": "d",
+          "text": "These motions are only used for the landing-place signals, not for shore apparatus operations",
+          "misconception": "Ignores that vertical/horizontal motion is reused with the same general affirmative/negative logic specifically for shore lifesaving apparatus signals, a related but distinct signal set."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "hard",
+      "hints": [
+        "This uses the same vertical-versus-horizontal, green-versus-red logic as the landing-place signals, just applied to a rescue-line operation instead."
+      ],
+      "explanation": "In shore lifesaving apparatus operations, vertical motion of a white flag/light (or a green star signal) means \"affirmative\" -- specifically that the rocket line is held, the tail block is made fast, the hawser is made fast, a person is in the breeches buoy, or \"haul away.\" Horizontal motion (or a red star signal) means \"negative\" -- specifically \"slack away\" or \"avast hauling.\"",
+      "sourceReference": "Chapter 5 manual source intake, Table of Lifesaving Signals section (manual page ~129); see src/content/imports/vinci-2026-07-14-chapter-5-source-intake.md",
+      "verificationStatus": "draft-unverified"
+    },
+    {
+      "id": "q-ch5man-aircraft-directs-vs-dismisses",
+      "topicId": "chapter-5-signaling",
+      "prompt": "How does an aircraft signal that it is directing a surface craft toward a vessel in distress, versus dismissing it from further assistance?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Directing: circling the surface craft and crossing its projected course close ahead at low altitude (with throttle or propeller-pitch changes), then heading in the direction to go. Dismissing: crossing the surface craft's wake close astern at low altitude, with similar throttle/propeller-pitch changes"
+        },
+        {
+          "id": "b",
+          "text": "Directing: crossing the wake close astern. Dismissing: crossing the course close ahead",
+          "misconception": "Reverses the two maneuvers' meanings."
+        },
+        {
+          "id": "c",
+          "text": "Both signals use the identical maneuver, distinguished only by the aircraft's altitude",
+          "misconception": "Contradicts the source, which describes two distinct maneuvers (crossing ahead vs. crossing astern), not one identical maneuver distinguished only by altitude."
+        },
+        {
+          "id": "d",
+          "text": "An aircraft has no standardized way to dismiss a surface craft from assistance -- only to direct it",
+          "misconception": "Ignores the specific, standardized dismissal signal (crossing the wake close astern at low altitude)."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "hard",
+      "hints": [
+        "One maneuver crosses in FRONT of the surface craft's path (ahead); the other crosses BEHIND it (astern) -- think about which direction implies 'follow me' versus 'you're no longer needed.'"
+      ],
+      "explanation": "An aircraft directing a surface craft toward a vessel in distress circles the surface craft, crosses its projected course close ahead at low altitude while opening/closing the throttle or changing propeller pitch, then heads in the direction the surface craft should go. To dismiss the surface craft from further assistance, the aircraft instead crosses its wake close astern at low altitude, with the same throttle/propeller-pitch changes.",
+      "sourceReference": "Chapter 5 manual source intake, Aircraft-to-surface-craft signals section (manual page ~127); see src/content/imports/vinci-2026-07-14-chapter-5-source-intake.md",
+      "verificationStatus": "draft-unverified"
+    },
+    {
+      "id": "q-ch5man-distress-fogsignal-continuous",
+      "topicId": "chapter-5-signaling",
+      "prompt": "Besides firing a gun once per minute, what other sound-based signal is on the international list of recognized distress signals?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Constant sounding of any fog signal apparatus"
+        },
+        {
+          "id": "b",
+          "text": "A single short blast of a ship's whistle",
+          "misconception": "A single short blast is not one of the 16 items on the international distress-signal list described in the source."
+        },
+        {
+          "id": "c",
+          "text": "Three short blasts followed by three long blasts",
+          "misconception": "This specific blast pattern is not one of the 16 items on the international distress-signal list described in the source."
+        },
+        {
+          "id": "d",
+          "text": "Sounding the fog signal apparatus only once, briefly",
+          "misconception": "Understates the signal -- the recognized distress signal is constant, continuous sounding, not a single brief sound."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "medium",
+      "hints": [
+        "This is a continuous, ongoing sound, distinct from the once-a-minute gun signal."
+      ],
+      "explanation": "Constant sounding of any fog signal apparatus is a separate recognized distress signal from firing a gun or other explosive once per minute -- both are sound-based, but one is continuous and the other is a repeated single blast.",
+      "sourceReference": "Chapter 5 manual source intake, International Distress Signals section (manual page ~130); see src/content/imports/vinci-2026-07-14-chapter-5-source-intake.md",
+      "verificationStatus": "draft-unverified"
+    },
+    {
+      "id": "q-ch5man-distress-flames-barrel",
+      "topicId": "chapter-5-signaling",
+      "prompt": "What visual distress signal involves burning something like a tar barrel or oil barrel aboard the vessel?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Creating flames on the vessel"
+        },
+        {
+          "id": "b",
+          "text": "Igniting an orange smoke signal",
+          "misconception": "Orange smoke is a separate, specific pyrotechnic distress signal, not the same as creating open flames on the vessel itself."
+        },
+        {
+          "id": "c",
+          "text": "Firing a rocket parachute flare",
+          "misconception": "Firing a rocket parachute flare is a separate, distinct item on the distress-signal list, not the same as creating open flames aboard the vessel."
+        },
+        {
+          "id": "d",
+          "text": "Setting a dye marker",
+          "misconception": "Setting a dye marker is a separate, distinct item on the distress-signal list, not the same as creating open flames aboard the vessel."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "easy",
+      "hints": [
+        "This is a recognized distress signal that predates modern pyrotechnics -- literally setting something on fire aboard the vessel."
+      ],
+      "explanation": "Creating flames on the vessel -- for example, burning a tar barrel or oil barrel -- is one of the 16 recognized international distress signals, distinct from more modern pyrotechnic signals like orange smoke or parachute flares.",
+      "sourceReference": "Chapter 5 manual source intake, International Distress Signals section (manual page ~130); see src/content/imports/vinci-2026-07-14-chapter-5-source-intake.md",
+      "verificationStatus": "draft-unverified"
+    },
+    {
+      "id": "q-ch5man-distress-aerial-orange-canvas",
+      "topicId": "chapter-5-signaling",
+      "prompt": "What distress signal is specifically meant to be identified from the air?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Flying a piece of orange-colored canvas with a black square and circle (or other identifying symbol)"
+        },
+        {
+          "id": "b",
+          "text": "The N.C. international code flag hoist",
+          "misconception": "The N.C. flag hoist is meant to be read by other vessels at or near sea level, not specifically designed as an aerial-identification signal."
+        },
+        {
+          "id": "c",
+          "text": "A steady white light placed at a lower level",
+          "misconception": "This is the reference-light technique used to help a landing party approach in a direct line, not the signal described as being for identification from the air."
+        },
+        {
+          "id": "d",
+          "text": "Standing on deck with arms outstretched, slowly raising and lowering them",
+          "misconception": "This is a close-range, person-to-person visual signal, not the specific signal described as being for identification from the air."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "medium",
+      "hints": [
+        "Think about what would be easiest to spot and recognize from above, looking down at a vessel."
+      ],
+      "explanation": "Flying a piece of orange-colored canvas marked with a black square and circle (or other appropriate identifying symbol) is a distress signal specifically meant for identification from the air.",
+      "sourceReference": "Chapter 5 manual source intake, International Distress Signals section (manual page ~130); see src/content/imports/vinci-2026-07-14-chapter-5-source-intake.md",
+      "verificationStatus": "draft-unverified"
+    },
+    {
+      "id": "q-ch5man-distress-dye-marker",
+      "topicId": "chapter-5-signaling",
+      "prompt": "What color dye marker is recognized as a valid distress signal?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Any color"
+        },
+        {
+          "id": "b",
+          "text": "Only orange",
+          "misconception": "Confuses the dye marker signal (any color) with the specifically-orange smoke signal, a different item on the recognized distress-signal list."
+        },
+        {
+          "id": "c",
+          "text": "Only fluorescent green",
+          "misconception": "Invents a color restriction not described in the source, which specifies any color is acceptable for a dye marker."
+        },
+        {
+          "id": "d",
+          "text": "Dye markers are not a recognized distress signal",
+          "misconception": "Contradicts the source, which explicitly lists setting a dye marker of any color as a recognized distress signal."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "easy",
+      "hints": [
+        "Unlike the smoke signal (which has a specific required color), this one has no color restriction at all."
+      ],
+      "explanation": "Setting a dye marker of any color is one of the 16 recognized international distress signals -- unlike the smoke signal, which specifically must be orange, the dye marker has no color restriction.",
+      "sourceReference": "Chapter 5 manual source intake, International Distress Signals section (manual page ~130); see src/content/imports/vinci-2026-07-14-chapter-5-source-intake.md",
+      "verificationStatus": "draft-unverified"
+    },
+    {
+      "id": "q-ch5man-nc-flag-appearance",
+      "topicId": "chapter-5-signaling",
+      "prompt": "The N.C. distress signal is a hoist of two international code flags. What does each flag look like?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "November is a white-and-blue checkered flag; Charlie is horizontal stripes of blue, white, red, white, blue"
+        },
+        {
+          "id": "b",
+          "text": "November is solid orange; Charlie is solid black",
+          "misconception": "Invents flag designs not described in the source, which specifies a checkered pattern for November and horizontal stripes for Charlie."
+        },
+        {
+          "id": "c",
+          "text": "Both flags are identical, plain white flags",
+          "misconception": "Contradicts the source's specific description of a checkered pattern for November and horizontal stripes for Charlie -- neither flag is described as plain white."
+        },
+        {
+          "id": "d",
+          "text": "The specific flag designs are not standardized and vary by vessel",
+          "misconception": "Contradicts the source's specific, standardized description of each flag's design."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "hard",
+      "hints": [
+        "One flag has a checkered pattern in two colors; the other has five horizontal stripes."
+      ],
+      "explanation": "The N.C. distress hoist combines two international code flags: November, a white-and-blue checkered flag, and Charlie, which has horizontal stripes of blue, white, red, white, and blue.",
+      "sourceReference": "Chapter 5 manual source intake, International Distress Signals section (manual page ~130); see src/content/imports/vinci-2026-07-14-chapter-5-source-intake.md",
+      "verificationStatus": "draft-unverified"
+    },
+    {
+      "id": "q-ch5man-distress-radiotelephone-alarm",
+      "topicId": "chapter-5-signaling",
+      "prompt": "The international distress-signal list includes several radio/electronic-based items beyond speaking the word \"Mayday.\" Which of the following is one of them?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Sending the radiotelephone alarm signal"
+        },
+        {
+          "id": "b",
+          "text": "Broadcasting on VHF channel 6 exclusively",
+          "misconception": "Channel 6 is used for ongoing SAR communications, not listed as its own distinct international distress signal the way the radiotelephone alarm signal is."
+        },
+        {
+          "id": "c",
+          "text": "Repeating the ship's name three times",
+          "misconception": "Invents a signal not described in the source, which lists a specific, named radiotelephone alarm signal instead."
+        },
+        {
+          "id": "d",
+          "text": "There is no other radio-based signal on the list besides speaking \"Mayday\"",
+          "misconception": "Understates the list -- the radiotelephone alarm signal is a separate, additional radio-based item on the same list."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "medium",
+      "hints": [
+        "This is a distinct signal from the spoken word \"Mayday\" itself -- a specific alarm signal sent over radiotelephone."
+      ],
+      "explanation": "Sending the radiotelephone alarm signal is a separate item on the international distress-signal list, distinct from speaking the word \"Mayday.\" The list also separately includes transmitting SOS via an EPIRB and a ship-to-shore distress alert via Inmarsat or another mobile satellite device -- three different electronic/radio-based signals beyond the spoken Mayday call.",
+      "sourceReference": "Chapter 5 manual source intake, International Distress Signals section (manual page ~130); see src/content/imports/vinci-2026-07-14-chapter-5-source-intake.md",
+      "verificationStatus": "draft-unverified"
+    },
+    {
+      "id": "q-ch5man-pyrotechnic-firing-technique",
+      "topicId": "chapter-5-signaling",
+      "prompt": "How should pyrotechnic signals be fired from a survival craft?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Downwind, on the leeward side of the craft, at an angle of about 60 degrees above the horizon, held at a slight angle over the water"
+        },
+        {
+          "id": "b",
+          "text": "Upwind, on the windward side of the craft, straight up",
+          "misconception": "Reverses both the direction (leeward, not windward) and the angle guidance given in the source for firing pyrotechnics safely."
+        },
+        {
+          "id": "c",
+          "text": "Directly overhead at a 90-degree angle, from any side of the craft",
+          "misconception": "Both the direction (any side, rather than specifically leeward) and the angle (90 degrees straight up, rather than about 60 degrees) are wrong."
+        },
+        {
+          "id": "d",
+          "text": "Direction and angle don't matter as long as the signal is visible",
+          "misconception": "Ignores the specific safety reasoning behind firing downwind and at an angle over the water -- burning particles fall and can injure survivors or damage the raft."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "medium",
+      "hints": [
+        "Burning particles fall from these signals -- think about which side and angle keeps them away from the survivors and the craft."
+      ],
+      "explanation": "Pyrotechnic signals should be fired downwind on the leeward side of the survival craft, at an angle of about 60 degrees above the horizon, held at a slight angle over the water -- since burning particles fall and could burn survivors or damage the liferaft otherwise.",
+      "sourceReference": "Chapter 5 manual source intake, Signaling Devices section (manual page ~131); see src/content/imports/vinci-2026-07-14-chapter-5-source-intake.md",
+      "verificationStatus": "draft-unverified"
+    },
+    {
+      "id": "q-ch5man-signaling-mirror-technique",
+      "topicId": "chapter-5-signaling",
+      "prompt": "How should a signaling mirror be used most effectively while the sun is out?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Flash it all around the entire horizon continuously, rather than waiting until a rescue craft is actually visible"
+        },
+        {
+          "id": "b",
+          "text": "Only aim it directly at a rescue craft once one is spotted, and never before",
+          "misconception": "Wastes the mirror's advantage -- an aircraft can spot the flash from farther away than you would see the aircraft, so flashing around the whole horizon continuously is more effective than waiting."
+        },
+        {
+          "id": "c",
+          "text": "Only use it at night, since sunlight would wash out the flash",
+          "misconception": "Reverses the actual requirement -- a signaling mirror specifically requires sunlight to work, making it a daytime-only device."
+        },
+        {
+          "id": "d",
+          "text": "Save it for a single, one-time use, since it can only be used once",
+          "misconception": "Understates the mirror's reusability -- it can be used repeatedly, unlike a pyrotechnic flare."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "medium",
+      "hints": [
+        "The aircraft that spots your flash may be farther away than you can currently see -- what does that suggest about when to start signaling?"
+      ],
+      "explanation": "A signaling mirror should be flashed all around the horizon continuously whenever the sun is shining, rather than waiting to spot a rescue craft first -- an aircraft can often spot the flash long before you'd be able to see the aircraft itself.",
+      "sourceReference": "Chapter 5 manual source intake, Signaling Devices section (manual page ~131); see src/content/imports/vinci-2026-07-14-chapter-5-source-intake.md",
+      "verificationStatus": "draft-unverified"
+    },
+    {
+      "id": "q-ch5man-red-rocket-parachute-flare-specs",
+      "topicId": "chapter-5-signaling",
+      "prompt": "When should a red rocket parachute flare be used, and what are its key performance figures?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "When a vessel is spotted far away on the horizon; it reaches roughly 1,000 feet and burns bright red for no less than 40 seconds"
+        },
+        {
+          "id": "b",
+          "text": "When an aircraft is spotted overhead; it burns for at least 1 minute and marks your exact position",
+          "misconception": "Describes the hand flare's use case and figures, not the red rocket parachute flare's."
+        },
+        {
+          "id": "c",
+          "text": "Only at night, reaching about 100 feet and burning for 10 seconds",
+          "misconception": "Understates the altitude by an order of magnitude and the burn time considerably; also wrongly restricts use to nighttime only."
+        },
+        {
+          "id": "d",
+          "text": "Its use case and performance figures are identical to a buoyant smoke signal's",
+          "misconception": "Conflates two very different signaling devices with different use cases (a distant vessel vs. daylight-only visibility) and different performance figures."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "hard",
+      "hints": [
+        "This flare gets high in the air and drifts as it descends -- good for a vessel that's still far away, rather than for marking your exact position."
+      ],
+      "explanation": "A red rocket parachute flare should be used when a vessel is spotted far away on the horizon, since it gets the signal up high (about 1,000 feet) where it can be seen from a greater distance. It burns bright red for no less than 40 seconds, with a parachute designed not to be damaged while it burns.",
+      "sourceReference": "Chapter 5 manual source intake, Signaling Devices section (manual page ~131); see src/content/imports/vinci-2026-07-14-chapter-5-source-intake.md",
+      "verificationStatus": "draft-unverified"
+    },
+    {
+      "id": "q-ch5man-handflare-vs-parachuteflare",
+      "topicId": "chapter-5-signaling",
+      "prompt": "Which best distinguishes a hand flare from a red rocket parachute flare?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "A hand flare is better for a spotted aircraft and marks your exact position; a parachute flare is better for a distant vessel and drifts as it descends"
+        },
+        {
+          "id": "b",
+          "text": "They are functionally identical, differing only in how they're held",
+          "misconception": "Contradicts the source's explicit distinctions between the two flares' best use cases and behavior after descent/immersion."
+        },
+        {
+          "id": "c",
+          "text": "A hand flare reaches higher altitude than a parachute flare",
+          "misconception": "Reverses which flare reaches high altitude -- the parachute flare is specifically designed to reach roughly 1,000 feet, while the hand flare stays at the survivor's position."
+        },
+        {
+          "id": "d",
+          "text": "Only the parachute flare continues burning after being immersed in water",
+          "misconception": "Reverses this fact -- it's the hand flare that's specifically noted as continuing to burn for 10 seconds after immersion in water."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "very-hard",
+      "hints": [
+        "One flare stays right where you are; the other goes up high and drifts away from your position as it burns."
+      ],
+      "explanation": "A hand flare is better suited to a spotted aircraft (more likely to be noticed than a parachute flare) and marks your exact position, since it stays where you are. A red rocket parachute flare is better for a vessel still far away on the horizon, since it reaches high altitude for visibility -- but it drifts further from your actual position as it descends, unlike the hand flare.",
+      "sourceReference": "Chapter 5 manual source intake, Signaling Devices section (manual page ~131); see src/content/imports/vinci-2026-07-14-chapter-5-source-intake.md",
+      "verificationStatus": "draft-unverified"
+    },
+    {
+      "id": "q-ch5man-buoyant-smoke-specs",
+      "topicId": "chapter-5-signaling",
+      "prompt": "When can a buoyant smoke signal be used, and how long must it emit smoke?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Daylight only; it must emit highly visible smoke for at least 3 minutes in calm water, continuing 10 seconds after being immersed in water"
+        },
+        {
+          "id": "b",
+          "text": "Day or night equally well; it must emit smoke for at least 3 minutes",
+          "misconception": "Ignores the explicit daylight-only limitation -- smoke cannot be seen once it gets dark."
+        },
+        {
+          "id": "c",
+          "text": "Daylight only; it must emit smoke for at least 40 seconds",
+          "misconception": "Confuses the smoke signal's duration with the red rocket parachute flare's separate 40-second minimum burn time."
+        },
+        {
+          "id": "d",
+          "text": "Night only, since smoke is most visible against a dark sky",
+          "misconception": "Reverses the actual restriction -- a buoyant smoke signal is explicitly a daylight-only device, since smoke cannot be seen once it gets dark."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "medium",
+      "hints": [
+        "Smoke has an obvious visibility limitation once the light is gone."
+      ],
+      "explanation": "A buoyant smoke signal should only be used in daylight, since smoke cannot be seen once it gets dark. It emits highly visible smoke for at least 3 minutes while floating in calm water, and continues emitting smoke for 10 seconds after being immersed in water.",
+      "sourceReference": "Chapter 5 manual source intake, Signaling Devices section (manual page ~131); see src/content/imports/vinci-2026-07-14-chapter-5-source-intake.md",
+      "verificationStatus": "draft-unverified"
+    },
+    {
+      "id": "q-ch5man-whistle-range",
+      "topicId": "chapter-5-signaling",
+      "prompt": "How far can a whistle be heard in favorable weather conditions, compared to the human voice in calm weather?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "A whistle can be heard up to 4 miles away, versus only a few hundred yards for the voice"
+        },
+        {
+          "id": "b",
+          "text": "A whistle and the voice carry about the same distance",
+          "misconception": "Understates the whistle's advantage -- it carries dramatically farther than the human voice, which is limited to a few hundred yards even in calm weather."
+        },
+        {
+          "id": "c",
+          "text": "A whistle can be heard up to 4 miles away, but only works in clear daylight",
+          "misconception": "Understates the whistle's versatility -- it works in fog, at night, or during the day, not only in clear daylight."
+        },
+        {
+          "id": "d",
+          "text": "The voice actually carries farther than a whistle in most conditions",
+          "misconception": "Reverses the actual comparison -- a whistle carries much farther than the voice."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "medium",
+      "hints": [
+        "Screaming will also make you hoarse and eventually lose your voice -- a whistle doesn't have that downside."
+      ],
+      "explanation": "A whistle can be heard up to 4 miles away in favorable weather conditions, versus only a few hundred yards for the human voice in calm weather. Unlike shouting, a whistle can be used over and over again without losing your voice, and works in fog, at night, or during the day.",
+      "sourceReference": "Chapter 5 manual source intake, Signaling Devices section (manual page ~132); see src/content/imports/vinci-2026-07-14-chapter-5-source-intake.md",
+      "verificationStatus": "draft-unverified"
+    },
+    {
+      "id": "q-ch5man-radar-reflector-purpose",
+      "topicId": "chapter-5-signaling",
+      "prompt": "Why is rigging a radar reflector important for a rubber liferaft, and how should it be mounted?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Rubber liferafts don't reflect radar waves efficiently on their own, so a reflector helps a ship's radar detect the raft; it should be mounted as high as possible"
+        },
+        {
+          "id": "b",
+          "text": "Rubber liferafts reflect radar very well already, and a reflector is mainly a backup for cloudy weather",
+          "misconception": "Reverses the actual problem -- rubber liferafts specifically do NOT reflect radar waves efficiently, which is exactly why a reflector is needed."
+        },
+        {
+          "id": "c",
+          "text": "It should be mounted as low as possible, close to the waterline, to avoid wind resistance",
+          "misconception": "Reverses the mounting guidance -- height improves detection, so the reflector should be mounted as high as possible, not low."
+        },
+        {
+          "id": "d",
+          "text": "A radar reflector replaces the need for any other signaling device once rigged",
+          "misconception": "Overstates the radar reflector's role -- the source describes it as a way to help ships detect the raft, not as a replacement for other signaling devices like flares or a mirror."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "medium",
+      "hints": [
+        "Think about what a rubber raft's material does (or doesn't do) to radar waves, and how mounting height relates to detection at long range, the same way it does for a SART."
+      ],
+      "explanation": "Rubber liferafts do not reflect radar waves efficiently on their own, so rigging a radar reflector helps other ships notice the raft on radar -- even if a flare is missed or misread, radar detection can prevent a collision or help a ship find you. The reflector should be mounted as high as possible (e.g., atop the raft or lashed to an oar), since height improves detection range.",
+      "sourceReference": "Chapter 5 manual source intake, Signaling Devices section (manual page ~132); see src/content/imports/vinci-2026-07-14-chapter-5-source-intake.md",
+      "verificationStatus": "draft-unverified"
+    }
+  ],
+  "promotionHistory": []
+}
