@@ -171,7 +171,7 @@ each gap occurs, so a human reviewer can go straight to the right page.
 2. Resolve the `q-ch5man-distress-dye-marker` similarity flag by
    confirming the two questions (dye marker vs. orange smoke) read as
    clearly distinct to a student, then it can move to Ready for Review.
-3. Once the above are resolved, this pack's 32 (soon potentially 34)
+3. Once the above are resolved, this pack's 33 (soon potentially 35)
    Ready for Review questions would be reasonable candidates for a
    future, separately-requested promotion task, following the same
    tiered-promotion pattern already used for Chapter 4.
