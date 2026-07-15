@@ -646,11 +646,116 @@
       "learn": {
         "concept": "This chapter corresponds to a chapter in the Water Survival Student Manual (SHLSOS Course No. 549, revised June 2024). We currently have only the manual's table of contents, not its full chapter text, so the list below reproduces the manual's own subtopic headings for this chapter rather than a verified content summary. Practice questions in this chapter are still draft/placeholder content pending verification against the actual chapter text.",
         "keyPoints": [
-          "VHF Survival Craft Transceiver / SCT",
-          "Emergency Position Indicating Radio Beacon / EPIRB",
+          {
+            "title": "VHF Survival Craft Transceiver (SCT)",
+            "explanation": "A VHF survival craft transceiver is a portable, direct-voice radio -- unlike an EPIRB or SART, it lets you actually talk to a nearby rescuer, not just be detected by one. That makes it powerful once help is close, and nearly useless if nobody is close enough to hear it. Knowing which channel to use, and when to conserve the battery, is what turns this radio from a piece of stowed equipment into a working lifeline.",
+            "keyFacts": [
+              "Quantity required: 3 radios aboard passenger ships and cargo vessels 500 gross tons and over; only 2 on smaller cargo vessels (300-500 tons). A radio permanently installed in a survival craft can count toward this requirement.",
+              "Channel 16 (156.8 MHz) is used first for the emergency itself. Channel 6 is used for ongoing search-and-rescue communications with the Coast Guard and aircraft -- two channels, two different jobs.",
+              "Specs: watertight to 1 meter for 5 minutes; battery capacity of 8 hours of operation. Tested monthly, stored where it can be quickly brought to the survival craft.",
+              "Turn the radio on only when you know a vessel or rescue aircraft is nearby -- not continuously. Battery life is limited, and the radio is designed for unskilled operators within sight of a rescuer, not for long-range scanning.",
+              "\"Mayday, mayday, mayday\" plus emergency details, broadcast on channel 16, is an internationally understood distress call.",
+              "If the radio uses rechargeable Ni-Cad batteries, let the battery run down before recharging it."
+            ],
+            "confusionTraps": [
+              "Don't leave the radio on \"just in case\" -- it wastes limited battery exactly when you might need it most, later, with a rescuer actually in range.",
+              "Channel 16 and channel 6 are easy to swap in your head under pressure: 16 is the call for help, 6 is the conversation that follows once someone's responding.",
+              "Don't mix up this radio's own specs (1 meter/5 minutes watertight, 8-hour battery) with the EPIRB's (48-hour minimum transmit) or the SART's (10 meters/5 minutes watertight, 96-hour standby battery) -- three different devices, three different numbers."
+            ],
+            "examWatchFor": [
+              "Quick anchor: \"16 to alert, 6 to talk.\"",
+              "If a question gives a vessel-size threshold (500 gross tons) and asks how many radios, remember the smaller class (300-500 tons) needs one fewer.",
+              "Self-check: could you explain, without looking, why leaving the radio on continuously is actually a bad idea rather than just being extra-safe?"
+            ],
+            "sourceReferences": [
+              {
+                "file": "vinci-2026-07-14-chapter-5-source-intake.md",
+                "note": "Water Survival Student Manual, Chapter 5, page ~120 -- VHF Survival Craft Transceiver / SCT section"
+              }
+            ],
+            "confidence": "high"
+          },
+          {
+            "title": "Electronic Distress Beacons \u2014 EPIRB vs. SART",
+            "explanation": "EPIRB and SART are the two devices students mix up most in this chapter, and for good reason -- both are boxes you activate to get found, both have blinking lights, and both matter enormously in a real rescue. But they solve two completely different problems. An EPIRB's job is to tell the *entire world*, via satellite, that you exist and roughly where you are -- it works even if no ship is anywhere nearby. A SART's job is to guide a *specific, already-nearby* vessel's own radar to your *exact* position once a search is already underway. One casts a wide net; the other closes the final distance.",
+            "keyFacts": [
+              "EPIRB (satellite-based, long range): a SOLAS-required ship carries at least 1 Class I (float-free) EPIRB, normally stowed on the flying bridge or bridge wing so automatic float-free release isn't obstructed. Registered with NOAA (US-flagged vessels), feeding the 406 MHz Registration Database used by SAR organizations worldwide.",
+              "EPIRB relies on the COSPAS-SARSAT satellite network (since the 1980s; current average detection time around 45 minutes). It broadcasts at 406 MHz / 5 watts to satellites, plus a separate, lower-power 121.5 MHz homing signal for nearby SAR assets to zero in once they're close. Must transmit for at least 48 hours once activated; tested monthly.",
+              "EPIRB deployment: place it in the water secured to the craft by its lanyard (the water grounds the battery and strengthens the signal) -- don't grab the antenna or remove it from the water, and once activated, never turn it off. If more than one is available, deploy only one and wait 48 hours before deploying the second.",
+              "SART (shipboard-radar-based, short range): detected by a ship's X-Band, 9 GHz navigational radar -- not satellites. On radar, it appears as a distinctive series of 12 blips extending outward, which turn into arcs as the rescuing vessel closes in.",
+              "SART is rigged about 1 meter above the water in standby mode, and automatically activates (with an audio and/or visual indication) when struck by a nearby radar pulse. Battery must operate for 96 hours in standby mode. Built to survive a 20-meter drop and stay watertight to 10 meters for 5 minutes.",
+              "SART range: the IMO standard requires at least 5 miles detection at 1 meter height above the water; a Coast Guard aircraft searching at 3,000 feet should detect one at 30 miles. One SART is required on vessels 300-500 tons; two (one per side) on passenger vessels and vessels over 500 tons."
+            ],
+            "confusionTraps": [
+              "The core distinction: EPIRB alerts the world that you exist (satellite, long range, works with nobody nearby); SART helps a rescuer who is already close get the rest of the way to you (shipboard radar, short range, useless until a search is already underway). If a question is about *getting found in the first place*, think EPIRB. If it's about *a nearby ship finding your exact spot*, think SART.",
+              "406 MHz and satellites = EPIRB. 9 GHz and a ship's own radar = SART. If a question mentions a specific frequency or detection method, that alone tells you which device it's asking about.",
+              "Don't swap the two devices' duration figures: EPIRB's 48 hours is a minimum *transmit* time (it's actively broadcasting). SART's 96 hours is a *standby* time (armed and waiting, before it's triggered by a radar pulse) -- different modes, different meanings, similar-sounding numbers.",
+              "The already-live `q-sig-4` question tests the EPIRB-vs-SART distinction directly, at a more basic level than the technical specs above -- if you can answer both, you understand this pair at both levels the exam might test it."
+            ],
+            "examWatchFor": [
+              "Memory anchor: EPIRB = satellite, worldwide, passive alert. SART = ship's radar, nearby, active homing.",
+              "If a question describes something happening \"before a search begins\" or \"days from shore,\" that's EPIRB territory. If it describes a rescuing vessel that's already searching and needs to close the last few miles, that's SART territory.",
+              "Self-check: could you explain in one sentence why an EPIRB stays broadcasting continuously once activated, while a SART sits in standby until triggered?"
+            ],
+            "sourceReferences": [
+              {
+                "file": "vinci-2026-07-14-chapter-5-source-intake.md",
+                "note": "Water Survival Student Manual, Chapter 5, pages ~121-123 -- EPIRB and SART sections"
+              }
+            ],
+            "confidence": "high"
+          },
           "Search and Rescue Radar Transponder / SART",
-          "International Morse Code",
-          "Signals to Communicate from Shore",
+          {
+            "title": "International Morse Code",
+            "explanation": "Morse code is a coding system, not a device -- the same dots and dashes can be sent by radio, light, sound, or even ground markings. In this chapter, the one pattern worth knowing cold is SOS, the most universally recognized distress symbol in Morse.",
+            "keyFacts": [
+              "SOS in Morse is three dots, three dashes, three dots (. . . -- -- -- . . .) -- the most common distress symbol.",
+              "Morse can be transmitted by portable radio, by light, by sound-signal apparatus, or even by markings on the ground -- the code itself doesn't change, only the medium carrying it does."
+            ],
+            "confusionTraps": [
+              "Don't confuse SOS (the universal distress call) with individual code letters used elsewhere in this chapter for a different purpose -- code letter K means \"this is the best place to land\" and code letter S alone means \"landing here is dangerous\" in the shore-signaling system. Same alphabet, different message depending on context."
+            ],
+            "examWatchFor": [
+              "For the fuller list of internationally recognized distress signals (including SOS alongside Mayday, flares, flags, and more), see the \"International Distress Signals\" section of this chapter."
+            ],
+            "sourceReferences": [
+              {
+                "file": "vinci-2026-07-14-chapter-5-source-intake.md",
+                "note": "Water Survival Student Manual, Chapter 5, page ~124 -- International Morse Code section"
+              }
+            ],
+            "confidence": "high"
+          },
+          {
+            "title": "Signals to Communicate From Shore & the Table of Lifesaving Signals",
+            "explanation": "Once you're close enough to see people ashore -- or another craft -- there's a standardized visual/audible vocabulary for two-way communication that needs no shared language. The same underlying grammar (vertical motion or green = good news; horizontal motion or red = danger) shows up twice in this chapter: once for guiding a landing, and separately for shore-apparatus rescue-line operations (like a breeches buoy). Learning the pattern once lets you recognize it in both places.",
+            "keyFacts": [
+              "\"This is the best place to land\": vertical motion of a white flag or arms (by day), or vertical motion of a white flag/flare, a green star signal, or code letter K (dash-dot-dash) by light or sound (day or night).",
+              "\"Landing here is highly dangerous\": horizontal motion of arms or a white flag/flare (by day), or horizontal motion of a white flag/light/flare, a red star signal, or code letter S (dot-dot-dot) by light or sound (day or night).",
+              "\"Landing here is dangerous, but a better spot is to the right/left\": code letter S followed by R (better landing to the right) or L (better landing to the left) -- \"right\" and \"left\" are defined as seen by the survival craft's own occupants facing the shore, not the shore party's orientation.",
+              "\"You are seen -- help will be given as soon as possible\": 3 combined light-and-sound signals (\"thunder-light\") about one minute apart, OR 3 white star rockets about one minute apart, OR an orange smoke signal by day. This is the standard reply from a lifesaving station to any distress signal.",
+              "Shore lifesaving apparatus (rocket-line/breeches-buoy) signals reuse the same vertical/horizontal grammar: vertical motion (or green star) = \"affirmative\" (rocket line held, tail block fast, hawser fast, person in the breeches buoy, or \"haul away\"); horizontal motion (or red star) = \"negative\" (\"slack away\" or \"avast hauling\").",
+              "Aircraft directing a surface craft toward a distress: circles the surface craft, crosses its course close ahead at low altitude with throttle/propeller-pitch changes, then heads the direction to go. Aircraft dismissing a surface craft from further assistance: crosses its wake close astern at low altitude, with the same throttle/propeller-pitch changes."
+            ],
+            "confusionTraps": [
+              "The vertical/green = good, horizontal/red = danger pattern repeats across two different signal families in this chapter (landing guidance, and separately shore-apparatus operations) -- learn the pattern once, don't re-memorize it twice as if they were unrelated.",
+              "\"Right\" and \"left\" in the S+R / S+L direction signal are always from the survival craft's own point of view facing the shore -- not the shore party's. Getting this backwards sends survivors the wrong way.",
+              "An aircraft crossing your course *close ahead* means \"follow me\"; crossing your wake *close astern* means \"you're dismissed, no longer needed.\" Ahead versus astern is the whole distinction -- don't mix them up under pressure."
+            ],
+            "examWatchFor": [
+              "Color/direction anchor: green or vertical = go/good; red or horizontal = stop/danger -- applies across this entire signal family.",
+              "Letter anchor: K (dash-dot-dash) = \"come this way\"; S (dot-dot-dot) = \"stay away, danger.\"",
+              "Self-check: could you describe, without looking, the difference between an aircraft's \"directing\" maneuver and its \"dismissing\" maneuver?"
+            ],
+            "sourceReferences": [
+              {
+                "file": "vinci-2026-07-14-chapter-5-source-intake.md",
+                "note": "Water Survival Student Manual, Chapter 5, pages ~125-129 -- Signals to Communicate From Shore, Table of Lifesaving Signals, and Aircraft Directs/Dismisses sections"
+              }
+            ],
+            "confidence": "high"
+          },
           "Table of Lifesaving Signals",
           {
             "title": "International Distress Signals \u2014 The Recognized List",
@@ -693,7 +798,37 @@
             ],
             "confidence": "high"
           },
-          "Signaling Devices"
+          {
+            "title": "Signaling Devices \u2014 Choosing and Using the Right One",
+            "explanation": "Knowing a signaling device exists isn't the same as knowing how or when to use it -- and unlike a radio, most of these devices are one-shot, non-renewable resources. Firing a flare at the wrong moment, or in the wrong direction, wastes something you can't get back. This section is about matching the right device to the right moment, and using each one correctly the first time.",
+            "keyFacts": [
+              "General pyrotechnic technique: fire downwind, on the leeward side of the craft, at about 60 degrees above the horizon, angled slightly over the water -- burning particles fall, and can injure survivors or damage the raft otherwise.",
+              "Signaling mirror: aim sunlight through the peephole onto the mirror to direct a flash toward a distant aircraft or ship; flash it all around the entire horizon continuously whenever the sun is out, rather than waiting until a rescuer is actually visible. Daylight-only, but reusable indefinitely.",
+              "Red rocket parachute flare: best for a vessel spotted far away on the horizon. Reaches roughly 1,000 feet and burns bright red for at least 40 seconds -- but it drifts as it descends, so it doesn't mark your exact position.",
+              "Hand flare: best once an aircraft has already spotted you and needs your exact position, since it stays where you are rather than drifting. Burns bright red for at least 1 minute, and continues burning for 10 seconds even after being immersed in water.",
+              "Buoyant smoke signal: daylight only (smoke can't be seen once it's dark). Emits highly visible smoke for at least 3 minutes in calm water, continuing 10 seconds after immersion.",
+              "Dye marker: sets a colored patch in the water around you, visible from above or nearby -- any color is a recognized distress signal, unlike the smoke signal, which specifically must be orange.",
+              "Whistle: audible up to 4 miles away in favorable conditions, versus only a few hundred yards for a shouting voice. Reusable indefinitely, and works in fog, day, or night -- unlike the sun-dependent mirror or daylight-only smoke.",
+              "Radar reflector: rubber liferafts don't reflect radar waves well on their own, so a reflector helps other ships' radar detect the raft, even if a flare is missed. Mount it as high as possible -- height improves detection range, the same principle behind a SART's own range figures."
+            ],
+            "confusionTraps": [
+              "Parachute flare vs. hand flare: both burn bright red, but the parachute flare goes UP HIGH and DRIFTS (best when a vessel is still far away and hasn't spotted you), while the hand flare STAYS AT YOUR POSITION (best once someone -- especially an aircraft -- has already spotted you and needs your exact spot to close in).",
+              "Smoke signal vs. dye marker: both are visual, both can be any relevant color association in a student's head, but they're not interchangeable. Smoke is airborne and visible from a real distance, including to aircraft, but must specifically be orange and only works by day. A dye marker colors the water itself, works in any color, and is more useful for close-range or directly-overhead confirmation than for long-range visibility.",
+              "Not every device works day AND night: mirrors and buoyant smoke signals are daylight-only. Hand flares, parachute flares, and whistles all work regardless of time of day. Don't assume every signaling device is equally usable at night."
+            ],
+            "examWatchFor": [
+              "Scenario anchor: rescuer already spotted you but is still far away \u2192 parachute flare. Rescuer already spotted you and is close/overhead \u2192 hand flare or dye marker. Nobody has spotted you yet, and it's sunny \u2192 mirror, flashed continuously around the whole horizon.",
+              "Memory anchor: \"smoke by day, flare either day or night, mirror needs sun.\"",
+              "Self-check: without looking back, could you explain why firing a flare straight up instead of downwind-and-angled is a real safety mistake, not just a style choice?"
+            ],
+            "sourceReferences": [
+              {
+                "file": "vinci-2026-07-14-chapter-5-source-intake.md",
+                "note": "Water Survival Student Manual, Chapter 5, pages ~131-132 -- Signaling Devices section"
+              }
+            ],
+            "confidence": "high"
+          }
         ]
       }
     },
