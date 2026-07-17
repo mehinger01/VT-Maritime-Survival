@@ -99,6 +99,10 @@ export default function QuestionCard({
   function selectChoice(choiceId) {
     if (stage !== 'choosing') return
     setSelectedChoiceId(choiceId)
+  }
+
+  function submitAnswer() {
+    if (stage !== 'choosing' || !selectedChoiceId) return
     setStage('confidence')
   }
 
@@ -141,10 +145,18 @@ export default function QuestionCard({
       {stage === 'choosing' && (
         <>
           {shuffledChoices.map((choice) => (
-            <button key={choice.id} className="choice" onClick={() => selectChoice(choice.id)}>
+            <button
+              key={choice.id}
+              className={`choice${choice.id === selectedChoiceId ? ' selected' : ''}`}
+              style={choice.id === selectedChoiceId ? { borderColor: '#1e5d89' } : undefined}
+              onClick={() => selectChoice(choice.id)}
+            >
               {choice.text}
             </button>
           ))}
+          <button className="btn" disabled={!selectedChoiceId} onClick={submitAnswer} style={{ marginTop: 10 }}>
+            Submit Answer
+          </button>
           {allowHints && question.hints?.length > 0 && (
             <div>
               <button className="btn secondary small" onClick={() => setHintIndex((i) => Math.min(i + 1, question.hints.length))}>
