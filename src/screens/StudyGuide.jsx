@@ -171,11 +171,16 @@ function KnowledgeCheckItem({ qa }) {
 // index / mastery tracking / print pipeline yet -- see
 // vinci-chapter-5-loose-ends-report.md-era session notes for why those were
 // deferred. A guide only appears here once its published flag is true.
-export default function StudyGuide({ studyGuides, topicId }) {
+//
+// selectedTopicId is derived from the topicId route prop on every render
+// rather than captured once into useState -- the earlier useState-initializer
+// version went stale on any hash change after mount (e.g. navigating directly
+// from one guide's route to another), since a mount-only initializer never
+// re-runs on prop changes. Deriving it fresh each render makes that whole bug
+// class impossible rather than papering over it with a sync effect.
+export default function StudyGuide({ studyGuides, topicId, navigate }) {
   const publishedGuides = studyGuides.filter((g) => g.published)
-  const [selectedTopicId, setSelectedTopicId] = useState(
-    publishedGuides.find((g) => g.topicId === topicId)?.topicId ?? publishedGuides[0]?.topicId
-  )
+  const selectedTopicId = publishedGuides.find((g) => g.topicId === topicId)?.topicId ?? publishedGuides[0]?.topicId
   const guide = publishedGuides.find((g) => g.topicId === selectedTopicId)
 
   if (publishedGuides.length === 0) {
@@ -198,7 +203,7 @@ export default function StudyGuide({ studyGuides, topicId }) {
         <label className="muted">Chapter</label>
         <select
           value={selectedTopicId}
-          onChange={(e) => setSelectedTopicId(e.target.value)}
+          onChange={(e) => navigate('studyGuide', e.target.value)}
           style={{ width: '100%', padding: 10, marginTop: 6 }}
         >
           {publishedGuides.map((g) => (
