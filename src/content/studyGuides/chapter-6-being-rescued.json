@@ -1,0 +1,381 @@
+{
+  "topicId": "chapter-6-being-rescued",
+  "title": "Chapter 6 — Being Rescued: Detailed Study Guide",
+  "published": false,
+  "lastReconciled": "2026-07-20",
+  "reconciliationNote": "Built directly from the Chapter 6 manual extraction (vinci-2026-07-18-chapter-6-source-intake.md, manual pages 134-141), the 40 newly promoted manual-backed questions, the 5 existing questions upgraded to source-backed-study/multi-source-supported by this same extraction, and the completed Chapter 6 Learn Mode content -- all already live in course.json as of commit 7627c92. The 10 existing Chapter 6 questions outside this excerpt's page range (rescue swimmer, heaving line, fast rescue boat, Williamson Turn, and the general \"follow the rescue crew\" framing) were NOT used as factual support here, consistent with vinci-2026-07-18-chapter-6-promotion-review.md's classification of them as unsupported or unconfirmed by these specific pages. The two withheld candidate questions (q-ch6man-fpd-purpose, q-ch6man-fpd-mechanism) are not treated as confirmed or cited as live sources anywhere in this guide -- the Fall Preventer Device content below is sourced directly to the manual page itself, the same way the already-published Learn Mode content handles it. See vinci-2026-07-20-chapter-6-study-guide-reconciliation-report.md for the full claim-by-claim audit.",
+  "sections": [
+    {
+      "id": "rescue-priorities-and-crew-instructions",
+      "title": "1. Rescue Priorities and Rescue-Crew Instructions",
+      "whyThisMatters": "Being spotted is not the same as being rescued -- there's often still a real time gap, and the rescue operation itself carries genuine danger. Getting the timing of your own actions right during the handoff to a rescue craft matters as much as anything else in this chapter.",
+      "mustRemember": [
+        "Continue to ration food and water even after being spotted -- rescue may still take time.",
+        "Save your strength; don't swim unless it's necessary.",
+        "Step off your survival craft onto the rescue craft only when the survival craft is on the crest or top of a swell."
+      ],
+      "explanation": "Once you have been spotted, the ordeal is not necessarily over -- there are still problems to overcome, and the rescue operation itself can be a dangerous experience requiring great caution.",
+      "keyFacts": [
+        { "text": "An aircraft may spot your survival craft and report your position to the Coast Guard, but it may still be some time before a helicopter or ship can reach you -- continue to ration food and water.", "status": "source-backed-study" },
+        { "text": "You may need enough strength to climb a ladder or pull yourself up to a rescue craft -- save your strength and don't swim unless necessary.", "status": "source-backed-study" },
+        { "text": "Step off your survival craft onto the rescue craft only when the survival craft is on the crest or top of a swell. This drops the survival craft down while you're climbing the ladder or net -- otherwise there's danger of your boat or raft being raised up by a wave and hitting you.", "status": "source-backed-study" },
+        { "text": "This course also tests a broader \"defer to the trained rescue crew\" principle across several scenarios (equipment operation, a rescue swimmer's approach, a heaving-line pickup, priority over property). That general principle is not itself a verbatim passage from these 8 manual pages, so it's noted here rather than presented as a specific manual-confirmed fact.", "status": "needs-review" }
+      ],
+      "confusionTraps": [
+        "Being spotted and being rescued are two different moments -- don't stop rationing or drop your guard just because you've been seen."
+      ],
+      "examWatchFor": [
+        "Self-check: which swell position -- crest or trough -- is the safe moment to step off, and why?"
+      ],
+      "sourceReferences": [
+        { "file": "vinci-2026-07-18-chapter-6-source-intake.md", "note": "Water Survival Student Manual, Chapter 6, page ~134 -- \"Rescued at Last!\" section" }
+      ],
+      "verificationStatus": "source-backed-study"
+    },
+    {
+      "id": "four-helicopter-rescue-methods",
+      "title": "2. The Four Helicopter Rescue Methods",
+      "whyThisMatters": "Before any single device makes sense, it helps to see all four side by side -- each one is matched to a different survivor condition or ship situation, not chosen at random.",
+      "mustRemember": [
+        "Four methods: rescue basket, rescue sling, Stokes litter, ship landing.",
+        "The wind from a helicopter's rotor system can exceed 70 knots -- secure all loose deck gear before any hoist begins."
+      ],
+      "explanation": "There are four ways a Coast Guard helicopter might be used to rescue survivors or evacuate injured mariners, and the manual introduces all four together before covering each in its own section.",
+      "comparisonTable": {
+        "columns": ["Method", "Best suited for", "Key distinguishing fact"],
+        "rows": [
+          ["Rescue basket", "Survivors who can help themselves", "Only one person at a time, unless there's an emergency"],
+          ["Rescue sling", "Survivors who can actively hold on", "A padded loop under the armpits -- requires the survivor to grip it themselves"],
+          ["Stokes litter", "Serious injuries, illness, or inability to walk", "Fully supports a patient who can't help with their own lift"],
+          ["Ship landing", "Very large merchant ships with a landing area", "The helicopter actually lands -- no hoist at all"]
+        ]
+      },
+      "keyFacts": [
+        { "text": "The wind developed by a helicopter's rotor system can be over 70 knots. All loose gear on deck must be securely tied down or stowed below -- the rotor system could be destroyed if loose objects are blown into it during the hoist.", "status": "source-backed-study" }
+      ],
+      "confusionTraps": [
+        "Basket and sling both expect the survivor to actively participate (sitting up, holding on); the litter is for exactly the opposite case."
+      ],
+      "sourceReferences": [
+        { "file": "vinci-2026-07-18-chapter-6-source-intake.md", "note": "Water Survival Student Manual, Chapter 6, page ~134 -- Helicopter Hoist Procedures intro" }
+      ],
+      "verificationStatus": "source-backed-study"
+    },
+    {
+      "id": "rescue-basket-procedures",
+      "title": "3. Rescue Basket Procedures",
+      "mustRemember": [
+        "Only one person at a time in the basket, unless there's an emergency.",
+        "The pilot touches the basket down first to discharge static electricity -- let it happen before touching the basket."
+      ],
+      "explanation": "The rescue basket is the U.S. Coast Guard's usual choice for survivors who can help themselves.",
+      "keyFacts": [
+        { "text": "The U.S. Coast Guard usually uses a rescue basket for survivors who can help themselves. Unless there is an emergency, only one person at a time gets in the basket.", "status": "source-backed-study" },
+        { "text": "The pilot will touch the basket down first to discharge static electricity. Sit down and keep your hands and arms inside.", "status": "source-backed-study" },
+        { "text": "Each basket has a small card of user instructions on it, but it's best to know how to use the basket ahead of time -- in an emergency there's little time to read the card.", "status": "source-backed-study" }
+      ],
+      "sourceReferences": [
+        { "file": "vinci-2026-07-18-chapter-6-source-intake.md", "note": "Water Survival Student Manual, Chapter 6, page ~135 -- Rescue Basket section" }
+      ],
+      "verificationStatus": "source-backed-study"
+    },
+    {
+      "id": "rescue-sling-procedures",
+      "title": "4. Rescue Sling Procedures",
+      "mustRemember": [
+        "The rescue sling is a padded loop placed over the body and underneath the armpits, with the arms held around it.",
+        "It's used by rescue helicopters from other countries more often than by the U.S. Coast Guard."
+      ],
+      "explanation": "The rescue sling is simple hardware, but it has one property that matters a great deal in practice: it requires the person being hoisted to actively hold on.",
+      "keyFacts": [
+        { "text": "A rescue sling is carried onboard helicopters. It is used by rescue helicopters from other countries more often than it is used by the U.S. Coast Guard.", "status": "source-backed-study" },
+        { "text": "The rescue sling is just a padded loop which is placed over the body and underneath the armpits. The arms are held around the sling.", "status": "source-backed-study" },
+        { "text": "Because the sling requires the survivor to actively hold on, this course's existing question bank specifically tests avoiding it for a hypothermic, weakened, or otherwise incapacitated patient -- a litter or basket is the better choice for someone who can't grip the sling themselves.", "status": "multi-source-supported" }
+      ],
+      "confusionTraps": [
+        "Don't assume any hoist device works equally well regardless of the patient's condition -- the sling's arms-must-hold-on requirement is exactly why it's the wrong choice for a hypothermic patient."
+      ],
+      "sourceReferences": [
+        { "file": "vinci-2026-07-18-chapter-6-source-intake.md", "note": "Water Survival Student Manual, Chapter 6, page ~135 -- Rescue Sling section" }
+      ],
+      "verificationStatus": "source-backed-study"
+    },
+    {
+      "id": "stokes-litter-procedures",
+      "title": "5. Stokes Litter Procedures",
+      "mustRemember": [
+        "Used for serious injuries, illnesses, or survivors unable to walk.",
+        "If taken below decks, the litter must be unhooked from the cable -- the cable hook must never be attached to any part of the vessel."
+      ],
+      "explanation": "The Stokes litter is the manual's answer to the case the basket and sling can't handle: a survivor who can't help with their own lift at all.",
+      "processSteps": [
+        "Get help from other crew members -- loading a litter is not a one-person task.",
+        "Disconnect and spread out the straps.",
+        "Remove the blankets.",
+        "Put the patient in and cover them with the blankets.",
+        "Snugly fasten the straps, with the pad on top of the chest."
+      ],
+      "keyFacts": [
+        { "text": "A litter will usually be used to hoist those who have serious injuries, illnesses, or who are unable to walk.", "status": "source-backed-study" }
+      ],
+      "safetyWarnings": [
+        "If the litter has to be taken below decks to the patient, it must be unhooked from the cable first -- the cable hook must not be attached to any part of the vessel. There is always a possibility of an emergency onboard the helicopter itself requiring it to move unexpectedly; to reduce this danger, the pilot may hover off to one side of the vessel while waiting."
+      ],
+      "sourceReferences": [
+        { "file": "vinci-2026-07-18-chapter-6-source-intake.md", "note": "Water Survival Student Manual, Chapter 6, page ~136 -- Stokes Litter section" }
+      ],
+      "verificationStatus": "source-backed-study"
+    },
+    {
+      "id": "ship-landing",
+      "title": "6. Ship Landing",
+      "mustRemember": [
+        "Some very large merchant ships have a helicopter landing area on deck, marked with a large \"H\"."
+      ],
+      "explanation": "The fourth method skips hoisting entirely -- on ships large enough to have one, the helicopter simply lands.",
+      "keyFacts": [
+        { "text": "Some very large merchant ships have a helicopter landing area on deck. The helicopter actually lands on the deck of the ship. A large H marks the landing area, for example on the fantail of a tanker.", "status": "source-backed-study" }
+      ],
+      "sourceReferences": [
+        { "file": "vinci-2026-07-18-chapter-6-source-intake.md", "note": "Water Survival Student Manual, Chapter 6, page ~137 -- Ship Landing section" }
+      ],
+      "verificationStatus": "source-backed-study"
+    },
+    {
+      "id": "preparing-for-helicopter-rescue",
+      "title": "7. Preparing for Helicopter Rescue",
+      "whyThisMatters": "Several safety rules apply across every hoist method, not just one specific device -- these are the general precautions that matter no matter which of the four methods is being used.",
+      "mustRemember": [
+        "Never shine lights directly on the helicopter -- it will blind the pilot.",
+        "Approach a helicopter in the water from ahead or the starboard access door -- the pilot cannot see all around the aircraft.",
+        "If safe to do so, deflate the liferaft's roof to reduce the danger of overturning during a helicopter rescue."
+      ],
+      "keyFacts": [
+        { "text": "If a steadying line is attached to the basket, rescue sling, or litter, it must be tended -- this stops the rescue device from swinging too much.", "status": "source-backed-study" },
+        { "text": "Never shine lights on the helicopter -- it will blind the pilot.", "status": "source-backed-study" },
+        { "text": "When approaching a helicopter in the water, be sure the crew sees you. The pilot cannot see all around the aircraft -- it's best to approach from ahead or from the starboard access door.", "status": "source-backed-study" },
+        { "text": "If it is safe to do so, deflate the roof of the liferaft to reduce the danger of the raft overturning during a helicopter rescue.", "status": "source-backed-study" }
+      ],
+      "comparisonTable": {
+        "columns": ["Approach zone (relative to helicopter)", "Guidance"],
+        "rows": [
+          ["Ahead / starboard access door", "Desired / acceptable -- the pilot can see you here"],
+          ["Either side, further back", "Acceptable, but not ideal"],
+          ["Aft quarters / directly astern", "Prohibited / danger -- outside the pilot's field of view"]
+        ]
+      },
+      "sourceReferences": [
+        { "file": "vinci-2026-07-18-chapter-6-source-intake.md", "note": "Water Survival Student Manual, Chapter 6, page ~136 -- general hoist safety notes and approach-angle diagram" }
+      ],
+      "verificationStatus": "source-backed-study"
+    },
+    {
+      "id": "hoist-operations-14-step-procedure",
+      "title": "8. The Exact 14-Step Hoist Procedure",
+      "whyThisMatters": "This is the single densest piece of ordered, exam-relevant content in the chapter. The manual presents it as a specific numbered sequence, not a loose set of tips -- two of the fourteen steps are outright safety warnings.",
+      "mustRemember": [
+        "Step 9: to avoid static shock, allow the basket or litter to touch the deck before handling it.",
+        "Step 12: never secure the hoist cable to the ship, and never try to move the litter without unhooking it first."
+      ],
+      "processSteps": [
+        "Move the patient as close to the hoist area as possible -- time is important.",
+        "If a litter is required, move the patient to the special litter lowered by the helicopter as quickly as possible.",
+        "Once the patient is in the helicopter's litter, be sure they're strapped in face up, with their life jacket on if their condition permits.",
+        "Be sure the patient is tagged to indicate what medication, if any, was given and when.",
+        "Have the patient's medical records and any necessary papers ready in an envelope or package to transfer with them.",
+        "Change the ship's course so it rides as easily as possible, with the wind about 30° on the bow (preferably the port bow) -- this also keeps stack gases clear of the hoist area. Maintain the course once established.",
+        "Reduce the ship's speed if necessary to ease its motion, but maintain enough forward speed to respond to the helm. Maintain the speed once established.",
+        "Without radio contact, signal the helicopter in with a \"come on\" hand signal; at night, use a flashlight for the same signal.",
+        "To avoid static shock, allow the basket or litter to touch the deck before handling it.",
+        "If a steadying line is dropped by the helicopter, guide the basket or litter to the deck with it, and keep the line clear at all times.",
+        "Place the patient in the basket sitting with hands clear of the sides, or in the litter as described earlier. Signal the hoist operator when ready -- the patient nods their head if able, or deck personnel give a \"thumbs up\" signal.",
+        "If the litter must be taken away from the hoist area, unhook the hoist cable and keep it free so the helicopter can haul it in. Do not secure the hoist cable to the ship or try to move the litter without unhooking it -- the hoist line should be slack before the basket or stretcher is reconnected.",
+        "When the patient is strapped in the litter, signal the helicopter to lower the hoist cable, hook it up, and signal the hoist operator when the litter is ready to lift.",
+        "If a steadying line is attached, use it to keep the basket or litter from turning or swinging -- keep your feet clear of this line."
+      ],
+      "safetyWarnings": [
+        "Step 9 and step 12 are the two explicit \"do not\" warnings in this procedure -- both describe the opposite of what an anxious, well-meaning crew member might instinctively do (touching equipment early, or securing a cable for what seems like safekeeping)."
+      ],
+      "sourceReferences": [
+        { "file": "vinci-2026-07-18-chapter-6-source-intake.md", "note": "Water Survival Student Manual, Chapter 6, page ~138 -- \"Hoist Operations\" 14-step numbered procedure" }
+      ],
+      "verificationStatus": "source-backed-study"
+    },
+    {
+      "id": "static-electricity-and-grounding-precautions",
+      "title": "9. Static-Electricity and Grounding Precautions",
+      "whyThisMatters": "This single precaution is stated three separate times across three different sections of the manual, in three slightly different sets of words -- exactly the kind of fact an exam question is likely to rephrase rather than quote verbatim.",
+      "mustRemember": [
+        "A helicopter builds up static electricity in flight. Always let a lowered basket, sling, or litter touch the deck (or water) before anyone touches it, so the charge can discharge safely."
+      ],
+      "explanation": "The same underlying precaution appears in the Rescue Basket section, in the general hoist safety notes, and again as its own numbered step in the Hoist Operations procedure.",
+      "keyFacts": [
+        { "text": "Rescue Basket section: \"The pilot will touch the basket down first to discharge static electricity.\"", "status": "source-backed-study" },
+        { "text": "General hoist safety notes: \"It is very important that the rescue device touches the vessel before anyone touches it. As soon as the object being lowered touches the deck, static electricity (which builds up in the helicopter during flight) will be discharged. If you touch the object before the static electricity discharges, the shock could make you let go with a hand you are using for personal safety.\"", "status": "source-backed-study" },
+        { "text": "Hoist Operations step 9: \"To avoid static shock, allow the basket or litter to touch the deck before handling it.\"", "status": "source-backed-study" }
+      ],
+      "confusionTraps": [
+        "This is one fact told three ways, not three separate facts -- don't be thrown if a question phrases it differently than you memorized it."
+      ],
+      "sourceReferences": [
+        { "file": "vinci-2026-07-18-chapter-6-source-intake.md", "note": "Water Survival Student Manual, Chapter 6, pages ~135, 136, and 138" }
+      ],
+      "verificationStatus": "source-backed-study"
+    },
+    {
+      "id": "medical-evacuation-preparation-and-checklist",
+      "title": "10. Medical-Evacuation Preparation and Checklist",
+      "whyThisMatters": "A medical evacuation has its own complete check-off list, separate from the general hoist procedure -- one part covers what to communicate when first requesting help, the other covers what the ship physically has to do before the helicopter shows up.",
+      "mustRemember": [
+        "Provide continuous radio guard on Channel 16 while preparing for the helicopter.",
+        "Never shine lights on the helicopter itself -- light the lift area and any obstructions instead.",
+        "Arrange hand signals ahead of time -- the helicopter's noise makes voice commands impossible to hear."
+      ],
+      "comparisonTable": {
+        "columns": ["Checklist phase", "Requirement"],
+        "rows": [
+          ["Requesting Assistance", "Give the ship's accurate position, speed, course, time, weather, wind direction/velocity, and radio frequencies"],
+          ["Requesting Assistance", "Give complete medical information on the victim, including whether they're ambulatory"],
+          ["Requesting Assistance", "If beyond the helicopter's range, say where the ship is going so a meeting point can be arranged"],
+          ["Requesting Assistance", "Advise rescuers of any changes immediately, including if the patient dies before the helicopter arrives"],
+          ["Preparing for Arrival", "Provide continuous radio guard on Channel 16"],
+          ["Preparing for Arrival", "Select/clear a hoist area, aft if possible, minimum 50-foot radius; secure loose gear; lower the flagstaff if aft"],
+          ["Preparing for Arrival", "Fly flags away from the hoist area as a wind reference for the pilot (light the flag at night)"],
+          ["Preparing for Arrival", "At night, light the lift area and obstructions -- never shine lights on the helicopter"],
+          ["Preparing for Arrival", "Point searchlights vertically to help the pilot locate the ship; secure them once it arrives"],
+          ["Preparing for Arrival", "Tell the pilot the hoist area's location before arrival, and arrange hand signals since voice commands can't be heard"]
+        ]
+      },
+      "sourceReferences": [
+        { "file": "vinci-2026-07-18-chapter-6-source-intake.md", "note": "Water Survival Student Manual, Chapter 6, page ~139 -- Medical Evacuation section (Requesting Helicopter Assistance and Preparations Prior to Arrival of the Helicopter)" }
+      ],
+      "verificationStatus": "source-backed-study"
+    },
+    {
+      "id": "lifeboat-drill-and-maintenance-hazards",
+      "title": "11. Lifeboat Drill and Maintenance Hazards",
+      "whyThisMatters": "This section shifts from being rescued to a different, less obvious danger: real seafarer fatalities and serious injuries have come from testing and maintaining lifeboats themselves, not from using them in an actual emergency.",
+      "mustRemember": [
+        "The three most common causes of lifeboat accidents: Design Failure, Lack of Maintenance, and Lack of Proper Training."
+      ],
+      "explanation": "There's no substitute for hands-on, realistic training and drills -- but the regulations that require frequent lifeboat movement also mean frequent exposure to the specific risks covered here.",
+      "comparisonTable": {
+        "columns": ["Cause", "Explanation"],
+        "rows": [
+          ["Design Failure", "Faults in IMO-required off-load/on-load release systems are a frequent contributor to lifeboat accidents -- the IMO continues modifying requirements to make these devices safer"],
+          ["Lack of Maintenance", "Survival craft systems sit in a harsh marine environment and require frequent maintenance; equipment failure results from lack of proper, timely upkeep"],
+          ["Lack of Proper Training", "Releasing gear varies by manufacturer -- never assume all gear operates the same way, because it doesn't"]
+        ]
+      },
+      "sourceReferences": [
+        { "file": "vinci-2026-07-18-chapter-6-source-intake.md", "note": "Water Survival Student Manual, Chapter 6, page ~140 -- \"Dangers Involved with Training, Drills and Maintenance\" section" }
+      ],
+      "verificationStatus": "source-backed-study"
+    },
+    {
+      "id": "release-gear-safety",
+      "title": "12. Release-Gear Safety",
+      "whyThisMatters": "Most modern lifeboats include a way to disable the release mechanism during maintenance, so nobody is at risk if the gear activates while someone is inside working on it.",
+      "mustRemember": [
+        "A Fall Preventer Device (FPD) prevents the lifeboat from releasing while maintenance is being conducted."
+      ],
+      "explanation": "The Fall Preventer Device is described directly and clearly in the manual (page ~140). This guide teaches it as a manual-confirmed fact -- separately, two draft question-bank items covering the same fact (their purpose and mechanism) remain held pending a check against an already-live, similarly-named question about \"preventer bars\" (a different, built-in piece of releasing-gear hardware). That question-bank hold is about avoiding a possible duplicate in the scored question set, not any doubt about the fact itself.",
+      "keyFacts": [
+        { "text": "Most modern lifeboat installations incorporate some means to prevent the lifeboat from releasing while maintenance is being conducted. This device is called a Fall Preventer Device (FPD) and should be used whenever entering a lifeboat under non-emergency conditions for maintenance.", "status": "source-backed-study" },
+        { "text": "FPDs are designed to \"safe\" the releasing gear so it will not release accidentally. They use slings and shackles between the fall block ring and a shackle on the releasing gear.", "status": "source-backed-study" }
+      ],
+      "confusionTraps": [
+        "A Fall Preventer Device is not the same thing as \"preventer bars\" (a different piece of hardware already tested elsewhere in this course). Preventer bars are a built-in part of the releasing gear that stops accidental unhooking when the falls go slack during normal operation. An FPD is a separate, removable device -- slings and shackles added specifically for non-emergency maintenance entry -- that stops the whole lifeboat from releasing at all. Related purpose, different hardware, different situation."
+      ],
+      "sourceReferences": [
+        { "file": "vinci-2026-07-18-chapter-6-source-intake.md", "note": "Water Survival Student Manual, Chapter 6, page ~140 -- \"Fall Preventer Device\" section. Not sourced to any question-bank item -- see vinci-2026-07-20-chapter-6-study-guide-reconciliation-report.md for why the two related draft questions remain unpromoted." }
+      ],
+      "verificationStatus": "source-backed-study"
+    },
+    {
+      "id": "locking-pins-and-maintenance-pins",
+      "title": "13. Locking Pins and Maintenance Pins",
+      "mustRemember": [
+        "A locking/maintenance pin inserted into the fore/aft releasing gear stops the bale from moving, preventing accidental release.",
+        "Always remove the FPD and/or locking pin once maintenance is complete -- otherwise the lifeboat can't release in a real emergency."
+      ],
+      "explanation": "The locking pin is a simpler, purely mechanical alternative (or companion) to the FPD -- the manual allows using either one, or both together.",
+      "processSteps": [
+        "Never enter or conduct maintenance on a lifeboat without notifying and getting permission from the Officer of the Watch/Bridge first.",
+        "Wear proper PPE: a hardhat, gloves, and a PFD (typically a Type IV Buoyant Work Vest).",
+        "Make the lifeboat \"safe\" using an FPD, a locking pin, or both.",
+        "Upon entering, immediately check the state of the releasing gear -- handle in the \"green\"/locked position with safety pins inserted.",
+        "After completing drill/maintenance, remove the FPD and/or locking pin.",
+        "Notify the OOW/Bridge that the lifeboat has been returned to ready status -- in all respects ready to be launched."
+      ],
+      "keyFacts": [
+        { "text": "With the pin inserted into the fore/aft releasing gear, the bale cannot move, preventing accidental release.", "status": "source-backed-study" }
+      ],
+      "sourceReferences": [
+        { "file": "vinci-2026-07-18-chapter-6-source-intake.md", "note": "Water Survival Student Manual, Chapter 6, page ~141 -- Locking/Maintenance Pin section and practical safety measures" }
+      ],
+      "verificationStatus": "source-backed-study"
+    },
+    {
+      "id": "common-exam-traps-and-distinctions",
+      "title": "14. Common Exam Traps and Distinctions",
+      "whyThisMatters": "Most of this chapter's likely exam traps come from swapping two similar-sounding rules or devices -- this section exists purely to pre-empt that.",
+      "comparisonTable": {
+        "columns": ["Confusion", "Correct distinction"],
+        "rows": [
+          ["Rescue basket vs. rescue sling vs. Stokes litter", "Basket and sling both need an able, self-supporting survivor; the litter is for someone who can't help themselves at all"],
+          ["\"Light the lift area\" vs. \"never light the helicopter\"", "Illuminate the deck and obstructions; never point a light at the aircraft itself, or it blinds the pilot"],
+          ["Hoist cable handling", "Never secure the hoist cable to the ship, and never try to move the litter without unhooking it first"],
+          ["Static discharge timing", "Let the basket/litter touch the deck before anyone touches it -- touching it first can cause a shock strong enough to make you let go"],
+          ["Fall Preventer Device vs. preventer bars", "The FPD is a removable maintenance-only device (slings/shackles); preventer bars are a built-in part of the releasing gear used during normal operation"],
+          ["FPD vs. locking pin", "Two different mechanisms for the same underlying goal -- the manual allows using either one or both together, not a strict either/or choice"]
+        ]
+      },
+      "examTraps": [
+        {
+          "mistake": "Assuming any rescue device works the same for any survivor condition.",
+          "correction": "The sling specifically requires the survivor to actively hold on -- it's the wrong choice for a hypothermic or incapacitated patient, where the litter is correct.",
+          "clue": "Watch for scenario questions describing a weakened, unconscious, or hypothermic survivor."
+        },
+        {
+          "mistake": "Treating the hoist cable as something to secure for safekeeping.",
+          "correction": "The hoist cable must never be secured to the ship -- the helicopter needs to retain the freedom to move if it has its own emergency.",
+          "clue": "Any answer choice involving tying off, securing, or anchoring the hoist cable to the vessel is a distractor."
+        }
+      ],
+      "sourceReferences": [
+        { "file": "vinci-2026-07-18-chapter-6-source-intake.md", "note": "Synthesized from across manual pages 134-141 -- no new facts introduced beyond what's documented in the individual sections above" }
+      ],
+      "verificationStatus": "source-backed-study"
+    },
+    {
+      "id": "final-must-remember-review",
+      "title": "15. Final Must Remember Review",
+      "whyThisMatters": "A last self-check before moving to Quiz or Drill Mode on this chapter.",
+      "mustRemember": [
+        "Continue rationing after being spotted -- rescue may still take time.",
+        "Step off onto the rescue craft only at the crest/top of a swell.",
+        "Rescue basket: one person at a time; rescue sling: survivor must actively hold on; Stokes litter: for those who can't help themselves.",
+        "Litter cable hook must never be attached to the vessel.",
+        "Let the basket/litter touch the deck before handling it -- static discharge.",
+        "Never shine lights on the helicopter.",
+        "Ship course during hoist: wind about 30° on the bow, preferably port.",
+        "Never secure the hoist cable to the ship.",
+        "Medevac: continuous Channel 16 guard; hoist area aft, minimum 50-foot radius.",
+        "Three causes of lifeboat accidents: design failure, lack of maintenance, lack of training.",
+        "Always remove the FPD/locking pin after maintenance -- an installed safety device blocks a real emergency release."
+      ],
+      "knowledgeCheck": [
+        { "question": "When should a survivor step off a survival craft onto a rescue craft?", "answer": "Only when the survival craft is on the crest or top of a swell.", "explanation": "This drops the survival craft down while climbing, rather than risking it being raised up into the survivor by the next wave." },
+        { "question": "What are the four ways a Coast Guard helicopter might rescue survivors?", "answer": "Rescue basket, rescue sling, Stokes litter, and ship landing.", "explanation": "Each is matched to a different survivor condition or ship situation." },
+        { "question": "Why must the Stokes litter's cable hook never be attached to the vessel?", "answer": "The helicopter may need to move unexpectedly if it has its own emergency; securing the hook to the ship would prevent that.", "explanation": "The pilot may hover off to one side of the vessel while waiting, specifically to reduce this danger." },
+        { "question": "What should be done to avoid static shock when a basket or litter is lowered?", "answer": "Allow it to touch the deck before handling it -- this lets the static electricity that builds up in the helicopter during flight discharge safely.", "explanation": "This exact precaution is stated three separate times across the manual." },
+        { "question": "What are the three most common causes of maritime accidents involving lifeboats?", "answer": "Design Failure, Lack of Maintenance, and Lack of Proper Training.", "explanation": "Real seafarer fatalities and injuries have come from lifeboat testing and maintenance itself." }
+      ],
+      "sourceReferences": [
+        { "file": "vinci-2026-07-18-chapter-6-source-intake.md", "note": "All items reflect manual-confirmed content from pages 134-141; nothing referencing the withheld FPD question-bank candidates or the unconfirmed-by-these-pages existing questions is included here." }
+      ],
+      "verificationStatus": "source-backed-study"
+    }
+  ]
+}
