@@ -1,7 +1,7 @@
 {
   "topicId": "chapter-6-being-rescued",
   "title": "Chapter 6 — Being Rescued: Detailed Study Guide",
-  "published": false,
+  "published": true,
   "lastReconciled": "2026-07-20",
   "reconciliationNote": "Built directly from the Chapter 6 manual extraction (vinci-2026-07-18-chapter-6-source-intake.md, manual pages 134-141), the 40 newly promoted manual-backed questions, the 5 existing questions upgraded to source-backed-study/multi-source-supported by this same extraction, and the completed Chapter 6 Learn Mode content -- all already live in course.json as of commit 7627c92. The 10 existing Chapter 6 questions outside this excerpt's page range (rescue swimmer, heaving line, fast rescue boat, Williamson Turn, and the general \"follow the rescue crew\" framing) were NOT used as factual support here, consistent with vinci-2026-07-18-chapter-6-promotion-review.md's classification of them as unsupported or unconfirmed by these specific pages. The two withheld candidate questions (q-ch6man-fpd-purpose, q-ch6man-fpd-mechanism) are not treated as confirmed or cited as live sources anywhere in this guide -- the Fall Preventer Device content below is sourced directly to the manual page itself, the same way the already-published Learn Mode content handles it. See vinci-2026-07-20-chapter-6-study-guide-reconciliation-report.md for the full claim-by-claim audit.",
   "sections": [
