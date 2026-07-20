@@ -1,0 +1,311 @@
+{
+  "batchId": "vinci-2026-07-20-chapter-3-class-notes",
+  "sourceDocs": [
+    "vinci-2026-07-20-chapter-3-class-notes-source-intake.md",
+    "vinci-2026-07-20-chapter-3-class-notes-reconciliation-report.md"
+  ],
+  "status": "draft-staged-not-promoted",
+  "note": "None of these questions have been added to course.json. See the companion promotion-review document for ready/pending/excluded categorization.",
+  "questions": [
+    {
+      "id": "q-ch3cn-liferaft-food-provisions",
+      "topicId": "chapter-3-using-liferafts",
+      "prompt": "How much food energy do a liferaft's emergency provisions supply per person, according to the ration standard?",
+      "choices": [
+        { "id": "a", "text": "10,000 kilojoules (about 2,400 calories) per person" },
+        { "id": "b", "text": "1,000 kilojoules (about 240 calories) per person", "misconception": "Understates the figure by a factor of 10 -- nowhere near enough to sustain a survivor." },
+        { "id": "c", "text": "20,000 kilojoules (about 4,800 calories) per person", "misconception": "Overstates the figure -- roughly double the actual ration standard." },
+        { "id": "d", "text": "No fixed figure -- rations vary entirely by manufacturer", "misconception": "Incorrectly assumes there's no standard figure at all." }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "medium",
+      "hints": ["This figure is the same one already taught for general survival-craft rations in Chapter 4.", "Think in round numbers: ten thousand of one unit, roughly twenty-four hundred of the other."],
+      "explanation": "A liferaft's provisions supply 1 unit per person, providing roughly 10,000 kilojoules (about 2,400 calories) -- the same figure already confirmed by Chapter 4's manual-sourced Food content, giving this fact genuine cross-chapter, multi-source support.",
+      "slideReference": "Chapter 3 class-notes deck, slide 6",
+      "sourceReference": "Chapter 3 class-notes deck (vinci-2026-07-20-chapter-3-class-notes-source-intake.md, slide 6), cross-confirmed by the already-live Chapter 4 manual-sourced Food content (q-ch4man-no-food-without-water and the Chapter 4 Learn Mode Food module, both citing the same 10,000 kJ/2,400 cal figure).",
+      "verificationStatus": "multi-source-supported",
+      "uncertaintyNote": "The class deck also cites 1.5 L total water capacity and a 3-day survival note without food/water in the first 24 hours -- those two figures are class-note-only and not included in this question.",
+      "learnModeMapping": "Liferafts (topic 0) / cross-reference to Chapter 4 Food module"
+    },
+    {
+      "id": "q-ch3cn-jackknife-approval",
+      "topicId": "chapter-3-using-liferafts",
+      "prompt": "What must a folding knife carried in a SOLAS inflatable liferaft be?",
+      "choices": [
+        { "id": "a", "text": "A jackknife approved by the Commandant under approval series 160.043" },
+        { "id": "b", "text": "Any locking-blade knife, with no specific approval requirement", "misconception": "Contradicts the CFR requirement for a specific Commandant-approved jackknife type." },
+        { "id": "c", "text": "A fixed-blade knife only -- folding knives are prohibited", "misconception": "Reverses the requirement -- the regulation specifically calls for a jackknife (folding), not a fixed blade." },
+        { "id": "d", "text": "The same floating sheath knife used elsewhere in the raft", "misconception": "Conflates two separate, distinct required items -- the jackknife and the floating sheath knife are not the same tool." }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "hard",
+      "hints": ["This is a specific Coast Guard approval-series number, not a general description.", "Don't confuse this with the raft's other, separately-required floating knife."],
+      "explanation": "46 CFR 160.151-21(b) requires each folding knife in a SOLAS inflatable liferaft to be a jackknife approved by the Commandant under approval series 160.043 -- a distinct requirement from the raft's separately-required floating sheath knife.",
+      "slideReference": "Chapter 3 class-notes deck, slide 4 (CFR excerpt) and slide 9 (equipment bag list)",
+      "sourceReference": "46 CFR 160.151-21(b), extracted directly from Document(6).PDF.pdf (public/content/vinci/2026-07-08-sea-trials/), confirmed in the Chapter 3 class-notes deck slide 4 (which itself reproduces this CFR text).",
+      "verificationStatus": "official-source-supported",
+      "uncertaintyNote": "None -- this is a direct CFR citation.",
+      "learnModeMapping": "Liferafts (topic 0)"
+    },
+    {
+      "id": "q-ch3cn-tinopener-guard",
+      "topicId": "chapter-3-using-liferafts",
+      "prompt": "What safety requirement applies to a liferaft's tin-opener?",
+      "choices": [
+        { "id": "a", "text": "Each sharp part of the tin-opener must have a guard" },
+        { "id": "b", "text": "It must be stored separately from all other equipment for safety", "misconception": "Invents a storage requirement the regulation doesn't state." },
+        { "id": "c", "text": "It must be blunt enough not to require a guard", "misconception": "Contradicts the actual requirement -- a functional tin-opener needs a guard on its sharp parts, not a dulled edge." },
+        { "id": "d", "text": "It must be the same floating design as the sheath knife", "misconception": "Invents a floating requirement that doesn't apply to the tin-opener." }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "medium",
+      "hints": ["Think about what would make a sharp tool in a crowded, moving liferaft safer to have aboard."],
+      "explanation": "46 CFR 160.151-21(g) requires each sharp part of a liferaft's tin-opener to have a guard -- a straightforward safety requirement for a sharp tool stored among survivors in a confined space.",
+      "slideReference": "Chapter 3 class-notes deck, slide 4 (CFR excerpt)",
+      "sourceReference": "46 CFR 160.151-21(g), extracted directly from Document(6).PDF.pdf.",
+      "verificationStatus": "official-source-supported",
+      "uncertaintyNote": "None -- this is a direct CFR citation not otherwise referenced by name in the class deck's own slide text (the deck's equipment lists don't call out the tin-opener specifically).",
+      "learnModeMapping": "Liferafts (topic 0)"
+    },
+    {
+      "id": "q-ch3cn-whistle-type",
+      "topicId": "chapter-3-using-liferafts",
+      "prompt": "What type of whistle is required in a SOLAS inflatable liferaft?",
+      "choices": [
+        { "id": "a", "text": "A ball-type or multi-tone whistle of corrosion-resistant construction" },
+        { "id": "b", "text": "Any standard plastic whistle, with no construction requirement", "misconception": "Ignores the specific corrosion-resistance and type requirements the regulation states." },
+        { "id": "c", "text": "A single-tone whistle only", "misconception": "Too narrow -- ball-type or multi-tone are both acceptable, not a single specified tone." },
+        { "id": "d", "text": "An electronic whistle powered by the water-activated battery", "misconception": "Invents a powered-device requirement; the required whistle is a simple mechanical device, not electronic." }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "medium",
+      "hints": ["Two whistle designs are both acceptable, as long as the material meets one standard."],
+      "explanation": "46 CFR 160.151-21(i) requires the whistle to be a ball-type or multi-tone whistle of corrosion-resistant construction -- material durability matters as much as the type of whistle.",
+      "slideReference": "Chapter 3 class-notes deck, slide 4 (CFR excerpt)",
+      "sourceReference": "46 CFR 160.151-21(i), extracted directly from Document(6).PDF.pdf.",
+      "verificationStatus": "official-source-supported",
+      "uncertaintyNote": "None -- direct CFR citation. Note this is a different whistle from the personal whistle already tested elsewhere in this course (e.g., on a PFD) -- this one is specifically a liferaft-kit item.",
+      "learnModeMapping": "Liferafts (topic 0)"
+    },
+    {
+      "id": "q-ch3cn-boarding-ladder-foothold",
+      "topicId": "chapter-3-using-liferafts",
+      "prompt": "What construction requirement applies to a liferaft's boarding ladder?",
+      "choices": [
+        { "id": "a", "text": "The steps must provide a suitable foothold" },
+        { "id": "b", "text": "It must be made entirely of rigid metal", "misconception": "Invents a material requirement the regulation doesn't specify -- the requirement is functional (foothold), not about a specific material." },
+        { "id": "c", "text": "It must be retractable into the raft's floor when not in use", "misconception": "Invents a mechanical feature not required by the regulation." },
+        { "id": "d", "text": "It must be usable only when the raft is fully inflated", "misconception": "Invents a usage restriction the regulation doesn't state." }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "easy",
+      "hints": ["The requirement is about function -- can your foot actually get purchase on the step -- not about material or mechanism."],
+      "explanation": "46 CFR 160.151-17(n) requires a liferaft's boarding ladder steps to provide a suitable foothold -- a functional requirement, since a survivor boarding from the water, possibly exhausted or in an immersion suit, needs a step that actually holds a foot securely.",
+      "slideReference": "Chapter 3 class-notes deck, slides 33-34 (boarding procedure: 'place your feet on the boarding ladder')",
+      "sourceReference": "46 CFR 160.151-17(n), extracted directly from Document(6).PDF.pdf. Boarding procedure context confirmed by the Chapter 3 class-notes deck, slides 33-34.",
+      "verificationStatus": "official-source-supported",
+      "uncertaintyNote": "The CFR text alone doesn't describe a boarding *procedure* -- the class deck supplies that context (feet on the ladder, grab internal lifelines, pull yourself in headfirst), which is class-note-supported only and not part of this specific CFR-sourced question.",
+      "learnModeMapping": "Boarding the Liferaft (topic 10)"
+    },
+    {
+      "id": "q-ch3cn-maintenance-inspection",
+      "topicId": "chapter-3-using-liferafts",
+      "prompt": "What do a liferaft's maintenance instructions require, at minimum?",
+      "choices": [
+        { "id": "a", "text": "A checklist for monthly external visual inspections, an explanation of periodic servicing by an approved facility, and a log of inspections and maintenance" },
+        { "id": "b", "text": "A single annual inspection with no other recordkeeping", "misconception": "Understates the requirement -- monthly external checks and a maintenance log are both required in addition to periodic full servicing." },
+        { "id": "c", "text": "Servicing only after the raft has actually been deployed and used", "misconception": "Contradicts the requirement for regular, scheduled servicing regardless of whether the raft has been used." },
+        { "id": "d", "text": "No formal maintenance schedule -- upkeep is left to the vessel operator's discretion", "misconception": "Contradicts the specific, mandatory maintenance-instruction content the regulation requires." }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "hard",
+      "hints": ["Three separate things are required: something monthly, something periodic, and a record of both."],
+      "explanation": "46 CFR 160.151-61 requires a liferaft's maintenance instructions to include a checklist for monthly external visual inspections of the packed liferaft, an explanation of periodic servicing requirements at an approved servicing facility, and a log for maintaining inspection and maintenance records.",
+      "slideReference": "Chapter 3 class-notes deck, slide 19 (liferafts inspected annually, must not exceed 17 months from last inspection, at a Coast Guard-approved facility)",
+      "sourceReference": "46 CFR 160.151-61, extracted directly from Document(6).PDF.pdf. The class deck's slide 19 gives a complementary but distinct figure (the 17-month maximum interval between full inspections) that is not part of this specific CFR-sourced question.",
+      "verificationStatus": "official-source-supported",
+      "uncertaintyNote": "The class deck's '17 months' interval figure is a real, useful complementary fact but is class-note-only (not found in the extracted CFR text) -- drafted as a separate candidate below, not merged into this question.",
+      "learnModeMapping": "Liferaft Markings (topic 4) -- would also support a new Maintenance topic if one is added"
+    },
+    {
+      "id": "q-ch3cn-operating-cord-length-corrected",
+      "topicId": "chapter-3-using-liferafts",
+      "prompt": "What is the minimum length of a liferaft's operating cord (painter)?",
+      "choices": [
+        { "id": "a", "text": "At least 100 feet" },
+        { "id": "b", "text": "At least 60 feet (10 fathoms)", "misconception": "This is the figure associated with a lifeboat's heaving line in a separate regulation, not a liferaft's operating cord." },
+        { "id": "c", "text": "At least 250 feet", "misconception": "Overstates the figure well beyond what's specified." },
+        { "id": "d", "text": "No minimum length is specified", "misconception": "Contradicts the specific minimum-length figure the class-notes deck states." }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "hard",
+      "hints": ["This is the same line labeled 'Operating Cord (Painter)' on the liferaft parts diagram -- not the separately-labeled 'Heaving Line.'"],
+      "explanation": "The class-notes deck states the operating cord (painter) has a length of at least 100 ft, and independently labels a liferaft container's coiled line as '100' Sea Painter/Operating Cord' on its own equipment diagram -- three independent mentions within the same deck, all pointing to the painter, not the heaving line.",
+      "slideReference": "Chapter 3 class-notes deck, slides 16 and 25",
+      "sourceReference": "Chapter 3 class-notes deck (vinci-2026-07-20-chapter-3-class-notes-source-intake.md, slides 16 and 25).",
+      "verificationStatus": "needs-review",
+      "uncertaintyNote": "PENDING RECONCILIATION, not ready for promotion as-is. The already-live q-quiz1a-heaving-line-length tests this same '100 feet' figure but attributes it to the heaving line, not the painter/operating cord -- see the reconciliation report's dedicated section. Promoting this question before that conflict is resolved would put two contradictory 100-foot facts live at once. This candidate should only be promoted alongside a correction (or retirement) of q-quiz1a-heaving-line-length, not on its own.",
+      "learnModeMapping": "Automatic Launching (topic 7) / Liferaft Stowage (topic 2)"
+    },
+    {
+      "id": "q-ch3cn-hydrostatic-release-depth",
+      "topicId": "chapter-3-using-liferafts",
+      "prompt": "At approximately what depth does a liferaft's hydrostatic release activate if the ship sinks before manual launch?",
+      "choices": [
+        { "id": "a", "text": "5 to 15 feet" },
+        { "id": "b", "text": "50 to 100 feet", "misconception": "Overstates the trigger depth well beyond what the class-notes deck specifies -- a release that deep would risk the raft being trapped too long." },
+        { "id": "c", "text": "At the surface, before any submersion occurs", "misconception": "Contradicts the requirement for actual submersion pressure to trigger a hydrostatic release." },
+        { "id": "d", "text": "Only once the ship has fully sunk to the seabed", "misconception": "Would defeat the purpose of an early-release safety mechanism meant to free the raft well before the ship is fully lost." }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "medium",
+      "hints": ["The figure is stated as a range, not a single exact number.", "It's shallow enough that the container can still float free and reach the surface quickly."],
+      "explanation": "The class-notes deck states the hydrostatic release is triggered by water pressure once the ship sinks 5 to 15 feet deep, at which point the container floats free toward the surface -- confirmed both in the deck's own equipment diagram (labeled '5-15\\'') and its text description of automatic launching.",
+      "slideReference": "Chapter 3 class-notes deck, slides 16 and 23",
+      "sourceReference": "Chapter 3 class-notes deck (vinci-2026-07-20-chapter-3-class-notes-source-intake.md, slides 16 and 23).",
+      "verificationStatus": "needs-review",
+      "uncertaintyNote": "Class-note-supported only. Not found in the CFR text extracted so far in this project (the hydrostatic release's own approval standard, 46 CFR Subpart 160.062, has not been extracted). Awaiting manual or further CFR confirmation before promotion to a higher tier.",
+      "learnModeMapping": "Automatic Launching (topic 7)"
+    },
+    {
+      "id": "q-ch3cn-liferaft-weight-limit",
+      "topicId": "chapter-3-using-liferafts",
+      "prompt": "A liferaft that may have to be moved by hand for launching is subject to what weight limit?",
+      "choices": [
+        { "id": "a", "text": "Cannot exceed about 400 lbs (185 kg)" },
+        { "id": "b", "text": "Cannot exceed 100 lbs" },
+        { "id": "c", "text": "There is no weight limit under any circumstances" },
+        { "id": "d", "text": "Cannot exceed 1,000 lbs" }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "medium",
+      "hints": ["A liferaft launched directly from its stowed position (no manual carrying) has no such limit -- this figure applies only when it must be moved."],
+      "explanation": "A liferaft that may have to be moved for launching cannot exceed about 400 lbs (185 kg / 407.8 lb precisely) -- but a liferaft launched directly from its stowed position via an inclined/hand-tilted rack, or served by a davit, has no such weight limit.",
+      "slideReference": "Chapter 3 class-notes deck, slides 2 and 19",
+      "sourceReference": "Chapter 3 class-notes deck (vinci-2026-07-20-chapter-3-class-notes-source-intake.md, slides 2 and 19 -- the same figure stated twice within the deck, rounded on slide 2 and precise on slide 19).",
+      "verificationStatus": "needs-review",
+      "uncertaintyNote": "Class-note-supported only (internally self-consistent across two slides in the same deck, but not yet cross-confirmed by an independent source). Awaiting manual or CFR confirmation.",
+      "learnModeMapping": "Liferaft Size (topic 1)"
+    },
+    {
+      "id": "q-ch3cn-liferaft-capacity-minimum",
+      "topicId": "chapter-3-using-liferafts",
+      "prompt": "According to the class-notes deck, what is the minimum liferaft capacity?",
+      "choices": [
+        { "id": "a", "text": "At least 6 persons" },
+        { "id": "b", "text": "At least 25 persons" },
+        { "id": "c", "text": "At least 2 persons" },
+        { "id": "d", "text": "No minimum capacity is specified" }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "medium",
+      "hints": ["This is a floor, not a typical size -- most liferafts shown in this course's material carry well more than this minimum."],
+      "explanation": "The class-notes deck states a liferaft must have a capacity of at least 6 persons, with capacity marked on both the container and the raft itself, alongside the manufacturer's name.",
+      "slideReference": "Chapter 3 class-notes deck, slide 19",
+      "sourceReference": "Chapter 3 class-notes deck (vinci-2026-07-20-chapter-3-class-notes-source-intake.md, slide 19).",
+      "verificationStatus": "needs-review",
+      "uncertaintyNote": "Class-note-supported only. Awaiting manual or CFR confirmation.",
+      "learnModeMapping": "Liferaft Markings (topic 4)"
+    },
+    {
+      "id": "q-ch3cn-canopy-light-spec",
+      "topicId": "chapter-3-using-liferafts",
+      "prompt": "How long do a liferaft's canopy lights operate once activated, and from how far away can they be seen?",
+      "choices": [
+        { "id": "a", "text": "12 hours, visible from about 2 miles away" },
+        { "id": "b", "text": "48 hours, visible from about 10 miles away" },
+        { "id": "c", "text": "1 hour, visible from about half a mile away" },
+        { "id": "d", "text": "12 hours, but with no stated visibility range" }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "medium",
+      "hints": ["Two lights are installed on the canopy and activate automatically at inflation -- no manual switch needed."],
+      "explanation": "The class-notes deck states two canopy lights are automatically activated at inflation, operate for 12 hours, and can be seen from about 2 miles away.",
+      "slideReference": "Chapter 3 class-notes deck, slide 13",
+      "sourceReference": "Chapter 3 class-notes deck (vinci-2026-07-20-chapter-3-class-notes-source-intake.md, slide 13).",
+      "verificationStatus": "needs-review",
+      "uncertaintyNote": "Class-note-supported only. Don't confuse with the EPIRB's 48-hour minimum transmit time (a different device) already taught elsewhere in this course.",
+      "learnModeMapping": "Liferaft Design (topic 3)"
+    },
+    {
+      "id": "q-ch3cn-manual-launch-pelicanhook",
+      "topicId": "chapter-3-using-liferafts",
+      "prompt": "What is true about a liferaft's pelican hook/plunger pin, used to manually trip the hydrostatic release?",
+      "choices": [
+        { "id": "a", "text": "It can be released while under strain" },
+        { "id": "b", "text": "It can only be released once all tension on the tie-down strap has been removed", "misconception": "Reverses the actual design intent -- the release is specifically built to work under strain, since a real emergency won't always allow slack tension first." },
+        { "id": "c", "text": "It requires a special tool to release", "misconception": "Invents a tool requirement the class-notes deck doesn't state." },
+        { "id": "d", "text": "It is only used for automatic, not manual, launching", "misconception": "Contradicts its actual role -- it's specifically the manual-launch trip mechanism." }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "medium",
+      "hints": ["Think about why this matters in a real emergency -- you may not have the luxury of slack tension when you need to trip the release."],
+      "explanation": "To manually launch a liferaft, you trip the pelican hook/plunger pin on the hydrostatic release to release the tie-down strap -- and the class-notes deck specifically notes this can be done while the hardware is under strain, an important design feature for a real emergency.",
+      "slideReference": "Chapter 3 class-notes deck, slide 26",
+      "sourceReference": "Chapter 3 class-notes deck (vinci-2026-07-20-chapter-3-class-notes-source-intake.md, slide 26).",
+      "verificationStatus": "needs-review",
+      "uncertaintyNote": "Class-note-supported only. Awaiting manual or CFR confirmation.",
+      "learnModeMapping": "Manual Launching (topic 8)"
+    },
+    {
+      "id": "q-ch3cn-assisting-injured-first-steps",
+      "topicId": "chapter-3-using-liferafts",
+      "prompt": "When two rescuers are helping an injured person board a liferaft from the water, what are the first two steps?",
+      "choices": [
+        { "id": "a", "text": "Place their outboard knees on top of the buoyancy tubes, then turn the injured person with their back toward the rescuers" },
+        { "id": "b", "text": "Immediately pull the injured person straight up and over the buoyancy tubes by the arms", "misconception": "Skips the positioning steps that make the technique work, risking injury to both the rescuers and the survivor." },
+        { "id": "c", "text": "Have the injured person climb the boarding ladder unassisted while rescuers watch", "misconception": "Contradicts the entire premise of an assisted-boarding technique for someone who cannot help themselves." },
+        { "id": "d", "text": "Deflate part of the raft to lower the freeboard before attempting to board them", "misconception": "Invents a step not part of the described technique, and would compromise the raft's buoyancy unnecessarily." }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "hard",
+      "hints": ["The rescuers position themselves on the raft's structure first, before touching the injured person."],
+      "explanation": "The class-notes deck describes a 6-step technique for two rescuers assisting an injured person aboard: (1) place outboard knees on top of the buoyancy tubes, (2) turn the injured person with their back toward the rescuers, (3) grab their lifejacket with inboard hands, (4) grab their upper arm with outboard hands, (5) push them slightly down in the water and use buoyancy to spring them up and over into the raft back-first, (6) the rescuers fall to either side as the injured person lands between them.",
+      "slideReference": "Chapter 3 class-notes deck, slide 35",
+      "sourceReference": "Chapter 3 class-notes deck (vinci-2026-07-20-chapter-3-class-notes-source-intake.md, slide 35).",
+      "verificationStatus": "needs-review",
+      "uncertaintyNote": "Class-note-supported only, but highly specific and procedural -- a strong candidate for Learn Mode's currently-empty Assisting Injured People topic even before manual confirmation exists.",
+      "learnModeMapping": "Assisting Injured People (topic 11)"
+    },
+    {
+      "id": "q-ch3cn-boarding-methods-list",
+      "topicId": "chapter-3-using-liferafts",
+      "prompt": "According to the class-notes deck, which of these is explicitly NOT recommended as a way to board a liferaft?",
+      "choices": [
+        { "id": "a", "text": "Jumping into the canopy opening from 4 feet or less" },
+        { "id": "b", "text": "Boarding at the embarkation deck from a davit-launched raft" },
+        { "id": "c", "text": "Climbing down the Jacob's ladder" },
+        { "id": "d", "text": "Boarding from the sea using the boarding ladder" }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "medium",
+      "hints": ["Three of the four methods are simply listed as ways to board; one is explicitly flagged with a warning."],
+      "explanation": "The class-notes deck lists four ways a liferaft may be boarded -- at the embarkation deck (davit-launched raft), by climbing down the Jacob's ladder, by jumping into the canopy opening from 4 feet or less, or from the sea with the boarding ladder -- and explicitly marks jumping into the canopy opening as 'NOT RECOMMENDED,' separately warning that jumping onto the canopy top itself can injure people inside or be injured by stowed equipment.",
+      "slideReference": "Chapter 3 class-notes deck, slides 33-34",
+      "sourceReference": "Chapter 3 class-notes deck (vinci-2026-07-20-chapter-3-class-notes-source-intake.md, slides 33-34).",
+      "verificationStatus": "needs-review",
+      "uncertaintyNote": "Class-note-supported only. This is a strong candidate for completing Learn Mode's currently-empty Boarding the Liferaft topic.",
+      "learnModeMapping": "Boarding the Liferaft (topic 10)"
+    },
+    {
+      "id": "q-ch3cn-boarding-from-sea-technique",
+      "topicId": "chapter-3-using-liferafts",
+      "prompt": "When boarding a liferaft from the sea, what should you grab to steady yourself, and what should you specifically avoid grabbing?",
+      "choices": [
+        { "id": "a", "text": "Grab the internal lifelines; avoid grabbing the canopy, since it tears easily" },
+        { "id": "b", "text": "Grab the canopy for leverage; avoid the internal lifelines, which aren't rated for that load", "misconception": "Reverses the guidance -- the canopy is specifically the thing to avoid grabbing, since it will tear." },
+        { "id": "c", "text": "Grab the towing bridle; avoid the boarding ladder entirely", "misconception": "Contradicts the described technique, which specifically has you place your feet on the boarding ladder first." },
+        { "id": "d", "text": "Grab the external lifelines only; internal lifelines are for occupants already aboard", "misconception": "Misapplies the internal/external lifeline distinction -- a swimmer actively boarding reaches for the internal lifeline once at the entrance." }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "medium",
+      "hints": ["One structure is built to bear a person's weight; the other is thin fabric that isn't."],
+      "explanation": "The class-notes deck describes boarding from the sea: place your feet on the boarding ladder, reach inside and grab the internal lifelines (which help steady you in rough water), then pull yourself headfirst into the raft -- but do not grab the canopy, since it will tear easily.",
+      "slideReference": "Chapter 3 class-notes deck, slide 34",
+      "sourceReference": "Chapter 3 class-notes deck (vinci-2026-07-20-chapter-3-class-notes-source-intake.md, slide 34).",
+      "verificationStatus": "needs-review",
+      "uncertaintyNote": "Class-note-supported only. Complements the already-live q-quizr1-internal-vs-external-lifelines, which this question does not duplicate (that question tests the internal/external distinction in the abstract; this one tests the specific boarding technique).",
+      "learnModeMapping": "Boarding the Liferaft (topic 10)"
+    }
+  ]
+}
