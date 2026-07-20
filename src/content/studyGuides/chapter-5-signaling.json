@@ -1,7 +1,7 @@
 {
   "topicId": "chapter-5-signaling",
   "title": "Chapter 5 — Signaling to Attract Attention: Detailed Study Guide",
-  "published": false,
+  "published": true,
   "lastReconciled": "2026-07-18",
   "reconciliationNote": "Reconciled against the Water Survival Student Manual excerpt (vinci-2026-07-14-chapter-5-source-intake.md, manual pages 120-132) and the already-verified Chapter 5 Learn Mode content and question bank in course.json. Facts confirmed against those sources are tagged verificationStatus \"source-backed-study\". Facts drawn only from the original U.S. Coast Guard / IMO draft sources, not yet confirmed against Vinci's manual, are tagged \"official-source-supported\" or \"needs-review\". See vinci-chapter-5-study-guide-reconciliation-report.md for the full audit.",
   "sections": [
