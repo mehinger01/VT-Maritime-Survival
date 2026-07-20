@@ -9,613 +9,35 @@
   "sourceHandlingNotes": "Every fact used below is directly stated in the source manual excerpt (pages 134-141); no OCR-uncertain figure was drafted into a question (see the source intake's OCR-uncertainty section -- everything in this batch was ultimately resolved, unlike the Chapter 5 batch). Checked against all 15 live chapter-6-being-rescued questions before drafting -- content already tested live (static-discharge reasoning, one-at-a-time-boarding reasoning, hypothermic-patient sling avoidance, general crew-directs-the-rescue framing) was deliberately not re-drafted; this pack focuses on the substantial content from these 8 pages that has zero existing live-question coverage (Stokes Litter procedure, Medical Evacuation checklists, lifeboat-maintenance safety, hoist-operations specifics, etc.).",
   "questions": [
     {
-      "id": "q-ch6man-stepoff-crest-timing",
-      "topicId": "chapter-6-being-rescued",
-      "prompt": "When should a survivor step off a survival craft onto a rescue craft (e.g., climbing a ladder or net)?",
-      "choices": [
-        {"id": "a", "text": "Only when the survival craft is on the crest or top of a swell"},
-        {"id": "b", "text": "Only when the survival craft is in the trough, at the bottom of a swell", "misconception": "Reverses the correct timing -- stepping off in the trough is when the survival craft is most likely to be lifted up by the next wave and strike the survivor."},
-        {"id": "c", "text": "As soon as the rescue craft is alongside, regardless of wave position", "misconception": "Ignores wave timing entirely, which is the specific safety factor the manual calls out."},
-        {"id": "d", "text": "Only after the rescue crew has physically pulled the survival craft alongside and tied it off", "misconception": "Describes a securing step not mentioned in the source, and misses the actual timing guidance about swell position."}
-      ],
-      "correctChoiceId": "a",
-      "difficulty": "hard",
-      "hints": ["Think about which wave position drops the survival craft away from you as you climb, versus which position could raise it up into you."],
-      "explanation": "Step off the survival craft onto the rescue craft only when the survival craft is on the crest or top of a swell -- this drops the survival craft down while you're climbing the ladder or net. Otherwise there's danger of the boat or raft being raised up by a wave and hitting you.",
-      "sourceReference": "Chapter 6 manual source intake, \"Rescued at Last!\" section (manual page ~134); see src/content/imports/vinci-2026-07-18-chapter-6-source-intake.md",
-      "verificationStatus": "draft-unverified"
-    },
-    {
-      "id": "q-ch6man-continue-rationing-after-spotted",
-      "topicId": "chapter-6-being-rescued",
-      "prompt": "After being spotted by an aircraft that reports your position to the Coast Guard, what should survivors continue to do?",
-      "choices": [
-        {"id": "a", "text": "Continue to ration food and water, since it may still be some time before a helicopter or ship arrives"},
-        {"id": "b", "text": "Consume all remaining food and water immediately, since rescue is now guaranteed", "misconception": "Assumes being spotted means rescue is imminent, when the source specifically warns it may still take time."},
-        {"id": "c", "text": "Stop signaling entirely, since the survival craft's position is already known", "misconception": "Ignores that continued visibility may still help the actual rescue vessel/aircraft close the final distance."},
-        {"id": "d", "text": "Deploy all remaining flares at once to confirm the position", "misconception": "Wastes finite signaling resources on a position that's already been reported, contradicting the signal-conservation principle taught elsewhere in this course."}
-      ],
-      "correctChoiceId": "a",
-      "difficulty": "easy",
-      "hints": ["Being spotted and being rescued are two different moments -- what's the gap between them?"],
-      "explanation": "Once you have been spotted, the ordeal is not necessarily over. An aircraft may spot your survival craft and report your position to the Coast Guard, but it may be some time before a helicopter or ship can get to you -- you will need to continue to ration food and water.",
-      "sourceReference": "Chapter 6 manual source intake, \"Rescued at Last!\" section (manual page ~134); see src/content/imports/vinci-2026-07-18-chapter-6-source-intake.md",
-      "verificationStatus": "draft-unverified"
-    },
-    {
-      "id": "q-ch6man-dont-swim-unless-necessary",
-      "topicId": "chapter-6-being-rescued",
-      "prompt": "Why does the manual recommend that survivors avoid swimming during the rescue itself unless necessary?",
-      "choices": [
-        {"id": "a", "text": "Survivors may need their remaining strength to climb a ladder or pull themselves up to a rescue craft"},
-        {"id": "b", "text": "Swimming is prohibited by international regulation during an active rescue", "misconception": "Invents a regulatory basis; the manual's stated reason is about conserving physical strength, not a rule against swimming itself."},
-        {"id": "c", "text": "Rescue crews are not trained to assist swimming survivors", "misconception": "Contradicts the broader theme of this chapter, where rescue crews actively assist survivors in many ways."},
-        {"id": "d", "text": "Swimming makes a survivor harder to spot visually", "misconception": "Introduces a visibility concern not stated in the source; the manual's reasoning is about physical strength conservation."}
-      ],
-      "correctChoiceId": "a",
-      "difficulty": "easy",
-      "hints": ["What physical task does the manual say a survivor may still need to do during the rescue itself?"],
-      "explanation": "You may need enough strength to climb a ladder or pull yourself up to a rescue craft -- save your strength and don't swim unless it is necessary.",
-      "sourceReference": "Chapter 6 manual source intake, \"Rescued at Last!\" section (manual page ~134); see src/content/imports/vinci-2026-07-18-chapter-6-source-intake.md",
-      "verificationStatus": "draft-unverified"
-    },
-    {
-      "id": "q-ch6man-rotor-wind-speed",
-      "topicId": "chapter-6-being-rescued",
-      "prompt": "Roughly how strong can the wind generated by a helicopter's rotor system be, and why does this matter for a survival craft or vessel deck?",
-      "choices": [
-        {"id": "a", "text": "Over seventy knots -- all loose gear on deck must be securely tied down or stowed below, since loose objects blown into the rotor could destroy it"},
-        {"id": "b", "text": "About twenty knots -- enough to be noticeable but not requiring any special precautions", "misconception": "Significantly understates the manual's stated figure and the resulting safety precaution."},
-        {"id": "c", "text": "Over seventy knots, but this only matters for the helicopter's own equipment, not anything on deck", "misconception": "Correctly recalls the wind figure but drops the actual reason it matters -- loose deck gear becoming a hazard to the rotor."},
-        {"id": "d", "text": "It varies too much to give a general figure, so no specific precaution is given", "misconception": "Incorrectly claims no figure or precaution is given, when the source states both explicitly."}
-      ],
-      "correctChoiceId": "a",
-      "difficulty": "medium",
-      "hints": ["This is one of the first safety facts given at the very start of the Helicopter Hoist Procedures section."],
-      "explanation": "The wind developed by the helicopter rotor system can be over seventy knots. That is why it is important to have all loose gear on deck securely tied down or stowed below decks -- the rotor system could be destroyed if any loose objects are blown into the rotor during the hoist.",
-      "sourceReference": "Chapter 6 manual source intake, \"Helicopter Hoist Procedures\" intro (manual page ~134); see src/content/imports/vinci-2026-07-18-chapter-6-source-intake.md",
-      "verificationStatus": "draft-unverified"
-    },
-    {
-      "id": "q-ch6man-four-hoist-methods",
-      "topicId": "chapter-6-being-rescued",
-      "prompt": "What are the four ways a Coast Guard helicopter might be used to rescue survivors or evacuate injured mariners, according to the manual?",
-      "choices": [
-        {"id": "a", "text": "Rescue basket, rescue sling, Stokes litter, and ship landing"},
-        {"id": "b", "text": "Rescue basket, rescue net, cargo hoist, and rope ladder", "misconception": "Substitutes two devices (rescue net, cargo hoist) that aren't among the manual's four listed methods."},
-        {"id": "c", "text": "Rescue swimmer, rescue basket, rescue sling, and Stokes litter", "misconception": "Adds a rescue swimmer as one of the four listed methods, which the manual's list does not include; a rescue swimmer isn't part of this specific four-item list."},
-        {"id": "d", "text": "Rescue sling, Stokes litter, ship landing, and vessel transfer by heaving line", "misconception": "Substitutes a heaving-line vessel transfer, which is not part of this helicopter-specific four-item list, for the missing rescue basket."}
-      ],
-      "correctChoiceId": "a",
-      "difficulty": "easy",
-      "hints": ["Each of these four gets its own dedicated subsection later in this part of the chapter."],
-      "explanation": "There are four ways a Coast Guard helicopter might be used to rescue survivors or evacuate injured mariners: (1) rescue basket, (2) rescue sling, (3) Stokes litter, and (4) ship landing.",
-      "sourceReference": "Chapter 6 manual source intake, \"Helicopter Hoist Procedures\" intro (manual page ~134); see src/content/imports/vinci-2026-07-18-chapter-6-source-intake.md",
-      "verificationStatus": "draft-unverified"
-    },
-    {
-      "id": "q-ch6man-basket-one-at-a-time",
-      "topicId": "chapter-6-being-rescued",
-      "prompt": "Per the manual's Rescue Basket section, how many people are normally in the basket at once?",
-      "choices": [
-        {"id": "a", "text": "One person at a time, unless there is an emergency"},
-        {"id": "b", "text": "Two people at a time, to balance the basket's weight", "misconception": "Invents a weight-balancing rule not stated in the source; the manual's default is a single occupant."},
-        {"id": "c", "text": "As many as can physically fit", "misconception": "Contradicts the manual's explicit one-at-a-time default."},
-        {"id": "d", "text": "It depends entirely on the specific helicopter model, with no general rule given", "misconception": "Incorrectly claims no general rule is given, when the source states one directly."}
-      ],
-      "correctChoiceId": "a",
-      "difficulty": "medium",
-      "hints": ["The manual gives one specific exception to the normal rule."],
-      "explanation": "The U.S. Coast Guard usually uses a rescue basket for survivors who can help themselves. Unless there is an emergency, only one person at a time gets in the basket.",
-      "sourceReference": "Chapter 6 manual source intake, \"Rescue Basket\" section (manual page ~135); see src/content/imports/vinci-2026-07-18-chapter-6-source-intake.md",
-      "verificationStatus": "draft-unverified"
-    },
-    {
-      "id": "q-ch6man-sling-description",
-      "topicId": "chapter-6-being-rescued",
-      "prompt": "How is a rescue sling worn?",
-      "choices": [
-        {"id": "a", "text": "As a padded loop placed over the body and underneath the armpits, with the arms held around the sling"},
-        {"id": "b", "text": "As a full-body harness with separate leg loops, similar to a climbing harness", "misconception": "Describes a different kind of rescue hardware; the manual describes a simple padded loop, not a leg-loop harness."},
-        {"id": "c", "text": "Wrapped around the waist only, with the arms left completely free", "misconception": "Places the loop at the wrong body position -- the manual specifically describes it going underneath the armpits, not around the waist."},
-        {"id": "d", "text": "Held in the hands like a rope, without being placed around the body at all", "misconception": "Removes the body-support element entirely, contradicting the manual's description of a loop placed over the body."}
-      ],
-      "correctChoiceId": "a",
-      "difficulty": "medium",
-      "hints": ["Where on the body does the loop sit, and what do the arms do?"],
-      "explanation": "The rescue sling is just a padded loop which is placed over the body and underneath the armpits. The arms are held around the sling.",
-      "sourceReference": "Chapter 6 manual source intake, \"Rescue Sling\" section (manual page ~135); see src/content/imports/vinci-2026-07-18-chapter-6-source-intake.md",
-      "verificationStatus": "draft-unverified"
-    },
-    {
-      "id": "q-ch6man-sling-usage-comparison",
-      "topicId": "chapter-6-being-rescued",
-      "prompt": "How does the U.S. Coast Guard's use of the rescue sling compare to other countries' rescue helicopters?",
-      "choices": [
-        {"id": "a", "text": "The rescue sling is used by rescue helicopters from other countries more often than it is used by the U.S. Coast Guard"},
-        {"id": "b", "text": "The U.S. Coast Guard uses the rescue sling more often than any other country's rescue helicopters", "misconception": "Reverses the manual's stated comparison."},
-        {"id": "c", "text": "The rescue sling is exclusively used by the U.S. Coast Guard and not carried by other countries' helicopters", "misconception": "Contradicts the manual, which states the sling is carried onboard helicopters generally and used more by other countries."},
-        {"id": "d", "text": "The manual does not compare usage between countries", "misconception": "Incorrectly claims no comparison is given, when the source states one directly."}
-      ],
-      "correctChoiceId": "a",
-      "difficulty": "hard",
-      "hints": ["This is a specific comparative fact, not just a description of the device itself."],
-      "explanation": "A rescue sling is carried onboard helicopters. It is used by rescue helicopters from other countries more often than it is used by the U.S. Coast Guard.",
-      "sourceReference": "Chapter 6 manual source intake, \"Rescue Sling\" section (manual page ~135); see src/content/imports/vinci-2026-07-18-chapter-6-source-intake.md",
-      "verificationStatus": "draft-unverified"
-    },
-    {
-      "id": "q-ch6man-litter-usage",
-      "topicId": "chapter-6-being-rescued",
-      "prompt": "When is a Stokes litter usually used to hoist a survivor?",
-      "choices": [
-        {"id": "a", "text": "For survivors with serious injuries or illnesses, or who are unable to walk"},
-        {"id": "b", "text": "For all survivors regardless of condition, as the default hoisting method", "misconception": "Overgeneralizes -- the manual specifically ties the litter to serious injury, illness, or inability to walk, not to every survivor."},
-        {"id": "c", "text": "Only for survivors who specifically request it", "misconception": "Invents a request-based criterion not stated in the source; the manual bases litter use on medical condition."},
-        {"id": "d", "text": "Only when both the rescue basket and rescue sling are unavailable", "misconception": "Invents an availability-based fallback criterion not stated in the source."}
-      ],
-      "correctChoiceId": "a",
-      "difficulty": "easy",
-      "hints": ["Compare this to the rescue basket, which is for survivors who can help themselves."],
-      "explanation": "A litter will usually be used to hoist those who have serious injuries, illnesses, or who are unable to walk.",
-      "sourceReference": "Chapter 6 manual source intake, \"Stokes Litter\" section (manual page ~136); see src/content/imports/vinci-2026-07-18-chapter-6-source-intake.md",
-      "verificationStatus": "draft-unverified"
-    },
-    {
-      "id": "q-ch6man-litter-loading-procedure",
-      "topicId": "chapter-6-being-rescued",
-      "prompt": "What is the correct sequence for loading a patient into a Stokes litter?",
-      "choices": [
-        {"id": "a", "text": "Disconnect and spread out the straps, remove the blankets, put the patient in and cover with the blankets, then snugly fasten the straps with the pad on top of the chest"},
-        {"id": "b", "text": "Fasten all the straps first, then place the patient on top of the fastened straps", "misconception": "Reverses the correct order -- the straps must be disconnected and spread out before the patient is placed in the litter, not fastened first."},
-        {"id": "c", "text": "Place the patient in without removing the blankets already stored in the litter", "misconception": "Skips the blanket-removal step, which the manual specifically calls for before the patient is placed in."},
-        {"id": "d", "text": "Have the patient load themselves into the litter without crew assistance", "misconception": "Contradicts the manual, which states it's necessary to get help from other crew members to use the litter."}
-      ],
-      "correctChoiceId": "a",
-      "difficulty": "medium",
-      "hints": ["Think about what has to happen to the straps and blankets before the patient goes in, versus after."],
-      "explanation": "To use the litter it is necessary to get help from other crew members. The straps must be disconnected and spread out, and the blankets must be removed. The patient should be put in and covered with the blankets. The straps are then snugly fastened with the pad on top of the chest.",
-      "sourceReference": "Chapter 6 manual source intake, \"Stokes Litter\" section (manual page ~136); see src/content/imports/vinci-2026-07-18-chapter-6-source-intake.md",
-      "verificationStatus": "draft-unverified"
-    },
-    {
-      "id": "q-ch6man-litter-cable-hook-safety",
-      "topicId": "chapter-6-being-rescued",
-      "prompt": "SCENARIO: A Stokes litter must be taken below decks to reach an injured patient. What must be done to the cable hook before the litter is moved below decks, and why?",
-      "choices": [
-        {"id": "a", "text": "The litter must be unhooked from the cable, and the cable hook must not be attached to any part of the vessel -- the helicopter may need to move unexpectedly if it has its own emergency"},
-        {"id": "b", "text": "The cable hook should be tied off to a secure point on the vessel so it isn't lost while the litter is below decks", "misconception": "Directly contradicts the manual's explicit instruction that the cable hook must not be attached to any part of the vessel."},
-        {"id": "c", "text": "Nothing needs to change -- the litter can be taken below decks while still attached to the cable", "misconception": "Ignores the manual's specific instruction to unhook the litter before taking it below decks."},
-        {"id": "d", "text": "The cable must be fully retracted into the helicopter before the litter goes below decks", "misconception": "Invents a cable-retraction requirement not stated in the source; the actual requirement is about not securing the hook to the vessel."}
-      ],
-      "correctChoiceId": "a",
-      "difficulty": "very-hard",
-      "hints": ["Why would a helicopter need freedom to move unexpectedly while its cable is lowered?"],
-      "explanation": "If the litter has to be taken below decks to the patient, it must be unhooked from the cable. The cable hook must not be attached to any part of the vessel. There is always a possibility that there may be an emergency onboard the helicopter itself, and it may have to move unexpectedly -- to decrease this danger, the pilot may hover off to one side of the vessel while waiting.",
-      "sourceReference": "Chapter 6 manual source intake, \"Stokes Litter\" section (manual page ~136); see src/content/imports/vinci-2026-07-18-chapter-6-source-intake.md",
-      "verificationStatus": "draft-unverified"
-    },
-    {
-      "id": "q-ch6man-steadying-line-purpose",
-      "topicId": "chapter-6-being-rescued",
-      "prompt": "What is the purpose of tending a steadying line attached to a rescue basket, sling, or litter?",
-      "choices": [
-        {"id": "a", "text": "To stop the rescue device from swinging too much"},
-        {"id": "b", "text": "To help the helicopter maintain a stable hover position", "misconception": "Misattributes the steadying line's function to helicopter stability, when it's actually about controlling the rescue device itself."},
-        {"id": "c", "text": "To transmit hand signals between the deck crew and the helicopter", "misconception": "Confuses the steadying line's physical function with a signaling method; the manual describes it purely as a physical control on the device's motion."},
-        {"id": "d", "text": "To provide a backup electrical ground in addition to the static discharge on contact", "misconception": "Invents an electrical function for the steadying line; the manual describes it only as controlling swing/motion."}
-      ],
-      "correctChoiceId": "a",
-      "difficulty": "medium",
-      "hints": ["This appears twice in the source -- once as a general rule, and again as one of the numbered hoist-operation steps."],
-      "explanation": "If a steadying line is attached to the basket, rescue sling, or litter, it must be tended. This will stop the rescue device from swinging too much.",
-      "sourceReference": "Chapter 6 manual source intake, general hoist safety notes (manual page ~136); see src/content/imports/vinci-2026-07-18-chapter-6-source-intake.md",
-      "verificationStatus": "draft-unverified"
-    },
-    {
-      "id": "q-ch6man-ship-landing-marking",
-      "topicId": "chapter-6-being-rescued",
-      "prompt": "How is a helicopter landing area marked on the deck of a large merchant ship?",
-      "choices": [
-        {"id": "a", "text": "A large letter H marks the landing area"},
-        {"id": "b", "text": "A painted orange circle with no lettering", "misconception": "Invents a marking scheme not described in the source, which specifically describes a large H."},
-        {"id": "c", "text": "A flashing red light at each corner of the landing area", "misconception": "Invents a lighting-based marking scheme not described in the source."},
-        {"id": "d", "text": "Landing areas are not marked; the pilot relies entirely on radio guidance", "misconception": "Contradicts the manual, which describes a specific visual marking (a large H)."}
-      ],
-      "correctChoiceId": "a",
-      "difficulty": "easy",
-      "hints": ["Think of a standard helipad marking you might recognize from other contexts too."],
-      "explanation": "Some very large merchant ships have a helicopter landing area on deck -- the helicopter actually lands on the deck of the ship. A large H marks the landing area, for example on the fantail of a tanker.",
-      "sourceReference": "Chapter 6 manual source intake, \"Ship Landing\" section (manual page ~137); see src/content/imports/vinci-2026-07-18-chapter-6-source-intake.md",
-      "verificationStatus": "draft-unverified"
-    },
-    {
-      "id": "q-ch6man-hoist-ship-course-angle",
-      "topicId": "chapter-6-being-rescued",
-      "prompt": "During helicopter hoist operations, how should the ship's course be set relative to the wind, and why?",
-      "choices": [
-        {"id": "a", "text": "With the wind about 30 degrees on the bow, preferably the port bow -- this eases the ship's motion and keeps stack gases clear of the hoist area"},
-        {"id": "b", "text": "With the wind directly astern, to give the helicopter a tailwind for departure", "misconception": "Describes a different wind angle not supported by the source, and misses the actual stated reasons (easier ship motion, clear stack gases)."},
-        {"id": "c", "text": "With the wind directly on the bow (0 degrees), for maximum stability", "misconception": "Overstates the angle -- the manual specifies about 30 degrees, not a direct head-on approach."},
-        {"id": "d", "text": "The ship's course doesn't matter as long as speed is reduced", "misconception": "Ignores the specific course/wind-angle guidance the manual gives, focusing only on speed."}
-      ],
-      "correctChoiceId": "a",
-      "difficulty": "hard",
-      "hints": ["Two separate reasons are given: one about how the ship rides, and one about keeping something specific clear of the hoist area."],
-      "explanation": "The ship's course should be changed so the ship rides as easily as possible with the wind about 30° on the bow (preferably the port bow). The course should keep stack gases clear of the hoist area. Once the course is established, it should be maintained.",
-      "sourceReference": "Chapter 6 manual source intake, \"Hoist Operations\" step 6 (manual page ~138); see src/content/imports/vinci-2026-07-18-chapter-6-source-intake.md",
-      "verificationStatus": "draft-unverified"
-    },
-    {
-      "id": "q-ch6man-hoist-litter-strapping",
-      "topicId": "chapter-6-being-rescued",
-      "prompt": "When a patient has been placed in the helicopter's litter during a hoist operation, how should they be secured?",
-      "choices": [
-        {"id": "a", "text": "Strapped in face up, with their life jacket on if their condition permits"},
-        {"id": "b", "text": "Strapped in face down, to protect the airway from any water exposure during the lift", "misconception": "Reverses the correct orientation -- the manual specifically calls for the patient to be strapped in face up."},
-        {"id": "c", "text": "Left unstrapped so crew can quickly adjust their position during the lift", "misconception": "Omits the strapping requirement entirely, which the manual states explicitly."},
-        {"id": "d", "text": "Strapped in with the life jacket removed, regardless of condition, to reduce bulk during the lift", "misconception": "Reverses the manual's guidance -- the life jacket should stay on if the patient's condition permits, not be removed."}
-      ],
-      "correctChoiceId": "a",
-      "difficulty": "medium",
-      "hints": ["Two details are specified: body orientation, and what safety equipment stays on."],
-      "explanation": "When the patient has been put in the helicopter's litter, be sure they are strapped in face up, with their life jacket on if their condition permits.",
-      "sourceReference": "Chapter 6 manual source intake, \"Hoist Operations\" step 3 (manual page ~138); see src/content/imports/vinci-2026-07-18-chapter-6-source-intake.md",
-      "verificationStatus": "draft-unverified"
-    },
-    {
-      "id": "q-ch6man-hoist-patient-tagging",
-      "topicId": "chapter-6-being-rescued",
-      "prompt": "What should a patient be tagged with before being transferred to a helicopter during a hoist operation?",
-      "choices": [
-        {"id": "a", "text": "An indication of what medication, if any, was given and when it was given"},
-        {"id": "b", "text": "Their full name and next of kin contact information only", "misconception": "Substitutes identity/contact information for the specific medication-tracking purpose the manual describes."},
-        {"id": "c", "text": "A weight estimate, to help the helicopter crew plan the lift", "misconception": "Invents a weight-tagging requirement not stated in the source."},
-        {"id": "d", "text": "The name of the vessel they are being transferred from", "misconception": "Substitutes vessel identification for the specific medication-tracking purpose the manual describes."}
-      ],
-      "correctChoiceId": "a",
-      "difficulty": "medium",
-      "hints": ["This tag is specifically about something given to the patient before the transfer."],
-      "explanation": "Be sure that the patient is tagged to indicate what medication, if any, was given to them and when it was given.",
-      "sourceReference": "Chapter 6 manual source intake, \"Hoist Operations\" step 4 (manual page ~138); see src/content/imports/vinci-2026-07-18-chapter-6-source-intake.md",
-      "verificationStatus": "draft-unverified"
-    },
-    {
-      "id": "q-ch6man-hoist-medical-records",
-      "topicId": "chapter-6-being-rescued",
-      "prompt": "Besides the patient themselves, what else should be ready to transfer with them during a hoist operation?",
-      "choices": [
-        {"id": "a", "text": "Their medical records and any necessary papers, in an envelope or package"},
-        {"id": "b", "text": "A spare set of dry clothing only", "misconception": "Substitutes clothing for the specific documentation the manual calls for."},
-        {"id": "c", "text": "Nothing else needs to be transferred with the patient", "misconception": "Contradicts the manual, which specifically calls for medical records and papers to be ready."},
-        {"id": "d", "text": "The ship's own first aid kit, in its entirety", "misconception": "Substitutes shipboard equipment for the specific documentation the manual calls for."}
-      ],
-      "correctChoiceId": "a",
-      "difficulty": "easy",
-      "hints": ["Think paperwork, not equipment."],
-      "explanation": "Have the patient's medical records and any necessary papers in an envelope or package ready to be transferred with them.",
-      "sourceReference": "Chapter 6 manual source intake, \"Hoist Operations\" step 5 (manual page ~138); see src/content/imports/vinci-2026-07-18-chapter-6-source-intake.md",
-      "verificationStatus": "draft-unverified"
-    },
-    {
-      "id": "q-ch6man-hoist-comeon-signal",
-      "topicId": "chapter-6-being-rescued",
-      "prompt": "If you do not have radio contact with the helicopter when ready to begin a hoist operation, how do you signal it to come in?",
-      "choices": [
-        {"id": "a", "text": "With a \"come on\" hand signal; at night, use a flashlight to give the same \"come on\" signal"},
-        {"id": "b", "text": "By firing a flare directly toward the helicopter", "misconception": "Suggests firing a pyrotechnic at the helicopter, which is unsafe and unrelated to the manual's described hand/flashlight signal."},
-        {"id": "c", "text": "By flashing the ship's navigation lights on and off repeatedly", "misconception": "Substitutes navigation lights for the specific hand signal (or flashlight at night) the manual describes."},
-        {"id": "d", "text": "There is no way to signal the helicopter without radio contact", "misconception": "Contradicts the manual, which describes a specific non-radio signaling method."}
-      ],
-      "correctChoiceId": "a",
-      "difficulty": "medium",
-      "hints": ["One method for day, and a related variation for night."],
-      "explanation": "If you do not have radio contact when you are ready to begin the hoist operation, signal the helicopter in with a \"come on\" signal by hand. If the hoist is at night, use a flashlight to signal \"come on\".",
-      "sourceReference": "Chapter 6 manual source intake, \"Hoist Operations\" step 8 (manual page ~138); see src/content/imports/vinci-2026-07-18-chapter-6-source-intake.md",
-      "verificationStatus": "draft-unverified"
-    },
-    {
-      "id": "q-ch6man-hoist-cable-not-secured",
-      "topicId": "chapter-6-being-rescued",
-      "prompt": "SCENARIO: A litter needs to be taken away from the hoist area while still connected to the helicopter's hoist cable. What is the correct procedure?",
-      "choices": [
-        {"id": "a", "text": "Unhook the hoist cable and keep it free so the helicopter can haul it in -- do not secure the hoist cable to the ship or try to move the litter without unhooking it, and the hoist line should be slack before the basket or stretcher is reconnected"},
-        {"id": "b", "text": "Secure the hoist cable to a strong point on the ship so it doesn't swing while the litter is moved", "misconception": "Directly contradicts the manual's explicit instruction not to secure the hoist cable to the ship."},
-        {"id": "c", "text": "Keep the litter connected to the cable and move it together with the cable still attached", "misconception": "Contradicts the manual's instruction to unhook the cable before moving the litter away from the hoist area."},
-        {"id": "d", "text": "Signal the helicopter to land immediately whenever the litter needs to move away from the hoist area", "misconception": "Introduces an unnecessary landing requirement not described in the source's actual procedure."}
-      ],
-      "correctChoiceId": "a",
-      "difficulty": "very-hard",
-      "hints": ["This step has two separate \"do not\" warnings packed into it -- both about what NOT to do with the cable."],
-      "explanation": "If it is necessary to take the litter away from the hoist area, unhook the hoist cable and keep it free so the helicopter can haul it in. Do not secure the hoist cable to the ship or try to move the litter without unhooking it! The hoist line should be slack before the basket or stretcher is reconnected.",
-      "sourceReference": "Chapter 6 manual source intake, \"Hoist Operations\" step 12 (manual page ~138); see src/content/imports/vinci-2026-07-18-chapter-6-source-intake.md",
-      "verificationStatus": "draft-unverified"
-    },
-    {
-      "id": "q-ch6man-hoist-ready-signal",
-      "topicId": "chapter-6-being-rescued",
-      "prompt": "How does a patient or deck personnel signal the hoist operator that they are ready for the hoist?",
-      "choices": [
-        {"id": "a", "text": "The patient nods their head if able, or deck personnel give a \"thumbs up\" signal"},
-        {"id": "b", "text": "By waving both arms overhead in a wide circular motion", "misconception": "Substitutes a different arm-waving signal (associated elsewhere with attracting attention generally) for the specific ready-for-hoist signals the manual describes."},
-        {"id": "c", "text": "By shouting \"ready\" as loudly as possible", "misconception": "Ignores that voice commands can't be heard over helicopter noise, which is exactly why nonverbal signals are used."},
-        {"id": "d", "text": "Only deck personnel can give a ready signal -- the patient has no way to indicate readiness", "misconception": "Omits the patient's own head-nod option, which the manual specifically includes."}
-      ],
-      "correctChoiceId": "a",
-      "difficulty": "medium",
-      "hints": ["Remember that voice commands don't work here -- both listed signals are nonverbal."],
-      "explanation": "Signal the hoist operator when you're ready for the hoist. The patient can signal by nodding their head if they are able, or the deck personnel can give the \"thumbs up\" signal.",
-      "sourceReference": "Chapter 6 manual source intake, \"Hoist Operations\" step 11 (manual page ~138); see src/content/imports/vinci-2026-07-18-chapter-6-source-intake.md",
-      "verificationStatus": "draft-unverified"
-    },
-    {
-      "id": "q-ch6man-hoist-steadying-line-feet",
-      "topicId": "chapter-6-being-rescued",
-      "prompt": "If a steadying line is attached to the basket or litter during a hoist, what precaution should deck personnel take regarding the line?",
-      "choices": [
-        {"id": "a", "text": "Use it to keep the basket or litter from turning or swinging, and keep feet clear of the line"},
-        {"id": "b", "text": "Wrap the line around a hand for a firmer grip while guiding the device", "misconception": "Introduces an entanglement hazard; the manual's specific precaution is about keeping feet clear, and gripping technique isn't described this way."},
-        {"id": "c", "text": "Tie the line off to a fixed deck fitting and leave it unattended once secured", "misconception": "Contradicts the general rule that a steadying line must be actively tended, not simply tied off and left."},
-        {"id": "d", "text": "Disconnect the steadying line as soon as the basket or litter touches the deck", "misconception": "Invents an immediate-disconnect step not described in the source; the line is used to control turning/swinging, not removed on contact."}
-      ],
-      "correctChoiceId": "a",
-      "difficulty": "medium",
-      "hints": ["This is the last of the 14 numbered hoist-operation steps, and it has a specific body-safety warning attached."],
-      "explanation": "If there is a steadying line attached, use it to keep the basket or litter from turning or swinging. Keep your feet clear of this line.",
-      "sourceReference": "Chapter 6 manual source intake, \"Hoist Operations\" step 14 (manual page ~138); see src/content/imports/vinci-2026-07-18-chapter-6-source-intake.md",
-      "verificationStatus": "draft-unverified"
-    },
-    {
-      "id": "q-ch6man-never-shine-lights-helicopter",
-      "topicId": "chapter-6-being-rescued",
-      "prompt": "Why should you never shine lights directly on a rescue helicopter?",
-      "choices": [
-        {"id": "a", "text": "It will blind the pilot"},
-        {"id": "b", "text": "It drains the ship's emergency battery power unnecessarily", "misconception": "Invents a power-drain concern not stated in the source; the actual reason is about blinding the pilot."},
-        {"id": "c", "text": "It interferes with the helicopter's radar", "misconception": "Invents a radar-interference concern not stated in the source; the actual reason given is a vision hazard to the pilot."},
-        {"id": "d", "text": "It has no real effect, but is discouraged purely by convention", "misconception": "Understates a genuine, stated safety hazard as a mere convention."}
-      ],
-      "correctChoiceId": "a",
-      "difficulty": "medium",
-      "hints": ["This exact warning appears twice in the source material -- once for the general hoist and again in the Medical Evacuation checklist."],
-      "explanation": "Never shine lights on the helicopter -- it will blind the pilot.",
-      "sourceReference": "Chapter 6 manual source intake, general hoist safety notes (manual page ~136) and Medical Evacuation preparations (manual page ~139); see src/content/imports/vinci-2026-07-18-chapter-6-source-intake.md",
-      "verificationStatus": "draft-unverified"
-    },
-    {
-      "id": "q-ch6man-approach-helicopter-in-water",
-      "topicId": "chapter-6-being-rescued",
-      "prompt": "When approaching a helicopter that has landed in the water, from which direction should you approach, and why?",
-      "choices": [
-        {"id": "a", "text": "From ahead or from the starboard access door, since the pilot cannot see all around the aircraft"},
-        {"id": "b", "text": "From directly astern, since that's the quietest and safest approach relative to the rotor", "misconception": "Places the approach directly behind the aircraft, which the source's approach diagram marks as a danger/prohibited zone, not the recommended approach."},
-        {"id": "c", "text": "From the port access door only, since the starboard side is reserved for equipment", "misconception": "Reverses which side door the manual recommends -- the source specifies the starboard access door."},
-        {"id": "d", "text": "From any direction, since the pilot has full visibility around the aircraft", "misconception": "Contradicts the manual's specific reasoning -- the pilot cannot see all around the aircraft, which is exactly why approach direction matters."}
-      ],
-      "correctChoiceId": "a",
-      "difficulty": "hard",
-      "hints": ["There's a diagram in the source showing DESIRED, ACCEPTABLE, PROHIBITED, and DANGER approach zones around the aircraft."],
-      "explanation": "When approaching a helicopter in the water, be sure that the helicopter crew sees you. The pilot cannot see all around their aircraft. It is best to approach from ahead or from the starboard access door.",
-      "sourceReference": "Chapter 6 manual source intake, general hoist safety notes (manual page ~136); see src/content/imports/vinci-2026-07-18-chapter-6-source-intake.md",
-      "verificationStatus": "draft-unverified"
-    },
-    {
-      "id": "q-ch6man-deflate-liferaft-roof",
-      "topicId": "chapter-6-being-rescued",
-      "prompt": "During a helicopter rescue from a liferaft, what should be done to the liferaft's roof if it is safe to do so, and why?",
-      "choices": [
-        {"id": "a", "text": "Deflate the roof of the liferaft, to reduce the danger of the raft overturning during the helicopter rescue"},
-        {"id": "b", "text": "Fully inflate the roof further, to make the raft more visible to the helicopter crew", "misconception": "Reverses the manual's guidance -- the roof should be deflated, not further inflated, and the stated reason is about overturning risk, not visibility."},
-        {"id": "c", "text": "Remove the roof entirely and discard it over the side", "misconception": "Overstates the action -- the manual specifies deflating the roof, not removing and discarding it."},
-        {"id": "d", "text": "Leave the roof exactly as it is; no action regarding the roof is described", "misconception": "Contradicts the manual, which specifically describes deflating the roof when safe to do so."}
-      ],
-      "correctChoiceId": "a",
-      "difficulty": "hard",
-      "hints": ["Think about what an inflated, wind-catching roof could do to a raft during a rotor-wash-heavy helicopter rescue."],
-      "explanation": "If it is safe to do so, deflate the roof of the liferaft to reduce danger of the raft overturning during a helicopter rescue.",
-      "sourceReference": "Chapter 6 manual source intake, general hoist safety notes (manual page ~136); see src/content/imports/vinci-2026-07-18-chapter-6-source-intake.md",
-      "verificationStatus": "draft-unverified"
-    },
-    {
-      "id": "q-ch6man-medevac-request-info",
-      "topicId": "chapter-6-being-rescued",
-      "prompt": "When requesting helicopter assistance for a medical evacuation, what basic ship information should be given?",
-      "choices": [
-        {"id": "a", "text": "The ship's accurate position, its speed and course, the time, weather conditions, wind direction and velocity, and radio frequencies"},
-        {"id": "b", "text": "Only the ship's name and flag state", "misconception": "Omits nearly all of the specific navigational and environmental details the manual calls for."},
-        {"id": "c", "text": "Only the patient's medical condition -- ship information is not requested separately", "misconception": "Confuses this item with the separate medical-information item on the same checklist; both are required, not just one."},
-        {"id": "d", "text": "The number of crew aboard and the ship's cargo manifest", "misconception": "Substitutes crew count and cargo details for the specific navigational/environmental information the manual actually calls for."}
-      ],
-      "correctChoiceId": "a",
-      "difficulty": "medium",
-      "hints": ["This is the first item on the \"Requesting Helicopter Assistance\" checklist -- think about everything a rescuer would need to find and reach the ship."],
-      "explanation": "Give the ship's accurate position, its speed and course, the time, weather conditions, wind direction and velocity, radio frequencies, etc.",
-      "sourceReference": "Chapter 6 manual source intake, \"Medical Evacuation -- Requesting Helicopter Assistance\" item 1 (manual page ~139); see src/content/imports/vinci-2026-07-18-chapter-6-source-intake.md",
-      "verificationStatus": "draft-unverified"
-    },
-    {
-      "id": "q-ch6man-medevac-ambulatory-info",
-      "topicId": "chapter-6-being-rescued",
-      "prompt": "Besides general medical information, what specific detail about the victim should be included when requesting a medical evacuation?",
-      "choices": [
-        {"id": "a", "text": "Whether or not the victim is ambulatory (able to move on their own)"},
-        {"id": "b", "text": "The victim's blood type", "misconception": "Substitutes a detail not mentioned in the source for the specific ambulatory-status detail the manual calls for."},
-        {"id": "c", "text": "The victim's insurance information", "misconception": "Substitutes an administrative detail not mentioned in the source for the specific medical detail the manual calls for."},
-        {"id": "d", "text": "The victim's job title aboard the ship", "misconception": "Substitutes an occupational detail not mentioned in the source for the specific medical detail the manual calls for."}
-      ],
-      "correctChoiceId": "a",
-      "difficulty": "medium",
-      "hints": ["This detail affects which hoist device (basket vs. litter) the helicopter crew will likely use."],
-      "explanation": "Give complete medical information on the victim, including whether or not they are ambulatory (able to move on their own).",
-      "sourceReference": "Chapter 6 manual source intake, \"Medical Evacuation -- Requesting Helicopter Assistance\" item 2 (manual page ~139); see src/content/imports/vinci-2026-07-18-chapter-6-source-intake.md",
-      "verificationStatus": "draft-unverified"
-    },
-    {
-      "id": "q-ch6man-medevac-beyond-range",
-      "topicId": "chapter-6-being-rescued",
-      "prompt": "SCENARIO: A ship requesting a medical evacuation is currently beyond the responding helicopter's range. What should the ship do?",
-      "choices": [
-        {"id": "a", "text": "Tell the rescuers where the ship is going so that a meeting point can be arranged"},
-        {"id": "b", "text": "Wait at the current position regardless of range until a longer-range helicopter becomes available", "misconception": "Contradicts the manual's guidance to communicate the ship's destination so a meeting point can be arranged, rather than simply waiting."},
-        {"id": "c", "text": "Cancel the medevac request and wait for the ship to reach port", "misconception": "Abandons the evacuation entirely instead of following the manual's actual guidance to arrange a meeting point."},
-        {"id": "d", "text": "Increase speed toward the nearest airport regardless of the helicopter's stated range", "misconception": "Invents an airport-based solution not described in the source; the manual's actual guidance is about coordinating a meeting point with the rescuers."}
-      ],
-      "correctChoiceId": "a",
-      "difficulty": "hard",
-      "hints": ["The goal is coordination, not cancellation or unilateral action."],
-      "explanation": "If the ship is beyond the helicopter's range, tell the rescuers where the ship is going so that a meeting point can be arranged.",
-      "sourceReference": "Chapter 6 manual source intake, \"Medical Evacuation -- Requesting Helicopter Assistance\" item 3 (manual page ~139); see src/content/imports/vinci-2026-07-18-chapter-6-source-intake.md",
-      "verificationStatus": "draft-unverified"
-    },
-    {
-      "id": "q-ch6man-medevac-notify-changes",
-      "topicId": "chapter-6-being-rescued",
-      "prompt": "During a medical evacuation, if the patient's condition changes -- including if the patient dies before the helicopter arrives -- what should the ship do?",
-      "choices": [
-        {"id": "a", "text": "Advise the rescuers of any changes immediately, since the helicopter crew is risking their lives to help"},
-        {"id": "b", "text": "Wait until the helicopter arrives to explain any changes in person", "misconception": "Contradicts the manual's explicit instruction to notify rescuers immediately, not wait until arrival."},
-        {"id": "c", "text": "Only report changes if they improve the patient's condition", "misconception": "Invents a selective-reporting rule not stated in the source; the manual calls for reporting any changes, not just favorable ones."},
-        {"id": "d", "text": "Continue the evacuation request unchanged, since the helicopter is already committed once dispatched", "misconception": "Ignores the manual's explicit instruction to notify rescuers of changes immediately, including a patient's death."}
-      ],
-      "correctChoiceId": "a",
-      "difficulty": "medium",
-      "hints": ["The manual gives a specific, serious example of the kind of change that must be reported."],
-      "explanation": "Advise the rescuers of any other changes immediately. If the patient dies before the helicopter arrives, notify them as soon as possible. Remember, the helicopter crew is risking their lives to help you.",
-      "sourceReference": "Chapter 6 manual source intake, \"Medical Evacuation -- Requesting Helicopter Assistance\" item 4 (manual page ~139); see src/content/imports/vinci-2026-07-18-chapter-6-source-intake.md",
-      "verificationStatus": "draft-unverified"
-    },
-    {
-      "id": "q-ch6man-medevac-radio-guard",
-      "topicId": "chapter-6-being-rescued",
-      "prompt": "While preparing for a helicopter to arrive for a medical evacuation, what should be maintained continuously on the radio?",
-      "choices": [
-        {"id": "a", "text": "Continuous radio guard on Channel 16"},
-        {"id": "b", "text": "Continuous radio guard on Channel 6 only", "misconception": "Swaps in Channel 6, which this course's Chapter 5 content identifies as the ongoing SAR communications channel, not the channel specified here for continuous guard during medevac preparations."},
-        {"id": "c", "text": "A rotating watch that checks the radio only once every 30 minutes", "misconception": "Replaces the manual's continuous-guard requirement with a periodic-check schedule."},
-        {"id": "d", "text": "No specific radio channel is specified", "misconception": "Contradicts the manual, which specifies a particular channel."}
-      ],
-      "correctChoiceId": "a",
-      "difficulty": "easy",
-      "hints": ["Same channel already established elsewhere in this course as the primary distress/calling channel."],
-      "explanation": "Provide continuous radio guard on channel 16.",
-      "sourceReference": "Chapter 6 manual source intake, \"Medical Evacuation -- Preparations Prior to Arrival of the Helicopter\" item 1 (manual page ~139); see src/content/imports/vinci-2026-07-18-chapter-6-source-intake.md",
-      "verificationStatus": "draft-unverified"
-    },
-    {
-      "id": "q-ch6man-medevac-hoist-area-specs",
-      "topicId": "chapter-6-being-rescued",
-      "prompt": "When selecting and clearing a hoist area in preparation for a medical evacuation, what location and size are recommended?",
-      "choices": [
-        {"id": "a", "text": "Aft if possible, with a minimum fifty-foot radius"},
-        {"id": "b", "text": "Forward if possible, with a minimum twenty-foot radius", "misconception": "Reverses the recommended location and understates the minimum radius given in the source."},
-        {"id": "c", "text": "Amidships, with no minimum radius specified", "misconception": "Places the hoist area at the wrong location and omits the specific minimum radius the manual gives."},
-        {"id": "d", "text": "Aft if possible, with a minimum one-hundred-foot radius", "misconception": "Correctly identifies the location but significantly overstates the minimum radius figure."}
-      ],
-      "correctChoiceId": "a",
-      "difficulty": "hard",
-      "hints": ["This is a specific numeric figure -- read carefully rather than estimating."],
-      "explanation": "Select and clear a hoist area. The hoist area should be aft if possible and have a minimum fifty foot radius.",
-      "sourceReference": "Chapter 6 manual source intake, \"Medical Evacuation -- Preparations Prior to Arrival of the Helicopter\" item 2 (manual page ~139); see src/content/imports/vinci-2026-07-18-chapter-6-source-intake.md",
-      "verificationStatus": "draft-unverified"
-    },
-    {
-      "id": "q-ch6man-medevac-flags-wind-reference",
-      "topicId": "chapter-6-being-rescued",
-      "prompt": "Why does the manual recommend flying flags (away from the hoist area) while preparing for a helicopter medical evacuation?",
-      "choices": [
-        {"id": "a", "text": "Flags provide the helicopter pilot with a visual reference for the direction and force of the apparent wind"},
-        {"id": "b", "text": "Flags are required by international law during any helicopter operation", "misconception": "Invents a legal requirement not stated in the source; the manual's stated reason is about giving the pilot a wind reference."},
-        {"id": "c", "text": "Flags help the ship's own crew identify the hoist area from a distance", "misconception": "Misattributes the flags' purpose to crew orientation rather than the pilot's wind reference, and the manual specifically says flags should not be near the hoist area."},
-        {"id": "d", "text": "Flags are flown purely as a courtesy signal to the approaching helicopter crew", "misconception": "Understates the functional, wind-reference purpose described in the source as a mere courtesy."}
-      ],
-      "correctChoiceId": "a",
-      "difficulty": "medium",
-      "hints": ["Think about what a pilot needs to judge before landing or hovering near a ship."],
-      "explanation": "If possible, fly flags, but not near the hoist area. Flags will provide the helicopter pilot with a visual reference as to the direction and force of the apparent wind. If at night, shine a light on the flag so the pilot can see it.",
-      "sourceReference": "Chapter 6 manual source intake, \"Medical Evacuation -- Preparations Prior to Arrival of the Helicopter\" item 2 (manual page ~139); see src/content/imports/vinci-2026-07-18-chapter-6-source-intake.md",
-      "verificationStatus": "draft-unverified"
-    },
-    {
-      "id": "q-ch6man-medevac-night-lighting",
-      "topicId": "chapter-6-being-rescued",
-      "prompt": "If a medical evacuation hoist happens at night, what lighting guidance applies?",
-      "choices": [
-        {"id": "a", "text": "Light the lift area and any obstructions as well as possible, but do not shine any lights on the helicopter itself"},
-        {"id": "b", "text": "Turn off all deck lighting so the helicopter's own lights provide sufficient illumination", "misconception": "Contradicts the manual's instruction to actively light the lift area and any obstructions."},
-        {"id": "c", "text": "Shine every available light directly at the helicopter to make it as visible as possible", "misconception": "Directly contradicts the manual's explicit warning not to shine lights on the helicopter, since it will blind the pilot."},
-        {"id": "d", "text": "Lighting guidance is the same for day and night operations, with no special night procedure", "misconception": "Ignores the manual's specific night-only lighting guidance."}
-      ],
-      "correctChoiceId": "a",
-      "difficulty": "medium",
-      "hints": ["There's a clear distinction between what should be lit and what should specifically not be lit."],
-      "explanation": "If the hoist is at night, light the lift area as well as possible. Do not shine any lights on the helicopter, so the pilot won't be blinded. If there are any obstructions in the hoist area, light them so the pilot can see them.",
-      "sourceReference": "Chapter 6 manual source intake, \"Medical Evacuation -- Preparations Prior to Arrival of the Helicopter\" item 3 (manual page ~139); see src/content/imports/vinci-2026-07-18-chapter-6-source-intake.md",
-      "verificationStatus": "draft-unverified"
-    },
-    {
-      "id": "q-ch6man-medevac-searchlight-use",
-      "topicId": "chapter-6-being-rescued",
-      "prompt": "How should searchlights be used to help a helicopter locate a ship during a medical evacuation, and what should happen once the helicopter arrives?",
-      "choices": [
-        {"id": "a", "text": "Point searchlights at a vertical angle to help the pilot locate the ship, and secure them once the helicopter arrives"},
-        {"id": "b", "text": "Point searchlights directly at the helicopter once it is spotted, and keep them on throughout the hoist", "misconception": "Contradicts the manual's separate, explicit warning never to shine lights on the helicopter itself."},
-        {"id": "c", "text": "Point searchlights horizontally along the water's surface, and leave them on throughout the operation", "misconception": "Describes the wrong angle (horizontal rather than vertical) and omits the instruction to secure them once the helicopter arrives."},
-        {"id": "d", "text": "Searchlights should not be used at all during a medical evacuation", "misconception": "Contradicts the manual, which specifically describes a searchlight technique."}
-      ],
-      "correctChoiceId": "a",
-      "difficulty": "medium",
-      "hints": ["This is a two-part instruction: what to do before the helicopter arrives, and what to do once it does."],
-      "explanation": "Point searchlights at a vertical angle to help the pilot locate the ship. Secure them when the helicopter arrives.",
-      "sourceReference": "Chapter 6 manual source intake, \"Medical Evacuation -- Preparations Prior to Arrival of the Helicopter\" item 4 (manual page ~139); see src/content/imports/vinci-2026-07-18-chapter-6-source-intake.md",
-      "verificationStatus": "draft-unverified"
-    },
-    {
-      "id": "q-ch6man-medevac-hand-signals",
-      "topicId": "chapter-6-being-rescued",
-      "prompt": "Why does the manual recommend arranging a set of hand signals among the crew before a medical evacuation hoist?",
-      "choices": [
-        {"id": "a", "text": "The helicopter's noise level will be very high, so voice commands will not be able to be heard"},
-        {"id": "b", "text": "Hand signals are required by regulation regardless of noise conditions", "misconception": "Invents a regulatory basis; the manual's stated reason is specifically about the helicopter's noise level."},
-        {"id": "c", "text": "Radio communication is prohibited during a medical evacuation", "misconception": "Contradicts the rest of the checklist, which specifically calls for maintaining continuous radio guard."},
-        {"id": "d", "text": "Hand signals are only needed if the ship's radio has failed", "misconception": "Narrows the reason to a radio-failure scenario, when the manual's actual reason is the helicopter's high noise level regardless of radio status."}
-      ],
-      "correctChoiceId": "a",
-      "difficulty": "easy",
-      "hints": ["Think about the same noise problem mentioned earlier in the Helicopter Hoist Procedures section."],
-      "explanation": "Arrange a set of hand signals among the crew that will help you with the lift. Because the helicopter's noise level will be very high, you will not be able to hear voice commands.",
-      "sourceReference": "Chapter 6 manual source intake, \"Medical Evacuation -- Preparations Prior to Arrival of the Helicopter\" item 6 (manual page ~139); see src/content/imports/vinci-2026-07-18-chapter-6-source-intake.md",
-      "verificationStatus": "draft-unverified"
-    },
-    {
-      "id": "q-ch6man-lifeboat-accident-causes",
-      "topicId": "chapter-6-being-rescued",
-      "prompt": "What are the three most common causes of maritime accidents involving lifeboats, according to the manual?",
-      "choices": [
-        {"id": "a", "text": "Design failure, lack of maintenance, and lack of proper training"},
-        {"id": "b", "text": "Bad weather, crew fatigue, and equipment age", "misconception": "Substitutes three plausible-sounding but different causes for the manual's specific three-item list."},
-        {"id": "c", "text": "Design failure, overcrowding, and improper stowage", "misconception": "Keeps one correct item (design failure) but substitutes two causes not on the manual's specific list."},
-        {"id": "d", "text": "Lack of maintenance, lack of proper training, and insufficient crew size", "misconception": "Keeps two correct items but substitutes a third cause (crew size) not on the manual's specific list, in place of design failure."}
-      ],
-      "correctChoiceId": "a",
-      "difficulty": "medium",
-      "hints": ["Each of these three gets its own short explanation right after the list in the source."],
-      "explanation": "The most common causes of maritime accidents involving lifeboats are: Design Failure, Lack of Maintenance, and Lack of Proper Training.",
-      "sourceReference": "Chapter 6 manual source intake, \"Dangers Involved with Training, Drills and Maintenance\" section (manual page ~140); see src/content/imports/vinci-2026-07-18-chapter-6-source-intake.md",
-      "verificationStatus": "draft-unverified"
-    },
-    {
       "id": "q-ch6man-fpd-purpose",
       "topicId": "chapter-6-being-rescued",
       "prompt": "What is a Fall Preventer Device (FPD) used for?",
       "choices": [
-        {"id": "a", "text": "Preventing the lifeboat from releasing while maintenance is being conducted"},
-        {"id": "b", "text": "Preventing the lifeboat's engine from starting accidentally during storage", "misconception": "Invents an engine-related function; the FPD's actual function is about preventing accidental release of the releasing gear."},
-        {"id": "c", "text": "Cushioning the lifeboat's impact when it lands in the water during a real launch", "misconception": "Invents a landing-cushioning function; the FPD's actual purpose is to 'safe' the releasing gear during non-emergency maintenance."},
-        {"id": "d", "text": "Automatically deploying the lifeboat in an emergency without crew action", "misconception": "Describes an automatic-deployment function, the opposite of the FPD's actual purpose of preventing release."}
+        {
+          "id": "a",
+          "text": "Preventing the lifeboat from releasing while maintenance is being conducted"
+        },
+        {
+          "id": "b",
+          "text": "Preventing the lifeboat's engine from starting accidentally during storage",
+          "misconception": "Invents an engine-related function; the FPD's actual function is about preventing accidental release of the releasing gear."
+        },
+        {
+          "id": "c",
+          "text": "Cushioning the lifeboat's impact when it lands in the water during a real launch",
+          "misconception": "Invents a landing-cushioning function; the FPD's actual purpose is to 'safe' the releasing gear during non-emergency maintenance."
+        },
+        {
+          "id": "d",
+          "text": "Automatically deploying the lifeboat in an emergency without crew action",
+          "misconception": "Describes an automatic-deployment function, the opposite of the FPD's actual purpose of preventing release."
+        }
       ],
       "correctChoiceId": "a",
       "difficulty": "medium",
-      "hints": ["Think about when you'd want a lifeboat to definitely NOT release, even though the release mechanism is otherwise functional."],
+      "hints": [
+        "Think about when you'd want a lifeboat to definitely NOT release, even though the release mechanism is otherwise functional."
+      ],
       "explanation": "Most modern lifeboat installations incorporate some means to prevent the lifeboat from releasing while maintenance is being conducted. This device is called a Fall Preventer Device (FPD) and should be utilized whenever you are entering a lifeboat under non-emergency conditions for conducting maintenance.",
       "sourceReference": "Chapter 6 manual source intake, \"Fall Preventer Device\" section (manual page ~140); see src/content/imports/vinci-2026-07-18-chapter-6-source-intake.md",
       "verificationStatus": "draft-unverified"
@@ -625,102 +47,111 @@
       "topicId": "chapter-6-being-rescued",
       "prompt": "How does a Fall Preventer Device (FPD) mechanically 'safe' a lifeboat's releasing gear?",
       "choices": [
-        {"id": "a", "text": "It uses slings and shackles between the fall block ring and a shackle on the releasing gear"},
-        {"id": "b", "text": "It uses a hydraulic clamp that grips the lifeboat's keel", "misconception": "Invents a hydraulic/keel-based mechanism not described in the source, which specifically describes slings and shackles at the fall block ring."},
-        {"id": "c", "text": "It uses an electronic lock controlled from the bridge", "misconception": "Invents an electronic mechanism; the manual describes a purely mechanical sling-and-shackle arrangement."},
-        {"id": "d", "text": "It replaces the releasing gear entirely with a welded connection", "misconception": "Overstates the FPD as a permanent welded modification, rather than the removable sling-and-shackle arrangement the manual describes."}
+        {
+          "id": "a",
+          "text": "It uses slings and shackles between the fall block ring and a shackle on the releasing gear"
+        },
+        {
+          "id": "b",
+          "text": "It uses a hydraulic clamp that grips the lifeboat's keel",
+          "misconception": "Invents a hydraulic/keel-based mechanism not described in the source, which specifically describes slings and shackles at the fall block ring."
+        },
+        {
+          "id": "c",
+          "text": "It uses an electronic lock controlled from the bridge",
+          "misconception": "Invents an electronic mechanism; the manual describes a purely mechanical sling-and-shackle arrangement."
+        },
+        {
+          "id": "d",
+          "text": "It replaces the releasing gear entirely with a welded connection",
+          "misconception": "Overstates the FPD as a permanent welded modification, rather than the removable sling-and-shackle arrangement the manual describes."
+        }
       ],
       "correctChoiceId": "a",
       "difficulty": "hard",
-      "hints": ["The mechanism connects two specific hardware points -- one on the fall block, one on the releasing gear."],
+      "hints": [
+        "The mechanism connects two specific hardware points -- one on the fall block, one on the releasing gear."
+      ],
       "explanation": "FPDs are designed to 'safe' releasing gear so that it will not release accidentally. They use slings and shackles between the fall block ring and a shackle on the releasing gear.",
       "sourceReference": "Chapter 6 manual source intake, \"Fall Preventer Device\" section (manual page ~140); see src/content/imports/vinci-2026-07-18-chapter-6-source-intake.md",
       "verificationStatus": "draft-unverified"
-    },
+    }
+  ],
+  "promotionHistory": [
     {
-      "id": "q-ch6man-locking-pin-purpose",
-      "topicId": "chapter-6-being-rescued",
-      "prompt": "What does inserting the locking/maintenance pin into a lifeboat's fore/aft releasing gear accomplish?",
-      "choices": [
-        {"id": "a", "text": "With the pin inserted, the bale cannot move, preventing accidental release"},
-        {"id": "b", "text": "It locks the lifeboat's rudder in a fixed position", "misconception": "Invents a steering-related function; the pin's actual function is preventing bale movement in the releasing gear."},
-        {"id": "c", "text": "It disconnects the lifeboat's engine from its propeller shaft", "misconception": "Invents a propulsion-related function not described in the source."},
-        {"id": "d", "text": "It seals the lifeboat's hull plugs to prevent flooding during storage", "misconception": "Invents a hull-sealing function unrelated to the pin's actual purpose in the releasing gear."}
+      "promotedDate": "2026-07-20",
+      "promotedCount": 40,
+      "promotedIds": [
+        "q-ch6man-approach-helicopter-in-water",
+        "q-ch6man-basket-one-at-a-time",
+        "q-ch6man-continue-rationing-after-spotted",
+        "q-ch6man-deflate-liferaft-roof",
+        "q-ch6man-dont-swim-unless-necessary",
+        "q-ch6man-four-hoist-methods",
+        "q-ch6man-hoist-cable-not-secured",
+        "q-ch6man-hoist-comeon-signal",
+        "q-ch6man-hoist-litter-strapping",
+        "q-ch6man-hoist-medical-records",
+        "q-ch6man-hoist-patient-tagging",
+        "q-ch6man-hoist-ready-signal",
+        "q-ch6man-hoist-ship-course-angle",
+        "q-ch6man-hoist-steadying-line-feet",
+        "q-ch6man-lifeboat-accident-causes",
+        "q-ch6man-litter-cable-hook-safety",
+        "q-ch6man-litter-loading-procedure",
+        "q-ch6man-litter-usage",
+        "q-ch6man-locking-pin-purpose",
+        "q-ch6man-maintenance-check-releasing-gear",
+        "q-ch6man-maintenance-notify-oow",
+        "q-ch6man-maintenance-ppe",
+        "q-ch6man-maintenance-return-to-ready",
+        "q-ch6man-medevac-ambulatory-info",
+        "q-ch6man-medevac-beyond-range",
+        "q-ch6man-medevac-flags-wind-reference",
+        "q-ch6man-medevac-hand-signals",
+        "q-ch6man-medevac-hoist-area-specs",
+        "q-ch6man-medevac-night-lighting",
+        "q-ch6man-medevac-notify-changes",
+        "q-ch6man-medevac-radio-guard",
+        "q-ch6man-medevac-request-info",
+        "q-ch6man-medevac-searchlight-use",
+        "q-ch6man-never-shine-lights-helicopter",
+        "q-ch6man-rotor-wind-speed",
+        "q-ch6man-ship-landing-marking",
+        "q-ch6man-sling-description",
+        "q-ch6man-sling-usage-comparison",
+        "q-ch6man-steadying-line-purpose",
+        "q-ch6man-stepoff-crest-timing"
       ],
-      "correctChoiceId": "a",
-      "difficulty": "medium",
-      "hints": ["This is the same general safety idea as the FPD, but a simpler, purely mechanical pin instead."],
-      "explanation": "With the pin inserted into the fore/aft releasing gear, the bale cannot move, preventing accidental release.",
-      "sourceReference": "Chapter 6 manual source intake, \"Locking/Maintenance Pin\" section (manual page ~141); see src/content/imports/vinci-2026-07-18-chapter-6-source-intake.md",
-      "verificationStatus": "draft-unverified"
-    },
-    {
-      "id": "q-ch6man-maintenance-notify-oow",
-      "topicId": "chapter-6-being-rescued",
-      "prompt": "Before entering or conducting maintenance on a lifeboat, what should a crew member do first?",
-      "choices": [
-        {"id": "a", "text": "Notify and get permission from the Officer of the Watch/Bridge"},
-        {"id": "b", "text": "Log the maintenance in the ship's official log only after it is completed", "misconception": "Describes an after-the-fact logging step, not the manual's actual instruction to notify and get permission before entering."},
-        {"id": "c", "text": "Notify only the other maintenance crew members, without involving the bridge", "misconception": "Omits the bridge/OOW notification the manual specifically requires."},
-        {"id": "d", "text": "Wait for a scheduled maintenance window with no additional notification required", "misconception": "Replaces the specific notify-and-get-permission requirement with a scheduling-only approach."}
+      "promotedTo": "src/content/course.json (verificationStatus set to source-backed-study)",
+      "upgradedExisting": [
+        {
+          "id": "q-rescue-2",
+          "from": "None",
+          "to": "source-backed-study"
+        },
+        {
+          "id": "q-rescue-4",
+          "from": "None",
+          "to": "source-backed-study"
+        },
+        {
+          "id": "q-rescue-7",
+          "from": "official-source-supported",
+          "to": "multi-source-supported"
+        },
+        {
+          "id": "q-rescue-9",
+          "from": "None",
+          "to": "source-backed-study"
+        },
+        {
+          "id": "q-ch6-rescuesling-official-hard",
+          "from": "official-source-supported",
+          "to": "multi-source-supported"
+        }
       ],
-      "correctChoiceId": "a",
-      "difficulty": "medium",
-      "hints": ["The Bridge may know something about the ship's situation that the maintenance crew doesn't."],
-      "explanation": "Never enter or conduct maintenance on lifeboats without notifying and getting permission from the Officer of the Watch/Bridge. They may be aware of circumstances that would make it unsafe to enter the lifeboat, and need to know when the boat has been made safe for maintenance and subsequently returned to a condition ready for emergency operation.",
-      "sourceReference": "Chapter 6 manual source intake, practical safety measures (manual page ~141); see src/content/imports/vinci-2026-07-18-chapter-6-source-intake.md",
-      "verificationStatus": "draft-unverified"
-    },
-    {
-      "id": "q-ch6man-maintenance-ppe",
-      "topicId": "chapter-6-being-rescued",
-      "prompt": "What personal protective equipment (PPE) should be worn during lifeboat maintenance?",
-      "choices": [
-        {"id": "a", "text": "A hardhat, gloves, and a PFD (typically a Type IV Buoyant Work Vest)"},
-        {"id": "b", "text": "Steel-toed boots and a full wetsuit only", "misconception": "Substitutes footwear and a wetsuit for the specific PPE items (hardhat, gloves, PFD) the manual lists."},
-        {"id": "c", "text": "A hardhat only -- gloves and a PFD are optional", "misconception": "Understates the requirement to only one of the three specific PPE items the manual lists."},
-        {"id": "d", "text": "No specific PPE is required for lifeboat maintenance", "misconception": "Contradicts the manual, which lists specific required PPE."}
-      ],
-      "correctChoiceId": "a",
-      "difficulty": "easy",
-      "hints": ["Three items: head protection, hand protection, and flotation."],
-      "explanation": "Wear proper PPE to include a hardhat, gloves, and a PFD (typically a Type IV Buoyant Work Vest would be appropriate).",
-      "sourceReference": "Chapter 6 manual source intake, practical safety measures (manual page ~141); see src/content/imports/vinci-2026-07-18-chapter-6-source-intake.md",
-      "verificationStatus": "draft-unverified"
-    },
-    {
-      "id": "q-ch6man-maintenance-check-releasing-gear",
-      "topicId": "chapter-6-being-rescued",
-      "prompt": "SCENARIO: A crew member has just entered a lifeboat that has been made safe with an FPD for maintenance. What should they check immediately upon entering?",
-      "choices": [
-        {"id": "a", "text": "The state of the releasing gear -- the handle should be in the \"green,\" or equivalent \"locked,\" position with safety pins inserted"},
-        {"id": "b", "text": "The fuel level in the lifeboat's engine, before checking anything else", "misconception": "Substitutes a fuel check for the manual's specific instruction to check the releasing gear's state first."},
-        {"id": "c", "text": "The condition of the lifeboat's canopy fabric only", "misconception": "Substitutes a canopy check for the manual's specific instruction to check the releasing gear's state."},
-        {"id": "d", "text": "Nothing specific -- the FPD alone is sufficient without any additional check", "misconception": "Contradicts the manual's explicit instruction to immediately check the releasing gear's state upon entering, even with an FPD in place."}
-      ],
-      "correctChoiceId": "a",
-      "difficulty": "hard",
-      "hints": ["This check happens immediately upon entering, even though the FPD is already in place."],
-      "explanation": "Upon entering a lifeboat, immediately check the state of the releasing gear (handle in the 'green' or equivalent 'locked' position with safety pins inserted).",
-      "sourceReference": "Chapter 6 manual source intake, practical safety measures (manual page ~141); see src/content/imports/vinci-2026-07-18-chapter-6-source-intake.md",
-      "verificationStatus": "draft-unverified"
-    },
-    {
-      "id": "q-ch6man-maintenance-return-to-ready",
-      "topicId": "chapter-6-being-rescued",
-      "prompt": "After completing a lifeboat drill or maintenance session, what two things must happen before the boat is considered ready again?",
-      "choices": [
-        {"id": "a", "text": "Remove the FPD and/or Locking/Maintenance Pin, and notify the OOW/Bridge that the lifeboat has been returned to ready status"},
-        {"id": "b", "text": "Leave the FPD or pin in place for the next maintenance session, and log the work in the ship's maintenance record", "misconception": "Leaves the safety device installed, which the manual warns will prevent the lifeboat from releasing in a real emergency."},
-        {"id": "c", "text": "Notify the OOW/Bridge only -- removing the FPD or pin is optional until the next scheduled use", "misconception": "Treats removal of the safety device as optional, when the manual states it is imperative to remove it once maintenance is completed."},
-        {"id": "d", "text": "Remove the FPD or pin only -- no further notification is required", "misconception": "Omits the required notification to the OOW/Bridge that the boat has been returned to ready status."}
-      ],
-      "correctChoiceId": "a",
-      "difficulty": "medium",
-      "hints": ["One step is mechanical (undoing what was done before entering); the other is a communication step."],
-      "explanation": "After completing drill/maintenance, remove the FPD and/or Locking/Maintenance Pin. Notify the OOW/Bridge that the affected lifeboat has been returned to a ready status -- in all respects ready to be launched.",
-      "sourceReference": "Chapter 6 manual source intake, practical safety measures (manual page ~141); see src/content/imports/vinci-2026-07-18-chapter-6-source-intake.md",
-      "verificationStatus": "draft-unverified"
+      "note": "Promotion of the 40 questions classified Ready for Promotion in vinci-2026-07-18-chapter-6-promotion-review.md. q-ch6man-fpd-purpose and q-ch6man-fpd-mechanism remain held pending secondary verification against the already-live q-gloss-preventer (a conceptually adjacent but distinct 'preventer bars' fact). 5 existing Chapter 6 questions independently confirmed by this manual excerpt were upgraded in place (content unchanged, verificationStatus only): q-rescue-2, q-rescue-4, q-rescue-9 (None -> source-backed-study); q-rescue-7, q-ch6-rescuesling-official-hard (official-source-supported -> multi-source-supported, now confirmed by both the NMC Q445 exam and the manual)."
     }
   ]
 }

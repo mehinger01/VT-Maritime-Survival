@@ -1,8 +1,9 @@
 # Promotion Review — Chapter 6 Draft Question Pack (2026-07-18)
 
-**Status: draft complete, awaiting a separate promotion task. Nothing in
-this pack has been added to `src/content/course.json`. No live question
-was rewritten or deleted.**
+**Status: promoted 2026-07-20. See "Part 5 — Promotion outcome" below
+for what actually happened. Parts 1–4 below are preserved as originally
+written (the review that authorized this promotion) and describe the
+pre-promotion state.**
 
 ## Source
 
@@ -211,3 +212,75 @@ same pattern as `vinci-chapter-5-drill-sets.md`:
    already-live `q-rescue-1/3/5/6/8/10/11/12` cluster, kept separate
    from the new manual-specific content since it tests a general
    coordination principle rather than a specific manual procedure.
+
+---
+
+## Part 5 — Promotion outcome (2026-07-20)
+
+Executed exactly as authorized in Parts 1–4 above, on
+`claude/chapter-6-content-intake`, building on the reviewed intake
+baseline commit `34d8f4a`.
+
+### Candidates promoted: 40
+
+All 40 questions listed under "Ready for promotion" in Part 2 were
+promoted unchanged (content identical to the draft; only
+`verificationStatus` changed, from `draft-unverified` to
+`source-backed-study`). Verified programmatically: the original 336
+live questions (minus the 5 explicitly upgraded below) remained
+byte-for-byte identical before and after, and no non-Chapter-6 question
+was touched.
+
+### Candidates withheld: 2
+
+`q-ch6man-fpd-purpose` and `q-ch6man-fpd-mechanism` remain in
+`vinci-2026-07-18-chapter-6-draft-question-pack.json`'s `questions`
+array (still `draft-unverified`), pending secondary verification that
+the Fall Preventer Device is genuinely distinct from the already-live
+`q-gloss-preventer`'s "preventer bars." Not promoted.
+
+### Existing questions upgraded (content unchanged, `verificationStatus` only)
+
+| ID | Before | After | Basis |
+|---|---|---|---|
+| `q-rescue-2` | `None` | `source-backed-study` | Directly confirmed by the manual's static-discharge instructions (pp. 135, 136, 138). |
+| `q-rescue-4` | `None` | `source-backed-study` | Directly confirmed by the Rescue Basket and Rescue Sling sections' stated purpose (p. 135). |
+| `q-rescue-9` | `None` | `source-backed-study` | Same static-discharge fact as `q-rescue-2`. |
+| `q-rescue-7` | `official-source-supported` | `multi-source-supported` | Already confirmed by the NMC Q445 exam; now also directly confirmed by the manual's "only one person at a time" rule (p. 135) — two independent sources, hence `multi-source-supported` rather than a second `official-source-supported`/`source-backed-study` swap. |
+| `q-ch6-rescuesling-official-hard` | `official-source-supported` | `multi-source-supported` | Same reasoning — the manual's Rescue Sling (arms must hold on) and Stokes Litter (for those unable to help themselves) sections directly support the existing NMC-confirmed answer and reasoning. |
+
+Verified programmatically that no field other than `verificationStatus`
+changed on any of these 5 questions (prompt, choices, correctChoiceId,
+explanation, difficulty, hints, and sourceReference are all untouched).
+
+### Existing questions left as-is: 10
+
+`q-rescue-1`, `q-rescue-3`, `q-rescue-5`, `q-rescue-6`, `q-rescue-8`,
+`q-rescue-10`, `q-rescue-11`, `q-rescue-12`,
+`q-quiz1a-fastrescueboat-approach`, `q-quiz6-williamsonturn-manoverboard`
+— none of these were contradicted by the new extraction, so per
+instruction, none were altered.
+
+### Duplicate/overlap decisions
+
+- One live-bank match crossed the 0.7 similarity threshold
+  (`q-ch6man-dont-swim-unless-necessary` vs. the live
+  `q-ch4man-avoid-surf-landing`, 0.717) — confirmed as a shared "Why
+  does the manual recommend [X] unless necessary?" sentence template
+  testing unrelated facts with different correct answers. Promoted
+  as-is; no existing question was weakened or altered to resolve this.
+- Three internal matches above 0.6 within the new batch, all reviewed
+  and promoted as-is (see Part 2 for the full reasoning): two are
+  shared-template artifacts with different facts/answers, and the
+  `q-ch6man-fpd-purpose`/`q-ch6man-fpd-mechanism` pair is an
+  intentional purpose-vs-mechanism pairing about the same device.
+- The `q-gloss-preventer` adjacency concern was resolved by holding
+  back the 2 FPD candidates (not promoting) rather than altering the
+  existing `q-gloss-preventer` question — consistent with "improve or
+  exclude the new candidate rather than weakening an existing verified
+  question."
+
+### Final live Chapter 6 question count: 55
+
+(15 original + 40 newly promoted.) **Total live question count across
+the whole app: 376** (336 + 40).
