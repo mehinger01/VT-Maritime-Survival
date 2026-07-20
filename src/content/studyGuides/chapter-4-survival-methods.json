@@ -1,7 +1,7 @@
 {
   "topicId": "chapter-4-survival-methods",
   "title": "Chapter 4 \u2014 Understanding Survival Methods: Detailed Study Guide",
-  "published": false,
+  "published": true,
   "lastReconciled": "2026-07-20",
   "reconciliationNote": "Built from the Chapter 4 manual source intake (vinci-2026-07-13-chapter-4-manual-source-intake.md, manual pages 89-119, missing ~page 118), the 66 Chapter 4 questions now confirmed by that manual excerpt or by an approved official/secondary source (verificationStatus source-backed-study or official-source-supported), the 14 substantive Chapter 4 Learn Mode topics, and the recommended drill-set groupings in vinci-chapter-4-drill-sets.md -- all already live in course.json as of commit c3d9a1a. The 9 questions classified as correct-but-outside-the-manual-excerpt were not used as primary factual support; where one of their facts appears here, it is independently documented against its own approved source (a Vinci quiz batch, itself a recognized Tier 3 source under this project's source-quality system) and flagged accordingly, never presented as manual-confirmed. The unresolved immersion-suit thermal-protection figure, the flawed Williamson Turn \"310 degrees\" worked example, precise Cold Shock Response onset timing, and Survival Ashore's missing page ~118 content are not stated as settled facts anywhere in this guide. See vinci-2026-07-20-chapter-4-study-guide-reconciliation-report.md for the full claim-by-claim audit.",
   "sections": [
