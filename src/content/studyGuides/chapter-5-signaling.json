@@ -1,0 +1,446 @@
+{
+  "topicId": "chapter-5-signaling",
+  "title": "Chapter 5 — Signaling to Attract Attention: Detailed Study Guide",
+  "published": false,
+  "lastReconciled": "2026-07-18",
+  "reconciliationNote": "Reconciled against the Water Survival Student Manual excerpt (vinci-2026-07-14-chapter-5-source-intake.md, manual pages 120-132) and the already-verified Chapter 5 Learn Mode content and question bank in course.json. Facts confirmed against those sources are tagged verificationStatus \"source-backed-study\". Facts drawn only from the original U.S. Coast Guard / IMO draft sources, not yet confirmed against Vinci's manual, are tagged \"official-source-supported\" or \"needs-review\". See vinci-chapter-5-study-guide-reconciliation-report.md for the full audit.",
+  "sections": [
+    {
+      "id": "effective-signaling-principles",
+      "title": "1. The Job of an Effective Signal",
+      "whyThisMatters": "Every signaling device in this chapter exists to do one of two jobs -- get noticed, or get understood as distress. Knowing which job a device does (and which it doesn't) is the fastest way to pick the right one under pressure.",
+      "mustRemember": [
+        "An effective signal must (1) attract attention and (2) communicate distress -- being seen isn't the same as being understood.",
+        "Passive signals (an activated EPIRB) keep working without further effort; active signals (a flare, a whistle) require the survivor to act each time.",
+        "Signaling has four stages: alert (start the rescue), locate (narrow the search), identify (mark the exact survivor), guide (the final approach)."
+      ],
+      "explanation": "An effective distress signal must first be detected, and then be understood as a request for help rather than mistaken for an ordinary light, sound, or object. Detection and identification are not the same thing -- a light can be seen without being understood as distress.",
+      "keyFacts": [
+        { "text": "Signaling sequence: Alert (tell the rescue system an emergency exists -- Mayday, EPIRB), Locate (narrow the search area -- EPIRB position, SART), Identify (show which object is the survivor -- smoke, dye, mirror, flare), Guide the final approach (communicate condition, position, wind).", "status": "official-source-supported" },
+        { "text": "Passive signals continue working without repeated effort (an activated EPIRB, a continuously operating light). Active signals require the survivor to aim, fire, transmit, or otherwise operate them each time (flares, whistle, mirror, radio).", "status": "official-source-supported" }
+      ],
+      "confusionTraps": [
+        "\"Activate the EPIRB promptly\" and \"conserve your flares\" are not contradictory -- the EPIRB is passive and keeps transmitting once triggered; a flare is active and is gone the moment it's used."
+      ],
+      "sourceReferences": [
+        { "file": "Chapter_5_Detailed_Study_Guide.md", "note": "U.S. Coast Guard Personal Survival and Emergency Drill Course, Chapter 4: Signals -- not yet cross-checked against Vinci's manual, which does not appear to state this framework explicitly in the pages currently on file (120-132)." }
+      ],
+      "verificationStatus": "official-source-supported"
+    },
+    {
+      "id": "selecting-and-layering-signals",
+      "title": "2. Choosing and Layering Signals",
+      "whyThisMatters": "The manual's most consistently tested principle in this chapter is conservation: most visual signals are one-shot and irreplaceable, so firing them at the wrong moment can cost you the one chance you get.",
+      "mustRemember": [
+        "Do not fire flares automatically just because you've abandoned ship -- use them when there's a reasonable chance of being seen.",
+        "A radio (VHF) lets you talk to a nearby rescuer; an EPIRB/SART let you be found by one that isn't there yet or is still closing in."
+      ],
+      "comparisonTable": {
+        "columns": ["Device", "Primary job", "Best conditions", "Major limitation"],
+        "rows": [
+          ["VHF radio (SCT)", "Alerting and two-way communication", "A vessel or rescue aircraft is already known to be nearby", "Line-of-sight range; 8-hour battery; do not leave on continuously"],
+          ["EPIRB", "Alerting SAR and supplying identity/location", "Any time -- works even before anyone is nearby", "Must be unobstructed and deployed correctly; 48-hour minimum transmit"],
+          ["SART", "Final electronic locating on a nearby rescuer's radar", "A search is already underway and a vessel with X-Band radar is closing in", "Does not independently notify the Coast Guard; needs a nearby compatible radar"],
+          ["Parachute flare", "Long-range visual attraction", "Night; a vessel is visible far off on the horizon", "Drifts as it descends -- doesn't mark your exact position; one-shot"],
+          ["Hand flare", "Close-range exact-position marking", "Rescuer has already spotted you and needs your precise location", "Hot slag risk; short range; one-shot"],
+          ["Orange smoke", "Daytime position and wind indication", "Daylight, low wind", "Invisible at night; disperses quickly in strong wind"],
+          ["Signal mirror", "Long-range daytime flash", "Sunlight and a visible target", "Requires a light source and aim; daylight-only"],
+          ["Whistle", "Close-range audible location", "Any time -- day, night, or fog", "Range is limited (manual-confirmed: about 4 miles favorable conditions) compared to a radio or flare"]
+        ]
+      },
+      "confusionTraps": [
+        "\"Use the EPIRB right away\" and \"save your flares\" both follow the same underlying rule -- use what's passive continuously, and save what's one-shot for when it can actually be seen."
+      ],
+      "sourceReferences": [
+        { "file": "vinci-2026-07-14-chapter-5-source-intake.md", "note": "Device-specific figures in this table (VHF, EPIRB, SART, whistle) are manual-confirmed and match the live Chapter 5 questions and Learn Mode content." },
+        { "file": "Chapter_5_Detailed_Study_Guide.md", "note": "The conservation framing and layering language is USCG-sourced and not yet independently confirmed as manual wording, though it does not conflict with the manual's own guidance." }
+      ],
+      "verificationStatus": "needs-review"
+    },
+    {
+      "id": "radio-and-dsc-controls",
+      "title": "3. Radio and DSC Controls",
+      "whyThisMatters": "Knowing where the channel selector and PTT are -- and what DSC needs to work -- is what separates a radio you can actually use under stress from one you can only describe.",
+      "mustRemember": [
+        "Channel 16 is used first for the emergency itself; Channel 6 is used for ongoing search-and-rescue communications -- this part is manual-confirmed.",
+        "Release the push-to-talk (PTT) button to listen -- the radio cannot receive an acknowledgment while it is transmitting."
+      ],
+      "explanation": "VHF Channel 16 is the principal voice distress, safety, and calling channel confirmed in Vinci's manual. Digital Selective Calling (DSC) content below is drawn from the U.S. Coast Guard training source and has not yet been located in Vinci's Chapter 5 manual excerpt (pages 120-132); it may be covered elsewhere in the manual or may not be part of this course's tested material.",
+      "comparisonTable": {
+        "columns": ["Control", "Function"],
+        "rows": [
+          ["Power/volume", "Turns the unit on; controls received audio"],
+          ["Channel selector", "Selects Channel 16 or another working channel"],
+          ["Squelch", "Suppresses background noise -- excessive squelch can hide weak calls"],
+          ["Push-to-talk (PTT)", "Press to transmit, release to listen"],
+          ["DSC distress control", "Usually protected by a cover to prevent accidental activation"]
+        ]
+      },
+      "keyFacts": [
+        { "text": "VHF Channel 16 (156.8 MHz) is used first for the emergency itself; Channel 6 is used for ongoing search-and-rescue communications with the Coast Guard and aircraft.", "status": "source-backed-study" },
+        { "text": "A correctly configured DSC installation needs a programmed Maritime Mobile Service Identity (MMSI), a working GNSS/GPS position source, and current position/time data.", "status": "official-source-supported" }
+      ],
+      "safetyWarnings": [
+        "Never press the distress button merely to test it. Use the radio manufacturer's approved test procedure or a non-distress DSC test call."
+      ],
+      "examTraps": [
+        {
+          "mistake": "Holding the PTT button down while waiting for a reply.",
+          "correction": "Release PTT after transmitting -- the radio can't receive an acknowledgment while it's still sending.",
+          "clue": "A question describing \"no response\" after a call, where the caller kept the mic keyed, is testing this."
+        }
+      ],
+      "sourceReferences": [
+        { "file": "vinci-2026-07-14-chapter-5-source-intake.md", "note": "Channel 16/6 purposes are manual-confirmed (page ~120)." },
+        { "file": "Chapter_5_Detailed_Study_Guide.md", "note": "Radio control layout and DSC/MMSI content is USCG-sourced, not yet found in or confirmed against Vinci's manual." }
+      ],
+      "verificationStatus": "needs-review"
+    },
+    {
+      "id": "mayday-pan-pan-securite",
+      "title": "4. MAYDAY, PAN-PAN, SECURITE, and MAYDAY RELAY",
+      "whyThisMatters": "Broadcasting \"Mayday\" is the one piece of this section that's directly manual-confirmed; everything around it (the urgency-level hierarchy and the full call script) is real Coast Guard procedure but goes beyond what's in the current manual excerpt, and should be checked against Vinci's full manual before being taught as exam-authoritative.",
+      "mustRemember": [
+        "Broadcasting \"Mayday, Mayday, Mayday\" plus emergency details on VHF Channel 16 is an internationally understood distress call -- this is manual-confirmed.",
+        "MAYDAY, PAN-PAN, and SECURITE are three different urgency levels, not interchangeable words for \"emergency.\""
+      ],
+      "comparisonTable": {
+        "columns": ["Call", "Meaning", "Use"],
+        "rows": [
+          ["SECURITE", "Safety information", "Important navigation or weather warning"],
+          ["PAN-PAN", "Urgency", "Urgent situation that is not yet grave and imminent danger"],
+          ["MAYDAY", "Distress", "Grave and imminent danger requiring immediate assistance"]
+        ]
+      },
+      "processSteps": [
+        "Say \"MAYDAY\" three times.",
+        "State the vessel name and call sign.",
+        "Give the position -- latitude/longitude first when available, then a geographic reference.",
+        "State the nature of distress (sinking, fire, collision, grounding, medical emergency, abandoning vessel).",
+        "State the number of persons aboard.",
+        "Add the assistance needed and a brief vessel description.",
+        "Release PTT and listen for acknowledgment; repeat if there's no answer."
+      ],
+      "confusionTraps": [
+        "SECURITE, PAN-PAN, and MAYDAY form an escalating ladder -- don't treat them as synonyms. Only MAYDAY means grave and imminent danger."
+      ],
+      "sourceReferences": [
+        { "file": "vinci-2026-07-14-chapter-5-source-intake.md", "note": "\"Mayday, mayday, mayday\" on Channel 16 is manual-confirmed (page ~120)." },
+        { "file": "Chapter_5_Detailed_Study_Guide.md", "note": "The PAN-PAN/SECURITE hierarchy and the full 7-step call script are USCG-sourced and not present in Vinci's Chapter 5 manual excerpt (pages 120-132) -- may be covered elsewhere in the full manual." }
+      ],
+      "verificationStatus": "needs-review"
+    },
+    {
+      "id": "general-alarm-emergency-patterns",
+      "title": "5. General Alarm and Emergency Patterns",
+      "whyThisMatters": "This is the one section of the draft guide that directly conflated two already-distinct, already-verified signal meanings -- getting this distinction right matters because it's an explicit confusion trap already tested elsewhere in this course.",
+      "mustRemember": [
+        "A continuous ship's whistle blast BY ITSELF means the ship is in distress -- this is its own, separate, recognized distress signal.",
+        "A continuous general alarm bell (10+ seconds) COMBINED WITH a continuous whistle blast (10+ seconds), sounded TOGETHER, means fire or a general emergency -- a different, more specific signal from the whistle alone.",
+        "General emergency alarm signal: seven or more short blasts followed by one long blast (already confirmed elsewhere in this course)."
+      ],
+      "explanation": "The draft source for this section originally presented the general-alarm-bell and continuous-whistle-blast as interchangeable ways to signal \"fire and emergency.\" That conflicts with this course's own already-verified content, which treats them as two separate signals with two separate meanings. This section has been corrected to match the verified content rather than the original draft wording.",
+      "comparisonTable": {
+        "columns": ["Signal", "Meaning"],
+        "rows": [
+          ["Continuous blast of the ship's whistle, alone", "The ship is in distress"],
+          ["Continuous general alarm bell (10+ sec) plus continuous whistle blast (10+ sec), together", "Fire or a general emergency"],
+          ["Seven or more short blasts followed by one long blast", "General emergency alarm / muster signal"],
+          ["Person overboard pattern (see note below)", "Not yet confirmed against this course's material -- see reconciliation report"]
+        ]
+      },
+      "examTraps": [
+        {
+          "mistake": "Treating \"continuous whistle\" and \"alarm bell plus whistle together\" as the same signal with the same meaning.",
+          "correction": "A continuous whistle blast alone means distress. The bell-plus-whistle combination specifically means fire or general emergency -- don't collapse the two.",
+          "clue": "Watch for whether the question describes the whistle alone or the whistle together with the bell."
+        }
+      ],
+      "sourceReferences": [
+        { "file": "src/content/course.json", "note": "q-quiz6-generalalarm-continuoussignal (bell + whistle = fire/general emergency), q-quiz1a-continuous-blast-distress (whistle alone = distress), q-ep-4 (seven-or-more-short-blasts-plus-one-long = general emergency alarm signal). All course-verified/live." },
+        { "file": "Chapter_5_Detailed_Study_Guide.md", "note": "The \"person overboard = three long blasts repeated at least four times\" claim has not been located anywhere in this course's verified content or the Chapter 5 manual excerpt -- flagged needs-review, not included as a Must Remember fact." }
+      ],
+      "verificationStatus": "needs-review"
+    },
+    {
+      "id": "epirb-parts-categories-deployment",
+      "title": "6. EPIRB: Parts, Categories, Deployment, Registration, and Inspection",
+      "whyThisMatters": "An EPIRB is the one device in this chapter designed to work even if nobody is nearby yet -- understanding its parts and deployment procedure is what makes the difference between a beacon that actually gets found and one that fails quietly.",
+      "mustRemember": [
+        "A SOLAS-required ship carries at least 1 Class I (float-free) EPIRB, normally on the flying bridge or bridge wing.",
+        "The hydrostatic release unit (HRU) releases the beacon when submerged 3-10 feet -- now manual-confirmed by direct review of the source image.",
+        "EPIRB must transmit for at least 48 hours once activated; tested monthly.",
+        "Once activated for a real emergency, never turn the EPIRB off."
+      ],
+      "explanation": "The EPIRB broadcasts a coded distress alert through the COSPAS-SARSAT satellite system at 406 MHz, plus a lower-power 121.5 MHz homing signal for nearby rescuers. A registered beacon identifies the vessel and owner to search-and-rescue authorities.",
+      "comparisonTable": {
+        "columns": ["Part", "Function", "Fine point"],
+        "rows": [
+          ["Beacon body", "Houses transmitter, ID coding, battery, controls", "Must match the registration record"],
+          ["Antenna", "Radiates the distress and homing signals", "Keep vertical and clear; don't cover or bend it"],
+          ["Lanyard", "Secures a deployed beacon to a raft or person", "Never tie it in a way that defeats float-free release"],
+          ["Float-free bracket/canister", "Holds the beacon and permits automatic release", "Must be mounted with a clear, unobstructed float-free path"],
+          ["Hydrostatic release unit (HRU)", "Releases the bracket after submersion pressure reaches its design condition (3-10 feet)", "It releases the beacon -- it is not the satellite transmitter"],
+          ["Battery", "Supplies emergency operating power", "Replace on the marked schedule; don't wait for failure"]
+        ]
+      },
+      "keyFacts": [
+        { "text": "The hydrostatic release unit (HRU) releases the unit when submerged 3-10 feet.", "status": "source-backed-study" },
+        { "text": "EPIRBs are tested monthly at a minimum and must be able to transmit for at least 48 hours.", "status": "source-backed-study" },
+        { "text": "Category 1 (float-free, automatic deployment) vs. Category 2 (manually removed and activated) is a real EPIRB classification, but has not been located in Vinci's Chapter 5 manual excerpt.", "status": "official-source-supported" },
+        { "text": "A Personal Locator Beacon (PLB) is a personal device and does not substitute for a vessel's required EPIRB.", "status": "official-source-supported" },
+        { "text": "Suggested maintenance intervals (HRU replacement every 2 years, battery every 5 years, registration confirmation every 2 years) are cited from a general USCG source, not Vinci's manual -- treat as unconfirmed until checked against the actual device label and the manual.", "status": "needs-review" }
+      ],
+      "safetyWarnings": [
+        "Keep the float-free path clear of decks, rigging, overhangs, and gear -- an obstruction can defeat automatic release even on a correctly armed unit."
+      ],
+      "confusionTraps": [
+        "The HRU releases the equipment; it does not itself transmit the distress alert -- two different jobs, easy to conflate."
+      ],
+      "sourceReferences": [
+        { "file": "vinci-chapter-5-loose-ends-report.md", "note": "EPIRB hydrostatic-release submersion depth (3-10 feet) directly confirmed by visual review of manual page 121, 2026-07-17." },
+        { "file": "vinci-2026-07-14-chapter-5-source-intake.md", "note": "EPIRB stowage, registration, 406/121.5 MHz frequencies, 48-hour transmit, and monthly test are manual-confirmed (pages ~121-122)." },
+        { "file": "Chapter_5_Detailed_Study_Guide.md", "note": "Category 1/2, PLB comparison, and specific maintenance-interval numbers are USCG-sourced and not yet confirmed against Vinci's manual." }
+      ],
+      "verificationStatus": "needs-review"
+    },
+    {
+      "id": "sart-parts-activation-mounting-display",
+      "title": "7. Radar SART: Parts, Activation, Mounting, and Radar Display",
+      "whyThisMatters": "A SART only works if it's mounted correctly and the rescuing vessel's radar is tuned to see it -- the parts and process matter as much as the underlying concept.",
+      "mustRemember": [
+        "A SART responds to a nearby vessel's 9 GHz X-Band radar -- not satellites, and not S-Band radar.",
+        "Minimum detection range: 5 miles at 1 meter height above the water (IMO standard); a Coast Guard aircraft at 3,000 feet should detect one at 30 miles.",
+        "Mount it as high as practical -- height directly improves detection range.",
+        "A SART does not independently notify the Coast Guard -- it only helps an already-nearby, compatible rescuer close the final distance."
+      ],
+      "explanation": "When a nearby X-Band radar sweep reaches the SART, it transmits a reply that appears on the rescuer's radar screen as a line of 12 dots turning into arcs as the vessel closes in.",
+      "comparisonTable": {
+        "columns": ["Part", "Function"],
+        "rows": [
+          ["Antenna end", "Transmits/receives the X-Band radar interaction -- do not grip or cover it"],
+          ["Body/battery housing", "Contains electronics and the emergency battery"],
+          ["Mounting pole/extension", "Raises the unit above the water"],
+          ["Raft mounting pocket", "Keeps the SART upright and elevated"]
+        ]
+      },
+      "keyFacts": [
+        { "text": "Detected by a ship's X-Band, 9 GHz navigational radar; appears as 12 blips extending outward that turn into arcs as the vessel closes in.", "status": "source-backed-study" },
+        { "text": "Rigged about 1 meter above the water in standby mode; battery must operate 96 hours in standby.", "status": "source-backed-study" },
+        { "text": "Minimum detection range: 5 miles at 1 meter height (IMO standard); 30 miles from a Coast Guard aircraft at 3,000 feet.", "status": "source-backed-study" },
+        { "text": "A \"typical\" 12-15 mile detection range appears in the original USCG draft source but is not stated in Vinci's manual, which gives the 5-mile/30-mile figures above as the tested standard. Removed from this guide's Must Remember content to avoid conflicting with the manual-confirmed figures.", "status": "needs-review" },
+        { "text": "The 12-dot pattern's exact spacing (about 0.64 nautical mile between dots) is USCG-sourced and not confirmed in Vinci's manual excerpt.", "status": "needs-review" }
+      ],
+      "cautions": [
+        "Automatic radar gain, sea-clutter, or rain-clutter settings on the rescuing vessel's radar may suppress the SART display -- rescuers may need to adjust their radar manually. (USCG-sourced, not yet manual-confirmed.)"
+      ],
+      "confusionTraps": [
+        "The SART's 96-hour figure is standby-mode battery life, not a transmit duration -- don't swap it with the EPIRB's 48-hour minimum transmit time."
+      ],
+      "sourceReferences": [
+        { "file": "vinci-2026-07-14-chapter-5-source-intake.md", "note": "Radar band, blip pattern, standby battery, and range figures are manual-confirmed (page ~123)." },
+        { "file": "Chapter_5_Detailed_Study_Guide.md", "note": "\"12-15 miles\" range figure conflicted with the manual's 5-mile/30-mile figures and was removed rather than presented as a Must Remember fact; see reconciliation report." }
+      ],
+      "verificationStatus": "needs-review"
+    },
+    {
+      "id": "ais-sart-comparison",
+      "title": "8. AIS-SART Comparison",
+      "whyThisMatters": "AIS-SART is a real, distinct device from a radar SART, but it does not appear anywhere in Vinci's Chapter 5 manual excerpt -- worth knowing conceptually, but not something to treat as confirmed exam material yet.",
+      "explanation": "An AIS-SART contains a GNSS/GPS receiver and sends position messages on AIS channels rather than replying to X-Band radar. A compatible AIS display can show its position and identity.",
+      "comparisonTable": {
+        "columns": ["Feature", "Radar SART", "AIS-SART"],
+        "rows": [
+          ["Receiving system", "Compatible 9 GHz X-Band radar (manual-confirmed)", "Compatible AIS receiver/display (not manual-confirmed)"],
+          ["Position source", "Rescuer follows the radar response pattern", "Built-in GNSS/GPS"],
+          ["Direct public-SAR alert", "No", "No"]
+        ]
+      },
+      "confusionTraps": [
+        "Radar SART answers X-Band radar; AIS-SART transmits its own GNSS-derived position on AIS channels -- different detection mechanisms entirely."
+      ],
+      "sourceReferences": [
+        { "file": "Chapter_5_Detailed_Study_Guide.md", "note": "Entire section is USCG-sourced (U.S. Coast Guard Safety Alert 12-22) and has not been located in Vinci's Chapter 5 manual excerpt, which covers only radar SART (page ~123). Flagged as a source gap -- confirm with the instructor whether AIS-SART is part of this course." }
+      ],
+      "verificationStatus": "needs-review"
+    },
+    {
+      "id": "pyrotechnic-types-parts-safety",
+      "title": "9. Pyrotechnic Types, Parts, Operating Sequences, and Safety",
+      "whyThisMatters": "Pyrotechnics are the highest-consequence devices in this chapter to use incorrectly -- wrong technique risks burns, fire, or a wasted one-shot signal.",
+      "mustRemember": [
+        "Fire downwind, on the leeward side, at about 60 degrees above the horizon, angled slightly over the water.",
+        "Red rocket parachute flare: reaches roughly 1,000 feet, burns at least 40 seconds, drifts as it descends -- best for a distant vessel.",
+        "Hand flare: burns at least 1 minute, stays at your position -- best once you've already been spotted and need to mark your exact location.",
+        "Buoyant orange smoke: daylight only, emits smoke for at least 3 minutes in calm water."
+      ],
+      "explanation": "Treat every pyrotechnic like a loaded firearm: read the label before an emergency, since activation mechanisms differ between devices that otherwise look similar.",
+      "comparisonTable": {
+        "columns": ["Signal", "Best use", "Manual-confirmed performance", "Fine point"],
+        "rows": [
+          ["Red rocket parachute flare", "Night; vessel visible far off on the horizon", "Reaches ~1,000 ft; burns at least 40 seconds", "Drifts as it descends -- does not mark your exact position; prepare for recoil"],
+          ["Hand-held red flare", "Night; close identification once already spotted", "Burns at least 1 minute; continues 10 sec after immersion", "Hot slag can fall onto the user or raft"],
+          ["Buoyant orange smoke", "Daytime location and wind indication", "Emits smoke at least 3 minutes in calm water; 10 sec after immersion", "Invisible at night; disperses quickly in wind"],
+          ["Meteor flare", "Not confirmed in Vinci's manual excerpt", "Not confirmed (USCG source: up to ~100 ft, under 10 sec)", "Flagged needs-review -- confirm whether this device is part of this course"]
+        ]
+      },
+      "processSteps": [
+        "Confirm rescuers or potential observers are plausibly within range before firing.",
+        "Read the device label and identify the firing end.",
+        "Move clear of the raft canopy, sails, rigging, fuel, and other people.",
+        "Hold the launcher above and away from the body at about 60 degrees above the horizon, angled slightly over the water.",
+        "Turn your face away and activate as labeled -- expect recoil, particularly with a parachute flare.",
+        "Fire well ahead of a moving vessel or aircraft so the signal enters its field of view -- never fire directly at an aircraft."
+      ],
+      "safetyWarnings": [
+        "Never point a pyrotechnic signal at a person, vessel, or aircraft.",
+        "Keep hot slag away from raft fabric, canopy, fuel, clothing, and skin when using a hand flare."
+      ],
+      "examTraps": [
+        {
+          "mistake": "Assuming the parachute flare and hand flare are interchangeable, or that either can be fired straight up for maximum visibility.",
+          "correction": "Parachute flare = distant vessel, drifts, doesn't mark your position. Hand flare = already spotted, stays put. Firing angle is about 60 degrees above the horizon, angled over the water -- not straight up.",
+          "clue": "A question that mentions marking an \"exact position\" is pointing at the hand flare, not the parachute flare."
+        }
+      ],
+      "sourceReferences": [
+        { "file": "vinci-2026-07-14-chapter-5-source-intake.md", "note": "Parachute flare, hand flare, and buoyant smoke figures and firing technique are manual-confirmed (pages ~131-132)." },
+        { "file": "Chapter_5_Detailed_Study_Guide.md", "note": "Corrected against the manual: parachute flare burn time (was \"45-60 sec\", corrected to \"at least 40 sec\"), orange smoke duration (was \"2-5 min\", corrected to \"at least 3 min\"), firing angle (was \"60-80 degrees\", corrected to \"about 60 degrees\"). Meteor flare is not present in the manual excerpt and is flagged needs-review, not included as a Must Remember fact." }
+      ],
+      "verificationStatus": "needs-review"
+    },
+    {
+      "id": "non-pyrotechnic-signals",
+      "title": "10. Smoke, Dye, Mirror, Whistle, Lights, Reflective Tape, and Handheld VHF",
+      "whyThisMatters": "These devices are reusable or passive, unlike pyrotechnics, so knowing which ones can be relied on continuously (mirror, whistle, radar reflector) versus which are one-shot (smoke, dye) changes how you should ration them.",
+      "mustRemember": [
+        "A dye marker's color is not restricted -- any color counts, unlike smoke, which must specifically be orange.",
+        "A whistle can be heard up to 4 miles away in favorable conditions, versus only a few hundred yards for a shouting voice.",
+        "A radar reflector should be mounted as high as possible -- a rubber liferaft doesn't reflect radar well on its own."
+      ],
+      "comparisonTable": {
+        "columns": ["Device", "Key manual-confirmed fact", "Not yet manual-confirmed"],
+        "rows": [
+          ["Signaling mirror", "Flash continuously around the whole horizon whenever the sun is out, rather than waiting for a rescuer to be visible; daylight-only, reusable indefinitely", "A specific \"50 miles\" visible-range figure (USCG-sourced only)"],
+          ["Whistle", "Heard up to 4 miles vs. a few hundred yards for the voice; reusable, works day/night/fog", "A \"3-5x louder than the voice\" loudness claim (USCG-sourced only, different kind of figure than the manual's range comparison)"],
+          ["Dye marker", "Any color is a recognized distress signal", "--"],
+          ["Radar reflector", "Mount as high as possible -- rubber liferafts don't reflect radar well on their own", "--"],
+          ["Strobe/steady lights, chemical light sticks, retroreflective tape, handheld VHF as a separate device", "Not present in Vinci's Chapter 5 manual excerpt", "Entire content is USCG-sourced; flagged needs-review"]
+        ]
+      },
+      "confusionTraps": [
+        "Not every device works day AND night: the mirror and buoyant smoke are daylight-only. Flares and the whistle work regardless of time of day.",
+        "Smoke and dye marker are both visual and both 'colored,' but smoke must specifically be orange and is daylight-only, while a dye marker can be any color."
+      ],
+      "sourceReferences": [
+        { "file": "vinci-2026-07-14-chapter-5-source-intake.md", "note": "Mirror technique, whistle range, dye marker color rule, and radar reflector guidance are manual-confirmed (pages ~131-132)." },
+        { "file": "Chapter_5_Detailed_Study_Guide.md", "note": "Mirror's \"50 miles\" figure and whistle's \"3-5x louder\" figure are USCG-sourced only and not found in Vinci's manual excerpt -- kept in this guide but explicitly separated from the manual-confirmed figures to avoid the two being read as equally authoritative. Strobe lights, chemical light sticks, and retroreflective tape are not in the manual excerpt at all and are flagged needs-review." }
+      ],
+      "verificationStatus": "needs-review"
+    },
+    {
+      "id": "international-distress-lifesaving-signals",
+      "title": "11. International Distress and Lifesaving Signals",
+      "whyThisMatters": "Recognized distress signals come from a specific, closed list -- if a signal isn't on that list, it isn't a legally-recognized distress call, no matter how alarming it looks. This is the single most heavily-tested idea in this chapter.",
+      "mustRemember": [
+        "The recognized distress-signal list is closed: Mayday, continuous fog-signal apparatus, red star rockets/shells (about 1/minute), a red light rocket or hand flare, orange smoke, flames on the vessel, slowly raising and lowering outstretched arms, the radiotelephone/radiotelegraph alarm signal, and EPIRB signals.",
+        "The Table of Lifesaving Signals (landing-place signals and shore-apparatus signals) is separate from the distress-signal list -- it's a two-way vocabulary between rescuers and survivors, not a way to call for help in the first place."
+      ],
+      "explanation": "This course's Learn Mode already has a fully manual-confirmed \"International Distress Signals\" section and a \"Table of Lifesaving Signals\" section -- this study-guide section summarizes and cross-links to that content rather than re-deriving it, since it's already verified.",
+      "keyFacts": [
+        { "text": "Recognized visual distress signals: N.C. flag hoist, a square flag with a ball (or ball-shaped object) above or below it, orange smoke, a high-intensity white light flashing 50-70 times/minute, and slowly raising/lowering outstretched arms.", "status": "source-backed-study" },
+        { "text": "Recognized audible signals: a gun or explosive signal at intervals of about a minute; a continuous ship's whistle blast (distress, on its own); the general alarm bell plus continuous whistle together (fire/general emergency, a distinct signal).", "status": "source-backed-study" },
+        { "text": "Recognized radio signals: the spoken word \"Mayday\"; SOS in Morse code; the radiotelephone/radiotelegraph alarm signal; EPIRB signals.", "status": "source-backed-study" },
+        { "text": "Table of Lifesaving Signals (already confirmed against manual page 129): vertical motion or a green star = affirmative/best place to land; horizontal motion or a red star = negative/dangerous to land.", "status": "source-backed-study" }
+      ],
+      "confusionTraps": [
+        "A red star signal fired BY a shore party TO a survivor (warning them a landing spot is dangerous) is a lifesaving signal, not a distress signal -- it's going the opposite direction of every signal on the distress list."
+      ],
+      "sourceReferences": [
+        { "file": "src/content/course.json", "note": "Full content already manual-confirmed and live: chapter-5-signaling topic's \"International Distress Signals -- The Recognized List\" and \"Table of Lifesaving Signals\" Learn Mode sections, plus the associated q-cfr-*/q-ch5man-shore-signal-* question set." },
+        { "file": "vinci-chapter-5-loose-ends-report.md", "note": "Table of Lifesaving Signals (shore-apparatus portion) directly confirmed by visual review of manual page 129, 2026-07-17 -- resolves the \"Development flag\" placeholder that appeared in the original draft guide." }
+      ],
+      "verificationStatus": "source-backed-study"
+    },
+    {
+      "id": "survival-craft-signaling-sequence",
+      "title": "12. Survival-Craft Signaling Sequence",
+      "whyThisMatters": "Knowing individual devices isn't the same as knowing the order to use them in -- this section is about sequencing, which is its own tested skill.",
+      "mustRemember": [
+        "Before abandoning: send the distress alert and Mayday while the vessel's power is still available, and take the EPIRB, SART, VHF, and signaling kit with you.",
+        "When a rescuer is detected: use the longest-range appropriate signal first, then follow with a close-range identification signal.",
+        "Preserve at least one close-range signal in reserve in case contact is lost."
+      ],
+      "explanation": "A layered signaling plan uses each device for the job it's actually good at: EPIRB/SART to alert and narrow the search, a parachute flare to catch a distant rescuer's eyes, a hand flare or dye marker to confirm the exact raft once close, and VHF to communicate survivor count and condition.",
+      "processSteps": [
+        "Send the distress alert and Mayday while the vessel's radio and power remain available.",
+        "Activate or take the EPIRB as the emergency requires.",
+        "Take the SART, handheld VHF, and signaling kit assigned by the station bill.",
+        "Once aboard the survival craft, secure every portable device with a lanyard before use, and assign a lookout and a signal operator.",
+        "When a rescuer is detected, confirm its direction and type, then use the longest-range appropriate signal first, followed by a close-range identification signal.",
+        "Preserve at least one additional close-range signal in case contact is lost."
+      ],
+      "sourceReferences": [
+        { "file": "vinci-2026-07-14-chapter-5-source-intake.md", "note": "Individual device facts referenced in this sequence (EPIRB, SART, flares, VHF) are manual-confirmed; the specific step-by-step sequencing itself is USCG-sourced and consistent with, but not verbatim from, the manual excerpt." }
+      ],
+      "verificationStatus": "needs-review"
+    },
+    {
+      "id": "commonly-confused-concepts",
+      "title": "13. Commonly Confused Concepts",
+      "whyThisMatters": "Most Chapter 5 exam traps come from swapping two similar-sounding devices or figures -- this table exists purely to pre-empt that.",
+      "comparisonTable": {
+        "columns": ["Confusion", "Correct distinction", "Status"],
+        "rows": [
+          ["EPIRB vs. SART", "EPIRB alerts SAR from anywhere (satellite, long range); SART helps a nearby rescuer locate the survival craft (radar, short range)", "source-backed-study"],
+          ["406 MHz vs. 121.5 MHz", "406 MHz carries the satellite distress alert; 121.5 MHz is the close-range homing signal", "source-backed-study"],
+          ["Continuous whistle alone vs. bell + whistle together", "Whistle alone = distress; bell + whistle together = fire or general emergency", "source-backed-study"],
+          ["Parachute flare vs. hand flare", "Parachute flare = distant vessel, drifts; hand flare = already spotted, stays at your position", "source-backed-study"],
+          ["Orange smoke vs. dye marker", "Smoke must be orange, daylight-only; dye marker can be any color", "source-backed-study"],
+          ["Category 1 vs. Category 2 EPIRB", "Category 1 is float-free/automatic; Category 2 is manually deployed", "needs-review -- not found in Vinci's manual excerpt"],
+          ["Radar SART vs. AIS-SART", "Radar SART answers X-Band radar; AIS-SART broadcasts its own GNSS-derived AIS position", "needs-review -- AIS-SART not found in Vinci's manual excerpt"]
+        ]
+      },
+      "sourceReferences": [
+        { "file": "src/content/course.json", "note": "Rows marked source-backed-study are already live and manual-confirmed elsewhere in this chapter's content." }
+      ],
+      "verificationStatus": "needs-review"
+    },
+    {
+      "id": "exam-traps",
+      "title": "14. Exam Traps and Precision Points",
+      "whyThisMatters": "These are the specific wording and number traps most likely to catch a student who knows the material generally but not precisely.",
+      "mustRemember": [
+        "Do not fire flares merely because you've abandoned ship -- use them when there's a reasonable chance of detection.",
+        "A SART does not independently notify the Coast Guard; it only helps an already-nearby rescuer.",
+        "Radar SART requires X-Band radar specifically -- S-Band will not trigger it.",
+        "The EPIRB lanyard is for securing a deployed beacon to survivors/raft -- never in a way that blocks float-free release.",
+        "Release PTT to listen -- a radio can't receive while continuously transmitting.",
+        "Never point pyrotechnics at a person, vessel, or aircraft."
+      ],
+      "sourceReferences": [
+        { "file": "vinci-2026-07-14-chapter-5-source-intake.md", "note": "All six Must Remember items above are manual-confirmed facts already live elsewhere in this chapter." }
+      ],
+      "verificationStatus": "source-backed-study"
+    },
+    {
+      "id": "knowledge-check-mastery",
+      "title": "15. Knowledge Check and Mastery Checklist",
+      "whyThisMatters": "A final self-check before moving to Quiz or Drill Mode on this chapter.",
+      "knowledgeCheck": [
+        { "question": "What two separate jobs must an effective signal perform?", "answer": "Attract attention, and communicate that help is needed.", "explanation": "Being seen isn't the same as being understood as distress." },
+        { "question": "Why should an EPIRB be activated immediately, while flares should be conserved?", "answer": "An EPIRB is passive and transmits continuously once activated; each flare is a finite, one-shot resource that should be used when detection is reasonably likely.", "explanation": "Same underlying signaling-conservation principle, opposite actions for the two device types." },
+        { "question": "What triggers a radar SART response?", "answer": "Interrogation by a nearby, compatible 9 GHz X-Band radar.", "explanation": "Manual-confirmed (page ~123)." },
+        { "question": "What pattern does a radar SART create on a rescuer's radar display?", "answer": "A line of 12 dots/blips extending outward, which turn into arcs as the rescuing vessel closes in.", "explanation": "Manual-confirmed (page ~123)." },
+        { "question": "Which device directly alerts the public SAR system: EPIRB, radar SART, or AIS-SART?", "answer": "The 406 MHz EPIRB.", "explanation": "SART (either type) only helps locate you once a search is already underway; it does not independently notify SAR." },
+        { "question": "What does a continuous blast of a ship's whistle mean by itself? What does a continuous alarm bell plus continuous whistle together mean?", "answer": "Whistle alone: the ship is in distress. Bell plus whistle together: fire or a general emergency.", "explanation": "Two distinct, already-verified signals -- do not collapse them into one." },
+        { "question": "Compare the red rocket parachute flare and the hand flare by role and duration.", "answer": "Parachute flare: reaches ~1,000 ft, burns at least 40 seconds, drifts, best for a distant vessel. Hand flare: burns at least 1 minute, stays at your position, best once already spotted and close.", "explanation": "Manual-confirmed figures, corrected from the original draft during reconciliation." },
+        { "question": "Why is orange smoke normally a daytime-only signal?", "answer": "It creates a visible colored plume rather than a bright light, and is invisible once it's dark.", "explanation": "Manual-confirmed (pages ~131-132)." }
+      ],
+      "sourceReferences": [
+        { "file": "vinci-2026-07-14-chapter-5-source-intake.md", "note": "All knowledge-check answers reflect manual-confirmed content; items referencing unconfirmed material (meteor flares, AIS-SART, Category 1/2, DSC) were intentionally left out of this final check." }
+      ],
+      "verificationStatus": "source-backed-study"
+    }
+  ]
+}

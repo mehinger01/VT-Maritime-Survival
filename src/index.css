@@ -159,6 +159,16 @@ input, textarea, select {
 
 .empty-state { color: var(--muted); font-style: italic; padding: 12px 0; }
 
+.callout-must { border: 2px solid var(--navy); background: var(--sky); padding: 10px 14px; margin: 12px 0; border-radius: 8px; font-size: 14px; }
+.callout-must strong { display: block; margin-bottom: 4px; }
+.callout-danger { border-left: 4px solid var(--bad); background: var(--bad-bg); padding: 10px; margin: 12px 0; border-radius: 8px; font-size: 14px; }
+.callout-danger strong { color: var(--bad); }
+
+.study-guide-nav { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0 4px; }
+.study-guide-nav button { font-size: 12px; padding: 6px 10px; }
+.study-guide-section { border-bottom: 1px solid var(--line); padding-bottom: 18px; margin-bottom: 18px; }
+.study-guide-section:last-child { border-bottom: none; }
+
 @media (max-width: 850px) {
   .app-shell { grid-template-columns: 1fr; }
 }

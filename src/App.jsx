@@ -1,4 +1,5 @@
 import course from './content/course.json'
+import { studyGuides } from './content/studyGuides/index.js'
 import { useHashRoute } from './hooks/useHashRoute.js'
 import { useProgress } from './hooks/useProgress.js'
 import { useAuth } from './hooks/useAuth.js'
@@ -6,6 +7,7 @@ import { useAuth } from './hooks/useAuth.js'
 import CourseHome from './screens/CourseHome.jsx'
 import TopicExplorer from './screens/TopicExplorer.jsx'
 import LearnMode from './screens/LearnMode.jsx'
+import StudyGuide from './screens/StudyGuide.jsx'
 import QuizMode from './screens/QuizMode.jsx'
 import DrillMode from './screens/DrillMode.jsx'
 import ReviewMistakes from './screens/ReviewMistakes.jsx'
@@ -20,6 +22,7 @@ const NAV_ITEMS = [
   { id: 'home', label: 'Course Home' },
   { id: 'topics', label: 'Topic Explorer' },
   { id: 'learn', label: 'Learn Mode' },
+  { id: 'studyGuide', label: 'Study Guides' },
   { id: 'quiz', label: 'Quiz Mode' },
   { id: 'drill', label: 'Drill Mode' },
   { id: 'review', label: 'Review Mistakes' },
@@ -51,6 +54,7 @@ export default function App() {
   const screenProps = {
     topics: course.topics,
     questions: activeQuestions,
+    studyGuides,
     navigate,
     topicId: route.topicId,
     ...progressApi,
@@ -89,6 +93,7 @@ export default function App() {
           {route.view === 'home' && <CourseHome {...screenProps} />}
           {route.view === 'topics' && <TopicExplorer {...screenProps} />}
           {route.view === 'learn' && <LearnMode {...screenProps} />}
+          {route.view === 'studyGuide' && <StudyGuide {...screenProps} />}
           {route.view === 'quiz' && <QuizMode {...screenProps} />}
           {route.view === 'drill' && <DrillMode {...screenProps} />}
           {route.view === 'review' && <ReviewMistakes {...screenProps} />}
