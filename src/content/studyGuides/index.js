@@ -1,3 +1,4 @@
+import chapter4SurvivalMethods from './chapter-4-survival-methods.json'
 import chapter5Signaling from './chapter-5-signaling.json'
 import chapter6BeingRescued from './chapter-6-being-rescued.json'
 
@@ -5,4 +6,4 @@ import chapter6BeingRescued from './chapter-6-being-rescued.json'
 // shape in chapter-5-signaling.json, plus one import + array entry below.
 // A guide with published:false is staged but not shown in the live app --
 // see src/screens/StudyGuide.jsx.
-export const studyGuides = [chapter5Signaling, chapter6BeingRescued]
+export const studyGuides = [chapter4SurvivalMethods, chapter5Signaling, chapter6BeingRescued]
