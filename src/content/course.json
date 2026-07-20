@@ -495,8 +495,61 @@
       "learn": {
         "concept": "This chapter corresponds to a chapter in the Water Survival Student Manual (SHLSOS Course No. 549, revised June 2024). We currently have only the manual's table of contents, not its full chapter text, so the list below reproduces the manual's own subtopic headings for this chapter rather than a verified content summary. Practice questions in this chapter are still draft/placeholder content pending verification against the actual chapter text.",
         "keyPoints": [
-          "Understanding Coast Guard Searches",
-          "Abandoning Ship",
+          {
+            "title": "Understanding Coast Guard Searches",
+            "explanation": "When a vessel is in distress, the instinct to \"do something\" -- row, sail, motor toward help -- usually works against you. A lifeboat's own resources are limited, and the search effort works best when it's looking for you where it expects you to be.",
+            "keyFacts": [
+              "In a normal distress situation, stream a sea anchor and drift with the current rather than trying to move away from it under your own power.",
+              "A motorized lifeboat carries only about 24 hours of fuel at 6 knots -- not enough to travel far or reliably reach help on your own.",
+              "Rowing is slow and burns energy you need to conserve, and the standing lug sail rig carried on some lifeboats is a poor sailing rig for making real progress.",
+              "Staying near your last known position maximizes your chances of being found, since search efforts are planned around where you were last reported.",
+              "AMVER (Automated Merchant Vessel Report) is a system that tracks nearby merchant vessels' positions, so the Coast Guard can redirect a nearby ship to a disaster scene when its own rescue units aren't close by.",
+              "Mariners are both legally and customarily required to assist vessels in distress -- AMVER is part of what makes that assistance possible in practice, not just a rule on paper."
+            ],
+            "confusionTraps": [
+              "Trying to \"help\" the search by moving toward where you think help might be usually makes you harder to find, not easier -- drifting near your last known position is the correct move in a normal distress.",
+              "AMVER is a vessel-tracking and coordination system, not a personal distress beacon (like an EPIRB) and not an equipment-stowage requirement -- don't confuse it with either."
+            ],
+            "examWatchFor": [
+              "If a question asks what a lifeboat crew should do in a normal distress, the answer is almost always \"stream a sea anchor and drift,\" not \"try to reach shore or a shipping lane under your own power.\"",
+              "If a question asks what AMVER does, the answer is about tracking nearby merchant vessels for redirection -- not about broadcasting a distress signal directly."
+            ],
+            "sourceReferences": [
+              {
+                "file": "vinci-2026-07-13-chapter-4-manual-source-intake.md",
+                "note": "Water Survival Student Manual, Chapter 4, page ~89 -- Understanding Coast Guard Searches section"
+              }
+            ],
+            "confidence": "high"
+          },
+          {
+            "title": "Abandoning Ship",
+            "explanation": "Abandoning ship is a sequence, not a single action: get the right protective equipment on, enter the water correctly, and know what to do once you're in it. Each step has specific, tested details -- get one wrong and the risk isn't hypothetical.",
+            "keyFacts": [
+              "PFD (Personal Flotation Device, informally a \"life preserver\"): the most common USCG/SOLAS Type I is a vest-style jacket with a large strap around the back, hooking at the front. It must be able to self-right an unconscious wearer face-up, and required features include a signaling whistle on a cord, a small water-activated light, reflective tape, and the vessel's name stenciled on each unit.",
+              "PFD required color: Indian orange, International orange, or Munsell -- a specific, named color requirement, not just \"any bright orange.\"",
+              "PFD care: don't store near open flame or smoking areas, and don't use it as a seat, pillow, or footrest. It should be maintained and readily accessible, commonly stowed in cabins or on deck, with spares on the bridge or in control rooms.",
+              "General jump-height guidance (distinct from the immersion suit's own engineering spec -- see the Immersion Suits module): stay below 30 feet if possible, with below 15 feet being ideal. Jumping from higher than 30 feet will probably cause injury.",
+              "Before jumping: secure all suit or jacket ties -- an unsecured suit risks head injury on impact -- and empty pockets of sharp objects.",
+              "The 5-step stepping-off position: (1) block your nose and mouth with one hand; (2) cross your other hand over your chest, gripping the lifejacket firmly; (3) look down to check what's below; (4) look straight ahead, cross your ankles, keep your elbows at your sides, step off, and hold the position until you resurface; (5) board the survival craft as soon as possible.",
+              "If the water is covered in burning oil, enter from the bow or stern on the windward side -- the side the wind is blowing away from, so fire and smoke are pushed away from your entry point, not toward it."
+            ],
+            "confusionTraps": [
+              "This module's jump-height guidance (15 feet ideal / 30 feet injury threshold) is general water-entry advice for abandoning ship -- it's a different figure from the Immersion Suit's own construction spec (built to withstand a jump from at least 4.5 meters, about 15 feet, without damage). The two figures happen to agree around 15 feet, but one is general guidance and the other is an equipment design requirement.",
+              "The stepping-off position (block nose/mouth, cross arms, cross ankles, step off) is about how you enter the water. Where you enter (bow/stern, windward side) matters separately when there's burning oil on the surface -- don't conflate the two into one instruction."
+            ],
+            "examWatchFor": [
+              "If a question asks about the preferred or ideal jump height, the answer is 15 feet or less -- if it asks what height will \"probably cause injury,\" the answer is above 30 feet.",
+              "If a question describes burning oil on the water, the safe entry point is the bow or stern, windward side -- not \"wherever is convenient\" and not waiting for the fire to burn out."
+            ],
+            "sourceReferences": [
+              {
+                "file": "vinci-2026-07-13-chapter-4-manual-source-intake.md",
+                "note": "Water Survival Student Manual, Chapter 4, pages ~90-96 -- Abandoning Ship / PFDs, Entering the Water from a Height, Assume the Stepping Off Position, and Swimming Through Burning Oil sections"
+              }
+            ],
+            "confidence": "high"
+          },
           {
             "title": "Immersion Suits & Thermal Protection",
             "explanation": "An immersion suit's job is simple: keep you alive in cold water long enough to be rescued. It does that two ways at once -- it slows how fast your body loses heat, and it adds buoyancy so you float without having to work at it. Hypothermia, not drowning, is the biggest threat in cold-water survival, so this is arguably the single most important piece of gear you can put on before going in the water.",
@@ -527,8 +580,32 @@
             ],
             "confidence": "high"
           },
-          "Anti-Exposure Suit",
-          "Swimming for Survival",
+          {
+            "title": "Anti-Exposure Suit",
+            "explanation": "The Anti-Exposure Suit trades some of an immersion suit's thermal protection for much better mobility and dexterity -- it's built for a crew that needs to keep working, not just wait for rescue.",
+            "keyFacts": [
+              "Key tradeoff: less thermal protection than an immersion suit, but much better mobility and dexterity.",
+              "Unlike most immersion suits, an Anti-Exposure Suit is meant to be worn with a lifejacket or buoyant work vest, not instead of one.",
+              "It has pockets for gear -- a portable VHF radio and flashlight, for example -- reflecting that it's worn while actively working, not just waiting.",
+              "Commonly used by rescue boat crews (the manual notes a typical crew size of 3).",
+              "Alternate names: \"Mustang suit\" (after an original manufacturer), and for a coat-only version, \"float coat.\""
+            ],
+            "confusionTraps": [
+              "Don't confuse the Anti-Exposure Suit's nicknames with the immersion suit's. \"Mustang suit\" and \"float coat\" belong to the Anti-Exposure Suit; \"Survival Suit\" and \"Gumby Suit\" belong to the immersion suit.",
+              "An immersion suit is generally worn alone, without a PFD (its integrated buoyancy pillow can make a PFD inappropriate -- see the Immersion Suits module). An Anti-Exposure Suit is the opposite: it's meant to be worn with a PFD or buoyant work vest."
+            ],
+            "examWatchFor": [
+              "If a question asks which suit trades protection for mobility, or which one is worn with a PFD rather than instead of one, the answer is the Anti-Exposure Suit.",
+              "If a question tests suit nicknames, check carefully which suit is actually being asked about before matching a name."
+            ],
+            "sourceReferences": [
+              {
+                "file": "vinci-2026-07-13-chapter-4-manual-source-intake.md",
+                "note": "Water Survival Student Manual, Chapter 4, page ~93 -- Anti-Exposure Suit section"
+              }
+            ],
+            "confidence": "high"
+          },
           {
             "title": "Man Overboard & Swimming for Survival",
             "explanation": "\"Man overboard\" is a specific, different situation from abandoning ship: one person has unexpectedly ended up in the water while their own ship is still underway, rather than a group deliberately leaving a sinking vessel together. That difference changes what the right response actually is. If you're the person in the water, your job is to survive and be found -- not to close the distance to your own ship yourself. If you're on deck or the bridge, your job is to keep that person visible and get the ship back to them safely. Survival swimming -- deciding when to swim and when not to -- follows the same underlying logic in both situations: work with the water, don't fight it, and don't spend energy you don't need to spend.",
@@ -537,6 +614,8 @@
               "For the crew: the immediate priority is keeping continuous, unbroken visual contact with the person in the water. The manual's response sequence: throw ring buoys with lifelines toward them (a light at night, a smoke signal by day helps them be seen), hail \"Man Overboard, Port (or Starboard) Side\" to the wheelhouse immediately, and have a lookout keep pointing at and watching the person without interruption. Losing sight of someone in open water, even briefly, makes relocating them dramatically harder.",
               "The ship's recovery maneuver exists to bring the vessel safely back to the person's position -- the mate on watch also deliberately turns the ship's stern away from the person first, to keep the propeller clear of them. This module covers why the maneuver happens and what it's for, not its full step-by-step compass arithmetic, which belongs to a separate, more technical treatment.",
               "Turning the ship around gets it back to the person -- it doesn't rescue them by itself. A separate recovery method (a cargo net, a ladder, a lifeboat, or a swimmer with a lifeline for an injured person) is still needed once the ship is alongside.",
+              "Wave slap while swimming: cup your hands over your nose and mouth to keep from swallowing or inhaling water each time a wave breaks over you.",
+              "Surf technique depends on wave size: small waves close to shore can be body-surfed. Large waves should be swum under, between crests -- cover your nose and mouth and hold your breath, or dive under if you have no PFD and are a strong swimmer.",
               "Survival swimming follows the same \"work with the water\" principle: if a strong current stands between you and shore, swim at an angle across the current -- roughly 45 degrees -- rather than fighting straight against it. This makes real progress toward shore while conserving far more energy than a head-on fight against the current.",
               "Swimming is a tool, not a default reaction. It helps when there's a real, reachable target you can actually make progress toward, like angling across a current to a shore you can reach. It's the wrong move when the target isn't realistically reachable by swimming at all (a moving ship), or when conserving energy and body heat matters more than covering distance -- extended cold-water survival is exactly that case (see the Cold Water Survival module)."
             ],
@@ -556,6 +635,10 @@
               {
                 "file": "vinci-2026-07-13-chapter-4-manual-source-intake.md",
                 "note": "Water Survival Student Manual, Chapter 4, pages ~95 and ~99-100 -- Swimming for Survival and Man Overboard sections"
+              },
+              {
+                "file": "vinci-2026-07-13-chapter-4-manual-source-intake.md",
+                "note": "Water Survival Student Manual, Chapter 4, page ~95 -- Swimming for Survival section (wave slap, surf and currents)"
               }
             ],
             "confidence": "high"
@@ -604,7 +687,8 @@
               "The seriously injured are the one exception to standard water rationing -- they can receive water right away rather than waiting out the normal schedule, because medical need outweighs the general conservation rule.",
               "Morale is a survival priority, not a comfort issue. When a group's morale breaks down, people tend to abandon rationing discipline, skip safety procedures, or take risky solo action -- all of which directly hurt survival odds. A clear routine and steady leadership are what prevent that slide.",
               "Ongoing at-sea priorities once organized: keep the sea anchor set on every craft with a dedicated anchor watch, watch for breaking seas in heavy weather so nobody is caught off guard by incoming water, and know the basic capsize-recovery method for your craft (an open lifeboat is righted from one side using grab rails; a raft uses righting straps).",
-              "Preserving body fluids is a quiet but real priority: taking anti-seasickness medication (before abandoning ship if possible, or as soon as everyone's aboard) protects fluids that are very hard to replace once adrift, and urinating within about two hours of boarding protects against bladder strain -- neither is dramatic, but both matter precisely because they're easy to overlook."
+              "Preserving body fluids is a quiet but real priority: taking anti-seasickness medication (before abandoning ship if possible, or as soon as everyone's aboard) protects fluids that are very hard to replace once adrift, and urinating within about two hours of boarding protects against bladder strain -- neither is dramatic, but both matter precisely because they're easy to overlook.",
+              "If a craft must move in heavy seas, keep the wind and seas broad on the bow (roughly 30-40 degrees) for steering control while minimizing the risk of broaching (turning sideways to wind and seas, which risks capsizing). Prefer streaming the drogue and drifting bow-into-the-weather over trying to make headway, unless drifting onto a hazard."
             ],
             "confusionTraps": [
               "\"We should eat/drink extra now since we don't know how long this will take\" sounds reasonable, but it's backwards -- that same uncertainty about rescue timing is exactly WHY rationing exists, not a reason to break it.",
@@ -627,15 +711,194 @@
             ],
             "confidence": "high"
           },
-          "Survival on the Sea",
-          "Preserve Body Fluids / Avoid Seasickness",
-          "Urinate Soon After Boarding",
-          "Dealing with Cold / Hot Environment",
-          "Drinking Water",
-          "Food",
-          "Looking for Land",
-          "Beaching Survival Craft",
-          "Survival Ashore"
+          {
+            "title": "Preserve Body Fluids / Avoid Seasickness",
+            "explanation": "Seasickness in a liferaft isn't just unpleasant -- it's a genuine survival concern, because vomiting wastes body fluids that are extremely hard to replace once you're adrift.",
+            "keyFacts": [
+              "Seasickness is described as nearly universal in a liferaft, which is why avoiding it is treated as an active survival priority, not just a comfort issue.",
+              "Take anti-seasickness medication before abandoning ship if possible.",
+              "If you weren't able to take medication beforehand, take it as soon as everyone is aboard the survival craft.",
+              "The underlying reason this matters: vomiting wastes body fluids that are very hard to replace in a survival situation with strictly rationed water."
+            ],
+            "confusionTraps": [
+              "Treating seasickness as \"just discomfort\" misses the point -- the real risk is the fluid loss from vomiting, on top of an already-limited water supply."
+            ],
+            "examWatchFor": [
+              "If a question asks why avoiding seasickness matters in a survival craft, the correct reasoning is fluid preservation, not comfort.",
+              "If a question asks when to take anti-seasickness medication, the best answer is before abandoning ship -- with \"as soon as everyone's aboard\" as the fallback if that wasn't possible."
+            ],
+            "sourceReferences": [
+              {
+                "file": "vinci-2026-07-13-chapter-4-manual-source-intake.md",
+                "note": "Water Survival Student Manual, Chapter 4, page ~110 -- Preserve Body Fluids / Avoid Seasickness section"
+              }
+            ],
+            "confidence": "high"
+          },
+          {
+            "title": "Urinate Soon After Boarding",
+            "explanation": "A small, easy-to-overlook step with a specific timing rule -- and a related symptom later on that's normal, not alarming, once you know what to expect.",
+            "keyFacts": [
+              "Urinate within 2 hours of boarding a survival craft, if you haven't done so shortly before boarding.",
+              "Trauma from the abandon-ship event can make urination difficult.",
+              "Two techniques that may help: pouring seawater cup-to-cup nearby, or hanging over the side of the craft with the lower body in the water.",
+              "After several days without water, dark, thick urine is a normal dehydration response -- not something to be alarmed by on its own."
+            ],
+            "confusionTraps": [
+              "Dark or thick urine after days without water is an expected sign of dehydration, not a separate medical emergency -- don't treat it as a new problem on top of the water shortage that's already being managed."
+            ],
+            "examWatchFor": [
+              "If a question asks how soon to urinate after boarding, the answer is within 2 hours (unless already done shortly before boarding).",
+              "If a question describes dark, thick urine after several days adrift, the correct framing is \"a normal dehydration response,\" not an alarming new symptom."
+            ],
+            "sourceReferences": [
+              {
+                "file": "vinci-2026-07-13-chapter-4-manual-source-intake.md",
+                "note": "Water Survival Student Manual, Chapter 4, page ~110 -- Urinate Soon After Boarding section"
+              }
+            ],
+            "confidence": "high"
+          },
+          {
+            "title": "Dealing with Cold / Hot Environment",
+            "explanation": "Once you're organized and sustaining yourselves over time, the craft's environment itself -- too cold or too hot -- becomes an ongoing management problem with its own specific tactics.",
+            "keyFacts": [
+              "Cold: keep warm and dry, close canopy curtains or lifeboat doors, and huddle together.",
+              "Cold: do small isometric exercises (clenching fists, stretching, wiggling extremities) to keep blood circulating without wasting energy.",
+              "Cold: rotate the lookout position so no one person bears all the cold exposure alone.",
+              "Hot: maintain airflow, which may mean repositioning the sea anchor.",
+              "Hot: avoid sunburn, minimize exertion to reduce sweat and fluid loss, keep the raft's exterior wet, and wet clothing with seawater during the day."
+            ],
+            "confusionTraps": [
+              "In cold conditions, more activity is not the answer -- vigorous exercise increases blood flow to the skin and limbs and accelerates core heat loss (see the Cold Water Survival module). Small isometric movements are different from real exertion.",
+              "In hot conditions, sealing the canopy fully to block sun also blocks airflow -- the guidance is to manage both sun exposure and airflow together, not sacrifice one for the other."
+            ],
+            "examWatchFor": [
+              "If a question describes cold-environment management inside a survival craft, look for isometric exercises and lookout rotation, not vigorous activity.",
+              "If a question describes hot-environment management, look for airflow, shade, and reduced exertion together -- not just one of the three."
+            ],
+            "sourceReferences": [
+              {
+                "file": "vinci-2026-07-13-chapter-4-manual-source-intake.md",
+                "note": "Water Survival Student Manual, Chapter 4, page ~111 -- Dealing with Cold / Hot Environment section"
+              }
+            ],
+            "confidence": "high"
+          },
+          {
+            "title": "Drinking Water",
+            "explanation": "Water management in a survival craft follows a strict, counterintuitive rule: nothing in the first 24 hours for most people, then a fixed, carefully divided ration after that -- plus safe ways to supplement what's stowed aboard.",
+            "keyFacts": [
+              "Survival-without-water figures: the body can survive 40+ days on as little as 11 ounces of water per day (with no food); 2-3 ounces per day can maintain health for up to 10 days. Without any water at all, delirium sets in around 4 days, and death follows in 8-12 days.",
+              "No water in the first 24 hours for most survivors -- the body is already saturated, so extra water is mostly wasted as urine. The one exception: a survivor who has lost blood or been burned, and only if they're conscious, may receive water immediately.",
+              "After the first 24 hours: a full ration of 1 pint per person per day, split into three equal doses at sunrise, midday, and sunset.",
+              "Rain collection: a boat cover or buckets in an open lifeboat, or a built-in canopy catchment feeding storage bags in an enclosed lifeboat or liferaft -- with the caution that early rainwater may carry dried salt spray that had accumulated on the canopy.",
+              "Condensation collection: use a dedicated clean (salt-free) cellulose sponge, squeezed out to drink or store.",
+              "Old, weathered sea ice (bluish, smooth rounded corners) is generally safe to melt and drink; freshly formed \"salt ice\" (gray, milky) is not and shouldn't be eaten. Don't eat snow or ice at all if you're already near hypothermic -- let it melt and warm first.",
+              "Never mix or substitute salt water, urine, or animal fluids for fresh water -- drinking seawater worsens thirst, accelerates fluid loss through the kidneys and intestines, and can cause delirium, convulsions, and death."
+            ],
+            "confusionTraps": [
+              "The lifeboat's required stowed-water figure (3 liters per person, a total supply requirement) is a different fact from this module's 1-pint-per-day rationing rule (a usage rate once rationing begins) -- don't conflate a stowage minimum with a daily ration.",
+              "\"No water in the first 24 hours\" sounds harsh, but it's based on the body already being saturated at that point -- it's not an arbitrary hardship rule, and it has a real exception for conscious survivors who are injured or burned.",
+              "The very first rainwater collected isn't automatically the cleanest -- it may carry dried salt spray off the canopy, unlike later rainfall."
+            ],
+            "examWatchFor": [
+              "If a question asks who can receive water in the first 24 hours, the answer is the seriously injured or burned, provided they're conscious -- not everyone, and not no one.",
+              "If a question asks about the daily ration after the first 24 hours, the answer is 1 pint per person, split into three doses.",
+              "If a question involves ice or snow, check whether it's described as old/bluish (safe) or freshly formed/gray-milky \"salt ice\" (unsafe) before answering."
+            ],
+            "sourceReferences": [
+              {
+                "file": "vinci-2026-07-13-chapter-4-manual-source-intake.md",
+                "note": "Water Survival Student Manual, Chapter 4, pages ~112-113 -- Drinking Water and Snow / Ice sections"
+              }
+            ],
+            "confidence": "high"
+          },
+          {
+            "title": "Food",
+            "explanation": "Survival-craft food rules exist because eating has a real cost: digestion itself needs water, so food discipline and water discipline are the same problem, not two separate ones.",
+            "keyFacts": [
+              "No food in the first 24 hours, same principle as water.",
+              "Craft rations are carbohydrate- and vitamin-heavy, salt-free, and low-protein -- protein and salt both cost extra body fluid to process. Rations provide roughly 10,000 kJ (2,400 calories) per occupant, based on the craft's rated capacity.",
+              "Never eat without available water -- the body needs water to digest food, and eating without it can be fatal. Seafood specifically needs 2-3 times the normal water ration to digest safely; skip it if that margin isn't available.",
+              "Stored body fat is a viable fallback source of energy (roughly 1 lb of fat is about 2 meals' worth), especially if the survivor stays calm and avoids overexertion or extreme temperatures.",
+              "Fish: open-ocean fish are generally safe; near-shore fish can be poisonous (puffer, porcupine, and parrotfish are named examples) -- watch for self-inflating or spined/bristled fish as warning signs. Organs, blood, and eyes are edible/useful, and the stomach contents of large fish may contain edible smaller fish.",
+              "Catching methods: the craft's provided fishing kit, an improvised spear (a knife lashed to an oar or boat hook), or attracting flying fish with a light at night. Clean and eat or dry fish immediately -- uncleaned fish spoils in about half a day.",
+              "Turtles: meat, blood, and juice are edible, and fat can be rendered into oil -- but even after decapitation, the head can still bite and the claws can still scratch.",
+              "Seaweed: tough, salty, and hard to digest -- only worth eating with ample water available -- but often hosts edible crabs, shrimp, or small fish (shake off jellyfish first).",
+              "Birds: blood and liver are edible. Birds can be grabbed if they land on the craft, or caught with a baited hook dragged behind it; feathers are useful as fishing lures, and birds diving on a school of fish can indicate nearby food."
+            ],
+            "confusionTraps": [
+              "\"No food in the first 24 hours\" mirrors the water rule, but for a related reason: eating without water to digest it is dangerous, not just wasteful.",
+              "Open-ocean fish being generally safe and near-shore fish carrying more risk is the reverse of what intuition might suggest -- don't assume fish caught closer to a beach or shore is automatically the safer choice.",
+              "Turtle edibility doesn't mean turtle handling is risk-free -- the bite/scratch caution applies even after the animal is dead."
+            ],
+            "examWatchFor": [
+              "If a question asks about eating seafood specifically, remember it needs 2-3 times the normal water ration -- more than other food sources.",
+              "If a question names a specific fish (puffer, porcupine, parrotfish) or describes a self-inflating or spined fish, treat it as a poisoning warning sign, not a food source.",
+              "If a question is about catching birds or fish from a survival craft, check whether it's describing a passive method (baited hook, light at night, grabbing a landed bird) or an active one (spear, fishing kit) before answering."
+            ],
+            "sourceReferences": [
+              {
+                "file": "vinci-2026-07-13-chapter-4-manual-source-intake.md",
+                "note": "Water Survival Student Manual, Chapter 4, pages ~113-115 -- Emergency Provisions / Food section"
+              }
+            ],
+            "confidence": "high"
+          },
+          {
+            "title": "Looking for Land",
+            "explanation": "Long before you can see land, the sky and the wind can tell you it's nearby -- if you know what signs to watch for.",
+            "keyFacts": [
+              "Dense, white, flat-based, fluffy cumulus clouds forming over one area (rather than spread broadly across the sky) can indicate nearby land, since rising air over land creates them.",
+              "Daytime land heating creates a rising-air, onshore \"sea breeze\" -- cooler air moving from water to replace it -- which can exceed 15 knots and combine with the prevailing wind. This same daytime heating pattern is what produces the cumulus clouds described above.",
+              "A survivor timing a raft landing should take in the sea anchor as this onshore breeze develops (typically after sunrise), and stream it again at night to avoid drifting away from shore."
+            ],
+            "confusionTraps": [
+              "The cumulus-cloud sign and the sea-breeze pattern aren't two unrelated facts -- they're two effects of the same cause (land heating faster than water during the day).",
+              "The sea anchor's handling here (in at sunrise, out at night) is the opposite of what you might assume if you think of the sea anchor as something you'd only ever want streamed while trying to reach shore."
+            ],
+            "examWatchFor": [
+              "If a question describes cloud formations as a sign of nearby land, look for dense, white, fluffy cumulus clouds concentrated over one area.",
+              "If a question asks when to take in or stream a sea anchor near land, match the timing to the daily onshore-breeze pattern: in as the breeze develops after sunrise, out again at night."
+            ],
+            "sourceReferences": [
+              {
+                "file": "vinci-2026-07-13-chapter-4-manual-source-intake.md",
+                "note": "Water Survival Student Manual, Chapter 4, pages ~115-117 -- Looking for Land and Breezes Near Land sections"
+              }
+            ],
+            "confidence": "high"
+          },
+          {
+            "title": "Beaching Survival Craft",
+            "explanation": "A surf landing is one of the most dangerous moments in a survival situation -- professional rescue crews train and equip specifically for it, which merchant-vessel survival craft and crews usually don't have. Avoid it unless it's genuinely necessary, and if it is necessary, the manual gives specific technique for each type of craft.",
+            "keyFacts": [
+              "Avoid a surf landing unless necessary, especially with children or elderly aboard. Put a life jacket back on before entering surf.",
+              "Look for a break in a reef -- near a stream mouth, a visible depression, or where waves visibly continue toward shore without breaking, which indicates a clearer channel. Study the wave pattern before committing; surf always looks calmer from the craft than it actually is.",
+              "Pulling boat (rowed): approach stern-first, bow to the sea, rowing to meet each breaking wave. Rig the sweep and stow the rudder for control while backing in, and use the drogue between breakers, slacking the trip line to steady the boat through each wave crest.",
+              "Power boat: engine off, using oars and the sweep -- not the rudder -- for control, with the same stern-first approach and the drogue tripped between breakers.",
+              "Rafts: avoid landing at night unless necessary -- stream the sea anchor and wait for daylight instead, since rocks or coral can puncture a raft. Open both canopy curtains to reduce wind resistance if working against the wind."
+            ],
+            "confusionTraps": [
+              "Both the pulling boat and the power boat use oars/sweep rather than the rudder for surf control -- a power boat's normal rudder steering doesn't apply here.",
+              "\"The engine is off\" for a power boat's surf approach doesn't mean the craft is out of control -- oars and the sweep are the deliberate substitute, not an emergency workaround.",
+              "A raft's puncture risk from rocks and coral is a different hazard from a lifeboat's surf-handling challenge -- it's specifically why night landings are avoided for rafts."
+            ],
+            "examWatchFor": [
+              "If a question asks about a pulling boat's or power boat's surf approach, check specifically whether the rudder or the sweep is being used -- the sweep is correct for both.",
+              "If a question is about beaching a raft specifically, look for the night-landing caution and the rocks/coral puncture risk, which don't apply the same way to a rigid-hulled lifeboat."
+            ],
+            "sourceReferences": [
+              {
+                "file": "vinci-2026-07-13-chapter-4-manual-source-intake.md",
+                "note": "Water Survival Student Manual, Chapter 4, pages ~116-117 -- Beaching Survival Craft section"
+              }
+            ],
+            "confidence": "high"
+          },
+          "Survival Ashore -- content incomplete. The available source material (manual page ~119) opens mid-topic, and the page immediately before it (~page 118, likely containing this section's actual opening) is missing from the source batch. This module will be completed once that page is obtained rather than filled in from an inferred guess."
         ]
       }
     },
@@ -2636,35 +2899,37 @@
     {
       "id": "q-surv-1",
       "topicId": "chapter-4-survival-methods",
-      "prompt": "In cold water survival, what is the major immediate danger?",
+      "prompt": "In cold-water immersion, which best describes the correct order and nature of the major dangers you face?",
       "choices": [
         {
           "id": "a",
-          "text": "Hypothermia and loss of body heat"
+          "text": "First, the involuntary Cold Shock Response (gasping, rapid breathing) in the first minute or so; then, if immersion continues, gradual hypothermia from ongoing heat loss"
         },
         {
           "id": "b",
-          "text": "Sunburn",
-          "misconception": "Overweights a slower, lower-priority risk compared to acute cold exposure."
+          "text": "Hypothermia happens immediately on entering the water, before any other symptom",
+          "misconception": "Reverses the actual timeline. Hypothermia is a gradual process; the true first-minute danger is the involuntary Cold Shock Response, not hypothermia itself."
         },
         {
           "id": "c",
-          "text": "Hunger within minutes",
-          "misconception": "Hunger is not an immediate life-threatening risk on the timescale of cold water immersion."
+          "text": "Sunburn is the primary early danger in a cold-water immersion",
+          "misconception": "Overweights a slower, lower-priority risk compared to acute cold exposure."
         },
         {
           "id": "d",
-          "text": "Seasickness only",
-          "misconception": "Understates the severity of hypothermia by substituting a much less dangerous condition."
+          "text": "Hunger within minutes of entering the water",
+          "misconception": "Hunger is not an immediate life-threatening risk on the timescale of cold water immersion."
         }
       ],
       "correctChoiceId": "a",
-      "difficulty": "easy",
+      "difficulty": "medium",
       "hints": [
-        "Cold water pulls heat from the body far faster than cold air.",
-        "The priority immediately after immersion is preserving core body heat."
+        "Cold-water immersion causes more than one danger, and they don't all happen on the same timescale.",
+        "The first minute's danger is an involuntary reflex, not the slow loss of core body heat."
       ],
-      "explanation": "Cold water conducts heat away from the body dramatically faster than air, making hypothermia the most urgent survival threat immediately after immersion."
+      "explanation": "Cold-water immersion produces two distinct dangers on two different timescales. The Cold Shock Response is an involuntary reflex -- gasping and rapid breathing -- that hits in the first minute or so, and is the danger most likely to cause immediate harm (such as inhaling water if the face goes under unexpectedly). Hypothermia, the gradual loss of core body temperature, develops afterward, over a longer and more variable period, if immersion continues. Treating hypothermia as the 'immediate' danger blurs that sequence and risks under-preparing for the faster-arriving threat.",
+      "sourceReference": "independently confirmed by the Chapter 4 manual source intake, Cold Water Survival / Hypothermia section, Cold Shock Response 4-stage chart (manual page ~104); see src/content/imports/vinci-2026-07-13-chapter-4-manual-source-intake.md",
+      "verificationStatus": "source-backed-study"
     },
     {
       "id": "q-surv-2",
@@ -2697,7 +2962,9 @@
         "Think protection from cold, not mobility.",
         "It combines thermal insulation with buoyancy assistance."
       ],
-      "explanation": "An immersion suit is designed to slow heat loss in cold water and add flotation, directly addressing the top survival threat: hypothermia."
+      "explanation": "An immersion suit is designed to slow heat loss in cold water and add flotation, directly addressing the top survival threat: hypothermia.",
+      "sourceReference": "independently confirmed by the Chapter 4 manual source intake, Immersion Suits section (manual page ~92); see src/content/imports/vinci-2026-07-13-chapter-4-manual-source-intake.md",
+      "verificationStatus": "source-backed-study"
     },
     {
       "id": "q-surv-3",
@@ -2796,7 +3063,9 @@
         "It happens in the first moments of hitting cold water, not hours later.",
         "It's involuntary \u2014 your body reacts before you can control it."
       ],
-      "explanation": "Cold shock is the body's immediate, involuntary reaction to sudden cold immersion \u2014 gasping, rapid breathing, and panic in roughly the first minute \u2014 which is a different hazard from hypothermia's slower core-temperature loss. Misconception tested: treating cold shock and hypothermia as the same phenomenon rather than two distinct, sequential dangers."
+      "explanation": "Cold shock is the body's immediate, involuntary reaction to sudden cold immersion \u2014 gasping, rapid breathing, and panic in roughly the first minute \u2014 which is a different hazard from hypothermia's slower core-temperature loss. Misconception tested: treating cold shock and hypothermia as the same phenomenon rather than two distinct, sequential dangers.",
+      "sourceReference": "independently confirmed by the Chapter 4 manual source intake, Cold Water Survival / Hypothermia section, Cold Shock Response 4-stage chart (manual page ~104); see src/content/imports/vinci-2026-07-13-chapter-4-manual-source-intake.md",
+      "verificationStatus": "source-backed-study"
     },
     {
       "id": "q-surv-6",
@@ -2829,7 +3098,9 @@
         "One is immediate and reflexive; the other develops over minutes to hours.",
         "Getting the sequence right matters: which comes first?"
       ],
-      "explanation": "Cold shock is the body's immediate reflex response to sudden cold immersion (gasping, hyperventilation, panic) in roughly the first minute. Hypothermia is the separate, slower process of core body temperature dropping over a longer period if immersion continues. Confusing the sequence or treating them as the same condition misses that they call for different immediate responses. Misconception tested: collapsing two distinct, sequential cold-water dangers into a single condition."
+      "explanation": "Cold shock is the body's immediate reflex response to sudden cold immersion (gasping, hyperventilation, panic) in roughly the first minute. Hypothermia is the separate, slower process of core body temperature dropping over a longer period if immersion continues. Confusing the sequence or treating them as the same condition misses that they call for different immediate responses. Misconception tested: collapsing two distinct, sequential cold-water dangers into a single condition.",
+      "sourceReference": "independently confirmed by the Chapter 4 manual source intake, Cold Water Survival / Hypothermia section, Cold Shock Response 4-stage chart (manual page ~104); see src/content/imports/vinci-2026-07-13-chapter-4-manual-source-intake.md",
+      "verificationStatus": "source-backed-study"
     },
     {
       "id": "q-surv-7",
@@ -2862,7 +3133,9 @@
         "This is the immediate reflex response, not the slower core-temperature process.",
         "The danger in the first minute is breathing control, not muscle strength yet."
       ],
-      "explanation": "In the first minute, the cold shock reflex \u2014 involuntary gasping and hyperventilation \u2014 is the most immediate danger, since it can cause water inhalation if a wave or submersion catches the person off guard. Hypothermia-driven muscle failure is a real risk but develops later, after continued exposure. Misconception tested: applying a later-stage hypothermia effect to the acute first-minute window, when the immediate reflex response is the priority to manage."
+      "explanation": "In the first minute, the cold shock reflex \u2014 involuntary gasping and hyperventilation \u2014 is the most immediate danger, since it can cause water inhalation if a wave or submersion catches the person off guard. Hypothermia-driven muscle failure is a real risk but develops later, after continued exposure. Misconception tested: applying a later-stage hypothermia effect to the acute first-minute window, when the immediate reflex response is the priority to manage.",
+      "sourceReference": "independently confirmed by the Chapter 4 manual source intake, Cold Water Survival / Hypothermia section, Cold Shock Response 4-stage chart (manual page ~104); see src/content/imports/vinci-2026-07-13-chapter-4-manual-source-intake.md",
+      "verificationStatus": "source-backed-study"
     },
     {
       "id": "q-surv-8",
@@ -2961,7 +3234,9 @@
         "Think about where blood flow goes during exercise, and what that does to heat retention.",
         "This is a physiology answer, not a rules-based one."
       ],
-      "explanation": "Swimming or excessive movement increases blood flow to the limbs and skin, which accelerates heat loss from the body's core compared to floating as still as possible while awaiting rescue. Misconception tested: assuming activity level in cold water has no bearing on survival time, or attributing the guideline to a rule rather than physiology."
+      "explanation": "Swimming or excessive movement increases blood flow to the limbs and skin, which accelerates heat loss from the body's core compared to floating as still as possible while awaiting rescue. Misconception tested: assuming activity level in cold water has no bearing on survival time, or attributing the guideline to a rule rather than physiology.",
+      "sourceReference": "independently confirmed by the Chapter 4 manual source intake, Cold Water Survival / Hypothermia section (cold-water swimming exhaustion data) (manual page ~101); see src/content/imports/vinci-2026-07-13-chapter-4-manual-source-intake.md",
+      "verificationStatus": "source-backed-study"
     },
     {
       "id": "q-surv-11",
@@ -6643,8 +6918,8 @@
         "Most survivors follow a waiting-period rule for water rationing, but there's a medical exception."
       ],
       "explanation": "The seriously injured are the exception to the general water-rationing rule and can immediately receive water upon entering a life craft, rather than waiting out the standard rationing period.",
-      "sourceReference": "Vinci source batch 2026-07-08-quiz-1a, image 2026-07-08_044219-2.jpg (Final Review Quiz #1, question 7 of 39); see src/content/imports/vinci-2026-07-08-quiz-1a-source-intake.json",
-      "verificationStatus": "quiz-derived-study"
+      "sourceReference": "Vinci source batch 2026-07-08-quiz-1a, image 2026-07-08_044219-2.jpg (Final Review Quiz #1, question 7 of 39); see src/content/imports/vinci-2026-07-08-quiz-1a-source-intake.json; independently confirmed by the Chapter 4 manual source intake, Drinking Water section (manual page ~112); see src/content/imports/vinci-2026-07-13-chapter-4-manual-source-intake.md",
+      "verificationStatus": "source-backed-study"
     },
     {
       "id": "q-quiz1a-rainwater-first-batch",
@@ -7017,8 +7292,8 @@
         "Think about impact force on the body -- lower is safer when jumping into water."
       ],
       "explanation": "The preferred height above water to jump in (e.g., when abandoning ship) is 15 feet or less.",
-      "sourceReference": "Vinci source batch 2026-07-08-quiz-1a, image 2026-07-08_044219-5.jpg (Final Review Quiz #1, question 21 of 39); see src/content/imports/vinci-2026-07-08-quiz-1a-source-intake.json",
-      "verificationStatus": "quiz-derived-study"
+      "sourceReference": "Vinci source batch 2026-07-08-quiz-1a, image 2026-07-08_044219-5.jpg (Final Review Quiz #1, question 21 of 39); see src/content/imports/vinci-2026-07-08-quiz-1a-source-intake.json; independently confirmed by the Chapter 4 manual source intake, Entering the Water from a Height section (manual page ~93); see src/content/imports/vinci-2026-07-13-chapter-4-manual-source-intake.md",
+      "verificationStatus": "source-backed-study"
     },
     {
       "id": "q-quiz1a-hypothermia-water-temp",
@@ -7051,8 +7326,8 @@
         "This threshold is higher than most people assume -- water doesn't need to feel icy for the body to lose the heat battle."
       ],
       "explanation": "70\u00b0F is the maximum water temperature at which the average human cannot generate enough heat to keep up with body-heat loss while in the water -- a surprisingly warm-feeling temperature at which hypothermia risk still applies.",
-      "sourceReference": "Vinci source batch 2026-07-08-quiz-1a, image 2026-07-08_044219-5.jpg (Final Review Quiz #1, question 22 of 39); see src/content/imports/vinci-2026-07-08-quiz-1a-source-intake.json",
-      "verificationStatus": "quiz-derived-study"
+      "sourceReference": "Vinci source batch 2026-07-08-quiz-1a, image 2026-07-08_044219-5.jpg (Final Review Quiz #1, question 22 of 39); see src/content/imports/vinci-2026-07-08-quiz-1a-source-intake.json; independently confirmed by the Chapter 4 manual source intake, Cold Water Survival / Hypothermia section (manual page ~101); see src/content/imports/vinci-2026-07-13-chapter-4-manual-source-intake.md",
+      "verificationStatus": "source-backed-study"
     },
     {
       "id": "q-quiz1a-manoverboard-dont-swim",
@@ -7075,8 +7350,8 @@
         "Think about energy conservation and the hazards near a large vessel's hull and propellers."
       ],
       "explanation": "It is FALSE that a man overboard should try to swim for the ship -- doing so wastes energy and body heat and risks the hazards of approaching the hull, rather than conserving resources and signaling for rescue.",
-      "sourceReference": "Vinci source batch 2026-07-08-quiz-1a, image 2026-07-08_044219-5.jpg (Final Review Quiz #1, question 23 of 39); see src/content/imports/vinci-2026-07-08-quiz-1a-source-intake.json",
-      "verificationStatus": "quiz-derived-study"
+      "sourceReference": "Vinci source batch 2026-07-08-quiz-1a, image 2026-07-08_044219-5.jpg (Final Review Quiz #1, question 23 of 39); see src/content/imports/vinci-2026-07-08-quiz-1a-source-intake.json; independently confirmed by the Chapter 4 manual source intake, Man Overboard section (manual page ~99-100); see src/content/imports/vinci-2026-07-13-chapter-4-manual-source-intake.md",
+      "verificationStatus": "source-backed-study"
     },
     {
       "id": "q-quiz1a-liferaft-in-charge",
@@ -9745,8 +10020,8 @@
         "Think about which side of the ship the wind would blow burning oil and smoke away from."
       ],
       "explanation": "The safest way to enter the water from a sinking ship with an oil fire on the surface is from the stern or bow, on the windward side -- keeping the wind blowing the fire and smoke away from the survivor rather than toward them.",
-      "sourceReference": "Vinci source batch 2026-07-08-quiz-6, image 2026-07-07_065906-2.jpg (Review Quiz #6, question 10 of 22); see src/content/imports/vinci-2026-07-08-quiz-6-source-intake.json",
-      "verificationStatus": "quiz-derived-study"
+      "sourceReference": "Vinci source batch 2026-07-08-quiz-6, image 2026-07-07_065906-2.jpg (Review Quiz #6, question 10 of 22); see src/content/imports/vinci-2026-07-08-quiz-6-source-intake.json; independently confirmed by the Chapter 4 manual source intake, Swimming Through Burning Oil section (manual page ~96); see src/content/imports/vinci-2026-07-13-chapter-4-manual-source-intake.md",
+      "verificationStatus": "source-backed-study"
     },
     {
       "id": "q-quiz6-swim-strongcurrent-45deg",
@@ -13857,6 +14132,496 @@
       ],
       "explanation": "Step off the survival craft onto the rescue craft only when the survival craft is on the crest or top of a swell -- this drops the survival craft down while you're climbing the ladder or net. Otherwise there's danger of the boat or raft being raised up by a wave and hitting you.",
       "sourceReference": "Chapter 6 manual source intake, \"Rescued at Last!\" section (manual page ~134); see src/content/imports/vinci-2026-07-18-chapter-6-source-intake.md",
+      "verificationStatus": "source-backed-study"
+    },
+    {
+      "id": "q-ch4man-cold-environment-tactics",
+      "topicId": "chapter-4-survival-methods",
+      "prompt": "In a survival craft, what does the manual recommend for coping with a cold environment (beyond staying dry and layered)?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Do small isometric exercises (clenching fists, stretching, wiggling extremities) and rotate the lookout position to limit any one person's cold exposure"
+        },
+        {
+          "id": "b",
+          "text": "Exercise vigorously to generate body heat",
+          "misconception": "Vigorous exercise increases blood flow to the limbs and skin, which accelerates core heat loss -- the opposite of what's needed."
+        },
+        {
+          "id": "c",
+          "text": "Keep canopy curtains or lifeboat doors open for fresh air",
+          "misconception": "Contradicts the guidance to close the canopy/doors to retain warmth in cold conditions."
+        },
+        {
+          "id": "d",
+          "text": "Assign one person to stay on lookout continuously so everyone else can conserve energy",
+          "misconception": "Contradicts the manual's guidance to rotate the lookout position, which limits any one person's cold exposure."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "medium",
+      "hints": [
+        "Small, low-effort movements help without wasting energy or increasing heat loss.",
+        "No single person should bear all the cold exposure alone."
+      ],
+      "explanation": "In cold conditions, the manual recommends staying warm and dry, closing canopy curtains or lifeboat doors, huddling, and doing small isometric exercises (clenching fists, stretching, wiggling extremities) to keep blood circulating without wasting energy -- plus rotating the lookout position so no one person bears all the cold exposure.",
+      "sourceReference": "Chapter 4 manual source intake, Dealing with Cold / Hot Environment section (manual page ~111); see src/content/imports/vinci-2026-07-13-chapter-4-manual-source-intake.md",
+      "verificationStatus": "source-backed-study"
+    },
+    {
+      "id": "q-ch4man-hot-environment-tactics",
+      "topicId": "chapter-4-survival-methods",
+      "prompt": "In a survival craft in hot conditions, what does the manual recommend?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Maintain airflow, avoid sunburn, minimize exertion to reduce sweat/fluid loss, and keep the raft's exterior wet"
+        },
+        {
+          "id": "b",
+          "text": "Drink water freely, since heat increases the body's water needs beyond the normal rationing schedule",
+          "misconception": "Contradicts the standard rationing schedule -- heat doesn't create an exception to the fixed water ration."
+        },
+        {
+          "id": "c",
+          "text": "Remove all clothing to stay cool",
+          "misconception": "Increases sunburn risk, which directly contradicts the guidance to avoid sunburn."
+        },
+        {
+          "id": "d",
+          "text": "Keep the canopy fully sealed to block direct sun",
+          "misconception": "Blocks airflow, which is the opposite of the manual's guidance to maintain airflow in hot conditions."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "medium",
+      "hints": [
+        "The goal is managing heat and sun exposure without increasing fluid loss.",
+        "Airflow and shade both matter, but not at the cost of each other."
+      ],
+      "explanation": "In hot conditions, the manual recommends maintaining airflow (which may mean repositioning the sea anchor), avoiding sunburn, minimizing exertion to reduce sweat and fluid loss, keeping the raft's exterior wet, and wetting clothing with seawater during the day.",
+      "sourceReference": "Chapter 4 manual source intake, Dealing with Cold / Hot Environment section (manual page ~111); see src/content/imports/vinci-2026-07-13-chapter-4-manual-source-intake.md",
+      "verificationStatus": "source-backed-study"
+    },
+    {
+      "id": "q-ch4man-poisonous-nearshore-fish",
+      "topicId": "chapter-4-survival-methods",
+      "prompt": "Which fish are more likely to be poisonous and should be avoided as an emergency food source?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Near-shore fish such as puffer, porcupine, and parrotfish -- especially ones that self-inflate or have spines or bristles"
+        },
+        {
+          "id": "b",
+          "text": "Open-ocean fish, which are generally the more dangerous category",
+          "misconception": "Reverses the manual's guidance -- open-ocean fish are generally described as safe, while near-shore fish carry more poisoning risk."
+        },
+        {
+          "id": "c",
+          "text": "All fish are equally safe to eat in a survival situation",
+          "misconception": "Ignores the manual's specific warning about near-shore species that are poisonous."
+        },
+        {
+          "id": "d",
+          "text": "Only fish with unusually smooth scales",
+          "misconception": "Invents a warning sign the manual doesn't give -- self-inflating or spined/bristled fish are the named warning signs, not scale texture."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "easy",
+      "hints": [
+        "Location matters more than species alone.",
+        "Look for a specific physical warning sign the manual names."
+      ],
+      "explanation": "The manual states open-ocean fish are generally safe, while near-shore fish can be poisonous -- naming puffer, porcupine, and parrotfish as examples, and pointing to self-inflating or spined/bristled fish as warning signs to watch for.",
+      "sourceReference": "Chapter 4 manual source intake, Emergency Provisions / Food section (manual page ~114); see src/content/imports/vinci-2026-07-13-chapter-4-manual-source-intake.md",
+      "verificationStatus": "source-backed-study"
+    },
+    {
+      "id": "q-ch4man-turtle-caution",
+      "topicId": "chapter-4-survival-methods",
+      "prompt": "If you catch a sea turtle as an emergency food source, what caution does the manual give?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Even after decapitation, the head can still bite and the claws can still scratch"
+        },
+        {
+          "id": "b",
+          "text": "Turtles are entirely inedible and should never be used as a food source",
+          "misconception": "Contradicts the manual, which describes turtle meat, blood, and juice as edible, and fat as renderable into oil."
+        },
+        {
+          "id": "c",
+          "text": "Turtle blood and juice should never be consumed",
+          "misconception": "Contradicts the manual, which specifically describes turtle blood and juice as edible/useful."
+        },
+        {
+          "id": "d",
+          "text": "Turtles pose no handling risk once caught",
+          "misconception": "Misses the manual's specific caution about bite and scratch risk even after decapitation."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "easy",
+      "hints": [
+        "A turtle's reflexes can outlast what you'd expect.",
+        "The caution is specifically about handling, not edibility."
+      ],
+      "explanation": "The manual notes that turtle meat, blood, and juice are edible, and fat can be rendered into oil -- but cautions that even after decapitation, the head can still bite and the claws can still scratch, so handling requires care.",
+      "sourceReference": "Chapter 4 manual source intake, Emergency Provisions / Food section (manual page ~115); see src/content/imports/vinci-2026-07-13-chapter-4-manual-source-intake.md",
+      "verificationStatus": "source-backed-study"
+    },
+    {
+      "id": "q-ch4man-bird-catching",
+      "topicId": "chapter-4-survival-methods",
+      "prompt": "According to the manual, how can birds be caught as an emergency food source from a survival craft?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Grab them if they land on the craft, or catch them with a baited hook dragged behind the craft"
+        },
+        {
+          "id": "b",
+          "text": "Birds cannot realistically be caught from a survival craft",
+          "misconception": "Contradicts the manual, which describes two specific catching methods and even cites an 83-day raft survival supported by 25+ caught birds."
+        },
+        {
+          "id": "c",
+          "text": "Only by using a firearm",
+          "misconception": "Invents a method the manual doesn't mention -- survival craft aren't described as carrying firearms for this purpose."
+        },
+        {
+          "id": "d",
+          "text": "Birds should never be eaten because they carry disease",
+          "misconception": "Contradicts the manual, which describes bird blood and liver as edible and feathers as useful for fishing lures."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "easy",
+      "hints": [
+        "One method requires the bird to come to you; the other brings the bait to the bird.",
+        "Diving birds near the craft can also be a clue about something else useful nearby."
+      ],
+      "explanation": "The manual describes birds landing on the craft being grabbed directly, or being caught with a baited hook dragged behind the craft. Blood and liver are edible, feathers are useful as fishing lures, and birds diving on a school of fish can indicate nearby food.",
+      "sourceReference": "Chapter 4 manual source intake, Emergency Provisions / Food section (manual page ~115); see src/content/imports/vinci-2026-07-13-chapter-4-manual-source-intake.md",
+      "verificationStatus": "source-backed-study"
+    },
+    {
+      "id": "q-ch4man-tread-scull-technique",
+      "topicId": "chapter-4-survival-methods",
+      "prompt": "What two techniques combine in the manual's method for treading water efficiently?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "A scissors-style leg kick (legs together, knees bent, scissoring) plus small downward circular hand-sculling motions with palms down"
+        },
+        {
+          "id": "b",
+          "text": "A flutter kick plus large overhead arm circles",
+          "misconception": "Not the technique the manual describes -- large overhead arm motions waste energy compared to the small, controlled sculling motion."
+        },
+        {
+          "id": "c",
+          "text": "Holding perfectly still with arms at your sides",
+          "misconception": "Contradicts the manual's active tread-and-scull technique, which requires ongoing leg and hand motion to stay afloat efficiently."
+        },
+        {
+          "id": "d",
+          "text": "A breaststroke-style kick combined with waving both arms overhead",
+          "misconception": "Not the technique the manual describes, and would tire a swimmer faster than the efficient scissors-kick-plus-sculling method."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "medium",
+      "hints": [
+        "The leg motion is named after a common cutting tool.",
+        "The hand motion is small and controlled, not a large sweeping stroke."
+      ],
+      "explanation": "The manual's tread-and-scull technique combines a scissors kick (legs together, knees bent, scissoring motion) with hand sculling (small downward circular hand motions, palms down), given as a labeled step-by-step sequence for treading water efficiently.",
+      "sourceReference": "Chapter 4 manual source intake, Tread and Scull section (manual page ~97); see src/content/imports/vinci-2026-07-13-chapter-4-manual-source-intake.md",
+      "verificationStatus": "source-backed-study"
+    },
+    {
+      "id": "q-ch4man-beaching-pullingboat-approach",
+      "topicId": "chapter-4-survival-methods",
+      "prompt": "When beaching a pulling (rowed) lifeboat through surf, what approach does the manual describe?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Approach stern-first, bow to the sea, rowing to meet each breaking wave, with the sweep rigged and the rudder stowed for control"
+        },
+        {
+          "id": "b",
+          "text": "Approach bow-first, steering actively with the rudder",
+          "misconception": "Contradicts the manual -- the approach is stern-first, and the rudder is stowed in favor of the sweep for control through breaking surf."
+        },
+        {
+          "id": "c",
+          "text": "Approach from any angle, since direction doesn't matter in surf",
+          "misconception": "Contradicts the manual's specific, deliberate stern-first positioning for surf approach."
+        },
+        {
+          "id": "d",
+          "text": "Row as fast as possible straight for the beach, without regard to wave timing",
+          "misconception": "Ignores the manual's guidance to use the drogue between breakers and time the approach to each wave, rather than rushing straight in."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "hard",
+      "hints": [
+        "The boat faces the sea, not the shore, as it goes in.",
+        "One steering tool is deliberately set aside in favor of another."
+      ],
+      "explanation": "For a rowed (pulling) lifeboat, the manual describes approaching stern-first with the bow to the sea, rowing to meet each breaking wave, rigging the sweep and stowing the rudder for control while backing in, and using the drogue between breakers -- slacking the trip line to steady the boat through each wave crest.",
+      "sourceReference": "Chapter 4 manual source intake, Beaching Survival Craft section (manual page ~116); see src/content/imports/vinci-2026-07-13-chapter-4-manual-source-intake.md",
+      "verificationStatus": "source-backed-study"
+    },
+    {
+      "id": "q-ch4man-beaching-powerboat-approach",
+      "topicId": "chapter-4-survival-methods",
+      "prompt": "When beaching a power-driven survival craft through surf, how does the approach differ from a pulling (rowed) boat?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Engine off, using oars and the sweep -- not the rudder -- for control, with the same stern-first approach and the drogue tripped between breakers"
+        },
+        {
+          "id": "b",
+          "text": "Keep the engine running for maximum control through the surf",
+          "misconception": "Contradicts the manual -- the engine is shut off, and oars/sweep are used for control instead."
+        },
+        {
+          "id": "c",
+          "text": "Use the rudder instead of oars, since a power boat has more steering authority",
+          "misconception": "Contradicts the manual -- a power boat's surf approach avoids the rudder just as a pulling boat's does, relying on oars and the sweep."
+        },
+        {
+          "id": "d",
+          "text": "Approach bow-first, the same as a normal calm-water docking",
+          "misconception": "Contradicts the manual -- the stern-first approach used for a pulling boat also applies to a power-driven craft in surf."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "hard",
+      "hints": [
+        "The engine itself is not used during the actual surf approach.",
+        "The steering method matches the pulling boat's approach, not a normal power-boat docking."
+      ],
+      "explanation": "For a power-driven survival craft, the manual describes the same stern-first approach as a pulling boat, but with the engine off -- using oars and the sweep, not the rudder, for control -- and the drogue tripped between breakers.",
+      "sourceReference": "Chapter 4 manual source intake, Beaching Survival Craft section (manual page ~116-117); see src/content/imports/vinci-2026-07-13-chapter-4-manual-source-intake.md",
+      "verificationStatus": "source-backed-study"
+    },
+    {
+      "id": "q-ch4man-raft-beaching-caution",
+      "topicId": "chapter-4-survival-methods",
+      "prompt": "What caution does the manual give specifically about beaching a liferaft, as opposed to a lifeboat?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Avoid a raft landing at night unless necessary -- stream the sea anchor and wait for daylight, since rocks or coral can puncture the raft"
+        },
+        {
+          "id": "b",
+          "text": "Rafts are sturdier than lifeboats in surf, so no special caution is needed",
+          "misconception": "Contradicts the manual, which specifically warns that rocks/coral can puncture a raft -- a risk a rigid lifeboat hull doesn't share in the same way."
+        },
+        {
+          "id": "c",
+          "text": "Always land a raft immediately regardless of time of day",
+          "misconception": "Contradicts the manual's guidance to avoid a night landing unless necessary."
+        },
+        {
+          "id": "d",
+          "text": "Open only one canopy curtain to reduce wind resistance",
+          "misconception": "The manual specifies opening both canopy curtains when working against the wind, not just one."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "medium",
+      "hints": [
+        "A raft's material is more vulnerable to a specific hazard than a rigid lifeboat hull.",
+        "Timing the landing around daylight is part of the guidance."
+      ],
+      "explanation": "The manual cautions against a raft landing at night unless necessary -- preferring to stream the sea anchor and wait for daylight -- since rocks or coral can puncture a raft. It also notes opening both canopy curtains to reduce wind resistance if working against the wind.",
+      "sourceReference": "Chapter 4 manual source intake, Beaching Survival Craft section (manual page ~117); see src/content/imports/vinci-2026-07-13-chapter-4-manual-source-intake.md",
+      "verificationStatus": "source-backed-study"
+    },
+    {
+      "id": "q-ch4man-antiexposure-names-usage",
+      "topicId": "chapter-4-survival-methods",
+      "prompt": "What are two alternate names for the Anti-Exposure Suit mentioned in the manual, and who commonly uses it?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "\"Mustang suit\" and, for a coat-only version, \"float coat\" -- commonly used by rescue boat crews"
+        },
+        {
+          "id": "b",
+          "text": "\"Gumby suit\" and \"dry suit\" -- commonly used by galley crew",
+          "misconception": "\"Gumby Suit\" is actually an alternate name for the immersion suit, not the Anti-Exposure Suit -- a different piece of equipment entirely."
+        },
+        {
+          "id": "c",
+          "text": "\"Survival Suit\" -- commonly used only by passengers",
+          "misconception": "\"Survival Suit\" is an alternate name for the immersion suit, not the Anti-Exposure Suit, and passengers aren't the named typical user."
+        },
+        {
+          "id": "d",
+          "text": "\"Storm suit\" -- commonly used by the bridge watch",
+          "misconception": "Invents a name the manual doesn't use, and misattributes typical use to the bridge watch rather than rescue boat crews."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "medium",
+      "hints": [
+        "One name references an animal you might not expect.",
+        "The typical user is a crew that needs mobility while working, not staying still."
+      ],
+      "explanation": "The manual gives \"Mustang suit\" (after an original manufacturer) and, for a coat-only version, \"float coat\" as alternate names for the Anti-Exposure Suit, and notes it's commonly used by rescue boat crews (citing a typical crew size of 3) -- distinct from the immersion suit's own nicknames, \"Survival Suit\" and \"Gumby Suit.\"",
+      "sourceReference": "Chapter 4 manual source intake, Anti-Exposure Suit section (manual page ~93); see src/content/imports/vinci-2026-07-13-chapter-4-manual-source-intake.md",
+      "verificationStatus": "source-backed-study"
+    },
+    {
+      "id": "q-ch4man-antiexposure-pockets",
+      "topicId": "chapter-4-survival-methods",
+      "prompt": "Why does an Anti-Exposure Suit have pockets, and what is typically carried in them?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "For gear like a portable VHF radio and flashlight, since rescue boat crews commonly wear the suit while actively working"
+        },
+        {
+          "id": "b",
+          "text": "For storing a rationed share of food and water",
+          "misconception": "Not what the manual describes -- the pockets are for working gear, not personal food/water rations."
+        },
+        {
+          "id": "c",
+          "text": "They're purely decorative and serve no functional purpose",
+          "misconception": "Contradicts the manual, which specifically describes the pockets as holding gear like a portable VHF and flashlight."
+        },
+        {
+          "id": "d",
+          "text": "For storing spare batteries only",
+          "misconception": "Too narrow -- the manual names a portable VHF radio and flashlight as examples, not a single item category."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "easy",
+      "hints": [
+        "Think about who wears this suit and what they need while working.",
+        "The gear mentioned helps with communication and visibility."
+      ],
+      "explanation": "The Anti-Exposure Suit has pockets for gear such as a portable VHF radio and flashlight, reflecting that it's commonly worn by rescue boat crews while actively working -- unlike an immersion suit, which is meant to be worn while waiting passively for rescue.",
+      "sourceReference": "Chapter 4 manual source intake, Anti-Exposure Suit section (manual page ~93); see src/content/imports/vinci-2026-07-13-chapter-4-manual-source-intake.md",
+      "verificationStatus": "source-backed-study"
+    },
+    {
+      "id": "q-ch4man-seabreeze-timing",
+      "topicId": "chapter-4-survival-methods",
+      "prompt": "What onshore wind pattern does the manual describe near land, and how should a survivor time a raft landing around it?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Daytime heating creates a rising-air \"sea breeze\" moving from water to land (which can exceed 15 knots); take in the sea anchor as this breeze develops after sunrise, and stream it again at night to avoid drifting away from shore"
+        },
+        {
+          "id": "b",
+          "text": "The breeze blows from land to water during the day",
+          "misconception": "Reverses the manual's description -- the daytime sea breeze moves from water to land, not the other way around."
+        },
+        {
+          "id": "c",
+          "text": "The sea anchor should stay out at all times regardless of the breeze",
+          "misconception": "Contradicts the manual's specific guidance to take in the sea anchor as the onshore breeze develops, then stream it again at night."
+        },
+        {
+          "id": "d",
+          "text": "The breeze pattern has no bearing on timing a landing",
+          "misconception": "Dismisses the manual's specific, deliberate landing-timing guidance tied to this daily wind pattern."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "hard",
+      "hints": [
+        "Think about which direction the air moves as land heats up faster than water during the day.",
+        "The sea anchor's use changes between day and night for a reason."
+      ],
+      "explanation": "The manual describes daytime land heating creating a rising-air, onshore \"sea breeze\" (cooler air moving from water to replace it), which can exceed 15 knots and combine with the prevailing wind -- the same pattern tied to cumulus cloud formation. A survivor timing a raft landing should take in the sea anchor as this breeze develops (typically after sunrise) and stream it again at night to avoid drifting away from shore.",
+      "sourceReference": "Chapter 4 manual source intake, Breezes Near Land section (manual page ~117); see src/content/imports/vinci-2026-07-13-chapter-4-manual-source-intake.md",
+      "verificationStatus": "source-backed-study"
+    },
+    {
+      "id": "q-ch4man-pants-flotation",
+      "topicId": "chapter-4-survival-methods",
+      "prompt": "If using the pants method to stay afloat without a life jacket, what is the correct technique?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Remove the pants while jellyfish-floating, tie both legs near the cuffs, zip up, splash air into the open waistband while holding it closed with one hand, then slip your head between the tied pant legs"
+        },
+        {
+          "id": "b",
+          "text": "Tie the waistband shut and blow air directly into the fabric",
+          "misconception": "Reverses the technique -- the leg cuffs are tied (not the waistband), and air is splashed in through the open waistband, not blown directly into the fabric."
+        },
+        {
+          "id": "c",
+          "text": "Wear the pants as normal and rely on air trapped in the fabric alone",
+          "misconception": "Doesn't match the manual's actual technique, which requires removing, tying, and inflating the pants deliberately -- not simply wearing them."
+        },
+        {
+          "id": "d",
+          "text": "Remove and discard the pants, since only a shirt can be used for flotation",
+          "misconception": "Contradicts the manual, which describes the pants method as a real, separate flotation technique alongside the shirt method."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "medium",
+      "hints": [
+        "Which end of the pants gets tied, and which end gets filled with air?",
+        "This technique requires briefly floating another way while you set it up."
+      ],
+      "explanation": "The manual's pants method: remove the pants while jellyfish-floating, tie both legs near the cuffs, zip up, splash air into the open waistband while holding it closed with one hand, then slip your head between the tied pant legs -- a separate technique from the shirt method, for when clothing that weighs you down can instead be repurposed for flotation.",
+      "sourceReference": "Chapter 4 manual source intake, Clothing for flotation section (manual page ~98); see src/content/imports/vinci-2026-07-13-chapter-4-manual-source-intake.md",
+      "verificationStatus": "source-backed-study"
+    },
+    {
+      "id": "q-ch4man-raincollection-methods",
+      "topicId": "chapter-4-survival-methods",
+      "prompt": "How can rainwater be collected on a survival craft, and what caution applies to it?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Using a boat cover or buckets in an open lifeboat, or a built-in canopy catchment feeding storage bags in an enclosed lifeboat or liferaft -- with the caution that early rainwater may carry dried salt spray off the canopy"
+        },
+        {
+          "id": "b",
+          "text": "Rainwater should never be collected due to contamination risk",
+          "misconception": "Contradicts the manual, which describes rain collection as a legitimate water source with specific methods."
+        },
+        {
+          "id": "c",
+          "text": "The first rainwater collected is always the cleanest and safest to drink",
+          "misconception": "Reverses the manual's caution -- early rainwater may carry dried salt spray from the canopy, making it less clean, not more."
+        },
+        {
+          "id": "d",
+          "text": "Rain collection is only possible in an open lifeboat, never a liferaft",
+          "misconception": "Contradicts the manual, which describes a built-in canopy catchment method specifically for enclosed lifeboats and liferafts."
+        }
+      ],
+      "correctChoiceId": "a",
+      "difficulty": "medium",
+      "hints": [
+        "The collection method depends on whether the craft is open or enclosed.",
+        "The very first rain to fall may not be the cleanest."
+      ],
+      "explanation": "The manual describes collecting rain using a boat cover or buckets in an open lifeboat, or a built-in canopy catchment feeding storage bags in an enclosed lifeboat or liferaft -- with the caution that early rainwater may carry dried salt spray that had accumulated on the canopy.",
+      "sourceReference": "Chapter 4 manual source intake, Drinking Water section (manual page ~112-113); see src/content/imports/vinci-2026-07-13-chapter-4-manual-source-intake.md",
       "verificationStatus": "source-backed-study"
     }
   ]

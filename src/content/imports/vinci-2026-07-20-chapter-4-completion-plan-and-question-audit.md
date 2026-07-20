@@ -4,6 +4,12 @@
 promoted; no Learn Mode content was written; no drill set or Study Guide
 was created; `course.json` was not touched in this task.**
 
+**Implementation update (2026-07-20, same day): the plan below has now
+been executed.** See "Part J — Implementation Log" at the end of this
+document for exactly what was done, what was promoted, and what remains
+open. The Study Guide was deliberately not built in this pass, per
+instruction.
+
 This document is the first work product of the Chapter 4 completion cycle
 recommended by `vinci-2026-07-20-course-content-gap-audit.md`. It reviews
 the existing Chapter 4 manual intake (pages 89–119), the promotion-review
@@ -382,3 +388,169 @@ legacy questions, resolve 3 of 4 held draft questions, and add
 ~12–15 targeted new questions. The only two items genuinely blocked on
 external material are the missing page (~118, Survival Ashore) and the
 Marine Life section's need for a fresh, more detailed source re-read.
+
+## Part J — Implementation Log (2026-07-20, same-day follow-up)
+
+Everything in Parts A–I above was executed in a single implementation
+pass on `claude/chapter-4-content-completion`, on top of this plan. This
+section records exactly what happened, so the plan and its outcome live
+in one document.
+
+### Existing questions upgraded (10)
+
+All 10 questions identified in Part B as manual-confirmed-but-not-yet-
+upgraded were moved to `verificationStatus: source-backed-study` with a
+`sourceReference` citing the confirming manual section and page:
+
+`q-surv-2`, `q-surv-5`, `q-surv-6`, `q-surv-7`, `q-surv-10`,
+`q-quiz1a-first-water-liferaft`, `q-quiz1a-preferred-jump-height`,
+`q-quiz1a-hypothermia-water-temp`, `q-quiz1a-manoverboard-dont-swim`,
+`q-quiz6-oilfire-waterentry`. The 5 `q-quiz1a-*`/`q-quiz6-*` questions
+kept their original quiz-batch source reference and had the manual
+confirmation appended to it, rather than replacing it — both sources are
+now visible on the question.
+
+### `q-surv-1` correction
+
+**Before:** "In cold water survival, what is the major immediate danger?"
+→ correct answer "Hypothermia and loss of body heat" — the flaw flagged
+in Part B, since the manual's own 4-stage progression treats Cold Shock
+Response, not hypothermia, as the true first-minute danger.
+
+**After:** reframed as "In cold-water immersion, which best describes the
+correct order and nature of the major dangers you face?" → correct answer
+"First, the involuntary Cold Shock Response (gasping, rapid breathing) in
+the first minute or so; then, if immersion continues, gradual hypothermia
+from ongoing heat loss." The reversed-order misconception ("hypothermia
+happens immediately") is now one of the wrong choices, with an
+explanation stating directly why that's wrong. Difficulty moved from easy
+to medium (the question now requires distinguishing two concepts, not
+just rejecting irrelevant distractors), and a `sourceReference` /
+`source-backed-study` status were added. Checked against `q-surv-6` and
+`q-surv-7` with `difflib` after the rewrite (0.23 and 0.44 similarity,
+both well below the 0.7 duplicate threshold) — the correction reads as a
+distinct question, not a near-duplicate of either.
+
+### New questions drafted, promoted, and withheld
+
+**14 new questions drafted**, all targeting the specific under-tested
+manual sections identified in Part D/E: `q-ch4man-cold-environment-tactics`,
+`q-ch4man-hot-environment-tactics`, `q-ch4man-poisonous-nearshore-fish`,
+`q-ch4man-turtle-caution`, `q-ch4man-bird-catching`,
+`q-ch4man-tread-scull-technique`, `q-ch4man-beaching-pullingboat-approach`,
+`q-ch4man-beaching-powerboat-approach`, `q-ch4man-raft-beaching-caution`,
+`q-ch4man-antiexposure-names-usage`, `q-ch4man-antiexposure-pockets`,
+`q-ch4man-seabreeze-timing`, `q-ch4man-pants-flotation`,
+`q-ch4man-raincollection-methods`. Marine Life questions were not drafted,
+per instruction and per Part D/I — that section still needs a fresh,
+targeted source re-read before anything can be written from it.
+
+Each new question includes a difficulty level, four choices with a
+misconception explanation on every wrong choice, an explanation, a
+`sourceReference` citing the exact manual section and page, and
+`verificationStatus: source-backed-study`.
+
+**Duplicate/near-duplicate check**, per instruction, run with
+`difflib.SequenceMatcher` against (a) all 61 pre-existing live Chapter 4
+questions, (b) the complete live 376-question bank, and (c) the 4
+previously-held Chapter 4 draft questions, plus an internal pass among the
+14 new drafts themselves. **No pair reached the 0.7 true-duplicate
+threshold.** The closest pair was `q-ch4man-antiexposure-pockets` vs. the
+already-live `q-ch4man-antiexposure-tradeoff` at 0.611 — read side by
+side and confirmed as testing genuinely different facts (pockets/gear
+purpose vs. the mobility-for-protection tradeoff and how the suit is
+worn), consistent with this project's established 0.5–0.7 review-zone
+convention.
+
+**All 14 were promoted** — none needed to be withheld, since none were
+materially duplicative and all are directly manual-confirmed. Nothing was
+staged in a separate draft-pack file for this batch.
+
+### Learn Mode
+
+**Redundant placeholders consolidated (2):** "Swimming for Survival" and
+"Survival on the Sea" were removed as separate entries. Before removal,
+each was checked fact-by-fact against its presumed substantive
+replacement rather than assumed fully redundant (the original plan's
+"fully covered" claim from Part A turned out to be only partially true on
+a closer read):
+
+- "Swimming for Survival" → the current-swimming-angle fact was already in
+  "Man Overboard & Swimming for Survival," but the wave-slap-protection
+  and bodysurf-vs-dive-under facts were not. Those two facts were added to
+  that module's `keyFacts` (with a matching `sourceReferences` entry)
+  before the placeholder was deleted, so no content was lost.
+- "Survival on the Sea" → capsize recovery and the sea-anchor watch were
+  already in "Organizing for Survival & Survival on the Sea," but the
+  heavy-seas heading fact (30–40° on the bow) was not. That fact was
+  added to that module's `keyFacts` before the placeholder was deleted.
+
+**10 placeholders built out with substantive content**, using only the
+existing `title` / `explanation` / `keyFacts` / `confusionTraps` /
+`examWatchFor` / `sourceReferences` / `confidence` shape (no new fields,
+no new badge types): Understanding Coast Guard Searches, Abandoning Ship,
+Anti-Exposure Suit, Preserve Body Fluids / Avoid Seasickness, Urinate Soon
+After Boarding, Dealing with Cold / Hot Environment, Drinking Water, Food,
+Looking for Land, Beaching Survival Craft. The Abandoning Ship module
+explicitly cross-references (in a `confusionTraps` entry) the difference
+between its own general jump-height guidance and the Immersion Suit
+module's separate CFR-sourced jump-height design spec, so the two related
+~15-foot figures don't read as a contradiction.
+
+**Survival Ashore was not built.** It remains a placeholder, but its
+placeholder text now explains why (the missing ~page 118) instead of
+reading as an unexplained gap.
+
+**Result:** Chapter 4's Learn Mode is now 14 of 15 topics substantive (up
+from 4 of 17 — the count dropped from 17 to 15 total because the two
+redundant entries were removed, not because content was lost).
+
+**The unresolved immersion-suit thermal-protection figure was not
+touched** — the existing Immersion Suits & Thermal Protection module is
+unchanged, per instruction.
+
+### Drill sets
+
+Created `src/content/imports/vinci-chapter-4-drill-sets.md`, following the
+exact format and convention established in
+`vinci-chapter-5-drill-sets.md` / `vinci-chapter-6-drill-sets.md` (a
+documentation file recommending question-ID groupings — the app's actual
+Drill Mode remains fully adaptive/algorithmic and doesn't consume these
+groupings directly; see that file's own closing notes).
+
+- **4 of the 5 named sets were built as named**: Cold Water Survival &
+  Hypothermia (18 questions), Abandoning Ship & Water Entry (15), Man
+  Overboard & Swimming (9), Survival Priorities, Rationing & Morale (24 —
+  intentionally the broadest, aggregating several Learn Mode modules'
+  worth of "sustaining the group" content).
+- **The 5th set was narrowed and renamed**, per instruction: "Beaching,
+  Land-Finding & Survival Ashore" became **"Beaching & Land-Finding"** (7
+  questions), since Survival Ashore has zero live questions and remains
+  incomplete. The drill-set document explains this renaming explicitly
+  rather than silently dropping the topic from the title.
+- All 73 assigned question IDs were checked programmatically against the
+  live 75-question Chapter 4 bank: no duplicates, no invalid IDs. 2 live
+  questions (`q-ch4man-amver-purpose`, `q-ch4man-stay-near-position`) fit
+  none of the five named clusters and were left unassigned, matching the
+  same precedent already set in `vinci-chapter-6-drill-sets.md`.
+
+### Remaining unresolved source issues (unchanged from Part I)
+
+All 6 items from Part I remain open and were not addressed in this
+implementation pass, per instruction: the immersion-suit
+thermal-protection figure conflict, the Williamson Turn's flawed "310
+degrees" worked example (still correctly avoided everywhere), the Cold
+Shock Response onset-timing tension, the missing manual page ~118, the
+page 90/91 soft boundary, and whether the manual continues past page 119.
+The 3 still-held Tier 2 draft questions and 1 held Tier 3 question from
+the original 2026-07-13 draft pack were also not touched in this pass —
+resolving them was not part of this implementation's scope, which focused
+on new manual-backed content rather than the earlier held batch.
+
+### Final counts
+
+- Chapter 4 live questions: 61 → **75** (+14)
+- Total live questions, app-wide: 376 → **390** (+14)
+- Chapter 4 Learn Mode: 4 of 17 substantive → **14 of 15 substantive**, 1
+  clearly-marked-incomplete placeholder (Survival Ashore)
+- Chapter 4 Study Guide: **not built**, per instruction
