@@ -1,4 +1,5 @@
 import course from './content/course.json'
+import { chapter3Questions, chapter3Learn, chapter3DrillSets } from './content/chapter3Expansion.js'
 import { studyGuides } from './content/studyGuides/index.js'
 import { useHashRoute } from './hooks/useHashRoute.js'
 import { useProgress } from './hooks/useProgress.js'
@@ -35,6 +36,14 @@ const NAV_ITEMS = [
   { id: 'printLog', label: 'Print Session Log' },
 ]
 
+const expandedTopics = course.topics.map((topic) => (
+  topic.id === 'chapter-3-using-liferafts'
+    ? { ...topic, learn: chapter3Learn }
+    : topic
+))
+
+const expandedQuestions = [...course.questions, ...chapter3Questions]
+
 export default function App() {
   const { route, navigate } = useHashRoute()
   const progressApi = useProgress()
@@ -46,7 +55,7 @@ export default function App() {
   // has turned review mode on) are all dropped from every pool here, at the
   // one place questions enter the screens, so no screen needs its own check.
   // See docs/CONTENT_INTAKE_BENCHMARK.md for the full status model.
-  const activeQuestions = course.questions.filter((q) => {
+  const activeQuestions = expandedQuestions.filter((q) => {
     if (progressApi.progress.excluded.includes(q.id)) return false
     if (q.verificationStatus === 'draft-unverified') return false
     if (q.verificationStatus === 'needs-review' && !progressApi.progress.reviewModeEnabled) return false
@@ -54,8 +63,9 @@ export default function App() {
   })
 
   const screenProps = {
-    topics: course.topics,
+    topics: expandedTopics,
     questions: activeQuestions,
+    drillSets: chapter3DrillSets,
     studyGuides,
     navigate,
     topicId: route.topicId,
