@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react'
+import { useState } from 'react'
 import { pickReviewQueue } from '../engine/selection.js'
 import QuestionCard from '../components/QuestionCard.jsx'
 
@@ -10,16 +10,18 @@ function formatDue(ts) {
 }
 
 export default function ReviewMistakes({ questions, topics, progress, recordAttempt, toggleFlag, toggleExcluded }) {
-  const [index, setIndex] = useState(0)
-  const [refreshKey, setRefreshKey] = useState(0)
+  // Snapshotted, not recomputed live from progress.attempts: recordAttempt()
+  // updates progress.attempts synchronously as soon as confidence is
+  // submitted -- before QuestionCard ever renders its "revealed" stage. A
+  // live recompute here would immediately drop a just-corrected mistake out
+  // of the due queue, swapping `current` to a different question and
+  // unmounting the card mid-reveal, so the student never sees right/wrong
+  // feedback. Freezing the queue until the student explicitly advances keeps
+  // the answered card on screen until Next Question/Finish is pressed.
+  const [queue, setQueue] = useState(() => pickReviewQueue(questions, progress.attempts))
+  const { due, upcoming } = queue
 
-  const { due, upcoming } = useMemo(
-    () => pickReviewQueue(questions, progress.attempts),
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    [progress.attempts, refreshKey],
-  )
-
-  const current = due[index]?.question
+  const current = due[0]?.question
   const topicName = (id) => topics.find((t) => t.id === id)?.title ?? id
 
   function handleAnswered({ choiceId, confidence, timeMs }) {
@@ -27,8 +29,7 @@ export default function ReviewMistakes({ questions, topics, progress, recordAtte
   }
 
   function handleNext() {
-    setRefreshKey((k) => k + 1)
-    setIndex(0)
+    setQueue(pickReviewQueue(questions, progress.attempts))
   }
 
   return (
