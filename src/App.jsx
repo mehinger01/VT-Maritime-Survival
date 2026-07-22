@@ -9,6 +9,7 @@ import TopicExplorer from './screens/TopicExplorer.jsx'
 import LearnMode from './screens/LearnMode.jsx'
 import StudyGuide from './screens/StudyGuide.jsx'
 import QuizMode from './screens/QuizMode.jsx'
+import PracticeExam from './screens/PracticeExam.jsx'
 import DrillMode from './screens/DrillMode.jsx'
 import ReviewMistakes from './screens/ReviewMistakes.jsx'
 import FlaggedQuestions from './screens/FlaggedQuestions.jsx'
@@ -24,6 +25,7 @@ const NAV_ITEMS = [
   { id: 'learn', label: 'Learn Mode' },
   { id: 'studyGuide', label: 'Study Guides' },
   { id: 'quiz', label: 'Quiz Mode' },
+  { id: 'exam', label: 'Full Practice Exam' },
   { id: 'drill', label: 'Drill Mode' },
   { id: 'review', label: 'Review Mistakes' },
   { id: 'flagged', label: 'Flagged Questions' },
@@ -95,6 +97,7 @@ export default function App() {
           {route.view === 'learn' && <LearnMode {...screenProps} />}
           {route.view === 'studyGuide' && <StudyGuide {...screenProps} />}
           {route.view === 'quiz' && <QuizMode {...screenProps} />}
+          {route.view === 'exam' && <PracticeExam {...screenProps} />}
           {route.view === 'drill' && <DrillMode {...screenProps} />}
           {route.view === 'review' && <ReviewMistakes {...screenProps} />}
           {route.view === 'flagged' && <FlaggedQuestions {...screenProps} />}
