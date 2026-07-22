@@ -1,7 +1,7 @@
 const TOPIC_ID = 'chapter-3-using-liferafts'
 
-const CFR_SOURCE = '46 CFR Subpart 160.151 — Inflatable Liferafts; existing repository copy Document(6).PDF.pdf, summarized in docs/vinci-2026-07-20-chapter-3-source-readiness-and-question-audit.md'
-const WORKSHEET_SOURCE = 'Liferaft parts worksheet 2026-07-07_063330-1.jpg with 23-item answer key; summarized in docs/vinci-2026-07-20-chapter-3-source-readiness-and-question-audit.md'
+const CFR_SOURCE = '46 CFR Subpart 160.151 — Inflatable Liferafts; existing repository copy Document(6).PDF.pdf, summarized in src/content/imports/vinci-2026-07-20-chapter-3-source-readiness-and-question-audit.md'
+const WORKSHEET_SOURCE = 'Liferaft parts worksheet 2026-07-07_063330-1.jpg with 23-item answer key; summarized in src/content/imports/vinci-2026-07-20-chapter-3-source-readiness-and-question-audit.md'
 
 function makeQuestion({ id, prompt, correct, distractors, explanation, difficulty = 'medium', sourceReference = CFR_SOURCE, verificationStatus = 'source-backed-study' }) {
   return {

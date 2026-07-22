@@ -20,7 +20,7 @@
         "Do not treat a federal construction requirement as evidence that the course manual tests the fact in the same wording."
       ],
       "sourceReferences": [
-        { "file": "docs/vinci-2026-07-20-chapter-3-source-readiness-and-question-audit.md", "note": "Documents the missing manual-page gap and available Tier 2/3 sources." }
+        { "file": "src/content/imports/vinci-2026-07-20-chapter-3-source-readiness-and-question-audit.md", "note": "Documents the missing manual-page gap and available Tier 2/3 sources." }
       ],
       "verificationStatus": "source-backed-study"
     },
@@ -193,7 +193,7 @@
         "Using a lifeboat procedure to answer a liferaft question."
       ],
       "sourceReferences": [
-        { "file": "docs/vinci-2026-07-20-chapter-3-source-readiness-and-question-audit.md", "note": "Question-audit findings and source classifications." }
+        { "file": "src/content/imports/vinci-2026-07-20-chapter-3-source-readiness-and-question-audit.md", "note": "Question-audit findings and source classifications." }
       ],
       "verificationStatus": "source-backed-study"
     }
