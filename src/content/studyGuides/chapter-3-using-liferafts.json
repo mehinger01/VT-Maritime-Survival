@@ -1,0 +1,201 @@
+{
+  "topicId": "chapter-3-using-liferafts",
+  "title": "Chapter 3 — Using Liferafts: Detailed Study Guide",
+  "published": true,
+  "lastReconciled": "2026-07-22",
+  "reconciliationNote": "Interim source-backed guide built from the repository's copy of 46 CFR Subpart 160.151 — Inflatable Liferafts and the 23-item liferaft-parts worksheet with answer key (2026-07-07_063330-1.jpg). The actual Chapter 3 course-manual pages 35-88 remain missing. Accordingly, this guide does not label any new claim as course-manual-verified and explicitly preserves source limitations.",
+  "sections": [
+    {
+      "id": "source-boundary",
+      "title": "1. Source Boundary and How to Use This Guide",
+      "whyThisMatters": "Chapter 3 has enough official and visual material for serious study, but not enough to pretend the missing course manual has been recovered.",
+      "mustRemember": [
+        "The actual Chapter 3 manual pages are not in the repository.",
+        "Federal regulation content is source-backed study material, not proof of the course manual's exact wording or emphasis.",
+        "Worksheet-number questions are visual-study material tied to one specific 23-item diagram."
+      ],
+      "explanation": "Use this guide to learn liferaft equipment, parts, deployment systems, boarding features, stability provisions, and maintenance expectations. Continue treating unsupported course-manual details cautiously.",
+      "confusionTraps": [
+        "Do not transfer lifeboat rules into liferaft questions merely because the equipment names sound similar.",
+        "Do not treat a federal construction requirement as evidence that the course manual tests the fact in the same wording."
+      ],
+      "sourceReferences": [
+        { "file": "docs/vinci-2026-07-20-chapter-3-source-readiness-and-question-audit.md", "note": "Documents the missing manual-page gap and available Tier 2/3 sources." }
+      ],
+      "verificationStatus": "source-backed-study"
+    },
+    {
+      "id": "parts-diagram",
+      "title": "2. Liferaft Parts and Diagram Identification",
+      "whyThisMatters": "Diagram questions test whether similar lines, valves, inflation parts, and boarding aids can be distinguished under pressure.",
+      "mustRemember": [
+        "#2 Equipment bags",
+        "#4 Pressure relief valve",
+        "#5 Heaving line",
+        "#8 Rainwater catchment tube assembly",
+        "#9 Righting strap",
+        "#10 CO2 inflation system",
+        "#11 Deflation plug",
+        "#14 Buoyancy tube",
+        "#16 Operating cord / sea painter",
+        "#21 Boarding ladder"
+      ],
+      "explanation": "Study the number-to-name and name-to-number direction. The hardest errors usually involve confusing the heaving line with the painter, the pressure relief valve with the deflation plug, or the righting strap with the boarding ladder.",
+      "confusionTraps": [
+        "Heaving line (#5) is not the inflation-triggering sea painter (#16).",
+        "Pressure relief valve (#4) and deflation plug (#11) are separate components.",
+        "Righting strap (#9) is not the boarding ladder (#21)."
+      ],
+      "sourceReferences": [
+        { "file": "2026-07-07_063330-1.jpg", "note": "23-item liferaft worksheet and answer key." }
+      ],
+      "verificationStatus": "visual-study"
+    },
+    {
+      "id": "painter-inflation",
+      "title": "3. Painter System, Inflation Trigger, and Container Release",
+      "whyThisMatters": "A deployment sequence can fail if the raft is thrown overboard but the controlling painter is not pulled to initiate inflation.",
+      "mustRemember": [
+        "The painter must resist sunlight and salt-spray deterioration and water absorption.",
+        "Pulling the painter starts inflation through the linked painter-and-cylinder system.",
+        "The maximum identified pull force is 150 N, approximately 34 lb.",
+        "The raft must be able to break free of its container when inflation begins.",
+        "The container includes a tamper-evident telltale seal-and-wire."
+      ],
+      "explanation": "Think of the painter as both a control connection and the inflation trigger in the cited system. The container protects the packed raft but cannot remain locked around it during inflation.",
+      "processSteps": [
+        "Deploy the packed liferaft container as directed.",
+        "Maintain control of the operating cord / sea painter.",
+        "Pull the painter to initiate inflation.",
+        "Confirm the raft breaks free of the container as inflation proceeds.",
+        "Manage the inflated raft using the appropriate lines and boarding features."
+      ],
+      "confusionTraps": [
+        "Throwing the container overboard is not the same as pulling the painter.",
+        "The heaving line is not the inflation trigger.",
+        "A broken telltale seal shows possible disturbance; it does not certify serviceability."
+      ],
+      "sourceReferences": [
+        { "file": "Document(6).PDF.pdf", "note": "46 CFR §160.151-17 painter, inflation, and container provisions." }
+      ],
+      "verificationStatus": "source-backed-study"
+    },
+    {
+      "id": "required-equipment",
+      "title": "4. Required Liferaft Equipment",
+      "whyThisMatters": "The required equipment list covers immediate survival, signaling, first aid, food and water, raft handling, and instructions. It is broad enough that plausible distractors are common.",
+      "mustRemember": [
+        "Heaving line, jackknife, bailer, sponge, sea anchor, and paddles",
+        "Tin opener, first-aid kit, whistle, and electric torch",
+        "Rocket parachute flares, hand flares, buoyant smoke signals, radar reflector, and signaling mirror",
+        "Lifesaving-signals card and waterproof survival instructions",
+        "Fishing tackle, food rations, drinking water or approved desalting arrangement, and drinking cup",
+        "Anti-seasickness medicine and instructions for immediate action"
+      ],
+      "explanation": "Learn the list by functional clusters rather than as 23 unrelated words: handling and water removal; signaling; medical and seasickness; food and water; written guidance; and basic tools.",
+      "confusionTraps": [
+        "Useful shipboard equipment is not automatically required liferaft equipment.",
+        "The lifesaving-signals card and survival instructions are separate required written resources.",
+        "The drinking-water provision may involve drinking water or an approved desalting arrangement; do not substitute seawater."
+      ],
+      "sourceReferences": [
+        { "file": "Document(6).PDF.pdf", "note": "46 CFR §160.151-21(a)-(w), required equipment list." }
+      ],
+      "verificationStatus": "source-backed-study"
+    },
+    {
+      "id": "boarding-righting",
+      "title": "5. Boarding, Righting, and Assisting Survivors",
+      "whyThisMatters": "A person in the water needs a stable, usable entry system; an overturned raft needs a different component and response.",
+      "mustRemember": [
+        "Boarding-ladder steps must provide a suitable foothold.",
+        "The boarding ramp is rated for a 100 kg / 220 lb occupant.",
+        "The worksheet identifies the boarding ladder as #21.",
+        "The worksheet identifies the righting strap as #9.",
+        "A first-aid kit is part of the required equipment package."
+      ],
+      "explanation": "Separate three issues: restoring an overturned raft, helping someone enter an upright raft, and providing care after entry. The available sources support components and ratings but do not supply a complete course-manual casualty-transfer procedure.",
+      "confusionTraps": [
+        "Do not use 'righting strap' and 'boarding ladder' interchangeably.",
+        "A boarding-ramp load rating does not by itself describe the complete method for moving an injured survivor."
+      ],
+      "sourceReferences": [
+        { "file": "Document(6).PDF.pdf", "note": "Boarding ladder and ramp provisions." },
+        { "file": "2026-07-07_063330-1.jpg", "note": "Righting strap #9 and boarding ladder #21." }
+      ],
+      "verificationStatus": "source-backed-study"
+    },
+    {
+      "id": "stability-structure",
+      "title": "6. Stability and Structural Components",
+      "whyThisMatters": "Inflatable rafts depend on several different systems to retain shape, manage pressure, and resist overturning.",
+      "mustRemember": [
+        "Water-filled appendages deploy beneath the raft to improve stability.",
+        "The buoyancy tube is worksheet item #14.",
+        "The CO2 inflation system is worksheet item #10.",
+        "The pressure relief valve is worksheet item #4.",
+        "The deflation plug is worksheet item #11."
+      ],
+      "explanation": "The inflation system creates buoyancy, the buoyancy tube provides the primary inflated structure, pressure-management components protect or release air, and underside ballast appendages improve stability.",
+      "confusionTraps": [
+        "Ballast appendages are not freshwater storage.",
+        "The pressure relief valve is not the same as a deliberate deflation plug.",
+        "The CO2 inflation system is not the painter itself; the painter triggers the linked inflation system."
+      ],
+      "sourceReferences": [
+        { "file": "Document(6).PDF.pdf", "note": "46 CFR §160.151-1 stability provisions." },
+        { "file": "2026-07-07_063330-1.jpg", "note": "Structural-component labels." }
+      ],
+      "verificationStatus": "source-backed-study"
+    },
+    {
+      "id": "inspection-maintenance",
+      "title": "7. Inspection, Servicing, and Records",
+      "whyThisMatters": "A packed raft can look untouched while still being overdue for inspection or servicing; readiness depends on both routine checks and formal servicing.",
+      "mustRemember": [
+        "Perform a monthly external visual inspection using the checklist.",
+        "Periodic servicing is performed by an approved servicing facility.",
+        "Maintain a liferaft maintenance log.",
+        "The tamper-evident telltale seal-and-wire supports container-integrity inspection."
+      ],
+      "explanation": "Routine external inspection, approved-facility servicing, and maintenance records are separate parts of the readiness system. None replaces the others.",
+      "processSteps": [
+        "Inspect the exterior and container condition monthly.",
+        "Check the telltale seal-and-wire for evidence of disturbance.",
+        "Document inspections and maintenance in the log.",
+        "Send the raft to an approved facility when periodic servicing is due."
+      ],
+      "confusionTraps": [
+        "Monthly visual inspection is not a full inflation test.",
+        "A normal-looking container does not eliminate periodic servicing requirements.",
+        "Onboard inspection does not replace approved-facility servicing."
+      ],
+      "sourceReferences": [
+        { "file": "Document(6).PDF.pdf", "note": "46 CFR §160.151-61 maintenance instructions." }
+      ],
+      "verificationStatus": "source-backed-study"
+    },
+    {
+      "id": "exam-comparisons",
+      "title": "8. High-Value Exam Comparisons",
+      "whyThisMatters": "Most Chapter 3 errors come from swapping two plausible components or answering a neighboring stage of the deployment process.",
+      "mustRemember": [
+        "Heaving line versus sea painter: the painter is linked to inflation.",
+        "Righting strap versus boarding ladder: overturn recovery versus entry.",
+        "Pressure relief valve versus deflation plug: automatic pressure management versus deliberate deflation access.",
+        "Monthly visual inspection versus periodic servicing: shipboard routine versus approved facility.",
+        "Required equipment versus structural part: what is carried aboard versus what is built into the raft."
+      ],
+      "explanation": "Before choosing an answer, identify whether the question is asking about a line, structural component, carried equipment item, deployment step, boarding aid, or maintenance layer.",
+      "confusionTraps": [
+        "Answering with a generally useful item instead of the specifically required one.",
+        "Selecting a line with a familiar name without checking its exact function.",
+        "Using a lifeboat procedure to answer a liferaft question."
+      ],
+      "sourceReferences": [
+        { "file": "docs/vinci-2026-07-20-chapter-3-source-readiness-and-question-audit.md", "note": "Question-audit findings and source classifications." }
+      ],
+      "verificationStatus": "source-backed-study"
+    }
+  ]
+}
