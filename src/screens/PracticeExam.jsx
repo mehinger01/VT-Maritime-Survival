@@ -5,12 +5,12 @@ const PASSING_SCORE = 70
 
 const TOPIC_TARGETS = {
   'chapter-1-planning-ahead': 5,
-  'chapter-2-using-lifeboats': 15,
+  'chapter-2-using-lifeboats': 13,
   'chapter-3-using-liferafts': 8,
-  'chapter-4-understanding-survival-methods': 9,
-  'chapter-5-signaling-to-attract-attention': 7,
-  'chapter-6-being-rescued': 4,
-  'appendix-a-glossary-vocabulary-review': 2,
+  'chapter-4-survival-methods': 8,
+  'chapter-5-signaling': 9,
+  'chapter-6-being-rescued': 5,
+  'appendix-a-glossary': 2,
 }
 
 const SOURCE_PRIORITY = {
