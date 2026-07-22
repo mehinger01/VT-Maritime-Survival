@@ -16,7 +16,7 @@ import FlaggedQuestions from './screens/FlaggedQuestions.jsx'
 import SessionReport from './screens/SessionReport.jsx'
 import LearningJournal from './screens/LearningJournal.jsx'
 import CloudSessionReports from './screens/CloudSessionReports.jsx'
-import SessionLogPrintView from './screens/SessionLogPrintView.jsx'
+import SessionLogPrintView from './screens/ProfessionalSessionLogPrintView.jsx'
 import Login from './screens/Login.jsx'
 
 const NAV_ITEMS = [
